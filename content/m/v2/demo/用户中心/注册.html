@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>悠哉旅游网</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon-precomposed" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-startup-image" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/user/user.css" rel="stylesheet" />
+    <script src="http://r02.uzaicdn.com/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script type="text/javascript">
+        seajs.use(['/content/m/v2/scripts/core','/content/m/v2/scripts/user/user'], function (core, user) {
+            user.init();
+        });
+    </script>
+</head>
+<body>
+    <div class="w login-wrap">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">注册</div>
+            </div>
+            <div class="d-r">
+            </div>
+        </header>
+        <section class="login-box">
+            <menu class="input-list">
+                <li class="clearfix"><i class="icon-1 fl"></i><div class="item-main"><input type="text" id="username" name="username" placeholder="请输入手机号" class="textbox f16 g10"></div></li>
+                <li class="clearfix"><i class="icon-2 fl"></i><div class="item-main"><input type="password" id="password" name="password" placeholder="6-16位字符、字母、数字" class="textbox f16 g10"></div></li>
+                <li class="clearfix"><i class="icon-2 fl"></i><div class="item-main"><input type="password" id="password1" name="password1" placeholder="6-16位字符、字母、数字" class="textbox f16 g10"></div></li>
+            </menu>
+            <p class="clause-bar f13 mt10 pr10">
+                <span class="btn-agree pointer f999"><i class="icon-1 mr5 vm"></i><em>我已阅读并同意</em></span>
+                <a href="#">使用条款和隐私政策</a>
+            </p>
+            <ul class="btn-list tc mt10">
+                <li><input type="submit" id="j_regSubmit" class="btn-item btn-reguser bg-f60 f20 b g10" value="注 册"></li>
+            </ul>
+            <div class="invitation-bar f666 f15 tc"><span id="j_invitation" class="pointer">门店邀请码</span></div>
+        </section>
+    </div>
+</body>
+</html>

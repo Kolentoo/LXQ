@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+#znext-content{ width:642px;margin:0 auto;position:relative;}
+.znext-main{ width:626px; background-color:#FFFFFF; text-align:left; padding-top:15px; padding-left:8px; padding-right:8px; padding-bottom:10px;  }
+.znext-list01{ color:#595959; border-bottom:solid #B9D8ED 1px; padding-bottom:10px; line-height:18px; margin-bottom:15px; padding-left:24px;}
+.znext-h{ font-size:14px; color:#0B3158; padding-bottom:5px;}
+.znext-dl{ font-size:14px; color:#0B3158; font-weight:bold;}
+.znext_import{ margin-top:0px; line-height:20px; padding-left:24px;}
+.znext_import dd{margin-bottom:3px;}
+.znext-cher{ margin-left:24px;}
+.znext-cor{ border:solid #7F99B4 1px; width:90px;}
+.znext-cor1{ border:solid #7F99B4 1px; width:50px;}
+.znext-linc{width:90px; background-color : transparent;}
+.znext_btn{background-color:transparent;border:0px solid;}
+.znext-cen{position:absolute; right:18px; top:15px;}
+
+.znext_import input{border:1px solid #7F99B4}
+

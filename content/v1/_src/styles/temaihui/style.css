@@ -1,0 +1,39 @@
+
+.main-wrap{ padding-top: 365px; position: relative;}
+.main-inner{ width: 1190px; margin-left: auto; margin-right: auto; position: relative; z-index: 5;}
+.full-screen-slides{ height: 1080px; width: 100%; position: absolute; left: 0; top: 0; z-index: 0;}
+.full-screen-slides .item{ background: no-repeat center 0; display: block; height: 1080px; width: 100%;}
+.full-screen-slides .pagination{ text-align: center; width: 100%; position: absolute; top: 305px; z-index: 10;}
+.full-screen-slides .pagination li{ display: inline-block; *display: inline; zoom: 1; margin: 0 5px; vertical-align: middle;}
+.full-screen-slides .pagination li a{ background: #fff; border-radius: 50%; text-indent: -9999px; display: block; height: 15px; width: 15px; opacity: .5; filter: alpha(opacity=50);}
+.full-screen-slides .pagination .on a{ height: 25px; width: 25px; opacity: 1; filter: alpha(opacity=100);}
+.main-mod{ width: 930px;}
+.line-mod{ background: url(/content/v1/images/temaihui/line-bg.png) no-repeat; height: 211px; padding: 10px 0 10px 10px;}
+.line-mod .line-pic{ height: 196px; width: 392px; position: relative;}
+.line-mod .line-pic .tag-type{ border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.3); color: #fff; height: 31px; line-height: 29px; width: 71px; position: absolute; left: 10px; top: 0; z-index: 1;}
+.line-mod .line-pic .type-yl{ background: #0099d9;}
+.line-mod .line-pic .type-zyx{ background: #e5004f;}
+.line-mod .line-pic .type-zjy{ background: #f67;}
+.line-mod .line-pic .type-jp{ background: #6cf;}
+.line-mod .line-pic .type-jd{ background: #da5;}
+.line-mod .line-pic .type-mp{ background: #5c8;}
+.line-mod .line-pic .type-gty{ background: #e5004f;}
+.line-mod .line-pic .main-pic{ margin-right: 4px;}
+.line-mod .line-pic .main-pic img{ height: 196px; width: 261px;}
+.line-mod .line-pic .side-pic img{ height: 96px; width: 127px;}
+.line-mod .line-pic .spb{ margin-top: 4px;}
+.line-mod .line-cont{ width: 353px; padding: 0 15px;}
+.line-mod .line-cont dd{ padding-top: 18px;}
+.line-mod .line-cont-bd{height:88px;overflow:hidden;}
+.line-mod .line-hd a:hover{ color: #e5004f;}
+.line-mod .line-side{ color: #fff; width: 145px; padding-top: 30px;}
+.line-mod .line-side ins em{ font: bold 32px arial;}
+.line-mod .line-side .btn-order{ background: #fff000; border-radius: 5px; color: #f55; display: inline-block; height: 40px; line-height: 38px; width: 110px;}
+.line-mod .line-side .btn-order:hover{ background: #fc0;}
+
+.fix-side-code{ margin-right: -525px; position: absolute; right: 50%; top: 600px; z-index: 100;}
+
+.icon-index{ background: no-repeat; display: inline-block;}
+
+.global-footer { position: relative; }
+.foot-link-nav { display: none; }

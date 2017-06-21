@@ -1,0 +1,377 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+ol, ul, menu { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* customize by jsonchou */
+
+/* grid */
+.g1 { width: 10%; }
+.g2 { width: 20%; }
+.g3 { width: 30%; }
+.g4 { width: 40%; }
+.g5 { width: 50%; }
+.g6 { width: 60%; }
+.g7 { width: 70%; }
+.g8 { width: 80%; }
+.g9 { width: 90%; }
+.g10 { width: 100%; }
+
+a { color: #333; text-decoration: none; }
+img { vertical-align: middle; }
+ins { text-decoration: none; }
+
+input[type=submit], button { cursor: pointer; }
+strong, b, .b { font-weight: bold; }
+em, i { font-style: normal; }
+.u { text-decoration: underline; }
+
+.center { text-align: center; }
+.tr { text-align: right; }
+.tl { text-align: left; }
+.tc { text-align: center; }
+
+.fr { float: right; }
+.fl { float: left; }
+
+.f333 { color: #333; }
+.f666 { color: #666; }
+.f999 { color: #999; }
+
+.f10 { font-size: 10px; }
+.f11 { font-size: 11px; }
+.f12 { font-size: 12px; }
+.f13 { font-size: 13px; }
+.f14 { font-size: 14px; }
+.f15 { font-size: 15px; }
+.f16 { font-size: 16px; }
+.f18 { font-size: 18px; }
+.f20 { font-size: 20px; }
+.f22 { font-size: 22px; }
+.f24 { font-size: 24px; }
+.f26 { font-size: 26px; }
+.f28 { font-size: 28px; }
+.f30 { font-size: 30px; }
+.f32 { font-size: 32px; }
+.f34 { font-size: 34px; }
+
+.yahei { font-family: "Microsoft YaHei"; }
+.songti { font-family: SimSun; }
+.verdana { font-family: Verdana; }
+
+.vm { vertical-align: middle; }
+.vb { vertical-align: bottom; }
+
+.mt5 { margin-top: 5px; }
+.mr5 { margin-right: 5px; }
+.mb5 { margin-bottom: 5px; }
+.ml5 { margin-left: 5px; }
+.mt10 { margin-top: 10px; }
+.mr10 { margin-right: 10px; }
+.mb10 { margin-bottom: 10px; }
+.ml10 { margin-left: 10px; }
+.mt15 { margin-top: 15px; }
+.mb15 { margin-bottom: 15px; }
+
+.p5 { padding: 5px; }
+.p10 { padding: 10px; }
+.pt5 { padding-top: 5px; }
+.pr5 { padding-right: 5px; }
+.pb5 { padding-bottom: 5px; }
+.pl5 { padding-left: 5px; }
+.pt10 { padding-top: 10px; }
+.pr10 { padding-right: 10px; }
+.pb10 { padding-bottom: 10px; }
+.pl10 { padding-left: 10px; }
+
+.lh1 { line-height: 1; }
+.lh2 { line-height: 2; }
+.lh3 { line-height: 3; }
+
+.pointer { cursor: pointer; }
+.cursor-help { cursor: help; }
+.noborder { border: 0 none; }
+
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix { display: inline-table; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; *zoom: 1; }
+
+.show, .block { display: block; }
+.hide, .none { display: none; }
+
+.black { color: #000; }
+.white { color: #fff; }
+.orange { color: #e5004f; }
+.blue { color: #e5004f; }
+.green { color: #49a100; }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+
+.w { width: 1190px; margin-left: auto; margin-right: auto; min-width: 1000px; }
+
+body { line-height: 1.5; font-family: Arial,simsun,"Microsoft yahei"; min-height: 460px; color: #333; font-size: 12px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;background:#f5f5f5; }
+
+.order-bg { background: #02000f url(/content/v1/images/visa/v1.jpg) no-repeat center 0; }
+
+.order-login .slogon { text-align: center; margin-bottom: 30px; padding-top: 115px; }
+.order-login .slogon .logo { display: inline-block; vertical-align: middle; }
+.order-login .slogon .comp { border-left: 1px solid #ff3805; display: inline-block; color: #ff3805; padding-left: 5px; margin-left: 5px; vertical-align: middle; }
+
+.order-login .main { background: #fff; border-radius: 10px; box-shadow: 5px 5px 5px rgba(0,0,0,.5); width: 278px; padding: 25px 80px 45px; margin: 0 auto; margin-bottom: 100px; }
+.order-login .main .hd { text-align: center; margin-bottom: 35px;position:relative; }
+.order-login .main .hd .back{background:url(/content/v1/images/visa/v3.png) no-repeat left center;padding-left:38px;position:absolute;left:-70px;top:-15px;width:32px;height:32px;line-height:32px;}
+
+.order-login .main .hd li { display: inline-block; vertical-align: middle; text-align: center; width: 35%; cursor: pointer;*zoom:1;*display:inline; }
+.order-login .main .hd li.on { color: #37c7aa; }
+
+.order-login .main .txt { padding: 12px 5px; width: 265px; border: 1px solid #ddd; border-radius: 5px; transition: all ease 0.5s;font-family:'Microsoft YaHei';color:#999; }
+.order-login .main .txt:focus { border: 1px solid #37c7aa; box-shadow: 0 0 2px rgba(0,0,0,.1); }
+.order-login .main .btn { border: none; background: #37c7aa; border-radius: 5px; line-height: 35px; color: #fff;border:1px solid #37c7aa; font-family:'Microsoft YaHei';}
+.order-login .main .btn-off{background:#f5f5f5;border:1px solid #ccc;color:#666;}
+
+.order-login .main div .btn{width:265px;}
+
+.visa-pop-mask{position:fixed;left:0;top:0;z-index:999;width:100%;height:100%;background:#000;opacity:0.5;filter:alpha(opacity=50);}
+
+.visa-pop-mod{background:#fff;padding:20px 80px 20px;border-radius:20px;width:900px;position:fixed;height:530px;left:50%;top:50%;margin-top:-275px;margin-left:-530px;z-index:1000;}
+.visa-pop-mod .txt{overflow:auto;overflow-x:hidden;height:410px;border:1px solid #ccc;line-height:21px;}
+.visa-pop-mod .txt p{margin-bottom:10px;}
+.visa-pop-mod .close{font-size:55px;position:absolute;right:10px;top:-15px;}
+.visa-pop-mod .btn{margin:0 auto 0;background:#37c7aa;border:0;color:#fff;line-height:35px;border-radius:5px;clear:both;}
+
+.visa-pop-slide{position:fixed;left:50%;top:50%;width:500px;height:300px;margin:-150px 0 0 -250px;background:#f6f6f6;border-radius:10px;z-index:1000}
+.visa-pop-slide .hd{line-height:45px;border-radius:10px 10px 0 0;}
+.visa-pop-slide .bd{padding:15px;border:1px solid #ddd;margin:0 15px 15px;background:#fff;height:208px;overflow:auto;overflow-x:hidden;}
+.visa-pop-slide .close{background:url(/content/v1/images/visa/v12.png) no-repeat left center;width:20px;height:20px;cursor:pointer;position:absolute;right:10px;top:10px;z-index:10}
+.visa-pop-slide .pagination{display:none;}
+
+
+.visa-pop-slide .slide-box{position:relative;}
+.visa-pop-slide .slide-box .next,.visa-pop-slide .slide-box .prev{position:absolute;width:47px;height:84px;top:50%;margin-top:-30px;z-index:10;text-indent:-9999px;overflow:hidden;}
+.visa-pop-slide .slide-box .next{background:#ddd url(/content/v1/images/visa/v11.png) no-repeat center center;right:-47px;border-radius:0 10px 10px 0;}
+.visa-pop-slide .slide-box .prev{background:#ddd url(/content/v1/images/visa/v10.png) no-repeat center center;left:-47px;border-radius:10px 0 0 10px;}
+
+.visa-pop-slide .slides_container { width: 500px; height: 300px; }
+.visa-pop-slide .slides_container .item { width: 500px; height: 300px; display: block; }
+
+.visa-logo{color:#37c7aa;border-top:3px solid #37c7aa;border-bottom:1px solid #cecece;box-shadow:0 4px 4px rgba(0,0,0,.1);background:#fff;}
+.visa-logo .d-l{padding:5px 10px;}
+.visa-logo .d-r{padding:5px 10px;}
+.visa-logo .d1{background:url(/content/v1/images/visa/v1.png) no-repeat left center;padding-left:16px;}
+.visa-logo .d2{background:url(/content/v1/images/visa/v2.png) no-repeat 2px 3px;padding-left:16px;}
+
+.visa-main{margin-top:0;}
+
+.visa-status-info{background:#fff;}
+.visa-status-info .inner{border-bottom:1px solid #ddd;margin:0 15px;padding:0 0 10px;position:relative;}
+.visa-status-info .inner input{background:#37c7aa;border:0;color:#fff;line-height:35px;border-radius:5px;font-size:16px;}
+.visa-status-info .inner .hurry{position:absolute;right:0;bottom:-32px;background:#ff3805;color:#fff;padding:5px 10px;}
+
+.visa-cont {padding:5px 20px 15px;background:#fff;}
+.visa-cont h2{color:#37c7aa;font-size:16px;text-indent:15px;border-left:4px solid #37c7aa;line-height:18px;margin-bottom:15px;}
+.visa-cont .txt{border:2px solid #ddd;transition:all ease 0.5s;height:23px;padding-left:2px;font-family:'Microsoft YaHei';}
+.visa-cont .txt:focus{border:2px solid #37c7aa;}
+.visa-cont select{border:2px solid #ddd;padding:2px;font-family:'Microsoft YaHei';}
+.visa-cont .row{border-bottom:1px solid #d8d7dc;padding:20px 0;font-size:14px;}
+.visa-cont .row table td{padding:5px 0 5px 8px;}
+.visa-cont .row table .td1{width:25%;}
+.visa-cont .row table .td2{width:25%;}
+.visa-cont .row table .td3{width:25%;}
+.visa-cont .row table .td4{width:25%;}
+
+.visa-cont .row-detail{border-bottom:0;padding:0;margin-bottom:10px;}
+.visa-cont .row-detail table td{padding:5px 0 5px 8px;}
+.visa-cont .row-detail table .td1{width:20%;}
+.visa-cont .row-detail table .td2{width:20%;}
+.visa-cont .row-detail table .td3{width:20%;}
+.visa-cont .row-detail table .td4{width:20%;}
+.visa-cont .row-detail table .td5{width:20%;}
+
+.visa-cont .row .plus{background:url(/content/v1/images/visa/v8.png) no-repeat left center;width:22px;height:22px;cursor:pointer;display:inline-block;vertical-align:middle;}
+.visa-cont .row .min{background:url(/content/v1/images/visa/v9.png) no-repeat left center;width:22px;height:22px;cursor:pointer;display:inline-block;vertical-align:middle;}
+
+.visa-cont .row-trigger{color:#37c7aa;background:url(/content/v1/images/visa/v4.png) no-repeat left center;padding-left:24px;margin-left:15px;margin-top:20px}
+.visa-cont .voucher{margin-top:20px;padding-left:15px;}
+
+.visa-cont .user-row{background:#f0eff4;padding:0 20px 20px;position:relative;margin-bottom:20px;}
+.visa-cont .user-row .close{position:absolute;right:10px;top:8px;background:url(/content/v1/images/visa/v5.png) no-repeat left center;width:22px;height:22px;cursor:pointer;}
+.visa-cont .user-row-tit{line-height:40px;border-bottom:1px solid #d8d7dc;}
+.visa-cont .user-row-tit .d2{margin-right:20px;}
+.visa-cont .user-row-cont-info{border-bottom:1px solid #d8d7dc;padding:10px 0 20px;}
+.visa-cont .user-row-cont-info .txt{width:60px;margin-right:10px;}
+.visa-cont .user-row-cont-material{padding:10px 0 20px;}
+.visa-cont .user-row-cont-material .check-tit{margin-bottom:10px;}
+.visa-cont .user-row-cont-material .check-list{overflow:hidden}
+.visa-cont .user-row-cont-material .check-list ul{}
+.visa-cont .user-row-cont-material .check-list li{background:#fff;border-radius:5px;width:94px;height:120px;float:left;margin-right:17px;cursor:pointer;margin-bottom:10px;}
+.visa-cont .user-row-cont-material .check-list .p1{height:60px;vertical-align:middle;}
+.visa-cont .user-row-cont-material .check-list .p1 span{display:table-cell;vertical-align:middle;height:60px;text-align:center;width:94px;overflow:hidden;}
+.visa-cont .user-row-cont-material .check-list .p2{border:1px solid #eee;border-left:0;border-right:0;line-height:22px;}
+.visa-cont .user-row-cont-material .check-list .p3 .status{background:url(/content/v1/images/visa/v6.png) no-repeat left center;width:24px;height:24px;cursor:pointer;display:inline-block;margin-top:5px;}
+.visa-cont .user-row-cont-material .check-list .p3 .on{background:url(/content/v1/images/visa/v7.png) no-repeat left center;}
+
+.visa-cont .submit-box input{background:#37c7aa;border:0;color:#fff;line-height:35px;border-radius:5px;font-size:16px;margin-top:20px;}
+
+.visa-mylist{margin-bottom:20px;}
+.visa-mylist .inner{padding:20px;background:#fff;min-height:600px;}
+
+.visa-mylist .init{float:left;border:1px solid #f6f6f6;background:#fff;border-radius:5px;width:180px;text-align:center;position:relative;margin-right:30px;padding:10px;height:185px;cursor:pointer;}
+.visa-mylist .init .dot-box{border:1px dotted #ccc;border-radius:5px;height:183px;}
+.visa-mylist .init .p1{padding:40px 0 15px;}
+
+.visa-mylist .item{float:left;box-shadow:3px 3px 3px rgba(0,0,0,.1);border:1px solid #f6f6f6;background:#fff;border-radius:5px;width:200px;text-align:center;position:relative;border-right:0;height:203px;margin:0 28px 28px 0;}
+.visa-mylist .item .p1{padding:20px 0}
+.visa-mylist .item .p2{color:#fff;line-height:32px;background:#999}
+.visa-mylist .item .p3{line-height:35px;font-size:14px;overflow:hidden;height:35px;}
+.visa-mylist .item .p4{margin:0 0 10px;font-size:12px;}
+.visa-mylist .item .p5{position:absolute;left:5px;top:5px;color:#fff;background:#f90;padding:2px 5px;}
+
+.visa-pop-status{background:#f6f6f6;border-radius:10px;width:420px;position:fixed;height:255px;left:50%;top:50%;margin:-127px 0 0 -210px;z-index:1000;}
+.visa-pop-status .hd{background:#37c7aa;line-height:35px;text-align:center;border-radius:10px 10px 0 0;}
+.visa-pop-status .bd{overflow:auto;overflow-x:hidden;height:220px;line-height:21px;padding:0 10px;}
+.visa-pop-status .bd ul{border-left:2px solid #ccc;margin-left:60px;padding:10px 0;height:200px;}
+.visa-pop-status .bd li{background:#fff;line-height:30px;position:relative;margin-bottom:10px;padding:0 15px;margin-left:35px;width:200px;border-radius:4px;color:#999;}
+.visa-pop-status .bd li .arrow{background:url(/content/v1/images/visa/v14.png) no-repeat left center;width:6px;height:10px;position:absolute;left:-6px;top:12px;}
+.visa-pop-status .bd li .dot{background:url(/content/v1/images/visa/v13.png) no-repeat left center;width:16px;height:16px;position:absolute;left:-44px;top:9px;}
+.visa-pop-status .bd li.ing{color:#37c7aa;}
+.visa-pop-status .close{position:absolute;right:10px;top:8px;background:url(/content/v1/images/visa/v5.png) no-repeat left center;width:22px;height:22px;cursor:pointer;}
+
+.visa-main .footer{background:#37c7aa;padding:5px 0 5px;}
+
+.visa-hd .d-l{padding:15px 15px 15px 15px;}
+.visa-hd .d-r{padding:15px 15px 15px 15px;}
+.visa-hd .d-r a{background:#ffae5f;padding:2px 10px;}
+
+.visa-tit{background:#fff;position:relative;line-height:55px;color:#37c7aa;}
+.visa-tit .back{background:url(/content/v1/images/visa/v3.png) no-repeat left center;padding-left:38px;position:absolute;left:10px;top:0;}
+
+.visa-hd,.visa-procbar{background:#37c7aa;}
+.visa-procbar li{float:left;width:25%;line-height:40px;}
+.visa-procbar li.on{background:#20977f;}
+
+.powered p{padding-left:30px;}
+
+.footer { text-align: center; color: #fff; }
+.footer .p1 { margin: 15px 0; }
+.footer .p2 { margin-bottom: 15px; }
+.footer a { color: #fff; margin: 0 10px; }
+
+/*visa tab*/
+.visa-pop-tab{position:relative;}
+.visa-pop-tab .hd{height:37px;margin-bottom:0;position:relative;z-index:2;}
+.visa-pop-tab .hd ul{border-left:1px solid #ccc;}
+.visa-pop-tab .hd li{float:left;line-height:35px;text-align:center;padding:0 30px;border:1px solid #ccc;border-left:0;cursor:pointer;width:85px;background:#fff;}
+.visa-pop-tab .hd li.on{font-weight:bold;color:#37c7aa;font-size:14px;border-bottom:1px solid #fff;}
+.visa-pop-tab .bd{position:relative;margin-top:-1px;width:100%;background:#fff;z-index:1;}
+.visa-pop-tab .bd .txt{margin-top:0;}
+
+/*po schdule calender*/
+#j_schedule .subPrev, #j_schedule .subNext { height: 15px;font-family:SimSun;display:block;}
+#j_calenderLoader{ background: #FFF url(/content/m/images/common/preloader.gif) no-repeat center center;height:380px; }
+#j_schedule{width:500px;position:fixed;_position:absolute;left:50%;top:50%;z-index:9999;margin-top:-205px;margin-left:-250px;background:#FFF;border:1px solid #f5f5f5;}
+#j_schedule .hd{background:#F5F5F5;height:34px;line-height:34px;padding-left:10px;font-weight:bold;color:#666;}
+#j_schedule .bd{padding:5px 15px 15px;}
+#j_schedule .close { position:absolute;right:8px;top:0;font-size:24px;cursor:pointer;font-weight:bold;}
+#j_schedule .close:hover{color:#f00;}
+#j_schedule .calendar { width: 100%; }
+#j_schedule .calendar .calendar-box .item-data,#j_schedule .calendar .calendar-box .item-null{position:relative;padding:5px;height:41px;}
+#j_schedule .calendar .calendar-box .item-data{background:#FFFFEE;}
+#j_schedule .calendar-title td{font-weight:bold;text-align:center;line-height:21px;}
+#j_schedule .calendar-weeks td{background:#D9F3B6;text-align:center;border:1px solid #E8E8E8;}
+#j_schedule .calendar-title-current-month{text-align:center;}
+#j_schedule .calendar-week-days td{border:1px solid #E8E8E8;height:50px;}
+#j_schedule .calendar-weeks .calendar-td-sunday,#j_schedule .calendar-weeks .calendar-td-saturday{color:#e5004f;}
+#j_schedule .calendar .calendar-box .v-day{position:absolute;left:0;bottom:0;background: url(/content/v1/images/common/icon-common-part.png) no-repeat -1px -255px; width:15px;height:15px;text-indent:-9999px;}
+#j_schedule .calendar .calendar-box .day{position:absolute;right:2px;top:0;}
+#j_schedule .calendar .calendar-box .price{position:absolute;right:2px;top:15px;}
+#j_schedule .calendar .calendar-box .yuwei{position:absolute;right:2px;top:30px;}
+#j_schedule .calendar .calendar-box .search{position:absolute;right:2px;top:35px;}
+#j_schedule .calendar .calendar-box .chengtuan{position:absolute;left:20px;font-size:12px;color:#f90;top:0}
+
+/*uzai standard calendar styles*/
+#j_scheduleSub{position:fixed;left:50%;top:50%;width:600px;margin:-200px 0 0 -300px;z-index:10000;padding:15px;border:1px solid #eee;}
+
+.ca-norm{box-sizing:content-box;background:#fff;}
+.ca-norm .calendarBox{width: 90%;float: right;border-bottom:1px solid #eee;}
+.ca-norm .calendarBar{width: 10%;float: left;text-align: center;color: #37c7aa;border-bottom:1px solid #eee;}
+
+.ca-norm .calendarBox table { width: 100%; }
+.ca-norm .calendarBox tbody{border-left:1px solid #eee;}
+.ca-norm .calendarBox table tr th { padding: 5px; background-color:#37c7aa;font-size: 15px;font-family: microsoft yahei;color:#fff;}
+.ca-norm .calendarBox table tr th .p2{display: none;}
+.ca-norm .calendarBox table tr td { border-right: 1px solid #eee;border-bottom: 1px solid #eee; padding: 5px;height: 40px;font-family: verdana;vertical-align:top; }
+.ca-norm .calendarBox table tr td.item{cursor:pointer;}
+.ca-norm .calendarBox table tr td.item .box{position: relative;}
+.ca-norm .calendarBox table tr td.item .box .day{font-size:10px;position:absolute;left:-2px;top:-5px;z-index:2;}
+.ca-norm .calendarBox table tr td.item .box .holiday{z-index:88;position:absolute;left:-5px;top:20px;background:url(/content/v1/images/common/icon-common-part.png) no-repeat -1px -255px;width:15px;height:15px;text-indent:-9999px;}
+.ca-norm .calendarBox table tr td.item-half{background-color:#f1fbe4;}
+.ca-norm .calendarBox table tr td.item a.block { position: absolute; left: -5px; top: -5px; width: 100%; height: 100%; z-index: 1; min-width: 76px; min-height: 50px;*width:76px; }
+.ca-norm .calendarBox table tr td.item a.block:hover{background-color: #e5f3d5;}
+
+.ca-norm .calendarBox table tr td.item .title{display: none;}
+.ca-norm .calendarBox table tr td.item .ext{display: none;}
+
+.ca-norm .calendarBox table tr td.item-expiry{color: #ccc;}
+
+.ca-norm .calendarBox table tr td.item .cut{display: block;}
+.ca-norm .calendarBox table tr td.item div.cut { display:block;text-align: right;color:#ccc;padding-right:0;position:absolute;right:3px;top: -1px;}
+.ca-norm .calendarBox table tr td.item div.cut .sq { color: #999; }
+.ca-norm .calendarBox table tr td.item div.cut .jz { color: #f03; }
+.ca-norm .calendarBox table tr td.item div.cut .yw { color: #999; }
+.ca-norm .calendarBox table tr td.item div.cut .cz { color: #999; }
+
+.ca-norm .calendarBox table tr td.item .tag{ color: #390;position: absolute; right: 0; top: 13px;}
+.ca-norm .calendarBox table tr td.item div.date{display:none;}
+.ca-norm .calendarBox table tr td.item div.price{color:#e5004f;font-size:12px;text-align:right;position: absolute; right: 3px; top: 31px;display:block;}
+.ca-norm .calendarBox table tr td.item div.price i{color: #f90;}
+.ca-norm .calendarBox table tr td.item div.price em{color: #f90;font-size: 14px}
+.ca-norm .calendarBox table tr td.item div.price s{text-decoration: none;}
+
+.ca-norm .calendarBox table tr:last-child td {border-bottom: 0}
+.ca-norm .calendarBox table tr td.item-gray { color: #ccc; }
+.ca-norm .calendarBox table tr td.today { color: red; }
+
+.ca-norm .calendarBar .prev, .ca-norm .calendarBar .next { cursor: pointer;line-height: 60px; text-indent: -9999px;background-repeat: no-repeat;background-position: center center;border-left:1px solid #eee;}
+.ca-norm .calendarBar .prev{background-image: url(/content/v1/images/common/prev-month-green.png);opacity:0.4;}
+.ca-norm .calendarBar .prev:hover{opacity:1;}
+
+.ca-norm .calendarBar .next{background-image: url(/content/v1/images/common/next-month-green.png);opacity:0.4;}
+.ca-norm .calendarBar .next:hover{opacity:1;}
+
+.ca-norm .calendarBar .prev-off{background-image: url(/content/v1/images/common/prev-month-off.png);opacity:1;}
+.ca-norm .calendarBar .next-off{background-image: url(/content/v1/images/common/next-month-off.png);opacity:1;}
+
+.ca-norm .calendarBar .current{font-family: microsoft yahei;height:120px;border-left:1px solid #eee;}
+.ca-norm .calendarBar .current .year{padding-top: 36px;font-size: 14px}
+.ca-norm .calendarBar .current .month{margin-top: 0;font-size: 18px}
+.ca-norm .calendarBar .fix{background-color: #37c7aa;height: 33px;}
+
+.ca-norm .calendarBar-half .current {height:92px; }
+.ca-norm .calendarBar-half .current .year{padding-top:0;}
+.ca-norm .calendarBar-half .month-half-next { border-top:1px solid #eee;}
+.ca-norm .calendarBar-half .month-half-next .year{padding-top:30px;}
+
+.ca-norm a.close{position:absolute;right:-3px;top:-3px;font-size:25px;width:25px;height:25px;overflow:hidden;cursor:pointer;text-align:center;line-height:25px;}

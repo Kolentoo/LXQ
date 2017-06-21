@@ -1,0 +1,4 @@
+/*! uzai - v0.1.11 - 2017 */
+
+function loadScriptAndMap(a){var b=document.createElement("script");b.type="text/javascript",b.src="http://webapi.amap.com/maps?v=1.3&key=8903acb8854afcb9d35271c544d67393&callback="+a,document.body.appendChild(b)}function mapInit(a,b,c){if(mapObj=new AMap.Map(a,{view:new AMap.View2D({center:new AMap.LngLat(121.540732,31.324056),zoom:1e-10})}),polyline=new AMap.Polyline({path:b,strokeColor:"#515151",strokeOpacity:1,strokeWeight:2,strokeStyle:"dashed",strokeDasharray:[10,5],geodesic:!0}),polyline.setMap(mapObj),c&&c.length)for(var d=0;d<c.length;d++){var e=c[d];e.setMap(mapObj)}}var mapObj,polyline;String.prototype.trim=function(){return this.replace(/(^\s*)|(\s*$)/g,"")},String.prototype.ltrim=function(){return this.replace(/(^\s*)/g,"")},String.prototype.rtrim=function(){return this.replace(/(\s*$)/g,"")};
+//# sourceMappingURL=/sourcemaps/content/v1/scripts/sijia/amap.js.map

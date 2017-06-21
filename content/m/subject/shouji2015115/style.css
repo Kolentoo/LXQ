@@ -1,0 +1,17 @@
+body, html { background: #fbecb7; height: 100%; }
+
+.banner img { width: 100%; }
+.content{padding-bottom:55px;}
+.content dl { margin: 0 10px 10px; }
+.content dt { text-align: center; }
+.content dt img { height: 23px; margin-bottom: -15px; }
+.content dd { color: #390000; font-size: 13px; line-height: 24px; background-color: #fff; padding: 20px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
+.content dd p { text-indent: 2em; }
+
+.content dd p span { border-bottom: 1px solid #ccc; display: inline-block; width: 20px; height: 1px; vertical-align: middle; }
+
+.button-group { text-align: center;position:fixed;bottom:0;padding-bottom:10px;left:0;width:100%; }
+.button-group div { display: inline-block; width: 45%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; margin: 0 2px; }
+.button-group div a { display: block; line-height: 40px; text-align: center; font-size: 17px; color: #fff; }
+.button-group .b1 { background-color: #ef6767; }
+.button-group .b2 { background-color: #60c3b8; }

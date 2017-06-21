@@ -1,0 +1,178 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link href='//r03.uzaicdn.com/content/zhifuv2/css/travel.css?20161115'  rel='stylesheet' />
+<link rel="stylesheet" href="/content/zhifuv2/css/pay-bj.css" />
+<title></title>
+</head>
+<body>
+    <!--  Head begin -->
+     
+    <div class="head">
+        <div class="content">
+            <img src="//r03.uzaicdn.com/content/zhifuv2/images/logo.jpg" width="210" height="94" alt="logo" />
+            <div class="call">
+                <i class="call-time">预订热线：9:00~21:00</i>
+                <em class="call-num">1010-9898</em>
+            </div>
+        </div>
+    </div>
+    <!-- head end -->
+    <!-- step begin -->
+    <div class="step">
+		<hr class="step-line" />
+		<hr class="step-line-finish step-line-finish-4">
+        <ul class="step-content">
+            <li class="step-box step-box-finish">
+                <span class="step-num">1</span>
+                <em class="step-word">填写订单</em>
+            </li>
+            <li class="step-box step-box-2 step-box-finish">
+                <span class="step-num">2</span>
+                <em class="step-word">填写游客信息</em>
+            </li>
+            <li class="step-box step-box-3 step-box-finish">
+                <span class="step-num">3</span>
+                <em class="step-word">核对订单</em>
+            </li>
+            <li class="step-box step-box-4 step-box-hover">
+                <span class="step-num">4</span>
+                <em class="step-word">支付</em>
+            </li>
+            <li class="step-box step-box-5">
+                <span class="step-num">5</span>
+                <em class="step-word">支付成功</em>
+            </li>
+        </ul>
+    </div>
+    <!-- step end -->
+<!--订单信息 start-->
+     
+
+    <div class='main_card_t'>
+         <div class='main_card_t_left'>
+              <p class='title'>&lt;优品金蓝双岛巴厘岛6/7日&gt;海边国际五星，金银岛+蓝梦岛，岛上项目免费无限畅玩，lulu SPA，两天半自由活动，黑胡椒螃蟹</p>
+              <div class='subtitle'><span>东南亚-优品 金蓝双岛巴厘岛半自由行5晚7日</span><span class='c2fa6e5'>BJS155972</span></div>
+              <div class='detail'>
+                  <span>订单号：<i>C618580623</i></span>
+                  <span>出发城市：<i>北京</i></span><div class="clear"></div>
+                  <span>出发日期：<i>2017年01月06日</i></span>
+                  <span>出行人数：<i>1成人    0儿童</i></span>
+              </div>
+         </div>
+         <div class='main_card_t_right'>
+              <div class='shop_cart'>
+                  <span class='shopping_cart'>应付金额：</span>
+                  <span class='num'>￥<span class='f24'>6730.00</span></span>
+              </div>
+         </div>
+         <div class='clear'></div>
+    </div>
+
+    <!--订单信息 end-->
+    <form id="formpay" method="post" action="/proc_fourPayNew/" target="_blank" class="pay-tab">  
+          
+        <div class='main_card_m'>
+            <div class='main_card_m_top'><span class='supervise' style="cursor:pointer" onclick="window.open('/quick_pay_listNew')">管理我的快捷支付</span>积分支付</div>
+
+            <div class="bd">
+                <div id="tagPay">
+                    <div id="tagContentBG" class="item">
+                        <div class="item-con">
+                            <ul class="item-details">
+                                <li class="detail-list clearfix dl1">
+                                    <div class="label-box fl">
+                                        <label class="tel-number"><span class="s1">手机号：</span></label>
+                                        <input class="phone input-box" type="tel" name="phone" value="15026753453" maxlength="11" placeholder="请输入您的手机号"
+                                        readonly="value" >
+                                    </div>
+                                    <div class="phone-tips label-tips hide clearfix">
+                                        <p class="p1 fl">请输入11位正确手机号码</p>
+                                    </div>
+                                </li>
+                                <li class="detail-list clearfix dl2">
+                                    <div class="label-box fl">
+                                        <label class="jf-number"><span class="s1">使用积分数量：</span></label>
+                                        <input class="jf input-box" type="tel" name="jf" value="">
+                                    </div>
+                                    <div class="code-btn fl">
+                                        <p class="p1">获取验证码</p>
+                                        <p class="p2 hide">（<i>120</i>）</p>
+                                    </div>
+                                    <div class="jf-tips label-tips hide clearfix">
+                                        <p class="p1 fl">积分不足,请充值</p>
+                                    </div>
+                                </li>
+                                <li class="detail-list clearfix dl3 hide">
+                                    <div class="label-box fl">
+                                        <label class="code-number"><span class="s1">验证码：</span></label>
+                                        <input class="code input-box" type="tel" name="code" value="" maxlength="4">
+                                    </div>
+                                    <div class="code-tips label-tips hide clearfix">
+                                        <p class="p1 fl">请输入正确验证码</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="btn-bg-box">
+                                <input value="立即支付" class="btn-out" type="submit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+     	</div>
+
+    </form>
+
+<!--提示信息Start-->
+<div class='storage'><img src='//r03.uzaicdn.com/content/zhifuv2/images/wait.gif'/>正在确认库存，请稍后......</div>
+<!--提示信息end-->
+<!--付款信息Start-->
+<div class='body_shade'></div>
+<div class='body_shade_show' id="fukuan">
+	<h2>付款确认</h2>
+	<p>完成付款后，请根据您的情况点击下面的按钮</p>
+	<div class='shade_buttom'>
+		<button class='right' onclick="GetPayStatus('N','680623', 'zheng', 'C618580623')">付款不成功，重新支付</button>
+		<button onclick="GetPayStatus('Y','680623', 'zheng', 'C618580623')">已完成付款</button>
+        <button id="youhuiBUtton" onclick="GetPayStatus('YH','680623', 'zheng', 'C618580623')">修改优惠方案及支付方式</button>
+	</div>
+	<a href="javascript:void(0)" class='close'></a>
+</div>
+<div class='body_shade_show' id="youhui">
+	<h2>请修改优惠方案</h2>
+	<p>您选择的优惠方案已不可用，请重新选择优惠方案</p>
+	<div class='shade_buttom'>
+        <button onclick="window.location.href='/proc_youhui/756AB007243974DFF55774DF697BD001'">确定</button>
+	</div>
+	<a href="javascript:void(0)" class='close'></a>
+</div>
+<!--支付渠道不可用的弹窗-->
+<div class='body_shade_show' id="youhui_NO">
+	<h2>请修改优惠方案</h2>
+	<p>您选择的优惠方案仅可在<lable id="lblPlat"></lable>支付，请根据您的情况点击下面的按钮</p>
+	<div class='shade_buttom'>
+        <button onclick="close1()">关闭</button>
+        <button onclick="window.location.href='/proc_youhui/756AB007243974DFF55774DF697BD001'">修改优惠方案及支付方式</button>
+	</div>
+	<a href="javascript:void(0)" class='close' onclick="close1()"></a>
+</div>
+<input type="hidden" id="PageType"  value="1" />
+<input  type="hidden" value='0' id="CheckBankPreferentialId"/>
+<!--付款信息end-->
+
+
+    <!-- <script type='text/javascript' src='//r03.uzaicdn.com/content/zhifuv2/scripts/jquery-1.11.1.min.js?20161115'  ></script> -->
+    <script src="//r03.uzaicdn.com/content/v1/scripts/core.js?v=20161201"></script>
+    <script type='text/javascript' src='//r03.uzaicdn.com/content/zhifuv2/scripts/travel.js?20161115'  ></script>
+    <script type='text/javascript' src='//r03.uzaicdn.com/content/zhifuv2/scripts/fournew_proc.js?20161115'  ></script>
+    <script type='text/javascript' src='//r03.uzaicdn.com/content/yudingv2/scripts/core_new.js?20161115'  ></script>
+    <script type='text/javascript' src='/content/zhifuv2/scripts/pay-bj.js'  ></script>
+</body>
+</html>

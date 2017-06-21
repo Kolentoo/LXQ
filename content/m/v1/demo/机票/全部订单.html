@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" manifest="http://m.uzai.com/manifest/global.appcache">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>全部订单</title>
+    <link href="http://r.uzaicdn.com/content/m/v1/styles/_src/core.css" rel="stylesheet" />
+    <link href="http://r.uzaicdn.com/content/m/v1/styles/tejia/jp.css" rel="stylesheet" />
+    <script src="http://r.uzaicdn.com/content/m/v1/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['http://r.uzaicdn.com/content/m/v1/scripts/core'], function (core) {
+          
+        });
+    </script>
+    <style>
+         .slogon{padding:20px 0}
+      .orders-jp{padding-top:40px;}
+      .orders-jp li{background:#fff;padding:10px;border-bottom:1px solid #ccc;border-top:1px solid #ccc;margin-bottom:10px;}
+      .orders-jp li:first-child{margin-top:0;}
+       .orders-jp li a{position:relative;}
+       .orders-jp li a::after{position:absolute;right:10px;top:50%;margin-top:-3px;height:10px;width:10px;content:" ";border:2px solid #ccc;border-left:0;border-top:0;transform:rotate(-45deg);}
+    </style>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m"><div class="tit">特价机票</div></div>
+            <div class="d-r"></div>
+        </header>
+        <section class="orders-jp">
+           
+            <ul>
+                <li>
+                    <a href="#" class="block">
+                    <div class="d1 clearfix mb5">
+                        <span class="fl">订单编号  SH0099012</span>
+                        <span class="fr f999">2014-06.22</span>
+                    </div>
+                    <div class="d2 clearfix">
+                        <div class="fl mr10">
+                            <img src="/content/m/v1/images/jipiao/j1.jpg" width="119" alt="" />
+                        </div>
+                        <div class="txt">
+                            <div class="p1 f15 f333">[往返] 上海-东京<中国东航MU123465></div>
+                            <div class="p2 f15 orange">￥4000</div>
+                            <div class="p3 f999">10分钟后订单过期</div>
+                            <div class="p4">订单状态：<span class="green">待支付</span></div>
+                        </div>
+                    </div>
+                        </a>
+                </li>
+
+                  <li>
+                      <a href="#" class="block">
+                    <div class="d1 clearfix mb5">
+                        <span class="fl">订单编号  SH0099012</span>
+                        <span class="fr f999">2014-06.22</span>
+                    </div>
+                    <div class="d2 clearfix">
+                        <div class="fl mr10">
+                            <img src="/content/m/v1/images/jipiao/j1.jpg" width="119" alt="" />
+                        </div>
+                        <div class="txt">
+                            <div class="p1 f15 f333"><span class="orange">[往返]</span> 上海-东京<中国东航MU123465></div>
+                            <div class="p2 f15 orange">￥4000</div>
+                            <div class="p4">订单状态：<span class="green">待支付</span></div>
+                        </div>
+                    </div>
+                      </a>
+                </li>
+
+
+            </ul>
+
+            <div class="tc slogon">
+                <img src="/content/m/v1/images/tejia/t3.png" width="122" alt="" class="vm" />
+            </div>
+
+
+        </section>
+    </div>
+</body>
+</html>

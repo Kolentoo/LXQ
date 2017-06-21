@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>悠哉旅游网</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon-precomposed" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-startup-image" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/user/user.css" rel="stylesheet" />
+    <script src="http://r02.uzaicdn.com/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script type="text/javascript">
+        seajs.use(['/content/m/v2/scripts/core','/content/m/v2/scripts/user/user'], function (core, user) {
+            user.init();
+        });
+    </script>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">我的会员卡</div>
+            </div>
+            <div class="d-r">
+            </div>
+        </header>
+        <section class="member-card">
+            <div class="card-num f20"><span class="f999 f15">卡号：</span>12345678900987654</div>
+            <menu class="input-list pt10">
+                <li><input type="password" id="oldPwd" name="oldPwd" placeholder="旧密码（8位数字）" class="textbox f16 g10"></li>
+                <li><input type="password" id="newPwd" name="newPwd" placeholder="新密码（8位数字）" class="textbox f16 g10"></li>
+                <li><input type="password" id="rePwd" name="rePwd" placeholder="再次输入新密码（8位数字）" class="textbox f16 g10"></li>
+            </menu>
+            <ul class="btn-list tc">
+                <li>
+                    <input type="submit" id="j_mcPwdModify" class="btn-item bg-fb9f62 f20 b g10" value="确认修改">
+                    <p class="pt5">友情提示：修改的是会员卡密码不是用户登录密码！</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

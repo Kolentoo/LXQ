@@ -1,0 +1,68 @@
+/*
+* @Author: lichen
+* @Date:   2016-09-18 13:32:34
+* @Last Modified by:   lichen
+* @Last Modified time: 2016-09-30 10:30:51
+*/
+.banner{width: 100%;position: relative;z-index: 0;}
+.con-1{background: url("/content/subject/app-wenquanhuaxue20160918/images/wqhx.02.jpg") no-repeat center center; -webkit-background-size: 100%; background-size: 100%; 
+width: 100%;height: 290.4rem;overflow: hidden;position: relative;}
+.con-1 .con-1-main-1 .con-1-main-1-tit{width: 27.5rem;height: 10.1rem;background: #cb1110;border-radius: 3rem;margin-left: 3rem;text-align: center;overflow: hidden;}
+.con-1 .con-1-main-1 .con-1-main-1-tit img{width: 20.8rem;height: 2.9rem;margin-top: 1.7rem;}
+.con-1-main-1-box{background: #fff url(/content/subject/app-wenquanhuaxue20160918/images/wqhx.04.jpg) no-repeat center bottom;-webkit-background-size: 100%; 
+    background-size: 100%;margin-left: 3rem;width: 68.8rem;height: 43.3rem;border-radius: 2rem;border: 0.1rem solid #cb1110;margin-top: -4rem;}
+.con-1-main-1-box p{color: #93511f;font-size: 2.2rem;margin-top: 1.4rem;padding-left: 2.3rem;padding-right: 2.3rem;}
+.con-1-main-1-box p span{color: #cb1110;}
+.con-1-main-2{position: relative;margin-top: 2.8rem;}
+.con-1-main-2-tit{background: url("/content/subject/app-wenquanhuaxue20160918/images/wqhx.02.png") no-repeat center center; -webkit-background-size: 100%;background-size: 100%;
+width: 50.2rem;height: 12.4rem;margin: 0 auto;}
+.con-1-main-2-box{background: url("/content/subject/app-wenquanhuaxue20160918/images/wqhx.05.jpg") no-repeat center center; -webkit-background-size: 100%;background-size: 100%;
+width: 68.8rem;height: 52.8rem;margin: -4rem auto;overflow: hidden;border:0.1rem solid #cb1110;border-radius: 2rem;}
+.con-1-main-2-box p{font-size: 2.2rem;color: #fff;}
+.con-1-main-2-box .p1{width: 25rem;margin-top: 1.5rem;margin-right: 1rem;line-height: 3rem;}
+.con-1-main-2-box .p2{width: 34rem;margin-top: 32rem;margin-left: 3rem;}
+.con-2-main-box p{font-size: 2.2rem;color: #fff;}
+.con-2-main-box .p1{width: 32rem;margin-left:35.6rem;margin-top: 1.5rem;}
+.con-2-main-box .p2{width: 34rem;margin-left: 2rem;margin-top: 7.8rem;}
+.con-1-main-2 .tp{position: absolute;width: 6.3rem;height: 7.8rem;top: 1rem;left: 46rem;}
+.con-1-main-3{margin-top: 8.2rem;}
+.con-1-main-3 #j_tab .hd{margin: 0 auto;width: 70rem;}
+.con-1-main-3 #j_tab .hd li{background: #cb1110;width: 27.5rem;height: 9rem;border-radius: 2rem;text-align: center;margin-left: 4.5rem;}	
+.con-1-main-3 #j_tab .hd .box-img{width: 10.6rem;height: 3.3rem;background: url(/content/subject/app-wenquanhuaxue20160918/images/wqhx.04.png) no-repeat center center;-webkit-background-size: 100%;background-size: 100%;margin: 0 auto;margin-top: 1.5rem;cursor: pointer;}
+.con-1-main-3 #j_tab .hd .box-imgs{width: 10.6rem;height: 3.3rem;background: url(/content/subject/app-wenquanhuaxue20160918/images/wqhx.06.png) no-repeat center center;-webkit-background-size: 100%;background-size: 100%;margin: 0 auto;margin-top: 1.5rem;cursor: pointer;}
+.con-1-main-3 #j_tab .hd .on .box-img{width: 10.6rem;height: 3.3rem;background: url(/content/subject/app-wenquanhuaxue20160918/images/wqhx.07.png) no-repeat center center;-webkit-background-size: 100%;background-size: 100%;margin: 0 auto;margin-top: 1.5rem;cursor: pointer;}
+.con-1-main-3 #j_tab .hd .on .box-imgs{width: 10.6rem;height: 3.3rem;background: url(/content/subject/app-wenquanhuaxue20160918/images/wqhx.05.png) no-repeat center center;-webkit-background-size: 100%;background-size: 100%;margin: 0 auto;margin-top: 1.5rem;cursor: pointer;}
+.con-1-main-3 #j_tab .bd{width: 68.8rem;border: 0.1rem solid #cb1110;border-radius: 2rem;background: #fff;position: absolute;left: 3rem;top:124rem;padding-bottom: 2rem;}
+.con-1-main-3 #j_tab .bd .item-a{background: url("/content/subject/app-wenquanhuaxue20160918/images/wqhx.06.jpg") no-repeat center top; -webkit-background-size: 100%;background-size: 100%;width: 68.8rem;height: 41.5rem;border-radius: 2rem;overflow: hidden;}
+.con-1-main-3 #j_tab .bd .item-a p{font-size: 2.2rem;color: #93511f;}
+.con-1-main-3 #j_tab .bd .item-a .p1{margin-top: 8rem;margin-left: 3.6rem;}
+.con-1-main-3 #j_tab .bd .item-a .p2{margin-top: 10.2rem;margin-left: 3.6rem;}
+/* .item-b-model{background: url(/content/subject/app-wenquanhuaxue20160918/images/wqhx.07.jpg) no-repeat center center; -webkit-background-size: 100%; background-size: 100%;height: 22.5rem;width: 30rem;text-align: center;margin-left: 3.2rem;} */
+.item-b-model{position: relative;width: 30rem;}
+.item-b-model img{}
+.item-b-model p{font-size: 3rem;color: #fff;width: 100%;}
+.item-b-model .p1{position: absolute;top: 17rem;}
+.item-b-model i{margin-left: 3rem;}
+.item-b-model .p2{position: absolute;top: 17rem;}
+.item-b-model-a{width: 18.6rem;height: 6rem;background: #cb1110;border-radius: 2rem;color: #fff;text-align: center;line-height: 6rem;font-size: 2.2rem;
+margin:1rem auto 0;}
+.item-b-model-a span{font-size: 3.0rem;font-weight: bolder;}
+.item-b-model-c{margin-top: 2.2rem;}
+.item-b-model-c .item-b-model-c-l img{width: 30.4rem;height: 17rem;}
+.item-b-model-c .item-b-model-c-r{margin-left: 4rem;}
+.item-b-model-c .item-b-model-c-r .p1{color: #93511f;font-size: 3.0rem;width: 25rem;}
+.item-b-model-c .item-b-model-c-r .p2{color: #93511f;font-size: 2.0rem;}
+.item-b-model-d{margin-left: 0;}
+.xianlu-more{width: 14.4rem;height: 2.7rem;margin: 1rem auto;}
+.con-2{background: url("/content/subject/app-wenquanhuaxue20160918/images/wqhx.03.jpg") no-repeat center center; -webkit-background-size: 100%; background-size: 100%; 
+width: 100%;overflow: hidden;position: relative;height: 192.5rem;}
+.con-2-tit{width: 39.6rem;height: 9.1rem;background: #cb1110;margin: 0 auto;border-radius: 3rem;text-align: center;margin-top: 1.2rem;}
+.con-2-tit img{width: 32.8rem;height: 4.5rem;margin-top: 1.7rem;}
+.con-2-main{width: 68.8rem;border:0.1rem solid #cb1110;border-radius: 2rem;background: #fff;position: absolute;left: 3rem;top:8rem;padding-bottom: 2rem;}
+.con-2-main-box{background: url(/content/subject/app-wenquanhuaxue20160918/images/wqhx.10.png) no-repeat center center; -webkit-background-size: 100%; background-size: 100%;height: 51.2rem;width: 68.8rem;overflow: hidden;}
+/* .con-2-main-box img{width: 68.8rem;height: 51.2rem;} */
+.con-1-main-3 #j_tab .bd .item-ab{background: url("/content/subject/app-wenquanhuaxue20160918/images/wqhx.11.png") no-repeat center top; -webkit-background-size: 100%;background-size: 100%;width: 68.8rem;height: 41.5rem;border-radius: 2rem 2rem 0 0;overflow: hidden;}
+.item-b .dd-a{margin-top: 33rem;}
+
+.route-box {margin:0 3rem;}
+.item-b-model-l {width: 30rem;}

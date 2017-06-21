@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>收货地址-悠哉旅游网</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon-precomposed" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-startup-image" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/my/my.css" rel="stylesheet" />
+    <script src="http://r02.uzaicdn.com/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script src="http://r.uzaicdn.com/content/libs/plugin/pcas/pcasunzip.js" charset="gb2312" ></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/_src/core', '/content/m/v2/scripts/_src/my/my'], function (core, my) {
+            my.init();
+        });
+    </script>
+    <script>
+        window.onload = function () {
+            new PCAS("province", "city", "area");
+        }
+    </script>
+    <style>
+
+        section { background:#fff;}
+        section li{padding:15px 10px;border-bottom:1px solid #ccc;}
+        section input{background:none;border:none;}
+        section select{margin-right:5px;width:19.5%;}
+
+    </style>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">收货地址</div>
+            </div>
+            <div class="d-r">
+                <span id="j_submitAddress" class="red">确认</span>
+            </div>
+        </header>
+
+        <section class="f16">
+            <ul>
+                <li><span>收件人：</span><input type="text" placeholder="请输入您的姓名" value="" /></li>
+                <li>
+                    <span>省、市、区：</span>
+                    <select name="province"></select>
+                    <select name="city"></select>
+                    <select name="area"></select>
+                </li>
+                <li><span>具体地址：</span><input type="text" placeholder="请填写具体地址" value="" /></li>
+                <li><span>固定电话：</span><input type="text" placeholder="025-666666" value="" /></li>
+                <li><span>手机号码：</span><input type="text" placeholder="手机号码" value="" /></li>
+                <li><span>邮政编码：</span><input type="text" placeholder="邮政编码" value="" /></li>
+            </ul>
+        </section>
+    </div>
+
+    <div id="j_popGetBox" class="pop-get-box">
+        <div class="pop-hd tc"><em class="hd-cont white f20">成功</em></div>
+        <div class="pop-bd">
+            <p class="info-icon tc"><i class="icon-succeed"></i></p>
+            <div class="info-cont f15">将在X-X天工作日内发货，请留意短信提示。</div>
+        </div>
+        <div class="pop-ft tc"><a href="#" class="btn-look f18 g8 j_popClose">查看奖品</a></div>
+    </div>
+
+</body>
+</html>

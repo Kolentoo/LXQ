@@ -1,0 +1,63 @@
+/*
+* @Author: lichen
+* @Date:   2016-08-29 09:31:10
+* @Last Modified by:   lxq
+* @Last Modified time: 2016-09-05 14:17:35
+*/
+.banner{position: relative;}
+.model-cuofeng-a{position: relative;background: #ff0038;padding-bottom: 1.5rem;}
+.bg-t{position: absolute;z-index: 0;}
+.model-main{padding-top: 14.8rem;}
+.model-main-a{width: 67.6rem;border:0.6rem solid #f0ff00;z-index: 1;margin-left: 3rem;background: #ff7200;
+	border-radius: 2rem;padding-bottom: 1.5rem;margin-bottom: 3.5rem;}
+.model-main-a .tp{width: 64.5rem;height: 36.3rem;margin-top: 1.6rem;margin-left: 1.6rem;border-radius: 2rem;}
+.model-main-a .p1{font-size: 3rem;color: #fff;margin-left: 1.6rem;margin-right: 1.6rem;}
+.model-main-a .p2{font-size: 2.8rem;color: #fff;margin-left: 1.6rem;margin-top: 0.6rem;}
+.model-main-a .p3{width: 28rem;height: 5.6rem;background:url(../images/cuofeng01.png) center center no-repeat;-webkit-background-size: 100%;background-size: 100%;
+	line-height:5.6rem;text-align: center;margin-right: 1.6rem;color: #ff0038;font-size: 4rem;font-weight: bolder;}
+.model-main-a .i1 img{width: 1rem;height: 1.1rem;position: absolute;top: 13.7rem;left: 5.2rem;}
+.model-main-a .i2 img{width: 1rem;height: 1.1rem;position: absolute;top: 72.4rem;left: 5.2rem;}
+.model-main-a .tejia1{width: 12.3rem;height: 9rem;position: absolute;top: 13.9rem;left: 6.2rem;}
+.model-main-a .tejia1s{position: absolute;top: 14.6rem;left: 8.8rem;font-size: 3.6rem;color: #ff0038;font-weight: bolder;}
+.model-main-a .tejia2{width: 12.3rem;height: 9rem;position: absolute;top: 72.4rem;left: 6.2rem;}
+.model-main-a .tejia2s{width: 12.3rem;height: 9rem;position: absolute;top: 72.9rem;left: 9.2rem;font-size: 3.6rem;color: #ff0038;font-weight: bolder;}
+.model-cuofeng-b-tit{background: url(../images/cuofeng04.jpg) center center no-repeat;-webkit-background-size: 100%;background-size: 100%;height: 22.2rem;
+	}
+.model-cuofeng-b-tit-a{background: url(../images/cuofeng07.jpg) center center no-repeat;-webkit-background-size: 100%;background-size: 100%;height: 22.2rem;
+	}
+.model-cuofeng-b-tit-b{background: url(../images/cuofeng09.jpg) center center no-repeat;-webkit-background-size: 100%;background-size: 100%;height: 22.2rem;
+	}
+.qiehuan-1{background: #ff7e37;padding-bottom: 5rem;}
+.qiehuan-2{background: #ffe400;padding-bottom: 5rem;}
+.model-cuofeng-b .hd{background: #0185f8;width: 100%;box-shadow: 0.5rem 0.5rem 0.5rem rgba(7,0,2,0.36);}
+.model-cuofeng-b .hd li{float: left;background: #0185f8;line-height: 6.4rem;width: 11.4rem;text-align: center;margin-left: 6rem;height: 6.4rem;font-size: 3.6rem;color: #fff;
+}
+.item-model-top{margin-bottom: 2rem;padding-left: 2.7rem;padding-right: 2.7rem;margin-top: 3.8rem;}
+.item-model-bottom{padding-left: 2.7rem;padding-right: 2.7rem;}
+.item-model{width: 34rem;background: #fff;border-radius: 2rem;margin:0 0.9rem 2rem;}
+.item-model img{width: 32.6rem;height: 18.4rem;border-radius: 2rem;margin-left: 0.7rem;margin-top: 0.7rem;}
+.item-model .p1{font-size: 2.4rem;width: 33.6rem;padding-left: 0.7rem;padding-right: 0.7rem;height: 11rem;overflow: hidden;}
+.item-model .p2 {margin-left: 0.7rem;}
+.item-model .p2 span{color: #ff1975;font-weight: bolder;}
+.item-model .p2 .meiyuan{font-size: 2.6rem;}
+.item-model .p2 .jiage{font-size: 3.6rem;}
+.item-model .p2 .qi{font-size: 2rem;}
+.item-model .p3{color: #fff;font-size: 2.4rem;background: #f93868;width: 15rem;text-align: center;height: 4.5rem;line-height: 4.3rem;border-radius: 3rem;
+	vertical-align: middle;margin:0.3rem 0.7rem 0 0;font-weight: bolder;}
+.bg-a{background: url(../images/cuofeng06.jpg) left center no-repeat;height: 7.6rem;-webkit-background-size: 100%;background-size: 100%;color: #e15000;font-size: 4rem;padding-top: 5rem;padding-left: 30rem;font-weight: bolder;}
+.bg-b{background: url(../images/cuofeng08.jpg) left center no-repeat;height: 7.6rem;-webkit-background-size: 100%;background-size: 100%;color: #e15000;font-size: 4rem;padding-top: 5rem;padding-left: 30rem;font-weight: bolder;}
+.bg-a a{color: #e15000;}
+.bg-b a{color: #e15000;}
+.model-cuofeng-b .hd .on .p1{background: url(../images/cuofeng04.png) center center no-repeat;-webkit-background-size: 100%;background-size: 100%;height: 7.6rem;
+	position: relative;top: -0.6rem;line-height: 7.6rem;}
+	.pro-box {margin:0 auto;width: 72rem;padding-top: 3rem;}
+/* 定位导航 */
+.tp-xu{width: 11.3rem;height: 14.7rem;position: fixed;z-index: 50;top: 73.5rem;right: -5rem;}
+.j_nav{position: fixed;right: 0;top: 84rem;z-index: 50;}
+.j_nav .tp-u{width: 11.3rem;height: 14.7rem;position: absolute;z-index: -1;top: -11rem;right: 3rem;}
+.j_nav li{width: 15.8rem;height: 5.4rem;line-height: 5.4rem;text-align: center;cursor:pointer;background:url(../images/cuofeng06.png) center center no-repeat;
+	margin-bottom: 0.4rem;-webkit-background-size: 100%;background-size: 100%;color:#fff;font-size: 2.6rem;}
+/* .j_nav li .p1 {display: inline-block;width: 100%;color:#fff;font-size: 2.6rem;border-radius: 2rem;} */
+.j_nav .on{color: #ff7e37;background:url(../images/cuofeng07.png) center center no-repeat;-webkit-background-size: 100%;background-size: 100%;}
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>jQuery datePicker </title>
+        <script src="/content/libs/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="jquery.datepicker.js" charset="utf-8"></script>
+        <script src="jquery.datePickerMultiMonth.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="datePicker.css">
+         <script type="text/javascript">
+             $(function () {
+                 $('.date-pick').datePicker({
+                     inline: true,
+                     clickInput: true,
+                     createButton: false,
+                     showYearNavigation:false
+                 }).datePickerMultiMonth({
+                     numMonths:2,
+                 }
+            ).bind('dpMonthChanged', function (event, displayedMonth, displayedYear) {
+                console.log('dpMonthChanged', arguments);
+            }
+            ).bind('dateSelected', function (event, date, $td, status) {
+                console.log('dateSelected', arguments);
+            }).dpSetOffset(20, 0)
+
+             });
+         </script>
+</head>
+
+	<body>
+        <div id="container g12 w" style="width:600px;margin:100px auto;">
+
+            	<input class="date-pick" />&nbsp;&nbsp;&nbsp;<input  class="date-pick" />
+		 
+        </div>
+	</body>
+</html>

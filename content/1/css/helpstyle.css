@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+.help_wrap{width:990px; height:auto; padding-bottom:10px; margin:0 auto; text-align:left; overflow:hidden;}
+.h_title{width:920px; height:29px; background:url(/content/1/image/qa-images/btback.jpg) no-repeat; margin:10px 0; padding-top:15px; padding-left:70px;}
+   .tcn{color:#faa61a; font-size:14px; font-weight:bold;}
+   .ten{color:#fbd391; font-size:18px; font-family:Arial, Helvetica, sans-serif; margin-left:25px;}
+.leftbox{width:240px; height:auto; border:1px solid #D8D8D8;float:left;}
+.rightbox{width:726px; height:atuo; border:1px solid #D8D8D8; float:right; padding:10px 0;}
+   .pbox1{width:240px; height:230px; float:left; border-bottom:1px solid #EAEAEA; border-right:1px solid #EAEAEA;}
+   #b2{border-right:0;}
+   #b3{border-bottom:0;}
+   .h2class{width:200px; height:24px; border-bottom:1px solid #ff9a43; margin:10px auto 0;}
+   .h2class a{color:#ff9a43; font-size:14px;}
+   .h2class a:hover{text-decoration:underline;}
+   .pclass{line-height:20px; color:#808080; width:200px; margin:5px auto;}
+   .pclass a{color:#808080;}
+   .h2class2{width:680px; margin:0 auto; color:#333333; font-size:14px; text-align:center;}
+   .listp1{width:680px; margin:0 auto;}
+     .h3class{font-size:14px; color:#ffa956; line-height:30px; margin-top:10px;}
+	 .h3class1{font-size:14px; color:#FFF; line-height:30px; margin-top:10px; background:#FAA61A; padding-left:14px;}
+	 .pdes{color:#333333; line-height:20px;}
+	 .strongp{font-size:14px; color:#ffa956; font-weight:bold;}
+	 .pdes1{font-size:14px; color:333333; line-height:20px;}	
+ table{border-collapse:collapse;}
+ a.yamei{color:#269ADD;}
+
+ .pages a{display:block; width:50px; height:20px; background:#67C306; color:#fff; float:left; padding-top:10px; padding-left:15px; margin-right:20px;}
+ a#pa01{color:#333;}
+/*-----------------------------MENU STYLE-----------------------------------*/
+#menu {
+  color: #3E3E3E;
+  width: 250px;
+  font-size:14px;
+  position:relative;
+  z-index:2;
+}
+#menulist {
+  margin: 0px auto;
+}
+li.menubar {
+  background: url() no-repeat 0em 0.3em;
+  font-size: 14px;
+  line-height: 1.5em;
+  list-style: none outside;
+}
+.menu1, .submenu {
+  display: none;
+  margin-left: 15px;
+  padding: 0px;
+}
+.submenu1 {
+  display: block;
+  margin-left: 15px;
+  padding: 0px;
+}
+.submenu li {
+  background: url() no-repeat 0em 0.3em;
+  list-style: none outside;
+}
+a.actuator {
+  background:url(/content/1/image/qa-images/icon02_2.jpg) right center no-repeat;
+  font-size: 14px;
+  padding-top:10px;
+  padding-bottom:11px;
+  padding-left:15px;
+  margin-left:9px;
+  text-decoration: none;
+  display:block;
+  width:200px; border-bottom:1px solid #EAEAEA;
+}
+.submenu li a {
+  background:url(/content/1/image/qa-images/icon05.jpg) left no-repeat;
+  font-size: 12px;
+  padding-left: 15px;
+  text-decoration: none;
+  line-height:20px;
+}
+a.actuator:hover, submenu li a:hover {
+  text-decoration:underline;
+  color:#000;
+}
+
+#over_li{background:url(/content/1/image/qa-images/li_redback.jpg) no-repeat;}
+#over_li a{color:#FFF; font-weight:bold;}
+#over_li a:hover{text-decoration:underline; color:#FFF;}
+a#over_a{background:url(/content/1/image/qa-images/icon02.jpg) right center no-repeat; border:0;}
+#over_a img{margin-top:-3px; margin-left:-10px; margin-right:5px;}
+a#newPhonesActuator{background:url(/content/1/image/qa-images/icon03.jpg) left center no-repeat;}
+a#compareActuator{background:url(/content/1/image/qa-images/icon03.jpg) left center no-repeat;}
+#listtop{color:#FAA61A; font-weight:bold;}
+#listtop img{margin-top:-3px; margin-left:-10px; margin-right:5px;}
+#over_sub{font-weight:bold;}
+/*-----------------------------MENU STYLE-----------------------------------*/
+.fn-table{width:100%; border-collapse: collapse;border-spacing: 0; max-width: 100%;}
+.fn-table tr{ line-height:20px;}
+
+.fn-table tr:hover{background:#efefef;}
+.fn-table tr.enable{ background:#ccc; }
+.fn-table th,.fn-table td{border:1px solid #ccc;  padding:8px;}
+.fn-table th{font-size:14px; text-align:center; font-weight:bold; background:#efefef;}
+

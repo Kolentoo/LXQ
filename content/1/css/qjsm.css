@@ -1,0 +1,23 @@
+.qjsm{background:#fff; padding:10px 20px; width:300px; border:1px solid #e4e4e4; font-size:12px; color:#996633; line-height:20px; margin-bottom:10px; font-family:"ËÎÌו";}
+
+.yb{background:#fff; padding:10px 20px; width:500px; height:390px; border:1px solid #e4e4e4;font-size:12px; font-family:"ËÎÌו"; margin-bottom:10px;}
+.ybname{font-size:14px; font-weight:bold; padding-bottom:10px; color:#666666;}
+.yb ul li{line-height:20px; color:#666666;}
+.yb ul li.ybtit{color:#0a86d4;}
+
+
+.ydxx_sll{ width:335px; line-height:18px; color:#333333;}
+
+.colororg{ color:#ff3300;}
+
+
+.txsm,.zjsm{border:1px solid #f8d8ce;
+background-color:#fefff0;
+padding:15px 20px;
+width:450px; margin-bottom:10px; position:absolute;z-index:1; display:none;}
+.smname{font-size:14px; font-weight:bold; color:#FF3300; padding-bottom:5px;}
+.txsm ul li,.zjsm ul li{line-height:20px; color:#996633;}
+#u_a div{left:-300px;top:20px;position:absolute;display:none;}
+#u_a:hover div{left:-300px;top:20px;position:absolute;display:block;}
+
+

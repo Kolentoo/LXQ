@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>悠哉签到页</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="http://r01.uzaicdn.com/content/v1/styles/core.css">
+    <link rel="stylesheet" type="text/css" href="/content/v1/_src/styles/user/signin.css">
+<!--[if lt IE 9]><script src="http://r.uzaicdn.com/content/libs/html5shiv.js"></script><![endif]-->
+<!--[if IE 6]><script src="http://r.uzaicdn.com/content/libs/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script><script>DD_belatedPNG.fix('.png');</script><![endif]-->
+    <script src="//r01.uzaicdn.com/content/v1/scripts/core.js"></script>
+    <script src="//r01.uzaicdn.com/combo/static/base/easing/jquery.easing.1.3.js,Scripts/slidejs/slides.min.jquery.js"></script>
+    <script src="/content/libs/plugin/uzPager/uzPager.min.js"></script>
+    <script src="/content/v1/_src/scripts/user/signin.js" ></script>
+</head>
+<body>
+
+    <!-- j_indexTopAds -->
+
+<div id="j_indexTopAds" class="index-top-ads hide">
+    <a onclick="ga('send', 'event', 'pc', 'click', 'ad_topbanner')" target="_blank" href="http://www.uzai.com/subject/1001#home_top_ad">
+    <img src="http://r.uzaicdn.com/AdvertImageUpload/201508211758361912.jpg"  data-init="http://r.uzaicdn.com/AdvertImageUpload/201508211758361912.jpg" data-hover="http://r.uzaicdn.com/AdvertImageUpload/201508211759141779.jpg" />
+    </a>
+</div>
+
+    <!--top bar start-->
+    <div class="newHeader" data-chunk="global-top" id="j_newHeader">
+        <div class="w clearfix">
+            <!--starting-->
+            <div class="newCity clearfix">
+                <div class="newCity-phone fl">
+                    <a target="_blank" class="icon-common-top" title="下载手机客户端" href="http://www.uzai.com/app/?ly=toplist">下载手机客户端</a>
+                </div>
+            </div>
+            <!--/starting-->
+            <!--login-->
+            <ul class="newMenu">
+                <li class="newMenu-weixin J-newMenu-weixin"><a href="javascript:;" rel="nofollow">+悠哉微信</a>
+                    <div class="newMenu-weixinTip J-newMenu-weixinTip">
+                        <div class="fl newMenu-weixinTip-left">
+                            <p class="newMenu-weixinTip-leftYH">
+                                扫描二维码成为<br />
+                                悠哉旅游网微信好友！
+                            </p>
+                            <div class="clearfix">
+                                <i class="icon-weixin fl icon-common-bulky"></i>
+                                <div class="fl newMenu-weixinTip-leftMsg">
+                                    <p>
+                                        悠哉旅游网微信号：
+                                    </p>
+                                    <p class="uzaiweixin">
+                                        uzai_travel
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fr">
+                            <i class="icon-code icon-common-bulky"></i>
+                        </div>
+                        <span class="arrow f14 songti lh1"><em>◆</em><i>◆</i></span>
+                    </div>
+                </li>
+                <li class="newMenu-order"><a href="http://www.uzai.com/myhistory" target="_blank"
+                    class="" title="最近浏览产品" rel="nofollow">最近浏览产品</a> </li>
+                <li class="verline_gray"></li>
+                <li class="newMenu-order"><a href="http://u.uzai.com/manage/Index" class="" title="我的订单"
+                    rel="nofollow">我的订单</a> </li>
+                <li class="verline_gray"></li>
+                <li class="newMenu-quickreg J-login1">
+                    <div class="newQuickreg clearfix">
+                        <a href="http://u.uzai.com/register" title="注册" rel="nofollow">注册</a>
+                        <a href="http://u.uzai.com/register" class="newMenu-song200 J-quickreg" rel="nofollow">送100U币<i class="arrow-icon">&nbsp;</i></a>
+                    </div>
+                    <div class="newMenu-popUb J-popUb">
+                        <p><b>注册送100U币！</b></p>
+                        <p>U币实际上是悠哉旅游网的抵用券，1个U币相当于1元抵用券。在度假产品订单中，您可以用U币来抵用度假产品限定的金额。比如您有60个U币且预订线路允许抵用30元/人，则每个出行人可以抵用30元现金。</p>
+                        <span class="arrow f14 songti lh1"><em>◆</em><i>◆</i></span>
+                  </div>
+                </li>
+                <li class="newMenu-manage J-newManage J-login"><a href="http://u.uzai.com/manage/Index"
+                    class="newMenu-manage-a J-newManage-a clearfix" rel="nofollow"><i class="i1">我的悠哉</i><i
+                        class="i2"></i></a>
+                    <ul class="newMenu-mytab J-newTab">
+                        <li><a title="我的订单" href="http://u.uzai.com/manage/order" rel="nofollow">我的订单</a></li>
+                        <li><a title="出游点评" href="http://u.uzai.com/manage/tour-record" rel="nofollow">出游点评</a></li>
+                        <li><a title="我的咨询" href="http://u.uzai.com/manage/zixun" rel="nofollow">我的咨询</a></li>
+                        <li><a title="我的收藏" href="http://u.uzai.com/manage/UserCollectionList" class="fn-borBo"
+                            rel="nofollow">我的收藏</a></li>
+                        <li><a title="我的资料" href="http://u.uzai.com/manage/personal-info" rel="nofollow">我的资料</a></li>
+                        <li><a title="会员特权" href="http://u.uzai.com/manage/MembershipPrivileges" rel="nofollow">我的专享</a></li>
+                    </ul>
+                </li>
+                <li class="verline_gray"></li>
+                <li class="newMenu-login J-login1"><a href="http://u.uzai.com/reguser" rel="nofollow">登录</a> </li>
+                <li class="newMenu-weclome J-login"><a href="" class="J-userName" rel="nofollow">cmy</a><span
+                    class="userGrade"><a title="会员" href="javascript:void(0);"  rel="nofollow"><img src="http://r.uzaicdn.com/Content/1/images/icon_vip30.gif"
+                            alt="会员"></a></span> &nbsp;[<a href="http://u.uzai.com/loginout" rel="nofollow">退出</a>]&nbsp;
+                    <div class="userOrderPart2">
+                        <a class="closetip" href="javascript:;" rel="nofollow"></a>
+                        <div class="tip">
+                            <em>◆</em> <span>◆</span>
+                        </div>
+                        <p class="w230">
+                            完成<a href="" class="b" rel="nofollow">手机安全验证</a>后，可<a href="" class="b" rel="nofollow">获得100U币</a>
+                        </p>
+                        <p class="w230">
+                            完成<a href="" class="b" rel="nofollow">邮箱安全验证</a>后，可<a href="" class="b" rel="nofollow">获得100U币</a>
+                        </p>
+                    </div>
+                </li>
+                <li class="verline_gray verline_grayIe6 J-verline"></li>
+            </ul>
+            <!--/login-->
+        </div>
+    </div>
+    <!--top bar end-->
+    <!--j_uzaiTopNotice -->
+
+
+   <div id="j_uzaiTopNotice" data-chunk="uzai-topads" class="hide" data-ck="914">
+        <div class="sad-wrap w">
+            <div class="sad-box tc">
+                <a onclick="ga('send', 'event', 'pc', 'click', 'ad_topbanner')" target="_blank" href="http://www.uzai.com/subject/1001#home_top_ad" class="apic block">
+                    <img src="http://r.uzaicdn.com/AdvertImageUpload/201508211759483426.jpg" class="block g10">
+                </a>
+                <a class="close" href="#">×</a>
+            </div>
+        </div>
+    </div>
+
+    <!--search bar start-->
+    <div class="newTop">
+        <div class="w clearfix">
+            <div class="mt10 fl clearfix">
+                <div class="logo fl" data-chunk="global-logo">
+                    <a href="http://www.uzai.com">
+                        <img title="悠哉旅游网" alt="悠哉旅游网" src="http://r01.uzaicdn.com/content/v1/images/common/logo.png" class="png" />
+                    </a>
+                </div>
+                <div id="J_startCityWrap" class="start-city-wrap fl">
+                    <div class="now-city-bar f666">
+                        <div class="bar-inner clearfix">
+                            <div class="bar-side fl"><i class="icon-location icon-common-top png">&nbsp;</i></div>
+                            <div class="bar-main fl">
+                                <p><em data-id="2" class="start-city-name f14 b">上海</em></p>
+                                <p><span class="change-city f999">[切换]</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="start-city-box">
+                        <dl class="city-items pr10 pl10">
+                            <dt class="first">热门出发城市</dt>
+                            <dd class="hot-city-list">
+                                <a href="http://sh.uzai.com" data-id="2" class="on" >上海</a> <a href="http://bj.uzai.com" data-id="1" >北京</a> <a href="http://cd.uzai.com" data-id="165" >成都</a> <a href="http://nj.uzai.com" data-id="57" >南京</a> <a href="http://gz.uzai.com" data-id="144" >广州</a> <a href="http://hz.uzai.com" data-id="19" >杭州</a>
+                            </dd>
+                            <dd>
+                                <ul class="items-list">
+                                    <li class="clearfix">
+                                        <div class="city-items-hd fl">
+                                            华北
+                                        </div>
+                                        <div class="city-items-bd">
+                                            <a href="http://bj.uzai.com" data-id="1" >北京</a> <a href="http://tj.uzai.com" data-id="3">天津</a> <a href="http://sjz.uzai.com" data-id="8">石家庄</a> <a href="http://ty.uzai.com" data-id="94">太原</a>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="city-items-hd fl">
+                                            东北
+                                        </div>
+                                        <div class="city-items-bd">
+                                            <a href="http://sy.uzai.com" data-id="29" >沈阳</a> <a href="http://dl.uzai.com" data-id="31">大连</a> <a href="http://jl.uzai.com" data-id="258">吉林</a> <a href="http://cc.uzai.com" data-id="257">长春</a>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="city-items-hd fl">
+                                            华东
+                                        </div>
+                                        <div class="city-items-bd">
+                                            <a href="http://sh.uzai.com" data-id="2">上海</a> <a href="http://nj.uzai.com" data-id="57" >南京</a> <a href="http://hz.uzai.com" data-id="19">杭州</a> <a href="http://jn.uzai.com" data-id="115">济南</a> <a href="http://weh.uzai.com" data-id="309">威海</a> <a href="http://nb.uzai.com" data-id="22">宁波</a> <a href="http://wx.uzai.com" data-id="58">无锡</a> <a href="http://nc.uzai.com" data-id="83">南昌</a> <a href="http://nt.uzai.com" data-id="61">南通</a> <a href="http://hf.uzai.com" data-id="238">合肥</a> <a href="http://jh.uzai.com" data-id="27">金华</a> <a href="http://cz.uzai.com" data-id="68">常州</a> <a href="http://fz.uzai.com" data-id="134">福州</a> <a href="http://qz.uzai.com" data-id="138">泉州</a>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="city-items-hd fl">
+                                            华中
+                                        </div>
+                                        <div class="city-items-bd">
+                                            <a href="http://zz.uzai.com" data-id="204">郑州</a> <a href="http://cs.uzai.com" data-id="190">长沙</a> <a href="http://wh.uzai.com" data-id="43">武汉</a>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="city-items-hd fl">
+                                            华南
+                                        </div>
+                                        <div class="city-items-bd">
+                                            <a href="http://gz.uzai.com" data-id="144" >广州</a> <a href="http://xm.uzai.com" data-id="135">厦门</a> <a href="http://sz.uzai.com" data-id="149">深圳</a> <a href="http://nn.uzai.com" data-id="268">南宁</a> <a href="http://hk.uzai.com" data-id="304">海口</a> <a href="http://jm.uzai.com" data-id="310">江门</a>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="city-items-hd fl">
+                                            西南
+                                        </div>
+                                        <div class="city-items-bd">
+                                            <a href="http://cd.uzai.com" data-id="165">成都</a> <a href="http://cq.uzai.com" data-id="4">重庆</a> <a href="http://yic.uzai.com" data-id="51">宜昌</a> <a href="http://gy.uzai.com" data-id="277">贵阳</a> <a href="http://km.uzai.com" data-id="221">昆明</a>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="city-items-hd fl">
+                                            西北
+                                        </div>
+                                        <div class="city-items-bd">
+                                            <a href="http://yc.uzai.com" data-id="253">银川</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="newTop-search">
+                <form action="http://search.uzai.com/sh/search/" method="post" name="indexsearchform" class="clearfix" id="indexsearchform">
+                    <div class="search-box clearfix" data-chunk="global-chooseCity">
+                        <div class="newTop-srhBox fl " id="J_srhBox">
+                            <input type="hidden" value="0" name="travelClassHeader" id="srhInput">
+                            <a class="newTop-srhBoxVal " href="javascript:void(0);" id="J_srhBoxVal">
+                                <em class="city-name">全 部</em>
+                                <span class="arrow arrow-city"><em class="f999">◆</em><i class="white">◆</i></span>
+                            </a>
+                            <ul class="search-type-box J-srhSe">
+                                <li class="on"><a val="0" href="javascript:void(0)">全 部</a></li>
+                                <li><a val="1" href="javascript:void(0)">跟团游</a></li>
+                                <li><a val="3" href="javascript:void(0)">自由行</a></li>
+                                <li><a val="5" href="javascript:void(0)">团队游</a></li>
+                                <li><a val="6" href="javascript:void(0)">邮 轮</a></li>
+                                <li><a val="7" href="javascript:void(0)">签 证</a></li>
+                            </ul>
+                        </div>
+                        <div class="search-destination-wrap fl" id="J_searchDestinationWrap">
+                            <input type="text" autocomplete="off" maxlength="18" id="newSearchkey" value="目的地/关键字"
+                                class="newTop-srh-input" name="searchkey">
+                            <div class="search-city-box search-destination-box" id="J_searchDestinationBox">
+
+                            </div>
+                        </div>
+                        <input type="button" onclick="checksearchkey();" class="newTop-srh-btn white f14 b yahei fr" name="" value="搜索">
+                    </div>
+                </form>
+                <p class="newTop-hotSearchNew" data-chunk="global-search">
+                    <span>热门搜索：</span>
+                </p>
+                <ul class="J-autocomp newTop-autocomp">
+                </ul>
+            </div>
+            <div class="newTop-inter fr">
+                <button onclick="window.open('http://www.uzai.com/app/?ly=cartoon')" title="手机预订，更优惠" class="newTop-interflashbtn">
+                    <img src="http://r01.uzaicdn.com/content/v1/images/common/122x56.gif" />
+                </button>
+            </div>
+            <div title="免长途费，马上拨打电话预订吧！" class="newTop-tel fr">
+                <i class="icon-common-top png"></i>
+
+                    <span class="newTop-teltime">预订热线：8:00~21:00</span>
+
+                <span class="newTop-telnumber">400-000-8888</span>
+            </div>
+        </div>
+    </div>
+    <!--search bar end-->
+    <!--global-nav start-->
+    <div class="global-nav global-nav-sh" id="j_globalNav">
+    <nav class="w clearfix">
+        <div class="nav-menu-box fl" >
+            <div class="nav-menu ">
+
+                <h2 class="nav-menu-hd white f14 tc">
+                    <em class="b">全部旅游产品目的地</em>
+                    <span class="arrow songti lh1"><em>◆</em><i>◆</i></span>
+                </h2>
+                <ul class="menu-list">
+
+                    <li data-chunk="global-daohangBar1" class="menu-item-wrap-1  first">
+
+                        <span class="cover">&nbsp;</span>
+                        <div class="menu-list-item ">
+                            <span class="arrow arrow-right"><em>◆</em><i>◆</i></span>
+                            <dl>
+
+                                <dt class="list-item-"><span class='icon-wrap tc'><i class="menu-sort-icon icon-common-top vm png">&nbsp;</i></span> <a href="http://www.uzai.com/americas/saipan-10635/" target="_blank">
+                                    说走就走</a>
+                                    <span class="icon-tag" style="background: #FE6955"><i>免签落地签</i><em style="border-right: 4px solid #FE6955;"></em></span>
+                                </dt>
+                                <dd>
+
+                                    <a href="http://sh.uzai.com/outbound/thailand-c-11652.html" target="_blank" title="上海到泰国旅游">
+                                        泰国</a>
+
+                                    <a href="http://sh.uzai.com/outbound/southkorea-c-11042.html" target="_blank" title="上海到济州旅游">
+                                        济州</a>
+
+                                    <a href="http://www.uzai.com/americas/saipan-10635/" target="_blank" title="塞班旅游">
+                                        塞班</a>
+
+                                    <a href="http://www.uzai.com/yindu/maldives-11323/" target="_blank" title="马代旅游">
+                                        马代</a>
+
+                                    <a href="http://sh.uzai.com/outbound/phuket-o-11725.html" target="_blank" title="上海到普吉旅游">
+                                        普吉</a>
+
+                                    <a href="http://www.uzai.com/europe/russia-9656/" target="_blank" title="俄罗斯旅游">
+                                        俄罗斯</a>
+
+                                </dd>
+                            </dl>
+                        </div>
+
+                    </li>
+
+                    <li data-chunk="global-daohangBar2" class="menu-item-wrap-2 ">
+
+                        <div class="menu-list-item ">
+                            <span class="arrow arrow-right"><em>◆</em><i>◆</i></span>
+                            <dl>
+
+                                <dt class="list-item-zby"><span class='icon-wrap tc'><i class="menu-sort-icon icon-common-top vm png">&nbsp;</i></span> <a href="http://sh.uzai.com/neartravel/" target="_blank">
+                                    周边游</a>
+
+                                </dt>
+                                <dd>
+
+                                    <a href="http://sh.uzai.com/neartravel/spot-linan-7547.html" target="_blank" title="上海到临安旅游">
+                                        临安</a>
+
+                                    <a href="http://sh.uzai.com/neartravel/spot-lianyungang-3852.html" target="_blank" title="上海到连云港旅游">
+                                        连云港</a>
+
+                                    <a href="http://sh.uzai.com/neartravel/spot-huangshan-31.html" target="_blank" title="上海到黄山旅游">
+                                        黄山</a>
+
+                                    <a href="http://sh.uzai.com/neartravel/spot-taizhou(su)-3971.html" target="_blank" title="上海到泰州旅游">
+                                        泰州</a>
+
+                                    <a href="http://sh.uzai.com/selftrip/zijia/" target="_blank" title="自驾游自助游">
+                                        自驾游</a>
+
+                                    <a href="http://sh.uzai.com/neartravel/spot-wuxi-3915.html" target="_blank" title="上海到无锡旅游">
+                                        无锡</a>
+
+                                </dd>
+                            </dl>
+                        </div>
+
+                    </li>
+
+                    <li data-chunk="global-daohangBar3" class="menu-item-wrap-3 ">
+
+                        <div class="menu-list-item ">
+                            <span class="arrow arrow-right"><em>◆</em><i>◆</i></span>
+                            <dl>
+
+                                <dt class="list-item-gny"><span class='icon-wrap tc'><i class="menu-sort-icon icon-common-top vm png">&nbsp;</i></span> <a href="http://sh.uzai.com/lvyoucn/" target="_blank">
+                                    国内游</a>
+                                    <span class="icon-tag" style="background: #FF9541"><i>特价</i><em style="border-right: 4px solid #FF9541;"></em></span>
+                                </dt>
+                                <dd>
+
+                                    <a href="http://www.uzai.com/dongnan/hainan-2259/" target="_blank" title="海南旅游">
+                                        海南</a>
+
+                                    <a href="http://www.uzai.com/xinan/yunnan-6894/" target="_blank" title="云南旅游">
+                                        云南</a>
+
+                                    <a href="http://www.uzai.com/huabei/beijing-8415/" target="_blank" title="北京旅游">
+                                        北京</a>
+
+                                    <a href="http://www.uzai.com/xinan/sichuan-6030/" target="_blank" title="九寨沟旅游">
+                                        九寨沟</a>
+
+                                    <a href="http://www.uzai.com/zhongbu/hunan-3302/" target="_blank" title="湖南旅游">
+                                        湖南</a>
+
+                                    <a href="http://www.uzai.com/zhongbu/guangxi-1792/" target="_blank" title="桂林旅游">
+                                        桂林</a>
+
+                                </dd>
+                            </dl>
+                        </div>
+
+                    </li>
+
+                    <li data-chunk="global-daohangBar4" class="menu-item-wrap-4 ">
+
+                        <div class="menu-list-item ">
+                            <span class="arrow arrow-right"><em>◆</em><i>◆</i></span>
+                            <dl>
+
+                                <dt class="list-item-"><span class='icon-wrap tc'><i class="menu-sort-icon icon-common-top vm png">&nbsp;</i></span> <a href="http://sh.uzai.com/outbound/europe/" target="_blank">
+                                    欧洲</a>
+
+                                </dt>
+                                <dd>
+
+                                    <a href="http://www.uzai.com/europe/switzerland-9735/" target="_blank" title="瑞士旅游">
+                                        瑞士</a>
+
+                                    <a href="http://www.uzai.com/europe/italy-10131/" target="_blank" title="意大利旅游">
+                                        意大利</a>
+
+                                    <a href="http://www.uzai.com/europe/greece-10097/" target="_blank" title="希腊旅游">
+                                        希腊</a>
+
+                                    <a href="http://www.uzai.com/europe/france-9423/" target="_blank" title="法国旅游">
+                                        法国</a>
+
+                                    <a href="http://www.uzai.com/europe/great_britain-10232/" target="_blank" title="英国旅游">
+                                        英国</a>
+
+                                    <a href="http://www.uzai.com/europe/russia-9656/" target="_blank" title="俄罗斯旅游">
+                                        俄罗斯</a>
+
+                                </dd>
+                            </dl>
+                        </div>
+
+                    </li>
+
+                    <li data-chunk="global-daohangBar5" class="menu-item-wrap-5 ">
+
+                        <div class="menu-list-item ">
+                            <span class="arrow arrow-right"><em>◆</em><i>◆</i></span>
+                            <dl>
+
+                                <dt class="list-item-yl"><span class='icon-wrap tc'><i class="menu-sort-icon icon-common-top vm png">&nbsp;</i></span> <a href="http://www.uzai.com/youlun" target="_blank">
+                                    邮轮</a>
+
+                                </dt>
+                                <dd>
+
+                                    <a href="http://search.uzai.com/sh/SearchResult?keyword=%25e6%2597%25a5%25e9%259f%25a9%25e9%2582%25ae%25e8%25bd%25ae" target="_blank" title="日韩邮轮旅游">
+                                        日韩邮轮</a>
+
+                                    <a href="http://sh.uzai.com/outbound/europe/search-z635.html" target="_blank" title="上海到欧洲邮轮旅游">
+                                        欧洲邮轮</a>
+
+                                    <a href="http://sh.uzai.com/lvyoucn/sanxia-l-3269.html" target="_blank" title="上海到三峡邮轮旅游">
+                                        三峡邮轮</a>
+
+                                </dd>
+                            </dl>
+                        </div>
+
+                    </li>
+
+                    <li data-chunk="global-daohangBar6" class="menu-item-wrap-6 ">
+
+                        <div class="menu-list-item ">
+                            <span class="arrow arrow-right"><em>◆</em><i>◆</i></span>
+                            <dl>
+
+                                <dt class="list-item-"><span class='icon-wrap tc'><i class="menu-sort-icon icon-common-top vm png">&nbsp;</i></span> <a href="http://www.uzai.com/rihan/japan-11414/" target="_blank">
+                                    日本</a>
+
+                                    <a href="http://www.uzai.com/rihan/southkorea-11042/" target="_blank">
+                                        韩国</a>
+
+                                    <a href="http://www.uzai.com/gangaotai/" target="_blank">
+                                        港澳台</a>
+                                    <span class="icon-tag" style="background: #F15698"><i>热卖</i><em style="border-right: 4px solid #F15698;"></em></span>
+                                </dt>
+                                <dd>
+
+                                    <a href="http://www.uzai.com/rihan/tokyo-11415/" target="_blank" title="东京旅游">
+                                        东京</a>
+
+                                    <a href="http://www.uzai.com/rihan/hokkaido-12107/" target="_blank" title="北海道旅游">
+                                        北海道</a>
+
+                                    <a href="http://www.uzai.com/rihan/okinawa-11498/" target="_blank" title="冲绳旅游">
+                                        冲绳</a>
+
+                                    <a href="http://www.uzai.com/rihan/seoul-11043/" target="_blank" title="首尔旅游">
+                                        首尔</a>
+
+                                    <a href="http://www.uzai.com/rihan/chejudoisland-11120/" target="_blank" title="济州旅游">
+                                        济州</a>
+
+                                    <a href="http://sh.uzai.com/outbound/jyd-o-17763.html" target="_blank" title="上海到江原道旅游">
+                                        江原道</a>
+
+                                </dd>
+                            </dl>
+                        </div>
+
+                    </li>
+
+                    <li data-chunk="global-daohangBar7" class="menu-item-wrap-7 ">
+
+                        <div class="menu-list-item ">
+                            <span class="arrow arrow-right"><em>◆</em><i>◆</i></span>
+                            <dl>
+
+                                <dt class="list-item-"><span class='icon-wrap tc'><i class="menu-sort-icon icon-common-top vm png">&nbsp;</i></span> <a href="http://sh.uzai.com/outbound/dongnanya/" target="_blank">
+                                    东南亚</a>
+
+                                    <a href="http://www.uzai.com/yindu/" target="_blank">
+                                        南亚</a>
+
+                                    <a href="http://www.uzai.com/subject/haidao" target="_blank">
+                                        海岛</a>
+
+                                </dt>
+                                <dd>
+
+                                    <a href="http://www.uzai.com/yindu/maldives-11323/" target="_blank" title="马尔代夫旅游">
+                                        马尔代夫</a>
+
+                                    <a href="http://sh.uzai.com/outbound/phuket-o-11725-search-t1.html" target="_blank" title="上海到普吉岛旅游">
+                                        普吉岛</a>
+
+                                    <a href="http://www.uzai.com/dongnanya/bali-12000/" target="_blank" title="巴厘岛旅游">
+                                        巴厘岛</a>
+
+                                    <a href="http://www.uzai.com/americas/saipan-10635/" target="_blank" title="塞班旅游">
+                                        塞班</a>
+
+                                    <a href="http://www.uzai.com/dongnanya/thailand-11652/" target="_blank" title="泰国旅游">
+                                        泰国</a>
+
+                                </dd>
+                            </dl>
+                        </div>
+
+                    </li>
+
+                    <li data-chunk="global-daohangBar8" class="menu-item-wrap-8 ">
+
+                        <div class="menu-list-item ">
+                            <span class="arrow arrow-right"><em>◆</em><i>◆</i></span>
+                            <dl>
+
+                                <dt class="list-item-"><span class='icon-wrap tc'><i class="menu-sort-icon icon-common-top vm png">&nbsp;</i></span> <a href="http://sh.uzai.com/outbound/aoxin/" target="_blank">
+                                    澳洲</a>
+
+                                    <a href="http://sh.uzai.com/outbound/americas/" target="_blank">
+                                        美洲</a>
+
+                                    <a href="http://www.uzai.com/africa/" target="_blank">
+                                        中东非</a>
+
+                                </dt>
+                                <dd>
+
+                                    <a href="http://www.uzai.com/aoxin/australia-10762/" target="_blank" title="澳大利亚旅游">
+                                        澳大利亚</a>
+
+                                    <a href="http://www.uzai.com/aoxin/newzealand-10896/" target="_blank" title="新西兰旅游">
+                                        新西兰</a>
+
+                                    <a href="http://www.uzai.com/africa/united_arad_emirater-10961/" target="_blank" title="阿联酋旅游">
+                                        阿联酋</a>
+
+                                </dd>
+                            </dl>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <ul class="nav-bar f14 b tc yahei clearfix" data-chunk="global-daohang">
+
+            <li>
+                <a class="nav-item " href="http://sh.uzai.com">首页
+                    </a>
+            </li>
+
+            <li class="">
+                <div class="sub-nav w">
+                    <ul class="sub-nav-list sub-nav-list-2 clearfix">
+
+                        <li  class="first" >
+                            <a href="http://sh.uzai.com/outbound/"><em>出境游</em></a>
+                        </li>
+
+                        <li >
+                            <a href="http://sh.uzai.com/lvyoucn/"><em>国内游</em></a>
+                        </li>
+
+                        <li  class="last" >
+                            <a href="http://sh.uzai.com/neartravel/"><em>周边游</em></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="mask">&nbsp;</div>
+                <a href="#1" class="nav-item on">跟团游<i class="tril">&nbsp;</i></a>
+            </li>
+
+
+            <li class="">
+                <div class="sub-nav w">
+                    <ul class="sub-nav-list sub-nav-list-3 clearfix">
+
+                        <li  class="first" >
+                            <a href="http://sh.uzai.com/selftrip/chujing/"><em>出境自由行</em></a>
+                        </li>
+
+                        <li >
+                            <a href="http://sh.uzai.com/selftrip/guonei/"><em>国内自由行</em></a>
+                        </li>
+
+                        <li >
+                            <a href="http://sh.uzai.com/selftrip/zijia/"><em>自驾游</em></a>
+                        </li>
+
+                        <li >
+                            <a href="http://www.uzai.com/hotelpackages"><em>酒店套餐</em></a>
+                        </li>
+
+                        <li >
+                            <a href="http://www.uzai.com/Clubmed"><em>ClubMed</em></a>
+                        </li>
+
+                        <li >
+                            <a href="http://www.uzai.com/zuche"><em>租车</em></a>
+                        </li>
+
+                        <li  class="last" >
+                            <a href="http://www.uzai.com/visa/"><em>签证</em></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="mask">&nbsp;</div>
+                <a href="#1" class="nav-item ">自由行<i class="tril">&nbsp;</i><i class='newNav-tui'></i></a>
+            </li>
+
+
+            <li>
+                <a class="nav-item " href="http://www.uzai.com/youlun">邮轮
+                    <i class='newNav-cu'></i></a>
+            </li>
+
+            <li>
+                <a class="nav-item " href="http://sh.uzai.com/outbound/europe/">欧洲
+                    <i class='newNav-hot'></i></a>
+            </li>
+
+            <li>
+                <a class="nav-item " href="http://www.uzai.com/company/">团队游
+                    </a>
+            </li>
+
+            <li>
+                <a class="nav-item " href="http://www.uzai.com/subject/tejia">特卖会
+                    </a>
+            </li>
+
+            <li>
+                <a class="nav-item " href="http://sijia.uzai.com/">私家团
+                    <i class='newNav-new'></i></a>
+            </li>
+
+        </ul>
+    </nav>
+    </div>
+    <!--global-nav end-->
+
+    <div class="signin w">
+        <div class="signin-banner">
+            <div class="banner-sides" id="j_bannerSlides">
+                <div class="slides_container">
+                    <a href="" class="slide-item block" style="background-image: url(/content/v1/images/signin/signin-banner1.jpg);"></a>
+                    <a href="" class="slide-item block" style="background-image: url(/content/v1/images/signin/signin-banner2.jpg);"></a>
+                    <a href="" class="slide-item block" style="background-image: url(/content/v1/images/signin/signin-banner3.jpg);"></a>
+                    <a href="" class="slide-item block" style="background-image: url(/content/v1/images/signin/signin-banner4.jpg);"></a>
+                    <a href="" class="slide-item block" style="background-image: url(/content/v1/images/signin/signin-banner5.jpg);"></a>
+                </div>
+            </div>
+            <div class="signin-login f333 png">
+                <div class="head-portrait tc"><img class="vm" src="/content/v1/images/signin/signin11.png" alt=""></div>
+                <p class="p1 f14 tc">您当前未登录，请先<a href="">登陆</a></p>
+                <p class="p1 f14 tc hide">您好！<i>uzai123456</i>，欢迎回来！</p>
+                <p class="p2 f14 tc">当前可用：--</p>
+                <p class="p2 f14 tc hide">当前可用：<i>30U点</i></p>
+                <p class="p3 f18 tc pointer">今日签到送5U点</p>
+                <p class="p3 f18 tc hide">明日签到可得10U点</p>
+                <p class="p4 f999 tc"><span class="s1">查看U点兑换纪录</span></p>
+            </div>
+
+            <div class="signin-login f333 signined hide png">
+                <div class="head-portrait tc"><img class="vm" src="/content/v1/images/signin/signin11.png" alt=""></div>
+                <p class="p1 f14 tc">您好！<i>uzai123456</i>，欢迎回来！</p>
+                <p class="p2 f14 tc">当前可用：<i>30U点</i></p>
+                <p class="p3 f18 tc pointer">今日签到送5U点</p>
+                <p class="p3 f18 tc hide">明日签到可得10U点</p>
+                <p class="p4 f999 tc"><a href="">查看U点兑换纪录</a></p>
+            </div>
+
+            <div class="signin-login f333 receive hide png">
+                <div class="head-portrait tc"><img class="vm" src="/content/v1/images/signin/signin11.png" alt=""></div>
+                <p class="p1 f14 tc ">您好！<i>uzai123456</i>，欢迎回来！</p>
+                <p class="p2 f14 tc ">当前可用：<i>30U点</i></p>
+                <p class="p3 f18 tc pointer">明日签到可得10U点</p>
+                <p class="p4 f999 tc"><a href="">查看U点兑换纪录</a></p>
+            </div>
+
+        </div>
+
+        <div class="signin-con clearfix">
+
+            <div class="exchange fl">
+                <div class="j_tab clearfix">
+                    <p class="exchange-topic f18 fl">商品兑换</p>
+                    <ul class="hd fr f14 clearfix exchange-list">
+                        <li class="fl on pointer">全部<i class="choose"></i>
+                        </li>
+                        <li class="fl pointer">实物<i class="choose"></i></li>
+                        <li class="fl pointer">优惠券<i class="choose"></i></li>
+                    </ul>
+                    <div class="bd exchange-con fl" id="j_exchange">
+                        <div class="item">
+                            <div class="item-con pager-target-node">
+                                <ul class="pro-box clearfix pro-box1">
+                                    <li class="pro-list fl">
+                                        <div class="chart">
+                                            <img class="g10" src="/content/v1/images/signin/signin2.jpg" alt="">
+                                            <div class="code-box tc">
+                                                <img class="" src="/content/v1/images/signin/signin9.jpg" alt="">
+                                                <p class="txt tc f14">使用悠哉旅游APP扫描二维码兑换奖品</p>
+                                            </div>
+                                        </div>
+                                        <a class="name f16" title="Iphone6s 比大更大Iphone6s 比大更大" href="">Iphone6s 比大更大Iphone6s 比大更大Iphone6s 比大更大</a>
+                                        <div class="number f666">
+                                            <span class="s1">已兑换：<i>399</i>个</span>
+                                            <span class="s2">剩余：<i>19</i>个</span>
+                                        </div>
+                                        <div class="price clearfix">
+                                            <p class="p1 fl f333">所需：<i>40000U点</i></p>
+                                            <p class="p2 fr f666"><del>￥39999</del></p>
+                                        </div>
+                                    </li>
+                                    <li class="pro-list fl">
+                                        <div class="chart">
+                                            <img class="g10" src="/content/v1/images/signin/signin3.jpg" alt="">
+                                            <div class="code-box tc">
+                                                <img class="" src="/content/v1/images/signin/signin9.jpg" alt="">
+                                                <p class="txt tc f14">使用悠哉旅游APP扫描二维码兑换奖品</p>
+                                            </div>
+                                        </div>
+                                        <a class="name f16" title="Iphone6s 比大更大Iphone6s 比大更大" href="">外星人笔记本</a>
+                                        <div class="number f666">
+                                            <span class="s1">已兑换：<i>399</i>个</span>
+                                            <span class="s2">剩余：<i>19</i>个</span>
+                                        </div>
+                                        <div class="price clearfix">
+                                            <p class="p1 fl f333">所需：<i>4000U点</i></p>
+                                            <p class="p2 fr f666"><del>￥399</del></p>
+                                        </div>
+                                    </li>
+                                    <li class="pro-list fl last">
+                                        <div class="chart">
+                                            <img class="g10" src="/content/v1/images/signin/signin4.jpg" alt="">
+                                            <div class="code-box tc">
+                                                <img class="" src="/content/v1/images/signin/signin9.jpg" alt="">
+                                                <p class="txt tc f14">使用悠哉旅游APP扫描二维码兑换奖品</p>
+                                            </div>
+                                        </div>
+                                        <a class="name f16" title="Iphone6s 比大更大Iphone6s 比大更大" href="">Insfree 爽肤水</a>
+                                        <div class="number f666">
+                                            <span class="s1">已兑换：<i>399</i>个</span>
+                                            <span class="s2">剩余：<i>19</i>个</span>
+                                        </div>
+                                        <div class="price clearfix">
+                                            <p class="p1 fl f333">所需：<i>4000U点</i></p>
+                                            <p class="p2 fr f666"><del>￥399</del></p>
+                                        </div>
+                                    </li>
+                                    <li class="pro-list fl">
+                                        <div class="chart">
+                                            <img class="g10" src="/content/v1/images/signin/signin5.jpg" alt="">
+                                            <div class="code-box tc">
+                                                <img class="" src="/content/v1/images/signin/signin9.jpg" alt="">
+                                                <p class="txt tc f14">使用悠哉旅游APP扫描二维码兑换奖品</p>
+                                            </div>
+                                        </div>
+                                        <a class="name f16" title="Iphone6s 比大更大Iphone6s 比大更大" href="">大白布偶</a>
+                                        <div class="number f666">
+                                            <span class="s1">已兑换：<i>399</i>个</span>
+                                            <span class="s2">剩余：<i>19</i>个</span>
+                                        </div>
+                                        <div class="price clearfix">
+                                            <p class="p1 fl f333">所需：<i>4000U点</i></p>
+                                            <p class="p2 fr f666"><del>￥399</del></p>
+                                        </div>
+                                    </li>
+                                    <li class="pro-list fl">
+                                        <div class="chart">
+                                            <img class="g10" src="/content/v1/images/signin/signin6.jpg" alt="">
+                                            <div class="code-box tc">
+                                                <img class="" src="/content/v1/images/signin/signin9.jpg" alt="">
+                                                <p class="txt tc f14">使用悠哉旅游APP扫描二维码兑换奖品</p>
+                                            </div>
+                                        </div>
+                                        <a class="name f16" title="Iphone6s 比大更大Iphone6s 比大更大" href="">div多肉植物</a>
+                                        <div class="number f666">
+                                            <span class="s1">已兑换：<i>399</i>个</span>
+                                            <span class="s2">剩余：<i>19</i>个</span>
+                                        </div>
+                                        <div class="price clearfix">
+                                            <p class="p1 fl f333">所需：<i>4000U点</i></p>
+                                            <p class="p2 fr f666"><del>￥399</del></p>
+                                        </div>
+                                    </li>
+                                    <li class="pro-list fl last">
+                                        <div class="chart">
+                                            <img class="g10" src="/content/v1/images/signin/signin7.jpg" alt="">
+                                            <div class="code-box tc">
+                                                <img class="" src="/content/v1/images/signin/signin9.jpg" alt="">
+                                                <p class="txt tc f14">使用悠哉旅游APP扫描二维码兑换奖品</p>
+                                            </div>
+                                        </div>
+                                        <a class="name f16" title="Iphone6s 比大更大Iphone6s 比大更大" href="">Iphone6s 比大更大</a>
+                                        <div class="number f666">
+                                            <span class="s1">已兑换：<i>399</i>个</span>
+                                            <span class="s2">剩余：<i>19</i>个</span>
+                                        </div>
+                                        <div class="price clearfix">
+                                            <p class="p1 fl f333">所需：<i>4000U点</i></p>
+                                            <p class="p2 fr f666"><del>￥399</del></p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <ul class="pro-box pro-box2 clearfix">
+                                    <li class="pro-list fl png">
+                                        <div class="list1">
+                                            <p class="p1 f24 b"><span class="s1">20元</span>优惠券</p>
+                                            <p class="p2 f14">全场满250元减10元</p>
+                                            <p class="p3 f14">所需U点：<i class="f18 b">200U点</i></p>
+                                        </div>
+                                        <div class="list2 tc">
+                                            <div class="p5">
+                                                <span class="swap">
+                                                    <span class="s1 f16 pointer">立即兑换</span>
+                                                    <i class="s2 songti b pointer">&gt;</i>
+                                                </span>
+                                                <span class="s3 pointer">使用说明</span>
+                                            </div>
+                                            <div class="use-tips hide">
+                                                <p class="use-txt">
+                                                    使用说明：圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣
+                                                </p>
+                                                <div class="tips-arrow songti">
+                                                    <em>▲</em>
+                                                    <i>▲</i>
+                                                </div>
+                                            </div>
+                                            <p class="p6">使用截至日期：2016年01月01日</p>
+                                        </div>
+                                    </li>
+
+                                    <li class="pro-list fl png">
+                                        <div class="list1">
+                                            <p class="p1 f24 b"><span class="s1">20元</span>优惠券</p>
+                                            <p class="p2 f14">全场满250元减10元</p>
+                                            <p class="p3 f14">所需U点：<i class="f18 b">200U点</i></p>
+                                        </div>
+                                        <div class="list2 tc">
+                                            <div class="p5">
+                                                <span class="swap">
+                                                    <span class="s1 f16 pointer">立即兑换</span>
+                                                    <i class="s2 songti b pointer">&gt;</i>
+                                                </span>
+                                                <span class="s3 pointer">使用说明</span>
+                                            </div>
+                                            <div class="use-tips hide">
+                                                <p class="use-txt">
+                                                    使用说明：圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣
+                                                </p>
+                                                <div class="tips-arrow songti">
+                                                    <em>▲</em>
+                                                    <i>▲</i>
+                                                </div>
+                                            </div>
+                                            <p class="p6">使用截至日期：2016年01月01日</p>
+                                        </div>
+                                    </li>
+
+                                    <li class="pro-list fl png last">
+                                        <div class="list1">
+                                            <p class="p1 f24 b"><span class="s1">20元</span>优惠券</p>
+                                            <p class="p2 f14">全场满250元减10元</p>
+                                            <p class="p3 f14">所需U点：<i class="f18 b">200U点</i></p>
+                                        </div>
+                                        <div class="list2 tc">
+                                            <div class="p5">
+                                                <span class="swap">
+                                                    <span class="s1 f16 pointer">立即兑换</span>
+                                                    <i class="s2 songti b pointer">&gt;</i>
+                                                </span>
+                                                <span class="s3 pointer">使用说明</span>
+                                            </div>
+                                            <div class="use-tips hide">
+                                                <p class="use-txt">
+                                                    使用说明：圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣
+                                                </p>
+                                                <div class="tips-arrow songti">
+                                                    <em>▲</em>
+                                                    <i>▲</i>
+                                                </div>
+                                            </div>
+                                            <p class="p6">使用截至日期：2016年01月01日</p>
+                                        </div>
+                                    </li>
+
+                                    <li class="pro-list fl png">
+                                        <div class="list1">
+                                            <p class="p1 f24 b"><span class="s1">20元</span>优惠券</p>
+                                            <p class="p2 f14">全场满250元减10元</p>
+                                            <p class="p3 f14">所需U点：<i class="f18 b">200U点</i></p>
+                                        </div>
+                                        <div class="list2 tc">
+                                            <div class="p5">
+                                                <span class="swap">
+                                                    <span class="s1 f16 pointer">立即兑换</span>
+                                                    <i class="s2 songti b pointer">&gt;</i>
+                                                </span>
+                                                <span class="s3 pointer">使用说明</span>
+                                            </div>
+                                            <div class="use-tips hide">
+                                                <p class="use-txt">
+                                                    使用说明：圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣
+                                                </p>
+                                                <div class="tips-arrow songti">
+                                                    <em>▲</em>
+                                                    <i>▲</i>
+                                                </div>
+                                            </div>
+                                            <p class="p6">使用截至日期：2016年01月01日</p>
+                                        </div>
+                                    </li>
+
+                                    <li class="pro-list fl png">
+                                        <div class="list1">
+                                            <p class="p1 f24 b"><span class="s1">20元</span>优惠券</p>
+                                            <p class="p2 f14">全场满250元减10元</p>
+                                            <p class="p3 f14">所需U点：<i class="f18 b">200U点</i></p>
+                                        </div>
+                                        <div class="list2 tc">
+                                            <div class="p5">
+                                                <span class="swap">
+                                                    <span class="s1 f16 pointer">立即兑换</span>
+                                                    <i class="s2 songti b pointer">&gt;</i>
+                                                </span>
+                                                <span class="s3 pointer">使用说明</span>
+                                            </div>
+                                            <div class="use-tips hide">
+                                                <p class="use-txt">
+                                                    使用说明：圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣
+                                                </p>
+                                                <div class="tips-arrow songti">
+                                                    <em>▲</em>
+                                                    <i>▲</i>
+                                                </div>
+                                            </div>
+                                            <p class="p6">使用截至日期：2016年01月01日</p>
+                                        </div>
+                                    </li>
+
+                                    <li class="pro-list fl png last">
+                                        <div class="list1">
+                                            <p class="p1 f24 b"><span class="s1">20元</span>优惠券</p>
+                                            <p class="p2 f14">全场满250元减10元</p>
+                                            <p class="p3 f14">所需U点：<i class="f18 b">200U点</i></p>
+                                        </div>
+                                        <div class="list2 tc">
+                                            <div class="p5">
+                                                <span class="swap">
+                                                    <span class="s1 f16 pointer">立即兑换</span>
+                                                    <i class="s2 songti b pointer">&gt;</i>
+                                                </span>
+                                                <span class="s3 pointer">使用说明</span>
+                                            </div>
+                                            <div class="use-tips hide">
+                                                <p class="use-txt">
+                                                    使用说明：圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣
+                                                </p>
+                                                <div class="tips-arrow songti">
+                                                    <em>▲</em>
+                                                    <i>▲</i>
+                                                </div>
+                                            </div>
+                                            <p class="p6">使用截至日期：2016年01月01日</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div data-pagesize="9" data-counts="18" class="fn-pager">
+                            </div>
+                        </div>
+                        <div class="item hide">
+                            <ul class="pro-box clearfix pro-box1 pager-target-node item-con">
+                                <li class="pro-list fl">
+                                    <div class="chart">
+                                        <img class="g10" src="/content/v1/images/signin/signin2.jpg" alt="">
+                                        <div class="code-box tc">
+                                            <img class="" src="/content/v1/images/signin/signin9.jpg" alt="">
+                                            <p class="txt tc f14">使用悠哉旅游APP扫描二维码兑换奖品</p>
+                                        </div>
+                                    </div>
+                                    <a class="name f16" title="Iphone6s 比大更大Iphone6s 比大更大" href="">Iphone6s 比大更大</a>
+                                    <div class="number f666">
+                                        <span class="s1">已兑换：<i>399</i>个</span>
+                                        <span class="s2">剩余：<i>19</i>个</span>
+                                    </div>
+                                    <div class="price clearfix">
+                                        <p class="p1 fl f333">所需：<i>4000U点</i></p>
+                                        <p class="p2 fr f666"><del>￥399</del></p>
+                                    </div>
+                                </li>
+                                <li class="pro-list fl">
+                                    <div class="chart">
+                                        <img class="g10" src="/content/v1/images/signin/signin3.jpg" alt="">
+                                        <div class="code-box tc">
+                                            <img class="" src="/content/v1/images/signin/signin9.jpg" alt="">
+                                            <p class="txt tc f14">使用悠哉旅游APP扫描二维码兑换奖品</p>
+                                        </div>
+                                    </div>
+                                    <a class="name f16" title="Iphone6s 比大更大Iphone6s 比大更大" href="">外星人笔记本</a>
+                                    <div class="number f666">
+                                        <span class="s1">已兑换：<i>399</i>个</span>
+                                        <span class="s2">剩余：<i>19</i>个</span>
+                                    </div>
+                                    <div class="price clearfix">
+                                        <p class="p1 fl f333">所需：<i>4000U点</i></p>
+                                        <p class="p2 fr f666"><del>￥399</del></p>
+                                    </div>
+                                </li>
+                                <li class="pro-list fl last">
+                                    <div class="chart">
+                                        <img class="g10" src="/content/v1/images/signin/signin4.jpg" alt="">
+                                        <div class="code-box tc">
+                                            <img class="" src="/content/v1/images/signin/signin9.jpg" alt="">
+                                            <p class="txt tc f14">使用悠哉旅游APP扫描二维码兑换奖品</p>
+                                        </div>
+                                    </div>
+                                    <a class="name f16" title="Iphone6s 比大更大Iphone6s 比大更大" href="">Insfree 爽肤水</a>
+                                    <div class="number f666">
+                                        <span class="s1">已兑换：<i>399</i>个</span>
+                                        <span class="s2">剩余：<i>19</i>个</span>
+                                    </div>
+                                    <div class="price clearfix">
+                                        <p class="p1 fl f333">所需：<i>4000U点</i></p>
+                                        <p class="p2 fr f666"><del>￥399</del></p>
+                                    </div>
+                                </li>
+                                <li class="pro-list fl">
+                                    <div class="chart">
+                                        <img class="g10" src="/content/v1/images/signin/signin5.jpg" alt="">
+                                        <div class="code-box tc">
+                                            <img class="" src="/content/v1/images/signin/signin9.jpg" alt="">
+                                            <p class="txt tc f14">使用悠哉旅游APP扫描二维码兑换奖品</p>
+                                        </div>
+                                    </div>
+                                    <a class="name f16" title="Iphone6s 比大更大Iphone6s 比大更大" href="">大白布偶</a>
+                                    <div class="number f666">
+                                        <span class="s1">已兑换：<i>399</i>个</span>
+                                        <span class="s2">剩余：<i>19</i>个</span>
+                                    </div>
+                                    <div class="price clearfix">
+                                        <p class="p1 fl f333">所需：<i>4000U点</i></p>
+                                        <p class="p2 fr f666"><del>￥399</del></p>
+                                    </div>
+                                </li>
+                                <li class="pro-list fl">
+                                    <div class="chart">
+                                        <img class="g10" src="/content/v1/images/signin/signin6.jpg" alt="">
+                                        <div class="code-box tc">
+                                            <img class="" src="/content/v1/images/signin/signin9.jpg" alt="">
+                                            <p class="txt tc f14">使用悠哉旅游APP扫描二维码兑换奖品</p>
+                                        </div>
+                                    </div>
+                                    <a class="name f16" title="Iphone6s 比大更大Iphone6s 比大更大" href="">div多肉植物</a>
+                                    <div class="number f666">
+                                        <span class="s1">已兑换：<i>399</i>个</span>
+                                        <span class="s2">剩余：<i>19</i>个</span>
+                                    </div>
+                                    <div class="price clearfix">
+                                        <p class="p1 fl f333">所需：<i>4000U点</i></p>
+                                        <p class="p2 fr f666"><del>￥399</del></p>
+                                    </div>
+                                </li>
+                                <li class="pro-list fl last">
+                                    <div class="chart">
+                                        <img class="g10" src="/content/v1/images/signin/signin7.jpg" alt="">
+                                        <div class="code-box tc">
+                                            <img class="" src="/content/v1/images/signin/signin9.jpg" alt="">
+                                            <p class="txt tc f14">使用悠哉旅游APP扫描二维码兑换奖品</p>
+                                        </div>
+                                    </div>
+                                    <a class="name f16" title="Iphone6s 比大更大Iphone6s 比大更大" href="">Iphone6s 比大更大</a>
+                                    <div class="number f666">
+                                        <span class="s1">已兑换：<i>399</i>个</span>
+                                        <span class="s2">剩余：<i>19</i>个</span>
+                                    </div>
+                                    <div class="price clearfix">
+                                        <p class="p1 fl f333">所需：<i>4000U点</i></p>
+                                        <p class="p2 fr f666"><del>￥399</del></p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div data-pagesize="9" data-counts="18" class="fn-pager">
+                            </div>
+                        </div>
+                        <div class="item hide">
+                            <ul class="pro-box pro-box2 clearfix pager-target-node item-con">
+                                <li class="pro-list fl png">
+                                    <div class="list1">
+                                        <p class="p1 f24 b"><span class="s1">20元</span>优惠券</p>
+                                        <p class="p2 f14">全场满250元减10元</p>
+                                        <p class="p3 f14">所需U点：<i class="f18 b">200U点</i></p>
+                                    </div>
+                                    <div class="list2 tc">
+                                        <div class="p5">
+                                            <span class="swap">
+                                                <span class="s1 f16 pointer">立即兑换</span>
+                                                <i class="s2 songti b pointer">&gt;</i>
+                                            </span>
+                                            <span class="s3 pointer">使用说明</span>
+                                        </div>
+                                        <div class="use-tips hide">
+                                            <p class="use-txt">
+                                                使用说明：圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣
+                                            </p>
+                                            <div class="tips-arrow songti">
+                                                <em>▲</em>
+                                                <i>▲</i>
+                                            </div>
+                                        </div>
+                                        <p class="p6">使用截至日期：2016年01月01日</p>
+                                    </div>
+                                </li>
+
+                                <li class="pro-list fl png">
+                                    <div class="list1">
+                                        <p class="p1 f24 b"><span class="s1">20元</span>优惠券</p>
+                                        <p class="p2 f14">全场满250元减10元</p>
+                                        <p class="p3 f14">所需U点：<i class="f18 b">200U点</i></p>
+                                    </div>
+                                    <div class="list2 tc">
+                                        <div class="p5">
+                                            <span class="swap">
+                                                <span class="s1 f16 pointer">立即兑换</span>
+                                                <i class="s2 songti b pointer">&gt;</i>
+                                            </span>
+                                            <span class="s3 pointer">使用说明</span>
+                                        </div>
+                                        <div class="use-tips hide">
+                                            <p class="use-txt">
+                                                使用说明：圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣
+                                            </p>
+                                            <div class="tips-arrow songti">
+                                                <em>▲</em>
+                                                <i>▲</i>
+                                            </div>
+                                        </div>
+                                        <p class="p6">使用截至日期：2016年01月01日</p>
+                                    </div>
+                                </li>
+
+                                <li class="pro-list fl png last">
+                                    <div class="list1">
+                                        <p class="p1 f24 b"><span class="s1">20元</span>优惠券</p>
+                                        <p class="p2 f14">全场满250元减10元</p>
+                                        <p class="p3 f14">所需U点：<i class="f18 b">200U点</i></p>
+                                    </div>
+                                    <div class="list2 tc">
+                                        <div class="p5">
+                                            <span class="swap">
+                                                <span class="s1 f16 pointer">立即兑换</span>
+                                                <i class="s2 songti b pointer">&gt;</i>
+                                            </span>
+                                            <span class="s3 pointer">使用说明</span>
+                                        </div>
+                                        <div class="use-tips hide">
+                                            <p class="use-txt">
+                                                使用说明：圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣
+                                            </p>
+                                            <div class="tips-arrow songti">
+                                                <em>▲</em>
+                                                <i>▲</i>
+                                            </div>
+                                        </div>
+                                        <p class="p6">使用截至日期：2016年01月01日</p>
+                                    </div>
+                                </li>
+
+                                <li class="pro-list fl png">
+                                    <div class="list1">
+                                        <p class="p1 f24 b"><span class="s1">20元</span>优惠券</p>
+                                        <p class="p2 f14">全场满250元减10元</p>
+                                        <p class="p3 f14">所需U点：<i class="f18 b">200U点</i></p>
+                                    </div>
+                                    <div class="list2 tc">
+                                        <div class="p5">
+                                            <span class="swap">
+                                                <span class="s1 f16 pointer">立即兑换</span>
+                                                <i class="s2 songti b pointer">&gt;</i>
+                                            </span>
+                                            <span class="s3 pointer">使用说明</span>
+                                        </div>
+                                        <div class="use-tips hide">
+                                            <p class="use-txt">
+                                                使用说明：圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣
+                                            </p>
+                                            <div class="tips-arrow songti">
+                                                <em>▲</em>
+                                                <i>▲</i>
+                                            </div>
+                                        </div>
+                                        <p class="p6">使用截至日期：2016年01月01日</p>
+                                    </div>
+                                </li>
+
+                                <li class="pro-list fl png">
+                                    <div class="list1">
+                                        <p class="p1 f24 b"><span class="s1">20元</span>优惠券</p>
+                                        <p class="p2 f14">全场满250元减10元</p>
+                                        <p class="p3 f14">所需U点：<i class="f18 b">200U点</i></p>
+                                    </div>
+                                    <div class="list2 tc">
+                                        <div class="p5">
+                                            <span class="swap">
+                                                <span class="s1 f16 pointer">立即兑换</span>
+                                                <i class="s2 songti b pointer">&gt;</i>
+                                            </span>
+                                            <span class="s3 pointer">使用说明</span>
+                                        </div>
+                                        <div class="use-tips hide">
+                                            <p class="use-txt">
+                                                使用说明：圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣
+                                            </p>
+                                            <div class="tips-arrow songti">
+                                                <em>▲</em>
+                                                <i>▲</i>
+                                            </div>
+                                        </div>
+                                        <p class="p6">使用截至日期：2016年01月01日</p>
+                                    </div>
+                                </li>
+
+                                <li class="pro-list fl png last">
+                                    <div class="list1">
+                                        <p class="p1 f24 b"><span class="s1">20元</span>优惠券</p>
+                                        <p class="p2 f14">全场满250元减10元</p>
+                                        <p class="p3 f14">所需U点：<i class="f18 b">200U点</i></p>
+                                    </div>
+                                    <div class="list2 tc">
+                                        <div class="p5">
+                                            <span class="swap">
+                                                <span class="s1 f16 pointer">立即兑换</span>
+                                                <i class="s2 songti b pointer">&gt;</i>
+                                            </span>
+                                            <span class="s3 pointer">使用说明</span>
+                                        </div>
+                                        <div class="use-tips hide">
+                                            <p class="use-txt">
+                                                使用说明：圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣
+                                            </p>
+                                            <div class="tips-arrow songti">
+                                                <em>▲</em>
+                                                <i>▲</i>
+                                            </div>
+                                        </div>
+                                        <p class="p6">使用截至日期：2016年01月01日</p>
+                                    </div>
+                                </li>
+
+                                <li class="pro-list fl png">
+                                    <div class="list1">
+                                        <p class="p1 f24 b"><span class="s1">20元</span>优惠券</p>
+                                        <p class="p2 f14">全场满250元减10元</p>
+                                        <p class="p3 f14">所需U点：<i class="f18 b">200U点</i></p>
+                                    </div>
+                                    <div class="list2 tc">
+                                        <div class="p5">
+                                            <span class="swap">
+                                                <span class="s1 f16 pointer">立即兑换</span>
+                                                <i class="s2 songti b pointer">&gt;</i>
+                                            </span>
+                                            <span class="s3 pointer">使用说明</span>
+                                        </div>
+                                        <div class="use-tips hide">
+                                            <p class="use-txt">
+                                                使用说明：圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣
+                                            </p>
+                                            <div class="tips-arrow songti">
+                                                <em>▲</em>
+                                                <i>▲</i>
+                                            </div>
+                                        </div>
+                                        <p class="p6">使用截至日期：2016年01月01日</p>
+                                    </div>
+                                </li>
+
+                                <li class="pro-list fl png">
+                                    <div class="list1">
+                                        <p class="p1 f24 b"><span class="s1">20元</span>优惠券</p>
+                                        <p class="p2 f14">全场满250元减10元</p>
+                                        <p class="p3 f14">所需U点：<i class="f18 b">200U点</i></p>
+                                    </div>
+                                    <div class="list2 tc">
+                                        <div class="p5">
+                                            <span class="swap">
+                                                <span class="s1 f16 pointer">立即兑换</span>
+                                                <i class="s2 songti b pointer">&gt;</i>
+                                            </span>
+                                            <span class="s3 pointer">使用说明</span>
+                                        </div>
+                                        <div class="use-tips hide">
+                                            <p class="use-txt">
+                                                使用说明：圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣
+                                            </p>
+                                            <div class="tips-arrow songti">
+                                                <em>▲</em>
+                                                <i>▲</i>
+                                            </div>
+                                        </div>
+                                        <p class="p6">使用截至日期：2016年01月01日</p>
+                                    </div>
+                                </li>
+
+                                <li class="pro-list fl png last">
+                                    <div class="list1">
+                                        <p class="p1 f24 b"><span class="s1">20元</span>优惠券</p>
+                                        <p class="p2 f14">全场满250元减10元</p>
+                                        <p class="p3 f14">所需U点：<i class="f18 b">200U点</i></p>
+                                    </div>
+                                    <div class="list2 tc">
+                                        <div class="p5">
+                                            <span class="swap">
+                                                <span class="s1 f16 pointer">立即兑换</span>
+                                                <i class="s2 songti b pointer">&gt;</i>
+                                            </span>
+                                            <span class="s3 pointer">使用说明</span>
+                                        </div>
+                                        <div class="use-tips hide">
+                                            <p class="use-txt">
+                                                使用说明：圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣
+                                            </p>
+                                            <div class="tips-arrow songti">
+                                                <em>▲</em>
+                                                <i>▲</i>
+                                            </div>
+                                        </div>
+                                        <p class="p6">使用截至日期：2016年01月01日</p>
+                                    </div>
+                                </li>
+
+                                <li class="pro-list fl png">
+                                    <div class="list1">
+                                        <p class="p1 f24 b"><span class="s1">20元</span>优惠券</p>
+                                        <p class="p2 f14">全场满250元减10元</p>
+                                        <p class="p3 f14">所需U点：<i class="f18 b">200U点</i></p>
+                                    </div>
+                                    <div class="list2 tc">
+                                        <div class="p5">
+                                            <span class="swap">
+                                                <span class="s1 f16 pointer">立即兑换</span>
+                                                <i class="s2 songti b pointer">&gt;</i>
+                                            </span>
+                                            <span class="s3 pointer">使用说明</span>
+                                        </div>
+                                        <div class="use-tips hide">
+                                            <p class="use-txt">
+                                                使用说明：圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣
+                                            </p>
+                                            <div class="tips-arrow songti">
+                                                <em>▲</em>
+                                                <i>▲</i>
+                                            </div>
+                                        </div>
+                                        <p class="p6">使用截至日期：2016年01月01日</p>
+                                    </div>
+                                </li>
+
+                                <li class="pro-list fl png">
+                                    <div class="list1">
+                                        <p class="p1 f24 b"><span class="s1">20元</span>优惠券</p>
+                                        <p class="p2 f14">全场满250元减10元</p>
+                                        <p class="p3 f14">所需U点：<i class="f18 b">200U点</i></p>
+                                    </div>
+                                    <div class="list2 tc">
+                                        <div class="p5">
+                                            <span class="swap">
+                                                <span class="s1 f16 pointer">立即兑换</span>
+                                                <i class="s2 songti b pointer">&gt;</i>
+                                            </span>
+                                            <span class="s3 pointer">使用说明</span>
+                                        </div>
+                                        <div class="use-tips hide">
+                                            <p class="use-txt">
+                                                使用说明：圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣
+                                            </p>
+                                            <div class="tips-arrow songti">
+                                                <em>▲</em>
+                                                <i>▲</i>
+                                            </div>
+                                        </div>
+                                        <p class="p6">使用截至日期：2016年01月01日</p>
+                                    </div>
+                                </li>
+
+                                <li class="pro-list fl png last">
+                                    <div class="list1">
+                                        <p class="p1 f24 b"><span class="s1">20元</span>优惠券</p>
+                                        <p class="p2 f14">全场满250元减10元</p>
+                                        <p class="p3 f14">所需U点：<i class="f18 b">200U点</i></p>
+                                    </div>
+                                    <div class="list2 tc">
+                                        <div class="p5">
+                                            <span class="swap">
+                                                <span class="s1 f16 pointer">立即兑换</span>
+                                                <i class="s2 songti b pointer">&gt;</i>
+                                            </span>
+                                            <span class="s3 pointer">使用说明</span>
+                                        </div>
+                                        <div class="use-tips hide">
+                                            <p class="use-txt">
+                                                使用说明：圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣圣诞快乐圣诞快乐圣
+                                            </p>
+                                            <div class="tips-arrow songti">
+                                                <em>▲</em>
+                                                <i>▲</i>
+                                            </div>
+                                        </div>
+                                        <p class="p6">使用截至日期：2016年01月01日</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div data-pagesize="9" data-counts="18" class="fn-pager">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exchange-rank fr">
+                <div class="rank-topic">
+                    <span class="t1 png"></span>
+                    <span class="t2 f18">热门兑换排行榜</span>
+                </div>
+                <div class="rank-con">
+                    <ul class="rank-box">
+                        <li class="clearfix rank-list first">
+                            <div class="rank-infor clearfix fl">
+                                <p class="number fl f24">1</p>
+                                <div class="chart fl"><a href=""><img class="vm g10" src="/content/v1/images/signin/signin8.jpg" alt=""></a></div>
+                                <div class="infor-txt fl">
+                                    <p class="p1 f16"><a title="Insfree 爽肤水爽肤水爽肤水爽肤水" href="">Insfree 爽肤水爽肤水爽肤水爽肤水</a></p>
+                                    <div class="price-box clearfix">
+                                        <p class="infor-price f16 fl">4000U点</p>
+                                        <p class="rank-price fl"><del class="f666 f16">￥3999</del></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="clearfix rank-list second">
+                            <div class="rank-infor clearfix fl">
+                                <p class="number fl f24">2</p>
+                                <div class="chart fl"><a href=""><img class="vm g10" src="/content/v1/images/signin/signin8.jpg" alt=""></a></div>
+                                <div class="infor-txt fl">
+                                    <p class="p1 f16"><a title="Insfree 爽肤水爽肤水爽肤水爽肤水" href="">Insfree 爽肤水爽肤水爽肤水爽肤水</a></p>
+                                    <span class="infor-price f16 tr">40000U点</span>
+                                    <span class="rank-price"><del class="f666 f16">￥39999</del></span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="clearfix rank-list third">
+                            <div class="rank-infor clearfix fl">
+                                <p class="number fl f24">3</p>
+                                <div class="chart fl"><a href=""><img class="vm g10" src="/content/v1/images/signin/signin8.jpg" alt=""></a></div>
+                                <div class="infor-txt fl">
+                                    <p class="p1 f16"><a title="Insfree 爽肤水爽肤水爽肤水爽肤水" href="">Insfree 爽肤水爽肤水爽肤水爽肤水</a></p>
+                                    <span class="infor-price f16 tr">4000U点</span>
+                                    <span class="rank-price"><del class="f666 f16">￥3999</del></span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="clearfix rank-list other">
+                            <div class="rank-infor clearfix fl">
+                                <p class="number fl f24">4</p>
+                                <div class="chart fl"><a href=""><img class="vm g10" src="/content/v1/images/signin/signin8.jpg" alt=""></a></div>
+                                <div class="infor-txt fl">
+                                    <p class="p1 f16"><a title="Insfree 爽肤水爽肤水爽肤水爽肤水" href="">Insfree 爽肤水爽肤水爽肤水爽肤水</a></p>
+                                    <span class="infor-price f16 tr">4000U点</span>
+                                    <span class="rank-price"><del class="f666 f16">￥3999</del></span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="clearfix rank-list other">
+                            <div class="rank-infor clearfix fl">
+                                <p class="number fl f24">5</p>
+                                <div class="chart fl"><a href=""><img class="vm g10" src="/content/v1/images/signin/signin8.jpg" alt=""></a></div>
+                                <div class="infor-txt fl">
+                                    <p class="p1 f16"><a title="Insfree 爽肤水爽肤水爽肤水爽肤水" href="">Insfree 爽肤水爽肤水爽肤水爽肤水</a></p>
+                                    <span class="infor-price f16 tr">4000U点</span>
+                                    <span class="rank-price"><del class="f666 f16">￥3999</del></span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="clearfix rank-list other">
+                            <div class="rank-infor clearfix fl">
+                                <p class="number fl f24">6</p>
+                                <div class="chart fl"><a href=""><img class="vm g10" src="/content/v1/images/signin/signin8.jpg" alt=""></a></div>
+                                <div class="infor-txt fl">
+                                    <p class="p1 f16"><a title="Insfree 爽肤水爽肤水爽肤水爽肤水" href="">Insfree 爽肤水爽肤水爽肤水爽肤水</a></p>
+                                    <span class="infor-price f16 tr">4000U点</span>
+                                    <span class="rank-price"><del class="f666 f16">￥3999</del></span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="clearfix rank-list other">
+                            <div class="rank-infor clearfix fl">
+                                <p class="number fl f24">7</p>
+                                <div class="chart fl"><a href=""><img class="vm g10" src="/content/v1/images/signin/signin8.jpg" alt=""></a></div>
+                                <div class="infor-txt fl">
+                                    <p class="p1 f16"><a title="Insfree 爽肤水爽肤水爽肤水爽肤水" href="">Insfree 爽肤水爽肤水爽肤水爽肤水</a></p>
+                                    <span class="infor-price f16 tr">4000U点</span>
+                                    <span class="rank-price"><del class="f666 f16">￥3999</del></span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="clearfix rank-list other">
+                            <div class="rank-infor clearfix fl">
+                                <p class="number fl f24">8</p>
+                                <div class="chart fl"><a href=""><img class="vm g10" src="/content/v1/images/signin/signin8.jpg" alt=""></a></div>
+                                <div class="infor-txt fl">
+                                    <p class="p1 f16"><a title="Insfree 爽肤水爽肤水爽肤水爽肤水" href="">Insfree 爽肤水爽肤水爽肤水爽肤水</a></p>
+                                    <span class="infor-price f16 tr">4000U点</span>
+                                    <span class="rank-price"><del class="f666 f16">￥3999</del></span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="clearfix rank-list other">
+                            <div class="rank-infor clearfix fl">
+                                <p class="number fl f24">9</p>
+                                <div class="chart fl"><a href=""><img class="vm g10" src="/content/v1/images/signin/signin8.jpg" alt=""></a></div>
+                                <div class="infor-txt fl">
+                                    <p class="p1 f16"><a title="Insfree 爽肤水爽肤水爽肤水爽肤水" href="">Insfree 爽肤水爽肤水爽肤水爽肤水</a></p>
+                                    <span class="infor-price f16 tr">4000U点</span>
+                                    <span class="rank-price"><del class="f666 f16">￥3999</del></span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="clearfix rank-list other">
+                            <div class="rank-infor clearfix fl">
+                                <p class="number fl f24">10</p>
+                                <div class="chart fl"><a href=""><img class="vm g10" src="/content/v1/images/signin/signin8.jpg" alt=""></a></div>
+                                <div class="infor-txt fl">
+                                    <p class="p1 f16"><a title="Insfree 爽肤水爽肤水爽肤水爽肤水" href="">Insfree 爽肤水爽肤水爽肤水爽肤水</a></p>
+                                    <span class="infor-price f16 tr">4000U点</span>
+                                    <span class="rank-price"><del class="f666 f16">￥3999</del></span>
+                                </div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+<!--最近浏览和订阅-->
+<div class="fn-browse">
+    <ul class="fn-browseTitle">
+        <li class="li1" id="J_wechat">
+            <i class="shouli icons-right-side">收礼</i>
+            <em class="arrow-left">&nbsp;</em>
+            <div class="item-hd">关注微信</div>
+            <div class="focus-wechat pop-box">
+                <i class="code-wechat-a icons-right-side"></i>
+                <p><a href="http://www.uzai.com/subject/weixin" target="_blank">扫一扫，关注悠哉微信</a></p>
+            </div>
+        </li>
+        <li class="li2" id="J_app_download">
+            <em class="arrow-left">&nbsp;</em>
+            <div class="item-hd">APP下载</div>
+            <div class="app-client pop-box">
+                <i class="code-wechat-b icons-right-side"></i>
+                <p><a href="http://www.uzai.com/app/?ly=fkcode" target="_blank">手机专享优惠，价更低！</a></p>
+            </div>
+        </li>
+        <li class="li3" id="J_advise">
+            <div class="item-hd"><a href="#">意见反馈</a></div>
+        </li>
+        <li class="li4 uzkfOnline">
+            <div class="item-hd"><a rel="nofollow" target="_blank" href="http://bizapp.qq.com/webc.htm?new=0&sid=938066871&o=www.uzai.com&q=7">在线客服</a></div>
+        </li>
+        <li class="li5 J_ScrollTop">
+            <div class="item-hd">
+                <span class="arrow-top"><em>◆</em><i>◆</i></span>
+            </div>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript"> DisplayScanRecord();</script>
+<!--/最近浏览和订阅-->
+
+
+
+
+<div class="ufooter">
+    <div class="footer01">
+        <div class="w">
+            <div class="newWarp">
+                <div class="foot_faq clearfix">
+                    <div class="faq_container01">
+                        <span class="faq_class"><strong>如何付款和发票</strong></span>
+                        <ul>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-3.html#311" title="支付宝网银支付"
+                                target="_blank">支付宝网银支付</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-3.html#312" title="信用卡电话支付"
+                                target="_blank">信用卡电话支付</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-3.html#313" title="门店支付或银行汇款"
+                                target="_blank">门店支付或银行汇款</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-3.html#33" title="旅游发票"
+                                target="_blank">旅游发票</a></li>
+                        </ul>
+                    </div>
+                    <div class="faq_container02">
+                        <span class="faq_class"><strong>出境游和港澳游常识</strong></span>
+                        <ul>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-6-1.html" title="如何办理护照"
+                                target="_blank">如何办理护照</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-6-2.html" title="如何办理旅游签证"
+                                target="_blank">如何办理旅游签证</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-6-3.html" title="如何办理港澳通行证"
+                                target="_blank">如何办理港澳通行证</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-6-4.html" title="如何办理台湾旅游签证"
+                                target="_blank">如何办理台湾旅游签证</a></li>
+                        </ul>
+                    </div>
+                    <div class="faq_container03">
+                        <span class="faq_class"><strong>预订旅游产品的问题</strong></span>
+                        <ul>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-1.html" title="旅游产品名词解释"
+                                target="_blank">旅游产品名词解释</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-1.html#110" title="如何看懂旅游产品价格"
+                                target="_blank">如何看懂旅游产品价格</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-4.html#43" title="出险如何进行理赔"
+                                target="_blank">出险如何进行理赔</a></li>
+                        </ul>
+                    </div>
+                    <div class="faq_container04">
+                        <span class="faq_class"><strong>如何签订旅游合同</strong></span>
+                        <ul>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-2.html" title="传真/邮件签署合同"
+                                target="_blank">传真/邮件签署合同</a></li>
+                        </ul>
+                    </div>
+                    <div class="faq_container05">
+                        <span class="faq_class"><strong>悠哉会员、U币、会刊</strong></span>
+                        <ul>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-7.html#71" title="如何成为悠哉会员"
+                                target="_blank">如何成为悠哉会员</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-7.html#732" title="如何使用U币"
+                                target="_blank">如何使用U币</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-7.html#Dl2" title="如何使用积分"
+                                target="_blank">如何使用积分</a></li>
+                            <li><a rel="nofollow" href="http://pay.uzai.com/djk" title="悠哉旅游卡"
+                                target="_blank">悠哉旅游卡</a></li>
+                        </ul>
+                    </div>
+                    <div class="faq_container06">
+                        <span class="faq_class"><strong>扫描微信二维码</strong></span>
+                        <div>
+                            <i class="icon-code icon-common-bulky" title="扫描微信二维码"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w">
+
+<!--一键关注区域开始-->
+<div class="sns-footer-share">
+    <div class="w">
+        <ul class="yahei clearfix">
+            <li class="li1">
+                <p>
+                    <i class="icon">&nbsp;</i>
+                    <span class="f18">悠哉微信公众号</span>
+                    <span class="code-wrap">
+                        <a class="blue" href="javascript:void(0);" rel="nofollow">扫码</a>
+                        <span class="code icon-code icon-common-bulky">
+                            <span class="arrow">
+                                <i class="i1">◆</i>
+                                <i class="i2">◆</i>
+                            </span>
+                        </span>
+                    </span>
+                </p>
+            </li>
+            <li class="li2">
+                <p>
+                    <i class="icon">&nbsp;</i>
+                    <span class="f18">悠哉新浪微博</span>
+                    <a class="add blue" href="http://weibo.com/p/1006061900676481/home" rel="nofollow" target="_blank">+加关注</a>
+                </p>
+            </li>
+            <li class="li3 last">
+                <p>
+                    <i class="icon">&nbsp;</i>
+                    <span class="f18">投诉建议邮箱</span>
+                    <a class="qa f14" rel="nofollow" href="mailto:qa@uzai.com">qa@uzai.com</a>
+                </p>
+                <p class="f14 p-last">电话：400-000-8888转9</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--一键关注区域结束-->
+
+    </div>
+    <div class="newWarp">
+        <div class="w">
+
+<div class="foot-webtrust">
+    <a href="http://www.shtour.org/tourlist_onlineid3.html"  rel="nofollow" target="_blank"  title="上海市旅游行业协会 在线旅游分会" class="trust1"></a>
+    <a href="http://www.uzai.com/about/certification/"  rel="nofollow" target="_blank"  title="可信网站验证服务证书" class="trust2"></a>
+    <a href="http://www.bcpcn.com/product/rz/bq/BCP5708348725.html" target="_blank" rel="nofollow" title="信用网站认证" class="trust3"></a>
+    <a href="http://r.uzaicdn.com/content/common/zglxshyz.jpg" target="_blank" rel="nofollow"  title="中国旅行社协会会员证书" class="trust5"></a>
+    <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20120410111333254" target="_blank" rel="nofollow" title="上海工商" class="trust4"></a>
+    <a href="http://www.uzai.com/about/pictureShow.html" target="_blank" rel="nofollow" title="证照展示" class="trust6"></a>
+    <a href="http://www.zx110.org/" target="_blank" rel="nofollow" title="征信网" class="trust7"></a>
+</div>
+            <div class="foot-copyright">
+                <span>Copyright 2005-2015 Uzai.com</span> <span>许可证编号:L-SH-00647</span> <span>沪ICP备06021606号</span>
+                <span>悠哉呼叫中心来电显示号码为：<font class="red">021-33977886 或 010-56704486</font></span>
+            </div>
+            <div class="foot-aboutlink">
+               <span class="border_right_1"><a class="colored" href="http://www.uzai.com/">悠哉旅游网</a></span>
+<span class="border_right_1"><a target="_blank" href="http://www.uzai.com/history/" rel="nofollow" >悠哉历程</a></span>
+<span class="border_right_1"><a target="_blank" href="http://www.uzai.com/about/privacy/" rel="nofollow" >隐私保护</a></span>
+<span class="border_right_1"><a target="_blank" class="orange" href="http://www.uzai.com/about/job" rel="nofollow" >诚聘英才</a></span>
+<span class="border_right_1"><a target="_blank" href="http://www.uzai.com/about/" rel="nofollow" >关于我们</a></span>
+<span class="border_right_1"><a target="_blank" href="http://www.uzai.com/sitemap/">网站地图</a></span>
+<span class="border_right_1"><a target="_blank" href="http://www.uzai.com/sitelinks/">友情链接</a></span>
+<span ><a target="_blank" href="http://www.uzai.com/qa/helplist-9.html">商务合作</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

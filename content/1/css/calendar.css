@@ -1,0 +1,87 @@
+﻿.calendar
+{
+	border-collapse: collapse;
+	border: 3px solid #E7E7E7;
+}
+.calendar-title
+{
+	height: 25px;
+	background: #f2f7fd;
+}
+.calendar-title-current-month
+{
+	color: #030303;
+	font-weight: bold;
+}
+.calendar-weeks
+{
+	height: 24px;
+	background: #fafff1;
+}
+.calendar-week-days
+{
+	height: 45px;
+}
+.calendar td
+{
+	text-align: center;
+	border: 1px solid #d8ecf7;
+	width: 85px;
+	height:26px;
+	vertical-align:middle;
+}
+.calendar-today
+{
+	color: red;
+}
+.calendar-tag
+{
+	color: Red;
+	font-size: 12px;
+}
+.calendar div
+{
+	color: Red;
+	font-size: 12px;
+}
+.calendar a
+{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#dv_01
+{
+	width: 500px;
+	display: none;
+	background-color: White;
+	position: absolute;
+	float: left;
+}
+.calendar_red
+{
+	color: #c00;
+}
+.calendar_bg_ffffcc
+{
+	background: #ffffcc;
+	height:46px;
+}
+
+.calendar_padding_top_8
+{
+	padding-top:8px;
+}
+.calendar_padding_top_5
+{
+	padding-top:5px;
+}
+.calendar_color_333
+{
+	color:#333;
+}
+.calendar_color_ff6600
+{color:#ff6600;}
+.calendar_jieri
+{color:#4876FF}
+

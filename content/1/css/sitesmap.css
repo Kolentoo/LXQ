@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* 景点介绍 2012.03.05 by 刘忆龙 */
+#wrap{margin-top: 15px;}
+.left{float:left;}
+/*左边导航列表*/
+.sidebar{width:230px; margin-right:10px; border:1px solid #D9D9D9;}
+.sidebar .listhd{height:27px; line-height:27px; background:url(http://r.uzaicdn.com/content/1/image/tbg01.jpg) repeat-x;}
+.sidebar .listhd h3{color:#333; font-size:12px; padding-left:15px;}
+.sidebar .listbd{line-height:24px; padding:0 10px;}
+.sidebar .listbd dl dt a{color:#ff6600; text-decoration:underline; font-weight:bold;}
+.sidebar .listbd dl dd{width:74px; float:left;}
+/*右侧主体区域*/
+.main{}
+.main .bread{line-height:32px; border-top:1px dashed #C5CED5; padding-left:10px;}
+.main .bread a{color:#0099ff;}
+.main .bread a:hover{color:#ff6600;}
+.main .sight{border:1px solid #8DC433; margin-bottom:10px;}
+.main .sight .sight-hd{height:37px; line-height:37px; padding:0 10px; background:url(http://r.uzaicdn.com/content/1/image/tbg02.jpg) repeat-x;}
+.main .sight .sight-hd .goback{float:right; padding-left:15px; background:url(http://r.uzaicdn.com/content/1/image/arrow.jpg) center left no-repeat;}
+.main .sight .sight-hd  a.goback{color:#ff6600;}
+.main .sight .sight-hd  a.goback:hover{text-decoration:underline;}
+.main h2{display:inline; font-size:14px; color:#476118; text-shadow:1px 1px #fff;}
+.main .sight .sight-bd{padding:20px; background:#fff;}
+.main .sight .sight-bd .t{width:450px; margin-right:30px; overflow:hidden;}
+.main .sight .sight-bd .m{width:286px; border:1px solid #D9D9D9;}
+.main .sight .sight-bd .t .spotlist{border-bottom:1px dashed #6E6E6E; padding-bottom:15px; width:480px;}
+.main .sight .sight-bd .t .spotlist li{float:left; width:80px; line-height:24px;}
+.main .sight .sight-bd .t .baikelist{width:480px;}
+.main .sight .sight-bd .t .baikelist dt{color:#323232; font-size:14px; font-weight:bold; line-height:32px;}
+.main .sight .sight-bd .t .baikelist dd{width:120px; float:left;}
+.main .sight .sight-bd .t .baikelist dd s{display:inline-block; width:17px; height:17px; vertical-align:-4px; margin-right:3px; background:url(http://r.uzaicdn.com/content/1/image/icon.gif) 0 0 no-repeat;}
+.main .sight .sight-bd .t .baikelist .d01 s{background-position:0 0;}
+.main .sight .sight-bd .t .baikelist .d02 s{background-position:0 -17px;}
+.main .sight .sight-bd .t .baikelist .d03 s{background-position:0 -102px;}
+.main .sight .sight-bd .t .baikelist .d04 s{background-position:0 -119px;}
+.main .sight .sight-bd .t .baikelist .d05 s{background-position:0 -34px;}
+.main .sight .sight-bd .t .baikelist .d06 s{background-position:0 -51px;}
+.main .sight .sight-bd .t .baikelist .d07 s{background-position:0 -68px;}
+.main .sight .sight-bd .t .baikelist .d08 s{background-position:0 -85px;}
+.main .sight .sight-bd .t .baikelist dd a{color:#653300; line-height:24px;}
+.main .sight .sight-bd .t .baikelist dd a:hover{color:#ff6600;}
+.main .sight .sight-bd .m .emapbox{margin:10px; border:1px solid #D9D9D9; width:264px; height:171px;}
+
+.main .views{border:1px solid #DADADA; margin-bottom:10px; zoom:1; overflow:hidden;}
+.main .views .views-hd{height:37px; line-height:37px; background:url(http://r.uzaicdn.com/content/1/image/tbg02.jpg) repeat-x; padding:0 10px;}
+.main .views .views-bd{padding:28px; overflow:hidden; width:752px;}
+.main .views .views-bd ul{width:790px;}
+.main .views .views-bd ul li{float:left; width:166px; margin-right:30px; padding-bottom:10px; text-align:center;}
+.main .views .views-bd ul li a.m{display:block; border:1px solid #CBCBCB; box-shadow:1px 1px 4px #cccccc; width:162px; line-height:0;}
+.main .views .views-bd ul li a.m:hover{border-color:#ff6600;}
+.main .views .views-bd ul li span{line-height:32px;}
+.main .views .pages{text-align:right;}
+.main .views .pages a{display:inline-block; border:1px solid #CBCBCB; line-height:24px; padding:0 8px; margin:0 1px;}
+.main .views .pages a.pre{background:#EDEDED;}
+.main .views .pages a.current{background:#FD9800; color:#fff;}
+
+.main .surround{border:1px solid #FECE9D;}
+.main .surround .surround-hd{height:38px; line-height:38px; background:url(http://r.uzaicdn.com/content/1/image/tbg03.jpg) repeat-x; padding:0 10px;}
+.main .surround .surround-hd h2{color:#653300;}
+.main .surround .surround-bd{padding:20px; width:768px; overflow:hidden;}
+/*幻灯*/
+.slider{height:130px; position:relative;}
+.sliderbox{width:690px; overflow:hidden; margin-left:40px; position:relative;}
+.sliderbox ul{width:710px; height:130px;}
+.sliderbox ul li{float:left; width:122px; margin-right:20px; text-align:center;}
+.sliderbox ul li a.m{border:1px solid #CCCCCC; display:block; width:120px}
+.sliderbox ul li a.m:hover{border-color:#ff6600;}
+.sliderbox ul li span{line-height:34px;}
+.slider a.prebtn{position:absolute; top:0; left:0; display:block;}
+.slider a.nextbtn{position:absolute; top:0; left:742px; display:block;}
+
+.main .surround .surround-bd .spotbox{border:1px solid #FFD8A5; background:#FFFEF1; padding:15px 25px; overflow:hidden;}
+.main .surround .surround-bd .spotbox ul{width:730px;}
+.main .surround .surround-bd .spotbox ul li{float:left; width:80px; line-height:24px;}
+.main .surround .surround-bd .spotbox ul li a{color:#663300;}
+.main .surround .surround-bd .spotbox ul li a:hover{color:#ff6600; text-decoration:underline;}
+
+/*list*/
+.main .container{border:1px solid #8EC534;  overflow:hidden;}
+.main .container .hd{height:31px; background:url(http://r.uzaicdn.com/content/1/image/tbg02.jpg) repeat-x; padding:6px 20px 0;}
+.main .container .hd a.goback{color:#ff6600;float:right; padding-left:15px; background:url(http://r.uzaicdn.com/content/1/image/arrow.jpg) center left no-repeat; margin-top:5px;}
+.main .container .hd a.goback:hover{text-decoration:underline;}
+.main .container .hd h2{display:inline-block; font-size:14px; color:#476118; text-shadow:1px 1px #fff;}
+.main .container .hd ul li{float:left; width:89px; height:31px; line-height:31px; text-align:center;}
+.main .container .hd ul li.curs h2{background:url(http://r.uzaicdn.com/content/1/image/tabnav.jpg) no-repeat; color:#339A01; display:block;}
+.main .container .bd{padding:10px; overflow:hidden; _zoom:1;}
+.main .container .bd .tabbox{}
+.main .container .bd .item{width:222px; height:192px; padding:10px 15px; border:1px solid #E6E6E6; float:left; margin:0 11px 10px 0; display:inline; position:relative;}
+.item .item-hd{line-height:20px; color:#73B017; font-size:14px; padding-bottom:10px;}
+.item .item-hd a{color:#ff6600; font-size:12px; margin-left:10px;}
+.item .item-bd{overflow:hidden; position:absolute; width:222px; top:40px;}
+.item .item-bd ul{width:250px; float:left; height:140px;}
+.item .item-bd ul li{float:left; width:125px; line-height:28px; font-size:14px;}
+.hiden{display:none;}
+/*内部幻灯*/
+.item .item-bd .pagination {
+	margin:10px 0 0 0;
+	padding:5px 0 0 120px;
+	width:100px;
+	height:17px;
+	border-top:1px dotted #CCCCCC;
+}
+
+.item .item-bd .pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+	width:15px;
+}
+
+.item .item-bd .pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background:url(http://r.uzaicdn.com/content/1/image/dot02.gif) no-repeat;
+	float:left;
+	overflow:hidden;
+}
+
+.item .item-bd .pagination li.current a {
+	background-image:url(http://r.uzaicdn.com/content/1/image/dot01.gif);
+}

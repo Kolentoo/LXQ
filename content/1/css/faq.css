@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/** 功能 公共底部FAQ区域 **/
+/** 创建时间2011.10.11 elonglau **/
+
+.clear{clear:both;}
+.foot_faq{width:988px; height:auto; border:1px solid #EEEEEE; text-align:center;padding-bottom:15px;}
+   .faq_container01,.faq_container02,.faq_container03,.faq_container04,.faq_container05{float:left; width:197px; height:auto; margin-top:10px;}
+      .foot_faq ul{text-align:left; list-style:none; padding-left:0; margin-top:10px;}
+      .foot_faq ul li a{color:#999999; font-size:12px; line-height:20px; text-decoration:none;}
+      .foot_faq ul li a:hover{text-decoration:underline; color:#ff6600;}
+	  .faq_container01 ul{margin-left:45px;}
+	  .faq_container02 ul{margin-left:40px;}
+	  .faq_container03 ul{margin-left:35px;}
+	  .faq_container04 ul{margin-left:50px;}
+	  .faq_container05 ul{margin-left:50px;}
+      .faq_class{font-size:14px; color:#666666;}
+/** 功能区 公共底部FAQ区域 end **/

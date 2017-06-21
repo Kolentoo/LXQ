@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+.outbound{padding-bottom:17px; text-align:left;}
+.obleft{float:left; width:170px;
+}
+.obright{float:right; width:810px;}
+.obl_one{background:url(../image/bg/outbg.gif) no-repeat 0% 45%; border:1px solid #dbe5eb; padding:10px; margin-bottom:10px;}
+.onetitle{font-size:12px; font-weight:bold; color:#269add; padding-bottom:5px;}
+.obl_one table td{padding:3px 0;}
+.obl_otit a{font-size:14px; font-weight:bold; color:#3399ff; }
+.obl_otit a:hover{color:#FF9900;}
+.obl_two{background:#f5f8fc; border:1px solid #dbe5eb; margin-bottom:10px;}
+.obttitle{background:url(../image/bg/outbg.gif) no-repeat 0% 64%; border-bottom:1px solid #dfe8ed; height:28px; line-height:28px; padding-left:10px; font-weight:bold; font-size:12px; color:#333333;}
+.texleft h3{line-height:0px;margin-top:3px;}
+.cjyhhf{padding:5px 0 10px;}
+.cjyhhftable{padding:5px 0px;}
+.obtmain{padding:5px 0 5px 10px;}
+.obt_city{padding-bottom:5px;}
+.obt_city .cityname{padding:0; margin:0;}
+.obt_city .cityname a{font-weight:bold; text-decoration:underline; color:#3399ff; font-size:13px; line-height:28px;}
+.obt_city .citylist ul li{float:left; width:79px; line-height:18px;}
+.obttitle2{background:#ffffff; height:28px; line-height:28px; padding-left:10px; font-weight:bold; font-size:12px; color:#333333;border-bottom:1px solid #dfe8ed;border-top:1px solid #dfe8ed;}
+.lefttit2{background:url(../image/bg/outbg.gif) repeat-x 0% 87%; height:28px; line-height:28px; padding-left:10px; color:#ffffff; font-weight:bold;}
+.obl_three,.obl_four{background:#ffffff; border:1px solid #dbe5eb; margin-bottom:10px;}
+.obl_three table td{padding:3px 0;}
+.obl_three table td p{line-height:18px; color:#7a7a7a;}
+.obl_four ul li{background:url(../image/bg/outbg.gif) no-repeat 0% 74%; padding-left:10px; line-height:20px;}
+.borddash{border-bottom:1px dashed #999999;}
+.linetit{background:#f5fae9; height:30px; line-height:30px; padding-left:15px; border-bottom:1px solid #dbebb3; color:#88c22c; font-size:14px; font-weight:bold;}
+.linetit a{text-decoration:underline; color:#ff6600; font-size:12px; font-weight:lighter;}
+.linetit a:hover{color:#269add;}
+.obt_thmain table,.obr_four_main table{width:100%;}
+.obt_thmain table th{background:#fffded; border-bottom:1px solid #dbebb3; height:28px; line-height:28px; text-align:center; color:#996633; font-weight:lighter;}
+.obt_thmain table td,.obr_four_main table td{padding:5px; text-align:center; border-bottom:1px solid #eaeaea;}
+.obt_thmain table td.texleft,.obr_four_main table td.texleft{text-align:left;}
+.obt_thmain table td h3,.obr_four_main table td h3{padding-top:2px; padding-bottom:2px;}
+.obt_thmain table td h3 a,.obr_four_main table td h3 a{font-size:14px; font-weight:lighter; color:#66a502;}
+
+.jd_rcbot table td p.textpa{line-height:26px;padding-top:2px;}
+.textpa a{text-decoration:none; color:#66A502; font-size:14px; font-weight:lighter;}
+.textpa a:hover{color:#ff9900;}
+
+.title02{background:#fff; border-top:1px solid #dfe8ed;}
+/*回访*/
+.cjyhhf ul.callback{line-height:18px; padding:5px 10px; color:#666666;}
+.cjyhhf ul.callback li a{color:#009df0; line-height:30px;}
+.cjyhhf ul.callback li a:hover{color:#ff6600;}
+.cjyhhf ul.callback li.btm_line{border-bottom:1px dashed #E5E5E7;}
+/*自助游新版outright v20120116 刘忆龙{{{*/
+.owrap{border:1px solid #79B021; margin-bottom:10px;}
+.obr-top{padding:20px; background:#fff; zoom:1;}
+.obr-top .obr-top-hd{color:#71af17; padding-bottom:5px;}
+.obr-top .obr-top-hd b{font-size:16px;}
+.obr-top .obr-top-bd .ot-left{width:510px; margin:0 13px 0 0; padding:10px 0; float:left; border-top:1px solid #EDEBEB;}
+.obr-top .obr-top-bd .ot-right{width:245px; float:left; text-align:center; line-height:36px;}
+.obr-top .obr-top-bd .ot-left p{text-indent:2em; line-height:24px;}
+.obr-top .obr-top-bd .ot-left a{color:#ff6600;}
+.obr-top .obr-top-bd .ot-left a:hover{text-decoration:underline;}
+.obr-top .obr-top-bd .ot-left .menu{border:1px solid #FCEDCF; background:#FFFBF2; margin-top:10px; zoom:1;}
+.obr-top .obr-top-bd .ot-left .menu dl{margin:0;}
+.obr-top .obr-top-bd .ot-left .menu dl dt{float:left; height:54px; line-height:54px; width:123px; background:#FBEFD5; text-align:center; font-weight:bold;}
+.obr-top .obr-top-bd .ot-left .menu dl dd{float:left; width:75px; margin-top:8px; text-align:center;}
+.obr-top .obr-top-bd a.m{display:block; width:223px; border:1px solid #CFCFCF; background:#F6F6F6; padding:5px;}
+.obr-top .obr-top-bd .ot-right a{color:#ff6600; text-decoration:underline; font-weight:bold;}
+.obr-top .obr-top-bd .ot-right a:hover{color:#ff3300;}
+.obr-line-hd{height:19px; line-height:19px; background:url(../image/bg/tbg.jpg) repeat-x; padding:8px 20px;}
+.obr-line-hd a{display:inline-block; margin:0 5px;}
+.obr-line-hd a:hover{background:#66C301; color:#fff;}
+.obr-line-hd a.start-tag{background:#66C301; color:#fff;}
+.obr-line-bd .obr-line-title{height:34px; line-height:34px; padding-left:20px; background:#F0FBE4;}
+.obr-line-bd .obr-line-title h2{font-size:14px;}
+.obr-line-bd .obr-line-vtitle{color:#66C301; line-height:37px; padding-left:43px; background:url(../image/bg/icon_h.jpg) no-repeat 20px 8px; font-size:14px; font-weight:bold;}
+.obr-line-bd .obr-line-content{padding:10px 10px 10px 20px; border-top:1px dashed #737373;}
+.obr-line-bd .obr-line-content table a.m1{display:block; width:120px; height:90px; padding:5px; border:1px solid #CDCDCD; background:#F6F6F6;}
+.obr-line-bd .obr-line-content table a.linename{color:#71af17; font-size:14px; font-weight:bold;}
+.obr-line-bd .obr-line-content table a.linename:hover{color:#ff6600;}
+.obr-line-bd .obr-line-content table .orange{color:#ff6600;}
+.obr-line-bd .obr-line-content table .red{color:#ff3300;}
+.obr-line-bd .obr-line-content table .num{font-size:22px; font-family:Arial, Helvetica, sans-serif;}
+/*}}} 自助游新版outright*/
+
+/***chat***/
+.procent_title {
+    background: url("/content/1/image/bg/producebg.gif") repeat-x scroll 0 83% transparent;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.pChatPart{ padding:20px;color:#666;padding-bottom:0;}
+.pChatPart .bk1{margin-bottom:10px;}
+.pChatPart .bk1 a{font-weight:bold;color:#339900;font-size:14px;}
+.pChatPart .bk1 a:hover{text-decoration:underline;}
+.pChatPart .bk2{margin-bottom:15px;height:16px;line-height:16px;vertical-align:middle;}
+.pChatPart .bk2 img{vertical-align:top;}
+.pChatPart .bk2 i{color:#e58a00;font-style:normal;font-family:Verdana;font-size:11px;}
+.pChatPart .bk2 i.i1{margin-right:45px;}
+.pChatPart .bk3{}
+.pChatPart li{height:130px;border-bottom:1px dashed #d1d1d1;padding:0 0 15px 0;margin-bottom:18px;}
+.pChatPart li.trim1{border:0;}
+.pChatPart .pChatL{width:115px;float:left;}
+.pChatPart .pChatM{width:584px;float:left;font-size:14px;line-height:21px;}
+.pChatPart .pChatR{width:23px;height:45px;float:right;background:url(/content/product/p47.gif) no-repeat 0 0;color:#ff9900;font-weight:bold;font-size:14px;padding-top:27px;text-align:center;}
+
+
+/*开发人员添加*/
+.anpager {
+    margin: 0 0 10px;
+    padding: 5px 0 0 5px;
+    text-align: left;
+}
+.anpager .cpb {
+    background: none repeat scroll 0 0 #1F3A87;
+    border: 1px solid #CCCCCC;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 5px 5px 0 0;
+    padding: 4px 5px 0;
+}
+.anpager a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E0E0E0;
+    color: #333333;
+    display: inline-block;
+    margin: 0 10px 0 0;
+    padding: 4px 7px 3px;
+    text-decoration: none;
+}
+.anpager span {
+    background: none repeat scroll 0 0 #E7E7E7;
+    border: 0 none;
+    color: #FFFFFF;
+    display: inline-block;
+    margin: 5px 5px 0 0;
+    padding: 5px 6px 4px;
+    text-decoration: none;
+}
+.anpager {
+    margin: 0 0 -5px;
+    padding: 5px 0 10px 5px;
+    text-align: left;
+}
+.anpager a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E0E0E0;
+    color: #333333;
+    display: inline-block;
+    margin: -10px 10px 0 0;
+    padding: 4px 7px 3px;
+    text-decoration: none;
+}
+.anpager a:hover {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #8D8D8D;
+    color: #333333;
+}

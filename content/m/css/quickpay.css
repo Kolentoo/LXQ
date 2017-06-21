@@ -1,0 +1,66 @@
+body,dl,dd,dt,ul,div,html,p,form,h1,h2,h3{margin:0;padding:0;}
+input{ font-family:Microsoft Yahei,Arial Narrow,arial,serif;}
+a{ color:#08468b;}
+body{background:#fff; }
+.wrap{ padding:10px; color:#333; font-size:12px; font-family: Microsoft Yahei,Arial Narrow,arial,serif;line-height:130%;-webkit-text-size-adjust:none;-webkit-touch-callout: none;word-wrap:break-word;}
+.pu{ font-size:16px; color:#f93868;}
+.pn{ font-size:18px; color:#f93868;}
+.red{color:Red;}
+.b{ font-weight:bold;}
+.o{ color:#f93868;}
+.c9{ color:#999;}
+.p10{ padding:10px;}
+.mt10{ margin-top:10px;}
+.mt20{ margin-top:20px;}
+.mb20{ margin-bottom:20px;}
+.mb10{ margin-bottom:10px;}
+.mb5{ margin-bottom:5px;}
+.bankb{ background:url(/content/m/images/pay/bankicon1.png) 0 0 no-repeat; vertical-align:middle; margin:0 5px; border:1px solid #d5d5d5; display:inline-block; width:149px; height:39px;}
+.bankb.ICBC{ background-position:0 0;}
+.bankb.BOC{ background-position:0 -66px;}
+.bankb.SRCB{ background-position:0 -134px;}
+.bankb.CCB{ background-position:-222px 0;}
+.bankb.CITIC{ background-position:-222px -66px;}
+.bankb.JSB{ background-position:-222px -134px;}
+.bank{ background:url(/content/m/images/pay/bankicon.jpg) 0 0 no-repeat; vertical-align:middle; margin:0 5px; border:1px solid #d5d5d5; display:inline-block; width:75px; height:20px;}
+.bank.ICBC{ background-position:0 0;}
+.bank.BOC{ background-position:0 -33px;}
+.bank.SRCB{ background-position:0 -67px;}
+.bank.CCB{ background-position:-111px 0;}
+.bank.CITIC{ background-position:-111px -33px;}
+.bank.JSB{ background-position:-111px -67px;}
+.bankm{ background:url(/content/m/images/pay/bankicon2.png) 0 0 no-repeat; vertical-align:middle; margin:0 5px; border:1px solid #d5d5d5; display:inline-block; width:112px; height:30px;}
+.bankm.ICBC{ background-position:0 0;}
+.bankm.BOC{ background-position:0 -49px;}
+.bankm.SRCB{ background-position:0 -100px;}
+.bankm.CCB{ background-position:-166px 0;}
+.bankm.CITIC{ background-position:-166px -49px;}
+.bankm.JSB{ background-position:-166px -100px;}
+.boxpay{ background:#fff; border-radius:5px; border:1px solid #bbb; margin:10px 0; }
+.boxpay1{ background:#ffecf1; border-radius:5px; border:1px solid #f93868; margin:10px 0; }
+.boxpay2{ background: #ffecf1;border: 1px solid #f93868;}
+.boxpay .top{ height:30px; line-height:30px; background:#ffecf1; color:#f93868; padding:0 10px;}
+.boxpay .itembank{ padding:10px 0 10px 20px;}
+.boxpay table{ width:100%;}
+.tc{ text-align:center;}
+.boxpay table td{ vertical-align:top; padding:6px 0;}
+.boxpay .txt{ width:160px; height:20px; line-height:20px; border:1px solid #f93868; border-radius:3px;}
+.boxpay .sel{  height:26px; border:1px solid #f93868; border-radius:3px; padding:4px;}/*width:108px;*/
+.boxpay .lab{ font-size:14px; width:104px;line-height:26px;  display:inline-block; text-align:right;}
+.boxpay i{ color:#f93868; margin-right:5px; font-style:normal;}
+.boxpay .tip{ color:#999; font-size:14px;}
+.boxpay .tip1 a{ color:#96420e; font-size:14px;}
+.boxpay .tip2{ margin:10px 10px 25px; font-size:14px;}
+.boxpay .Getnote{ width:164px; font-size:14px; display:block; height:29px; color:#96420e; text-align:center; border:none; background:url(/content/m/images/pay/btn1.png) 0 -33px no-repeat; margin-top:8px;}
+.boxpay .GetnoteCur{color:#aaa; background:url(/content/m/images/pay/btn1.png) 0 -66px no-repeat;}
+.boxpay .agree{ border-top:1px dashed #ccc; margin:0 10px; padding:15px 0 15px 15px; font-size:14px;}
+.boxpay .agree input{ vertical-align:text-bottom; }
+.paybtn{ width:214px; margin:15px 0 30px;color:#fff; font-size:16px; text-align:center; height:46px; line-height:40px; font-size:22px; text-align:center; background:url(/content/m/images/pay/m1.jpg) no-repeat; border:none;}
+.paybtndisable{ width:214px; margin:15px 0 30px;color:#fff; font-size:16px; text-align:center; height:46px; line-height:40px; font-size:22px; text-align:center; background:url(/content/m/images/pay/m4.jpg) no-repeat; border:none;}
+.pdes{ text-indent:2em; line-height:20px; margin-bottom:10px; }
+.stepb{ border-bottom:1px solid #ddd;padding:10px 0; margin-bottom:10px;}
+.step{ display:inline-block; width:70px;  line-height:18px; vertical-align:middle; color:#f93868; text-align:center; font-size:14px; background:#ffecf1; height:60px; border:5px solid #ffecf1;}
+.step3{ padding-top:10px; height:50px;}
+.jt{ width:16px; height:28px; vertical-align:middle; display:inline-block; background:url(/content/m/images/pay/jiantou.jpg) no-repeat;}
+.boxpay .cinfo tr:hover td{ background:#ccc;}
+.boxpay .cinfo td{ padding:10px; border-bottom:1px dashed #ccc; line-height:24px;}

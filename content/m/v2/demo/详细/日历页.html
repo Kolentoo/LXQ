@@ -1,0 +1,123 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>选择班期</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <link rel="apple-touch-icon-precomposed" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-startup-image" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link href="http://r01.uzaicdn.com/content/m/v2/styles/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/detail/detail.css" rel="stylesheet" />
+    <script src="http://r01.uzaicdn.com/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script type="text/javascript">
+        seajs.use(['http://r01.uzaicdn.com/content/m/v2/scripts/core', '/content/libs/plugin/jsonCalendar/_src/jsonCalendar', '/content/m/v2/scripts/_src/detail/order', '/content/m/v2/scripts/_src/detail/detail'], function (core, calendar, order, detail) {
+            order.init();
+            detail.init();
+        });
+    </script>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">行程</div>
+            </div>
+            <div class="d-r">
+
+            </div>
+        </header>
+        <div id="j_orderDetail" class="order-detail">
+            <div class="calendar-mobile">
+                <div class="sm-calendar" id="j_smartCalendar"></div>
+            </div>
+            <div class="calendar-tips-bar f999 p10 clearfix">
+                <span class="blue fl">行程A</span>
+                <span class="fr"><i class="icon-dot mr5 vm"></i><em class="vm">表示库存紧张</em></span>
+            </div>
+            <div class="favorable-bar bg-white bdt mt10 p10 clearfix">
+                <span class="bar-main f666 fl">优惠：<em class="red f13">4人预订，立减￥1000/单</em></span>
+                <span class="bar-side f999 fr">更多（3）</span>
+            </div>
+            <menu id="j_numControl" class="order-listing slice-mod">
+                <li class="ol-item clearfix">
+                    <span class="f15 fl">成人价<span class="f14 ml5"><i></i>元/人</span></span>
+                    <div class="fn-math fr clearfix">
+                        <span class="s1"></span>
+                        <input value="1" data-type="adult" readonly type="text" class="s2">
+                        <span class="s3"></span>
+                    </div>
+                </li>
+                <li class="ol-item clearfix">
+                    <span class="f15 fl">儿童价<span class="f14 ml5"><i></i>元/人</span></span>
+                    <div class="fn-math fr clearfix">
+                        <span class="s1"></span>
+                        <input value="0" data-type="child" readonly type="text" class="s2">
+                        <span class="s3"></span>
+                    </div>
+                </li>
+                <li class="ol-item clearfix">
+                    <span class="f15 fl">预付金<span class="f14 ml5"><i>41</i>元/人</span></span>
+                    <span class="f15 fr">预付总额：<i id="j_prepaidAmount" class="red price">￥<em>0</em></i></span>
+                </li>
+            </menu>
+        </div>
+        <footer class="footer-order clearfix">
+            <a class="btn-tel fl f16" href="tel:4000008888"><i class="icon-tel mr5 vm"></i>电话咨询</a>
+            <a href="#" id="ordersubmit" class="btn-order f18 fr">开始预订</a>
+        </footer>
+    </div>
+
+    <aside class="detail-aside" id="detail-aside">
+        <div class="detail-aside-wrap">
+
+            <div class="tit"><a href="javascript:void(0)" class="close" style=" display:none;">×</a>优惠信息</div>
+
+            <div class="detail-aside-inner" style="height: 519px;">
+                <input hours="32" value="0" id="isFreeWifi" type="hidden">
+
+                <div class="inner"></div>
+
+            </div>
+
+        </div>
+    </aside>
+    <!-- 新版备用
+    <div id="j_popFavorable" class="pop-favorable">
+        <span class="pop-close j_popClose"></span>
+        <div class="may-favorable info-mod">
+            <h3 class="mod-hd bdb p10"><i class="icon-item mr5 vm"></i><em class="red f15 vm">可享优惠</em></h3>
+            <div class="mod-bd">
+                <ul class="favorable-list">
+                    <li class="list-item">
+                        <p class="f14">4人预订，立减￥1000/单</p>
+                        <p class="f999">4人预订此班期，可享每张订单立减￥1000优惠。</p>
+                        <p class="blue">您已预订 2人，再邀请 2人，即可享此优惠</p>
+                        <p class="mt5"><input type="button" value="邀人拼单" class="btn-invite white f15 tc"></p>
+                    </li>
+                    <li class="list-item">
+                        <p class="f14">订单金额满￥10000，立减￥1000/单</p>
+                        <p class="f999">订单金额满1万元，每张订单立减1千元。</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="f14"><i class="tag-d">抵</i>抵U币</p>
+                        <p class="f999">预订此班期，每人可抵￥300U币</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+
+    <input type="hidden" value="16186" id="pid" />
+    <input type="hidden" value="1" id="tid" />
+    <input type="hidden" value="2" id="hid_minperson" />
+    <input type="hidden" value="10" id="hid_maxpersn" />
+    <input type="hidden" id="hidFirstDay" value="2015-11-02" />
+</body>
+</html>

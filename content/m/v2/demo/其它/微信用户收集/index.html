@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8" />
+    <title>微信用户收集</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/content/m/v2/styles/_src/other/style.css">
+    <script src="//r01.uzaicdn.com/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        var _scale = true;
+        seajs.use(['/content/m/v2/scripts/core', '/content/m/v2/scripts/_src/other/weixinuser/script'], function (core, script) {
+        });
+    </script>
+</head>
+<body>
+    <div class="w infor-collection">
+
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m"><div class="tit">微信用户收集</div></div>
+        </header>
+
+        <div class="collect-topic tc">
+            <p class="t1">报名信息收集</p>
+        </div>
+
+        <div class="infor-box">
+        <form action="" id="j_inforDetail" method="post">
+            <ul class="personal-infor" id="j_personalInfor">
+                <li class="infor-item">
+                    <label class="personal-data"><span class="s1">*<span class="s2">姓名</span></span></label>
+                    <input class="text" type="text" name="username" value="" placeholder="请输入姓名">
+                </li>
+
+                <li class="infor-item">
+                    <label class="personal-data clearfix"><span class="s1">*<span class="s2">联系方式</span></span></label>
+                    <input class="text" type="tel" name="mobile" value="" placeholder="请输入联系方式" maxlength="11">
+                </li>
+
+                <li class="infor-item">
+                    <label class="personal-data clearfix"><span class="s1">*<span class="s2">居住地</span></span></label>
+                    <select></select><select></select>
+                </li>
+
+                <li class="infor-item">
+                    <label class="personal-data clearfix"><span class="s1">*<span class="s2">出生年月</span></span></label>
+                    <input class="text year" type="month" name="data" value="">
+                </li>
+
+                <li class="infor-item">
+                    <label class="personal-data clearfix"><span class="s1">*<span class="s2">职业</span></span></label>
+                    <input class="text" type="text" name="job" value="" placeholder="请输入职业">
+                </li>
+
+                <li class="infor-sex infor-item">
+                    <label class="personal-data clearfix"><span class="s1">*<span class="s2">性别</span></span></label>
+                    <label for="man1">
+                        <input class="man" type="radio" value="男" name="man" id="man1" checked="" /><span class="s3">男</span>
+                    </label>
+                    <label for="man2">
+                        <input class="man" type="radio" value="女" name="man" id="man2"/><span class="s3">女</span>
+                    </label> 
+                </li>
+
+                <li class="infor-item">
+                    <label class="personal-data clearfix"><span class="s1">*<span class="s2">身高</span></span></label>
+                    <input class="text height-text text-number" type="tel" name="height" value=""><span class="s2">cm</span>
+                </li>
+
+                <li class="infor-item">
+                    <label class="personal-data clearfix"><span class="s1">*<span class="s2">体重</span></span></label>
+                    <input class="text height-text text-number" type="tel" name="weight" value=""><span class="s2">kg</span>
+                </li>
+
+                <li class="infor-item">
+                    <label class="personal-data clearfix"><span class="s1">*<span class="s2">是否出境过</span></span></label>
+                    <label for="ture">
+                        <input class="outbound" type="radio" value="是" name="outbound" id="ture" checked="" /><span class="s3">是</span>
+                    </label>
+                    <label for="false">
+                        <input class="outbound" type="radio" value="否" name="outbound" id="false"/><span class="s3">否</span>
+                    </label> 
+                </li>
+
+                <li class="infor-item">
+                    <label class="personal-data clearfix"><span class="s2">去过的目的地</span></label>
+                    <input class="text" type="text" name="destination" value="">
+                </li>
+
+                <li class="infor-last infor-item" id="infor-last">
+                    <label class="personal-data clearfix"><span class="s2">兴趣爱好</span></label>
+                    <input class="text" type="text" name="interest" value="">
+                </li>
+            </ul>
+
+            <div class="infor-submit tc">
+                <div class="infor-tip f666">其中带*的为必填</div>
+                <input class="infor-btn tc" id="j_inforBtn" type="submit" name="" value="提交">
+            </div>
+        </form>
+            
+        </div>
+
+
+
+
+    </div>
+
+    <div class="j_Gtel">1010-9898</div>
+
+</body>
+</html>

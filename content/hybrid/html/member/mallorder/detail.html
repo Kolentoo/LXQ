@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="keywords" content="私人定制旅游,定制旅游,高端旅游,定制旅行">
+    <meta name="description" content="悠哉旅游网提供高端私人定制旅游，专业定制旅游顾问按您的需求，为您1对1定制旅游方案，休闲游/度假游/购物游定制旅游高端旅行者的首要选择，享受专属你的私人旅行。">
+    <script src="http://r03.uzaicdn.com/content/libs/jquery-2.1.1.min.js"></script>
+    <script src="http://r03.uzaicdn.com/content/hybrid/scripts/common/font.js"></script>
+    <link href="http://r03.uzaicdn.com/content/hybrid/styles/common/base.css" rel="stylesheet">
+    <link href="http://r03.uzaicdn.com/content/hybrid/styles/member/mallorder-detail.css" rel="stylesheet">
+    <script type="text/javascript" src="http://r03.uzaicdn.com/content/libs/frame/angular/angular.min.js"></script>
+    <title>兑换详情</title>
+</head>
+
+<body ng-controller="MallOrderDetail">
+<!-- 头部 -->
+<header class="bg-transparent white-topbar">
+    <a target="_self" href="../mallorder/list.html" class="fl top-back"><i class="left-ico black-ico"></i></a>
+    <a target="_self" class="fr"></a>
+
+    <div class="title_img">兑换详情</div>
+</header>
+
+<div class="exchange main">
+
+    <!--未取消-->
+    <div ng-if="mallOrderDetail.State!=2">
+        <!--自取-->
+        <div ng-if="mallOrderDetail.SendType==1">
+            <nav ng-if="mallOrderDetail.State==0" class="top border-bot">
+                <p class="tit">当前状态：<span class="red">未领取</span></p>
+
+                <p class="bot">请尽早前往指定门店领取，如有疑问可向门店人员咨询。</p>
+            </nav>
+            <nav ng-if="mallOrderDetail.State==1" class="top border-bot">
+                <p class="tit">当前状态：<span class="blue">已领取</span></p>
+            </nav>
+
+            <nav class="address border-bot">
+                <div class="bor-top"></div>
+                <p class="tit border-bot">
+                    自取点：<span ng-bind="mallOrderDetail.Addressee"></span>
+                    <span class="fr" ng-bind="mallOrderDetail.Phone"></span>
+                </p>
+
+                <p class="ad"><i></i>门店地址：<span ng-bind="mallOrderDetail.Address">></span></p>
+            </nav>
+        </div>
+        <!--快递-->
+        <div ng-if="mallOrderDetail.SendType==2">
+            <nav ng-if="mallOrderDetail.SendType==2 && mallOrderDetail.State==0" class="top border-bot">
+                <p class="tit">当前状态：<span class="red">未派送</span></p>
+
+                <p class="bot">工作人员会在1-5个工作日内为您寄送或联系您，请耐心等待。</p>
+            </nav>
+            <nav ng-if="mallOrderDetail.SendType==2 && mallOrderDetail.State==1" class="top border-bot">
+                <p class="tit">当前状态：<span class="blue">已派送</span></p>
+
+                <p class="tit">快递公司：<span ng-bind="mallOrderDetail.ExpressCompany"></span></p>
+
+                <p class="tit">快递单号：<span ng-bind="mallOrderDetail.ExpressCode"></span>
+                    <a ng-show="isApp" ng-click="CopyExpressCode(mallOrderDetail.ExpressCode)" class="copy-btn"><i></i>复制</a>
+                </p>
+            </nav>
+            <!--  未派送状态和已派送状态的address 为收货人  -->
+            <nav class="address border-bot">
+                <div class="bor-top"></div>
+                <p class="tit border-bot">
+                    收货人：<span ng-bind="mallOrderDetail.Addressee"></span>
+                    <span class="fr" ng-bind="mallOrderDetail.Phone"></span>
+                </p>
+
+                <p class="ad"><i></i>收货地址：<span ng-bind="mallOrderDetail.Address"></span></p>
+            </nav>
+        </div>
+    </div>
+    <!--取消-->
+    <div ng-if="mallOrderDetail.State==2">
+        <nav class="top border-bot">
+            <p class="tit">当前状态：<span>已取消</span></p>
+        </nav>
+        <div ng-if="mallOrderDetail.SendType==1">
+            <nav class="address border-bot">
+                <div class="bor-top"></div>
+                <p class="tit border-bot">
+                    自取点：<span ng-bind="mallOrderDetail.Addressee"></span>
+                    <span class="fr" ng-bind="mallOrderDetail.Phone"></span>
+                </p>
+
+                <p class="ad"><i></i>门店地址：<span ng-bind="mallOrderDetail.Address">></span></p>
+            </nav>
+        </div>
+        <div ng-if="mallOrderDetail.SendType==2">
+            <nav class="address border-bot">
+                <div class="bor-top"></div>
+                <p class="tit border-bot">
+                    收货人：<span ng-bind="mallOrderDetail.Addressee"></span>
+                    <span class="fr" ng-bind="mallOrderDetail.Phone"></span>
+                </p>
+
+                <p class="ad"><i></i>收货地址：<span ng-bind="mallOrderDetail.Address"></span></p>
+            </nav>
+        </div>
+    </div>
+
+    <nav class="part layout-box border-bot" ng-click="JumpProductPage(mallOrderDetail.ProductId,$event)">
+        <a class="img" href="" target="_self">
+            <img ng-src="{{mallOrderDetail.ProductImg}}">
+        </a>
+
+        <div class="text son-box">
+            <a class="tit" href="" target="_self"><span ng-bind="mallOrderDetail.ProductName"></span></a>
+
+            <p class="bot">
+                <span class="red" ng-bind="mallOrderDetail.ExchangeScore/mallOrderDetail.ExchangeCount"></span>
+                积分x<span ng-bind="mallOrderDetail.ExchangeCount"></span>
+            </p>
+        </div>
+    </nav>
+
+    <nav class="ls border-bot">
+        <ul>
+            <li class="border-bot">
+                <a>消耗积分<span class="red fr ng-cloak" ng-bind="mallOrderDetail.ExchangeScore"></span></a>
+            </li>
+            <li class="border-bot">
+                <a>兑换时间<span class="fr ng-cloak" ng-bind="mallOrderDetail.ExchangeTime| date:'yyyy-MM-dd HH:mm' "></span></a>
+            </li>
+            <li class="border-bot">
+                <a>订单编号<span class="fr ng-cloak" ng-bind="mallOrderDetail.Id"></span></a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<script src="http://r03.uzaicdn.com/content/libs/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="http://r03.uzaicdn.com/content/hybrid/scripts/common/api.js"></script>
+<script type="text/javascript" src="http://r03.uzaicdn.com/content/hybrid/scripts/common/app-bridge.js"></script>
+<script src="http://r03.uzaicdn.com/content/hybrid/scripts/member/mallorder-detail.js"></script>
+</body>
+</html>

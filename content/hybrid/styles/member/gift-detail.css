@@ -1,0 +1,134 @@
+html{min-height:100%;}
+body{min-height:100%;overflow-x: hidden;}
+.clear{clear:both;}
+.wrapper_main{width:7.5rem;overflow:hidden;}
+input[type="text"], button {
+	-webkit-appearance: normal;
+}
+#wrapper {
+	position:absolute;
+	z-index: 2;
+	top: 0rem;
+	bottom: 1.25rem;
+	left: 0;
+	overflow: hidden;
+	padding-top:0px !important;
+	background:#f0f0f0;
+}
+/*轮播开始*/
+.swiper-container{width:7.5rem;height:4.4rem;position:relative;}
+.swiper-wrapper{width:1000%;overflow:hidden;}
+.swiper-slide{float:left;position: relative;}
+.swiper-slide img{width:7.5rem;height:4.4rem;display:block;}
+.swiper-slide .img{width:7.5rem;height:4.4rem;position: absolute;left:0px;bottom: 0px;background:url('http://r03.uzaicdn.com/content/hybrid/images/member/gradient.png') repeat-x top;}
+.swiper-container {width:7.5rem;height:4.4rem;}
+.swiper-pagination{transform:translateX(-50%);-ms-transform:translateX(-50%); 	/* IE 9 */-moz-transform:translateX(-50%); 	/* Firefox */
+-webkit-transform:translateX(-50%); /* Safari 和 Chrome */-o-transform:translateX(-50%);position:absolute;left:50%; bottom:0.2rem;}
+.swiper-pagination span{width:0.12rem;height:0.12rem;margin-left:0.12rem;float:left;background:#fff;border-radius:0.12rem;}
+.swiper-pagination span.swiper-pagination-bullet-active{width:0.32rem;background:#e82661;}
+
+/*轮播结束*/
+
+.main_top{padding:0.2rem 0.3rem;background:#fff;border-bottom:1px solid #dddddd;}
+.main_top .title{font-size:.32rem;color:#333333;}
+.main_top .left{float:left;color:#999999;font-size:.24rem;line-height:.4rem;}
+.main_top .ov{overflow:hidden;margin-top:.15rem;}
+.main_top .ov .left span{color:#e5004f;font-size:.32rem;padding-right:.1rem;}
+.main_top .ov .right{font-size:.24rem; color:#666666;float:right;line-height:.4rem;}
+.main_m{border-top:1px solid #dddddd;background:#fff;margin-top:.1rem;}
+.main_m .title{font-size:.32rem;color:#333333;line-height:.78rem;padding:0px .3rem;text-align:left}
+.main_detail{padding:0.2rem .3rem;background:#fff;border-top:1px solid #ddd;margin-top:.8rem}
+.main_detail img{max-width:6.9rem;min-height:4rem;display:block;}
+.main_detail p{margin-top:.1rem;color:#666666;font-size:.28rem;line-height:.44rem;}
+.main_f{height:1.24rem;position:fixed;width:7.5rem;border-top:1px solid #dddddd;left:0px;bottom:0px;background:#fff;z-index:3;}
+.main_f a{display:block;width:6.9rem;height:.8rem;line-height:.8rem;color:#fff;background:#e5004f;font-size:.36rem;margin:auto;margin-top:.22rem;text-align:center;border-radius:.1rem;}
+.main_f a.ccc{background:#ccc;color:#fff;}
+a:visited{color:none;}
+.buy{position:fixed;bottom:-100%;left:0px;width:7.5rem;background:#fff;z-index:999;-webkit-transition: all .5s ease-in-out;transition: all .5s ease-in-out;}
+.buy_t{padding-bottom:.26rem;border-bottom:1px solid #dddddd;padding-left:.3rem;padding-right:.3rem;position:relative;}
+.buy_t_img{width:1.7rem;height:1.7rem;padding:.1rem;background:#fff;border:1px solid #dddddd;border-radius:.1rem;margin-top:-.4rem;float:left;}
+.buy_t_img img{width:1.7rem;height:1.7rem;border-radius:.1rem;}
+.buy_t .close{display:block;width:.44rem;height:.44rem;background:url('http://r03.uzaicdn.com/content/hybrid/images/member/close.png') no-repeat;background-size:.42rem .42rem;position:absolute;right:0.3rem;top:0.2rem;}
+.buy_t_p{float:left;margin-left:.2rem;padding-top: 0.15rem;width:4.3rem}
+.buy_t_p p{font-size:.32rem;color:#333333;width:4.3rem}
+.buy_t_p span{font-size:.24rem;color:#666666;}
+.specifi{padding-bottom:.25rem;border-bottom:1px solid #dddddd;}
+.specifi span.title{font-size:.28rem;color:#666666;}
+.specifi .ov{margin-top:.15rem;overflow: hidden;}
+.specifi span.a{padding:.1rem .2rem;font-size:.28rem;margin-right:.2rem;border-radius:.1rem;float:left;margin-bottom:.05rem;}
+.specifi span.selected{background:#e5004f;color:#fff;}
+.num{padding:.25rem 0;border-bottom:1px solid #dddddd;overflow:hidden;}
+.num .right{float:right;margin-right: 2px;}
+.num .right div{float:left;}
+.num .right .reduce{height:.7rem;width:.7rem;text-align:center;border:1px solid #898989;font-size:.4rem;color:#898989;border-right:0px;line-height: .7rem;}
+.num .right .show{width:1.05rem;line-height:.7rem;height:.7rem;background:#e5004f;color:#fff;text-align:center;border:1px solid #f93867;font-size:.28rem;float:left;  }
+.num .right .plus{height:.7rem;width:.7rem;color:#e5004f;text-align:center;border:1px solid #e5004f;font-size:.4rem;border-left:0px;font-size:.28rem;line-height: .7rem;}
+.num .right .red{border-color: #e5004f;color:#e5004f;}
+.num .right .dust{border-color: #898989;color:#898989;}
+.num .left{line-height:.7rem;font-size:.28rem;float:left;color:#666666;}
+.need{padding:.25rem 0;overflow:hidden;}
+.need .left{float:left;font-size:.28rem; color:#666666;}
+.need .right{float:right;font-size:.28rem; color:#666666;}
+.need .left span{font-size:.32rem;color:#e5004f;}
+.need .right span{font-size:.32rem;color:#666666;}
+.buy_m{padding:.3rem;padding-top: 0px;}
+.buy_f{padding-top:.2rem;border-top:1px solid #dddddd;}
+.buy_f a{display:block;width:6.9rem;height:.8rem;line-height:.8rem;color:#fff;background:#e5004f;font-size:.36rem;margin:auto;text-align:center;border-radius:.1rem;}
+
+._title{padding:.1rem 0rem;font-size: .32rem}
+.title{float:left;padding:.1rem .2rem;padding-left: 0px;}
+.black-ico_{
+	left:0.3rem;
+	top:0.2rem;
+	position:absolute;
+	width: 0.6rem;
+    height: 0.58rem;
+    display: inline-block;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/member/back_ico_.png")no-repeat;
+    background-size: .58rem;
+	z-index:999;
+    display:none;
+}
+
+.save-img{z-index:999;position:absolute;bottom:10px;right:10px;color:#fff;display:none}
+.keep{
+	z-index: 1200;
+	position: absolute;
+	width: 7.5rem;
+	bottom: 0px;
+    background: #fff;
+	display: none;
+}
+.keep_img, .cancel_img{
+	text-align: center;
+	font-size: .32rem;
+	line-height: 1rem;
+	color: #333333;
+}
+.keep_img{border-bottom: 1px solid #dddddd;}
+
+    .keep_img:hover, .cancel_img:hover {
+        background-color:#ccc;
+    }
+.uzai_layer{height: 100%;position: fixed;width: 100%;background: #000;display: none;top: 0px;z-index: 997;opacity:1}
+.uzai_layer1{height: 100%;position: fixed;width: 100%;background: #000;display: none;top: 0px;z-index: 997;
+	filter:alpha(opacity=60); /*IE滤镜，透明度50%*/
+	-moz-opacity:0.6; /*Firefox私有，透明度50%*/
+	opacity:0.6;/*其他，透明度50%*/
+}
+.noclick{pointer-events:none;background:none;color:#ccc;cursor:not-allowed;}
+.allowclick{background:#f5f5f5;color:#666666;}
+
+#layer_img{z-index:999;left:0px;top:0px;display:none}
+.product{max-height:4rem;overflow: auto;width:6.9rem;padding-top: .3rem;}
+.layer-loading{
+	display: none;
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	left: 50%;
+	margin-left: -0.3rem;
+	top: 50%;
+	margin-top: -0.5rem;
+	z-index: 998;
+}

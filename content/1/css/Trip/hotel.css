@@ -1,0 +1,67 @@
+﻿/* pop up window */
+.base_pop { border:3px solid #57bcff; background:#fff; margin:0 auto; }
+.base_pop .pop_hd,.jmp_hd { height:39px; padding-left:10px; font-size:12px; line-height:39px; color:#333;background:url(/content/1/image/jiudian/c1.gif) repeat-x 0 0; }
+.base_pop .pop_hd h3,.jmp_hd h3 { font-size:12px; }
+.base_pop .pop_hd .delete, .jmp_hd .delete { float:right; width:21px; height:21px;text-decoration:none; margin:7px 7px 0 0}
+.base_pop .pop_bd,.jmp_bd { padding:8px 10px; }
+/*      酒店图片      */
+.picture_wrap .pop_bd { padding:20px; }
+.picture_tab { float:left; height:23px; margin-bottom:10px; border:1px solid #999; -moz-border-radius:3px;  overflow:hidden; }
+.picture_tab li { float:left; height:23px; }
+.picture_tab li a,.picture_tab .on a { float:left; height:23px; padding:0 10px; margin-left:-1px; border-left:1px solid #999; background:url(/content/1/image/jiudian/bg_pic_tab.png) repeat-x 0 0; line-height:23px; color:#666; }
+.picture_tab li a:hover { background-position:0 -25px; text-decoration:none; color:#333; }
+.picture_tab .on a,.picture_tab .on a:hover { background-position:0 -50px; font-weight:bold; color:#333; text-decoration:none; }
+/* 酒店外景图 */
+.picture_big { float:left; width:500px; height:340px; margin:0 12px 10px 0; overflow:hidden; }
+.picture_item { float:left; width:80px; }
+.picture_list { height:340px; padding-bottom:5px;position:relative;float:left;clear:both;}
+.picture_list li {width:78px; height:58px; margin-bottom:6px; border:1px solid #B1CFF0; overflow:hidden; cursor:pointer;display:block;float:left;clear:both; }
+.picture_list li.on { border:1px solid #F36200; }
+
+.picture_main { clear:both; }
+.picture_item_title { clear:both; padding:0 10px; background-color:#F1F1F1; line-height:31px; }
+
+.jdCon{border:1px solid #ccc;padding:10px;font-size:14px;line-height:22px;}
+.jdCon .hd{border-bottom:1px dotted #d5d5d5;line-height:30px;height:30px;margin-bottom:5px;padding-bottom:5px;}
+.jdCon p{text-indent:2em;}
+.jdCon .bd{margin-bottom:25px;}
+.jdCon .hd h2{display:inline;}
+.jdCon .hd .ss{background:url(/content/1/image/jiudian/c5.gif) no-repeat 0 0;width:22px;float:left;height:22px;display:inline;margin:5px 10px 0 0;}
+.jdCon .hd .s1{background:url(/content/1/image/jiudian/c5.gif) no-repeat 0 0;}
+.jdCon .hd .s2{background:url(/content/1/image/jiudian/c6.gif) no-repeat 0 0;}
+.jdCon .hd .s3{background:url(/content/1/image/jiudian/c7.gif) no-repeat 0 0;}
+.jdCon .hd .s4{background:url(/content/1/image/jiudian/c8.gif) no-repeat 0 0;}
+
+.jdCon .tb1{font-size:12px;}
+.jdCon .tb1 .a1{color:#3366cc;}
+.jdCon .tb1 .a1:hover{color:#3366cc}
+
+.jdCon .tb1 th{background:#f4f4f4;padding:2px 5px;}
+.jdCon .tb1 td{border-bottom:1px solid #ccc;padding:5px 5px;}
+
+.jdFocus{border:1px solid #ccc;padding:20px;font-size:12px;margin-bottom:15px;width:758px;}
+.jdFocus .p0{border-bottom:1px dotted #d5d5d5;font-size:12px;position:relative;}
+.jdFocus .p0 span{float:right;background:url(/content/1/image/jiudian/c10.gif) no-repeat left center;padding-left:15px;position:relative;}
+.jdFocus .p0 span a{color:#8c6618;text-decoration:underline;}
+.jdFocus .p0 span label{display:none;border:1px solid #ccc;padding:10px;line-height:20px;position:absolute;right:0;top:20px;width:250px;background:#fff;z-index:2;}
+.jdFocus .l .p1{text-align:center;}
+.jdFocus .l .p1 a{color:#0551fc;}
+.jdFocus p{text-indent:0;font-size:12px;line-height:23px;}
+.jdFocus .l{float:left;width:430px;}
+.jdFocus .r{float:right;width:305px;}
+ 
+/***jQmodel default css***/	
+.jqmWindow{display:none;position:fixed;top:17%;left:50%;margin-left:-320px;width:640px;}
+.jqmClose{background:url(/content/1/image/jiudian/c2.gif) no-repeat 0 0;width:21px;height:21px;overflow:hidden;text-indent:-9999px;float:right;}
+.jqmOverlay{background-color: #000; }
+* iframe.jqm {position:absolute;top:0;left:0;z-index:-1;width: expression(this.parentNode.offsetWidth+'px');height: expression(this.parentNode.offsetHeight+'px');}
+* html .jqmWindow {position: absolute;top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');}
+
+/**jcarousel**/
+.jcarousel-container{position:relative;height:320px;}
+.jcarousel-clip-vertical{height:325px;overflow:hidden;width:80px;position:relative;}
+.jcarousel-item{width:78px;height:58px;}
+.jcarousel-prev{height:20px;width:80px;position:absolute;top:-20px;background:url(/content/1/images/hotel/pre.gif) no-repeat;}
+.jcarousel-next{height:20px;width:80px;position:absolute;bottom:-20px;background:url(/content/1/images/hotel/next.gif) no-repeat;}
+.jcarousel-prev-disabled{background-image:url(/content/1/images/hotel/pre_disable.gif);}
+.jcarousel-next-disabled{background-image:url(/content/1/images/hotel/next_disable.gif);}

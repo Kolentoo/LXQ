@@ -1,0 +1,276 @@
+/*
+* @Author: anchen
+* @Date:   2016-08-10 10:28:56
+* @Last Modified by:   jonas hsiao
+* @Last Modified time: 2016-08-15 16:36:25
+*/
+
+html, body{ width: 100%; overflow-x: hidden;}
+.wrap-zq{position:relative;}
+.banner-zq{background: url(/content/subject/pc-zhongqiu20160810/images/zq01.jpg) no-repeat center center;height: 636px;position: relative;}
+.hd-xiaoxu{background: url(/content/subject/pc-zhongqiu20160810/images/zq02.jpg) no-repeat center center;height: 125px;}
+.bd-xiaoxu{background: url(/content/subject/pc-zhongqiu20160810/images/zq03.jpg) no-repeat center center;height: 782px;}
+.hd-shangque{background: url(/content/subject/pc-zhongqiu20160810/images/zq04.jpg) no-repeat center center;height: 164px;}
+.bd-shangque{background: url(/content/subject/pc-zhongqiu20160810/images/zq05.jpg) no-repeat center center;height: 1312px;}
+.hd-xiaque{background: url(/content/subject/pc-zhongqiu20160810/images/zq06.jpg) no-repeat center center;height: 165px;}
+.bd-xiaque{background: url(/content/subject/pc-zhongqiu20160810/images/zq07.jpg) no-repeat center center;height: 1096px;}
+.hd-rmtj{background: url(/content/subject/pc-zhongqiu20160810/images/zq08.jpg) no-repeat center center;height: 73px;}
+.bd-rmtj{background: url(/content/subject/pc-zhongqiu20160810/images/zq09.jpg) no-repeat center center;height: 385px;position:relative;}
+
+.banner-zq .bcon1 {background: url(/content/subject/pc-zhongqiu20160810/images/title.png) no-repeat;width: 783px;height: 361px;position: absolute;left: 50%;margin-left: -440px;top: 25px;z-index:5;}
+.banner-zq .bcon2 {background: url(/content/subject/pc-zhongqiu20160810/images/woman.png) no-repeat;width: 407px;height: 482px;position: absolute;right: 50%;margin-right: -715px;top: 45px;z-index:6;}
+.banner-zq .bcon3 {background: url(/content/subject/pc-zhongqiu20160810/images/mooncake.png) no-repeat;width: 415px;height: 460px;position: absolute;left: 50%;margin-left: -595px;top: 300px;z-index:7;}
+.banner-zq .cloud {background: url(/content/subject/pc-zhongqiu20160810/images/cloud1.png) no-repeat;width: 2407px;height: 718px;position: absolute;left: 50%;margin-left: -1190px;top: 0;z-index:4;}
+
+
+.xiaoxu-con {padding-top: 30px;}
+.bd-xiaoxu-main{width: 985px;background: #e7c457;opacity:0.9;filter:alpha(opacity=90);margin: 0 auto;border-radius:20px;padding-bottom:15px;}
+.shizitp{border-radius:10px 10px 0 0;}
+.bd-xiaoxu-main-l {*margin-left: 15px;}
+.bd-xiaoxu-main-l div,.bd-xiaoxu-main-c div,.bd-xiaoxu-main-r div{width: 308px;background: #fff;margin-left: 15px;margin-top: 15px;border-radius:10px;position:relative;}
+.bd-xiaoxu-main .bd-xiaoxu-main-p1{padding:0 15px;font-size: 16px;height:42px;overflow:hidden;}
+.bd-xiaoxu-main .bd-xiaoxu-main-p1 a:hover {color:#f93863;}
+.xibei-main-r1 .bd-xiaoxu-main-p1 {padding:10px 15px 0;height:85px;overflow:hidden;}
+.bd-xiaoxu-main-p2{font-size: 16px;width: 150px;height: 35px;background: #d8a014;border-radius:20px;text-align: center;line-height: 35px;margin: 5px auto;}
+.xiaoxu-list {padding-bottom:13px;transition: all ease 0.5s;_display:inline;}
+.xiaoxu-list img{width: 100%;}
+.xiaoxu-list:hover {box-shadow:0 0 3px 3px rgba(255,255,255,0.8);}
+.bd-xiaoxu-main-p2 a{color: #fff;}
+.bd-xiaoxu-main-p2 a .fuhao{font-size: 18px;}
+.bd-xiaoxu-main-p2 a .shuzi{font-size: 30px;}
+.bd-xiaoxu-main-p2 a .qi{font-size: 16px;}
+.bd-xiaoxu-main .wuzhe {width: 68px;height: 41px;position:absolute;top:-21px;left:15px;background:url(/content/subject/pc-zhongqiu20160810/images/zq01.png) no-repeat;line-height:40px;font-size:22px;color:#b53c00;}
+.shangque-1{margin: 0 auto;width: 1078px;position:relative;}
+.shangque-1 .s-list2 {margin:12px 0 0 13px;}
+.shangque-1 .s-list3 {margin:20px 0 0 13px;}
+.shangque-1 .s-list4 {margin:12px 0 0 13px;}
+.shangque-1 .s-list5 {margin:10px 0 0 13px;}
+.shangque-1 .s-list6 {margin:-5px 0 0 23px;}
+
+.shangque-1 li img{}
+.shangque-1 .s-list1 .img-on { -moz-animation: ribbet1 1.5s linear infinite; -o-animation: ribbet1 1.5s linear infinite; -webkit-animation: ribbet1 1.5s linear infinite; animation: ribbet1 1.5s linear infinite;}
+.shangque-1 .s-list2 .img-on { -moz-animation: ribbet2 2s linear infinite; -o-animation: ribbet2 2s linear infinite; -webkit-animation: ribbet2 2s linear infinite; animation: ribbet2 2s linear infinite;transform-origin:45% 100%;transform-origin:45% 100%;-moz-transform-origin:45% 100%;-ms-transform-origin:45% 100%;-webkit-transform-origin:45% 100%;-o-transform-origin:45% 100%;}
+.shangque-1 .s-list3 .img-on { -moz-animation: ribbet2 2s linear infinite; -o-animation: ribbet2 2s linear infinite; -webkit-animation: ribbet2 2s linear infinite; animation: ribbet2 2s linear infinite;transform-origin:45% 100%;transform-origin:45% 100%;-moz-transform-origin:45% 100%;-ms-transform-origin:45% 100%;-webkit-transform-origin:45% 100%;-o-transform-origin:45% 100%;}
+.shangque-1 .s-list4 .img-on { -moz-animation: ribbet2 2s linear infinite; -o-animation: ribbet2 2s linear infinite; -webkit-animation: ribbet2 2s linear infinite; animation: ribbet2 2s linear infinite;transform-origin:45% 100%;transform-origin:45% 100%;-moz-transform-origin:45% 100%;-ms-transform-origin:45% 100%;-webkit-transform-origin:45% 100%;-o-transform-origin:45% 100%;}
+.shangque-1 .s-list5 .img-on { -moz-animation: ribbet3 2s linear infinite; -o-animation: ribbet3 2s linear infinite; -webkit-animation: ribbet3 2s linear infinite; animation: ribbet3 2s linear infinite;}
+.shangque-1 .s-list6 .img-on { -moz-animation: ribbet2 2s linear infinite; -o-animation: ribbet2 2s linear infinite; -webkit-animation: ribbet2 2s linear infinite; animation: ribbet2 2s linear infinite;transform-origin:45% 100%;transform-origin:45% 100%;-moz-transform-origin:45% 100%;-ms-transform-origin:45% 100%;-webkit-transform-origin:45% 100%;-o-transform-origin:45% 100%;}
+
+
+.shangque-1 li{float: left;position: relative;cursor:pointer;}
+.shangque-2{width: 1078px;height: 1105px;margin: 0 auto;}
+.shangque-2-1{position:relative;width: 1078px;height: 1105px;}
+
+.xibei-main{background:url(/content/subject/pc-zhongqiu20160810/images/zq09.png) center center no-repeat;width: 1083px;height: 1099px;}
+.sichuan-main{background:url(/content/subject/pc-zhongqiu20160810/images/zq20.png) center center no-repeat;width: 1083px;height: 1099px;}
+.yunnan-main{background:url(/content/subject/pc-zhongqiu20160810/images/zq21.png) center center no-repeat;width: 1083px;height: 1099px;}
+.guangxi-main{background:url(/content/subject/pc-zhongqiu20160810/images/zq22.png) center center no-repeat;width: 1083px;height: 1099px;}
+.hunan-main{background:url(/content/subject/pc-zhongqiu20160810/images/zq23.png) center center no-repeat;width: 1083px;height: 1099px;}
+.beijing-main{background:url(/content/subject/pc-zhongqiu20160810/images/zq24.png) center center no-repeat;width: 1083px;height: 1099px;}
+
+
+.xibei-main-r{padding: 130px 40px 0 0;_width: 484px;}
+.xibei-main-r1{width: 484px;height: 218px;margin-bottom:15px;transition:all ease 0.5s;border-radius: 15px;_display:inline;}
+.xibei-main-r1:hover {box-shadow:0 0 3px 3px rgba(255,255,255,0.8);}
+.xibei-main-tp{height: 218px;width: 292px;border-radius:15px 0 0 15px;}
+.xibei-main-tp img{border-radius:15px 0 0 15px;width: 100%;}
+.xibei-main-neirong{width: 192px;height: 218px;background: #cb8622;border-radius: 0 15px 15px 0;}
+.youya a{font-size: 16px;color:#fff;}
+.riqi{margin-left: 17px;margin-top: 25px;margin-bottom: 25px;}
+.riqi span{font-size: 14px;color:#fff;}
+.riqi i{vertical-align: middle;}
+.jiage a{color:#aa0030;font-size: 30px;}
+.xiaque-1{margin: 0 auto;width: 1078px;}
+.xiaque-1 li{float:left;margin-left: 30px;cursor:pointer;width: 145px;height: 152px;position: relative;_display: inline;}
+.xiaque-1 .x-list1 {background: url(/content/subject/pc-zhongqiu20160810/images/zq11.png) no-repeat;}
+.xiaque-1 .x-list2 {background: url(/content/subject/pc-zhongqiu20160810/images/zq12.png) no-repeat;}
+.xiaque-1 .x-list3 {background: url(/content/subject/pc-zhongqiu20160810/images/zq13.png) no-repeat;}
+.xiaque-1 .x-list4 {background: url(/content/subject/pc-zhongqiu20160810/images/zq14.png) no-repeat;}
+.xiaque-1 .x-list5 {background: url(/content/subject/pc-zhongqiu20160810/images/zq15.png) no-repeat;}
+.xiaque-1 .x-list6 {background: url(/content/subject/pc-zhongqiu20160810/images/zq16.png) no-repeat;}
+.xiaque-1 .x-list .eyes {position: absolute;opacity:1;}
+.xiaque-1 .x-list .eyes-on {position: absolute;opacity:0;}
+.xiaque-1 .x-list .eyes-1 { -moz-animation: eyes 1s linear infinite; -o-animation: eyes 1s linear infinite; -webkit-animation: eyes 1s linear infinite; animation: eyes 1s linear infinite;}
+.xiaque-1 .x-list .eyes-2 {-moz-animation: eyes-on 1s linear infinite; -o-animation: eyes-on 1s linear infinite; -webkit-animation: eyes-on 1s linear infinite; animation: eyes-on 1s linear infinite;}
+
+
+.xiaque-1 .x-list1 .eyes {background: url(/content/subject/pc-zhongqiu20160810/images/eye1.png) no-repeat;width: 75px;height: 26px;top: 25px;left: 30px;}
+.xiaque-1 .x-list1 .eyes-on {background: url(/content/subject/pc-zhongqiu20160810/images/eye1-on.png) no-repeat;width: 75px;height: 11px;top: 30px;left: 30px;}
+.xiaque-1 .x-list2 .eyes {background: url(/content/subject/pc-zhongqiu20160810/images/eye2.png) no-repeat;width: 55px;height: 22px;top: 25px;left: 42px;}
+.xiaque-1 .x-list2 .eyes-on {background: url(/content/subject/pc-zhongqiu20160810/images/eye2-on.png) no-repeat;width: 55px;height: 10px;top: 30px;left: 42px;}
+
+.xiaque-1 .x-list3 .eyes {background: url(/content/subject/pc-zhongqiu20160810/images/eye3.png) no-repeat;width: 78px;height: 24px;top: 32px;left: 32px;}
+.xiaque-1 .x-list3 .eyes-on {background: url(/content/subject/pc-zhongqiu20160810/images/eye3-on.png) no-repeat;width: 72px;height: 14px;top: 36px;left: 33px;}
+
+.xiaque-1 .x-list4 .eyes {background: url(/content/subject/pc-zhongqiu20160810/images/eye4.png) no-repeat;width: 69px;height: 21px;top: 34px;left: 38px;}
+.xiaque-1 .x-list4 .eyes-on {background: url(/content/subject/pc-zhongqiu20160810/images/eye4-on.png) no-repeat;width: 68px;height: 11px;top: 41px;left: 38px;}
+
+.xiaque-1 .x-list5 .eyes {background: url(/content/subject/pc-zhongqiu20160810/images/eye5.png) no-repeat;width: 81px;height: 22px;top: 24px;left: 33px;}
+.xiaque-1 .x-list5 .eyes-on {background: url(/content/subject/pc-zhongqiu20160810/images/eye5-on.png) no-repeat;width: 67px;height: 7px;top: 34px;left: 40px;}
+
+.xiaque-1 .x-list6 .eyes {background: url(/content/subject/pc-zhongqiu20160810/images/eye6.png) no-repeat;width: 67px;height: 27px;top: 29px;left: 38px;}
+.xiaque-1 .x-list6 .eyes-on {background: url(/content/subject/pc-zhongqiu20160810/images/eye6-on.png) no-repeat;width: 67px;height: 13px;top: 35px;left: 38px;}
+
+
+.xiaque-2{width: 1078px;height: 864px;margin: 0 auto;}
+.xiaque-2-1{width: 1078px;height: 864px;background: url(/content/subject/pc-zhongqiu20160810/images/zq29.png) center center no-repeat;position:relative;}
+.xiaque-2-2{width: 1078px;height: 864px;background: url(/content/subject/pc-zhongqiu20160810/images/zq28.png) center center no-repeat;position:relative;}
+.xiaque-2-3{width: 1078px;height: 864px;background: url(/content/subject/pc-zhongqiu20160810/images/zq27.png) center center no-repeat;position:relative;}
+.xiaque-2-4{width: 1078px;height: 864px;background: url(/content/subject/pc-zhongqiu20160810/images/zq26.png) center center no-repeat;position:relative;}
+.xiaque-2-5{width: 1078px;height: 864px;background: url(/content/subject/pc-zhongqiu20160810/images/zq25.png) center center no-repeat;position:relative;}
+.xiaque-2-6{width: 1078px;height: 864px;background: url(/content/subject/pc-zhongqiu20160810/images/zq18.png) center center no-repeat;position:relative;}
+.bd-xiaque .linan {margin:590px 0 0 50px;}
+.linan-r{width:484px;padding:125px 35px 0 0;_display:inline;}
+.tuzi1{position:absolute;left:-20px;top:-32px;}
+.tuzi2{position:absolute;left:-4px;top:-59px;}
+.tuzi3{position:absolute;left:-27px;top:-40px;}
+.tuzi4{position:absolute;left:63px;top:-55px;}
+.tuzi5{position:absolute;left:-12px;top:-32px;}
+.tuzi6{position:absolute;left:-18px;top:-32px;}
+
+.bd-rmtj-bg {background:url(/content/subject/pc-zhongqiu20160810/images/zq19.png) no-repeat top center;height:360px;}
+.rmtj-con {margin: 0 auto;width: 984px;padding-top: 65px;}
+.rmtj-con .rm-list {width: 300px;margin:0 14px;_display:inline;}
+.rmtj-con .rm-list a { display: block; }
+.rmtj-con .rm-list img { width: 100%; vertical-align: middle; }
+
+.navigation {width: 145px;background: #995a31;opacity:0.85;filter: alpha(opacity=85);text-align: center;position: absolute;top: 750px;right: 20px;border-radius: 15px;}
+.nav-on {position: fixed;top: 13%;right: 20px;}
+.navigation .nav-box {padding-top: 6px;}
+.navigation .nav-con {color:#945527;border-radius: 15px;text-align: center;font-weight: bold;font-size: 24px;margin-bottom: 6px;cursor:pointer;}
+.navigation .nav-con .p1 {background: url(/content/subject/pc-zhongqiu20160810/images/nav-bj1.png) center center no-repeat;height: 40px;line-height: 38px;}
+.navigation .nav-con .p1:hover {background: url(/content/subject/pc-zhongqiu20160810/images/nav-bj2.png) center center no-repeat;color:#fed36b;}
+.navigation .on .p1{background: url(/content/subject/pc-zhongqiu20160810/images/nav-bj2.png) center center no-repeat;color:#fed36b;}
+.navigation .nav-con .p1:hover .arrow {background: url(/content/subject/pc-zhongqiu20160810/images/nav-top2.png) no-repeat;}
+.navigation .nav-con2 {overflow: hidden;height: 40px;transition:all ease 0.5s;}
+.navigation .nav-con3 {overflow: hidden;height: 40px;transition:all ease 0.5s;}
+.navigation .con-off {height: 238px;}
+.navigation .nav-list {color:#fed36b;font-size: 24px;font-weight: normal;}
+.navigation .nav-list li:hover {color:#fff;}
+.navigation .nav-list .list-on {color:#fff;}
+.navigation .nav-back .p1 {position: relative;}
+.navigation .arrow {background: url(/content/subject/pc-zhongqiu20160810/images/nav-top.png) no-repeat;width: 16px;height: 11px;margin:15px 0 0 40px;}
+
+
+@-webkit-keyframes ribbet1 {
+    0% {top: -60px;}
+    25% {top: -50px;}
+    50% {top: -32px;}
+    85% {top: -50px;}
+    100% {top: -60px;}
+}
+
+@-moz-keyframes ribbet1 {
+    0% {top: -60px;}
+    25% {top: -50px;}
+    50% {top: -32px;}
+    85% {top: -50px;}
+    100% {top: -60px;}
+}
+
+@keyframes ribbet1 {
+    0% {top: -60px;}
+    25% {top: -50px;}
+    50% {top: -32px;}
+    85% {top: -50px;}
+    100% {top: -60px;}
+}
+
+@-webkit-keyframes ribbet2 {
+    0% { -moz-transform: rotate(10deg); -ms-transform: rotate(10deg); -o-transform: rotate(10deg); -webkit-transform: rotate(10deg); transform: rotate(10deg);}
+    25% { -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    50% { -moz-transform: rotate(-10deg); -ms-transform: rotate(-10deg); -o-transform: rotate(-10deg); -webkit-transform: rotate(-10deg); transform: rotate(-10deg);}
+    75% { -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    100% {-moz-transform: rotate(10deg); -ms-transform: rotate(10deg); -o-transform: rotate(10deg); -webkit-transform: rotate(10deg); transform: rotate(10deg);}
+}
+
+@-moz-keyframes ribbet2 {
+    0% { -moz-transform: rotate(10deg); -ms-transform: rotate(10deg); -o-transform: rotate(10deg); -webkit-transform: rotate(10deg); transform: rotate(10deg);}
+    25% { -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    50% { -moz-transform: rotate(-10deg); -ms-transform: rotate(-10deg); -o-transform: rotate(-10deg); -webkit-transform: rotate(-10deg); transform: rotate(-10deg);}
+    75% { -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    100% {-moz-transform: rotate(10deg); -ms-transform: rotate(10deg); -o-transform: rotate(10deg); -webkit-transform: rotate(10deg); transform: rotate(10deg);}
+}
+
+@keyframes ribbet2 {
+    0% { -moz-transform: rotate(10deg); -ms-transform: rotate(10deg); -o-transform: rotate(10deg); -webkit-transform: rotate(10deg); transform: rotate(10deg);}
+    25% { -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    50% { -moz-transform: rotate(-10deg); -ms-transform: rotate(-10deg); -o-transform: rotate(-10deg); -webkit-transform: rotate(-10deg); transform: rotate(-10deg);}
+    75% { -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    100% {-moz-transform: rotate(10deg); -ms-transform: rotate(10deg); -o-transform: rotate(10deg); -webkit-transform: rotate(10deg); transform: rotate(10deg);}
+}
+
+@-webkit-keyframes ribbet3 {
+    0% {left: -12px;}
+    25% {left: 0px;}
+    50% {left: 12px;}
+    70% {left: 0px;}
+    100% {left: -12px;}
+}
+
+@-moz-keyframes ribbet3 {
+    0% {left: -12px;}
+    25% {left: 0px;}
+    50% {left: 12px;}
+    70% {left: 0px;}
+    100% {left: -12px;}
+}
+
+@keyframes ribbet3 {
+    0% {left: -12px;}
+    25% {left: 0px;}
+    50% {left: 12px;}
+    70% {left: 0px;}
+    100% {left: -12px;}
+}
+
+
+
+@-webkit-keyframes eyes {
+    0% {opacity:1;}
+    40% {opacity:1;}
+    50% {opacity:0;}
+    60% {opacity:1;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes eyes {
+    0% {opacity:1;}
+    40% {opacity:1;}
+    50% {opacity:0;}
+    60% {opacity:1;}
+    100% {opacity:1;}
+}
+
+@keyframes eyes {
+    0% {opacity:1;}
+    40% {opacity:1;}
+    50% {opacity:0;}
+    60% {opacity:1;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes eyes-on {
+    0% {opacity:0;}
+    40% {opacity:0;}
+    50% {opacity:1;}
+    60% {opacity:0;}
+    100% {opacity:0;}
+}
+
+@-moz-keyframes eyes-on {
+    0% {opacity:0;}
+    40% {opacity:0;}
+    50% {opacity:1;}
+    60% {opacity:0;}
+    100% {opacity:0;}
+}
+
+@keyframes eyes-on {
+    0% {opacity:0;}
+    40% {opacity:0;}
+    50% {opacity:1;}
+    60% {opacity:0;}
+    100% {opacity:0;}
+}
+
+

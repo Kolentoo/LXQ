@@ -1,0 +1,18 @@
+﻿.hd_srh_input{color: #999999;float: left; height:27px;line-height: 28px;padding-left: 5px;width:235px;border:1px solid #f90;border-left:0;border-right:0;font-family:"微软雅黑";}/*131行*/
+.hd_srh_btn{background: url("http://r.uzaicdn.com/content/1/images/search_btn.jpg") no-repeat;border: 0 none;cursor: pointer;float: left;height: 31px; margin-left:0px;width: 78px;}/*132行*/
+.ac_results li.ac_over {background-color: #F1F1F1;color: #FFFFFF;}/*465行*/
+.ac_results {background-color: #FFFFFF;border: 1px solid #d1d6d8;overflow: hidden; padding: 0;z-index: 99999;}/*459*/
+.cityStart-tie b{margin-left:3px;font-weight:normal;}/*500行*/
+
+.hd_search .chuizhi{background: url("http://r.uzaicdn.com/content/1/images/search_s.jpg") no-repeat 0 -31px;}
+.hd_srhBox{float:left;width:60px;padding-right:5px;border:1px solid #f90;border-left:0;border-right:0;height:29px;position:relative;z-index:99;}
+.srhBox_val{height:29px;line-height:29px;padding-left:5px;display:block;background:url(http://r.uzaicdn.com/content/1/images/srh.jpg) no-repeat right -12px;color:#666;font-size:12px;font-family:"微软雅黑";font-size:14px;}
+.srhBox_cur{background:url(http://r.uzaicdn.com/content/1/images/srh.jpg) no-repeat right -56px;}
+.hd_srhSe{position:absolute;background:#fff;border:1px solid #f90;top:29px;left:-3px;border-top:0;padding:2px 2px 0;display:none;width:61px;}
+.hd_srhSe a{display:block;width:56px;height:20px;line-height:20px;text-align:left;padding-left:5px;margin-bottom:2px;color:#666;font-family:"微软雅黑";}
+.hd_srhSe a:hover,.hd_srhSe a.current{background:#ced0d0;color:#666;}
+/*出发地*/
+.cityStart-thick .cur{background: none repeat scroll 0 0 #f60;color: #fff;height:18px;line-height:18px;display:inline-block;padding:0 4px;font-weight:bold;position:relative;top:-1px\0;}
+.cityStart-thick a{color:#666;}
+.cityStart-thick a:hover{color:#f60;}
+.cityStart-thick a.cur:hover{color:#fff;}

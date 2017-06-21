@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8" />
+    <title>日本の烂漫樱花祭-悠哉旅游网</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="http://r01.uzaicdn.com/content/m/v2/styles/core.css" rel="stylesheet" />
+    <link href="/content/m/subject/yinghua2015-1-27/style.css" rel="stylesheet" />
+    <script src="/content/libs/jquery-2.1.1.min.js"></script>
+    <script src="/content/m/subject/yinghua2015-1-27/snowfall.jquery.js"></script>
+    <script src="/content/m/subject/yinghua2015-1-27/jquery.fullPage.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            //var unitSnow = function () {
+            //    var cfg = {
+            //        flakeCount: 1,
+            //        minSize: 12,
+            //        minSpeed: 0.5,
+            //        maxSpeed: 0.5,
+            //        deviceorientation: true
+            //    }
+
+            //    $(document).snowfall('clear');
+
+            //    cfg.image = "y1.png";
+            //    cfg.maxSize = 30;
+            //    $('.snow1').snowfall(cfg);
+            //    cfg.image = "y2.png";
+            //    cfg.maxSize = 35;
+            //    $('.snow2').snowfall(cfg);
+            //    cfg.image = "y3.png";
+            //    cfg.maxSize = 40;
+            //    $('.snow3').snowfall(cfg);
+            //    cfg.image = "y4.png";
+            //    cfg.maxSize = 25;
+            //    $('.snow4').snowfall(cfg);
+            //    cfg.image = "y5.png";
+            //    cfg.maxSize = 15;
+            //    $('.snow5').snowfall(cfg);
+            //    cfg.image = "y6.png";
+            //    cfg.maxSize = 35;
+            //    $('.snow6').snowfall(cfg);
+            //    cfg.image = "y7.png";
+            //    cfg.maxSize = 35;
+            //    $('.snow7').snowfall(cfg);
+            //    cfg.image = "y8.png";
+            //    cfg.maxSize = 40;
+            //    $('.snow8').snowfall(cfg);
+            //    cfg.image = "y9.png";
+            //    cfg.maxSize = 30;
+            //    $('.snow9').snowfall(cfg);
+            //    cfg.image = "y10.png";
+            //    cfg.maxSize = 30;
+            //    $('.snow10').snowfall(cfg);
+            //    cfg.image = "y11.png";
+            //    cfg.maxSize = 148;
+            //    $('.snow11').snowfall(cfg);
+            //}
+
+            //unitSnow();
+
+            $('#j_fullPage').fullpage({
+                navigation: true,
+                anchors: ['sec1', 'sec2'],
+                afterLoad: function (anchorLink, index) {
+                    if (index == 1) {
+                        //$(document).snowfall('clear');
+                        $('#j_fullPage').css({ 'z-index': '1' });
+                        $('.section1').addClass('section1-on');
+                        //unitSnow();
+                    }
+                   
+                },
+                onLeave: function (index, direction) {
+                    if (index == 1) {
+                        $('#j_fullPage').css({ 'z-index': '3' });
+                        $(document).snowfall('clear');
+                        $('.snowfall-flakes').remove();
+                        $('.section1').removeClass('section1-on');
+                    }
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+    <section>
+
+
+
+
+        <div id="j_fullPage">
+            <div class="section section1 section1-on tc">
+                <a href="#sec2">
+
+                    <div class="snow snow1"></div>
+                    <div class="snow snow2"></div>
+                    <div class="snow snow3"></div>
+                    <div class="snow snow4"></div>
+                    <div class="snow snow5"></div>
+                    <div class="snow snow6"></div>
+                    <div class="snow snow7"></div>
+                    <div class="snow snow8"></div>
+                    <div class="snow snow9"></div>
+                    <div class="snow snow10"></div>
+                    <div class="snow snow11"></div>
+
+                    <div class="snow snow1 snow1-copy"></div>
+                    <div class="snow snow2 snow2-copy"></div>
+                    <div class="snow snow3 snow3-copy"></div>
+                    <div class="snow snow4 snow4-copy"></div>
+                    <div class="snow snow5 snow5-copy"></div>
+                    <div class="snow snow6 snow6-copy"></div>
+                    <div class="snow snow7 snow7-copy"></div>
+                    <div class="snow snow8 snow8-copy"></div>
+                    <div class="snow snow9 snow9-copy"></div>
+                    <div class="snow snow10 snow10-copy"></div>
+                    <div class="snow snow11 snow11-copy"></div>
+
+                    <div class="snow snow1 snow1-copy2"></div>
+                    <div class="snow snow2 snow2-copy2"></div>
+                    <div class="snow snow3 snow3-copy2"></div>
+                    <div class="snow snow4 snow4-copy2"></div>
+                    <div class="snow snow5 snow5-copy2"></div>
+                    <div class="snow snow6 snow6-copy2"></div>
+                    <div class="snow snow7 snow7-copy2"></div>
+                    <div class="snow snow8 snow8-copy2"></div>
+                    <div class="snow snow9 snow9-copy2"></div>
+                    <div class="snow snow10 snow10-copy2"></div>
+                    <div class="snow snow11 snow11-copy2"></div>
+
+
+
+                    <div class="d1"><img src="y12.png" width="163" /></div>
+                    <div class="d2">
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+            <div class="section section2">
+                <div class="banner">
+                    <img src="y1.jpg" class="block g10" />
+                </div>
+                <div class="route mb5">
+                    <ul>
+                        <li><a href="#"><img src="y2.jpg" /></a></li>
+                        <li><a href="#"><img src="y3.jpg" /></a></li>
+                        <li><a href="#"><img src="y4.jpg" /></a></li>
+                        <li><a href="#"><img src="y5.jpg" /></a></li>
+                    </ul>
+                </div>
+
+                <div class="tc">
+                    <a href="#" class="block g7 more">
+                        >>更多选择<<
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="slogon">
+
+        </div>
+
+
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,701 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>机票订单填写</title>
+  <meta name="keywords" content="邮轮旅游" />
+  <meta name="description" content="悠哉旅游网（uzai.com）专业提供&lt;%=Model.StartcityName%>出发邮轮旅行报价，邮轮旅游价格，想知道邮轮旅游要多少钱，上悠哉旅游网" />
+
+  <link rel="stylesheet" href="/content/v1/_src/styles/core.css">
+  <script src="/content/v1/scripts/core.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="http://r.uzaicdn.com/content/libs/html5shiv.js"></script>
+  <![endif]-->
+
+  <!--[if IE 6]>
+    <script src="http://r.uzaicdn.com/content/libs/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script>
+    <script>
+      DD_belatedPNG.fix('.png');
+    </script>
+  <![endif]-->
+  <link rel="stylesheet" href="/content/v1/_src/styles/jipiao/order.css" />
+  <script src="http://r.uzaicdn.com/combo/static/base/easing/jquery.easing.1.3.js,Scripts/slidejs/slides.min.jquery.js,static/base/lazyload/jquery.lazyload.js"></script>
+  <script src="/content/v1/_src/scripts/jipiao/order.js"></script>
+
+</head>
+<body>
+
+  <!--header start-->
+  <header>
+
+    <!--top bar start-->
+    <div class="newHeader" data-chunk="global-top">
+      <div class="w">
+          <!--starting-->
+          <div class="newCity">
+          <div class="newCity-phone fl"><a target="_blank" title="下载手机客户端" href="http://www.uzai.com/app/">下载手机客户端</a></div>
+          <i style="border-left:1px solid #C8C8C8;margin:10px 6px 0 5px;line-height:12px;float:left;">&nbsp;</i>
+              <p class="newCity-tie fl">出发地：</p>
+                <div class="newCity-thick fl">
+
+
+
+                  <a target="_blank" href="http://sh.uzai.com" cityid="2" >上海</a>
+
+                  <a target="_blank" href="http://bj.uzai.com" cityid="1" >北京</a>
+
+                  <a href="http://www.uzai.com/quanguo/" class="cur">全国出发</a>
+
+              </div>
+          </div>
+          <!--/starting-->
+          <!--login-->
+          <ul class="newMenu">
+              <li class="newMenu-weixin J-newMenu-weixin">
+        <a href="javascript:;" rel="nofollow">+悠哉微信</a>
+        <div class="newMenu-weixinTip J-newMenu-weixinTip">
+          <em></em>
+          <div class="fl newMenu-weixinTip-left">
+            <p class="newMenu-weixinTip-leftYH">扫描二维码成为<br/>悠哉旅游网微信好友！</p>
+            <div class="clearfix">
+              <img src="http://r.uzaicdn.com/static/index/images/wx2.jpg" alt="" class="fl"/>
+              <div class="fl newMenu-weixinTip-leftMsg">
+                <p>悠哉旅游网微信号：</p>
+                <p class="uzaiweixin">uzai_travel</p>
+              </div>
+            </div>
+          </div>
+          <div class="fr"><img src="http://r.uzaicdn.com/static/index/images/wx1.jpg" alt=""/></div>
+        </div>
+      </li>
+      <li class="newMenu-order">
+                  <a href="http://www.uzai.com/myhistory" target="_blank" class="" title="最近浏览产品" rel="nofollow">最近浏览产品</a>
+              </li>
+      <li class="verline_gray"></li>
+              <li class="newMenu-order">
+                  <a href="http://u.uzai.com/manage/Index" class="" title="我的订单" rel="nofollow">我的订单</a>
+              </li>
+              <li class="verline_gray"></li>
+              <li class="newMenu-quickreg J-login1">
+                <div class="newQuickreg clearfix">
+                    <a href="http://u.uzai.com/register" title="注册" rel="nofollow">注册</a>
+                    <a href="http://u.uzai.com/register" class="newMenu-song200 J-quickreg" rel="nofollow"></a>
+                </div>
+                <div class="newMenu-popUb J-popUb"></div>
+              </li>
+              <li class="newMenu-manage J-newManage J-login">
+                  <a href="http://u.uzai.com/manage/Index" class="newMenu-manage-a J-newManage-a clearfix" rel="nofollow"><i class="i1">我的悠哉</i><i class="i2"></i></a>
+                  <ul class="newMenu-mytab J-newTab">
+                      <li><a title="我的订单" href="http://u.uzai.com/manage/order" rel="nofollow">我的订单</a></li>
+                      <li><a title="出游点评" href="http://u.uzai.com/manage/tour-record" rel="nofollow">出游点评</a></li>
+                      <li><a title="我的咨询" href="http://u.uzai.com/manage/zixun" rel="nofollow">我的咨询</a></li>
+                      <li><a title="我的收藏" href="http://u.uzai.com/manage/UserCollectionList" class="fn-borBo" rel="nofollow">我的收藏</a></li>
+                      <li><a title="我的资料" href="http://u.uzai.com/manage/personal-info" rel="nofollow">我的资料</a></li>
+                      <li><a title="会员特权" href="http://u.uzai.com/manage/MembershipPrivileges" rel="nofollow">我的专享</a></li>
+                  </ul>
+              </li>
+              <li class="verline_gray"></li>
+              <li class="newMenu-login J-login1">
+                  <a href="http://u.uzai.com/reguser" rel="nofollow">登录</a>
+              </li>
+              <li class="newMenu-weclome J-login">
+                  <a href="" class="J-userName" rel="nofollow">cmy</a><span class="userGrade"><a title="会员" href="http://u.uzai.com/reg/UserGradeMember" target="_blank" rel="nofollow"><img src="http://r.uzaicdn.com/Content/1/images/icon_vip30.gif" alt="会员"></a></span> &nbsp;[<a href="http://u.uzai.com/loginout" rel="nofollow">退出</a>]&nbsp;
+                  <div class="userOrderPart2">
+                      <a class="closetip" href="javascript:;" rel="nofollow"></a>
+                      <div class="tip">
+                          <em>◆</em>
+                          <span>◆</span>
+                      </div>
+                      <p class="w230">完成<a href="" class="b" rel="nofollow">手机安全验证</a>后，可<a href="" class="b" rel="nofollow">获得100悠币</a></p>
+                      <p class="w230">完成<a href="" class="b" rel="nofollow">邮箱安全验证</a>后，可<a href="" class="b" rel="nofollow">获得100悠币</a></p></div>
+              </li>
+              <li class="verline_gray verline_grayIe6 J-verline"></li>
+          </ul>
+          <!--/login-->
+      </div>
+    </div>
+    <!--top bar end-->
+  </header>
+  <!--header end-->
+
+  <div class="sHeadInner w">
+    <div class="d1">
+      <a title="悠哉旅游网" href="http://www.uzai.com">
+        <img src="http://r.uzaicdn.com/content/common/logo.gif" alt="悠哉旅游网">
+      </a>
+    </div>
+    <div class="d2">
+      <p class="p2"><img alt="预订时间" src="http://r.uzaicdn.com/content/1/images/H-time.jpg"></p>
+      <p class="p1">400-000-8888</p>
+    </div>
+  </div>
+
+  <ul class="order-step w clearfix">
+    <li class="on"><img class="png" src="/content/v1/images/order/step-bar-on.png" alt="" /><em>填写</em></li>
+    <li><img class="png" src="/content/v1/images/order/step-bar.png" alt="" /><em>核对</em></li>
+    <li><img class="png" src="/content/v1/images/order/step-bar.png" alt="" /><em>确认及支付</em></li>
+    <li><img class="png" src="/content/v1/images/order/step-bar.png" alt="" /><em>完成</em></li>
+  </ul>
+
+  <div class="write-info mt15 w clearfix">
+
+    <div class="main-order fl">
+
+      <div class="green-box">
+
+        <h2 class="green-box-hd"><em class="f16 f666">乘机人</em></h2>
+
+        <div class="green-box-bd">
+
+          <div class="contacts f666">
+            <label>常用联系人</label>
+            <input class="option-box" type="checkbox" checked /><label for="">张三</label>
+            <input class="option-box" type="checkbox" /><label for="">李四</label>
+          </div>
+
+          <div class="passenger-info-list">
+
+            <div class="passenger-info mt15">
+
+              <div class="clearfix">
+                <p class="passenger-hd f14 b fl"><span class="label-name">&nbsp;</span>第<em>1</em>位乘机人</p>
+                <p class="fr"><input class="option-box" type="checkbox" checked /><label for="">存为常用联系人</label></p>
+              </div>
+              <menu class="froms-list">
+                <li>
+                  <label for="" class="label-name">姓名</label>
+                  <input class="textbox w135" type="text" placeholder="请填写乘机人姓名" />
+                  <div class="query-box tip-box">
+                    <i class="icon-query hover-icon ml10">&nbsp;</i>
+                    <div class="tip-detail">
+                      <ol class="decimal">
+                        <li>乘客姓名需与登机所持证件上的名字一致。</li>
+                        <li>中文姓名：
+                          <ul class="disc">
+                            <li>若持护照登机，必须确认护照上有中文姓名。</li>
+                            <li> 生僻字可用拼音代替，例如：“王鬳”可输入为“王yan”</li>
+                          </ul>
+                        </li>
+                        <li>英文姓名:
+                          <ul class="disc">
+                            <li>若持护照登机，必须按照护照顺序区分姓与名。例如： "Smith/Black"，不区分大小写。</li>
+                            <li>名字长度≤26个字符，若过长请使用缩写。</li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <label class="label-name">乘客类型</label>
+                  <input class="option-box" type="radio" name="passenger-type" checked /><label for="">成人</label>
+                  <input class="option-box" type="radio" name="passenger-type" /><label for="">儿童（2-12周岁）</label>
+                  <input class="option-box" type="radio" name="passenger-type" /><label for="">婴儿（14天-2周岁）</label>
+                  <div class="query-box tip-box">
+                    <i class="icon-query hover-icon">&nbsp;</i>
+                    <dl class="tip-detail">
+                      <dt>婴儿及儿童购票须知</dt>
+                      <dd>
+                        <p>婴儿票（31天-2周岁）：如有婴儿同行，需和成人一起下单，请致电400-000-8888电话预订。儿童票（2-12周岁）：儿童乘机需有满十八周岁的成人全程陪伴，如成人已出票补订儿童票，请致电400-000-8888电话预订；如无成人陪伴的儿童需乘机，请直接联系航空公司预订并办理“陪护手续”。</p>
+                        <p>您可以有2种方式为儿童购买机票：</p>
+                        <ol class="decimal">
+                          <li>为儿童够买儿童票，票价为成人所购舱位全票价的50%（例如：成人购买头等舱全价票票价为1000，则儿童票价为500），机场建设费免收，燃油税为成人的一半。</li>
+                          <li>为儿童够买成人票：支付成人购票的总价。</li>
+                        </ol>
+                        <p><strong>重要提醒：</strong>儿童购买成人票，存在登机风险，建议您先电话咨询航空公司后再购买。</p>
+                      </dd>
+                      <dt class="mt10">孕妇购票须知</dt>
+                      <dd>
+                        <ol class="decimal">
+                          <li>怀孕不足8个月（32周）的健康孕妇，可正常乘机。</li>
+                          <li>怀孕超过8个月（32周），不足9个月（36周）的健康孕妇需要乘机，应在乘机前72小时  内提供省级以上医疗单位盖章的《诊断证明书》，经航空公司同意后方可购票乘机。</li>
+                          <li>怀孕超过9个月（36周）的孕妇不接受购票乘机</li>
+                        </ol>
+                      </dd>
+                      <dt class="mt10">高龄旅客购票须知</dt>
+                      <dd>超过70周岁的老年人以及身体欠佳者乘坐飞机，须提供三级甲等医院的健康证明，经航空公司同意后方可购票乘机。</dd>
+                    </dl>
+                  </div>
+                </li>
+                <li>
+                  <label class="label-name">证件信息</label>
+                  <select class="select-box w135" name="" id="">
+                    <option value="">身份证</option>
+                  </select>
+                  <input class="textbox w135" type="text" placeholder="证件号码" />
+                </li>
+                <li class="insurance clearfix">
+                  <label class="label-name fl">保险信息</label>
+                  <div class="insurance-bd fl">
+
+                    <div>
+                      <input class="option-box" type="checkbox" checked />
+                      <div class="tip-box">
+                        <label for=""><span class="hover-text">航空延误险</span></label>
+                        <div class="tip-detail">
+                          <ol class="decimal">
+                            <li>保险名称：<span class="f16 b">平安个人航空意外伤害保险</span>；</li>
+                            <li>份数限制：<span>5</span>份；</li>
+                            <li>保险有效期：<span>单次</span>；</li>
+                            <li>保险费：<span>20元/份</span>；</li>
+                            <li>保险金额：客运民航班机乘客意外身故、意外残疾 <span>60万元</span>；</li>
+                            <li>保单生效日前可申请退保（乘机日之前）；</li>
+                            <li>年龄：被保险人投保年龄为在0周岁（出生后满15 日）至75 周岁（含）；</li>
+                            <li>投保要求：成年人必须为本人投保；未成年人必须是其父母作为投保人；</li>
+                            <li>保险公司将委托悠哉旅游网在各地有资质的服务商为有需要的客户提供保险定额发票以作报销。保险定额发票仅作报销凭证，不是保单凭证；</li>
+                            <li>数据电文是合法的合同表现形式，电子保单与纸质保单具有同等法律效力，请妥善保存。电子保单可在保险公司网站上查询和下载；</li>
+                            <li>适用条款：本保险计划适用条款为《<span class="f16 b">平安个人航空意外伤害保险</span>条款》；</li>
+                            <li>投保人或被保险人应据实填写投保信息，否则本公司有权解除保险合同；</li>
+                            <li>保单信息查询请登陆：<span>https://elife.oldmutual-guodian.com</span>；</li>
+                            <li>保险公司客服电话：<span>400-810-9339</span>；</li>
+                          </ol>
+                          <p class="f14 mt10">备注：根据中国保监会《关于父母为其未成年子女投保以死亡为给付保险金条件人身保险有关问题的通知》（保监发 [2010]95 号）文件的规定，自2011年4月1日起，父母为其未成年子女（未满 18 周岁）投保人身保险，在被保险人成年之前，各保险合同约定的被保险人死亡给付的保险金额总和、被保险人死亡时各 保险公司实际支付的保险金总和均不得超过人民币 10 万元（航空意外伤害死亡保额不受此限制）。</p>
+                        </div>
+                      </div>
+                      <span class="price"><i class="orange b ml10">￥<em class="f14 b">20</em></i>/份</span>
+                      <span class="ml10">
+                        <i class="f16 vm">×</i>
+                        <select class="select-box w105" name="" id="">
+                          <option value="">1份</option>
+                        </select>
+                      </span>
+                      <span class="ml5 vm">最高赔付￥50万/份</span>
+                    </div>
+
+                    <div>
+                      <input class="option-box" type="checkbox" checked />
+                      <div class="tip-box">
+                        <label for=""><span class="hover-text">航空意外险</span></label>
+                        <div class="tip-detail">
+                          <ol class="decimal">
+                            <li>保险名称：<span class="f16 b">平安个人旅行航班延误保险（上海）</span>；</li>
+                            <li>份数限制：每人每航段<span>1</span>份；</li>
+                            <li>保险有效期：购买成功后即时生效；</li>
+                            <li>保险费：<span>￥20元/份</span>；</li>
+                            <li>保险金额及保险责任：投保人必须乘坐投保航班且航班抵达目的地时延误<span>4小时</span>及以上（起飞后未发生返航、备降）赔偿<span>￥300</span>元；若航班被取消、保护到其他航班或所乘航班起飞后返航、备降赔偿<span>￥100</span>元；</li>
+                            <li>年龄： 无年龄限制</li>
+                            <li>投保要求：成年人必须为本人投保；未成年人必须是其父母作为投保人。投保时需提供正确的航班号信息。</li>
+                            <li>适用条款：本保险计划适用条款为《<span class="f16 b">平安个人旅行航班延误保险（上海）</span>条款》；</li>
+                            <li>投保人或被保险人应据实填写投保信息，否则本公司有权解除保险合同。</li>
+                            <li>个人保单信息查询: 电子保单可在<span class="f16 b">中国平安财产保险</span>网站上<span>验真</span>和下载。<span>www.ecpic.com.cn</span>–快速通道-电子保单下载，或，致电平安24小时客服热线<span>（021）95500-3-2</span>查询。</li>
+                            <li>备注：航班延误取消保险是以投保的航班号为保险标的，若您的航班发生延误或取消，请致电悠哉客服400-000-8888快速报案。若发生主动改签或退票，请在投保的航班起飞前致电悠哉客服400-000-8888及时退保并重新购买。</li>
+                          </ol>
+                        </div>
+                      </div>
+                      <span class="price"><i class="orange b ml10">￥<em class="f14 b">20</em></i>/份</span>
+                      <span class="ml10">
+                        <i class="f16 vm">×</i>
+                        <select class="select-box w105" name="" id="">
+                          <option value="">1份</option>
+                        </select>
+                      </span>
+                      <span class="ml5 vm">最高赔付￥300/份</span>
+                    </div>
+
+                  </div>
+                </li>
+              </menu>
+
+            </div>
+
+            <div class="passenger-info mt15">
+
+              <div class="clearfix">
+                <p class="passenger-hd f14 b fl"><span class="label-name">&nbsp;</span>第<em>1</em>位乘机人</p>
+                <p class="fr"><input class="option-box" type="checkbox" checked /><label for="">存为常用联系人</label></p>
+              </div>
+              <menu class="froms-list">
+                <li>
+                  <label for="" class="label-name">姓名</label>
+                  <input class="textbox w135" type="text" placeholder="请填写乘机人姓名" />
+                  <div class="query-box tip-box">
+                    <i class="icon-query hover-icon ml10">&nbsp;</i>
+                    <div class="tip-detail">
+                      <ol class="decimal">
+                        <li>乘客姓名需与登机所持证件上的名字一致。</li>
+                        <li>中文姓名：
+                          <ul class="disc">
+                            <li>若持护照登机，必须确认护照上有中文姓名。</li>
+                            <li> 生僻字可用拼音代替，例如：“王鬳”可输入为“王yan”</li>
+                          </ul>
+                        </li>
+                        <li>英文姓名:
+                          <ul class="disc">
+                            <li>若持护照登机，必须按照护照顺序区分姓与名。例如： "Smith/Black"，不区分大小写。</li>
+                            <li>名字长度≤26个字符，若过长请使用缩写。</li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <label class="label-name">乘客类型</label>
+                  <input class="option-box" type="radio" name="passenger-type" checked /><label for="">成人</label>
+                  <input class="option-box" type="radio" name="passenger-type" /><label for="">儿童（2-12周岁）</label>
+                  <input class="option-box" type="radio" name="passenger-type" /><label for="">婴儿（14天-2周岁）</label>
+                  <div class="query-box tip-box">
+                    <i class="icon-query hover-icon">&nbsp;</i>
+                    <dl class="tip-detail">
+                      <dt>婴儿及儿童购票须知</dt>
+                      <dd>
+                        <p>婴儿票（31天-2周岁）：如有婴儿同行，需和成人一起下单，请致电400-000-8888电话预订。儿童票（2-12周岁）：儿童乘机需有满十八周岁的成人全程陪伴，如成人已出票补订儿童票，请致电400-000-8888电话预订；如无成人陪伴的儿童需乘机，请直接联系航空公司预订并办理“陪护手续”。</p>
+                        <p>您可以有2种方式为儿童购买机票：</p>
+                        <ol class="decimal">
+                          <li>为儿童够买儿童票，票价为成人所购舱位全票价的50%（例如：成人购买头等舱全价票票价为1000，则儿童票价为500），机场建设费免收，燃油税为成人的一半。</li>
+                          <li>为儿童够买成人票：支付成人购票的总价。</li>
+                        </ol>
+                        <p><strong>重要提醒：</strong>儿童购买成人票，存在登机风险，建议您先电话咨询航空公司后再购买。</p>
+                      </dd>
+                      <dt class="mt10">孕妇购票须知</dt>
+                      <dd>
+                        <ol class="decimal">
+                          <li>怀孕不足8个月（32周）的健康孕妇，可正常乘机。</li>
+                          <li>怀孕超过8个月（32周），不足9个月（36周）的健康孕妇需要乘机，应在乘机前72小时  内提供省级以上医疗单位盖章的《诊断证明书》，经航空公司同意后方可购票乘机。</li>
+                          <li>怀孕超过9个月（36周）的孕妇不接受购票乘机</li>
+                        </ol>
+                      </dd>
+                      <dt class="mt10">高龄旅客购票须知</dt>
+                      <dd>超过70周岁的老年人以及身体欠佳者乘坐飞机，须提供三级甲等医院的健康证明，经航空公司同意后方可购票乘机。</dd>
+                    </dl>
+                  </div>
+                </li>
+                <li>
+                  <label class="label-name">证件信息</label>
+                  <select class="select-box w135" name="" id="">
+                    <option value="">身份证</option>
+                  </select>
+                  <input class="textbox w135" type="text" placeholder="证件号码" />
+                </li>
+                <li class="insurance clearfix">
+                  <label class="label-name fl">保险信息</label>
+                  <div class="insurance-bd fl">
+
+                    <div>
+                      <input class="option-box" type="checkbox" checked />
+                      <div class="tip-box">
+                        <label for=""><span class="hover-text">航空延误险</span></label>
+                        <div class="tip-detail">
+                          <ol class="decimal">
+                            <li>保险名称：<span class="f16 b">平安个人航空意外伤害保险</span>；</li>
+                            <li>份数限制：<span>5</span>份；</li>
+                            <li>保险有效期：<span>单次</span>；</li>
+                            <li>保险费：<span>20元/份</span>；</li>
+                            <li>保险金额：客运民航班机乘客意外身故、意外残疾 <span>60万元</span>；</li>
+                            <li>保单生效日前可申请退保（乘机日之前）；</li>
+                            <li>年龄：被保险人投保年龄为在0周岁（出生后满15 日）至75 周岁（含）；</li>
+                            <li>投保要求：成年人必须为本人投保；未成年人必须是其父母作为投保人；</li>
+                            <li>保险公司将委托悠哉旅游网在各地有资质的服务商为有需要的客户提供保险定额发票以作报销。保险定额发票仅作报销凭证，不是保单凭证；</li>
+                            <li>数据电文是合法的合同表现形式，电子保单与纸质保单具有同等法律效力，请妥善保存。电子保单可在保险公司网站上查询和下载；</li>
+                            <li>适用条款：本保险计划适用条款为《<span class="f16 b">平安个人航空意外伤害保险</span>条款》；</li>
+                            <li>投保人或被保险人应据实填写投保信息，否则本公司有权解除保险合同；</li>
+                            <li>保单信息查询请登陆：<span>https://elife.oldmutual-guodian.com</span>；</li>
+                            <li>保险公司客服电话：<span>400-810-9339</span>；</li>
+                          </ol>
+                          <p class="f14 mt10">备注：根据中国保监会《关于父母为其未成年子女投保以死亡为给付保险金条件人身保险有关问题的通知》（保监发 [2010]95 号）文件的规定，自2011年4月1日起，父母为其未成年子女（未满 18 周岁）投保人身保险，在被保险人成年之前，各保险合同约定的被保险人死亡给付的保险金额总和、被保险人死亡时各 保险公司实际支付的保险金总和均不得超过人民币 10 万元（航空意外伤害死亡保额不受此限制）。</p>
+                        </div>
+                      </div>
+                      <span class="price"><i class="orange b ml10">￥<em class="f14 b">20</em></i>/份</span>
+                      <span class="ml10">
+                        <i class="f16 vm">×</i>
+                        <select class="select-box w105" name="" id="">
+                          <option value="">1份</option>
+                        </select>
+                      </span>
+                      <span class="ml5 vm">最高赔付￥50万/份</span>
+                    </div>
+
+                    <div>
+                      <input class="option-box" type="checkbox" checked />
+                      <div class="tip-box">
+                        <label for=""><span class="hover-text">航空意外险</span></label>
+                        <div class="tip-detail">
+                          <ol class="decimal">
+                            <li>保险名称：<span class="f16 b">平安个人旅行航班延误保险（上海）</span>；</li>
+                            <li>份数限制：每人每航段<span>1</span>份；</li>
+                            <li>保险有效期：购买成功后即时生效；</li>
+                            <li>保险费：<span>￥20元/份</span>；</li>
+                            <li>保险金额及保险责任：投保人必须乘坐投保航班且航班抵达目的地时延误<span>4小时</span>及以上（起飞后未发生返航、备降）赔偿<span>￥300</span>元；若航班被取消、保护到其他航班或所乘航班起飞后返航、备降赔偿<span>￥100</span>元；</li>
+                            <li>年龄： 无年龄限制</li>
+                            <li>投保要求：成年人必须为本人投保；未成年人必须是其父母作为投保人。投保时需提供正确的航班号信息。</li>
+                            <li>适用条款：本保险计划适用条款为《<span class="f16 b">平安个人旅行航班延误保险（上海）</span>条款》；</li>
+                            <li>投保人或被保险人应据实填写投保信息，否则本公司有权解除保险合同。</li>
+                            <li>个人保单信息查询: 电子保单可在<span class="f16 b">中国平安财产保险</span>网站上<span>验真</span>和下载。<span>www.ecpic.com.cn</span>–快速通道-电子保单下载，或，致电平安24小时客服热线<span>（021）95500-3-2</span>查询。</li>
+                            <li>备注：航班延误取消保险是以投保的航班号为保险标的，若您的航班发生延误或取消，请致电悠哉客服400-000-8888快速报案。若发生主动改签或退票，请在投保的航班起飞前致电悠哉客服400-000-8888及时退保并重新购买。</li>
+                          </ol>
+                        </div>
+                      </div>
+                      <span class="price"><i class="orange b ml10">￥<em class="f14 b">20</em></i>/份</span>
+                      <span class="ml10">
+                        <i class="f16 vm">×</i>
+                        <select class="select-box w105" name="" id="">
+                          <option value="">1份</option>
+                        </select>
+                      </span>
+                      <span class="ml5 vm">最高赔付￥300/份</span>
+                    </div>
+
+                  </div>
+                </li>
+              </menu>
+
+            </div>
+
+          </div>
+
+          <div class="passenger-btn-box mt15">
+            <span class="label-name">&nbsp;</span>
+            <a href="javascript:void(0);" class="add-passenger f14 tc png"><i class="icon-add vm mr5">&nbsp;</i>添加乘机人</a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="green-box mt15">
+
+        <h2 class="green-box-hd"><em class="f16 f666">联系信息</em></h2>
+
+        <div class="green-box-bd contact-info">
+          <menu class="froms-list f666 clearfix">
+            <li>
+              <label for="">姓名</label><input class="textbox w135" type="text" placeholder="中文/拼音" />
+              <span class="ml10"><label for="">手机</label><input class="textbox w135" type="text" placeholder="必填" /></span>
+              <span class="ml10"><label for="">邮箱</label><input class="textbox w200" type="text" placeholder="必填" /></span>
+            </li>
+          </menu>
+        </div>
+
+      </div>
+
+      <div class="green-box mt15">
+
+        <h2 class="green-box-hd"><em class="f16 f666">报销凭证</em></h2>
+
+        <div class="green-box-bd voucher-info">
+
+          <p>
+            <input class="mr5 vm" type="checkbox" /><label for="">需要报销凭证</label>
+            <span class="ml5 vm">(办理登机无需行程单，凭有效证件即可)</span>
+          </p>
+
+          <div class="mail-info mt10">
+            <div class="mail-info-hd white f14 b"><span>邮寄方式</span><span class="ml30">快递</span></div>
+            <menu class="froms-list p10">
+              <li>
+                <label class="label-name">&nbsp;</label>
+                <input class="option-box" type="radio" name="pay-type" checked /><label class="price orange b" for="">￥<em>10</em></label>
+                <input class="option-box" type="radio" name="pay-type" /><label class="price orange b" for="">￥<em>1000U币</em></label>
+              </li>
+              <li>
+                <label class="label-name" for="">收件人</label><input class="textbox w135" type="text" placeholder="中文/英文" />
+                <span class="ml30"><label for="">手机</label><input class="textbox w135" type="text" placeholder="必填" /></span>
+              </li>
+              <li class="clearfix">
+                <label class="label-name fl">地址</label>
+                <div class="address fl">
+                  <p>
+                    <select class="select-box w105" name="" id="">
+                      <option value="">上海市</option>
+                    </select>
+                    <select class="select-box w105" name="" id="">
+                      <option value="">闵行区</option>
+                    </select>
+                  </p>
+                  <p>
+                    <input class="textbox" type="text" placeholder="街道" />
+                  </p>
+                </div>
+              </li>
+              <li><label class="label-name" for="">邮编</label><input class="textbox w105" type="text" placeholder="必填" /></li>
+            </menu>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="btn-bar clearfix">
+        <p class="fr">
+          <a href="#" class="btn-prev f14 b">返回上一步</a>
+          <a href="#" class="btn-next white f24 tc yahei">下一步核对</a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="side-order fr">
+
+      <dl class="flight-info gray-box">
+        <dt class="f14 b">2月16日<span class="ml10 pl10">上海-北京</span>（去程）</dt>
+        <dd>
+
+          <div class="flight-info-hd">
+            <img src="/content/v1/images/order/icon-zggh.jpg" alt="" />
+            <span>中国国航CA1590</span>
+            <span class="f666 ml10">330</span>
+            <span class="f666 ml10">经济舱</span>
+            <div class="tip-box">
+              <span class="hover-text ml10">退改签</span>
+              <div class="tip-detail tip-table">
+                <table class="g10">
+                  <tr>
+                    <th>退票：</th>
+                    <td>退票规定</td>
+                  </tr>
+                  <tr>
+                    <th>改签：</th>
+                    <td>改签规定</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="cont-box clearfix">
+            <div class="g3 fl">
+              <p class="b tr">08：55</p>
+              <p class="tr">虹桥国际机场T2</p>
+            </div>
+            <div class="arrow-box g2 fl"><img class="png" src="/content/v1/images/order/arrow-right.png" alt="" /></div>
+            <div class="g3 fl">
+              <p class="b">11：55</p>
+              <p>首都国际机场T3</p>
+            </div>
+          </div>
+
+          <div class="fare-bar">
+            <span class="f666">票价</span>
+            <span class="price orange ml5">￥<em class="f14 b">900</em></span>
+            <span class="f666">（不含税费）</span>
+            <div class="tip-box">
+              <span class="hover-text">儿童/婴儿票价</span>
+              <div class="tip-detail">
+                <p>
+                  <span>儿童票：<i class="price">￥<em>890</em></i>（不含税费）</span>
+                  <span class="ml5">机建：<i class="price">￥<em>0</em></i>/人</span>
+                  <span class="ml5">燃油：<i class="price">￥<em>60</em></i></span>
+                </p>
+                <p>
+                  <span>婴儿票：<i class="price">￥<em>180</em></i>（不含税费）</span>
+                  <span class="ml5">机建：<i class="price">￥<em>0</em></i>/人</span>
+                  <span class="ml5">燃油：<i class="price">￥<em>60</em></i></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </dd>
+        <dt class="f14 b mt10">2月18日<span class="ml10 pl10">北京-上海</span>（返程）</dt>
+        <dd>
+
+          <div class="flight-info-hd">
+            <img src="/content/v1/images/order/icon-zggh.jpg" alt="" />
+            <span>中国国航CA1590</span>
+            <span class="f666 ml10">330</span>
+            <span class="f666 ml10">经济舱</span>
+            <div class="tip-box">
+              <span class="hover-text ml10">退改签</span>
+              <div class="tip-detail tip-table">
+                <table class="g10">
+                  <tr>
+                    <th>退票：</th>
+                    <td>退票规定</td>
+                  </tr>
+                  <tr>
+                    <th>改签：</th>
+                    <td>改签规定</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="cont-box clearfix">
+            <div class="g3 fl">
+              <p class="b tr">08：55</p>
+              <p class="tr">首都国际机场T3</p>
+            </div>
+            <div class="arrow-box g2 fl"><img class="png" src="/content/v1/images/order/arrow-right.png" alt="" /></div>
+            <div class="g3 fl">
+              <p class="b">11：55</p>
+              <p>虹桥国际机场T2</p>
+            </div>
+          </div>
+
+          <div class="fare-bar">
+            <span class="f666">票价</span>
+            <span class="price orange ml5">￥<em class="f14 b">900</em></span>
+            <span class="f666">（不含税费）</span>
+            <div class="tip-box">
+              <span class="hover-text">儿童/婴儿票价</span>
+              <div class="tip-detail">
+                <p>
+                  <span>儿童票：<i class="price">￥<em>890</em></i>（不含税费）</span>
+                  <span class="ml5">机建：<i class="price">￥<em>0</em></i>/人</span>
+                  <span class="ml5">燃油：<i class="price">￥<em>60</em></i></span>
+                </p>
+                <p>
+                  <span>婴儿票：<i class="price">￥<em>180</em></i>（不含税费）</span>
+                  <span class="ml5">机建：<i class="price">￥<em>0</em></i>/人</span>
+                  <span class="ml5">燃油：<i class="price">￥<em>60</em></i></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          </dd>
+
+        <dd><p class="mt15"><a href="#">[ 重新选择航班 ]</a></p></dd>
+      </dl>
+
+      <div class="amount-info orange-box mt10">
+        <p class="amount-info-hd clearfix">
+          <span class="label-name f14 b fl">应付金额：</span>
+          <span class="price orange fr">￥<em>1090</em></span>
+        </p>
+        <p class="clearfix"><span class="fr"><a href="javascript:void(0);" class="J_amount_detail">明细[1名乘客]</a><i class="triangle-b ml5">&nbsp;</i></span></p>
+        <ul class="detail-list">
+          <li class="clearfix"><span class="b fl">成人</span><span class="price b fr"><i>￥<em>1070</em></i>×1人</span></li>
+          <li class="clearfix"><span class="f666 fl">成人票：</span><span class="price f666 fr"><i>￥<em>900</em></i>/人</span></li>
+          <li class="clearfix"><span class="f666 fl">机建费：</span><span class="price f666 fr"><i>￥<em>50</em></i>/人</span></li>
+          <li class="clearfix"><span class="f666 fl">燃油税：</span><span class="price f666 fr"><i>￥<em>50</em></i>/人</span></li>
+          <li class="clearfix"><span class="b fl">儿童</span><span class="price b fr"><i>￥<em>1070</em></i>×1人</span></li>
+          <li class="clearfix"><span class="f666 fl">儿童票：</span><span class="price f666 fr"><i>￥<em>900</em></i>/人</span></li>
+          <li class="clearfix"><span class="f666 fl">机建费：</span><span class="price f666 fr"><i>￥<em>50</em></i>/人</span></li>
+          <li class="clearfix"><span class="f666 fl">燃油税：</span><span class="price f666 fr"><i>￥<em>50</em></i>/人</span></li>
+          <li class="clearfix"><span class="b fl">保险</span><span class="price b fr"><i>￥<em>20</em></i></span></li>
+          <li class="clearfix"><span class="b fl">配送费</span><span class="price b fr"><i>￥<em>10</em></i></span></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- footer start -->
+  <footer class="w">
+      <div class="foot-copyright">
+          <span>Copyright 2005-2013 Uzai.com</span>
+          <span>许可证编号:L-SH-00647</span>
+          <span>沪ICP备06021606号</span>
+          <span>悠哉呼叫中心位于上海，来电显示号码为：<font class="red">021-60561828</font></span>
+      </div>
+      <div class="foot-aboutlink">
+          <span><a href="/">悠哉旅游网</a></span>
+          <span><a target="_blank" href="http://www.uzai.com/history/" rel="nofollow">悠哉历程</a></span>
+          <span><a target="_blank" href="http://www.uzai.com/about/privacy/"rel="nofollow">隐私保护</a></span>
+          <span><a target="_blank" style="color: #f60;" href="http://job.uzai.com/about/job/" rel="nofollow">诚聘英才</a></span>
+          <span><a target="_blank" href="http://www.uzai.com/about/" rel="nofollow">关于我们</a></span>
+          <span><a target="_blank" href="http://www.uzai.com/sitemap/">网站地图</a></span>
+          <span><a target="_blank" href="http://www.uzai.com/sitelinks/">友情链接</a></span>
+          <span class="noborder"><a target="_blank" href="http://www.uzai.com/qa/helplist-9.html">商务合作</a></span>
+      </div>
+  </footer>
+  <!-- footer end -->
+
+</body>
+</html>

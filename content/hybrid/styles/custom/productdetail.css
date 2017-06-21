@@ -1,0 +1,771 @@
+/*2015-05-03*/
+.main * {
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+
+.ng-animate-start {
+clip:rect(0,auto,auto,0);
+-ms-zoom:1.0001;
+}
+
+.ng-animate-active {
+clip:rect(-1px,auto,auto,0);
+-ms-zoom:1;
+}
+
+#scroller {
+position:absolute;
+z-index:1;
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+width:100%;
+-webkit-transform:translateZ(0);
+-moz-transform:translateZ(0);
+-ms-transform:translateZ(0);
+-o-transform:translateZ(0);
+transform:translateZ(0);
+-webkit-touch-callout:none;
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
+-webkit-text-size-adjust:none;
+-moz-text-size-adjust:none;
+-ms-text-size-adjust:none;
+-o-text-size-adjust:none;
+text-size-adjust:none;
+}
+
+.content .main {
+padding:0;
+}
+
+.bg-white {
+background-color:#fff;
+}
+
+.bg-gray {
+background-color:#f5f5f5;
+}
+
+.margin-top-45 {
+margin-top:.45rem;
+}
+
+.section-common {
+width:100%;
+padding:0 .24rem .2rem;
+}
+
+.custiom-detail {
+position:absolute;
+z-index:1;
+left:0;
+top:0;
+bottom:0.88rem;
+width:100%;
+height:12.36rem;
+background-color:#f0f0f0;
+overflow:hidden;
+}
+
+.custiom-detail-page2 {
+top:.88rem;
+height:11.58rem;
+}
+
+.detail-images {
+display:block;
+width:100%;
+height:3.6rem;
+position:relative;
+overflow:hidden;
+}
+
+.detail-product-images {
+display:block;
+width:100%;
+height:3.6rem;
+position:absolute;
+left:0;
+top:0;
+overflow:hidden;
+z-index:1;
+}
+
+.detail-images-bottom {
+display:block;
+width:15rem;
+height:6.2rem;
+position:absolute;
+left:-3.8rem;
+top:3.2rem;
+z-index:2;
+border-radius:7.5rem/3rem;
+box-shadow: .05rem -0.15rem 5px rgba(156, 156, 156, 0.165);
+-webkit-transition:.1s all ease-out;
+}
+
+.detail-images-bottom-animate {
+border-radius:0;
+}
+
+.detail-btn-back,.detail-btn-share {
+display:block;
+width:.6rem;
+height:.6rem;
+border-radius:50%;
+overflow:hidden;
+background-color:rgba(255,255,255,0.4);
+border:1px solid rgba(176,176,176,0.4);
+position:absolute;
+top:.5rem;
+z-index:5;
+background-position:center;
+background-repeat:no-repeat;
+background-size:contain;
+}
+.detail-btn-back-big,.detail-btn-share-big{
+  display:block;
+  width:1rem;
+  height:1rem;
+  border-radius:50%;
+  position:absolute;
+  top:.2rem;
+}
+.detail-btn-back-big{
+  left:.1rem;
+}
+.detail-btn-share-big{
+  right:.1rem;
+}
+
+.detail-btn-back,.fixNav-back {
+left:.25rem;
+background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/product_detail_backpage.png);
+}
+
+.detail-btn-share,.fixNav-share {
+right:.25rem;
+background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/product_detail_share.png);
+}
+
+.departureCity {
+position:relative;
+width:100%;
+height:1.1rem;
+background:#f5f5f5;
+z-index:2;
+text-align:center;
+}
+
+.departureCity-tag {
+position:absolute;
+left:50%;
+margin-left:-0.41rem;
+top:-0.9rem;
+display:block;
+width:.83rem;
+height:1.99rem;
+background-repeat:no-repeat;
+background-position:center;
+background-size:contain;
+background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/product_detail_head-tag.jpg);
+}
+
+.departureCity-h2 {
+display:block;
+width:1.51rem;
+height:.52rem;
+overflow:hidden;
+text-align:center;
+border:1px solid #f93868;
+border-radius:.23rem;
+font-size:.24rem;
+line-height:.52rem;
+position:relative;
+top:.2rem;
+z-index:2;
+color:#f93868;
+margin:0 auto;
+}
+
+.productTitle {
+display:block;
+width:100%;
+font-size:.32rem;
+line-height:.37rem;
+top:.2rem;
+text-align:center;
+overflow:hidden;
+border-bottom:1px solid #cecece;
+color:#f93868;
+padding:.3rem 0;
+}
+
+.productIntroduction {
+text-indent:2em;
+font-size:.28rem;
+line-height:.42rem;
+color:#999;
+padding:.3rem .6rem .65rem;
+}
+
+.white-footer {
+  display:block;
+  /*display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-transition-property: -webkit-transform;
+      -moz-transition-property: -moz-transform;
+      -o-transition-property: -o-transform;
+      -ms-transition-property: -ms-transform;
+      transition-property: transform;
+      -webkit-justify-content:center;
+      -webkit-align-items:center;
+justify-content:center;
+align-items:center;*/
+text-align: center;
+width:100%;
+height:1rem;
+padding-top: 0.09rem;
+border-top:1px solid #ddd;
+position:fixed;
+left:0;
+bottom:0;
+z-index:2;
+}
+
+.schedule-title {
+display:block;
+width:100%;
+height:1.15rem;
+overflow:hidden;
+text-align:center;
+color:#999;
+font-size:.28rem;
+line-height:1.4rem;
+background-position:top;
+background-size:contain;
+background-repeat:no-repeat;
+background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/product_detail_schedule-title.jpg);
+}
+
+.schedule-contents-hasBanner .schedule-departure-to-destination {
+margin-top:-0.1rem;
+
+}
+
+.schedule-contents {
+display:block;
+width:100%;
+min-height:3.5rem;
+position:relative;
+}
+
+.schedule-date {
+display:block;
+position:relative;
+z-index:10;
+width:1.6rem;
+height:.5rem;
+color:#fff;
+font-size:.24rem;
+line-height:.5rem;
+background-color:#f93868;
+border-radius:.24rem;
+box-shadow:0 5px 12px 0 rgba(249,56,104,0.192);
+overflow:hidden;
+-webkit-transform:translate3d(0,0,0);
+transform:translate3d(0,0,0);
+margin:0 auto;
+}
+
+.schedule-date-icon {
+display:inline-block;
+vertical-align:middle;
+margin-left:.15rem;
+margin-right:.05rem;
+width:.4rem;
+height:100%;
+overflow:hidden;
+background-position:center;
+background-size:contain;
+background-repeat:no-repeat;
+background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/product_detail_schedule-date-icon.png);
+}
+.schedule-date-txt{
+  display:inline-block;
+  vertical-align:middle;
+  height:100%;
+}
+
+.schedule-departure-to-destination {
+display:block;
+width:100%;
+padding-top: 0.4rem;
+padding-bottom: 0.4rem;
+border-radius:.1rem;
+box-shadow:0 2px 8px 0 rgba(6,0,1,0.078);
+margin-top:-0.26rem;
+position:relative;
+text-align: center;
+z-index:2;
+overflow:hidden;
+}
+
+.schedule-departure-margin-border{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+display:block;
+margin-top:.5rem;
+width:100%;
+height:.3rem;
+line-height:.3rem;
+font-size:.28rem;
+color:#666;
+text-align:center;
+overflow:hidden;
+border-left:4px solid #f93868;
+border-right:4px solid #f93868;
+}
+
+.schedule-departure-to-destination span,.schedule-departure-to-destination em {
+display:inline-block;
+vertical-align:middle;
+font-size:.28rem;
+line-height: 0.6rem;
+color:#444;
+}
+
+.schedule-departure-to-destination em {
+width:.3rem;
+height:.3rem;
+background-position:center;
+background-size:contain;
+background-repeat:no-repeat;
+margin:0 .28rem;
+}
+
+.schedule-d-t-d-icon-1 {
+background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/product_detail_schedule-d-t-d-icon-1.png);
+}
+
+.schedule-d-t-d-icon-2 {
+background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/product_detail_schedule-d-t-d-icon-2.png);
+}
+
+.schedule-d-t-d-icon-3 {
+background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/product_detail_schedule-d-t-d-icon-3.png);
+}
+
+.schedule-d-t-d-icon-4 {
+background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/product_detail_schedule-d-t-d-icon-4.png);
+}
+
+.schedule-d-t-d-icon-5 {
+background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/product_detail_schedule-d-t-d-icon-5.png);
+}
+
+.schedule-contents-detail {
+display:block;
+width:100%;
+margin-top:-0.2rem;
+padding-top:.2rem;
+padding-bottom:.3rem;
+border:1px solid #d3d3d3;
+border-top:0;
+position:relative;
+z-index:1;
+overflow:hidden;
+border-radius:.1rem;
+background-color:#ededed;
+}
+
+.schedule-meal,.schedule-hotel,.schedule-content-html {
+display:block;
+width: 100%;
+margin-top:.2rem;
+line-height: 0.45rem;
+overflow:hidden;
+padding:0 .35rem;
+}
+
+.schedule-content-html {
+font-size:.24rem;
+line-height:.35rem;
+overflow:hidden;
+color:#999;
+}
+
+.schedule-meal-icon,.schedule-meal-breakfast,.schedule-meal-lunch,.schedule-meal-dinner,.schedule-hotel-icon,.schedule-hotel-name {
+display:inline-block;
+vertical-align:middle;
+font-size:.24rem;
+color:#999;
+margin-right:.15rem;
+}
+.schedule-hotel-name{
+  margin-right: 0;
+}
+.schedule-hotel-name i{
+  color: #999;
+}
+
+.schedule-meal-em,.schedule-hotel-name {
+color:#666;
+}
+
+.schedule-hotel-name {
+float:left;
+width:5.5rem;
+min-height:.45rem;
+line-height:.45rem;
+overflow:hidden;
+}
+
+.schedule-meal-icon,.schedule-hotel-icon {
+float: left;
+width:.45rem;
+height:.45rem;
+border-radius:50%;
+border:1px solid #d9d9d9;
+background-position:center;
+background-size:contain;
+background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/product_detail_schedule-meal-icon.png);
+overflow:hidden;
+}
+
+.schedule-hotel-icon {
+  float: left;
+background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/product_detail_schedule-hotel-icon.png);
+}
+
+.schedule-contents-banner {
+display:block;
+width:100%;
+height:3.75rem;
+margin-top:-0.2rem;
+overflow:hidden;
+position:relative;
+z-index:5;
+border-radius:.1rem;
+}
+.swiper-wrapper,.swiper-slide, .schedule-contents-banner,.swiper-pagination{
+  -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -o-transform: translate(0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.swiper-wrapper {
+  position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-transition-property: -webkit-transform;
+      -moz-transition-property: -moz-transform;
+      -o-transition-property: -o-transform;
+      -ms-transition-property: -ms-transform;
+      transition-property: transform;
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box
+}
+
+.swiper-slide {
+  -webkit-flex-shrink: 0;
+  -ms-flex: 0 0 auto;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+}
+
+.swiper-slide-img,.swiper-lazy {
+display:block;
+width:100%;
+height:100%;
+position:absolute;
+z-index:2;
+left:0;
+top:0;
+}
+
+.swiper-lazy-preloader
+{
+width:100%;
+height:100%;}
+
+.swiper-pagination {
+display:block;
+width:100%;
+overflow:hidden;
+position:absolute;
+left:0;
+bottom:.2rem;
+z-index:3;
+text-align:center;
+}
+
+.swiper-pagination-bullet {
+width:.12rem;
+height:.12rem;
+display:inline-block;
+margin-right:.05rem;
+border-radius:100%;
+background-color:#f93868;
+}
+
+.swiper-pagination-bullet-active {
+width:.35rem;
+border-radius:.1rem;
+}
+
+.expenseInvoice,.attention,.tips,.visa {
+display:block;
+width:100%;
+height:.87rem;
+line-height:.87rem;
+padding-left:.24rem;
+border-top:1px solid #e6e6e6;
+font-size:.28rem;
+color:#666;
+overflow:hidden;
+}
+
+.visa {
+border-bottom:1px solid #e6e6e6;
+}
+
+.expenseInvoice-icon,.attention-icon,.tips-icon,.visa-icon {
+display:inline-block;
+width:.45rem;
+height:.45rem;
+margin-right:.15rem;
+vertical-align:middle;
+border-radius:50%;
+border:1px solid #d9d9d9;
+background-position:center;
+background-size:contain;
+background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/product_detail_schedule-expenseinvoice.png);
+-webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -o-transform: translate(0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.attention-icon {
+background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/product_detail_schedule-attention.png);
+}
+
+.tips-icon {
+background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/product_detail_schedule-tips.png);
+}
+
+.visa-icon {
+background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/product_detail_schedule-visa.png);
+}
+
+.rightmore {
+float:right;
+width:.45rem;
+height:.45rem;
+margin-top:.15rem;
+vertical-align:middle;
+overflow:hidden;
+background-position:center;
+background-size:contain;
+background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/product_detail_schedule-right-more.png);
+}
+
+.callcenter,.confirm {
+display:inline-block;
+width:3.4rem;
+height:.8rem;
+font-size:.36rem;
+line-height:.84rem;
+text-align:center;
+border-radius:.1rem;
+}
+
+.callcenter,.callcenter:link,.callcenter:visited,.callcenter:hover,.callcenter:active {
+color:#666;
+border:1px solid #ddd;
+margin-right:.25rem;
+text-align:left;
+text-indent:1.3rem;
+background-repeat:no-repeat;
+background-position:.3rem 0;
+background-size:contain;
+background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/product_detail_callcenter.png);
+}
+
+.confirm,.confirm:link,.confirm:visited,.confirm:hover,.confirm:active {
+background-color:#f93867;
+color:#fff;
+}
+
+.childrenPages {
+display:none;
+width:100%;
+height:100%;
+position:fixed;
+right:-50rem;
+top:0;
+z-index:10;
+overflow:hidden;
+padding:.88rem .24rem 0;
+background: #F4F4F4;
+opacity: 0;
+}
+
+.childrenPages-content {
+display:block;
+width:100%;
+height:95%;
+font-size:.24rem;
+line-height:.36rem;
+padding:.3rem;
+background-color:#fff;
+color:#666;
+margin-top:.25rem;
+box-shadow:0 2px 8px 0 rgba(6,0,1,0.078);
+border-radius:.1rem;
+overflow:hidden;
+overflow-y:auto;
+-webkit-overflow-scrolling:auto;
+overflow-scrolling:auto;
+-webkit-transform:translate3d(0,0,0);
+transform:translate3d(0,0,0);
+
+}
+
+.childrenPages-content-iframe {
+display:block;
+width:100%;
+height:12rem;
+
+}
+
+
+.load-dialog {
+position:absolute;
+left:0;
+top:0;
+bottom:0;
+width:100%;
+height:100%;
+border-top:1px solid #cfcfcf;
+background-color:#f4f4f4;
+overflow:hidden;
+z-index:10;
+}
+.white-topbar{
+  display: block;
+  left: inherit;
+  right: -50rem;
+  opacity: 0;
+  z-index: 20;
+}
+
+.childrenPages,.white-topbar{
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight
+}
+
+
+.childrenPages-show,.white-topbar-show{
+  display: block;
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.childrenPages-content-title{
+  display: block;
+      font-size: 0.28rem;
+      line-height: 0.5rem;
+      color: #f93867;
+}
+.section-childrenPagesControl{
+      padding-bottom: .24rem;
+}
+
+@-webkit-keyframes fadeOutRight {
+    0% {
+        right: 0rem;
+        opacity: 1
+    }
+
+    100% {
+        right: -50rem;
+        opacity: 0;
+        -webkit-transform: translate3d(100%,0,0);
+        transform: translate3d(100%,0,0)
+    }
+}
+
+@keyframes fadeOutRight {
+    0% {
+        right: 0rem;
+        opacity: 1
+    }
+
+    100% {
+        right: -50rem;
+        opacity: 0;
+        -webkit-transform: translate3d(100%,0,0);
+        transform: translate3d(100%,0,0)
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        right: -50rem;
+        opacity: 0;
+        -webkit-transform: translate3d(100%,0,0);
+        transform: translate3d(100%,0,0)
+    }
+
+    100% {
+        display: block;
+        right: 0;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+      right: -50rem;
+      opacity: 0;
+        -webkit-transform: translate3d(100%,0,0);
+        transform: translate3d(100%,0,0)
+    }
+    100% {
+      display: block;
+      right: 0;
+      opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}

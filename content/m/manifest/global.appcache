@@ -1,0 +1,19 @@
+CACHE MANIFEST
+# v0.3 2014-10-17
+# Global AppCache Files
+
+http://r.uzaicdn.com/content/m/images/index/logo640.png
+http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png
+http://r.uzaicdn.com/content/m/images/common/loader.gif
+
+http://r.uzaicdn.com/combo/scripts/m/sea-modules/seajs/seajs/2.1.1/sea.js,scripts/m/config.min.js
+http://r.uzaicdn.com/scripts/m/sea-modules/seajs/seajs/2.1.1/sea.js
+http://r.uzaicdn.com/scripts/m/sea-modules/zepto/zepto/1.0/zepto.js
+http://r.uzaicdn.com/scripts/m/sea-modules/zepto/zepto.cookie/1.0/zepto.cookie.min.js
+http://r.uzaicdn.com/scripts/m/sea-modules/swipe/swipe/2.0/swipe.js
+http://r.uzaicdn.com/scripts/m/sea-modules/jquery/autocomplete/1.1.0/jquery.autocomplete.min.js
+
+NETWORK:
+*
+
+FALLBACK:

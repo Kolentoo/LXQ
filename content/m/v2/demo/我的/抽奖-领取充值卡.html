@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>领取充值卡-悠哉旅游网</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon-precomposed" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-startup-image" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/my/my.css" rel="stylesheet" />
+    <script src="http://r02.uzaicdn.com/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/_src/core', '/content/m/v2/scripts/_src/my/my'], function (core, my) {
+            my.init();
+        });
+    </script>
+
+    <style>
+        html, body{ background: #fff; min-height: 100%;}
+        section input[type=button] { border-radius: 22px; }
+        section .items ul { background: #f6f6f6; }
+        section .items li input { background: none; border: none; }
+        section .items li { padding: 3.125% 10px; border: 1px solid #d4d4d4; border-left: 0; border-right: 0; }
+        .info-list .info-item{ padding: 6.25% 10px;}
+    </style>
+</head>
+<body>
+    <div class="max-w640 w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">领取充值卡</div>
+            </div>
+            <div class="d-r">
+            </div>
+        </header>
+
+        <section class="f15 pb10">
+            <div class="banner banner-bonus">
+                <img src="/content/m/v2/images/my/p13.jpg" alt="" class="block g10" />
+                <img src="/content/m/v2/images/my/icon31.png" class="bonus-img" />
+            </div>
+            <h1 class="bonus-tit tc yahei">文字</h1>
+            <div class="info-list mt10">
+                <dl class="info-item clearfix">
+                    <dt class="fl">【简介】：</dt>
+                    <dd>1-10分钟到账 安全、快速、便捷。</dd>
+                </dl>
+                <div class="items f16">
+                    <ul>
+                        <li>手机号码：<input type="text" placeholder="请输入您的手机号码" name="name" value="" /></li>
+                    </ul>
+                </div>
+                <dl class="info-item clearfix">
+                    <dt class="fl">【到账时间】：</dt>
+                    <dd>1天内</dd>
+                </dl>
+            </div>
+
+            <div class="mt10 tc">
+                <input type="button" value="立即充值" class="btn btn-on white f18 g8" id="j_pushMoney" />
+            </div>
+
+        </section>
+    </div>
+
+    <div id="j_popGetBox" class="pop-get-box">
+        <div class="pop-hd tc"><em class="hd-cont white f20">成功</em></div>
+        <div class="pop-bd">
+            <p class="info-icon tc"><i class="icon-succeed"></i></p>
+            <div class="info-cont f15">将会在1天内充入您的手机。 请留意短信提示。</div>
+        </div>
+        <div class="pop-ft tc"><a href="#" class="btn-look f18 g8 j_popClose">查看奖品</a></div>
+    </div>
+</body>
+</html>

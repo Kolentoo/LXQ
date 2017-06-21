@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>悠哉旅游网</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon-precomposed" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-startup-image" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/my/my.css" rel="stylesheet" />
+    <script src="http://r02.uzaicdn.com/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/_src/core', '/content/m/v2/scripts/my/my'], function (core, my) {
+            my.init();
+        });
+    </script>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">签到</div>
+            </div>
+            <div class="d-r">
+            </div>
+        </header>
+        <section class="check-in">
+            <div class="bg-white p10">
+                <div class="ci-info mt10 clearfix">
+                    <div class="info-side fr">剩余点数：<i class="c-21ae59">1000</i>点</div>
+                    <div class="info-main clearfix">
+                        <div class="user-icon fl"><img src="/content/m/v2/images/my/p1.png" alt="" class="g10 vm"></div>
+                        <div class="info-box pl10">
+                            <p class="user-name">用户名</p>
+                            <p class="info-bar f11">今日获得：<i class="c-21ae59">100</i>点</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mod-hd bg-white clearfix">
+                <div class="fl pt10"><i class="hd-icon vm"></i><em class="f15 ml5 vm">点数抽大奖</em></div>
+                <span id="j_btnRule" class="btn-rule f60 fr pl10 pr10">签到规则</span>
+            </div>
+            <div class="activity-box">
+                <ul class="activity-items f14 tc clearfix">
+                    <li>
+                        <a href="#" class="activity-item">
+                            <img src="/content/m/v2/images/my/p2.png" alt="">
+                            <span class="ai-hd ellipsis f666 g10">赚点数</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="activity-item">
+                            <img src="/content/m/v2/images/my/p3.png" alt="">
+                            <span class="ai-hd ellipsis f666 g10">抽奖大转盘</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="activity-item">
+                            <img src="/content/m/v2/images/my/p4.png" alt="">
+                            <span class="ai-hd ellipsis f666 g10">分享立减</span>
+                        </a>
+                    </li>
+                    <li><span class="later-icon">敬请期待</span></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div id="j_popRuleBox" class="pop-rule-box bg-white">
+        <div class="pop-hd f18 tc">签到规则</div>
+        <div class="pop-bd"></div>
+        <div class="pop-ft tc"><button class="btn-confirm bg-f60 white f20 yahei">我知道了</button></div>
+    </div>
+</body>
+</html>

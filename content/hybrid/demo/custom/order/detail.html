@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html ng-app='MyModule' ng-controller='OrderDetail'>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+
+    <meta name="keywords" content="{{ProName}}定制旅游,{{ProName}}定制游，{{ProName}}定制旅行">
+    <meta name="description" content="悠哉旅游网提供高端私人定制旅游，专业定制旅游顾问按您的需求，为您1对1定制旅游方案，休闲游/度假游/购物游定制旅游高端旅行者的首要选择，享受专属你的私人旅行。
+">
+    <link href="http://r03.uzaicdn.com/content/m/v2/styles/_src/custom/base.css" rel="stylesheet">
+    <link href="http://r03.uzaicdn.com/content/m/v2/styles/_src/custom/custom_order_details.css" rel="stylesheet">
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/com/font.js"></script>
+    <title ng-bind="values.ProName"></title>
+</head>
+<body>
+    <div class="content" >
+        <!-- 头部 -->
+        <header class="bg-transparent white-topbar">
+            <a target="_self" href="../order/list.html" class="fl top-back"><i class="left-ico black-ico"></i></a>
+            <a target="_self" class="fr"></a>
+            <div class="title"><h1>订单详情</h1></div>
+        </header>
+
+        <!-- 内容 -->
+        <div class="main">
+            <div class='cancel'>
+                <span>已取消</span>
+            </div>
+
+            <div class='main_headtitle'>
+                <a href="../Product/Detail.html?ProductID={{values.ProID}}">
+                    <div class='headtitle'>
+                        <div class='w_100'><span ng-bind="values.ProName"></span>
+						<div class='pic'></div></div>
+                    </div>
+                </a>
+            </div>
+            <div class='main_m'>
+                <div class='title'>企业定制</div>
+                <div class='center'><span class='adr' ng-bind="values.StartCityName"></span></div>
+	            <div class='renjun'>
+					<div class='left n7'>人均预算：<span ng-bind="values.YuSuan"></span></div>
+				</div>
+                <div class='main_detailed'>
+                    <div class='left n1'>企业性质：<span ng-bind="values.CompanyType"></span></div>
+                    <div class='left n2'>团队类型：<span ng-bind="values.TeamType"></span></div>
+                    <div class='left n3'>天&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp数：<span ng-bind="values.MinDays"></span></div>
+                    <div class='left n4'>和谁去：<span ng-bind="values.GoWith"></span></div>
+                    <div class='left n5'>同行人数：<span ng-bind="values.MinPerson"></span></div>
+                    <div class='left n6'>酒店类型：<span ng-bind="values.HotelInfo"></span></div>
+                    <div class='clear'></div>
+                </div>
+            </div>
+            <div class='main_m'>
+                <div class='main_m_t'>
+                    <span class='n1'>联系人</span>
+                </div>
+                <div class='main_m_detailed'>
+                    <p><span>联系人：</span><span ng-bind="values.UserName"></span></p>
+                    <p><span>手机号：</span><span ng-bind="values.Tel"></span></p>
+					<p><span>微信号：</span><span ng-bind="values.Weixin"></span></p>
+                </div>
+            </div>
+            <div class='main_m'>
+                <div class='main_m_t'>
+                    <span class='n2'>备注</span>
+                </div>
+                <div class='main_m_detailed'>
+                    <p ng-bind="values.Remark">
+
+                    </p>
+                </div>
+            </div>
+            <div class='foot'>
+                <a id="quxiaobtn" ng-click="cancel_order()">取消订单</a>
+                <a class='customer'id="Telephone" onclick="pages.Telephone_init()">立即沟通</a>
+            </div>
+        </div>
+    </div>
+    <div class="layer"></div>
+    <div class="layer_main">
+        <h2>是否确认取消订单？</h2>
+        <div class="layer_main_confirm">
+            <span class="cancel_">取消</span>
+            <span class="confirm">确认</span>
+        </div>
+    </div>
+    <script src="http://r03.uzaicdn.com/content/libs/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/common/angular.min.js"></script>
+    <script type="text/javascript" src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/common/api.js"></script>
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/custom/custom_orderdetail.js"></script>
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/common/pagestatistics.js"></script>
+</body>
+</html>

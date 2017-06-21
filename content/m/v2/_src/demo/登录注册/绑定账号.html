@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <title>悠哉旅行网触屏版</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/user/user.css" rel="stylesheet" />
+    <script src="/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/_src/core', '/content/m/v2/scripts/_src/user/user'], function (core, user) {
+            user.init();
+        });
+    </script>
+    <style>
+        html, body { background: #fff; }
+    </style>
+</head>
+<body>
+    <div class="w user">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m"><div class="tit">绑定账号</div></div>
+            <div class="d-r"></div>
+        </header>
+        <section class="bind">
+            <div class="banner"><p class="banner-cont f18 tc g10">你好，来自<em>QQ</em>的用户！</p></div>
+            <dl class="bind-items f14">
+                <dt class="item-hd f999">已有账号？你可以：</dt>
+                <dd class="item-bd mt5"><a href="#" class="btn-red btn-item f16 tc">登录并绑定</a></dd>
+                <dt class="item-hd f999">还没有账号？你可以：</dt>
+                <dd class="item-bd mt5"><a href="#" class="btn-blue btn-item f16 tc">注册并绑定</a></dd>
+            </dl>
+        </section>
+    </div>
+</body>
+</html>

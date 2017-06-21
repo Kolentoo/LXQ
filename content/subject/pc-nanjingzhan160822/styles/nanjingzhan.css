@@ -1,0 +1,64 @@
+/*
+* @Author: lichen
+* @Date:   2016-08-22 14:55:57
+* @Last Modified by:   lxq
+* @Last Modified time: 2016-08-23 18:17:14
+*/
+.banner-njz{background: url(../images/njz01.jpg) center top no-repeat;height: 713px;}
+.content-njz .content-njz-1{background: url(../images/njz02.jpg) center top no-repeat;height: 666px;overflow: hidden;}
+.content-njz .content-njz-2{background: url(../images/njz03.jpg) center top no-repeat;height: 965px;overflow: hidden;}
+.content-njz .content-njz-3{background: url(../images/njz04.jpg) center top no-repeat;height: 910px;overflow: hidden;}
+.content-njz .content-njz-4{background: url(../images/njz05.jpg) center top no-repeat;height: 902px;overflow: hidden;}
+.content-njz .content-njz-5{background: url(../images/njz06.jpg) center top no-repeat;height: 922px;overflow: hidden;}
+.content-njz-main{margin-top: 50px;padding-top: 30px;width: 920px;margin:0 auto;}
+.content-njz-main p{color: #fff;font-size: 25px;}
+.content-njz-main span{color: #fffc00;font-weight: bolder;}
+.content-njz-model-a{width: 1076px;height: 359px;border: 11px solid #aeccff;background: #fff;margin-top: 20px;}
+.content-njz-model-a .tp{width: 720px;}
+.content-njz-model-a .wuandu{width: 329px;}
+.content-njz-model-a-l{width: 777px;height: 340px;margin-top: 9px;margin-left: 11px;margin-right: 11px;_display: inline;}
+.content-njz-model-a-r{width: 276px;padding-top: 45px;}
+.content-njz-model-a-r .ziti{font-size: 14px;}
+.content-njz-model-a-r p i{display: inline-block;width: 14px;height: 30px;background: #f8af00;border-radius: 10px;vertical-align: sub;*margin: -18px 5px 0 0;}
+.content-njz-model-a-r p{font-size: 20px;color:#666;margin-bottom: 10px;line-height:28px;}
+.content-njz-model-a-r p span{font-size: 30px;font-weight: bolder;color:#0077cb;}
+.content-njz-3 .content-njz-model-a {margin-top: 40px;}
+.content-njz-model-b{height: 415px;width: 1076px;border: 11px solid #aeccff;background: #fff;}
+.content-njz-model-b-l{padding-left: 11px;padding-top: 11px;}
+.content-njz-model-b-r{background: url(../images/njz01.png) right center no-repeat;width: 544px;height: 415px;}
+.content-njz-model-b-r-t-l{margin-left: 100px;margin-top: 10px;_display: inline;}
+.content-njz-model-b-r-t-r{margin-top: 20px;margin-left: 5px;_display: inline;}
+.content-njz-model-b-r-b{width: 503px;height: 170px;border:2px solid #cff8ff;border-left: none;margin-top: 16px;padding-left: 30px;padding-top: 18px;position: relative;}
+.content-njz-model-b-r-b .p1{font-size: 25px;color: #000;}
+.content-njz-model-b-r-b .p1 a:hover {color:#f93868;}
+.content-njz-model-b-r-b .p2 img{vertical-align: middle;height: 21px;margin-bottom: 8px;}
+.content-njz-model-b-r-b .p2 span{font-size: 20px;color: #666;margin-left: 10px;}
+.content-njz-model-b-r-b .p3{color: #ff004e;font-size: 56px;font-family: Georgia;} 
+.content-njz-model-b-r-b .p3 span{font-size: 26px;font-family: yahei;}
+.content-njz-model-b-r-b .p4{width: 205px;height: 40px;text-align: center;line-height: 40px;border-radius: 10px;position: absolute;top:130px;left:304px;
+	opacity:0.8;filter:alpha(opacity=80);background: url(/content/subject/pc-nanjingzhan160822/images/book.png) no-repeat;width: 211px;height: 48px;line-height: 48px;}
+.content-njz-model-b-r-b .p4:hover{opacity:1;filter:alpha(opacity=100);}	
+.content-njz-model-b-r-b .p4 a{color: #ff004e;font-size: 32px;width: 100%;display: inline-block;}
+.content-njz-model-b .jubu{margin-left: 11px;width: 533px;_display: inline;}
+.content-njz-model-b .jbs{padding-left: 0;margin-right: 10px;}
+.content-njz-model-b .jubus{border-right: none;border-left: 2px solid #cff8ff;width: 501px;}
+.content-njz-model-b .jus{margin-left: 0;}
+.content-njz-model-b .bg1{background: url(../images/njz06.png) right center no-repeat;width: 532px;height: 415px;}
+.content-njz-model-b .bg2{background: url(../images/njz05.png) right center no-repeat;width: 543px;height: 415px;}
+.content-njz-model-b .bg3{background: url(../images/njz04.png) right center no-repeat;width: 532px;height: 415px;}
+.subject-intro-more{background: url(../images/njz07.jpg) center top no-repeat;height: 355px;padding-top: 60px;}
+.s2{font-size: 45px;font-weight: bolder; color:#fff;text-shadow: 3px 3px 3px rgba(0,51,167,0.75)}
+.subject-intro-more ul{margin-top: 50px;}
+.nav-njz{width: 130px;height: 245px;border-radius: 10px;border:1px solid #fff;background: #fff;position: absolute;right: 20px;top: 700px;box-shadow: 3px 2px 2px rgba(0,126,196,0.75);}
+.nav-njz li{height: 40px;line-height: 40px;text-align: center;background: url('../images/njz03.png') center bottom no-repeat;cursor:pointer;}
+.nav-njz li .p1 {display: inline-block;width: 100%;color: #007ed4;font-size: 18px;}
+.nav-njz li .p1:hover{color: #ff1975;}
+.nav-njz .on .p1 {color: #ff1975;}
+.nav-njz .li-ju{background-image: none;}
+.nav-njz .li-ju:hover em{color:#ff1975;}
+.nav-njz .li-ju:hover i{color:#fff;}
+.nav-on {position: fixed;right: 20px;top: 15%;}
+.nav-njz .arrow {font-size: 16px;margin-left: 35px;width: 16px;margin-right: 5px;}
+.nav-njz .arrow em{color:#007ed4;}
+.nav-njz .arrow i{color:#fff;position: relative;top: -36px;}
+.nav-njz .back .p1 {width: 20px;}

@@ -1,0 +1,547 @@
+ html,body{
+height: 100%;
+}
+
+input,textarea,select{
+  -moz-user-select: initial;
+  -webkit-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+}
+.white-topbar{
+  background: transparent;
+}
+.phone-ico{
+    width: 0.6rem;
+    height: 0.6rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/phone_ico.png") no-repeat;
+    background-size: 100% auto;
+}
+.content{
+	background-size: 100% 100%;
+	background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/bj.jpg);
+	background-repeat: no-repeat;
+}
+.formimg1{
+	width: 3.48rem;
+	height: 2.61rem;
+    background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/formimg1.png);
+    background-size: 100% 100%;
+    margin: 0 auto;
+
+}
+
+.font32{
+	font-size: 0.32rem;
+}
+.cor666{
+	color: #666;
+}
+.font26{
+	font-size: 0.26rem;
+}
+.cten{
+	text-align: center;
+}
+.pcustom,.acustom{
+	width: 5rem;
+	height: 1.25rem;
+	background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/pcustom.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: block;
+	margin: 0.3rem auto 0 auto;
+	font-size: 0.32rem;
+	color: #fff;
+	line-height: 1.22rem;
+	text-align: center;
+	padding-left: 0.9rem;
+}
+.acustom{
+	background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/acustom.png);
+	color: #f84c77;
+}
+.tuimg1{
+	width: 0.81rem;
+	height: 0.82rem;
+	background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/tuimg1.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.infs{
+	width: 5.59rem;
+	height: 0.69rem;
+	background-color: #CCCCCC;
+	border-radius:2.8rem;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 0.26rem;
+	line-height: 0.69rem;
+	text-align: center;
+}
+.toubu{
+width: 6.54rem;
+margin: 0 auto;
+}
+.jian{
+	width: 0.26rem;
+	height: 0.26rem;
+	display: block;
+	position: absolute;
+	background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/jian.png);
+	left:-0.17rem;
+	top:0.03rem;
+}
+.sc{
+	    width: 2.75rem;
+    height: 0.78rem;
+    border-radius: 1.45rem;
+    border: 1px solid #eee;
+    text-align: center;
+    padding-left: .1rem;
+    box-shadow: -1px 3px 5px #ddd;
+    -webkit-box-shadow: -1px 3px 5px #ddd;
+    background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/didian1.png);
+    background-size:0.26rem 0.32rem;
+    background-repeat: no-repeat;
+    background-position: 0.25rem;
+    display: block;
+    line-height: 0.78rem;
+    position: relative;
+}
+.sc2{
+	    width: 2.15rem;
+    height: 0.78rem;
+    border-radius: 1.45rem;
+    border: 1px solid #eee;
+    text-align: center;
+    padding-left: .1rem;
+    box-shadow: -1px 3px 5px #ddd;
+    -webkit-box-shadow: -1px 3px 5px #ddd;
+    background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/didian2.png);
+    background-size: 0.26rem 0.32rem;
+    background-repeat: no-repeat;
+    background-position: 0.25rem;
+    display: block;
+    line-height: 0.78rem;
+    color: #c5c5c5;
+    font-size: 0.28rem;
+    padding-left: 0.5rem;
+    padding-right: 0.1rem;
+}
+.feiji{
+	width: 0.69rem;
+	height: 0.79rem;
+	background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/feiji.png);
+	background-size: 100% 100%;
+	display:block;
+}
+.dicon{
+	width:6.53rem;
+	margin: 0 auto;
+	margin-top:0.6rem
+}
+.cons{
+	width:7rem;
+	margin: 0 auto;
+	margin-top:0.6rem;
+	overflow: hidden;
+	padding-bottom: 0.3rem;
+
+}
+.redk{
+	width: 6.54rem;
+	border-radius: 5px 5px 0 0;
+	margin:0 auto;
+}
+.redb{
+ border: 0;
+}
+.redbotom{
+border: 1px solid #f93868;
+}
+.scdiv{
+	width: 6.54rem;
+	height: 0.82rem;
+
+	border-radius: 5px;
+	background-color: #fff;
+    box-shadow: 0px 4px 5px #ddd;
+}
+.lc{
+	width:6.54rem;
+	height: 0.62rem;
+	padding-top: 0.1rem;
+}
+.timc{
+	line-height: 0.62rem;
+	background-repeat: no-repeat;
+	background-size: 0.44rem 0.45rem;
+	background-position: 0.17rem 0.1rem;
+	padding-left:0.75rem;
+	width: 1.25rem;
+	border-right: 1px solid #e4e4e4;
+
+
+}
+.pimg1{
+		background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/time1.png);
+}
+.heshui{
+	background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/heshui.jpg);
+}
+.qiye{
+	background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/qiye.jpg);
+}
+.tuandui{
+	background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/team.png);
+}
+.renshu{
+	background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/renshu.jpg);
+}
+.jiudian{
+	background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/jiudian.jpg);
+}
+.yusuan{
+	background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/yusuan.jpg);
+}
+
+.xingming{
+	background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/name.jpg);
+}
+.shouji{
+	background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/phone.png);
+}
+.weixin{
+	background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/weixin.jpg);
+}
+.consc{
+	    border: none;
+    width: 10.3rem;
+    color: #c5c5c5;
+    line-height: 0.6rem;
+    height: 100%;
+    border:none;
+	background:none;
+	padding-left:0.2rem;
+	font-size: 0.28rem;
+}
+.coninput{
+	 border: none;
+    width: 4.3rem;
+    color: #c5c5c5;
+    line-height: 0.6rem;
+    height: 100%;
+    padding-left:0.2rem;
+    border:none;
+    font-size: 0.28rem;
+}
+.tishi{
+	font-size: 0.24rem;
+	color: #f93868;
+	line-height: 0.5rem;
+	text-align: center;
+}
+.xing{
+	position: absolute;
+	right: -0.2rem;
+	top:0.2rem;
+	color: #f93868;
+}
+.beizhu{
+	width: 6.54rem;
+	margin: 0 auto;
+	height: 1.2rem;
+	margin-top:0.09rem;
+	border-radius: 5px;
+	line-height: 0.38rem;
+}
+.beizhu textarea{
+	    width: 96%;
+    height: 100%;
+    border: none;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: .1rem;
+}
+.btns{
+	width: 6.48rem;
+	margin: 0 auto;
+	margin-top:0.65rem;
+	padding-left:0.03rem;
+	padding-right: 0.03rem;
+}
+.kxbtn{
+	width: 2.65rem;
+	height: 0.75rem;
+	border: 1px solid #f93b6b;
+	display: block;
+	border-radius: 1.32rem;
+	color: #f93b6b;
+	text-align: center;
+	line-height: 0.75rem;
+	font-size: 0.24rem;
+}
+.sxbtn{
+	width: 2.65rem;
+	height: 0.75rem;
+	background-color: #f93b6b;
+	display: block;
+	border-radius: 1.32rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.75rem;
+	font-size:0.24rem;
+}
+.mt16{
+	margin-top:0.16rem;
+}
+::-webkit-keygen-select {
+    border: 1px solid #a0b3d6;
+    background-color: #f0f3f9;
+    color: #34538b;
+}
+.personc{
+	padding-top:0.5rem;
+}
+
+
+.div_sc{
+     width: 4.3rem;
+    overflow-x: hidden;
+    position: relative;
+    height: 100%;
+}
+.div_sc:after{
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0.2rem;
+	width: 0.22rem;
+	height: 0.13rem;
+	top:0.28rem;
+	background-size: 100% 100%;
+	background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/jiantou2.png);
+
+}
+select{
+	border-top-style: none;
+border-right-style: none;
+border-left-style: none;
+border-bottom-style: none;
+
+	border: none;
+
+}
+.jiantou{
+    position: absolute;
+	right: 0.2rem;
+	width: 0.22rem;
+	height: 0.13rem;
+	top:0.33rem;
+	background-size: 100% 100%;
+	background-image:url(http://r03.uzaicdn.com/content/hybrid/images/custom/jiantou2.png);
+}
+.font28{
+	font-size: 0.28rem;
+}
+textarea{
+resize:none;
+color: #c5c5c5;
+background-color: #f5f5f5;
+font-size: 0.26rem;
+box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
+-webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.3);            /* For Firefox3.6+ */
+                  /* For Latest Opera */
+}
+
+
+.acustom:visited {
+    color: #f93b6b;
+}
+.pcustom:visited {
+    color: #fff;
+}
+.kxbtn:visited {
+    color: #f93b6b;
+}
+.sxbtn:visited {
+    color: #fff;
+}
+
+
+
+#main{
+     position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+#wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 0.88rem;
+    bottom: 0.2rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.select-change{
+  color: #333;
+}
+
+select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+ appearance:none;
+ -moz-appearance:none; /* Firefox */
+ -webkit-appearance:none; /* Safari 和 Chrome */
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+.back2{
+	    width: 0.58rem;
+    height: 0.58rem;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/back_ico.png")no-repeat;
+    background-size: 100% auto;
+    vertical-align: middle;
+        display: block;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem;
+}
+
+/*清除浮动*/
+
+.clearfix:before,
+.clearfix:after {
+    display: block;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+.spani{
+	    display: block;
+    position: relative;
+    background: #f6f6f6;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0.88rem;
+    text-align: center;
+    line-height: 0.88rem;
+}
+
+.content .main {
+    padding-top: 0;
+}
+
+.zhezhaoceng{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left:0;
+	z-index: 999;
+	background-size: 100% 100%;
+    background-image: url(http://r03.uzaicdn.com/content/hybrid/images/custom/bj.jpg);
+    background-repeat: no-repeat;
+
+}
+textarea{
+	overflow-y:scroll;
+}
+.select-change{
+	color: #333;
+}
+
+footer {
+        position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.98rem;
+    z-index: 9;
+
+}
+.index-con footer .index-btn, .index-con footer .order-btn {
+    margin-top: 0.12rem;
+}
+footer a {
+    width: 33.3%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    font-size: 0.20rem;
+    color: #666;
+}
+
+footer .custom-btn {
+    position: relative;
+    z-index: 2;
+    top: -0.5rem;
+    line-height: 0.35rem;
+}
+
+footer .custom-btn i {
+    width: 1.21rem;
+    height: 1.14rem;
+    display: block;
+    margin: 0 auto;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/custom_ico.png") no-repeat;
+    background-size: 100% auto;
+}
+footer .index-btn i {
+       background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/index_ico_.png") no-repeat;
+    background-size: 100% auto;
+}
+footer .order-btn i {
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/order_ico.png") no-repeat;
+    background-size: 100% auto;
+}
+footer .order-btn {
+    margin-top: 0.12rem;
+}
+.border-top{
+height: 100%;
+background-color: #fff;
+}
+footer i {
+    width: 0.5rem;
+    height: 0.48rem;
+    display: block;
+    margin: 0 auto;
+}
+.xuanze{
+min-height: 10rem;
+}
+.pcus{
+  display: none;
+}

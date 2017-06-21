@@ -1,0 +1,134 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>常用旅客</title>
+    <meta name="keywords" content="特卖会" />
+    <meta name="description" content="特卖会" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/temai/temai.css" rel="stylesheet" />
+    <script src="http://r01.uzaicdn.com/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['http://r01.uzaicdn.com/content/m/v2/scripts/_src/core', 'http://r01.uzaicdn.com/content/m/v2/scripts/temai/temai'], function (core, temai) {
+            temai.init();
+        });
+    </script>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">常用旅客</div>
+            </div>
+            <div class="d-r">
+                <span class="temai-save block" id="j_saveUser">保存</span>
+            </div>
+        </header>
+
+        <section class="temai f14">
+            <form action="/TouristSubmit" method="POST" id="touristform">
+                <div class="adduser mb10 mt10">
+                    <div class="box">
+                        <ul>
+                            <li class="clearfix">
+                                <span class="fl f999 g4">姓名</span>
+                                <div>
+                                    <input type="text" placeholder="必填" id="userName" name="userName" />
+                                </div>
+                                <span class="temai-user-tip" id="j_temaiUserTip">?</span>
+                            </li>
+
+                            <li class="clearfix">
+                                <span class="fl f999 g4">游客类型</span>
+                                <div>
+                                    <select id="personType" name="personType">
+                                        <option value="0">成人</option>
+                                        <option value="3">儿童</option>
+                                    </select>
+                                </div>
+                            </li>
+
+                            <li class="clearfix">
+                                <span class="fl f999 g4">性别</span>
+                                <div>
+                                    <select name="userSex" id="userSex">
+                                        <option value="1">男</option>
+                                        <option value="0">女</option>
+                                    </select>
+                                </div>
+                            </li>
+
+                            <li class="clearfix">
+                                <span class="fl f999 g4">国籍</span>
+                                <div>
+                                    <input type="text" value="" placeholder="必填" name="userNational" id="userNational" />
+                                </div>
+                            </li>
+
+                            <li class="clearfix">
+                                <span class="fl f999 g4">证件类型</span>
+                                <div>
+                                    <select name="userPaper" id="userPaper">
+                                        <option value="0">身份证</option>
+                                        <option value="2">军官证</option>
+                                        <option value="4">护照</option>
+                                        <option value="6">台胞证</option>
+                                        <option value="7">回乡证</option>
+                                    </select>
+                                </div>
+                            </li>
+
+                            <li class="clearfix">
+                                <span class="fl f999 g4">证件号码</span>
+                                <div>
+                                    <input type="text" placeholder="必填" name="userPaperID" value="" id="userPaperID" />
+                                </div>
+                            </li>
+
+                            <li class="clearfix">
+                                <span class="fl f999 g4">证件有效期</span>
+                                <div>
+                                    <input type="date" name="userPaperUseTime" placeholder="必填" value="" id="userPaperUseTime" />
+                                </div>
+                            </li>
+
+
+
+                            <li class="clearfix">
+                                <span class="fl f999 g4">出生日期</span>
+                                <div>
+                                    <input type="date" placeholder="请输入出生日期" name="userBirthTime" id="userBirthTime" />
+                                </div>
+                            </li>
+
+
+                            <li class="clearfix">
+                                <span class="fl f999 g4">手机号</span>
+                                <div>
+                                    <input type="tel" placeholder="请输入手机号" name="userPhone" maxlength="11" value="" id="userPhone" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tip f13 f999 pl10 pr10">为了您能顺利出行，请确保旅行结束日期至少比证件有效期早6个月。</div>
+
+                <input type="hidden" id="usertype" name="usertype" value="0">
+                <input type="hidden" id="userid" name="userid" value="0">
+            </form>
+        </section>
+
+    </div>
+
+
+
+</body>
+</html>
+

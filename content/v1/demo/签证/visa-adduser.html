@@ -1,0 +1,594 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>填写签证申请人</title>
+    <link href="/content/v1/_src/styles/visa/order.css" rel="stylesheet" />
+    <script src="http://r01.uzaicdn.com/content/v1/scripts/core.js"></script>
+    <script src="http://r01.uzaicdn.com/content/libs/plugin/jsonCalendar/jsonCalendar.min.js"></script>
+    <script src="/content/v1/_src/scripts/visa/order.js"></script>
+    <script src="http://r01.uzaicdn.com/combo/static/base/easing/jquery.easing.1.3.js,Scripts/slidejs/slides.min.jquery.js"></script>
+    <script src="http://r01.uzaicdn.com/content/libs/plugin/pcas/PCASClass.js" charset="gb2312"></script>
+     
+    <script type="text/javascript">
+
+        
+    </script>
+    <style type="text/css">
+        .Relationship { float: left; }
+    </style>
+</head>
+<body>
+
+
+    <div class="visa-logo clearfix yahei f16">
+        <div class="w">
+            <div class="fl d-l mt5">
+                <img src="http://r.uzaicdn.com/content/v1/images/visa/logo.png" alt="巨龙旅游" />
+            </div>
+            <div class="fr d-r">
+                <div class="d1">
+                    售前咨询：021-60293978&nbsp;&nbsp;&nbsp;60293979
+                </div>
+                <div class="d2 ">
+                    手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机：13818719430 （周末 晚间专线）
+                </div>
+            </div>
+        </div>
+    </div>;
+    <div class="visa-main yahei">
+
+        <script type="text/javascript">
+            function hf() {
+
+                return confirm("确认退出吗?");
+            }
+        </script>
+        <div class="visa-hd clearfix white w">
+            <div class="fl d-l">
+                <div class="d1 f28">
+                    我的签证
+                </div>
+                <div class="d2 f18">
+                    Order Center
+                </div>
+            </div>
+            <div class="fr d-r">
+                <div class="d1 f16">
+                    jsonchou
+                </div>
+                <div class="d2 clearfix mt5">
+                    <a href="/user/logout" onclick="return hf();" class="white f14 fr">退出</a>
+                </div>
+            </div>
+        </div>;
+        <div class="visa-tit tc w">
+            <div style="cursor:pointer;" class="fl back f14" onclick="if(confirm('确定离开此页面吗?')){ window.location = '/visa/VisaList';}">
+                返回
+            </div>
+            <span class="f18">添加签证申请</span>
+        </div>
+        <div class="visa-procbar tc w">
+            <ul class="clearfix f16 white">
+                <li class="on">1.填写签证申请人</li>
+                <li>2.旅行社审核材料</li>
+                <li>3.领馆审核材料</li>
+                <li>4.出签</li>
+            </ul>
+        </div>
+        <div class="w f666">
+            <div class="visa-cont">
+                <div class="row">
+                    <h2>
+                        订单信息
+                    </h2>
+                    <table class="g10">
+                        <tbody>
+                            <tr>
+                                <td class="td1">
+                                    订单来源
+                                    <select onchange="ChangeSource();" id="selOrderSource">
+                                        <option value="taobao">淘宝</option>
+                                        <option value="mafengwo">马蜂窝</option>
+                                        <option value="qiongyou">穷游</option>
+                                    </select>
+                                </td>
+                                <td class="td2">
+                                    <span id="spAccount">淘宝</span>账号
+                                    <input type="text" id="txtOutID" name="name" class="txt">
+                                </td>
+                                <td style="width: auto;" colspan="3" class="td3">
+                                    订单编号
+                                    <input type="text" id="txt_OrderCode" name="name" placeholder="本次签证申请，若有多个订单，请使用空格 分开添加" style="width: 438px;" class="txt">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="g10">
+                        <tbody>
+                            <tr>
+                                <td class="td1">
+                                    <label>
+                                        <input type="checkbox" id="cbkUrgent" class="vm">
+                                        加急订单
+                                    </label>
+                                </td>
+                                <td class="td2">
+                                    签证领取
+                                    <select id="selCalback">
+                                        <option value="1">快递寄回</option>
+                                        <option value="2">上门自取</option>
+                                    </select>
+                                </td>
+                                <td colspan="3" >
+                                    <div class="get-visaprofile" id="j_getVisaProfile">
+                                        <div class="item">收件地址 <select style="width:124px;" name="province"></select> <select style="width:81px;"  name="city"></select> <select style="width:78px;" name="area"></select> <input type="text" placeholder="详细地址" name="name" class="txt"></div>
+                                        <div class="item hide">取地址：上海市徐家汇路550号宝鼎大厦18楼C-1座</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="pl5">
+                    </p>
+                </div>
+
+                <div class="row">
+                    <h2>
+                        签证信息
+                    </h2>
+                    <table class="g10">
+                        <tr>
+                            <td class="td1">
+                                签证国家
+                                <select id="selCountry">
+                                    <option value="12">日本</option>
+                                </select>
+                            </td>
+                            <td class="td2">
+                                入境日期
+                                <input type="text" id="txtEntryDate" class="txt j_chooseDate" />
+                            </td>
+                            <td class="td3">
+                                入境口岸
+                                <input type="text" id="txtEntryPort" style="color: #999;" placeholder="如，东京羽田机场" value="如，东京羽田机场"
+                                       onfocus="if(this.value=='如，东京羽田机场')this.value='';" onblur="if(this.value=='')this.value='如，东京羽田机场';"
+                                       class="txt" />
+                            </td>
+                            <td class="td3">
+                                入境航班
+                                <input type="text" id="txtEntryFlight" class="txt" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                签证类型
+                                <select id="selType" style="width:200px;" onchange="Generate()">
+                                    <option value="1">单次（普通客户）</option>
+                                    <option value="2">单次（优质客户）</option>
+                                    <option value="3">单次（冲绳、福岛、宫城、岩手）</option>
+                                    <option value="4">三年多次A（冲绳，福岛，宫城，岩手）</option>
+                                    <option value="5">三年多次B（冲绳，福岛，宫城，岩手）</option>
+                                    <option value="6">五年多次（福岛，宫城，岩手）</option>
+                                    <option value="7">五年多次（日本全国）</option>
+                                    <option value="8">商务签证（单次）</option>
+                                    <option value="9">商务签证（一年多次）</option>
+                                    <option value="10">商务签证（三年多次）</option>
+                                </select>
+                            </td>
+                            <td class="td2">
+                                出境日期
+                                <input type="text" id="txtDepartureDate" class="txt j_chooseDate" />
+                            </td>
+                            <td class="td3">
+                                出境口岸
+                                <input type="text" style="color: #999;" placeholder="如，东京羽田机场" value="如，东京羽田机场" onfocus="if(this.value=='如，东京羽田机场')this.value='';"
+                                       onblur="if(this.value=='')this.value='如，东京羽田机场';" id="txtDeparturePort" class="txt" />
+                            </td>
+                            <td class="td4">
+                                出境航班
+                                <input type="text" id="txtDepartureFlight" class="txt" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row">
+                    <h2>
+                        联系人
+                    </h2>
+                    <table class="g10">
+                        <tr>
+                            <td class="td1">
+                                联系人姓名
+                                <input type="text" class="txt" id="txtContactName" value='' />
+                            </td>
+                            <td class="td2">
+                                联系手机
+                                <input type="text" class="txt" id="txtContactMobile" value='13472792921' />
+                            </td>
+                            <td class="td3">
+                                联系邮箱
+                                <input type="text" class="txt" id="txtContactEmail" value='527426267@qq.com' />
+                            </td>
+                            <td class="td4"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row" id="j_userRows" style="border: none;">
+                    <h2>
+                        签证申请人
+                    </h2>
+                    <div id="visaUser">
+                    </div>
+                    <div class="row-trigger f14 pointer" id="j_rowTrigger" onclick="ShowVisaDiv();">
+                        添加签证申请人
+                    </div>
+                    <div class="voucher f14">
+                        <div class="d1 mb5">
+                            <label>
+                                <input type="checkbox" id="cbkInvoice" style="margin: 0" class="vm" />
+                                需要发票
+                            </label>
+                        </div>
+                        <div class="d2 hide">
+                            <div class="item mb10">
+                                发票抬头&nbsp;<input placeholder="以个人名义或以公司名义" value="以个人名义或以公司名义" onfocus="if(this.value=='以个人名义或以公司名义')this.value='';"
+                                                 onblur="if(this.value=='')this.value='以个人名义或以公司名义';" type="text" class="txt"
+                                                 id="txtInvoice" style="width: 280px; color: #999;" />
+                            </div>
+                            <div class="item mb10">
+                                发票类型
+                                <select id="selInvoiceType">
+                                    <option value="旅游费">旅游费</option>
+                                    <option value="团费">团费</option>
+                                    <option value="代办签证费">代办签证费</option>
+                                    <option value="代订机票费">代订机票费</option>
+                                    <option value="代办车费">代办车费</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-box">
+                        <input type="button" class="yahei block g2 f16 btn" value="提  交" onclick="return SavaVisaData(1);" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer w">
+                <p class="p1">
+                    Copyright 2005-2014 Uzai.com许可证编号:L-SH-00647沪ICP备06021606号悠哉呼叫中心位于上海，来电显示号码为：021-60561828
+                </p>
+                <p class="p2">
+                    <a href="#">悠哉旅游网</a> <a href="#">悠哉历程</a> <a href="#">隐私保护</a> <a href="#">诚聘英才</a>
+                    <a href="#">关于我们</a> <a href="#">网站地图</a> <a href="#">友情链接</a> <a href="#">商务合作</a>
+                    <a href="#">加盟合作</a>
+                </p>
+            </div>;
+        </div>
+    </div>
+    <div class="visa-pop-mod yahei hide" id="j_visaPopMod">
+        <h2 class="f24 tc mb15">
+            材料选择帮助文档
+        </h2>
+        <span class="pointer close">&times;</span>
+        <div class="visa-pop-tab clearfix" id="j_visaPopTab">
+            <div class="hd fl">
+                <ul class="clearfix">
+                    <li class="on">日本单次</li>
+                    <li>日本多年多次</li>
+                    <li>签证特殊人群</li>
+                </ul>
+            </div>
+            <div class="bd fl">
+                <div class="item hide">
+                    <div class="txt p10 f666 mt10 mb15">
+                        <p>
+                            <b>一、可以提供自己年薪十万的在职证明</b><br />
+                            <span style="color: Red;">A．一家三口或直系亲属同行</span><br />
+                            <b>主申请人：</b><br />
+                            1.护照（新旧护照原件）<br />
+                            2.照片（2张2寸白底彩照，一张贴在申请表上，一张写上名字）3.5*4.5或者4.5*4.5<br />
+                            3.户口本（整本复印件）<br />
+                            4.在职证明原件（年收入10万以上）+公司营业执照副本复印件（盖公章）<br />
+                            5.5万押金（拿我们3方协议去指定银行存款）<br />
+                            流程：<br />
+                            （1）来我社拿银行三联单或者拍下后通知客服让客服寄给您（渣打 ，宁波银行（上海））（三联单到付）<br />
+                            （2）去银行冻结好押金（这笔押金同时可以给您开出5万存款证明，存款证明可以作为您资产交领馆 ），<br />
+                            把冻结凭证跟其他材料一起递交给我社<br />
+                            <span>注：如果您是跟直系亲属一起申请，所有人都拍普通客户剩下几位拍补差价150一位，可以帮您减免剩下几位的押金，只要一位主申请人交5万押金即可</span><br />
+                            6.申请表（一人一份且必须正反面）+个人信息处理同意书（一份）<br />
+                            7.全程机票和酒店的预定单打印（已经订好的请尽量提供没定好则不用）<br />
+                            8.房产证复印件+车产证复印件（尽量提供）<br />
+                            <b>配偶：</b>护照（新旧原件）+照片（2张2寸白底彩照）+户口本（整本复印 空白页不要）+申请表+结婚证复印件（在一本户口本上可以不提供）<br />
+                            <b>孩子：</b>护照（新旧原件）+照片（2张2寸白底彩照）+户口本（整本复印 空白页不要）+申请表+出生证复印件（在一本户口本上可以不提供）<br />
+                            <b>父母：</b>护照（新旧原件）+照片（2张2寸白底彩照）+户口本（整本复印 空白页不要）+申请表+与直系子女的关系证明（在一本户口本上不需要提供）+退休证复印件（如果有尽量提供）<br />
+                            <span style="color: Red;">B．与非直系亲属/友人/同事同行</span><br />
+                            <b>主申请人：</b><br />
+                            1.护照（新旧护照原件）<br />
+                            2.照片（2张2寸白底彩照，一张贴在申请表上，一张写上名字）3.5*4.5或者4.5*4.5<br />
+                            3.户口本（整本复印件）<br />
+                            4.在职证明原件（年收入10万以上）+公司营业执照副本复印件（盖公章）<br />
+                            5.5万押金（拿我们3方协议去指定银行存款）<br />
+                            流程：（1）来我社拿银行三联单或者拍下后通知客服让客服寄给您（渣打 ，宁波银行（上海））（三联单到付）<br />
+                            （2）去银行冻结好押金（这笔押金同时可以给您开出5万存款证明，存款证明可以作为您资产交领馆 ），<br />
+                            把冻结凭证跟其他材料一起递交给我社<br />
+                            6.申请表（一人一份且必须正反面）+个人信息处理同意书（一份）<br />
+                            7.全程机票和酒店的预定单打印（已经订好的请尽量提供没定好则不用）<br />
+                            8.房产证复印件+车产证复印件（尽量提供）<br />
+                            <b>同行人：</b><br />
+                            1、常规（在职）/（自由职业）2、优质<br />
+                        </p>
+                        <p>
+                            <b>二、提供直系亲属年薪十万在职证明</b><br />
+                            <b>主申请人：</b><br />
+                            1.护照（新旧护照原件）<br />
+                            2.照片（2张2寸白底彩照，一张贴在申请表上，一张写上名字）3.5*4.5或者4.5*4.5<br />
+                            3.户口本（整本复印件）<br />
+                            4.在职证明原件（年收入10万以上）+公司营业执照副本复印件（盖公章）<br />
+                            5. 与提供材料的直系亲属在同一本户口本上户口本复印件可以作为关系证明<br />
+                            如果不在 提供 结婚证 出生证 父母去户籍所在地的公安局开关系证明<br />
+                            5.5万押金（拿我们3方协议去指定银行存款）<br />
+                            流程：（1）来我社拿银行三联单或者拍下后通知客服让客服寄给您（渣打 ，宁波银行（上海））（三联单到付）<br />
+                            （2）去银行冻结好押金（这笔押金同时可以给您开出5万存款证明，存款证明可以作为您资产交领馆 ）， 把冻结凭证跟其他材料一起递交给我社<br />
+                            6.申请表（一人一份且必须正反面）+个人信息处理同意书（一份）<br />
+                            7.全程机票和酒店的预定单打印（已经订好的请尽量提供没定好则不用）<br />
+                            8.房产证复印件+车产证复印件（尽量提供<br />
+                            <br />
+                            <br />
+                            <span style="color: Red;">
+                                A．妻子/丈夫/子女/父母出行（提供直系亲属材料）<br />
+                                B．与非直系亲属/友人/同事同行<br />
+                            </span>
+                        </p>
+                        <p>
+                            <b>三、自由职业者</b><br />
+                            <span style="color: Red;">自由职业：</span><br />
+                            1.护照（新旧护照原件）<br />
+                            2.照片（2张2寸白底彩照，一张贴在申请表上，一张写上名字）<br />
+                            3.户口本（整本复印件）+身份证复印件<br />
+                            4.（最低）20万存款证明冻结3个月的冻结原件<br />
+                            5.5万押金（三方协议去银行办理）<br />
+                            6.申请表（一人一份且必须正反面）+个人信息处理同意书（一份签上所有人名字办理的人）<br />
+                            7.全程机票和酒店的预订单打印（已经订好的请尽量提供没定好则不用）<br />
+                            8.房产证复印件+车产复印件（资产证明尽量提供）<br />
+                            写明自由职业收入来源情况说明并提供相应证明（最好）<br />
+                            ( 也可以直接拿我们的三联单去存款25万（冻结）<br />
+                            这25万既可以作为押金 也可以作为保证金)<br />
+                            <span style="color: Red;">办理押金的2种方法：（2选1）</span><br />
+                            1）客人拿我们的三联单去银行办理，每人5万。存款在客人的名下，既能作押金，又能作为存款证明（进领馆增加出签概率 完善材料），冻结3个月，不能提前解冻，满3个月自行解冻。（利息正常算）
+                            上海地区存宁波银行 外地存渣打银行 三联单可以客人来我社自取，也可委托我社快递送达，到付。<br />
+                            2）原本属于常规客户的直系亲属一起申请，可以每人拍一个普通客户，其余的几位每人拍补差价150元，只要一位主申请人交5万押金即可。 押金解冻：回国后销签材料给我们打售后电话021-60293975
+                            我们给您快递押金解冻单 然后您拿着我们的押金解冻单（3个月到期）就可以解冻押金<br />
+                        </p>
+                        <p>
+                            <b style="text-align: center;">单次优质</b><br />
+                            <b>优质条件免押金</b><br />
+                            1. 持有国家注册的医生，律师，会计师，建筑师等资格证书，并从事该职业两年以上的专业人士（需提供相关资格证书）（白本不算）<br />
+                            2. 在国有大中型企业担任科长及以上职位者（白本不算）<br />
+                            3. 五年内以自由行身份访问过欧美澳（非电子签）等发达国家（学生除外）<br />
+                            4. 5年内自由行去过日本3次以上者（学生除外）<br />
+                            5.公务员并在职两年以上者（白本不算）<br />
+                            6. 著名的艺术家，艺人及运动员<br />
+                            7. 能提供近半年年收入10万以上的税单（月230以上）或者工资卡的银行流水账单（显示工资奖金月平均7000以上） 满足哪点<br />
+                            如若直系亲属满足7本人也可按照优质客户办理！<br />
+                            外领区的户籍（高危地区福建河北河南东北三省四川等）持有上海居住证客户需要提供税单才可以免押金<br />
+                            <b>优质客户(可提供税单)：</b><br />
+                            1.护照（新旧护照原件）<br />
+                            2.照片（2张2寸白底彩照，一张贴在申请表上，一张写上名字）3.5*4.5或者4.5*4.5都可以<br />
+                            3.户口本（整本复印件）<br />
+                            4.在职证明原件（年收入10万以上）<br />
+                            5.申请表（一人一份切必须正反面）+个人信息处理同意书（一份签上所有人名字办理的人）<br />
+                            6.全程机票和酒店的预订单打印（已经订好的请尽量提供没定好则不用）<br />
+                            7.近半年年薪十万的税单（每个月缴税超过300）或者工资卡的银行流水账单（显示工资奖金月7000以上）<br />
+                            <b>优质客户（非学生有欧美澳自由行签证）：</b><br />
+                            1.护照（新旧护照原件）<br />
+                            2.照片（2张2寸白底彩照，一张贴在申请表上，一张写上名字）3.5*4.5或者4.5*4.5都可以<br />
+                            3.户口本（整本复印件）<br />
+                            4.在职证明原件（年收入10万以上）<br />
+                            5.申请表（一人一份切必须正反面）+个人信息处理同意书（一份签上所有人名字办理的人）<br />
+                            6.全程机票和酒店的预订单打印（已经订好的请尽量提供没定好则不用）<br />
+                            护照上有近5年内的欧美自由行记录<br />
+                            <b>优质客户（非学生近5年有去日本3次以上自由行签证）：</b><br />
+                            1.护照（新旧护照原件）<br />
+                            2.照片（2张2寸白底彩照，一张贴在申请表上，一张写上名字）3.5*4.5或者4.5*4.5都可以<br />
+                            3.户口本（整本复印件）<br />
+                            4.在职证明原件（年收入10万以上）<br />
+                            5.申请表（一人一份切必须正反面）+个人信息处理同意书（一份签上所有人名字办理的人）<br />
+                            6.全程机票和酒店的预订单打印（已经订好的请尽量提供没定好则不用）<br />
+                            护照上有近5年内的日本自由行3次以上的记录<br />
+                            <b>优质客户（持有国家注册的医生，律师，会计师，建筑师等资格证书，并从事该职业两年以上的专业人士（需提供相关资格证书）（白本不算）：</b><br />
+                            1.护照（新旧护照原件）<br />
+                            2.照片（2张2寸白底彩照，一张贴在申请表上，一张写上名字）<br />
+                            3.户口本（整本复印件）<br />
+                            4.在职证明原件（年收入10万以上）<br />
+                            5.申请表（一人一份）+个人信息处理同意书（一份签上所有人名字办理的人）<br />
+                            6.组织机构代码证复印件盖公章+工作证复印件+需提供相关资格证书（CPA 会计师）<br />
+                            （护照要有出国记录）<br />
+                            <b>（优质客户）在国有大中型企业担任科长及以上职位者（白本不算）</b><br />
+                            1.护照（新旧护照原件）<br />
+                            2.照片（2张2寸白底彩照，一张贴在申请表上，一张写上名字）<br />
+                            3.户口本（整本复印件）<br />
+                            4.在职证明原件（年收入10万以上）<br />
+                            5.申请表（一人一份）+个人信息处理同意书（一份签上所有人名字办理的人）<br />
+                            6.组织机构代码证复印件盖公章+工作证复印件（护照要有出国记录）<br />
+                            <b>（优质客户）公务员并在职两年以上者（白本不算）</b><br />
+                            1.护照（新旧护照原件）<br />
+                            2.照片（2张2寸白底彩照，一张贴在申请表上，一张写上名字）<br />
+                            3.户口本（整本复印件）<br />
+                            4.在职证明原件（年收入10万以上）<br />
+                            5.申请表（一人一份）+个人信息处理同意书（一份签上所有人名字办理的人）<br />
+                            组织机构代码证复印件盖公章+工作证复印件<br />
+                            （护照要有出国记录）<br />
+                            <b>（优质客户）著名的艺术家，艺人及运动员</b><br />
+                            1.护照（新旧护照原件）<br />
+                            2.照片（2张2寸白底彩照，一张贴在申请表上，一张写上名字）<br />
+                            3.户口本（整本复印件）<br />
+                            4.在职证明原件（年收入10万以上）<br />
+                            5.申请表（一人一份）+个人信息处理同意书（一份签上所有人名字办理的人）<br />
+                            （自我判别）<br />
+                            配偶：护照（新旧原件）+照片（2张2寸白底彩照）+户口本（整本复印 空白页不要）+申请表+结婚证复印件（在一本户口本上可以不提供）<br />
+                            孩子：护照（新旧原件）+照片（2张2寸白底彩照）+户口本（整本复印 空白页不要）+申请表+出生证复印件（在一本户口本上可以不提供）<br />
+                            父母：护照（新旧原件）+照片（2张2寸白底彩照）+户口本（整本复印 空白页不要）+申请表+与直系子女的关系证明（在一本户口本上不需要提供）+退休证复印件（如果有尽量提供<br />
+                        </p>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <div class="txt p10 f666 mt10 mb15">
+                        <p>
+                            <b>3年多次要求</b><br />
+                            首先行程中必须包含冲绳福岛岩手宫城其中之一必须提供全程真是机票和酒店 满足以下任意一点要求<br />
+                            （1）“具有足够经济能力的人士”“年收入20 万元以上（提供税单月税额平均2500以上）”。<br />
+                            （2）作为“具有一定经济能力的人士”，“过去三年间曾以短期签证（个签，商务，团签，探亲）赴日且年收入10 万元以上的人士（提供年月平均300税额的税单或者月平均7000以上的工资流水）”也可成为此多次签证的发放对象。<br />
+                            （同行直系亲属需要住在一起）<br />
+                        </p>
+                        <p>
+                            <b>5年多次要求</b><br />
+                            年收入50万并提供税单<br />
+                            （同行直系亲属需要住在一起）<br />
+                        </p>
+                        <p>
+                            <b>3年多次（未去过）：</b><br />
+                            1.护照（新旧护照原件）<br />
+                            2.照片（2张2寸白底彩照，一张贴在申请表上，一张写上名字）<br />
+                            3.户口本（整本复印件）+身份证复印件<br />
+                            4.在职证明原件（年收入20万以上）<br />
+                            5.申请表（一人一份正反面打印）+个人信息处理同意书（一份签上所有人名字办理的人）<br />
+                            6.全程机票和酒店的预订单打印（冲绳福岛岩手宫城4选1酒店）<br />
+                            7.近半年年薪20万的税单或者工资卡的银行流水单<br />
+                            8.营业执照副本复印件（建议尽量提供）<br />
+                            签署一份多次签证注意事项说明（模板拍下后咨询客服）<br />
+                        </p>
+                        <p>
+                            <b>3年多次（三年内去过）：</b><br />
+                            1.护照（新旧护照原件）<br />
+                            2.照片（2张2寸白底彩照，一张贴在申请表上，一张写上名字）<br />
+                            3.户口本（整本复印件）+身份证复印件<br />
+                            4.在职证明原件（年收入10万以上）<br />
+                            5.申请表（一人一份正反面打印）+个人信息处理同意书（一份签上所有人名字办理的人）<br />
+                            6.全程机票和酒店的预订单打印（冲绳福岛岩手宫城4选1酒店）<br />
+                            7.近半年年薪10万的税单或者工资卡的银行流水单<br />
+                            8.营业执照副本复印件（建议尽量提供）<br />
+                            签署一份多次签证注意事项说明（模板拍下后咨询客服）<br />
+                            过去3年内有过日本签证记录<br />
+                        </p>
+                        <p>
+                            <b>3年多次法人的材料：</b><br />
+                            1、护照（新旧护照原件）<br />
+                            2、照片（2张2寸白底彩照，一张贴在申请表上，一张写上名字）<br />
+                            3、户口本（整本复印件）<br />
+                            4、在职证明原件（年收入20万以上）+公司税单+营业执照副本复印件，盖公章<br />
+                            5、申请表+个人信息处理同意书<br />
+                            6、20存款冻结3个月+尽可能多的财产（房产 车产 理财 等等）<br />
+                        </p>
+                        <p>
+                            <b>5年多次：</b><br />
+                            1.护照（新旧护照原件）<br />
+                            2.照片（2张2寸白底彩照，一张贴在申请表上，一张写上名字）<br />
+                            3.户口本（整本复印件）+身份证复印件<br />
+                            4.在职证明原件（年收入50万以上）<br />
+                            5.申请表（一人一份正反面打印）+个人信息处理同意书（一份签上所有人名字办理的人）<br />
+                            6.全程机票和酒店的预订单打印<br />
+                            7.近半年年薪50万的税单或者工资卡的银行流水单<br />
+                            8.营业执照副本复印件（建议尽量提供）<br />
+                            9、尽可能多的资产（股票 房产 车产 等等等）<br />
+                            签署一份多次签证注意事项说明（模板拍下后咨询客服）<br />
+                        </p>
+                        <p>
+                            <b>5年多次法人的材料：</b><br />
+                            [1] 护照原件（如有旧护照请尽量一起提供）<br />
+                            [2] 照片（2张白底彩照，3.5*4.5或4.5*4.5都可）<br />
+                            [3] 户口本整本复印件（空白页无需复印）<br />
+                            [4] 在职证明（需写明年收入50万以上）<br />
+                            [5] 公司营业执照复印件加盖公章（一定提供）<br />
+                            [6] 50万以上存款证明 冻结3个月<br />
+                            [7] 房产证车产证复印件（如有请尽量一起提供）<br />
+                            [8] 申请表（一人一份正反面打印）+个人信息处理同意书（一份签上所有人名字办理的人）<br />
+                            [9] 单人出行说明（如非单人出行则无需提供，如果同行人非一起申请请提供同行人护照首页和日本签证页复印件）<br />
+                            [10]公司营业税提供近一年<br />
+                            配偶：护照（新旧原件）+照片（2张2寸白底彩照）+户口本（整本复印 空白页不要）+申请表+结婚证复印件（在一本户口本上可以不提供）<br />
+                            孩子：护照（新旧原件）+照片（2张2寸白底彩照）+户口本（整本复印 空白页不要）+申请表+出生证复印件（在一本户口本上可以不提供）<br />
+                            父母：护照（新旧原件）+照片（2张2寸白底彩照）+户口本（整本复印 空白页不要）+申请表+与直系子女的关系证明（在一本户口本上不需要提供）+退休证复印件（如果有尽量提供）<br />
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="txt p10 f666 mt10 mb15">
+                        <p>
+                            <b>法人材料提供：</b><br />
+                            [1] 护照原件（如有旧护照请尽量一起提供）<br />
+                            [1] 护照原件（如有旧护照请尽量一起提供）<br />
+                            [2] 照片（2张白底彩照，3.5*4.5或4.5*4.5都可）<br />
+                            [3] 户口本整本复印件（空白页无需复印）<br />
+                            [4] 在职证明（需写明年收入10or20万以上）<br />
+                            [5] 公司营业执照复印件加盖公章（一定提供）<br />
+                            [6] 10万or50万以上存款证明 冻结3个月<br />
+                            [7] 房产证车产证复印件（如有请尽量一起提供）<br />
+                            [8] 申请表<br />
+                            [9] 单人出行说明（如非单人出行则无需提供，如果同行人非一起申请请提供同行人护照首页和日本签证页复印件）<br />
+                            [10]个人信息处理同意书（去的人签字一张）<br />
+                        </p>
+                        <p>
+                            <b>2．学生（单独出行or非直系亲属/亲友）的材料：</b><br />
+                            1、护照（新旧护照原件）<br />
+                            2、照片（2张2寸白底彩照，一张贴在申请表上，一张写上名字）<br />
+                            3、户口本（整本复印件 空白页无需复印）<br />
+                            4、学生证复印件<br />
+                            5、父母同意书<br />
+                            6、申请表+个人信息处理同意书（一份签上所有人名字）<br />
+                            7、单独出行情况说明<br />
+                            8、与父母的关系证明<br />
+                            9、5万押金<br />
+                            10、全程机票和酒店的预订单打印（已经订好的请尽量提供）<br />
+                        </p>
+                        <p>
+                            <b>父母一方的材料：</b><br />
+                            1：在职证明原件（年收入10万以上）+近半年年薪十万的税单或者工资卡的银行流水单（尽量提供）+公司营业执照副本复印件（尽量提供）<br />
+                            2:30万存款冻结3个月<br />
+                            父母条件2选1<br />
+                            <br />
+                        </p>
+                        <p>
+                            <b>退休人员：</b><br />
+                            一、 提供直系亲属材料<br />
+                            二、 按自由职业办理<br />
+                        </p>
+                        <p>
+                            <b>外领区直系亲属同行</b><br />
+                            一、 有暂住证<br />
+                            二、 外领区报告 （补300 ）<br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="visa-pop-slide yahei hide" id="j_visaPopSlide">
+        <div class="close">
+        </div>
+        <div class="slide-box">
+            <div id="divjj" class="slides_container">
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="hidHtml" />
+    <input type="hidden" id="HidCount" />
+    <input type="hidden" id="HidId" />
+    <input type="hidden" id="HidrdoIsMain" />
+    <input type="hidden" id="HidtxtRelationship" />
+    <input type="hidden" id="HidtxtCnNameFirst" />
+    <input type="hidden" id="HidtxtCnNameLast" />
+    <input type="hidden" id="HidtxtEnNameFirst" />
+    <input type="hidden" id="HidtxtEnNameLast" />
+    <input type="hidden" id="HidselSex" />
+    <input type="hidden" id="HidtxtBirthday" />
+    <input type="hidden" id="HidselAddress" />
+    <input type="hidden" id="HidselPassportsIssuedTo" />
+    <input type="hidden" id="HidtxtPassportNo" />
+    <input type="hidden" id="HidtxtOccupation" />
+    <input type="hidden" id="HidselMarriage" />
+    <input type="hidden" id="HidVisaMaterials" />
+    <input type="hidden" id="HidVisaId" />
+    <input type="hidden" id="HidVisaName" />
+</body>
+</html>

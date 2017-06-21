@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>悠哉旅行网触屏版</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <!-- build:[href] /content/m/v2/styles/ -->
+    <link href="/content/m/v2/_src/styles/core.css" rel="stylesheet" />
+    <!-- /build -->
+    <!-- build:[href] /content/m/v2/styles/user/ -->
+    <link href="/content/m/v2/_src/styles/user/user.css" rel="stylesheet" />
+    <!-- /build -->
+    <script src="/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/core','/content/m/v2/scripts/user/user'], function (core, user) {
+            user.init();
+        });
+    </script>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">编辑出游人信息</div>
+            </div>
+            <div class="d-r"></div>
+        </header>
+        <section class="usually-info">
+            <h2 class="main-hd f16">旅客姓名</h2>
+            <ul class="forms-listing slice-mod f14">
+                <li class="list-item"><label class="item-bd"><em class="info-hd f666">中文姓名</em><input type="text" class="textbox f14 tr g10" placeholder="填写中文姓名"></label></li>
+                <li class="list-item"><label class="item-bd"><em class="info-hd f666">姓</em><input type="text" class="textbox f14 tr g10" placeholder="拼音/英文 须与证件一致"></label></li>
+                <li class="list-item"><label class="item-bd"><em class="info-hd f666">名</em><input type="text" class="textbox f14 tr g10" placeholder="拼音/英文 须与证件一致"></label></li>
+            </ul>
+            <h2 class="main-hd f16">身份信息</h2>
+            <ul class="forms-listing slice-mod f14">
+                <li class="list-item clearfix">
+                    <em class="info-hd f666 fl">性别</em>
+                    <span class="fr">
+                        <label class="radio-wrap"><input type="radio" name="" id="" class="radio vm"><em class="vm">男</em></label>
+                        <label class="radio-wrap ml20"><input type="radio" name="" id="" class="radio vm"><em class="vm">女</em></label>
+                    </span>
+                </li>
+                <li class="list-item"><label class="item-bd"><em class="info-hd f666">出生年月</em><input type="date" class="textbox f14 tr g10" placeholder="以证件上的出生日期为准"></label></li>
+                <li class="list-item"><label class="item-bd"><em class="info-hd f666">国籍</em><input type="text" class="textbox f14 tr g10" placeholder="中国"></label></li>
+                <li class="list-item"><label class="item-bd"><em class="info-hd f666">现居住国</em><input type="text" class="textbox f14 tr g10" placeholder="现仅支持中国大陆"></label></li>
+                <li class="list-item"><label class="item-bd"><em class="info-hd f666">手机</em><input type="tel" class="textbox f14 tr g10" placeholder="11位手机号" maxlength="11"></label></li>
+            </ul>
+            <h2 class="main-hd f16">证件信息</h2>
+            <ul class="forms-listing slice-mod f14">
+                <li class="list-item clearfix">
+                    <label class="select-wrap">
+                        <select name="" id="" class="select-box f14">
+                            <option value="">身份证</option>
+                            <option value="">护照</option>
+                            <option value="">港澳通行证</option>
+                            <option value="">台胞证</option>
+                            <option value="">回乡证</option>
+                            <option value="">军人证</option>
+                        </select>
+                    </label>
+                    <span class="side-tips f999 fr">须与证件一致</span>
+                </li>
+                <li class="list-item"><label class="item-bd"><em class="info-hd f666">证件有效期</em><input type="date" class="textbox f14 tr g10" placeholder="须与证件一致"></label></li>
+            </ul>
+            <p class="btn-bar tc"><button id="j_addCertify" class="btn-add f16"><i class="icon-item mr5 vm"></i><em class="vm">新增证件信息</em></button></p>
+            <p class="fixed-btn-wrap"><input type="submit" value="保存" class="btn-submit bg-red white f18 yahei tc"></p>
+        </section>
+    </div>
+</body>
+</html>

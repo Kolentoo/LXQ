@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>悠哉旅行网触屏版</title>
+    <link href="//r.uzaicdn.com/content/m/v2/styles/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/my/my.css" rel="stylesheet" />
+    <script src="//r.uzaicdn.com/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['//r.uzaicdn.com/content/m/v2/scripts/core'], function (core) {
+
+            $("#save").click(function () {
+                var sexID = 0;
+                if ($("#selectSex").val() == "男") {
+                    sexID = 1;
+                }
+                var txtName = $("#txtName").val();
+                if (txtName == "") {
+                    alert("请输入用户名");
+                    return false;
+                }
+                $("#form1").attr("action", "/mobile/SaveAndUploadUserHeadPreview?UserName=" + $("#txtName").val() + "&sex=" + sexID + "&Birthday=" + $("#txtBirthday").val());
+                $("#form1").submit();
+            });
+        });
+    </script>
+</head>
+<body>
+<form id="form1" method="post"  action="" enctype="multipart/form-data">
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m"><div class="tit">我的悠哉</div></div>
+            <div class="d-r">
+            <a href="#">
+                <span class="edit block" id="save">保存</span>
+                </a>
+            </div>
+        </header>
+        <section class="my f14">
+
+            <div class="edit">
+                <ul>
+                    <li class="avatar clearfix">
+                        <label class="g2 fl">头像</label>
+                        <div class="item fr tr">
+                            <img style="width:55px;" src="//r.uzaicdn.com/picPhone.aspx?file=UserHeadPreview_462461.jpg&t=1&rand=6cceb05d-53a0-4f5c-ba21-298beb52991e" />
+                            <input name="headPic" type="file" id="headPic" />
+                        </div>
+                    </li>
+
+                    <li class="name clearfix">
+                        <label class="g2 fl">姓名</label>
+                        <div class="item fr tr">
+                            <input type="text" value="" placeholder="请输入姓名"  id="txtName"/>
+                        </div>
+                    </li>
+                    <li class="sex clearfix">
+                        <label class="g2 fl">性别</label>
+                        <div class="item fr tr">
+                            <select id="selectSex">
+                                   <option>男</option>
+                               <option>女</option>
+
+
+                            </select>
+                        </div>
+                    </li>
+
+                    <li class="brithday clearfix">
+                        <label class="g2 fl">生日</label>
+                        <div class="item fr tr">
+                            <input type="date" placeholder="请输入生日" value="0001-01-01" id="txtBirthday"/>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="//u.uzai.com/mobile/logout" class="logout white f18 tc">退出登录</a>
+
+        </section>
+    </div>
+    </form>
+</body>
+</html>

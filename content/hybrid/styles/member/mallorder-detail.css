@@ -1,0 +1,184 @@
+.layout-box{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.layout-box .son-box{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+    position: relative;
+}
+.white-topbar {
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    background: #fff;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #000;
+    border-bottom: 1px solid #ddd;
+}
+.white-topbar .top-back {
+    padding-left: 0.30rem;
+    line-height: 0.88rem;
+    padding-right: 12px;
+    font-size: 0.30rem;
+    color: #fff;
+}
+.white-topbar .black-ico {
+    width: 0.58rem;
+    height: 0.58rem;
+    display: inline-block;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/back_ico.png") no-repeat;
+    background-size: 100% auto;
+    vertical-align: middle;
+}
+.white-topbar .fr {
+    margin-right: 0;
+    position: relative;
+    height: 0.88rem;
+    width: 0.88rem;
+    margin-left: 28px;
+}
+.exchange{display: none;}
+.exchange.main{
+    padding-top: 0.88rem;
+}
+.exchange nav{
+    margin-bottom: 0.25rem;
+    padding: 0 0.25rem;
+    background: #FFFFFF;
+}
+.exchange .top{
+    padding-bottom: 0.25rem;
+}
+.exchange .top .tit{
+    font-size: 0.3rem;
+    padding-top: 0.25rem;
+    color: #444444;
+}
+.exchange .top .copy-btn{
+    float: right;
+    height: 0.28rem;
+    font-size: 0.24rem;
+    line-height: 0.28rem;
+    border: 1px solid #ccc;
+    padding: 0.08rem 0.15rem;
+    position: relative;
+    top: -0.12rem;
+    border-radius: 0.08rem;
+    -webkit-border-radius: 0.08rem;
+}
+.exchange .top .copy-btn i{
+    width: 0.28rem;
+    height: 0.28rem;
+    display: inline-block;
+    margin-right: 0.05rem;
+    vertical-align: middle;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/member/copy-btn-ico.png") no-repeat;
+    background-size: 100% auto;
+}
+.exchange .top .tit .red,.exchange .part .red,.exchange .ls a .red,.exchange .top .copy-btn{
+    color: #ef0052;
+}
+.exchange .top .tit .blue{
+    color: #0088ff;
+}
+.exchange .top .bot{
+    padding-top: 0.25rem;
+    font-size: 0.24rem;
+    color: #999999;
+}
+.exchange .address{
+    font-size: 0.28rem;
+    color: #444444;
+}
+.exchange .address .bor-top{
+    margin: 0 -0.2rem;
+    height: 0.15rem;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/member/border-top-bg.jpg") repeat-x;
+    background-size: auto 100%;
+}
+.exchange .address .tit{
+    padding: 0.25rem 0;
+    text-indent: 0.4rem;
+}
+.exchange .address .ad{
+    padding: 0.15rem 0;
+    line-height: 0.42rem;
+    position: relative;
+    padding-left: 0.4rem;
+}
+.exchange .address .ad i{
+    position: absolute;
+    top: 0.22rem;
+    left: 0;
+    width: 0.4rem;
+    height: 0.28rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/member/map-ico.png") no-repeat left center;
+    background-size: auto 100%;
+}
+.exchange .part{
+    padding: 0.25rem;
+}
+.exchange .part:before,.exchange .ls:before{
+    -webkit-transform: scaleY(.5);
+    -moz-transform: scaleY(.5);
+    -ms-transform: scaleY(.5);
+    -o-transform: scaleY(.5);
+    transform: scaleY(.5);
+    -webkit-transform-origin: 100% 0;
+    -moz-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    -o-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    content: '';
+    position: absolute;
+    border-top: 1px solid #dddddd;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.exchange .part .img,.exchange .part .img img{
+    width: 2rem;
+    height: 1.5rem;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.exchange .part .text{
+    padding-left: 0.25rem;
+    position: relative;
+}
+.exchange .part .tit{
+    font-size: 0.32rem;
+    line-height: 0.36rem;
+    color: #444;
+}
+.exchange .part .bot{
+    position: absolute;
+    left: 0.25rem;
+    bottom: 0;
+    color: #666666;
+    font-size: 0.28rem;
+}
+.exchange .ls{
+    font-size: 0.28rem;
+}
+.exchange .ls a{
+    color: #444444;
+    display: block;
+    line-height: 0.88rem;
+}
+.exchange .ls .border-bot:last-child:after{
+    display: none;
+}

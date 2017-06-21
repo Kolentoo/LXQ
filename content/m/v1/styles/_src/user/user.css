@@ -1,0 +1,139 @@
+﻿.w { min-width: 990px; width: 990px; }
+.red { color: #f93868; }
+.blue { color: #2fa6e5; }
+
+.fn-check{cursor:pointer;}
+.fn-check i { width: 14px; height: 14px; display: inline-block; *display: inline; -ms-zoom: 1; zoom: 1; border: 1px solid #ddd; vertical-align: middle;  margin-right: 3px;border-radius:2px;  }
+.fn-check-on i { background: url(/content/v1/images/user/check.png) no-repeat center center;border: 1px solid #f93868 }
+
+.wrap-user .btn { background: #f93868; color: #fff; height: 35px; line-height: 30px; border-radius: 2px; width: 300px; }
+.wrap-user .txt { width: 180px; border: 1px solid #e5e5e8; height: 28px; border-radius: 2px; -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; padding-left: 55px; line-height: 28px; color: #333; }
+.wrap-user .txt-short { width: 100px; }
+.wrap-user .txt-none { width: 120px; padding-left: 2px; }
+.wrap-user .txt:focus { border: 1px solid #f93868; }
+.wrap-user a { color: #f93868; }
+.wrap-user a:hover { color: #fb84a2; }
+
+
+.wrap-login, .wrap-getpwd, .wrap-reg { background: url(/content/v1/images/user/u1.jpg) no-repeat center 0; *height: 500px; min-height: 500px; }
+.wrap-login .login-inner { margin: 110px 0 0 400px; float: left; box-shadow: 0 0 3px rgba(0,0,0,.3); }
+
+.login-inner { background: #fff; width: 580px;  margin: 0; }
+.wrap-login-quick { width: 615px; }
+
+.login-inner .inner { padding: 30px 30px 0 40px; position: relative; }
+.login-inner .close { position: absolute; right: 10px; top: 0; color: #333; cursor: pointer; font-size: 25px; display: block; }
+.wrap-login .close { display: none; }
+
+.login-inner .hd { margin-bottom: 25px; }
+.login-inner .hd li { border-right: 1px solid #ccc; float: left; font-size: 16px; cursor: pointer; line-height: 26px; padding-right: 15px; }
+.login-inner .hd li.last { border: none; padding-left: 15px; }
+.login-inner .hd li.on { font-size: 24px; }
+
+.login-inner .bd { padding-left: 15px; }
+.login-inner .bd li { position: relative; width: 238px; margin-bottom: 20px; }
+.login-inner .bd li .arr { position: absolute; left: 35px; top: 1px; background: url(/content/v1/images/user/u5.png) no-repeat center center; width: 6px; height: 28px; vertical-align: middle; }
+.login-inner .bd li .btn { width: 237px; }
+
+.login-inner .bd .li1 .txt { background: url(/content/v1/images/user/u3.png) no-repeat 10px center; }
+.login-inner .bd .li2 .txt { background: url(/content/v1/images/user/u4.png) no-repeat 12px center; }
+.login-inner .bd .li2 .time { background: #ff7497; border: 1px solid #ff7497; color: #fff; height: 27px; line-height: 27px; border-radius: 2px; display: inline-block; -ms-zoom: 1; zoom: 1; *display: inline; width: 75px; text-align: center; vertical-align: top; cursor: pointer; -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; overflow: hidden; }
+.login-inner .bd .li2 .time i { color: #288dbd; }
+.login-inner .bd .li2 .time-on { background: #fff; color: #333; line-height: 27px; }
+
+.login-inner .bd .li3 a { color: #333; }
+.login-inner .bd .li3 a:hover { color: #f93868; }
+
+.login-inner .login-ext { width: 150px; border-left: 1px solid #fafafa; padding: 0 0 0 55px; height: 167px; margin-top: 45px; }
+.login-inner .login-ext p { margin-bottom: 14px; }
+
+.login-inner .login-ext .p4 a { display: inline-block; -ms-zoom: 1; zoom: 1; *display: inline; width: 25px; height: 25px; }
+.login-inner .login-ext .p4 a:hover { opacity: 0.5; filter: alpha(opacity=50); }
+.login-inner .login-ext .p4 .a1 { background: url(/content/v1/images/user/u1.png) no-repeat center center; }
+.login-inner .login-ext .p4 .a2 { background: url(/content/v1/images/user/u2.png) no-repeat center center; }
+
+.wrap-login-quick .txt-quick { padding-left: 2px; width: 206px; }
+.wrap-login-quick .login-quick { width: 210px; padding: 0 0 0 15px; height: 167px; margin-top: 0; border-right: 1px solid #ccc; padding-right: 25px; }
+.wrap-login-quick .login-quick h2 { font-size: 24px; margin-bottom: 15px; }
+.wrap-login-quick .login-quick p { margin-bottom: 14px; }
+
+/*get pwd*/
+.wrap-getpwd .w { padding-top: 50px; }
+.wrap-getpwd h1 { margin-bottom: 30px; }
+.getpwd-inner { padding: 30px; background: #fff; box-shadow: 0 0 3px rgba(0,0,0,.2); }
+
+.getpwd-main { padding: 5px 0; width: 700px; margin: 0 auto; }
+.getpwd-main .proc li { float: left; width: 39%; font-size: 18px; }
+.getpwd-main .proc li.last { width: 22%; }
+.getpwd-main .proc li.last span { margin-right: 0; }
+.getpwd-main .proc .on i { background: #f93868; color: #fff; font-family: Verdana; }
+.getpwd-main .proc li i { border-radius: 50%; text-align: center; width: 30px; height: 30px; line-height: 30px; border: 1px solid #f93868; }
+.getpwd-main .proc li span { margin: 0 40px; }
+.getpwd-main .proc li i, .wrap-main .proc li span { display: inline-block; *display: inline; -ms-zoom: 1; zoom: 1; vertical-align: middle; }
+
+.getpwd-main .proc { margin-bottom: 30px; }
+.getpwd-main .bod { border: 1px solid #e5e5e8; padding: 32px 32px 15px; }
+
+.getpwd-main .bod li { position: relative; margin-bottom: 20px; }
+.getpwd-main .bod .btn { width: 157px; }
+.getpwd-main .bod .txt { width: 250px; }
+
+.getpwd-main .bod li .arr { position: absolute; left: 35px; top: 1px; background: url(/content/v1/images/user/u5.png) no-repeat center center; width: 6px; height: 28px; vertical-align: middle; }
+
+.getpwd-main .bod .li1 .txt { background: url(/content/v1/images/user/u3.png) no-repeat 10px center; }
+.getpwd-main .bod .li2 .txt { background: url(/content/v1/images/user/u4.png) no-repeat 12px center; }
+.getpwd-main .bod .li2 img { width: 60px; vertical-align: top; height: 29px; }
+
+.getpwd-main .bod .time { background: #ff7497; color: #fff; height: 29px; line-height: 29px; border-radius: 2px; display: inline-block; -ms-zoom: 1; zoom: 1; *display: inline; width: 77px; text-align: center; vertical-align: top; cursor: pointer; -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; }
+.getpwd-main .bod .time i { color: #288dbd; }
+.getpwd-main .bod .time-on { background: #fff; border: 1px solid #ff7497; color: #333; width: 75px; height: 27px; line-height: 27px; }
+
+/*reg*/
+.wrap-reg .w { padding-top: 65px; }
+.wrap-reg .login-inner { margin: 0 auto; box-shadow: 0 0 3px rgba(0,0,0,.3); }
+
+.reg-inner { background: #fff; width: 675px; height: 360px; margin: 0 auto; }
+
+.reg-inner .inner { padding: 25px 30px 0 40px; position: relative; }
+.reg-inner .close { position: absolute; right: 10px; top: 0; color: #666; cursor: pointer; font-size: 25px; display: block; }
+
+.reg-inner .hd { margin-bottom: 15px; }
+.reg-inner .hd li { float: left; font-size: 16px; cursor: pointer; line-height: 26px; padding-right: 15px; }
+.reg-inner .hd li.on { font-size: 24px; }
+
+.reg-inner .bd { padding-left: 15px; }
+.reg-inner .bd li { position: relative; width: 330px; margin-bottom: 20px; }
+.reg-inner .bd li .arr { position: absolute; left: 35px; top: 1px; background: url(/content/v1/images/user/u5.png) no-repeat center center; width: 6px; height: 28px; vertical-align: middle; }
+.reg-inner .bd li .info { background: url(/content/v1/images/user/error.png) no-repeat 0 center; position: absolute; left: 0; top: 30px; padding-left: 15px; color: #666; }
+.reg-inner .bd li .ok { background: url(/content/v1/images/user/ok.png) no-repeat 0 center; padding: 5px 6px; margin-left: 5px; }
+.reg-inner .bd li .error { background: url(/content/v1/images/user/error.png) no-repeat 0 center; position: absolute; left: 0; top: 30px; padding-left: 15px; color: #666; }
+
+
+
+.reg-inner .bd .li1 .txt { background: url(/content/v1/images/user/u3.png) no-repeat 10px center; width: 244px; }
+.reg-inner .bd .li2 .txt { background: url(/content/v1/images/user/u4.png) no-repeat 12px center; width: 244px; }
+.reg-inner .bd .li2 .time { background: #ff7497; color: #fff; height: 29px; line-height: 29px; border-radius: 2px; display: inline-block; -ms-zoom: 1; zoom: 1; *display: inline; width: 77px; text-align: center; vertical-align: top; cursor: pointer; -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; }
+.reg-inner .bd .li2 .time i { color: #288dbd; }
+.reg-inner .bd .li2 .time-on { background: #fff; border: 1px solid #ff7497; color: #333; width: 75px; height: 27px; line-height: 27px; }
+
+.reg-inner .li3 img { width: 60px; vertical-align: top; height: 29px; }
+
+.reg-inner .login-ext { width: 150px; border-left: 1px solid #fafafa; padding: 0 0 0 55px; height: 267px; margin-top: 45px; }
+.reg-inner .login-ext p { margin-bottom: 14px; }
+
+.reg-inner .login-ext .p4 a { display: inline-block; -ms-zoom: 1; zoom: 1; *display: inline; width: 25px; height: 25px; }
+.reg-inner .login-ext .p4 a:hover { opacity: 0.5; filter: alpha(opacity=50); }
+.reg-inner .login-ext .p4 .a1 { background: url(/content/v1/images/user/u1.png) no-repeat center center; }
+.reg-inner .login-ext .p4 .a2 { background: url(/content/v1/images/user/u2.png) no-repeat center center; }
+
+.reg-protocal { background: #fff; box-shadow: 0 0 10px rgba(0,0,0,.6); line-height: 32px; color: #4e4d4d; position: absolute; font-size: 14px; z-index: 1000; left: 50%; top: 50%; margin: -200px 0 0 -500px; }
+.reg-protocal .close { position: absolute; right: 10px; top: 0; color: #666; cursor: pointer; font-size: 25px; display: block; }
+.reg-protocal .inner { padding: 25px 35px; height: 300px; overflow: scroll; overflow-x: hidden; }
+.reg-protocal h2 { text-align: center; font-size: 18px; padding: 20px 0 0; }
+
+.reg-status { background: #fff; box-shadow: 0 0 3px rgba(0,0,0,.3); line-height: 32px; color: #4e4d4d; position: relative; font-size: 14px; margin: 0 auto; width: 675px; height: 360px; }
+.reg-status .inner { padding: 80px 70px 0 70px; }
+.reg-status .mascot { margin-right: 15px; }
+.reg-status .d1 { border-bottom: 1px solid #ccc; padding-bottom: 15px; margin-bottom: 30px; }
+.reg-status .d2 span { margin-right: 50px; }
+.reg-status .d2 .last { margin-right: 0; }

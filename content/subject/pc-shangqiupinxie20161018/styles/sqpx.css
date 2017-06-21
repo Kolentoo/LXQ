@@ -1,0 +1,162 @@
+/*
+* @Author: lichen
+* @Date:   2016-10-18 09:05:06
+* @Last Modified by:   lichen
+* @Last Modified time: 2016-10-26 17:15:01
+*/
+/* .banner{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx01.jpg) no-repeat center center;width: 100%;height: 852px;} */
+.banner-1{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx35.jpg) no-repeat center center;width: 100%;height: 463px;}
+.banner-2{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx34.jpg) no-repeat center center;width: 100%;height: 388px;}
+
+
+.con{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx18.jpg) repeat center center;width: 100%;overflow: hidden;}
+.con-1{position: relative;padding-bottom: 676px;}
+.con-1 .con-1-tit{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx01.png) no-repeat center center;height: 114px;margin-top: 47px;}
+.con-1 .con-1-main .p1{background: #ba3012;padding: 2px 32px;color: #fff;font-size: 20px;font-family: 宋体;text-align: center;width: 638px;margin:0 auto;margin-top: 10px;}
+.con-1 .con-1-main .p2{color: #710c0d;font-size: 60px;position: absolute;left: 50%;margin-left: -314px;top:180px;}
+.con-1 .con-1-main .main-1{position: absolute;left: 50%;margin-left: -592px;top:220px;}
+.con-1 .con-1-main .main-2{position: absolute;left: 50%;margin-left: -592px;top:485px;*top:388px;*margin-left: -215px;}
+.con-1 .con-1-main .main-3{position: absolute;left: 50%;top:485px;margin-left: 40px;*top:606px;*margin-left: 220px;}
+.con-1 .con-1-main .main-4{position: absolute;left: 50%;top:220px;margin-left: 88px;*top:676px;}
+.con-1 .con-1-main .main-5{position: absolute;left: 50%;margin-left: 126px;top:220px;}
+.con-1 .con-1-main .main-model .tp{border:1px dashed #be4b4a;width: 250px;height: 250px;text-align: center;border-radius: 50%;display: inline-block;padding: 2px;}
+.con-1 .con-1-main .main-model .tp img{border-radius: 50%;width: 250px;height: 250px;}
+.con-1 .con-1-main .main-model .tp-describe{color: #710c0d;font-size: 20px;display: inline-block;margin-left: 10px;position: relative;top: 20px;*position: absolute;*left: 250px;*top: 73px;}
+.con-1 .con-1-main .main-model .tp-describe span{font-size: 36px;font-weight: bolder;}
+.con-1 .con-1-main .main-model .desjr{*left: -265px;*top: 109px;_left: -370px;}
+.con-1 .con-1-main .main-model .desjr-2{*left: -265px;top: 109px;}
+.con-1 .con-1-main .main-model .tp-describe .nei{font-family: 宋体;_margin-left: -20px;}
+.con-1 .con-1-main .main-model .tp-describe .span-1{margin-left: 278px;*margin-left: 170px;_margin-left: 280px;}
+.con-1 .con-1-main .main-model .tp-describe .span-2{margin-left: 162px;*margin-left: 138px;}
+.con-1 .con-1-main .xie{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx04.png) no-repeat center center;width: 269px;height: 187px;position: absolute;left: 50%;top:-18px;margin-left: 290px;}
+.con-1 .con-1-main .xie-des{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx03.png) no-repeat center center;width: 197px;height: 42px;color: #fff;font-size: 18px;line-height: 42px;padding-left: 21px;box-sizing: border-box;position: absolute;left: 50%;margin-left: 412px;top:160px;*padding-left: 42px;}
+
+.con-2{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx19.jpg) repeat center center;width: 100%;position: relative;}
+.con-2-tit{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx15.png) no-repeat center top;width: 972px;height: 74px;position: absolute;top:-40px;left: 50%;margin-left: -486px;}
+.con-2-main{font-size: 18px;color: #fff;width: 1200px;margin: 0 auto;padding-top: 90px;padding-bottom: 50px;padding-left: 44px;}
+.con-2-main dt{font-size: 36px;font-weight: bolder;margin-top: 13px;}
+.con-2-main dd{line-height: 28px;}
+.con-2-main dd span{color: #ffc600;}
+.con-2 .con-2-main .tp{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx05.png) no-repeat center center;width: 602px;height: 371px;position: absolute;top:50%;left: 50%;margin-left: -18px;margin-top: -247px;}
+.con-2 .con-2-main .xie{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx16.png) no-repeat center center;width: 186px;height: 133px;position: absolute;left: 50%;top:-15px;margin-left: -306px;}
+.con-2 .con-2-main .xie-des{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx17.png) no-repeat center center;width: 281px;height: 65px;color: #fff;font-size: 18px;line-height: 65px;padding-left: 38px;box-sizing: border-box;position: absolute;left: 50%;margin-left: 304px;top:71px;*padding-left: 74px;}
+.con-2 .con-2-main .xie-des span{margin-left: 75px;}
+
+.con-3{position: relative;padding-bottom: 15px;padding-top: 40px;}
+.con-3-tit{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx09.png) no-repeat center center;height: 74px;}
+.con-3-main{width: 1200px;margin: 0 auto;}
+.con-3 .item-l{width: 412px;height: 507px;margin-top: 70px;}
+.con-3 .item-r{width: 550px;height: 324px;margin-top: 255px;margin-left: 30px;}
+.con-3 .item-t dl{border: 1px solid #a40000;width: 682px;padding: 40px 47px 93px 113px;box-sizing: border-box;position: absolute;left: 50%;margin-left: -250px;margin-top: 38px;*padding: 40px 10px 93px 10px;*width: 592px;*margin-left: -198px;}
+.con-3 .item-t dt{font-size: 36px;font-weight: bolder;color: #710c0d;text-align: center;}
+.con-3 .item-t dd{font-size: 20px;color: #710c0d;font-family: 宋体;margin-top: 24px;}
+.con-3 .model-tit{width: 98px;height: 349px;border: 1px solid #a40000;background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx06.png) no-repeat center center;margin-left: 70px;margin-top: 132px;_position: absolute;_left: 50%;_top: 10px;_margin-left: 450px;}
+.con-3 .more-road{background: #c43503;width: 190px;height: 50px;line-height: 50px;text-align: center;margin-left: -4px;margin-top: -4px;}
+.con-3 .more-roads{width: 190px;height: 50px;border: 1px solid #c43503;position: absolute;top:668px;left: 50%;margin-left: 390px;}
+.con-3 .more-road a{font-size: 24px;color: #fff;}
+#j_tab .hd{margin-top: 12px;margin-left: 36px;height: 45px;}
+#j_tab .hd li{width: 181px;height: 45px;background: #42150b;font-size: 24px;color: #fff;line-height: 45px;margin-left: 5px;transform: skew(-20deg);font-style:italic;}
+#j_tab .hd li div{text-align: center;}
+#j_tab .hd .on{background: #94040f;}
+#j_tab .hd li div{transform: skew(20deg);}
+.con-3 .xie{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx07.png) no-repeat center center;width: 216px;height: 125px;position: absolute;margin-left: 375px;top: 25px;left: 50%;_padding-left: 200%;_padding-top: 50px;}
+.con-3 .xie-des{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx08.png) no-repeat center center;width: 208px;height: 42px;position: absolute;margin-left: 216px;top: 20px;left: 50%;font-size: 18px;color: #fff;text-align: center;line-height: 42px;padding-left: 12px;box-sizing: border-box;}
+
+.con-4{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx19.jpg) repeat center center;width: 100%;overflow: hidden;padding-bottom: 30px;}
+.con-4-main{margin: 0 auto;width: 1200px;margin-top: 25px;}
+.con-4 ul li{width: 260px;background: #fff;padding-top: 12px;padding-left: 17px;padding-right: 17px;position: relative;padding-bottom: 18px;top:0; -webkit-transition: all 0.3s ease-in;-moz-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
+.con-4 ul li:hover{top:-10px;}
+.con-4 ul .li-model{margin-left: 8px;}
+.con-4 ul li .p1{font-size: 20px;color: #42150b;height: 56px;overflow: hidden;}
+.con-4 ul li .p2,.con-4 ul li .p3{font-size: 16px;color: #42150b;}
+.con-4 ul li .p2{border-right: 1px solid #42150b;padding-right: 12px;}
+.con-4 ul li .p3{margin-left: 14px;}
+.con-4 ul li .p4{font-size: 18px;color: #c43503;text-align: center;}
+.con-4 ul li .p4 span{font-size: 36px;font-weight: bolder;}
+.con-4 ul li .p5{width: 130px;height: 35px;background: #c43503;font-size: 24px;color: #fff;text-align: center;line-height: 35px;margin-left: -14px;margin-top: -14px;}
+.con-4 ul li .i1{font-size: 16px;color: #fff;background: #c43503;width: 93px;height: 27px;text-align: center;line-height: 27px;display: inline-block;position: absolute;top:12px;left: 17px;}
+.con-4 .btn{width: 130px;height: 35px;border:1px solid #e60012;margin-left: 76px;margin-top: 14px;}
+.con-4 .btn:hover .p5{background: #710C0D;}
+
+.con-5{position: relative;padding-bottom: 15px;overflow: hidden;}
+.con-5-main{width: 1200px;margin: 0 auto;}
+.con-5 .item-l{width: 412px;height: 507px;margin-top: 70px;margin-left: 40px;}
+.con-5 .item-r{width: 550px;height: 324px;margin-top: 255px;margin-left: 30px;}
+.con-5 .item-t dl{border: 1px solid #a40000;width: 682px;box-sizing: border-box;position: absolute;left: 50%;margin-left: -80px;margin-top: 38px;padding: 40px 92px 93px;}
+.con-5 .item-t dt{font-size: 36px;font-weight: bolder;color: #710c0d;text-align: center;}
+.con-5 .item-t dd{font-size: 20px;color: #710c0d;font-family: 宋体;margin-top: 24px;}
+.con-5 .model-tit{width: 98px;height: 349px;border: 1px solid #a40000;background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx25.png) no-repeat center center;margin-top: 132px;}
+.con-5 .more-road{background: #c43503;width: 190px;height: 50px;line-height: 50px;text-align: center;position: absolute;left: 50%;margin-left: -100px;top:-4px;}
+.con-5 .more-roads{width: 190px;height: 50px;border: 1px solid #c43503;position: absolute;left: 50%;margin-left: -595px;top: 590px;}
+.con-5 .more-road a{font-size: 24px;color: #fff;}
+#j_tabs .hd{margin-top: 12px;margin-left: 244px;height: 45px;}
+#j_tabs .hd li{width: 181px;height: 45px;background: #42150b;font-size: 24px;color: #fff;line-height: 45px;margin-left: 5px;transform: skew(-20deg);font-style:italic;}
+#j_tabs .hd li div{text-align: center;}
+#j_tabs .hd .on{background: #94040f;}
+#j_tabs .hd li div{transform: skew(20deg);}
+
+.con-7{width: 1200px;margin: 0 auto;position: relative;overflow: hidden;padding-bottom: 10px;}
+.con-7-tit{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx18.png) no-repeat center center;height: 109px;margin-top: 47px;}
+.con-7-main dt p{font-size: 60px;color: #710c0d;text-align: center;margin-top: 23px;}
+.con-7-main dt{margin: 0 auto;width: 342px;}
+.con-7-main dt .p1{font-size: 36px;font-weight: bolder;margin-top: 35px;}
+.con-7-main dd{margin-top: 25px;}
+.list-item{width: 212px;margin-left: 30px;position: relative;}
+.list-item:hover .goods{opacity: 1;filter:Alpha(opacity=100);}
+.list-item:hover .see{opacity: 0;filter:Alpha(opacity=0);}
+.list-item:hover .sees{opacity: 0;filter:Alpha(opacity=0);}
+.list-item:hover .con-7-model-last{border: none;}
+.list-item-first{margin-left: 0;}
+.con-7-model{width: 192px;height: 192px;border: 1px dashed #b5302f;text-align: center;border-radius: 50%;padding: 3px;}
+.con-7-model .bg-tp{background: #94040f;border-radius: 50%;width: 192px;height: 192px;}
+.con-7-model img{border-radius: 50%;}
+.main-des{font-size: 20px;color: #710c0d;margin-top: 10px;font-family: 宋体;}
+.con-7-model-last{position: relative;}
+.xiong{position: absolute;left: -20px;top: 45px;}
+.ci{position: absolute;right: -20px;top:45px;}
+.gds{text-align: center;width: 115px;height: 115px;border: 1px dashed #b5302f;border-radius: 50%;padding: 3px;}
+.gds img{position: absolute;top:3px;left: 3px;}
+.goods{opacity: 0;filter:Alpha(opacity=0); }
+.see{position: absolute;left: 50%;top:80px;font-size: 36px;color: #fff;font-weight: bolder;margin-left: -78px;opacity: 1;}
+.con-7 .con-7-main .xie{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx19.png) no-repeat center center;width: 205px;height: 157px;position: absolute;left: 50%;top:40px;margin-left:-592px;}
+.con-7 .con-7-main .xie-des{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx03.png) no-repeat center center;width: 197px;height: 42px;color: #fff;font-size: 18px;line-height: 42px;padding-left: 28px;box-sizing: border-box;position: absolute;left: 50%;margin-left: -422px;top:32px;*padding-left: 54px;*margin-left: -434px;}
+#j_con7main .on .goods{opacity: 1;filter:Alpha(opacity=100);}
+#j_con7main .on .see{opacity: 0;filter:Alpha(opacity=0);}
+#j_con7main .on .sees{opacity: 0;filter:Alpha(opacity=0);}
+#j_con7main .on .con-7-model-last{border: none;}
+
+.con-8{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx17.jpg) no-repeat center center;width: 100%;height: 587px;overflow: hidden;}
+.con-8-main{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx32.jpg) no-repeat center center;width: 1190px;height: 470px;margin: 0 auto;margin-top: 65px;opacity: 0.7;overflow: hidden;position: absolute;left: 50%;margin-left: -585px;}
+.con-8-main-wenzi .tit{color: #94040f;font-size: 36px;font-weight: bolder;margin-left: -26px;}
+.con-8-main-wenzi .tit-1{margin-top: 48px;}
+.con-8-main-wenzi .tit-2{margin-top: 32px;}
+.con-8-main-wenzi .con-8-main-1{margin-top: 36px;}
+.con-8-main-wenzi .con-8-main-2{margin-top: 29px;}
+.con-8-main-wenzi .con-8-main-2-p{margin-top: 10px;}
+.con-8-main-wenzi p{color: #710c0d;font-size: 18px;line-height: 28px;}
+.con-8-main-wenzi{position: relative;left: 50%;margin-left: -330px;top:65px;*left: 31%;*margin-left: 30px;}
+
+.con-9{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx19.jpg) repeat center center;width: 100%;padding-bottom: 62px;position: relative;padding-top: 50px;}
+.con-9-tit{height: 74px;width: 972px;background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx12.png) no-repeat center center;margin: 0 auto;position: absolute;left: 50%;margin-left: -486px;top:-40px;}
+.con-9-main{width: 1000px;margin: 0 auto;}
+.con-9-main dt{font-weight: bolder;font-size: 36px;color: #fff;border-bottom: 1px dashed #fff;padding: 12px 32px;}
+.con-9-main dt span{margin-left: 5px;}
+.con-9-main dd p{font-size: 18px;color: #fff;padding: 0 47px;line-height: 28px;}
+.con-9-main dd .p1{margin-top: 10px;}
+.con-9 .con-9-main .xie{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx13.png) no-repeat center center;width: 155px;height: 119px;position: absolute;left: 50%;top:20px;margin-left: 218px;}
+.con-9 .con-9-main .xie-des{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx24.png) no-repeat center center;width: 270px;height: 42px;color: #fff;font-size: 18px;line-height: 42px;padding-left: 28px;box-sizing: border-box;position: absolute;left: 50%;margin-left: 355px;top:40px;*padding-left: 54px;}
+
+.subject-intro-more .tit{background:url(/content/subject/pc-shangqiupinxie20161018/images/sqpx10.png) no-repeat center center;width: 972px;height: 74px;margin: 0 auto;margin-top: 43px;}
+.subject-intro-more ul{margin-top: 47px;}
+.subject-intro-more{padding-bottom: 50px;}
+
+
+
+/* 导航 */
+.j_nav .tit{background: url(/content/subject/pc-shangqiupinxie20161018/images/sqpx20.png) no-repeat center center;width: 128px;height: 117px;position: absolute;top:-96px;left: -12px;}
+.j_nav{width: 130px;height: 245px;position: fixed;right: -20px;top: 28%;_position:absolute;}
+.j_nav li{border: 1px solid #710c0d;width: 90px;height: 59px;margin-top: 10px;cursor:pointer;}
+.j_nav li .p1{width: 100px;height: 44px;border:2px solid #710c0d;margin-left: -7px;margin-top: 6px;line-height: 44px;color: #710c0d;font-size: 20px;text-align: center;}
+.j_nav .on .p1 {background: #710c0d;color: #fff;}
+.jnav{margin-left: 5px;}
+

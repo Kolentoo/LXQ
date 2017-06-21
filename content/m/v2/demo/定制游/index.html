@@ -1,0 +1,157 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>现在提交你的旅游剧本，导演专属旅程。</title>
+    <meta name="description" content="悠哉私家团为您精心甄选，专业推荐，提供全方位的旅游定制服务。【众信旅游悠哉网】" />
+    <link href="//r01.uzaicdn.com/content/m/v2/styles/core.css" rel="stylesheet" />
+    <link href="//r01.uzaicdn.com/content/m/v2/styles/_src/customize/customize.css" rel="stylesheet" />
+    <script src="//r.uzaicdn.com/content/libs/jquery-2.1.1.min.js"></script>
+    <script src="//r01.uzaicdn.com/content/m/v2/sea-modules/zepto/zepto.cookie/1.0/zepto.cookie.min.js"></script>
+    <script src="//r01.uzaicdn.com/content/v1/scripts/sijia/citylist.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="//r01.uzaicdn.com/content/m/v2/scripts/core.js"></script>
+    <script src="//r01.uzaicdn.com/content/v1/scripts/com/weixinshare.js"></script>
+    <script src="/content/m/v2/scripts/_src/customize/customize.js"></script>
+
+    <script>
+        $(function () {
+            var pageData = window.pageData || {};
+            pageData.title = '现在提交你的旅游剧本，导演专属旅程。';
+            pageData.desc = '悠哉私家团为您精心甄选，专业推荐，提供全方位的旅游定制服务。【众信旅游悠哉网】';
+            pageData.link = 'http://m.uzai.com/dingzhiyou';
+            pageData.imgUrl = '//r.uzaicdn.com/content/m/v2/images/customize/c2.jpg';
+            //customize.init();
+            wxGetSign();
+        });
+    </script>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">定制游</div>
+            </div>
+            <div class="d-r">
+
+            </div>
+        </header>
+
+
+
+        <div class="customize clearfix customize-edit" id="j_customize">
+
+            <div class="focus ">
+                <a href="http://sijia.uzai.com">
+                    <img class="block g10" src="//r01.uzaicdn.com/content/m/v2/images/customize/c1.jpg" />
+                </a>
+            </div>
+
+            <dl>
+                <dd>
+                    <label>出发城市</label>
+                    <a href="/StartCityList?url=http://m.uzai.com/dingzhiyou/" style="display:inline-block">
+                        <i class="icon-arrow"></i>
+                        <input name="startcityname" value="上海" type="text" required id="j_startCity" />
+                    </a>
+                </dd>
+                <dd>
+                    <label>目的地</label>
+                    <input type="text" name="locationName" required placeholder="请输入目的地" id="txtDestiation" />
+                    <ul id="j_sjCustomAutocomp" class="sj-custom-autocomp hide"></ul>
+                </dd>
+                <dd>
+                    <label>出发日期</label>
+                    <input type="date" name="goDate" required placeholder="请选择出发日期" />
+                </dd>
+            </dl>
+
+            <dl>
+                <dd>
+                    <label>行程天数</label><i class="icon-arrow"></i><span></span><input type="hidden" name="goDays" value="" />
+                </dd>
+                <dd class="drop clearfix">
+                    <ul class="clearfix">
+                        <li>3-5天</li>
+                        <li>6-9天</li>
+                        <li>10-15天</li>
+                        <li>16天以上</li>
+                    </ul>
+                </dd>
+
+                <dd><label>同伴类型</label><i class="icon-arrow"></i><span></span><input type="hidden" name="goType" value="" /></dd>
+                <dd class="drop clearfix">
+                    <ul class="clearfix">
+                        <li>携爱侣</li>
+                        <li>陪父母</li>
+                        <li>带孩子</li>
+                        <li>挽闺蜜</li>
+                        <li>同哥们</li>
+                        <li>馈客户</li>
+                        <li>三代同游</li>
+                        <li>企业团体</li>
+                    </ul>
+                </dd>
+                <dd><label>酒店类型</label><i class="icon-arrow"></i><span></span><input type="hidden" name="hotelType" value="" /></dd>
+                <dd class="drop clearfix">
+                    <ul class="clearfix">
+                        <li>奢华型</li>
+                        <li>豪华型</li>
+                        <li>舒适性</li>
+                        <li>经济型</li>
+                        <li>民宿</li>
+                    </ul>
+                </dd>
+                <dd><label>人均预算</label><i class="icon-arrow"></i><span></span><input type="hidden" name="priceType" value="" /></dd>
+                <dd class="drop clearfix">
+                    <ul class="clearfix">
+                        <li>5000以下</li>
+                        <li>5001-15000</li>
+                        <li>15001-30000</li>
+                        <li>30000-50000</li>
+                        <li>50001以上</li>
+                        <li>不确定</li>
+                    </ul>
+                </dd>
+            </dl>
+
+            <dl>
+                <dd><label>成人</label><input type="number" value="2" min="2" placeholder="请输入人数" name="person" onkeyup="this.value=this.value.replace(/\D/g,'')" /></dd>
+                <dd><label>儿童</label><input type="number" value="0" min="0" placeholder="请输入人数" name="son" onkeyup="this.value=this.value.replace(/\D/g,'')" /></dd>
+                <dd><label>联系人</label><input type="text" required placeholder="请输入姓名" name="username" /></dd>
+                <dd><label>手机号</label><input type="tel" pattern="\d{3}\d{4}\d{4}" required placeholder="请输入手机号" name="mobile" /></dd>
+                <dd><label>邮箱</label><input type="email" required placeholder="请输入邮箱" name="email" /></dd>
+            </dl>
+
+        </div>
+
+        <div class="submit-box">
+            <input type="button" class="btn btn-on block g10" id="j_btnSubmit" value="提交" />
+        </div>
+
+
+    </div>
+    <!------------------------GA-------------------->
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-27817301-10', 'uzai.com');
+        ga('send', 'pageview');
+    </script>
+    <!------------------------Baidu-------------------->
+
+    <img src="http://hm.baidu.com/hm.gif?si=ec2cbd968f53448c8f9796112a7d72a1&amp;et=0&amp;nv=0&amp;st=4&amp;lt=1447033216&amp;v=wap-1-0.1&amp;rnd=668612237" width="0" height="0" />
+</body>
+</html>

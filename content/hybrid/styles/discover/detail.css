@@ -1,0 +1,707 @@
+.inside {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    bottom: 0rem;
+}
+
+html body {
+    height: 100%;
+}
+
+header {
+    display: none;
+}
+
+#scroller {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+    background: #f4f4f4;
+}
+
+.pictureAre {
+    width: 7.5rem;
+    height: 5rem;
+    background-image: url(http://r03.uzaicdn.com/content/hybrid/images/discover/detail.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.content .main {
+    margin-top: 0;
+}
+
+.picimg {
+    width: 7.5rem;
+    height: 4.67rem;
+}
+
+.picani {}
+
+.largeimg {
+    transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1.5, 1.5);
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.largediv {
+    height: 5.7rem;
+    -webkit-transition: all 0.5s ease 0.3s;
+    transition: height all 0.5s ease 0.3s;
+}
+
+img {
+    display: block;
+}
+
+.picare {
+    background-color: #fff;
+}
+
+.icon a {
+    width: 0.56rem;
+    height: 0.56rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: block;
+    position: absolute;
+    top: 0.35rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.icon-ai {
+    width: 0.65rem;
+    height: 0.65rem;
+    opacity: 0;
+    display: block;
+    background-color: #ddd;
+    position: absolute;
+    left: -0.05rem;
+    top: -0.05rem;
+    padding-right: 0.2rem;
+}
+
+.icon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    /*display: none;*/
+}
+
+.back {
+    left: 0.24rem;
+    background-image: url(http://r03.uzaicdn.com/content/hybrid/images/discover/back.png);
+    background-position: 0.03rem -0.01rem;
+}
+
+.share {
+    left: 6.7rem;
+    background-image: url(http://r03.uzaicdn.com/content/hybrid/images/discover/share.png);
+    background-position: 0.02 -0.02rem;
+}
+
+.collection {
+    left: 5.9rem;
+    background-image: url(http://r03.uzaicdn.com/content/hybrid/images/discover/ction.png);
+}
+
+.single {
+    position: absolute;
+    left: 4.8rem;
+    top: 3.26rem;
+    width: 0.15rem;
+    height: 0.15rem;
+}
+
+.single2 {
+    position: absolute;
+    left: 2.78rem;
+    top: 1.8rem;
+    width: 0.15rem;
+    height: 0.15rem;
+}
+
+.single .em {
+    width: 0.15rem;
+    height: 0.15rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+}
+
+.single2 .em {
+    width: 0.15rem;
+    height: 0.15rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+}
+
+.spread {
+    display: block;
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    /* box-shadow: 0 0 3px 0px rgba(179,155,255,1.8); */
+    background-color: rgba(0, 0, 0, 0.34);
+    left: 50%;
+    top: 50%;
+    margin-top: -0.25rem;
+    margin-left: -0.25rem;
+    z-index: 999;
+    opacity: 0;
+    z-index: 1;
+    -webkit-animation: halo 1s 0.1s infinite ease-out;
+    -moz-animation: halo 1s 0.1s infinite ease-out;
+    animation: halo 1s 0.1s infinite ease-out;
+}
+
+.spread2 {
+    display: block;
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    /* box-shadow: 0 0 3px 0px rgba(179,155,255,1.8); */
+    background-color: rgba(0, 0, 0, 0.34);
+    left: 50%;
+    top: 50%;
+    margin-top: -0.25rem;
+    margin-left: -0.25rem;
+    z-index: 999;
+    opacity: 0;
+    z-index: 1;
+    -webkit-animation: halo 1s 0.1s infinite ease-out;
+    -moz-animation: halo 1s 0.1s infinite ease-out;
+    animation: halo 1s 0.1s infinite ease-out;
+}
+
+.line-top {
+    width: 2.23rem;
+    height: 0.60rem;
+    background-image: url(http://r03.uzaicdn.com/content/hybrid/images/discover/one.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 4.85rem;
+    top: 2.74rem;
+    z-index: 999;
+}
+
+.line-top2 {
+    width: 2.23rem;
+    height: 0.60rem;
+    background-image: url(http://r02.uzaicdn.com/content/hybrid/images/discover/leftone.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0.66rem;
+    top: 1.25rem;
+    z-index: 999;
+}
+
+.line-top-span {
+    position: absolute;
+    top: 2.4rem;
+    left: 5.3rem;
+    color: #fff;
+    font-size: .24rem;
+    z-index: 999;
+    text-shadow: 1px 1px 1px #666;
+    width: 1.77rem;
+    text-align: left;
+     word-break: break-all;
+    white-space:nowrap;
+     padding-top:0.05rem;
+    padding-bottom: 0.05rem;
+}
+
+.line-top-span2 {
+    position: absolute;
+    top: 0.92rem;
+    left: 0.5rem;
+    color: #fff;
+    font-size: 0.24rem;
+    z-index: 999;
+    text-shadow: 1px 1px 1px #666666;
+    width: 2rem;
+    text-align: right;
+}
+
+.line-middle-span {
+    position: absolute;
+    top: 2.96rem;
+    left: 5.3rem;
+    color: #fff;
+    font-size: .24rem;
+    z-index: 999;
+    text-shadow: 1px 1px 1px #666;
+    width: 1.77rem;
+    text-align: left;
+     word-break: break-all;
+    white-space:nowrap;
+    padding-top:0.05rem;
+    padding-bottom: 0.05rem;
+}
+
+.line-middle {
+    width: 2.23rem;
+    height: 0.07rem;
+    background-image: url(http://r03.uzaicdn.com/content/hybrid/images/discover/three.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 4.85rem;
+    top: 3.31rem;
+    z-index: 999;
+}
+
+.line-middle2 {
+    width: 2.23rem;
+    height: 0.07rem;
+    background-image: url(http://r02.uzaicdn.com/content/hybrid/images/discover/three.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0.65rem;
+    top: 1.84rem;
+    z-index: 999;
+}
+
+.line-bottom,
+.line-ctrl-2 .line-middle {
+    width: 2.23rem;
+    height: 0.60rem;
+    background-image: url(http://r03.uzaicdn.com/content/hybrid/images/discover/two.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 4.87rem;
+    top: 3.34rem;
+    z-index: 999;
+}
+
+.line-bottom2 {
+    width: 2.23rem;
+    height: 0.60rem;
+    background-image: url(http://r02.uzaicdn.com/content/hybrid/images/discover/lefttwo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0.67rem;
+    top: 1.85rem;
+    z-index: 999;
+}
+
+.line-bottom-span2 {
+    position: absolute;
+    top: 3rem;
+    left: 5.25rem;
+    color: #fff;
+    font-size: 0.24rem;
+    z-index: 999;
+    text-shadow: 1px 1px 1px #666666;
+    width: 2rem;
+    text-align: left;
+}
+
+.line-bottom-span,
+.line-ctrl-2 .line-middle-span {
+    position: absolute;
+    top: 3.54421rem;
+    left: 5.3rem;
+    color: #fff;
+    font-size: .24rem;
+    z-index: 999;
+    text-shadow: 1px 1px 1px #666;
+    width: 1.77rem;
+    text-align: left;
+    word-wrap:break-word; 
+word-break:break-all; 
+white-space:pre-wrap;
+line-height: 0.36rem;
+ padding-top:0.05rem;
+    padding-bottom: 0.05rem;
+}
+
+.line-middle-span2 {
+    position: absolute;
+    top: 3.56rem;
+    left: 5.25rem;
+    color: #fff;
+    font-size: 0.24rem;
+    z-index: 999;
+    text-shadow: 1px 1px 1px #666666;
+    width: 2rem;
+    text-align: left;
+}
+
+.secondare {
+    padding-left: 0.22rem;
+    padding-right: 0.22rem;
+    background-color: #fff;
+    position: relative;
+    padding-top: 0.6rem;
+    box-shadow: 1px 1.732px 4px 0px rgba(0, 0, 0, 0.05);
+    display: none;
+}
+
+.photo {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: 0.04rem solid #fff;
+    display: inline-block;
+    background-size: 100% 100%;
+    top: -0.6rem;
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    margin-left: -0.6rem;
+}
+
+.corf93868 {
+    color: #f93868;
+}
+
+.font24 {
+    font-size: 0.24rem;
+}
+
+.font34 {
+    font-size: 0.34rem;
+}
+
+.cor444 {
+    color: #444;
+}
+
+.cor666 {
+    color: #666;
+}
+
+.font26 {
+    font-size: 0.26rem;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.phoout {
+    text-align: center;
+}
+
+.stylep {
+    padding-bottom: 0.25rem;
+    text-align: center;
+    padding-top: 0.3rem;
+}
+
+.stylediv {
+    padding-bottom: 0.38rem;
+    text-align: center;
+    border-bottom: 1px solid #dbdbdb;
+    width: 7.02rem;
+    margin: 0 auto;
+}
+
+.stylediv span {
+    color: #999;
+    font-size: 0.22rem;
+    border: 1px solid #ddd;
+    display: inline-block;
+    border-radius: 0.05rem;
+    padding-bottom: 0.05rem;
+    padding-top: 0.05rem;
+    padding-left: 0.05rem;
+    padding-right: 0.05rem;
+}
+
+.ml30 {
+    margin-left: 0.3rem;
+}
+
+.font28 {
+    font-size: 0.28rem;
+}
+
+.des {
+    text-indent: 0.5rem;
+    font-size: 0.28rem;
+    color: #666;
+    text-align: justify;
+    padding-left: 0.24rem;
+    padding-right: 0.24rem;
+    line-height: 0.4rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    width: 6.54rem;
+    margin: 0 auto;
+}
+
+.thirdare {
+    padding-left: 0.24rem;
+    background-color: #fff;
+    margin-top: 0.3rem;
+    padding-top: 0.29rem;
+    padding-right: 0.24rem;
+}
+
+.thirdlist {
+    background-color: #f4f4f4;
+    padding-bottom: 0.25rem;
+}
+
+.grayblock {
+    width: 7.5rem;
+    height: 0.25rem;
+    background-color: #f4f4f4;
+}
+
+.inside-block {
+    width: 7.5rem;
+    padding-left: 0.24rem;
+    padding-right: 0.26rem;
+    padding-top: 0.23rem;
+    padding-bottom: 0.23rem;
+    box-shadow: 1px 1.732px 4px 0px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    position: relative;
+    display: block;
+}
+
+.listdiv {
+    width: 3.39rem;
+    background-color: #000;
+}
+
+.listimg {
+    width: 3.38rem;
+    height: auto;
+    background-size: 100% 100%;
+}
+
+.xgtj {
+    padding-bottom: 0.24rem;
+    border-bottom: 1px solid #dbdbdb;
+    width: 7.02rem;
+    margin: 0 auto;
+}
+
+.xgtj-log {
+    width: 0.27rem;
+    height: 0.27rem;
+    display: inline-block;
+    background-image: url(http://r03.uzaicdn.com/content/hybrid/images/discover/xgtj.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+
+/*清除浮动*/
+
+.clearfix:before,
+.clearfix:after {
+    display: block;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.thirdul {
+    overflow: hidden;
+}
+
+.listdes {
+    font-size: 0.26rem;
+    color: #444;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+}
+
+.priceicon {
+    width: 0.29rem;
+    height: 0.31rem;
+    background-image: url(http://r03.uzaicdn.com/content/hybrid/images/discover/jia.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.verm {
+    vertical-align: middle;
+}
+
+.jiadiv {
+    padding-top: 0.15rem;
+    padding-bottom: 0.19rem;
+    padding-left: 0.1rem;
+}
+
+.divinseide {
+    -webkit-box-shadow: 0px 3px 3px #ddd;
+    -moz-box-shadow: 0px 3px 3px #ddd;
+    box-shadow: 0px 3px 3px #ddd;
+}
+
+.redborder {
+    width: 0.05rem;
+    height: 0.32rem;
+    display: inline-block;
+    background-color: #f93868;
+}
+
+.end {
+    width: 7.5rem;
+    height: 1.57rem;
+    background-image: url(http://r03.uzaicdn.com/content/hybrid/images/discover/end.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.listone {
+    width: 2.7rem;
+    height: 2.02rem;
+}
+
+.subject {
+    font-size: 0.3rem;
+    color: #444;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    padding-left: 0.26rem;
+}
+
+.subjectout {
+    width: 4.2rem;
+    padding-top: 0.3rem;
+}
+
+.price {
+    margin-top: 0.34rem;
+    padding-left: 0.26rem;
+    font-size: 0.24rem;
+    color: #f93868;
+}
+
+.insidea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.icon .collectioned {
+    background-color: transparent;
+    background-size: 0.56rem 0.56rem;
+    background-repeat: no-repeat;
+    background-image: url(http://r03.uzaicdn.com/content/hybrid/images/discover/collected.png);
+}
+
+@-webkit-keyframes halo {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.1);
+    }
+    25% {
+        opacity: 1;
+        -webkit-transform: scale(0.6);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.2);
+    }
+}
+
+@keyframes halo {
+    0% {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    25% {
+        opacity: 1;
+        transform: scale(0.6);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+}
+
+.subjectout {
+    width: 4.2rem;
+    padding-top: 0.3rem;
+}
+
+.loading-return-btn {
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/discover/backo.png")no-repeat;
+    background-size: 100% 100%;
+    left: 0.268rem;
+    top: 0.36rem;
+}
+
+.secondAre {
+    background-color: #fff;
+    box-shadow: 1px 1.732px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.thirdAre {
+    background-color: #fff;
+    margin-top: 0.24rem;
+    padding-top: 0.3rem;
+}
+
+[ng:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}

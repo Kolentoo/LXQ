@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document 8.8 elonglau*/
+
+.dywrap{width:990px; height:1200px; margin:0 auto; background:#CAEBFC;}
+#dywrap2{height:825px;}
+.clear{clear:both;}
+
+.dy_banner{width:990px; height:200px; background:url(/content/1/image/daoyouimages/dybanner.jpg) no-repeat;}
+.dy_top{width:890px; height:100px; background:url(/content/1/image/daoyouimages/dybanner_bottom.jpg) no-repeat; padding-top:50px; padding-left:100px; text-align:left;}
+   .ptitle{color:#004c94; font-size:14px; font-weight:bold; padding-bottom:10px;}
+   .ptext{color:#1995ca; width:700px; line-height:18px; border-top:#659BC8 1px solid; padding-top:15px;}
+.dy_mainbox{width:930px; height:auto; margin:10px auto; text-align:left;}
+   .dy_up_left{width:600px; height:359px; background:#FFFFFF; float:left; position:absolute;}
+      .dyback01{width:583px; height:61px; position:relative; left:-13px; background:url(/content/1/image/daoyouimages/dytback01.jpg) no-repeat; font-size:18px; color:#09a5df; padding-left:30px; padding-top:25px; text-align:left; overflow:hidden;}
+	  .photopan{width:575px; margin:0 auto!important; text-align:center;}
+	    .dy_photoul{width:575px;}
+		   .du_photli{float:left; width:104px; margin:0 5px 8px; color:#626262; display:inline;}	 
+		   .du_photli a{border:2px solid #666; display:block;}
+		   .du_photli a:hover{border:2px solid #EC8004;}
+   .dy_up_right{width:322px; height:359px; background:#FFFFFF; float:right; text-align:center;}
+   .dy_up_right img{border:#999 2px solid; margin-top:10px;}
+   .dy_down{width:930px; height:auto; background:#FFFFFF; position:absolute; margin-top:20px;}
+      .downwrap{position:relative; left:-11px; top:-11px; background:url(/content/1/image/daoyouimages/dytback02.jpg) left top no-repeat; width:930px; height:auto; padding-top:60px;}
+	    .dcontent{margin-left:90px; height:auto; margin-bottom:10px;}
+		.dcontent p{width:505px; line-height:20px; color:#333333; text-indent:2em;}
+		.dcontent img{border:2px solid #fff; display:inline-block; float:right;}
+		.rightimg{float:right; width:300px;}
+		   .dy_title a{font-size:14px; font-weight:bold; color:#D09D5E; line-height:24px;}
+		   .dy_title a:hover{text-decoration:underline;}
+		   .dy_more a{color:#0D9AC7; text-decoration:underline;}
+		   .dy_more a:hover{color:#FA8600;}
+		   
+/*inner*/
+ #innerwrap{background:url(/content/1/image/daoyouimages/dytback03.jpg) left top no-repeat;}
+ #inner_down{margin-top:0; height:auto;}
+ #th2{color:#2BC7C6; font-size:14px;}
+ #th3{color:#DB9A58; font-size:14px;}
+ 
+ .morepic{margin-left:90px; border-top:1px solid #9E9C9D; padding-top:10px;}
+  .morepic span{color:#2BC7C6; font-size:14px; font-weight:bold; line-height:20px;}
+  
+  /*0908*/
+  .namea a{border:0;}
+  .namea a:hover{border:0; color:#FC0;}

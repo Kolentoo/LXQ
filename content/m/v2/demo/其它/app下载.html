@@ -1,0 +1,132 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>悠哉旅游客户端下载</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon-precomposed" href="//r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-startup-image" href="//r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link href="//r.uzaicdn.com/content/m/v2/styles/core.css" rel="stylesheet" />
+    <script type="text/javascript" src="//r02.uzaicdn.com/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script type="text/javascript">
+        var _scale = true;
+        seajs.use(['//r.uzaicdn.com/content/m/v2/scripts/core'], function (core) {
+            var u = location.href.toLowerCase();
+            if (u.indexOf('weixin') > -1 || _uzm.mobile.isWeiXin) {
+
+                $('#download-list a').on('click', function () {
+                    $('.downloadtip').show();
+                    $('.downloadtip-mask').show();
+                })
+            }
+            $('.downloadtip-mask').on('click', function () {
+                $('.downloadtip').hide();
+                $('.downloadtip-mask').hide();
+            });
+
+            $(function () {
+                if (_uzm.mobile.isIphone) {
+                    $('#download-list').html('<a href="https://itunes.apple.com/cn/app/you-zai-lu-you/id519653239?mt=8" class="btn-download white f20" onclick="ga(' + "send" + ', ' + "event" + ', ' + "app_m" + ', ' + "click" + ', ' + "iphone_download" + ')">App 下载</a>');
+                }
+                else if (_uzm.mobile.isAndroid) {
+                    $('#download-list').html('<a href="http://mobile.uzai.com:8080/%E6%82%A0%E5%93%89%E6%97%85%E6%B8%B8.apk" download="悠哉客户端.apk" class="btn-download white f20" onclick="ga(' + "send" + ', ' + "event" + ', ' + "app_m" + ', ' + "click" + ', ' + "android_download" + ')">App 下载</a>');
+                }
+                else if (_uzm.mobile.isIpad) {
+                    $('#download-list').html('<a href="https://itunes.apple.com/cn/app/you-zai-lu-you-hd/id588951281?mt=8" class="btn-download white f20" onclick="ga(' + "send" + ', ' + "event" + ', ' + "app_m" + ', ' + "click" + ', ' + "ipad_download" + ')">App 下载</a>');
+                }
+            });
+
+        });
+
+    </script>
+    <style type="text/css">
+        html { background: #b8dbef url(//r.uzaicdn.com/content/m/v2/images/other/bg1.jpg) no-repeat center 0;background-size:cover; }
+        body { background: none; }
+        .app-download-box .adb-hd { padding-top: 12%; }
+        .app-download-box .adb-hd img { width: 23.437%; }
+        .app-download-box .adb-bd { padding-top: 12%; }
+        .app-download-box .feature-items li { margin-top: 5%; }
+        .app-download-box .feature-items .icon-wrap { border-radius: 3px; display: inline-block; width: 27px; margin-right: 3.125%; }
+        .app-download-box .feature-items li:nth-child(1) .icon-wrap { background: #6fd2d9; padding: 3px 0; }
+        .app-download-box .feature-items li:nth-child(1) .icon-item { background: url(//r.uzaicdn.com/content/m/v2/images/other/i2.png) no-repeat; -webkit-background-size: 12px; background-size: 12px; display: inline-block; height: 20px; width: 12px; }
+        .app-download-box .feature-items li:nth-child(2) .icon-wrap { background: #f44f6b; padding: 3px 0; }
+        .app-download-box .feature-items li:nth-child(2) .icon-item { background: url(//r.uzaicdn.com/content/m/v2/images/other/i3.png) no-repeat; -webkit-background-size: 20px; background-size: 20px; display: inline-block; height: 20px; width: 20px; }
+        .app-download-box .feature-items li:nth-child(3) .icon-wrap { background: #ffc600; padding: 5px 0; }
+        .app-download-box .feature-items li:nth-child(3) .icon-item { background: url(//r.uzaicdn.com/content/m/v2/images/other/i4.png) no-repeat; -webkit-background-size: 17px; background-size: 17px; display: inline-block; height: 16px; width: 17px; }
+        .app-download-box .adb-ft { margin-top: 10%;margin-bottom:15px; }
+        .app-download-box .btn-download { background: #f44f6b; border-radius: 10px; display: inline-block; height: 60px; line-height: 60px; width: 80%; }
+        .downloadtip-mask { height: 100%; width: 100%; background: rgba(0,0,0,.5); z-index: 999; min-height: 320px; position: absolute; left: 0; top: 0; }
+        .downloadtip::after { position: absolute; right: 20px; top: -10px; content: " "; width: 0; height: 0; border: 10px solid #fff; border-left: 13px solid transparent; border-top: 0; border-right: 13px solid transparent; }
+    </style>
+</head>
+<body>
+    <div class="w fn-bs">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"></div>
+            <div class="d-m">
+                <div class="tit">APP手机下载页</div>
+            </div>
+            <div class="d-r">
+            </div>
+        </header>
+        <section class="app-download-box tc">
+            <div class="adb-hd"><img src="//r.uzaicdn.com/content/m/v2/images/other/i1.png" alt=""></div>
+            <div class="adb-bd white">
+                <p class="f28 pb10">在这里，你能找到你想要的优质出境产品</p>
+                <ul class="feature-items f28">
+                    <li><span class="icon-wrap vm"><i class="icon-item"></i></span><em class="vm">手机预订 优惠多多</em></li>
+                    <li><span class="icon-wrap vm"><i class="icon-item"></i></span><em class="vm">一键下单 实时追踪</em></li>
+                    <li><span class="icon-wrap vm"><i class="icon-item"></i></span><em class="vm">随时收藏 随时浏览</em></li>
+                </ul>
+            </div>
+            <div class="adb-ft f28" id="download-list"><a href="http://mobile.uzai.com:8080/%E6%82%A0%E5%93%89%E6%97%85%E6%B8%B8.apk" download="悠哉客户端.apk" class="btn-download white f28 b" onclick="ga('send', 'event', 'app_m', 'click', 'android_download')">App 下载</a></div>
+            <!-- <div class="adb-ft"><a href="#" class="btn-download white f20">官方下载</a></div> -->
+            <p class="pl10 pr10 tip f24">
+                微信用户若不能安装，请点右上角的按钮，选择<b>“在浏览器中打开”</b>即可正常跳转
+            </p>
+            <div class="downloadtip-mask hide"></div>
+            <div class="downloadtip hide">
+                点击下载没反应？<br />
+                请点右上角的按钮，选择“<b style="color: #f00;">在浏览器中打开</b>”，即可免费下载APP！
+            </div>
+        </section>
+    </div>
+
+    <!------------------------GA-------------------->
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-27817301-10', 'uzai.com');
+        ga('send', 'pageview');
+    </script>
+    <!------------------------BaiDu-------------------->
+    <!------------------------国双-------------------->
+    <!-- Gridsum tracking code begin. -->
+    <script type='text/javascript'>
+        var _gsq = _gsq || [];
+        (function () {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = (location.protocol == 'https:' ? 'https://ssl.' : 'http://static.') + 'gridsumdissector.com/js/Clients/GWD-002800-E6A64F/gs.js';
+            var firstScript = document.getElementsByTagName('script')[0];
+            firstScript.parentNode.insertBefore(s, firstScript);
+        })();
+    </script>
+
+
+    <img src="http://hm.baidu.com/hm.gif?si=ec2cbd968f53448c8f9796112a7d72a1&amp;et=0&amp;nv=0&amp;st=4&amp;lt=1453692356&amp;v=wap-1-0.1&amp;rnd=1042291237" width="0" height="0" />
+
+</body>
+</html>

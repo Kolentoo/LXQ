@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://m.uzai.com/discover/index.html# -->
+<html ng-app="myApp" class="ng-scope"><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+
+    <meta name="keywords" content="">
+    <meta name="description" content="众信悠哉旅行带您发现最新最潮旅游玩法，热门旅游线路，更多惊喜，尽在众信悠哉旅游网。
+">
+	<script type="text/javascript" src="../.././scripts/common/font.js"></script>
+    <title>发现-众信悠哉旅行手机站</title>
+	<style>
+	html{font-size:50px;}
+	div{
+
+		position:absolute;
+		left:50%;
+		top:0;
+		transform: translate(-50%,0%);
+		-webkit-transform: translate(-50%,0%);
+	}
+	p{
+		margin:0px;
+	}
+	span{
+		width:.5rem;
+		height:.8rem;
+		background:#ff0;
+		position:absolute;
+		bottom:-.4rem;
+		left:50%;
+		margin-left:-.25rem;
+	}
+	i{
+		overflow:hidden;
+		width:7.5rem;
+		border:1px solid #000;
+		height:0px;
+		border-bottom-left-radius:50% 0px;
+		border-bottom-right-radius:50% 0px;
+		display:block;
+		position:relative;
+		background:#fff;
+    transition: all .5s;
+	}
+	ul{
+		position:absolute;
+		bottom:0px;
+		left:0px;
+		margin:0px;
+		padding:0px;
+	}
+	</style>
+</head>
+<body>
+    <div id='box'>
+		<i>
+			<ul>
+				<p>111121111111</p>
+				<p>222222222222</p>
+				<p>333333333333</p>
+				<p>444444444444</p>
+				<p>555555555555</p>
+			</ul>
+		</i>
+		<span>
+
+		</span>
+	</div>
+	<p>11111111111111111111111</p>
+	<p>11111111111111111111111</p>
+  <p>11111111111111111111111</p>
+  <p>11111111111111111111111</p>
+  <p>11111111111111111111111</p>
+  <p>11111111111111111111111</p>
+	<p>11111111111111111111111</p>
+  <p>11111111111111111111111</p>
+  <p>11111111111111111111111</p>
+  <p>11111111111111111111111</p>
+  <p>11111111111111111111111</p>
+	<p>11111111111111111111111</p>
+  <p>11111111111111111111111</p>
+  <p>11111111111111111111111</p>
+  <p>11111111111111111111111</p>
+  <p>22222222222222222222222</p>
+
+
+	<script type="text/javascript" src="../../../libs/jquery-2.1.1.min.js"></script>
+	<script>
+	$(function(){
+		var box=document.getElementById('box');
+    var star=0;
+    var height=0;
+		document.addEventListener('touchstart',touch,false);
+
+		function touch(event){
+				if($('i').is(":animated"))return false;
+				var event = event || window.event;
+				star=event.touches[0].clientY;
+				height=$('div').height()
+				document.addEventListener('touchmove',touch_move,false);
+				document.addEventListener('touchend',touch_end,false);
+		}
+    function touch_move(event){
+      if(event.touches[0].clientY-star<0 && $('i').height()==0){
+        document.removeEventListener('touchmove',touch_move,false);
+        document.removeEventListener('touchend',touch_end,false);
+        return false;
+      }
+      if(document.body.scrollTop==0){
+        var event = event || window.event;
+        event.preventDefault();
+        var val=event.touches[0].clientY-star+height;
+
+        if(val>200){
+          val=200;
+            document.removeEventListener('touchmove',touch_move,false);
+            document.removeEventListener('touchend',touch_end,false);
+        }
+        $('i').css({
+          'height':val,
+          'border-bottom-left-radius':'50% '+val+'px',
+          'border-bottom-right-radius':'50% '+val+'px',
+        })
+      }
+    }
+    function touch_end(event){
+      document.removeEventListener('touchmove',touch_move,false);
+        $('i').css({
+          'height':'0px',
+          'border-bottom-left-radius':'50% 0px',
+          'border-bottom-right-radius':'50% 0px',
+        });
+      document.removeEventListener('touchend',touch_end,false);
+    }
+	})
+	</script>
+</body>
+</html>

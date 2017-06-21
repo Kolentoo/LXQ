@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+.qz-center{ padding-bottom:17px; text-align:left;}
+.qz-righttopp{ padding:10px 0 10px 15px; border-top:#c4cfd6 dashed 1px;}
+.qz-bn{ border:#dbdbdb solid 1px; padding:17px 40px; background:#f7f7f7; margin-bottom:20px;}
+.qzpage5-main{ border:solid #99CC01 1px; padding:18px 18px 45px 18px; background:#FFFFFF; line-height:18px;}
+.qzpage4-center{border:#dbeac5 solid 1px;}
+.qzpage4-top{ background:url(../image/qz-images/qzpage4-11_03.gif) repeat top; height:76px;  padding-left:207px; padding-top:19px;}
+.qzpage4-img{ float:left;}
+.qzpage4-text{ float:left; padding:5px 0 0 25px;}
+.qzpage4-p{ font-size:16px; font-weight:bold; color:#71af17; padding-bottom:10px;}
+.qzpage4-pp{ font-size:14px; color:#525252;}
+.qzpage4-jj{ padding-left:84px;}
+.qzpage4-qs{ color:#ff9900; font-weight:bold;}
+.qzpage4-main{ padding:38px 0 5px 103px;}
+.qzpage4-main1{ padding:25px 0 5px 103px;}
+.qzpage4-ion{ background:url(../image/qz-images/qzpage4-1_07.gif) no-repeat center left; padding-left:20px; font-size:14px; font-weight:bold; margin-bottom:20px;}
+.qzpage4-bx{ font-size:12px; font-weight:normal; color:#ff6600;}
+.qzleft-cor{ width:108px; float:left;}
+.qzpage4-tp{ text-align:right; }
+.qzpage4-pp{ font-size:14px; color:#525252;}
+.qzpage4-pp td{ padding-bottom:25px;}
+.qz-width{ width:60px;}
+.qzpage4-qt{ padding-left:40px;}
+.qzpage4-ww{ font-size:16px; color:#ff9900; font-weight:bold;}
+.qzpage4-boner{ border-bottom:dashed #dbdbdb 1px; border-top:#cbdab3 solid 1px;}
+.qzpage4-ms{background:url(../image/qz-images/qzpage4-4_19.gif) no-repeat center left; padding-left:10px; font-weight:bold; color:#ff9900;}
+.qzpage4-bng{ padding-left:40px; margin-top:10px;}
+.qzpage4-tj{ padding:40px 0 20px 363px;}
+.qzpage4-dbh{ padding:30px 0 20px 150px;}
+.qzpage4-bgy{ background:url(../image/qz-images/qzpage4-8_34.gif) no-repeat center left; padding-left:32px; padding-right:30px;}
+.qzpage4-bgy1{ background:url(../image/qz-images/qzpage4-9_37.gif) no-repeat center left; padding-left:32px; padding-right:30px;}
+.qzpage4-bgy1{ background:url(../image/qz-images/qzpage4-10_39.gif) no-repeat center left; padding-left:32px; }
+.qzpage4-tsz{ font-size:14px; color:#ff6a23; font-weight:bold;}
+.qzpage4-dbh li{ float:left; list-style-type:none; }

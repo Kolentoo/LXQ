@@ -1,0 +1,709 @@
+.index .top{
+    width: 100%;
+    height: 3.4rem;
+    position: relative;
+}
+
+.index .top .search .address{
+    color: #000;
+    font-size: 0.28rem;
+    padding-left: 0.3rem;
+}
+.index .top .search .address a{
+    color: #000;
+}
+.index .top .search{
+    padding-top: 0.44rem;
+    position: relative;
+    z-index: 2;
+}
+.index .top .search i{
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/index_ico.png") no-repeat;
+    background-size: 400px 400px;
+}
+.index .top .search .address i{
+    background-position: 3px -0px;
+}
+.index .top .search .user i{
+    background-position: -21px -0px;
+}
+.index .top .search .address,.index .top .search .user{
+    margin-top: 0.14rem;
+}
+.index .top .search .user{
+    width: 0.7rem;
+    text-align: right;
+    padding-right: 0.3rem;
+}
+.index .top .search .son-box{
+    margin-left: 0.2rem;
+    background: #F0F0F0;
+    height: 0.7rem;
+    border-radius: 0.32rem;
+    -webkit-border-radius: 0.32rem;
+}
+.index .top .search span{
+    width: 100%;
+    height: 100%;
+    font-size: 0.3rem;
+    line-height: 0.75rem;
+    text-indent: 0.20rem;
+    display: inline-block;
+    color: #999;
+}
+.index .country-ls{
+    margin: 0 15px;
+    padding-top: 0.2rem;
+    overflow: hidden;
+}
+.index .country-ls li{
+    height: 0.96rem;
+    padding-bottom: 0.2rem;
+}
+.index .country-ls li a:last-child{
+    margin-right: 0;
+}
+.index .country-ls em{
+    float: right;
+    height: 0.96rem;
+    line-height: 0.96rem;
+    font-size: 0.26rem;
+    color: #333333;
+    width: 1.04rem;
+    text-align: center;
+    display: inline-block;
+}
+.index .country-ls .first{
+    border: 1px solid #ff91bb;
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/ico_01.png") no-repeat center left #ffe3ee;
+    background-size: auto 100%;
+}
+.index .country-ls .second{
+    border: 1px solid #ffbe3b;
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/ico_02.png") no-repeat center left #ffefcf;
+    background-size: auto 100%;
+}
+.index .country-ls .third{
+    border: 1px solid #61cef2;
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/ico_03.png") no-repeat center left #daf6ff;
+    background-size: auto 100%;
+}
+.index .country-ls .fourth{
+    border: 1px solid #4ce6c4;
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/ico_04.png") no-repeat center left #cdfff4;
+    background-size: auto 100%;
+}
+.index .country-ls .fifth{
+    border: 1px solid #ff9673;
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/ico_05.png") no-repeat center left #ffe6de;
+    background-size: auto 100%;
+}
+.index .country-ls .sixth{
+    border: 1px solid #a89aff;
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/ico_06.png") no-repeat center left #e3dfff;
+    background-size: auto 100%;
+}
+.index .country-ls .seventh{
+    border: 1px solid #afc547;
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/ico_07.png") no-repeat center left #f9ffdc;
+    background-size: auto 100%;
+}
+.index .country-ls .eighth{
+    border: 1px solid #ff90a1;
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/ico_08.png") no-repeat center left #ffe9ec;
+    background-size: auto 100%;
+}
+.index .country-ls .ninth{
+    border: 1px solid #8dc6ef;
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/ico_09.png") no-repeat center left #ddf1ff;
+    background-size: auto 100%;
+}
+
+.index .country-ls li a{
+    width: 30%;
+    height: 0.96rem;
+    display: inline-block;
+    float: left;
+    margin-right: 0.24rem;
+    overflow: hidden;
+    border-radius: 0.1rem;
+    -webkit-border-radius: 0.1rem;
+    box-sizing: border-box;
+}
+.index .main .banner{
+    margin-top: 0.2rem;
+}
+.index .main .banner a{
+    display: block;
+    width: 100%;
+    height: 1.5rem;
+}
+.index .main .banner .border-right:after{
+    top: 10px;
+    bottom: 10px;
+}
+.index .main .banner .link-01{
+    background:url("https://r03.uzaicdn.com/content/m/v2/images/index_new/link-img-01.jpg") no-repeat bottom;
+    background-size: 100% 100%;
+    height: 3rem;
+}
+.index .main .banner .link-02{
+    background:url("https://r03.uzaicdn.com/content/m/v2/images/index_new/link-img-02.jpg") no-repeat bottom;
+    background-size: 100% 100%;
+}
+.index .main .banner .link-03{
+    background:url("https://r03.uzaicdn.com/content/m/v2/images/index_new/link-img-03.jpg") no-repeat bottom;
+    background-size: 100% 100%;
+}
+.index .main .banner .link-04{
+    background:url("https://r03.uzaicdn.com/content/m/v2/images/index_new/link-img-04.jpg") no-repeat bottom;
+    background-size: 100% 100%;
+}
+.index .main .banner .link-05{
+    background:url("https://r03.uzaicdn.com/content/m/v2/images/index_new/link-img-05.jpg") no-repeat bottom;
+    background-size: 100% 100%;
+}
+.index .link-se{
+    height: 3.5rem;
+    background: #ffffff;
+    padding: 0 0.3rem;
+    margin-top: 0.2rem;
+}
+.index .link-se.two{
+    height: 1.74rem;
+}
+.index .link-se .sale p{
+    font-size: 0.36rem;
+    padding: 0.2rem 0 0.15rem;
+    color: #ff8400;
+}
+.index .link-se .sale a{
+    width: 2.9rem;
+    height: 2.38rem;
+    display: block;
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/buy_bg.png") no-repeat;
+    background-size: 100% auto;
+    margin-left: 0.2rem;
+    box-sizing: border-box;
+    outline: 0;
+}
+.index .link-se .serson,.index .link-se .go{
+    font-size: 0.32rem;
+    display: block;
+    margin-left: 15px;
+    height: 1.74rem;
+    line-height: 1.75rem;
+    text-align: left;
+    position: relative;
+    color: #ef5347;
+}
+.index .link-se .serson i,.index .link-se .go i{
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.14rem;
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/said_go.png") no-repeat left center;
+    background-size: 1.25rem auto;
+    vertical-align: middle;
+    margin-right: 0.2rem;
+}
+.index .link-se .go{
+    color: #ffad03;
+}
+.index .link-se .go i{
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/go_bg.png") no-repeat left center;
+    background-size: 1.25rem auto;
+}
+.index .link-se .serson:after{
+    left: -10px;
+    right: -10px;
+}
+.index .link-se.two .border-right:after{
+    left: auto;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+}
+.index .link-se.two .serson,.index .link-se.two .go{
+    margin-left: 0;
+}
+.index .link-se.two .serson:after{
+    top: 10px;
+    bottom: 10px;
+}
+.recommend-ls{
+    background: #f0f0f0;
+    padding-top: 0.2rem;
+}
+.recommend-ls nav{
+    background: #FFFFFF;
+    height: 0.88rem;
+    border-bottom: 1px solid #dddddd;
+}
+.recommend-ls.on nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
+.recommend-ls.on{
+    padding-top: 0.88rem;
+}
+.recommend-ls nav a{
+    /*width: 1.6rem;*/
+    height: 0.86rem;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    line-height: 0.84rem;
+    font-size: 0.36rem;
+    color: #333333;
+}
+.recommend-ls nav a.on{
+    color: #f93868;
+    border-bottom: 0.04rem solid #f93868;
+}
+.recommend-ls .part{
+    margin-bottom: 10px;
+    background: #FFFFFF;
+}
+.recommend-ls .part .bot{
+    margin: 10px 15px 0;
+    padding-bottom: 10px;
+    font-size: 0.32rem;
+    color: #333333;
+}
+.recommend-ls .sale-ls .part .bot{
+    margin: 0;
+    font-size: 0.24rem;
+}
+.recommend-ls .part .bot p{
+    padding-bottom: 0.04rem;
+}
+.recommend-ls .part .bot .m{
+    color: #f93867;
+    font-size: 0.4rem;
+}
+.recommend-ls .part .bot .m i{
+    font-size: 0.28rem;
+}
+.recommend-ls .part .bot .c{
+    font-size: 0.28rem;
+    color: #f93867;
+    float: right;
+    display: inline-block;
+    padding: 0.02rem 0.12rem;
+}
+.recommend-ls .part .bot .c:after{
+    border-color: #f93867;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+.recommend-ls .part .img{
+    height: 4.1rem;
+    display: block;
+    width: 100%;
+}
+.recommend-ls .part .img img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.index .look-more{
+    font-size: 0.36rem;
+    width: 2.7rem;
+    line-height: 0.36rem;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0.24rem 0;
+    background: #f93867;
+    display: block;
+    border-radius: 0.15rem;
+    -webkit-border-radius: 0.15rem;
+    margin: 0.6rem auto 0;
+}
+.index footer{
+    color: #666666;
+    font-size: 0.28rem;
+    height: 0.82rem;
+    line-height: 0.82rem;
+    text-align: center;
+    background: #ffffff;
+    display: none;
+}
+.link-ls .main{
+    padding-top: 0.88rem;
+}
+.link-ls h2{
+    font-size: 0.26rem;
+    color: #666;
+    padding-left: 15px;
+    line-height: 0.7rem;
+}
+.link-ls .box{
+    background: #FFFFFF;
+    padding: 10px 15px;
+}
+.link-ls .box a{
+    display: inline-block;
+    padding: 0 .1rem;
+    margin: 0 .2rem 0.1rem 0;
+    font-size: 0.28rem;
+    line-height: 0.7rem;
+    color: #666666;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+body,html{
+    background: #F0F0F0;
+}
+.index .top .banner{
+    width: 100%;
+    height: 3.4rem;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.index .top .banner img{
+    width: 100%;
+    height: 3.4rem;
+    vertical-align: middle;
+}
+.country-ls-s{
+    text-align: center;
+    color: #666666;
+    font-size: 0.26rem;
+    padding-top: 0.2rem;
+    background: #ffffff;
+}
+.country-ls-s li{
+    width: 100%;
+}
+.country-ls-s li a{
+    width: 20%;
+    display: block;
+    text-align: center;
+    color: #666666;
+}
+.country-ls-s em{
+    line-height: 0.56rem;
+}
+.country-ls-s i{
+    width: 0.98rem;
+    height: 0.98rem;
+    display: block;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+.country-ls-s .first i{
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/ouzhou.png") no-repeat;
+    background-size: 100% auto;
+}
+.country-ls-s .second i{
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/rihan.png") no-repeat;
+    background-size: 100% auto;
+}
+.country-ls-s .third i{
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/dongnanya.png") no-repeat;
+    background-size: 100% auto;
+}
+.country-ls-s .fourth i{
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/meizhou.png") no-repeat;
+    background-size: 100% auto;
+}
+.country-ls-s .fifth i{
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/aozhou.png") no-repeat;
+    background-size: 100% auto;
+}
+.country-ls-s .sixth i{
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/zhongdongfei.png") no-repeat;
+    background-size: 100% auto;
+}
+.country-ls-s .seventh i{
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/meilihaidao.png") no-repeat;
+    background-size: 100% auto;
+}
+.country-ls-s .eighth i{
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/youlunhangxian.png") no-repeat;
+    background-size: 100% auto;
+}
+.country-ls-s .ninth i{
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/gangaotai.png") no-repeat;
+    background-size: 100% auto;
+}
+.country-ls-s .tenth i{
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/guonei.png") no-repeat;
+    background-size: 100% auto;
+}
+.country-ls-s li:first-child{
+    margin-bottom: 0.3rem;
+}
+.bottom-login{
+    margin: 0.2rem 0 0.3rem;
+    background: #ffffff;
+    padding: 0.3rem 0;
+    text-align: center;
+    font-size: 0.32rem;
+}
+.bottom-login a{
+    color: #333333;
+    display: block;
+}
+.bottom-login i{
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/index_ico.png") no-repeat;
+    background-size: 400px 400px;
+}
+.bottom-login .login-btn i{
+    background-position: -53px -1px;
+}
+.bottom-login .down-btn i{
+    background-position: -71px -1px;
+}
+.bottom-login .phone-btn i{
+    background-position: -90px -1px;
+}
+.bottom-login .login-btn,.bottom-login .down-btn{
+    border-right: 1px solid #d5d5d5;
+}
+.uzai-down-pop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+.uzai-down-pop .con{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -3rem 0 0 -2.3rem ;
+    width: 3.06rem;
+    height: 2.54rem;
+    padding: 3.46rem 0.77rem 0;
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/uzai_pop.png") no-repeat;
+    background-size: 100% auto;
+}
+.uzai-down-pop .con a{
+    height: 0.6rem;
+    width: 3.06rem;
+    font-size: 0.26rem;
+    line-height: 0.58rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 0.2rem;
+    color: #7b6c5a;
+    font-size: 0;
+}
+.uzai-down-pop .con .down-btn{
+    height: 0.7rem;
+    font-size: 0.3rem;
+    line-height: 0.68rem;
+    color: #ffffff;
+    font-size: 0;
+}
+.uzai-down-pop a.top-btn{
+    width: 0.64rem;
+    height: 0.64rem;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.pop-search-mod {
+    background: #f6f6f6;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: none;
+    -moz-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    transition: all ease .5s;
+}
+.pop-search-mod .top-search {
+    padding: 0.2rem 0 0.2rem;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.pop-search-mod .top-search .btn-cancel {
+    display: inline-block;
+    height: 0.72rem;
+    line-height: 0.72rem;
+    width: 1.0rem;
+}
+.pop-search-mod .top-search .search-bar {
+    background: #fff;
+    border: 1px solid #e1e5dd;
+    border-radius: 0.1rem;
+    height: 0.7rem;
+    margin: 0 1.1rem 0 0.2rem;
+    overflow: hidden;
+    position: relative;
+}
+.pop-search-mod .top-search .search-bar .icon-search {
+    background: url(https://r03.uzaicdn.com/content/m/v2/images/index_new/i1.png) no-repeat;
+    -webkit-background-size: 0.28rem;
+    background-size: 0.28rem;
+    display: inline-block;
+    height: 0.28rem;
+    width: 0.28rem;
+    margin: 0.2rem 0 0 0.2rem;
+    vertical-align: middle;
+}
+.pop-search-mod .top-search .search-bar .bar-main {
+    margin-left: 34px;
+    margin-right: 10px;
+    padding-top: 8px;
+}
+.pop-search-mod .top-search .search-bar .bar-main input {
+    width: 100%;
+    border: 0;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.30rem;
+    outline: 0;
+    padding: 0;
+}
+.pop-search-mod .hot-search .mod-hd {
+    border-bottom: 1px solid #fb84a2;
+    padding: 0.2rem;
+}
+.pop-search-mod .hot-search .mod-hd .icon-item {
+    background: url('https://r03.uzaicdn.com/content/m/v2/images/index_new/i3.png') no-repeat;
+    -webkit-background-size: 0.36rem;
+    background-size: 0.36rem;
+    display: inline-block;
+    height: 0.34rem;
+    width: 0.36rem;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.pop-search-mod .hot-search .hot-items {
+    padding: 0 0.2rem 0.2rem;
+}
+.pop-search-mod .hot-search .hot-items a{
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.3rem;
+    display: inline-block;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    margin: 10px 7px 0;
+    padding: 0 0.3rem;
+    font-size: 0.28rem;
+    white-space: nowrap;
+    color: #333333;
+}
+.pop-search-mod .keywords-list .list-item{
+    line-height: 0.75rem;
+    height: 0.7rem;
+    font-size: 0.28rem;
+    width: 100%;
+    display: block;
+    background: #fff;
+}
+.pop-search-mod .keywords-list a{
+    color: #666666;
+    padding-left: 0.2rem;
+    display: block;
+}
+.pop-search-mod .keywords-list .item-close{
+    float: right;
+    width: 0.64rem;
+    height: 0.7rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("https://r03.uzaicdn.com/content/m/v2/images/index_new/del_ico.png") no-repeat center;
+    background-size: 0.32rem auto;
+}
+.index .top .banner.swiper-container-horizontal>.swiper-pagination-bullets{
+    position: absolute;
+    text-align: center;
+    min-width: 7.5rem;
+    bottom: 0.1rem;
+    left: 0;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    z-index: 10;
+    display: none;
+}
+.index .top .banner .swiper-pagination-bullet-active{
+    background: #f93867;
+    opacity: 1;
+}
+.index .top .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 0.05rem;
+}
+.uzai-down-pop{
+    display: none;
+}
+.content.index{
+    padding-bottom: 1.2rem;
+}
+
+/**美恰客服*/
+.j-uzai-fixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.4); }
+
+.j-all-meiqia {
+    width: 100%;
+    background: #ececec;
+    position: fixed;
+    bottom: 0;
+    z-index: 101;
+    transform: translate3d(0, 4rem, 0);
+    -webkit-transform: translate3d(0, 4rem, 0);
+    transition: transform .5s ease;
+    -webkit-transition: -webkit-transform .5s ease; }
+.j-all-meiqia a {
+    display: block;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    color: #000;
+    font-size: .36rem;
+    border-bottom: 1px solid #ddd;
+    background: #fff; }
+.j-all-meiqia .j-uzai-meiqia {
+    -webkit-box-shadow: 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 1px #ccc; }
+.j-all-meiqia .cancle {
+    border-bottom: none;
+    margin: .2rem auto; }
+
+div.j-uzai-active {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0); }
+
+.zHide {
+    display: none; }

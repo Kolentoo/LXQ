@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html ng-app="uzaiApp" ng-controller="productInfo">
+
+<head lang="en">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="keywords" content="私人定制旅游,定制旅游,高端旅游,定制旅行
+" />
+    <meta name="description" content="悠哉旅游网提供高端私人定制旅游，专业定制旅游顾问按您的需求，为您1对1定制旅游方案，休闲游/度假游/购物游定制旅游高端旅行者的首要选择，享受专属你的私人旅行。" />
+    <link rel="Shortcut Icon" href="//r.uzaicdn.com/favicon-sj.ico" type="image/x-icon" />
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/com/font.js"></script>
+    <link href="http://r03.uzaicdn.com/content/m/v2/styles/_src/custom/base.css" rel="stylesheet">
+    <link href="http://r03.uzaicdn.com/content/m/v2/styles/_src/custom/productdetail.css" rel="stylesheet">
+    <title >优定制_悠哉优定制旅游-悠哉旅游网</title>
+
+</head>
+
+<body>
+    <div class="content" >
+        <!-- 头部 -->
+        <header class="bg-transparent white-topbar border-bot" >
+            <a target="_self" href="" class="fl top-back"><i class="left-ico black-ico"></i></a>
+            <a target="_self" class="fr"></a>
+            <div class="title"><h1></h1></div>
+        </header>
+        <!-- 内容 -->
+        <div class="main">
+            <div class="load-dialog">
+            </div>
+            <!-- list begin -->
+            <div class="inside custiom-detail" id="custiom-detail">
+                <div id="scroller">
+                    <!-- 头图 Begin -->
+                    <section class="detail-images">
+                        <img class="detail-product-images ng-cloak" ng-src="{{ values.ProductImages.ImgPath }}"  />
+                        <span class="detail-images-bottom bg-gray"></span>
+                        <a href="http://mdingzhi.uzai.com/" class="detail-btn-back"></a>
+                        <a href="http://mdingzhi.uzai.com/" class="detail-btn-back-big"></a>
+                        <span ng-show="isApp" ng-click="share()" class="detail-btn-share"></span>
+                        <span ng-show="isApp" ng-click="share()" class="detail-btn-share-big"></span>
+                    </section>
+                    <!-- 头图 End -->
+                    <!-- 出发城市  Begin -->
+                    <section class="departureCity">
+                        <div class="departureCity-tag"></div>
+                        <h2 class="departureCity-h2 bg-gray ng-cloak" ng-bind="values.CityName + '出发' " >出发城市</h2>
+                    </section>
+                    <!-- 出发城市  End -->
+                    <!--  产品标题 Begin -->
+                    <section class="section-common bg-gray">
+                        <h1 class="productTitle ng-cloak" ng-bind="values.ProductName"></h1>
+                    </section>
+                    <!--  产品标题 End -->
+                    <!-- 产品详情 Begin -->
+                    <section class="section-common productIntroduction bg-gray" ng-bind="values.ProductIntroduction">
+                    </section>
+                    <!-- 产品详情 End -->
+                    <!-- 日期行程 Begin  -->
+                    <section class="section-common bg-gray">
+                        <div class="schedule-title">行程安排</div>
+                        <div class="schedule-contents ng-cloak" ng-repeat="days in schedule" ng-class="{'margin-top-45':$index > 0,'schedule-contents-hasBanner ':days.ProductJouneryImages.length>0}" on-finish-render>
+                            <div class="schedule-date"><span class="schedule-date-icon"></span><span class="schedule-date-txt">第{{ days.Days }}天</span></div>
+                            <div ng-show="days.ProductJouneryImages.length > 0" class="schedule-contents-banner swiper-container swiper-wrapper-{{ days.Days }}">
+                                <div banner="{{ days.Days }}" class="swiper-wrapper">
+                                    <div class="swiper-slide" ng-repeat="banner in days.ProductJouneryImages">
+                                        <img data-src="{{ banner.ImgPath }}" class="swiper-lazy ng-cloak" data-alt="{{ banner.Title }}" />
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination swiper-pagination-{{ days.Days }}"></div>
+                            </div>
+
+
+                            <div class="schedule-departure-to-destination bg-white">
+                                <span ng-repeat="ProductTravelTypes in days.ProductTravelTypes">{{ ProductTravelTypes.TreeName }}<em class="schedule-d-t-d-icon-{{ ProductTravelTypes.Type }}" ng-show="!$last"></em></span>
+                                <div class="schedule-departure-margin-border"></div>
+                            </div>
+                            <div class="schedule-contents-detail bg-gray">
+                                <div class="schedule-meal">
+                                    <span class="schedule-meal-icon"></span>
+                                    <span class="schedule-meal-breakfast">早餐： <em class="schedule-meal-em" ng-bind="days.RestaurantInfo.Breakfast"></em></span>
+                                    <span class="schedule-meal-lunch">午餐： <em class="schedule-meal-em" ng-bind="days.RestaurantInfo.HaveLunch"></em></span>
+                                    <span class="schedule-meal-dinner">晚餐： <em class="schedule-meal-em" ng-bind="days.RestaurantInfo.Dinner"></em></span>
+                                </div>
+                                <div class="schedule-hotel">
+                                    <span class="schedule-hotel-icon"></span>
+                                    <span class="schedule-hotel-name">酒店： <em class="schedule-meal-em" ng-bind="days.HotelList"></em></span>
+                                    <!--<span class="schedule-hotel-name" ng-bind="days.HotelList"></span>-->
+                                </div>
+                                <div class="schedule-content-html" ng-bind-html="days.Content | trustHtml">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- 日期行程 End -->
+                    <section>
+                        <!-- 费用说明 Begin -->
+                        <div class="expenseInvoice bg-white"  ng-show="values.BaoHan != ''">
+                            <span class="expenseInvoice-icon"></span> 费用说明
+                            <span class="rightmore"></span>
+                        </div>
+                        <!-- 费用说明 End -->
+                        <!-- 预订需知 Begin -->
+                        <div class="attention bg-white" ng-show="values.ImportAnt != ''">
+                            <span class="attention-icon"></span> 预订须知
+                            <span class="rightmore"></span>
+                        </div>
+                        <!-- 预订需知 End -->
+                        <!-- 温馨提示 Begin -->
+                        <div class="tips bg-white" ng-show="values.WarmInfo != ''">
+                            <span class="tips-icon"></span> 温馨提示
+                            <span class="rightmore"></span>
+                        </div>
+                        <!-- 温馨提示 End -->
+                        <!-- 签证 Begin -->
+                        <div class="visa bg-white">
+                            <span class="visa-icon"></span> 签证
+                            <span class="rightmore"></span>
+                        </div>
+                        <!-- 签证 End -->
+                    </section>
+
+                </div>
+            </div>
+            <!-- list End -->
+
+            <span class="gotoTop"></span>
+            <footer class="white-footer bg-white">
+                <a href="#" id="Telephone" class="callcenter">联系客服</a>
+                <a href="#" class="confirm">为我定制</a>
+            </footer>
+
+            <section class="childrenPages" id="expenseInvoice-content" >
+                <div class="childrenPages-content" >
+                    <h5 class="childrenPages-content-title">费用包含:</h5>
+                    <div ng-bind-html="values.BaoHan | trustHtml"></div>
+                    <h5 class="childrenPages-content-title">费用不含项:</h5>
+                    <div ng-bind-html="values.SelfPay | trustHtml"></div>
+                </div>
+            </section>
+            <section class="childrenPages" id="attention-content" >
+                <div class="childrenPages-content" ng-bind-html="values.ImportAnt | trustHtml">
+                </div>
+            </section>
+            <section class="childrenPages" id="tips-content" >
+                <div class="childrenPages-content" ng-bind-html="values.WarmInfo | trustHtml">
+                </div>
+            </section>
+            <section class="childrenPages" id="visa-content">
+                <div class="childrenPages-content" id="iframeOutside" >
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/common/angular.min.js"></script>
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/common/api.js"></script>
+    <script src="http://r03.uzaicdn.com/content/libs/jquery-2.1.1.min.js"></script>
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/custom/iscroll.js"></script>
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/com/swiper-3.3.1.min.js"></script>
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/custom/productdetail.js"></script>
+    <script src="http://api.map.baidu.com/api?v=1.4"></script>
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/common/pagestatistics.js"></script>
+</body>
+
+</html>

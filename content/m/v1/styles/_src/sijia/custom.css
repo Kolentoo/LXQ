@@ -1,0 +1,218 @@
+.main-wrap{ height: 727px; padding-top: 153px;}
+.box-fix{ display: inline-block; width: 100%; *width: auto; vertical-align: top;}
+
+/* side start */
+.side{ width: 335px;}
+
+.side-custom{ background: url(/content/v1/images/sijia/side-custom-bg.png) no-repeat; height: 506px;}
+.side-custom .custom-hd{ height: 59px; line-height: 59px; padding-left: 20px;}
+.side-custom .custom-bd{ height: 388px; padding-top: 20px;}
+.side-custom .custom-info .info-hd{ width: 85px; padding: 7px 10px 0;}
+.side-custom .custom-info .info-bd{ border-left: 1px solid #dab875; margin-left: 105px; padding-bottom: 7px;min-height:25px;}
+.side-custom .custom-info .valid{ *margin-left: 0; _margin-left: 105px;}
+.side-custom .custom-info .tag-item{ background: #dab875; border-radius: 5px; display: inline-block; height: 25px; line-height: 25px; margin: 7px 0 0 10px; padding: 0 8px; white-space: nowrap;}
+.side-custom .btn-submit{ border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; display: block; height: 39px; line-height: 39px;}
+.side-custom .btn-submit:hover{ color: #fff;}
+
+.contact-us{ color: #fff; margin-top: 40px;}
+.contact-us dt{ border-right: 1px solid #fff; line-height: 1.3; width: 20px; padding: 5px 15px;}
+.contact-us dd{ margin-left: 77px;}
+.contact-us dd p{ padding: 5px 0;}
+.contact-us a{ color: #fff;}
+.contact-us a:hover{ text-decoration: none;}
+.contact-us .icon-phone{ background: url(/content/v1/images/sijia/icon-phone.png) no-repeat; display: inline-block; height: 27px; width: 27px;}
+.contact-us .icon-email{ background: url(/content/v1/images/sijia/icon-email.png) no-repeat; display: inline-block; height: 18px; width: 27px;}
+/* side end */
+
+/* main-box start */
+.main-box{ margin-right: 335px;}
+
+.custom-mod{ background: url(/content/v1/images/sijia/custom-mod-bg.png) no-repeat;}
+.custom-mod .mod-inner{ padding-right: 30px;}
+.custom-mod .custom-hd{ height: 59px; line-height: 59px; padding-left: 30px;}
+.custom-mod .custom-hd .custom-step li{ float: left;}
+.custom-mod .custom-hd a{ display: inline-block; position: relative;}
+.custom-mod .custom-hd .on,
+.custom-mod .custom-hd a:hover{ color: #fefefe;}
+.custom-mod .custom-hd sub{ padding: 0 5px;}
+.custom-mod .custom-hd .arrow-bottom{ display: none; height: 9px; width: 16px; overflow: hidden; margin-left: -8px; position: absolute; left: 50%; bottom: -9px;}
+.custom-mod .custom-hd .arrow-bottom em{ color: #dab875; font-size: 16px; line-height: 1; position: absolute; left: 0; bottom: 0;}
+.custom-mod .custom-hd .on .arrow-bottom{ display: inline-block;}
+.custom-mod .custom-bd{ height: 412px; padding-top: 35px; position: relative;}
+.custom-mod .sub-hd .icon-triangle{ display: inline-block; height: 17px; width: 9px; overflow: hidden; position: relative;}
+.custom-mod .sub-hd .icon-triangle em{ color: #dab875; font-size: 16px; line-height: 1; position: absolute; right: 0; top: 0;}
+.custom-mod .icon-pick{ background: url(/content/v1/images/sijia/icon-pick.png) no-repeat; display: none; height: 27px; width: 28px; position: absolute; right: 0; _right: -1px; top: 0; z-index: 1;}
+.custom-mod .btn-bar .btn-next{ background: #dab875; border-radius: 5px; display: inline-block; height: 35px; line-height: 35px; width: 164px;border:none;font-family:'Microsoft YaHei';}
+.custom-mod .btn-bar .btn-next:hover{ background: #c9942b; color: #fff;}
+.custom-mod .custom-cont-box{ height: 345px;}
+.custom-cont-main{ width: 65%;}
+.custom-cont-side{ width: 35%;}
+
+/*** destination-box start ***/
+.destination-hd{ padding: 25px 10px 5px 80px;}
+
+.site-box li{ padding: 10px 0;}
+.site-box .site-box-hd{ display: inline-block; width: 150px;}
+.site-box .site-box-bd{ display: inline-block; text-align: left; position: relative; white-space: nowrap; *display: inline;}
+.site-box .site-box-bd .textbox{ background: none; *background: #e7eaec; border: 2px solid #dab875; border-radius: 5px; height: 35px; _height: 33px; line-height: 35px; width: 288px; padding: 0 5px; vertical-align: top;}
+.site-box .item-main{ margin-left: 154px;}
+.site-box .site-type .type-item{ border-radius: 5px; cursor: pointer; display: inline-block; padding: 2px 7px; white-space: nowrap;}
+.site-box .site-type .on,
+.site-box .site-type .type-item:hover{ background: #dab875;}
+.site-box .sj-custom-autocomp{ background: #fff; border: 2px solid #dab875; width: 298px; position: absolute; left: 0; top: 37px; z-index: 100;}
+.site-box .sj-custom-autocomp li{ cursor: pointer; height: 30px; line-height: 30px; padding: 0 10px;}
+.site-box .sj-custom-autocomp .on{ background: #dab875; color: #fff;}
+.site-box .sj-custom-autocomp .s0{ display: none;}
+
+.scenic-list{ height: 75px; padding: 10px 0;}
+.scenic-list .scenic-hd{ line-height: 75px; width: 60px; padding: 0 10px;}
+.scenic-list .scenic-bd{ height: 100%; margin: 0 0 0 80px;}
+.scenic-slides{ height: 100%;height:75px;width:600px;margin-left:15px;position:relative;}
+.scenic-slides .slides_container{ height:75px;width:600px;overflow:hidden;}
+.scenic-slides .btn-box{ background: #dab875; display: block; height: 75px; width: 13px; position: absolute;top:0;}
+.scenic-slides .btn-box:hover{ background: #c9942b;}
+.scenic-slides .btn-box i{ color: #f1eeea; display: block; height: 14px; width: 7px; margin: -7px 0 0 -3px; overflow: hidden; position: absolute; left: 50%; top: 50%;}
+.scenic-slides .btn-box em{ line-height: 1; position: absolute;}
+.scenic-slides .prev{ border-top-left-radius: 5px; border-bottom-left-radius: 5px;left:-15px;}
+.scenic-slides .prev em{ left: 0; top: 0;}
+.scenic-slides .next{ border-top-right-radius: 5px; border-bottom-right-radius: 5px;right:-15px;}
+.scenic-slides .next em{ right: -1px; top: 0;}
+.scenic-slides .item{height:75px;width:600px;overflow:hidden;}
+.scenic-slides .item li{ float: left; margin: 0 2px 0 2px;width:96px;}
+.scenic-slides .item a{ display: block; position: relative;}
+.scenic-slides .item img{ width: 100%;}
+.scenic-slides .hd-bar{ height: 20px; width: 100%; position: absolute; left: 0; bottom: 0;}
+.scenic-slides .hd-bar .mask{ background: #fff; height: 100%; width: 100%; opacity: .8; filter: alpha(opacity=80); position: absolute; left: 0; top: 0;}
+.scenic-slides .hd-wrap{ padding: 0 5px; position: relative;}
+.scenic-slides .item a:hover .hd-wrap{ color: #c93;}
+.scenic-slides .on .icon-pick{ display: inline-block;}
+/*** destination-box end ***/
+
+/*** date-box start ***/
+.date-box{ margin: 0 40px}
+.days-side .days-items{ padding-top: 40px;}
+.days-side .days-items li{ padding: 5px 0;}
+.days-side .days-items a{ background: #dab875; border-radius: 5px; display: block; height: 35px; line-height: 35px; width: 164px; overflow: hidden; position: relative;}
+.days-side .days-items a:hover{ background: #c9942b; color: #fff;}
+.days-side .days-items .icon-day-pick{ background: url(/content/v1/images/sijia/icon-day-pick.png) no-repeat; display: none; height: 27px; width: 28px; position: absolute; right: 0; top: 0; z-index: 1;}
+.days-side .days-items .on a{ background: #c49e4b; color: #fff;}
+.days-side .days-items .on .icon-day-pick{ display: inline-block;}
+/*** date-box end ***/
+
+/*** buddy-box start ***/
+.buddy-box{ margin: 0 40px}
+.buddy-cont{ padding: 20px 10px 0 0;}
+.buddy-items li{ float: left; width: 25%; *width: 24.9%;}
+.buddy-items a{ border: 2px solid transparent; _border-color: #e7eaec; display: block; margin: 10px 10px 0; padding: 6px 0; position: relative;}
+.buddy-items img{ border-radius: 50%; width: 60%;}
+.buddy-items .on a,
+.buddy-items a:hover{ border-color: #c9942b;}
+.buddy-items .on .icon-pick{ display: inline-block;}
+.buddy-side .num-items{ padding: 35px 0 0 10px;}
+.buddy-side .num-items li{ padding: 5px 0;}
+.buddy-side .textbox{ background: none; border: 2px solid #dab875; border-radius: 5px; height: 35px; line-height: 35px; width: 74px; margin: 0 10px; padding: 0 5px;}
+/*** buddy-box end ***/
+
+/*** hotel-box start ***/
+.hotel-box{ margin: 0 40px}
+.hotel-cont{ padding-top: 20px;}
+.hotel-items li{ display: inline-block; *display: inline; zoom: 1; width: 26%;}
+.hotel-items a{ border: 2px solid transparent; _border-color: #e7eaec; display: block; margin: 10px 10px 0; padding: 13px 0 10px; position: relative;}
+.hotel-items img{ border-radius: 5px; width: 78%;}
+.hotel-items .item-hd{ padding-top: 3px;}
+.hotel-items .on a,
+.hotel-items a:hover{ border-color: #c9942b;}
+.hotel-items .on .icon-pick{ display: inline-block;}
+/*** hotel-box end ***/
+
+/*** budget-box start ***/
+.budget-box{ margin: 0 40px}
+.budget-cont{ padding-top: 20px;}
+.budget-items{ margin: 0 50px;}
+.budget-items li{ display: inline-block; *display: inline; zoom: 1; width: 26%;}
+.budget-items a{ border: 2px solid transparent; _border-color: #e7eaec; display: block; margin: 10px 10px 0; padding: 13px 0 10px; position: relative;}
+.budget-items .currency-icon{ color: #c9942b; font-size: 52px; margin-left: -50px; position: absolute; left: 50%; top: 0; _top: 5px;}
+.budget-items .icon-calc{ background: url(/content/v1/images/sijia/icon-calc.png) no-repeat; display: inline-block; height: 49px; width: 35px;}
+.budget-items .item-hd{ padding-top: 10px;}
+.budget-items .on a,
+.budget-items a:hover{ border-color: #c9942b;}
+.budget-items .on .icon-pick{ display: inline-block;}
+/*** budget-box end ***/
+
+/*** contact-box start ***/
+.contact-box{ margin: 0 40px}
+.contact-cont{ padding-top: 50px;}
+.contact-cont .info-listing li{ padding: 13px 100px 13px 0;}
+.contact-cont .info-listing .info-hd{ display: inline-block; width: 100px;}
+.contact-cont .info-listing .textbox{ background: none; border: 2px solid #dab875; border-radius: 5px; height: 30px; line-height: 30px; width: 180px; padding: 0 5px;}
+/*** contact-box end ***/
+
+.step-box{ color: #fff; margin-top: 40px;}
+.step-box dt{ border-right: 1px solid #fff; line-height: 1.3; width: 20px; padding: 5px 15px;}
+.step-box dd{ margin: 0 34px 0 77px;}
+.step-box .step-items li{ float: left; width: 33.333%;}
+.step-box .step-items .item-1{ background: url(/content/v1/images/sijia/step-1.png) no-repeat;}
+.step-box .step-items .item-2{ background: url(/content/v1/images/sijia/step-2.png) no-repeat;}
+.step-box .step-items .item-3{ background: url(/content/v1/images/sijia/step-3.png) no-repeat;}
+.step-box .step-items .item-cont{ padding: 30px 10px 0 20px;}
+
+/* main-box end */
+
+/*calendar*/
+#j_dateCaledar{width:85%;}
+#j_dateCaledar .calendarBar{width:100%;position:absolute;left:0;top:0;line-height:55px;height:55px;overflow:hidden;}
+#j_dateCaledar .calendarBox{width:100%;position:absolute;left:0;top:55px;}
+
+#j_jsonCalendarWrap{height: 315px;position:relative;}
+.calendarBox table { width: 100%; }
+.calendarBox table thead tr{border-radius:3px;}
+.calendarBox table tr th { padding: 5px; font-size: 15px;font-family: microsoft yahei;background:#c49e4b;color:#fff;}
+.calendarBox table tr th .p2{display: none;}
+.calendarBox table tr td { padding: 5px;height: 30px;width: 49px;font-family: verdana; }
+.calendarBox table tr td.item{position: relative;cursor:pointer;}
+.calendarBox table tr td.item .title{display: none;}
+.calendarBox table tr td.item .ext{display: none;}
+.calendarBox table tr td.item .tag{display: none;}
+.calendarBox table tr td.item-on .day{border:2px solid #c9942b;}
+.calendarBox table tr td.item div.day{text-align:center;height:28px;width:45px;line-height:28px;}
+.calendarBox table tr td.item a.holiday{position:absolute;bottom:0;left:0;display:none;}
+.calendarBox table tr td.item div.price{margin-top: 40px;text-align: center;}
+.calendarBox table tr td.item div.price i{color: #f90;}
+.calendarBox table tr td.item div.price em{color: #f90;font-size: 16px}
+.calendarBox table tr td.item div.price s{text-decoration: none;}
+
+.calendarBox table tr td.item-expiry, .calendarBox table tr td.item-gray { color: #999; }
+
+.calendarBox table tr .block:hover{background-color: #c59f4c;}
+.calendarBox table tr td.gray { color: #ccc;text-align:center; }
+.calendarBox table tr td.today { color: #c9942b; }
+
+.calendarBar { text-align: center;}
+.calendarBar .prev, .calendarBar .next { cursor: pointer;height: 27px;width:16px; text-indent: -9999px;background-repeat: no-repeat;background-position: center center;position:absolute;top:20px;}
+.calendarBar .prev{background-image: url(/content/v1/images/sijia/prev2.png);left:0;}
+.calendarBar .prev-off{background-image: url(/content/v1/images/sijia/prev2.png)}
+.calendarBar .next{background-image: url(/content/v1/images/sijia/next2.png);right:0;}
+.calendarBar .current{font-family: microsoft yahei}
+.calendarBar .current p{display:inline;}
+.calendarBar .current .year{font-size: 16px;margin-right:10px;}
+.calendarBar .current .month{margin-top: 0;font-size: 24px}
+
+
+.pop-hotel-calendar{width: 990px; margin: -300px 0 0 -502px;height:590px;}
+.pop-hotel-calendar .tit{padding:0 50px;margin-bottom:15px;}
+.pop-hotel-calendar .calendarInner{padding:0 50px 0;}
+
+/* pop-mod start */
+.pop-mod .wrap-box { background: #fff; border: 7px solid #e4c374; _margin-top: 0; position: fixed; _position: absolute; left: 50%; top: 50%; z-index: 1000; }
+.pop-mod .pop-close{ color: #c49e4b; font-size: 40px; height: 30px; width: 30px; overflow: hidden; position: relative;}
+.pop-mod .pop-close:hover{ color: #f60;}
+.pop-mod .pop-close .close-icon{ line-height: 1; position: absolute; top: -7px; left: 0;}
+
+/*** pop-finish start ***/
+.pop-mod .pop-finish{ border-width: 8px; border-radius: 20px; height: 230px; width: 502px; margin: -122px 0 0 -181px;}
+.pop-finish .decorate-part{ background: url(/content/v1/images/sijia/decorate-part.png) no-repeat; height: 49px; width: 127px; position: absolute; left: 100px; bottom: -49px;}
+.pop-finish .uzai-mascot{ background: url(/content/v1/images/sijia/uzai-mascot.png) no-repeat; height: 252px; width: 157px; position: absolute; left: -155px; bottom: -150px;}
+.pop-finish .tips-info .info-hd{ color: #c59f4c; padding: 10px 0;}
+.pop-finish .tips-info .info-bd{ padding: 10px 40px;}
+.pop-finish .tips-info .info-bd p{ text-indent: 2em;}
+/*** pop-finish end ***/

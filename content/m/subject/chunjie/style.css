@@ -1,0 +1,44 @@
+body, html { background: #213e6a; height: 100%; }
+
+
+.w { min-height: auto; min-width: 320px; }
+
+.main-wrap { position: relative; }
+.fn-header { z-index: 1; display: none; background: #333; }
+.wrap { z-index: 2; }
+.section-item { width: 100%; height: 100%; overflow: hidden; position: relative; }
+
+#fsvs-pagination { position: fixed; top: 50%; right: 20px; z-index: 100; _position: absolute; }
+#fsvs-pagination li { background-color: rgba(0,0,0,.2); cursor: pointer; width: 8px; height: 8px; margin-bottom: 10px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+#fsvs-pagination .active { background-color: #fff; }
+
+.fsvs { height: 100%; width: 100%; position: fixed; top: 0; left: 0; overflow: hidden; }
+.wrap { -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; -webkit-perspective: 1000; -moz-perspective: 1000; -ms-perspective: 1000; perspective: 1000; position: relative; top: 0; left: 0; height: 100%; width: 100%; }
+.wrap .section-item { height: 100%; width: 100%; overflow: hidden; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; -webkit-perspective: 1000; -moz-perspective: 1000; -ms-perspective: 1000; perspective: 1000; }
+
+
+.banner { background: url(http://r01.uzaicdn.com/content/m/subject/chunjie/c1.jpg) no-repeat center 0; background-size: 100%; }
+.banner li { width: 15%; margin: 0 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: rgba(255,255,255,.2); display: inline-block; color: #fff; height: 80px; padding-top: 6px; }
+.banner li a { color: #fff; }
+
+.box { background: #fcce7b url(http://r01.uzaicdn.com/content/m/subject/chunjie/c4.png) repeat 0 0; background-size: 100%;  }
+.box dt { padding: 10px 0; }
+.box dt img { height: 30px; width: auto; margin: 0 auto; }
+.box li { display: inline-block; width: 50%; text-align: center; margin-bottom: 6px; line-height: 22px; }
+.box1 ul { font-size: 0; }
+.box1 li { min-height: 100px; overflow: hidden;width:50%;float:left;height:120px; }
+.box1 li a { background: #fff; width: 80%; margin: 0 auto; display: block; font-size: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+.box1 li img{max-width:100%;}
+.box2 li { min-height: 96px; overflow: hidden; }
+
+.box2 { background: #f34d69 url(http://r01.uzaicdn.com/content/m/subject/chunjie/c5.png) repeat 0 0; background-size: 100%; }
+.box2 .inner { padding: 0 15px 10px; }
+.box2 li { display: block; margin: auto; width: auto; text-align: center; background: none; -moz-border-radius: 11px; -webkit-border-radius: 11px; border-radius: 11px; margin-bottom: 15px; line-height: 25px; color: #fff; position: relative; }
+.box2 li p { position: absolute; left: 0; bottom: 0; color: #fff; font-size: 16px; width: 100%; text-align: left; text-indent: 10px; }
+.box a { color: #666; }
+.box2 a { color: #fff; }
+.box2 li:last-child { margin-bottom: 0; }
+
+.arrow { z-index: 100;border: 1px solid #fff; border-left: 0; border-top: 0; width: 20px; height: 20px; -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); margin-left: -10px; position: absolute; left: 50%; bottom: 10px;  }
+.top { z-index: 100; width: 50px; height: 50px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; position: fixed; bottom: 10px; right: 10px; background-color: rgba(255,255,255,0.8); text-align: center; font-size: 16px; color: #ff3939; line-height: 50px; display: none; }
+.top span { float: left; margin: -2px 0 0 4px; }

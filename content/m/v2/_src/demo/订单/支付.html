@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-144x144-precomposed" />
+    <link rel="apple-touch-startup-image" href="/apple-touch-icon-144x144-precomposed" />
+    <link rel="stylesheet" href="//r01.uzaicdn.com/content/m/css/pay.min.css">
+    <script src="//r.uzaicdn.com/scripts/m/sea-modules/seajs/seajs/2.1.1/sea.js"></script>
+    <script src="//r.uzaicdn.com/scripts/m/config.min.js"></script>
+    <script type="text/javascript">
+        seajs.use(['//r.uzaicdn.com/scripts/m/pay/pay'], function (pay) {
+            pay.init();
+            $(document).ready(function () {
+                var checked = $("i.arrow-check-on");
+                if (checked) {
+                    $("#hdPayType").val($(checked).attr("paytype"));
+                }
+            });
+        });
+    </script>
+     <script type='text/javascript'>
+         var _gsq = _gsq || [];
+         (function () {
+             var s = document.createElement('script');
+             s.type = 'text/javascript';
+             s.async = true;
+             s.src = (location.protocol == 'https:' ? 'https://ssl.' : 'http://static.') + 'gridsumdissector.com/js/Clients/GWD-002800-E6A64F/gs.js';
+             var firstScript = document.getElementsByTagName('script')[0];
+             firstScript.parentNode.insertBefore(s, firstScript);
+         })();
+</script>
+</head>
+<body>
+    <form method="post" action="/touch_fourDo" id="formPay">
+
+    <input type="hidden" id="hdPayType" name="hdPayType" value="KQ" />
+
+    <input type="hidden" id="order_id" name="order_id" value="632638" />
+    </form>
+    <div class="wrap w pay">
+
+<link rel="stylesheet" href="//r01.uzaicdn.com/content/m/css/core.min.css?vasdf" type="text/css">
+<header class="fn-header">
+
+        <a href="https://u.uzai.com/mobile/order"><div class="fl icon back"></div></a>
+
+        <span class="tit"></span>
+        <span class="fr icon telephone"><a href="tel:10109898">10109898</a></span>
+        <a href="http://m.uzai.com/" ><span class="fr icon home"></span></a>
+</header>
+        <article>
+        <div class="pay-box">
+
+            <div class="box mb10 box1 p5">
+                您的订单已经提交，该产品充足，无需资源确认。请尽快支付以完成您的订单预订。
+            </div>
+
+            <h2 class="mb10 f14 b">支付订单</h2>
+            <div class="box mb10 box2">
+                <ul>
+                    <li>
+                        <p>
+                            <label>订单号：</label><span>N619332638</span>
+                        </p>
+                        <p>
+                            <label>产品名称：</label><span>【仅此一班】天目湖山水园、南山竹海养生2日游<赠送特色鱼头宴></span>
+                        </p>
+
+                        <p>
+                            <label>出游时间：</label><span>2016-03-19</span>
+                        </p>
+
+                        <p>
+                            <label>支付方式：</label><span>在线支付</span>
+                        </p>
+
+
+                    </li>
+                    <li>
+                        <p>
+                            <label>总额：</label><span class="orange">￥<b class="f14">307.00</b><i class="f333 ml10">预付金：<i class="price orange">￥<b class="f14">41</b></i></i></span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+
+            <h2 class="mb10 f14 b">选择支付方式</h2>
+
+            <div class="box mb10 box4">
+                 <ul>
+
+                    <li onclick="_gaq.push(['_trackEvent', 'order-4', 'payType', '快钱手机支付']);" class="clearfix"><i class="flag zfbk fn-bs"></i>快钱手机支付<i class="arrow-check arrow-check-on fn-bs" paytype="KQ"></i></li>
+                    <li onclick="_gaq.push(['_trackEvent', 'order-4', 'payType', '快钱信用卡快捷支付']);" class="clearfix"><i class="flag zfbk fn-bs"></i>快钱信用卡快捷支付<i class="arrow-check fn-bs" paytype="KQKJ"></i></li>
+                    <li onclick="_gaq.push(['_trackEvent', 'order-4', 'payType', '支付宝手机支付']);" class="clearfix"><i class="flag zfbw fn-bs"></i>支付宝手机支付<i class="arrow-check fn-bs" paytype="Alipay"></i></li>
+                    <li onclick="_gaq.push(['_trackEvent', 'order-4', 'payType', '建设银行手机支付']);" class="clearfix"><i class="flag zfccb fn-bs"></i>建设银行手机支付<i class="arrow-check  fn-bs" paytype="CCB_M"></i></li>
+
+                    <li onclick="_gaq.push(['_trackEvent', 'order-4', 'payType', '银联手机支付']);" class="clearfix"><i class="flag yl fn-bs"></i>银联手机支付<i class="arrow-check  fn-bs" paytype="upmp"></i></li>
+
+                </ul>
+            </div>
+
+            <p class="tc btn btn-on f16 b" id="submit">确认支付</p>
+
+        </div>
+    </article>
+
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-27817301-10']);
+    _gaq.push(['_setDomainName', 'uzai.com']);
+    _gaq.push(['_setAllowHash', false]);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_addOrganic', 'so.360.cn', 'q']);
+    _gaq.push(['_addOrganic', 'baidu', 'word']);
+    _gaq.push(['_addOrganic', 'baidu', 'w']);
+    _gaq.push(['_addOrganic', 'baidu', 'kw']);
+    _gaq.push(['_addOrganic', 'baidu', 'q1'])
+    _gaq.push(['_addOrganic', 'soso', 'w']);
+    _gaq.push(['_addOrganic', '3721', 'name']);
+    _gaq.push(['_addOrganic', 'yodao', 'q']);
+    _gaq.push(['_addOrganic', 'vnet', 'kw']);
+    _gaq.push(['_addOrganic', 'sogou', 'query']);
+    _gaq.push(['_addOrganic', 'bing', 'q']);
+    _gaq.push(['_trackPageview']);
+</script>
+
+
+<!--Google js-->
+<script type="text/javascript">
+    (function () { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+</script>
+
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 1025797125;
+    var google_conversion_language = "en";
+    var google_conversion_format = "3";
+    var google_conversion_color = "666666";
+    var google_conversion_label = "ZfZhCLfxnAIQhdiR6QM";
+    var google_conversion_value = 0;
+    /* ]]> */
+</script>
+    </div>
+    <!------------------------GA-------------------->
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-27817301-10', 'uzai.com');
+        ga('send', 'pageview');
+    </script>
+    <script>
+        /****************发送微信支付请求BEGIN****************/
+        function onBridgeReady() {
+            var payData = '';
+            if (payData) {
+                var jsonData = JSON.parse(payData);
+                if (jsonData.return_code.toLowerCase() == "fail") {
+                    alert(jsonData.return_msg);
+                    return;
+                }
+                if (jsonData.result_code.toLowerCase() == "fail") {
+                    alert(jsonData.err_code_des);
+                    return;
+                }
+                WeixinJSBridge.invoke('getBrandWCPayRequest', {
+                    "appId": jsonData.appid,
+                    "timeStamp": jsonData.timestamp,
+                    "nonceStr": jsonData.nonce_str,
+                    "package": jsonData.package,
+                    "signType": jsonData.signType,
+                    "paySign": jsonData.sign
+                },
+                    function (res) {
+                        if (res.err_msg == "get_brand_wcpay_request：ok") {
+                            alert("支付完成");
+                            location.href = "//u.uzai.com/mobile/order";
+                        } // 使用以上方式判断前端返回,微信团队郑重提示：res.err_msg将在用户支付成功后返回    ok，但并不保证它绝对可靠。
+                        if (res.err_msg == "get_brand_wcpay_request：cancel") {
+                            alert("支付失败");
+                            location.href = "//u.uzai.com/mobile/order";
+                        }
+                        if (res.err_msg == "get_brand_wcpay_request：fail") {
+                            alert("支付失败");
+                            location.href = "//u.uzai.com/mobile/order";
+                        }
+                    }
+                );
+            }
+        }
+
+        if (typeof WeixinJSBridge == "undefined") {
+            if (document.addEventListener) {
+                document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+            } else if (document.attachEvent) {
+                document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+                document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+            }
+        } else {
+            onBridgeReady();
+        }
+        /*************发送微信支付请求END*************/
+    </script>
+</body>
+</html>

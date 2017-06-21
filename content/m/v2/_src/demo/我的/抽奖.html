@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>悠哉旅游网</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon-precomposed" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-startup-image" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/my/my.css" rel="stylesheet" />
+    <script src="http://r02.uzaicdn.com/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/_src/core', '/content/libs/plugin/zeptoEasing/zepto.easing', '/content/libs/plugin/jqueryRotate/jQueryRotate', '/content/m/v2/scripts/my/lottery', '/content/m/v2/scripts/_src/my/my'], function (core, rotate, easing, lottery, my) {
+            my.init();
+            // lottery.init();
+        });
+    </script>
+
+</head>
+<body data-key="3">
+    <div class="max-w640 w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">抽奖</div>
+            </div>
+            <div class="d-r">
+            </div>
+        </header>
+        <section class="lucky-draw">
+            <div class="user-info clearfix">
+                <div class="name-wrap tr fl"><span class="user-name white f11">用户名：<em class="f13 yellow">小AA</em></span></div>
+                <div class="ud-wrap fr"><span class="user-ud white f11">剩余U点：<em class="f14 yellow">1000</em>点</span></div>
+                <div class="icon-wrap"><div class="user-icon"><img src="/content/m/v2/images/my/p11.jpg" alt="" class="g10 vm"></div></div>
+            </div>
+            <div class="activity-lottery">
+                <p class="al-hd tc"><em class="hd-cont red f17 b">转动一次消耗<i class="f25">20</i>U点<i class="part-left"></i><i class="part-right"></i></em></p>
+                <div class="lottery-box">
+                    <div class="ly-plate">
+                        <div class="lottery-box-bg"></div>
+                        <div class="lottery-star white tc" id="j_lotterStar">
+                            <div id="lotteryBtn" class="btn-lottery">
+                                <div class="txt-vm">
+                                    <p class="txt-wrap"><span class="f15">START</span></p>
+                                    <!-- <p class="txt-wrap">U点不足<br>还差×点</p> -->
+                                </div>
+                            </div>
+                            <img src="/content/m/v2/images/my/icon46.png" class="block " width="81">
+                        </div>
+                    </div>
+                </div>
+                <span id="j_btnRule" class="btn-rule red pl10 pr10">抽奖规则</span>
+            </div>
+
+            <div class="lottery-txt">
+                <div class="hd white f16 b tc">下期预告</div>
+                <div class="bd">
+                    <ul class="prize-list red f14 tc clearfix">
+                        <li>
+                            <p class="item-pic"><i class="icon-cloud"></i><img src="/content/m/v2/images/my/m4.png" alt="" /></p>
+                            <p class="item-name">商品名称</p>
+                        </li>
+                        <li>
+                            <p class="item-pic"><i class="icon-cloud"></i><img src="/content/m/v2/images/my/m4.png" alt="" /></p>
+                            <p class="item-name">商品名称</p>
+                        </li>
+                        <li>
+                            <p class="item-pic"><i class="icon-cloud"></i><img src="/content/m/v2/images/my/m4.png" alt="" /></p>
+                            <p class="item-name">商品名称</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <dl class="cont-list mt10 p10">
+                <dt class="f14 pb10">栏目标题：</dt>
+                <dd>积分都是科技</dd>
+                <dd>积分都是科技</dd>
+            </dl>
+        </section>
+        <footer class="ft-copyright tc pt10 pb10">
+            <p>本次活动最终解释权归悠哉旅游所有</p>
+            <p class="f10">全国统一服务电话：４００－０００－８８８８</p>
+        </footer>
+    </div>
+
+    <div id="j_popRuleBox" class="pop-rule-box bg-white">
+        <div class="pop-hd white f18 tc">抽奖规则</div>
+        <div class="pop-bd">
+            <div class="cont-box f15 p10">
+                <p>抽奖规则抽奖规则抽奖规则抽奖规则抽奖规则抽奖规则抽</p>
+                <p>奖规则抽奖规则抽奖规则抽奖规则抽奖规则抽奖规则抽奖规则抽奖规则则抽奖规则抽奖规则抽奖规则抽奖规</p>
+                <p>奖规则抽奖规则抽奖规则抽奖规则抽奖规则抽奖规则抽奖规则抽奖规则则抽奖规则抽奖规则抽奖规则抽奖规</p>
+            </div>
+        </div>
+        <span class="pop-close white f20 tc j_popClose"><i class="close-icon">&times;</i></span>
+    </div>
+
+    <div id="j_popFailBox" class="pop-lottery-box-fail pop-lottery-box">
+        <div class="pop-hd white f13 tc">啊哦，差一丢丢就中了!!!</div>
+        <div class="pop-bd">
+            <div class="cont-info-box tc">
+                <div class="txt-vm">
+                    <p class="txt-wrap"><span class="red f13">调整一下姿势</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="pop-ft tc"><input type="button" value="再转一次" class="btn-anew white"></div>
+        <span class="pop-close white f20 tc j_popClose"><i class="close-icon">&times;</i></span>
+    </div>
+
+    <div id="j_popSuccessBox" class="pop-lottery-box-success pop-lottery-box">
+        <div class="pop-hd white f13 tc">恭喜您，获得<em class="yellow"><i class="f15 b">10</i>元加油卡</em>!!!</div>
+        <div class="pop-bd">
+            <div class="cont-info-box tc">
+                <div class="txt-vm">
+                    <p class="txt-wrap"><span class="red f13 lh1"><i class="f20">10</i>元<br><span class="f15">加油卡</span></span></p>
+                </div>
+            </div>
+        </div>
+        <span class="pop-close white f20 tc j_popClose"><i class="close-icon">&times;</i></span>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+/*
+* @Author: lxq
+* @Date:   2016-08-17 11:01:32
+* @Last Modified by:   lxq
+* @Last Modified time: 2016-08-22 14:14:33
+*/
+
+.content .tab-box {background: url(/content/subject/app-zhongqiu160817/img/tab-bj.jpg) no-repeat;width: 75rem;height: 42.2rem;-webkit-background-size: 100%;
+background-size: 100%;}
+.content .j_tab {width: 66.1rem;margin:0 auto;padding-top: 1.8rem;position: relative;left: -0.3rem;}
+.content .hd {z-index:5;position: relative;}
+.content .hd-list {background: url(/content/subject/app-zhongqiu160817/img/tab-on.jpg) no-repeat;width: 16.5rem;height: 9.1rem;-webkit-background-size: 100%;
+background-size: 100%;color:#5d2b00;text-align: center;border-right: 0.1rem solid #5d1203;border-bottom: 0.1rem solid #5d1203;box-shadow: 0.3rem 0 0.3rem rgba(69,47,34,0.7);}
+.content .hd-last {border-bottom: none;}
+.content .on {background: url(/content/subject/app-zhongqiu160817/img/tab.jpg) no-repeat;width: 16.5rem;height: 9.1rem;-webkit-background-size: 100%;
+background-size: 100%;color:#d03500;}
+.content .hd-list .p1 {font-size: 2.4rem;line-height: 2.6rem;padding-top: 1.5rem;}
+.content .hd-list .p2 {font-weight: bold;font-size: 3.6rem;line-height: 3.8rem;}
+.content .bd {z-index:3;}
+.content .item {width: 49.3rem;}
+.content .item .detail {position: relative;}
+.content .item .detail .chart {width: 49.3rem;}
+.content .item .detail .chart img{height: 37rem;}
+.content .item .book {background: rgba(0,0,0,0.5);position: absolute;left: 0;bottom: 0;width: 100%;color:#fbcf66;}
+.content .item .book .name {font-size: 2.4rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width: 33rem;margin: 1rem 0 0 1rem;}
+.content .item .book .price {font-size: 2rem;margin-right: 1rem;}
+.content .item .book .price i {font-size: 3.6rem;}
+
+.cont1-box {background: url(/content/subject/app-zhongqiu160817/img/bj1.jpg) no-repeat;width: 75rem;height: 120.5rem;-webkit-background-size: 100%;
+background-size: 100%;}
+.cont2-box {background: url(/content/subject/app-zhongqiu160817/img/bj2.jpg) no-repeat;width: 75rem;height: 115.4rem;-webkit-background-size: 100%;
+background-size: 100%;}
+.cont3-box {background: url(/content/subject/app-zhongqiu160817/img/bj3.jpg) no-repeat;width: 75rem;height: 114.6rem;-webkit-background-size: 100%;
+background-size: 100%;}
+.cont4-box {background: url(/content/subject/app-zhongqiu160817/img/bj4.jpg) no-repeat;width: 75rem;height: 114.4rem;-webkit-background-size: 100%;
+background-size: 100%;}
+.cont5-box {background: url(/content/subject/app-zhongqiu160817/img/bj5.jpg) no-repeat;width: 75rem;height: 114.9rem;-webkit-background-size: 100%;
+background-size: 100%;}
+.cont6-box {background: url(/content/subject/app-zhongqiu160817/img/bj6.jpg) no-repeat;width: 75rem;height: 114.6rem;-webkit-background-size: 100%;
+background-size: 100%;}
+.cont7-box {background: url(/content/subject/app-zhongqiu160817/img/bj7.jpg) no-repeat;width: 75rem;height: 109.5rem;-webkit-background-size: 100%;
+background-size: 100%;}
+.cont8-box {background: url(/content/subject/app-zhongqiu160817/img/bj8.jpg) no-repeat;width: 75rem;height: 113.1rem;-webkit-background-size: 100%;
+background-size: 100%;}
+.cont9-box {background: url(/content/subject/app-zhongqiu160817/img/bj9.jpg) no-repeat;width: 75rem;height: 109.9rem;-webkit-background-size: 100%;
+background-size: 100%;}
+.cont10-box {background: url(/content/subject/app-zhongqiu160817/img/bj10.jpg) no-repeat;width: 75rem;height: 110rem;-webkit-background-size: 100%;
+background-size: 100%;}
+.cont11-box {background: url(/content/subject/app-zhongqiu160817/img/bj11.jpg) no-repeat;width: 75rem;height: 106.2rem;-webkit-background-size: 100%;
+background-size: 100%;}
+.cont12-box {background: url(/content/subject/app-zhongqiu160817/img/bj12.jpg) no-repeat;width: 75rem;height: 113.2rem;-webkit-background-size: 100%;
+background-size: 100%;}
+.cont13-box {background: url(/content/subject/app-zhongqiu160817/img/bj13.jpg) no-repeat;width: 75rem;height: 107.8rem;-webkit-background-size: 100%;
+background-size: 100%;}
+.cont1-box .pro-box {padding-top: 30rem;}
+.cont2-box .pro-box {padding-top: 25rem;}
+.cont3-box .pro-box {padding-top: 25rem;}
+.cont4-box .pro-box {padding-top: 25rem;}
+.cont5-box .pro-box {padding-top: 25rem;}
+.cont6-box .pro-box {padding-top: 25rem;}
+.cont7-box .cj {padding-top: 22rem;}
+.cont8-box .cj {padding-top: 23rem;}
+.cont9-box .cj {padding-top: 20rem;}
+.cont10-box .cj {padding-top: 20rem;}
+.cont11-box .cj {padding-top: 20rem;}
+.cont12-box .cj {padding-top: 22.6rem;}
+.cont13-box .cj {padding-top: 20rem;}
+
+.cont-box .pro-box {width: 60.8rem;margin:0 auto;}
+.cont-box .gn .pro-list {background: url(/content/subject/app-zhongqiu160817/img/pro-bj1.png) no-repeat;width: 60.8rem;height: 23.9rem;-webkit-background-size: 
+100%;background-size: 100%;margin-bottom: 4.5rem;}
+.cont-box .cj .pro-list {background: url(/content/subject/app-zhongqiu160817/img/pro-bj2.png) no-repeat;width: 60.8rem;height: 23.9rem;-webkit-background-size: 
+100%;background-size: 100%;margin-bottom: 4rem;}
+.cont-box .pro-box .chart {width: 30rem;margin:-2.5rem 0 0 -4rem;}
+.cont-box .pro-box .chart img{height: 22.5rem;border-radius: 2rem;padding:0.3rem;border:0.1rem dashed #6a3906;}
+.cont-box .pro-box .pro-detail {width: 31.4rem;padding:0 1.3rem;}
+.cont-box .pro-box .pro-detail .name {font-size: 2.8rem;color:#4f0f06;line-height: 3.8rem;font-weight: bold;padding:1.2rem 0;height: 6.6rem;overflow: hidden;}
+.cont-box .pro-box .pro-detail .bq {border-top: 0.1rem dashed #4f0f06;color:#4f0f06;font-size: 2rem;margin-top: 0.5rem;padding-top: 0.3rem;}
+.cont-box .pro-box .pro-detail .price {font-size: 2.4rem;text-align: center;color:#d80000;}
+.cont-box .pro-box .pro-detail .price b{font-size: 4rem;line-height: 4.3rem;}
+.cont-box .pro-box .pro-detail .pro-btn {background: url(/content/subject/app-zhongqiu160817/img/button.png) no-repeat;width: 18.9rem;height: 6rem;
+-webkit-background-size: 100%;background-size: 100%;margin:0 auto;}
+.cont-box .pro-box .pro-detail .pro-btn .p3 {font-size: 2.4rem;color:#4f0f06;text-align: center;line-height: 6rem;}
+.cont-box .more-route {background: url(/content/subject/app-zhongqiu160817/img/button.png) no-repeat;width: 18.9rem;height: 6rem;-webkit-background-size: 100%;
+background-size: 100%;margin:-2.5rem auto 0;text-align: center;z-index:8;position: relative;}
+.cont-box .more-route a{font-size: 2.4rem;line-height: 6rem;color:#4f0f06;}
+
+.bottom {background: url(/content/subject/app-zhongqiu160817/img/bottom.jpg) no-repeat;width: 75rem;height: 83.6rem;-webkit-background-size: 
+100%;background-size: 100%;}
+.bottom-con {padding-top: 19rem;}
+.bottom .pic-wrap {background: url(/content/subject/app-zhongqiu160817/img/pro-bj3.png) no-repeat;width: 63.8rem;height: 34.6rem;-webkit-background-size: 
+100%;background-size: 100%;margin:0 auto;border:0.2rem solid #6a3906;border-radius:1.1rem;position: relative;}
+.bottom .pic-show {overflow: hidden;}
+.bottom .pic-show .slider-item { float: left; position: relative;}
+.bottom .pic-inner .chart {padding:0.5rem 0.5rem 0;}
+.bottom .pic-inner img{border-radius: 1rem;}
+.bottom .b-name {width: 40rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size: 3rem;color:#4f0f06;font-weight: bold;
+margin:1.2rem 0 0 2rem;}
+.bottom .b-btn {background: url(/content/subject/app-zhongqiu160817/img/button.png) no-repeat;width: 18.9rem;height: 6rem;
+-webkit-background-size: 100%;background-size: 100%;font-size: 2.4rem;color:#4f0f06;text-align: center;line-height: 6rem;margin:0.3rem 0.5rem 0 0;}
+.bottom .num {background: rgba(223,3,54,0.5);width: 14rem;height: 2.5rem;position: absolute;top: 24rem;left: 2rem;border-radius: 3rem;}
+.bottom .num em{width: 1.6rem;height: 1.6rem;border-radius: 50%;background: #fec601;display: inline-block;margin:0.5rem 0.2rem 0;}
+.bottom .num .on {background: #fff;}
+
+.navigation {width: 75rem;position: fixed;bottom: 0;left: 0;border-top: 0.2rem solid #6a3906;z-index:10;transition:all ease 0.5s;}
+.nav-off {bottom: -21.7rem;}
+.navigation .nav-hd li{text-align: center;font-size: 4.8rem;font-weight: bold;line-height: 7.5rem;}
+.navigation .nav-hd .list1 {background: url(/content/subject/app-zhongqiu160817/img/nav1.jpg) no-repeat;width: 36.9rem;height: 7.5rem;
+-webkit-background-size: 100%;background-size: 100%;color:#eee2a1;}
+.navigation .nav-hd .list2 {background: url(/content/subject/app-zhongqiu160817/img/nav2.jpg) no-repeat;width: 38.1rem;height: 7.5rem;
+-webkit-background-size: 100%;background-size: 100%;color:#4f0f06;}
+.navigation .item1 {background: url(/content/subject/app-zhongqiu160817/img/nav-bj1.jpg) no-repeat;width: 75rem;height: 13.9rem;
+-webkit-background-size: 100%;background-size: 100%;}
+.navigation .item1 ul{width: 67.2rem;margin:0 auto;padding-top: 0.8rem;}
+.navigation .item2 {background: url(/content/subject/app-zhongqiu160817/img/nav-bj2.jpg) no-repeat;width: 75rem;height: 13.9rem;
+-webkit-background-size: 100%;background-size: 100%;}
+.navigation .nav-bd .item1 li{width: 18rem;line-height: 6rem;text-align: center;background: #4f0f06;text-align: center;font-size: 3rem;
+border-radius: 5rem;margin:0 2.2rem 0.5rem;}
+.navigation .nav-bd li a{color:#fbefae;display: inline-block;width: 100%;}
+.navigation .nav-bd .item1 .on {background: #f5e8a8;}
+.navigation .nav-bd .item1 .on a{color:#4f0f06;}
+.navigation .item2 ul{padding-top: 0.8rem;}
+.navigation .nav-bd .item2 li{width: 18rem;line-height: 6rem;text-align: center;background: #4f0f06;text-align: center;font-size: 3rem;
+border-radius: 5rem;margin:0 0.3rem 0.5rem;}
+.navigation .nav-bd .item2 .on {background: #ee4545;color:#fbefae;}
+.navigation .nav-bd .item2 .first {margin:0 0.5rem 0.5rem;}
+.navigation .nav-bd .item2 .five {margin:0 0.5rem 0.5rem 10rem;}
+
+

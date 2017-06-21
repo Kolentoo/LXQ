@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>手机悠哉网 -  会员注册 </title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/user/user.css" rel="stylesheet" />
+    <script src="/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/_src/core', '/content/m/v2/scripts/user/user'], function (core, user) {
+            user.init();
+        });
+    </script>
+
+</head>
+<body>
+
+    <div class="w user">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m"><div class="tit">注册</div></div>
+            <div class="d-r"></div>
+        </header>
+
+
+        <section class="login">
+            <form>
+                <ul>
+                    <li class="li-name">
+                        <i class="icon"></i><div><input type="text" required placeholder="手机号/邮箱" /></div>
+                    </li>
+                    <li class="li-pwd">
+                        <i class="icon"></i><div><input type="password" required placeholder="6-16位字符" /></div>
+</li>
+                    <li class="li-pwd">
+                        <i class="icon"></i><div><input type="password" required placeholder="再次输入密码" /></div>
+</li>
+
+                    <li class="li-reg"><input type="submit" class="btn btn-on" value="注册" /></li>
+                </ul>
+            </form>
+        </section>
+
+
+         
+
+    </div>
+
+</body>
+</html>

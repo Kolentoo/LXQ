@@ -1,0 +1,31 @@
+/* page */
+#page{width:990px;  margin:0 auto;}
+
+#denglu{margin-bottom:10px; text-align:left;}
+#denglu .denglu_left{float:left; border:1px solid #deddd9; background:url(../images/layout/denglubg.gif) repeat-x left top; padding:10px 0px 15px 0; width:470px;}
+#denglu .denglu_lecont{padding:0 30px;}
+#denglu .dlleft_title{background:url(../images/icon/dl.gif) no-repeat left center; padding-left:30px; padding-top:10px; font-size:18px; font-weight:bold; color:#6ebe07;}
+#denglu .dlleft_form{padding:5px 20px;}
+#denglu .dlleft_form table td{font-size:12px; color:#333333; padding:5px;}
+#denglu .pasword a{color:#058fbb; text-decoration:none;}
+#denglu .pasword a:hover{color:#FF3300;}
+#denglu .eng{font-family:Arial, Helvetica, sans-serif;}
+#denglu .dlleft_bottom{padding:15px 0 0 0; color:#666666;  border-top:1px dashed #cccccc;}
+#denglu .dlleft_bottom p{padding-right:15px;}
+#denglu .denglu_right{float:right; width:495px;}
+#denglu .denglu_right table td{padding:10px; border-bottom:1px dashed #cccccc; text-align:center; font-size:12px;}
+#denglu .denglu_right table td p{color:#666666; line-height:20px; text-align:left;}
+
+
+/***API part***/
+.cooperation{font-size:12px; color:#666;}
+.cooperation .s1{float:left;width:160px;margin:5px 4px 0 55px;height:14px;display:inline; }
+.P7_dh .s1Trim1{display:block;clear:both;width:100%;padding-left:5px;margin-top:0;}
+.btns{line-height:14px; padding:6px 0 3px 23px; overflow:hidden; margin:5px 4px 0 0; height:14px; float:left; position:relative;}
+.btns a{color:#669ED6; text-decoration:none;}
+.btns a:hover{color:#669ED6; text-decoration:underline;}
+.btns S{background-image:url(/content/1/images/coicon/icon_cooperation.jpg); width:23px; height:23px; display:block; top:0; left:0; position:absolute;}
+.cooperation .sina S{background-position:-115px 0;}
+.cooperation .renren S{background-position:-46px 0;}
+.cooperation .kaixin S{background-position:-92px 0;}
+.cooperation .alipay S{background-position:-23px 0;}

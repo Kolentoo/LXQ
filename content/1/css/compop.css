@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+.popComment{width:605px; margin:0 auto; background:#fff;padding:10px;}
+  .popcomTitle{height:37px; margin-bottom:15px; background:url(/content/1/image/dianping/tbg01.jpg) repeat-x; color:#5a8700; font-size:14px; font-weight:bold; line-height:37px; padding-left:15px;}
+  .popcomTitle img{margin:9px 9px 0 0}
+  .popcomImg{float:left; width:216px; border:1px solid #99C36F; padding:15px; margin-right:26px;display:inline;}
+  .popcomImg a{font-weight:bold; color:#80c000; font-size:14px; font-weight:bold; width:99%; display:inline-block; margin:10px 0 5px;}
+  .popcomImg a:hover{color:#ff6600;}
+  .popcomImg span{color:#333333;}
+  .popcomImg span b{color:#ff6600; font-size:18px; font-family:Arial, Helvetica, sans-serif; padding-right:5px;}
+  .popcomStar{float:left;overflow:hidden;width:330px;}
+  .starSelect{width:268px; height:31px; border:1px solid #DCF9BC; background:#EEF7E2; line-height:31px; padding-left:60px;overflow:hidden;}
+  .starSelect span{margin:0 0 0 15px; vertical-align:text-bottom;float:left;width:82px;}
+  #dpCK02{width:75px;}
+  #dpCK03{width:65px;}
+  .satrLsit ul li{color:#884a00; padding-left:10px; line-height:31px; border-bottom:1px dashed #6A6A6A;height:31px;float:left;clear:both;display:block;margin-top:4px;display:block;width:100%;}
+  .satrLsit ul li.noborder{border:0;}
+  .satrLsit ul li span{width:60px;height:31px;float:left;}
+  .satrLsit ul li a{width:15px; height:31px; margin:0 35px;float:left;}
+  .satrLsit ul li a.star01{background:url(/content/1/image/dianping/star01.gif) no-repeat center center;}
+  .satrLsit ul li a.star02{background:url(/content/1/image/dianping/star02.gif) no-repeat center center;}
+  .comTextbox{margin:10px 0 0; background:#FDF4E5; padding:15px}
+  .comTextbox span{color:#666;}
+  .comTextbox .s1{display:block;height:20px;}
+  .comTextbox span b{font-size:14px; color:#884a00;}
+  .comTextbox .textArea{margin:5px 0 10px 0;position:relative;}
+  .comTextbox .textArea textarea{width:570px; height:110px; color:#666; border:1px solid #EDD3A5; overflow-y:scroll;font-size:14px;padding:2px;}
+
+  #reviewSubmit{width:81px; height:33px;border:0; cursor:pointer; float:right;}
+  .botbutton input.enable{background:url(/content/1/image/dianping/btn_post.jpg) no-repeat;}
+  .botbutton input.disable{background:url(/content/1/image/dianping/btn_post_no.gif) no-repeat;}
+
+#initReview{position:absolute;left:5px;top:5px;}
+.comTextbox span em{font-weight:bold;}
+.comTextbox span em.enable{}
+.comTextbox span em.disable{color:#DA0000;}
+.popComment .aclose,.popCommentOK .aclose{background:url(/content/1/image/dianping/icon_close.gif) no-repeat;width:21px;height:21px;overflow:hidden;float:right;margin:7px 11px 0 0}
+
+
+  /***jQmodel default css***/
+.jqmWindow{background-color:#fff;color:#333;}
+.jqmOverlay{background-color: #000; }
+* iframe.jqm {position:absolute;top:0;left:0;z-index:-1;width: expression(this.parentNode.offsetWidth+'px');height: expression(this.parentNode.offsetHeight+'px');}
+* html .jqmWindow {position: absolute;top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');}

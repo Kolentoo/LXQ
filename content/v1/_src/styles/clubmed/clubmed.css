@@ -1,0 +1,259 @@
+html { font-size: 62.5%; }
+body { background: #0c0c0c; line-height: 1.5; font-family: 'Microsoft YaHei',simsun,arial,sans-serif;-moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; }
+.f60 { color: #f60; }
+img { max-width: 100%; }
+
+.swipe { overflow: hidden; visibility: hidden; position: relative; }
+.swipe-wrap { overflow: hidden; position: relative; }
+.swipe-wrap .item { float: left; width: 100%; position: relative; }
+
+.cm-h1 { display: none; font-size: 1.6rem; color: #fff; background: #0c0b0b; line-height: 45px; padding-left: 45px; position: fixed; left: 0; top: 0; width: 100%; z-index: 11; }
+.cm-h1 .control-bar { position: absolute; left: 0; top: 0; height: 45px; width: 45px; }
+.cm-h1 .control-bar i { width: 15px; height: 3px; background: #fff; overflow: hidden; position: absolute; -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; }
+.cm-h1 .control-bar i:first-child { top: 19px; left: 21px; }
+.cm-h1 .control-bar i:last-child { top: 24px; left: 21px; }
+
+.cm-h1 .control-bar-on i:first-child { -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); left: 22px; top: 22px; }
+.cm-h1 .control-bar-on i:last-child { -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); left: 22px; top: 22px; }
+
+.cm-top { color: #fff; line-height:60px; line-height: 5rem;}
+.cm-top a { color: #fff; margin: 0 20px; font-size: 16px; font-size: 1.4rem; }
+
+.cm-nav {line-height:60px; line-height: 5rem; height: 5rem; background: #033e6f; box-shadow: 0 3px 3px rgba(0,0,0,.5); overflow: hidden; }
+.cm-nav-on { position: fixed; left: 0; top: 0; z-index: 11; width: 100%; }
+.cm-nav .logo { display: table; width: 13%; *padding-top: 17px; }
+.cm-nav .logo a { margin: 0 auto; text-align: center; display: table-cell; vertical-align: middle; }
+.cm-nav .logo a img { display: inline-block; width: 80%; vertical-align: middle; margin: 0 auto; max-height: 45px;margin-top: -5px; }
+.cm-nav .menu { margin-left: 15%; }
+.cm-nav .menu li { float: left; width: 11.11%; }
+.cm-nav .menu li:hover { opacity: 0.9; filter: alpha(opacity=90); }
+.cm-nav .menu li.on { background: #185585; }
+.cm-nav .menu li a { display: block; color: #fff; text-align: center; font-size: 16px;font-size: 1.3rem; }
+
+.cm-main { position: relative; }
+.cm-main .sidebar { width: 15%; -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; }
+
+.cm-main .sidebar-on { position: fixed; left: 0; top: 5rem; line-height: 45px; z-index: 11; background: #000; height: 100%; }
+
+.cm-main .sidebar .club-tag, .cm-main .sidebar li { padding-left: 60px; line-height: 48px;  font-size: 20px;padding-left: 5rem; line-height: 4rem;  font-size: 1.6rem; color: #fff;}
+.cm-main .sidebar .club-tag { position: relative; }
+.cm-main .sidebar .club-tag i { position: absolute; left: 38px; top: 2px; }
+.cm-main .sidebar .club-tag a { font-size: 2.2rem; color: #fff; }
+.cm-main .sidebar li.on { color: #5d9ede; }
+
+.cm-main .content { margin-left: 15%; background: #fff; min-height: 1000px; -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; }
+.cm-main .content .mod { vertical-align: top; width: 100%; overflow: hidden; }
+
+.cm-main .focus { width: 60%; position: relative; overflow: hidden; min-height: 200px; }
+.cm-main  .pagination { position: absolute; bottom: 20px; left: 0; width: 100%; height: 20px; text-align: center; z-index: 2; }
+.cm-main  .pagination em { display: inline-block; width: 12px; height: 12px; text-align: center; border-radius: 50%; border: 2px solid #fff; margin: 0 5px; -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; vertical-align: middle; }
+.cm-main  .pagination em.on { background: #033e6f; border: 2px solid #033e6f; width: 16px; height: 16px; }
+
+.cm-main .focus .arrow { position: absolute; top: 75px; width: 27px; height: 53px; }
+.cm-main .txt { width: 40%; overflow: hidden; }
+
+.cm-main .txt h2 { line-height: 28px; padding: 30px 30px 0; font-size: 30px; font-size: 2.5rem; }
+.cm-main .txt .par { line-height: 4rem; padding: 20px 30px 0; font-size: 18px;font-size: 1.55rem; }
+.cm-main .txt .par p { text-indent: 2em; }
+
+.cm-main .box { vertical-align: top; display: inline-block; width: 100%; overflow: hidden; }
+
+.cm-main .box-odd { background: #212020; }
+.cm-main .box-odd .focus { float: left; }
+.cm-main .box-odd .focus .arrow { right: 0; background: url(/content/v1/images/clubmed/c1.png) no-repeat center center; }
+.cm-main .box-odd .txt { float: right; color: #fff; }
+
+.cm-main .box-even .focus { float: right; }
+.cm-main .box-even .focus .arrow { left: 0; background: url(/content/v1/images/clubmed/c4.png) no-repeat center center; }
+.cm-main .box-even .txt { float: left; color: #3d3d3d; }
+
+.cm-main .content .rest-sport { color: #fff; padding: 40px 45px; }
+.cm-main .content .rest-sport .d1 { min-height: 250px; padding-right: 20px; }
+.cm-main .content .rest-sport .d2 { min-height: 250px; padding-left: 25px; }
+.cm-main .content .rest-sport .d2 dd { line-height: 3rem; }
+.cm-main .content .rest-sport dt { font-size: 30px;font-size: 3rem; }
+.cm-main .content .rest-sport dd { font-size: 20px;font-size: 2rem; }
+
+.cm-main .content .restaurant .pic, .cm-main .content .sport .pic, .cm-main .content .health .pic { position: relative; }
+
+.cm-main .content .restaurant { background: #206ead; }
+.cm-main .content .restaurant .arrow { background: url(/content/v1/images/clubmed/c2.png) no-repeat center center; position: absolute; top: 0; width: 51px; height: 26px; left: 50%; margin: 0 0 0 -25px; }
+.cm-main .content .restaurant .d1 { border-right: 1px solid #1e5e92; }
+.cm-main .content .restaurant .d2 { border-left: 1px solid #3680bc; }
+
+.cm-main .content .sport, .cm-main .content .health { background: #3db42c; }
+.cm-main .content .sport .arrow, .cm-main .content .health .arrow { background: url(/content/v1/images/clubmed/c3.png) no-repeat center center; position: absolute; top: 0; width: 51px; height: 26px; left: 50%; margin: 0 0 0 -25px; }
+.cm-main .content .sport .d1, .cm-main .content .health .d1 { border-right: 1px solid #2da31c; }
+.cm-main .content .sport .d2, .cm-main .content .health .d2 { border-left: 1px solid #44bf33; }
+
+.cm-main .content .route { background: #fff; }
+.cm-main .content .route .txt .pri { padding: 35px 30px 0; }
+.cm-main .content .route .txt .pri .tit { border-bottom: 1px solid #0c0c0c; font-size: 28px;font-size: 2.4rem; margin-bottom: 10px; }
+.cm-main .content .route .txt .pri .subtit { margin-bottom: 15px; font-size: 24px; font-size: 2rem; }
+.cm-main .content .route .txt .pri .subdesc { margin-bottom: 20px; line-height: 72px; font-size: 21px;line-height: 6rem; font-size: 1.8rem; }
+
+.cm-main .content .route .item-odd .focus { float: left; }
+.cm-main .content .route .item-odd .txt { float: right; }
+
+.cm-main .content .route .item-even .focus { float: right; }
+.cm-main .content .route .item-even .txt { float: left; }
+
+.cm-main .content .route .p1 { font-size: 24px;font-size: 2rem; }
+.cm-main .content .route .p2 { font-size: 24px;font-size: 2rem; }
+
+
+.clubmed-intro, .clubmed-spot, .clubmed-focus { background: #84d0d9; padding: 0 10px; }
+.clubmed-intro h2, .clubmed-spot h2, .clubmed-focus h2 { position: relative; border-bottom: 2px solid #fff; line-height: 72px;line-height: 6rem;  height: 72px;height: 6rem; width: 80%; margin: 0 auto; text-align: center; color: #fff; margin-bottom: 35px; }
+.clubmed-intro h2 span, .clubmed-spot h2 span, .clubmed-focus h2 span { position: absolute; background: #84d0d9; width: 220px; font-size: 1.4rem; left: 50%; bottom: -34px; margin-left: -120px; text-align: center; }
+
+.clubmed-intro .inner { background: #fff; color: #958e8e; line-height: 35px; font-size: 1.4rem; padding: 25px; border-radius: 5px; }
+.clubmed-intro .inner p { text-indent: 2em; margin-bottom: 4px; }
+
+.clubmed-spot ul { border: 5px solid #fff; background: #fff; }
+.clubmed-spot li { background-size: cover; padding-top: 45%; background-repeat: no-repeat; background-position: center center; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: 5px solid #fff; border-bottom: 0; position: relative;width: 33.333%; }
+.clubmed-spot li a { display: block; color: #fff; position: absolute; left: 0; bottom: 0; width: 100%; height: 100%; background: rgba(0,0,0,0); -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; }
+.clubmed-spot li .thumb-inner { -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; position: absolute; left: 0; bottom: 0; width: 100%; }
+.clubmed-spot li .p1 { font-size: 3rem; padding: 0 5px 10px 15px; }
+.clubmed-spot li .p2 { font-size: 2rem; padding: 0 5px 10px 15px; }
+.clubmed-spot li .p3 { font-size: 1.4rem; padding: 0 5px 10px 15px; }
+.clubmed-spot li .view { float: right; margin: 0 15px 15px 0; padding: 0 5px 10px 15px; font-size: 1.6rem; }
+
+.clubmed-spot li .thumb-txt { opacity: 0; filter: alpha(0); -moz-transition: all ease 0.8s; -o-transition: all ease 0.8s; -webkit-transition: all ease 0.8s; transition: all ease 0.8s; height: 0; overflow: hidden; margin-top: -50px; float: left; width: 100%; }
+.clubmed-spot li:hover a { background: rgba(0,0,0,0.5); }
+.clubmed-spot li:hover .thumb-txt { opacity: 1; filter: alpha(100); height: 200px; margin-top: 0; }
+
+.clubmed-spot .u2 { border-bottom: 10px solid #fff; }
+.clubmed-spot .u2 li { width: 33.3333%; border-top: 0; }
+
+.clubmed-focus ul { border: 5px solid #fff; background: #fff; border-bottom: 10px solid #fff; }
+.clubmed-focus li { width: 33.3333%; background-size: cover; padding-top: 45%; background-repeat: no-repeat; background-position: center center; border: 5px solid #fff; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border-bottom: 0; position: relative; }
+.clubmed-focus li a { display: block; color: #fff; position: absolute; left: 0; bottom: 0; width: 100%; height: 100%; background: rgba(0,0,0,0); -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; }
+.clubmed-focus li .thumb-inner { -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; position: absolute; left: 0; bottom: 0; width: 100%; }
+.clubmed-focus li .p1 { font-size: 3rem; padding: 0 5px 10px 15px; }
+.clubmed-focus li .p2 { font-size: 2rem; padding: 0 5px 10px 15px; }
+.clubmed-focus li .p3 { font-size: 1.4rem; padding: 0 5px 10px 15px; }
+.clubmed-focus li .view { float: right; margin: 0 15px 15px 0; padding: 0 5px 10px 15px; font-size: 1.6rem; }
+
+.clubmed-focus li .thumb-txt { opacity: 0; filter: alpha(0); -moz-transition: all ease 0.8s; -o-transition: all ease 0.8s; -webkit-transition: all ease 0.8s; transition: all ease 0.8s; height: 0; overflow: hidden; margin-top: -50px; float: left; width: 100%; }
+.clubmed-focus li:hover a { background: rgba(0,0,0,0.5); }
+.clubmed-focus li:hover .thumb-txt { opacity: 1; filter: alpha(100); height: 200px; margin-top: 0; }
+
+/*Boilerplate*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+}
+
+
+@media only screen and (max-width : 600px) {
+    html { font-size: 78.125%; }
+}
+
+@media only screen and (max-width : 767px) {
+    html { font-size: 72.3125%; }
+    body { padding-top: 30px; }
+    .cm-main .sidebar { position: fixed; left: -120px; top: 0; line-height: 45px; z-index: 10; width: 120px; background: #000; height: 100%; padding-top: 45px; }
+    .cm-main .content { margin-left: 0; }
+    .cm-top, .cm-nav { display: none; }
+    .cm-nav .logo { display: none; }
+
+    .cm-h1 { display: block; }
+
+    .cm-main .content .rest-sport > div { width: 100%; }
+    .cm-main .content .rest-sport .d1 { margin-bottom: 15px; min-height: 0; }
+    .cm-main .content .rest-sport .d2 { border: none; padding-left: 0; min-height: 0; }
+
+    .cm-main-on .sidebar { left: 0; }
+    .cm-main-on .content { padding-left: 120px; width: 100%; }
+}
+
+
+@media only screen and (max-width : 799px) {
+    html { font-size: 62.5%; }
+    .clubmed-spot ul, .clubmed-focus ul { border: 10px solid #fff; }
+    .clubmed-spot ul li { border: none; float: none; margin-bottom: 10px; }
+    .clubmed-spot .u1 { border-bottom: 0; }
+
+    .clubmed-spot .u1 li:nth-child(1) { width: 100%; }
+    .clubmed-spot .u1 li:nth-child(2) { width: 100%; }
+    .clubmed-spot .u1 li:nth-child(3) { width: 100%; margin-bottom: 0; }
+
+    .clubmed-spot .u2 li:nth-child(1) { width: 100%; }
+    .clubmed-spot .u2 li:nth-child(2) { width: 100%; }
+    .clubmed-spot .u2 li:nth-child(3) { width: 100%; margin-bottom: 0; }
+
+    .clubmed-focus li { border: none; float: none; margin-bottom: 10px; width: 100%; }
+}
+
+
+@media only screen and (max-width : 899px) {
+    html { font-size: 54.6875%; }
+    .cm-main .focus { width: 100%; float: none; }
+    .cm-main .txt { width: 100%; float: none; }
+
+    .cm-main .sidebar .club-tag i { left: 10px; }
+    .cm-main .sidebar .club-tag, .cm-main .sidebar li { padding-left: 2rem; }
+
+    .cm-main .txt .par { line-height: 2.6rem; padding-bottom: 2rem; }
+
+    .cm-main .content .route .txt .pri .subdesc { line-height: 2rem; }
+
+    .cm-main .box-odd .focus .arrow { -moz-transform: rotate(-270deg); -ms-transform: rotate(-270deg); -o-transform: rotate(-270deg); -webkit-transform: rotate(-270deg); transform: rotate(-270deg); left: 20%; bottom: -13px; top: auto; }
+    .cm-main .box-even .focus .arrow { -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg); left: 20%; bottom: -13px; top: auto; }
+
+    .cm-main .content .route .txt .pri { padding-bottom: 2rem; }
+}
+
+@media only screen and (min-width : 980px) {
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 900px) and (max-width : 1280px) {
+    html { font-size: 62.5%; }
+    .cm-main .sidebar .club-tag i { left: 10px; }
+    .cm-main .sidebar .club-tag, .cm-main .sidebar li { padding-left: 2rem; font-size: 2rem; }
+
+    .cm-main .txt .par { line-height: 2.6rem; }
+
+    .cm-main .content .route .txt .pri .subdesc { line-height: 2rem; }
+}
+
+@media only screen and (min-width : 1281px)and (max-width : 1440px) {
+    html { font-size: 78.125%; }
+    /*20px*/
+    .cm-main .txt .par { line-height: 3.8rem; }
+
+    .cm-main .content .rest-sport .d1 { min-height: 200px; }
+    .cm-main .content .rest-sport .d2 { min-height: 200px; }
+
+    .cm-main .content .rest-sport dd { line-height: 3rem; }
+
+    .cm-main .content .route .txt .pri .subdesc { line-height: 3rem; }
+}
+
+@media only screen and (min-width : 1441px) {
+    html { font-size: 85.9375%; }
+    /*22px*/
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+}
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+}
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+}

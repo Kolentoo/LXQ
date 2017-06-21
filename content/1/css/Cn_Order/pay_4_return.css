@@ -1,0 +1,36 @@
+.path_dh {  width:990px; height:34px; background:#fff url(/content/1/image/order/path_2_dh.gif); margin-bottom:10px;}
+.path_dh a { font-weight:bold; line-height:34px; color:#666; text-decoration:none;}
+.path_dh li { float:left;}
+.width_dh { width:171px; text-align:center; height:34px;}
+.now_dh { background:url(/content/1/image/order/path_5_dh.gif);}
+.now_dh a { font-size:14px; color:#1E6E93;}
+
+.check_pay_dh {  width:990px; height:450px; background:#fff url('/content/1/image/order/check_bg_dh.jpg') repeat-x 50% top; 
+position:relative; border:3px solid #BAEAFF;
+    top: 0px;
+    left: 0px;
+}
+.check_pay_dh  p { position:absolute;}
+.check_pay_dh div {position:absolute; background:#FEFFF0; border:1px solid #F8E7D2; top:260px; left:20px; width:904px; height:135px; overflow:hidden;}
+.check_pay_dh a { color:#0066FF; text-decoration:underline;}
+.check_pay_dh a:hover { color:#F60;}
+
+.p1_dh { top:40px; left:50px; font-size:25px; font-weight:bold; color:#666;}
+.p2_dh { top:120px; left:200px; font-size:28px; font-weight:bold; color:#000;}
+.p2_dh strong { padding:0 10px; font-family:Arial; font-size:42px; font-weight:bold; color:#F60;}
+.p3_dh { top:190px; left:200px; font-size:14px; color:#996600;}
+
+.p4_dh { top:20px; left:40px; font-size:14px; font-weight:bold; color:#FF6600; background:url(/content/1/image/order/checkpiont_dh.gif) no-repeat 0px 0px; padding-left:25px;}
+.p5_dh { top:60px; left:65px; font-size:14px; font-weight:bold; color:#333;}
+.p5_dh strong { font-size:14px; font-weight:bold; color:#F60; padding-right:20px;}
+.p6_dh { top:100px; right:50px; color:#666;}
+
+#ultip
+{
+    color:#996633; position:relative; top:50px; left:100px;
+    }
+#ultip li{line-height:22px; text-align:left;}
+
+
+
+

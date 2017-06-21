@@ -1,0 +1,102 @@
+/*
+* @Author: lxq
+* @Date:   2016-08-29 10:13:29
+* @Last Modified by:   lxq
+* @Last Modified time: 2016-08-30 11:25:48
+*/
+
+html, body{ width: 100%; overflow-x: hidden;}
+.content .banner {background-attachment:fixed;background-repeat:none;height:1080px;background-size:cover;}
+.content .cb {background-attachment:fixed;background-repeat:none;background-size:cover;height:1080px;}
+.content .video {border:8px solid #c42829;box-shadow: 5px 5px 3px rgba(7,0,2,0.22);}
+.content .video embed{width: 570px;height: 370px;vertical-align: middle;}
+.cont-box {background-size:cover;}
+.cont2-box .decorate {width: 920px;margin:0 auto;padding-top: 140px;}
+.cont2-box .character {background: url(/content/subject/pc-meiguo160829/img/xiaoyou.png) no-repeat;width: 216px;height: 287px;}
+.cont2-box .txt-topic {background: url(/content/subject/pc-meiguo160829/img/txt.png) no-repeat;width: 631px;height: 222px;}
+
+
+.pro-box {padding-top: 180px;}
+.pro-tab .hd {width: 1080px;margin:0 auto;}
+.pro-tab .hd li{margin:0 3px;cursor: pointer;_display: inline;}
+.pro-tab .hd li .star-bj {background: url(/content/subject/pc-meiguo160829/img/menu.png) no-repeat;width: 174px;height: 129px;position: relative;}
+.pro-tab .hd li:hover .star-bj {background: url(/content/subject/pc-meiguo160829/img/menu-on.png) no-repeat;width: 174px;height: 129px;}
+.pro-tab .hd .on .star-bj {background: url(/content/subject/pc-meiguo160829/img/menu-on.png) no-repeat;width: 174px;height: 129px;}
+.pro-tab .star-bj .star-txt {position: absolute;}
+.pro-tab .list1 .star-txt {background: url(/content/subject/pc-meiguo160829/img/list1.png) no-repeat;width: 109px;height: 30px;left: 25px;top: 70px;}
+.pro-tab .list2 .star-txt {background: url(/content/subject/pc-meiguo160829/img/list2.png) no-repeat;width: 112px;height: 38px;left: 20px;top: 67px;}
+.pro-tab .list3 .star-txt {background: url(/content/subject/pc-meiguo160829/img/list3.png) no-repeat;width: 112px;height: 36px;left: 22px;top: 68px;}
+.pro-tab .list4 .star-txt {background: url(/content/subject/pc-meiguo160829/img/list4.png) no-repeat;width: 112px;height: 35px;left: 24px;top: 68px;}
+.pro-tab .list5 .star-txt {background: url(/content/subject/pc-meiguo160829/img/list5.png) no-repeat;width: 91px;height: 34px;left: 27px;top: 69px;}
+.pro-tab .list6 .star-txt {background: url(/content/subject/pc-meiguo160829/img/list6.png) no-repeat;width: 134px;height: 37px;left: 19px;top: 69px;}
+
+.route-box {width: 1168px;margin:25px auto 0;}
+.route-box .route-list {background: #fff;padding: 10px;width: 262px;transition: all ease 0.5s;margin:0 5px;_display: inline;}
+.route-box .route-list:hover {box-shadow: 0 0 8px rgba(0,13,105,0.45);}
+.route-box .chart {width: 262px;}
+.route-box .chart img{max-height: 196px;}
+.route-box .name {height: 44px;overflow: hidden;margin-top: 8px;}
+.route-box .name a{font-size: 16px;color:#0f51a8;font-weight: bold;}
+.route-box .price {color:#c20c15;font-size: 24px;text-align: center;}
+.route-box .price i{font-size: 48px;font-family: Georgia;line-height: 30px;}
+.route-box .bq {color:#2c2c2c;font-size: 14px;text-align: center;margin-top: 10px;}
+.route-box .book {width: 140px;height: 43px;border-radius: 7px;background: #c20c15;line-height: 41px;text-align: center;margin:10px auto 0;}
+.route-box .book a{color:#fff;font-size: 18px;text-align: center;width: 100%;display: inline-block;font-weight: bold;}
+
+.good-box {width: 1180px;margin:25px auto 0;}
+.good-box .good-list {background: #fff;padding: 10px;width: 550px;transition: all ease 0.5s;margin:0 10px;_display: inline;}
+.good-box .good-list:hover {box-shadow: 0 0 8px rgba(0,13,105,0.45);}
+.good-box .good-list .chart {width: 550px;}
+.good-box .name {height: 44px;overflow: hidden;margin: 12px 0 8px 0;}
+.good-box .name a{font-size: 16px;color:#0f51a8;font-weight: bold;}
+.good-box .chart img{max-height: 310px;}
+.good-box .bq {color:#2c2c2c;font-size: 14px;margin-bottom: 5px;}
+.good-box .price {color:#c20c15;font-size: 24px;text-align: center;}
+.good-box .price i{font-size: 48px;font-family: Georgia;line-height: 30px;}
+.good-box .book {width: 140px;height: 43px;border-radius: 7px;background: #c20c15;line-height: 41px;}
+.good-box .book a{color:#fff;font-size: 18px;text-align: center;width: 100%;display: inline-block;font-weight: bold;}
+
+.cont4-box {height: 648px;background-position: center center;}
+.cont4-box .cont-con {padding-top: 60px;}
+.cont4-box .topic {background: url(/content/subject/pc-meiguo160829/img/topic.jpg) no-repeat;height: 85px;width: 555px;margin:0 auto;color:#fff;font-size: 38px;
+	text-align: center;line-height: 91px;box-shadow: 0 0 3px #0a3f83;margin-bottom: 45px;}
+.cont4-box .topic a{color:#fff;display: inline-block;width: 100%;}
+.cont4-box .pic-list {background: #fff;}
+.cont4-box .pic {width: 1074px;height: 374px;}
+.cont4-box .pic1 {background: url(/content/subject/pc-meiguo160829/img/pic1.jpg) no-repeat;}
+.cont4-box .pic2 {background: url(/content/subject/pc-meiguo160829/img/pic2.jpg) no-repeat;}
+.cont4-box .pic3 {background: url(/content/subject/pc-meiguo160829/img/pic3.jpg) no-repeat;}
+
+.pic-show {width: 1148px;margin:0 auto;}
+.pic-show .viewport {width: 1074px;height: 374px;float: left;position: relative;overflow: hidden;border:3px solid #fff;}
+.pic-show .buttons {background: #fff;border-radius: 50%;display: block;margin: 155px -30px 0 0;float: left;width: 64px;height: 64px;position: relative;
+	font-weight: bold;text-align: center;line-height: 35px;text-decoration: none;font-size: 22px;z-index:5;cursor: pointer;}
+.pic-show .next {margin: 155px 0 0px -30px;}
+.pic-show .arrow-left {background: url(/content/subject/pc-meiguo160829/img/left.jpg) no-repeat;width: 24px;height: 29px;position: absolute;top: 19px;
+	left: 18px;}
+.pic-show .arrow-right {background: url(/content/subject/pc-meiguo160829/img/right.jpg) no-repeat;width: 24px;height: 29px;position: absolute;top: 19px;
+	right: 18px;}
+.pic-show .overview {list-style: none;position: absolute;left: 0;top: 0;box-shadow: 0 3px 3px #000;}
+.pic-show .overview li {float: left;height: 380px;width: 1074px;}
+
+.cont5-box {height: 284px;background-position: center center;}
+.cont5-box .code-wrap {width: 660px;margin:0 auto;}
+.cont5-box .code-box {width: 340px;margin-top: 95px;}
+.cont5-box h3 {color:#d10134;font-size: 18px;font-weight: bold;margin-bottom: 10px;}
+.cont5-box .code-list {text-align: center;}
+.cont5-box .code-list1 {width: 210px;}
+.cont5-box .code-list2 {width: 101px;}
+.cont5-box .code-group .p1 {color:#fff;font-size: 18px;font-weight: bold;margin-top: 5px;text-align: center;}
+
+.navigation {width: 162px;position: absolute;top: 980px;right: 20px;font-weight: bold;}
+.nav-on {position: fixed;top: 14%;right: 20px;}
+.navigation .nav-top {background: url(/content/subject/pc-meiguo160829/img/nav-top.png) no-repeat;height: 144px;width: 123px;margin:0 auto;}
+.navigation .nav-box {background: url(/content/subject/pc-meiguo160829/img/nav-body.png) no-repeat;height: 272px;width: 162px;padding-top: 30px;}
+.navigation .nav-list {color:#e03638;font-size: 26px;text-align: center;border-bottom: 1px dashed #e03638;cursor: pointer;margin:0 27px;line-height: 46px;}
+.navigation .nav-list:hover {color: #0a55a3;border-color:#0a55a3;}
+.navigation .on {color: #0a55a3;border-color:#0a55a3;}
+.navigation .back {cursor: pointer;text-align: center;color:#cf272d;margin-top: 20px;}
+.navigation .back .p2 {font-size: 26px;margin-top: -3px;}
+.navigation .back:hover {color:#0a55a3;}
+
+

@@ -1,0 +1,121 @@
+/*
+* @Author: lxq
+* @Date:   2015-12-31 13:15:46
+* @Last Modified by:   jonas hsiao
+* @Last Modified time: 2016-06-01 10:41:17
+*/
+
+/* 积分商城 */
+body {background: #f5f5f5;}
+html, body { width: 100%; overflow-x: hidden; }
+.crumbs .target {color:#333;}
+.signin-integral {margin-top: 1px;}
+.signin-integral .commodity-intro {background: #fff;border:1px solid #dcdcdc;}
+.signin-integral .commodity-left {width: 33.585%;}
+.signin-integral .commodity-right {width: 62.309%;padding:0 2.045%;}
+.commodity-right .topic {font-size: 30px;padding:12px 0;border-bottom: 1px solid #999;}
+.commodity-right .commodity-price {margin-top: 10px;}
+.commodity-right .commodity-price1 .s1 {font-size: 30px;color:#e5004f;}
+.commodity-right .commodity-price2 {margin-left: 1.963%;}
+.commodity-right .commodity-price2 del{color:#666;}
+.commodity-right .surplus {margin: 10px 0 15px 0;}
+.commodity-right .surplus .s2 {color:#e5004f;}
+.commodity-right .tips {margin-left: 10px;vertical-align: bottom;}
+.signin-integral .commodity-detail {background: #fff;border:1px solid #dcdcdc;margin:20px 0 35px 0;}
+.commodity-detail .detail-topic {padding:12px 0;border-bottom: 1px solid #dcdcdc;margin:0 2.020%;}
+.commodity-detail .detail-con {margin:0 2.020%;padding:20px 0;}
+
+
+/* 悠哉签到页 */
+.signin .signin-login {width: 31.932%;padding-bottom: 17px;position: absolute;top: 0;left: 0;background: url(/content/v1/images/signin/signin12.png);}
+.signin .signin-login .head-portrait {padding:20px 0;}
+.signin .signin-login .p1 a{color:#e5004f;}
+.signin .signin-login .p1 a:hover {text-decoration: underline;}
+.signin .signin-login .p2 i{color:#e5004f;}
+.signin .signin-login .p3 {background: #e5004f;color:#fff;width: 57.894%;height: 50px;line-height: 50px;margin:10px auto 3px;border-radius: 5px;}
+.signin .signin-login .p4 a{color:#999;}
+.signin .banner-sides {width: 100%;}
+.signin .signin-banner {position: relative;}
+.signin .signin-banner .signined .p4 a{color:#0099d9;}
+.signin .signin-banner .receive .p3 {background: #999;}
+
+.banner-sides { height: 340px; position: relative; overflow: hidden; z-index: 0; }
+.banner-sides .slides_container { display: block; overflow: hidden; }
+.banner-sides .slides_container .slide-item { background: rgba(0, 0, 0, 0) none no-repeat scroll center 0; height: 340px; width: 100%; }
+.banner-sides .pagination { z-index: 10; position: absolute; bottom: 9px; left: 65%; margin-left: -31px; clear: both; }
+.banner-sides .pagination li { border-radius: 50%; background: #efefef; float: left; margin-left: 6px;}
+.banner-sides .pagination li a { text-indent: -9999px; display: block; width: 11px; height: 11px; border-radius: 50%;_height: 11px;overflow: hidden;}
+.banner-sides .pagination .on { background: #e5004f;box-shadow: none;}
+
+.signin-con .exchange {width: 69.386%;}
+.exchange-con .item {border-top: 2px solid #0099d9;}
+.exchange-con .item .item-con {margin-bottom: 15px;}
+.signin-con .exchange {margin-top: 25px;}
+.signin-con .exchange .exchange-topic {color:#0099d9;margin-bottom: 10px;}
+.signin-con .exchange .exchange-list {color:#0099d9;padding-top: 8px;}
+.signin-con .exchange .exchange-list li{margin:0 10px;position: relative;}
+.signin-con .exchange .exchange-list .on {font-weight: bold;}
+.signin-con .exchange .exchange-list .on .choose {display: block;}
+.signin-con .exchange .exchange-list .choose {border-color: #f5f5f5 #f5f5f5 #0099d9;border-style: solid;border-width:5px;overflow: hidden;line-height: 0;position: absolute;left: 50%;bottom: -8px;margin-left: -3px;cursor: none;display:none;_bottom: -9px;}
+.signin-con .exchange .exchange-con {width: 100%;overflow: hidden;}
+.exchange-con .pro-box2  .pro-list {border-color:#f5f5f5;}
+.exchange-con .pro-list {border:1px solid #dcdcdc;width: 31.645%;background: #fff;margin:20px 2.081% 0 0;}
+.exchange-con .pro-list .price del{font-size: 16px;}
+.exchange-con .pro-list .chart {position: relative;height: 100%;overflow: hidden;}
+.exchange-con .pro-list .chart:hover .code-box {bottom: 0;}
+.exchange-con .pro-list .chart .code-box {position: absolute;bottom: -100%;left: 0;width: 100%;height: 100%;background: #6f6f6f;opacity:0.9;filter:alpha(opacity=90);transition:all ease 0.5s;}
+.exchange-con .pro-list .chart .code-box img{margin: 12px 0 5px 0;}
+.exchange-con .pro-list .chart .code-box .txt {width: 76%;margin:0 auto;color:#fff;}
+.exchange-con .pro-list .name {padding:7px 7px 0 7px;display: inline-block;height: 24px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width: 96.555%;}
+.exchange-con .pro-list .number {padding:1px 7px 0;}
+.exchange-con .pro-list .price {margin:-2px 7px 7px;font-size: 14px;}
+.exchange-con .pro-list .price .p2 {padding: 4px 5px 0 0;}
+.exchange-con .pro-list .price i{font-size: 18px;color:#e5004f;}
+.exchange-con .pro-box .last {margin-right: 0;}
+
+.fn-pager .item {border: 1px solid #cecece;}
+.pro-box2 .pro-list {background: url(/content/v1/images/signin/signin10.png) ;height: 185px;}
+.pro-box2 .pro-list .list1 {margin:5px 10px 0;}
+.pro-box2 .pro-list .list1 .p3 {margin-top: 8px;}
+.pro-box2 .pro-list .list1 .p4 {margin-top: 8px;color:#fff;display: inline-block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width: 100%;}
+.pro-box2 .pro-list p{color:#fff;}
+.pro-box2 .pro-list .list-price .p1 {font-size: 30px;}
+.pro-box2 .pro-list .list1 .s1 {font-size: 36px;margin-right: 10px;}
+.pro-box2 .list2 {color:#fff;margin-top: 10px;width: 100%;height: 50px;position: relative;}
+.pro-box2 .list2 .p5 .swap:hover .s2{background: #ffff82;}
+.pro-box2 .list2 .p5 .swap:hover .s1{color:#ffff82;}
+.pro-box2 .list2 .s2 {background: #fff;border-radius: 50%;color:#5e2828;font-size: 14px;display: inline-block;padding:0 4px;line-height: 16px;margin-right:5px;}
+.pro-box2 .list2 .p5 .s1 {margin-top: 3px;position: relative;top: 1px;}
+.pro-box2 .list2 .p5 .s3 {text-decoration: underline;}
+.pro-box2 .list2 .p6 {margin-top: -3px;}
+.list2 .use-tips {border:1px solid #89c0e9;background: #fff;padding:6px 10px;width: 72%;z-index:500;position: absolute;top: 38px;left: 9.088%;}
+.list2 .use-tips .use-txt {color:#666;text-align: left;}
+.list2 .use-tips .tips-arrow {font-size: 12px;position: absolute;top: -13px;right: 14.355%;}
+.list2 .use-tips .tips-arrow em{color: #89c0e9;}
+.list2 .use-tips .tips-arrow i{color: #fff;position: relative;top: 2px;left: -18px;}
+
+.signin-con .exchange-rank {width: 28.772%;margin-top: 20px;}
+.rank-con .rank-box {border:1px solid #dcdcdc;border-top: none;}
+.exchange-rank .rank-topic {background: #0099d9;height: 44px;line-height: 44px;}
+.exchange-rank .rank-topic .t1 {background: url(/content/v1/images/signin/signin-icon1.png) no-repeat;height: 22px;width: 22px;display: inline-block;margin:0 10px 0 20px;position: relative;top: 3px;*position: relative;*top: 0;_top: 8px;}
+.exchange-rank .rank-topic .t2 {color:#fff;_position: relative;_top: 9px;}
+.exchange-rank .rank-con {background: #fff;}
+.exchange-rank .rank-con .rank-infor {width: 100%;}
+.exchange-rank .rank-con .rank-price {color:#e5004f;margin-left: 15px;}
+.exchange-rank .rank-con .rank-list {margin:0 3.894%;padding:20px 0;border-top: 1px solid #dcdcdc;}
+.exchange-rank .rank-con .rank-infor .number {background: #e5004f;border-radius: 50%;width: 30px;height: 30px;line-height: 30px;text-align: center;color:#fff;margin-top: 6px;}
+.exchange-rank .rank-con .first {border-top: none;}
+.exchange-rank .rank-con .second .number {background: #0099d9;}
+.exchange-rank .rank-con .third .number {background: #c4c19c;}
+.exchange-rank .rank-con .other .number {background: #fff;color:#666;}
+.exchange-rank .rank-con .rank-infor .chart {margin-left: 3.03%;*width: 54px;}
+.rank-infor .infor-txt {margin-left: 3.03%;line-height: 20px;width: 61.989%;}
+.rank-infor .infor-txt .price-box {line-height: 18px;}
+.rank-infor .infor-txt .p1 {white-space:nowrap;overflow:hidden;text-overflow:ellipsis;_width: 156px;}
+.rank-infor .infor-price {color:#e5004f;}
+
+
+.newCity-phone .icon-common-top {display: inline-block;}
+.newCity-phone .signin-enter {background: #e4006e;color:#fff;font-size: 14px;line-height: 22px;padding: 0 8px;display: inline-block;margin-left: 5px;}
+.newCity-phone .signin-enter:hover {color:#fff;}
+

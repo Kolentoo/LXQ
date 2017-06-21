@@ -1,0 +1,84 @@
+/*
+* @Author: lichen
+* @Date:   2016-09-08 10:41:11
+* @Last Modified by:   lxq
+* @Last Modified time: 2017-03-27 14:08:21
+*/
+
+.red { color: #e6302f; }
+.banner-ozj { background: url(/content/subject/pc-baoji170306/img/banner.jpg) no-repeat center center; height: 640px;}
+.con-a { 
+	background: url(/content/subject/pc-baoji170306/img/bj1.jpg) no-repeat center center; height: 409px;
+	.txt-box {
+		width: 798px;margin:0 auto;padding-top: 50px;position: relative;
+		.txt {
+			border:2px solid #72420d;border-radius:10px;background: url(/content/subject/pc-baoji170306/img/bj.jpg);
+			position: relative;
+			dl{
+				padding:50px 45px 40px;position: relative;z-index:5;
+				dd{color:#fa6a2f;font-size: 20px;}
+				.t1 {margin-left: 88px;}
+			}
+			.png {position: absolute;}
+			.d1 {background: url(/content/subject/pc-baoji170306/img/decorate1.png) no-repeat;width: 186px;height: 73px;top: 0;left: 0;}
+			.d2 {background: url(/content/subject/pc-baoji170306/img/decorate2.png) no-repeat;width: 361px;height: 206px;bottom: 0;right: 0;}
+		}
+	}
+}
+.con-b { background: url(/content/subject/pc-baoji170306/img/bj2.jpg) no-repeat center center; height: 938px;}
+
+.con-b-main { margin: 0 auto; width:897px;padding-top: 170px;}
+.con-b-main-model-b { 
+	background: #fff; width: 279px;margin:20px 10px 0;position: relative; -moz-transition: all ease 0.5s; 
+	-o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; overflow: hidden;_display:inline;
+	a { 
+		display: block; overflow: hidden; position: relative; 
+		span {width:100%;position: absolute; bottom: 0; left: 0; filter: alpha(opacity=70); opacity: 1; color: #fff; background: #000; font-size: 14px; 
+		padding: 5px; background: rgba(0,0,0,.7); height: 37px; overflow: hidden;display: inline-block;_bottom: 85px; _width: 279px}
+		img { width: 100%; -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s;
+ 		transition: all ease 0.5s; }
+	}
+}
+.con-b-main-model-b:hover a img { -moz-transform: scale(1.05); -ms-transform: scale(1.05); -o-transform: scale(1.05); -webkit-transform: scale(1.05); 
+	transform: scale(1.05); }
+.con-b-main-model-b:hover .con-b-main-model-b-b { background: #e5004f; }
+
+.con-b-main-model-b-t  { 
+	overflow: hidden; position: relative; 
+	.p1 {color: #4c4b4b; font-size: 16px; margin-top: 15px; margin-left: 15px; }
+	.p2 { 
+		color: #f75f5f; font-size: 18px; margin-top: 10px; margin-left: 15px;
+		span { color: #f75f5f; font-size: 30px; font-family: Georgia; }
+	}
+	.p3 { color: #999; font-size: 14px; margin-top: 24px; margin-right: 15px; }
+}
+
+.con-b-main-model-b-b { 
+	background: #f75f5f; text-align: center; height: 40px; line-height: 40px; margin-top: 15px; -moz-transition: all ease 0.5s;
+ 	-o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; 
+ 	a { font-size: 20px; color: #fff; }
+}
+
+
+.con-b-main-model-b .i1 { position: absolute; z-index: 20; background: url(/content/subject/pc-baoji170306/img/label.png) no-repeat center center;
+ width: 75px; height: 47px; left: 10px; top: 0; font-size: 16px; color: #fff; text-align: center; line-height: 38px; }
+
+.bottom {
+    background: #fdf6ba;padding:30px 0 25px 0;
+    .bottom-topic {background: url(/content/subject/pc-baoji170306/img/tj-topic.png) no-repeat;width: 402px;height: 120px;margin:0 auto;}
+    .bottom-body {
+        .commend-group {
+            background: #fff391;width: 1000px;margin:30px auto;padding:20px 0;
+            .list-item {
+                width: 281px;margin-left: 14px;float: left;_display:inline;
+                img{max-height:213px;}
+            }
+            .back {
+                width: 80px;height: 213px;text-align: center;background: #268aec;margin-left: 14px;border-radius:8px;
+                .back-con {font-size: 30px;color:#fff;line-height: 31px;font-weight:bold;display: inline-block;width: 100%;padding:45px 0;
+                }
+            }
+            .back:hover {background: #227cd4;}
+        }
+    }
+}

@@ -1,0 +1,70 @@
+html{min-height:100%;}
+body{min-height:100%;overflow-x: hidden;}
+input,button,textarea {
+    -webkit-appearance: none;
+}
+.address{ 
+    -moz-user-select:initial;
+    -webkit-user-select: initial;
+    -ms-user-select: initial;
+    user-select:initial}
+input, select{font-family: 'STHeiti','Microsoft YaHei',Helvetica,Arial,sans-serif;}
+.white-topbar{background:#fff;}
+.title_img{font-size:.36rem;}
+.main_top{padding:.2rem .3rem;background:#fff;overflow:hidden;border-top:1px solid #dddddd;border-bottom:0.02rem solid #dddddd;}
+.main_top_left{float:left;width:2rem;height:1.5rem;}
+.main_top_left img{display:block;width:2rem;height:1.5rem;}
+.main_top_right{width:4.6rem;float:left;margin-left:.2rem;}
+.main_top_right .title{color:#444444;font-size:.32rem;line-height:.4rem;margin-top:.2rem;}
+.main_top_right .choose{font-size:.28rem;color:#e5064f;margin-top:.3rem;}
+.receive{margin-top:.24rem;padding:.2rem;background:#fff;border-top:1px solid #dddddd;border-bottom:1px solid #dddddd;}
+.receive_top{padding-bottom:.2rem;border-bottom:1px solid #dddddd;}
+.receive_top p{font-size:.32rem;color:#444444;}
+.receive_m{margin-top:.2rem;overflow:hidden;}
+.receive_m span{padding:0px .7rem;border:1px solid #e0e0e0;float:left;font-size:.28rem;color:#999999;margin-right:.5rem;line-height:.76rem;position:relative;border-radius:.08rem;}
+.receive_m span i{display:none;width:.4rem;height:.4rem;position:absolute;right:0px;top:0px;background:url(http://r03.uzaicdn.com/content/hybrid/images/member/selected.png) no-repeat;background-size:.4rem .4rem;}
+.receive_m span.selected{border:1px solid #ef6695;color:#e5004f;}
+.receive_m span.selected i{display:block;}
+
+.main_m{padding-bottom:1.05rem;}
+.info{padding:0px .2rem;border-top:1px solid #dddddd;border-bottom:1px solid #dddddd;margin-top:.2rem;background:#fff;}
+.info_top{height:.78rem;line-height:.78rem;}
+.info_top p{font-size:.32rem;color:#444444;}
+.info_m{height:.78rem;line-height:.78rem;border-top:1px solid #dddddd;overflow:hidden}
+.info_m span.left{float:left;width:1.4rem;color:#666666;font-size:.28rem;}
+
+.info_m input{float:left;color:#999999;font-size:.24rem;margin-top:.25rem;border:0px;width:5rem;}
+.info_m textarea{float:left;color:#999999;font-size:.24rem;margin-top:.25rem;border:0px;width:5rem;outline: none;}
+
+.info_f{position:fixed;bottom:0px;left:0px;width:7.5rem;height:1.05rem;background:#fff;text-align:right;line-height:1.05rem;}
+.info_f span{font-size:.28rem;color:#666666;}
+.info_f span.num{color:#e5004f;font-size:.32rem;}
+.info_f input{width:2.5rem;height:.84rem;color:#fff;background:#e5004f;font-size:.36rem;margin-right:.1rem;border:0px;margin-left:.1rem;border-radius:.1rem;}
+
+.pick_up{border-top:1px solid #dddddd;margin-top:.2rem;background:#fff;}
+.pick_up_top{padding:.2rem 0;border-bottom:1px solid #dddddd;height:.38rem;line-height:.38rem;margin:0 .2rem;}
+.pick_up_top p{font-size:.32rem;color:#444444;background:url(http://r03.uzaicdn.com/content/hybrid/images/member/more.png) no-repeat right center;background-size:.13rem .22rem;}
+.pick_up_top1{overflow:hidden;margin:0 .2rem;}
+.pick_up_top1 .left{font-size:.28rem;color:#666666;line-height:.65rem;}
+.pick_up_top1 .right{font-size:.26rem;color:#333333;line-height:.65rem;float:right;}
+.pick_up_img{background:#fff;padding-bottom:.2rem;}
+.pick_up_img img{width:7.5rem;display:block;}
+
+.body{ width:7.5rem;overflow:hidden;overflow-x:hidden;}
+.fl_75{float:left; width:7.5rem;}
+.w_15{width:15rem;overflow:hidden;}
+.main_select{height:.88rem;border-top:1px solid #dddddd;border-bottom:1px solid #dddddd;background:url(http://r03.uzaicdn.com/content/hybrid/images/member/line1.png) center no-repeat #fff;background-size:1px .22rem;}
+.main_select .selected{width:20%;float:left;text-align:center;margin:.2rem 15%;position:relative;}
+.main_select select{border:0px;outline:none;font-size:.32rem;width:100%;-webkit-border:0px;appearance:none;-webkit-appearance:none;}
+.main_select .selected:after{width:.2rem;height:.2rem;position:absolute;right:.14rem;top:.14rem;background:#fff;content:"";}
+.main_select .selected:before{width:.2rem;height:.2rem;position:absolute;right:.14rem;top:.14rem;background:#fff;content:"";background:url(http://r03.uzaicdn.com/content/hybrid/images/member/select.png) no-repeat right center;background-size:.22rem .12rem; z-index:2;}
+.main_select_m{margin-top:.2rem;padding:.2rem;background:#fff;border-top:1px solid #dddddd;border-bottom:1px solid #dddddd;position:relative;}
+.main_select_m.hover{border-top:1px solid #e5004f;border-bottom:1px solid #e5004f;background:url(http://r03.uzaicdn.com/content/hybrid/images/member/selected.jpg) no-repeat right top #fff;background-size:.62rem .62rem;}
+.main_select_m .title{font-size:.32rem;color:#444444;line-height:.45rem;}
+.main_select_m .add{font-size:.26rem;color:#666666;line-height:.4rem;}
+.main_select_m .mobile{font-size:.24rem;color:#999999;line-height:.4rem;background:url(http://r03.uzaicdn.com/content/hybrid/images/member/mobile.png) no-repeat left center;background-size:.18rem .21rem;padding-left:.2rem;}
+.main_select_m .time{font-size:.24rem;color:#999999;line-height:.4rem;background:url(http://r03.uzaicdn.com/content/hybrid/images/member/time.png) no-repeat left center;background-size:.23rem .23rem;padding-left:.25rem;margin-left:.4rem;}
+
+.white-topbar{position: absolute;}
+
+html{min-height: 9rem;}

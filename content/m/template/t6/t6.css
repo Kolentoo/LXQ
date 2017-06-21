@@ -1,0 +1,15 @@
+﻿html { background: #f6f6f6; }
+.w { margin: 0 auto;  }
+.banner img { display: block; width: 100%; }
+.list { }
+.list .list-wrap { }
+.list li { width: 50%; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; vertical-align: top;height:90px; }
+.list li:nth-child(2n+1) { border-bottom: 1px solid #bbb;}
+.list li:nth-child(5) { border-bottom: 0; }
+
+.list li:nth-child(2n) { border-left: 1px solid #bbb; border-bottom: 1px solid #bbb; }
+
+.list li a { overflow: hidden; display: block; text-align: center; padding: 10px 0; }
+.list li:last-child { border-bottom: none; }
+.list li .p1 { font-size: 14px; color: #333; }
+.list li .pic { }

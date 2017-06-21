@@ -1,0 +1,29 @@
+.login_pay_dh { position:relative;}
+.login_paybg_dh { background:#fff; }
+.login_tit_dh { background:#e5ffc5;position:relative;}
+.login_tit_dh  .pop-close{position:absolute;right:10px;top:-1px;font-size:23px;color:#000;}
+.login_tit_dh h1 { margin:0px; padding:0 0 0 20px;  font-weight:bold; color:#666; line-height:35px; text-align:left;height:35px;overflow:hidden;}
+.login_input_dh { width:275px; height:180px; position:relative; padding-left:30px;padding-right:10px;}
+.margin_right_dh { border-right:1px dashed #8c0;}
+
+.login_input_dh  input{border:1px solid #ccc;height:24px;width:180px;}
+ 
+.P0_dh { position:relative;  color:#333; }
+.P0_dh span {  display:block; float:left;}
+
+.P1_dh ,.P2_dh ,.P4_dh ,.P5_dh { margin-bottom:20px;}
+
+.P2_dh {padding-left:48px;}
+.P3_dh {padding-left:48px;}
+.P6_dh {padding-left:37px;}
+
+
+.P6_dh a { padding:0 5px; line-height:30px;  color:#006600; text-decoration:underline;}
+.P6_dh a:hover {color:#FF6600;}
+.sp_error{color: Red;  margin-left:2px; line-height:22px;}
+
+#btn_QuitLogin,#btn_Login{width:150px;background:#f60;border:0px;font-weight:bold; color:#FFF;height:28px;line-height:28px;}
+
+#aRetrieved{ margin-left:3px;  color:#006600; line-height:20px;text-decoration:underline;}
+
+.margin_right_dh{width:265px;padding-left:25px;}

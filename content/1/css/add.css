@@ -1,0 +1,27 @@
+﻿/* CSS Document */
+.rili{width:549px;}
+.rilitop{background:url(/content/1/image/bg/tdtop.gif) no-repeat left top; width:549px; height:9px;}
+.rilicenter{background:url(/content/1/image/bg/tdcenter.gif) repeat-y left top; width:515px; padding:5px 17px;}
+.closed{text-align:right; padding-bottom:5px; padding-right:5px;}
+.rilibot{background:url(/content/1/image/bg/tdbot.gif) no-repeat left top; width:549px; height:8px;}
+.mounth{margin-bottom:5px;}
+.mounth table td{text-align:center; padding:1px 5px;}
+.mounthbg{background:#f2f2f2; font-size:12px; color:#363636;}
+.day table th{background:url(/content/1/image/bg/daythbg.gif) repeat-x left top; text-align:center; padding:5px; font-weight:lighter; width:60px; font-size:12px; color:#666666;}
+table th.colorhe{color:#8c6639;}
+.day table td{text-align:right; background:#f4f3ee; vertical-align:top; padding:5px 7px; height:28px; line-height:18px; font-size:11px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;}
+.cf{font-size:14px; color:#333333; font-weight:bold;}
+.leftsale{float:left; text-align:left;}
+.day table td span.cororg3{font-weight:lighter; font-family:Arial, Helvetica, sans-serif;}
+
+
+
+.yzxy{width:549px;text-align:left;}
+.yzxytop{background:url(/content/1/image/bg/tdtop.gif) no-repeat left top; width:549px; height:9px;}
+.yzxycenter{background:url(/content/1/image/bg/tdcenter.gif) repeat-y left top; width:515px; padding:5px 17px;}
+.yzxybot{background:url(/content/1/image/bg/tdbot.gif) no-repeat left top; width:549px; height:8px;}
+.yzxycont{padding-bottom:15px; color:#666666;}
+.yzxycont h3{font-size:14px; font-weight:bold; color:#ff6600; padding-bottom:10px;}
+.yzxycont p{line-height:20px;}
+.yzxycont ul li{line-height:24px;}
+

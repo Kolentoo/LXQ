@@ -1,0 +1,102 @@
+"use strict";
+
+var slider = {};
+
+function handleLozyLoad(id, index) {
+    var ot = $('#' + id).find('.box').eq(index).find('.image');
+    ot.each(function (k, v) {
+        var o = $(this);
+        var osrc = o.attr('data-img') || o.attr('data-src') || o.attr('data-original');
+        if (osrc) {
+            if (!o.is('img'))
+                o.css({ "background-image": "url(" + osrc + ")" });
+            else
+                o.attr('src', osrc);
+        }
+    });
+
+}
+
+slider.api = function (id, idwrap, time, lazyload, numSlide, callback) {
+    _util.file.load(window.seabag.swipe, function () {
+        if (!$('#' + id).get(0)) {
+            return;
+        }
+
+        var bullets = document.getElementById(idwrap).getElementsByTagName('em');
+        var guns = document.getElementById(idwrap).getElementsByTagName('s');
+
+        var count = $('#' + idwrap).find('.num').find('em').length;
+        var direc = $('#' + idwrap).find('.direction');
+        if (lazyload) {
+            handleLozyLoad(id, 0);
+        }
+
+        if (count <= 1) {
+            $('#' + idwrap).find('.num').hide();
+        }
+
+        var ems = $('#' + idwrap).find('.num').find('em');
+        ems.removeClass('on');
+        ems.eq(0).addClass('on');
+
+        var slider = window.Swipe(document.getElementById(id), {
+            auto: time,
+            continuous: count <= 2 ? false : true,
+            callback: function (pos) {
+
+                var i = bullets.length;
+                while (i--) {
+                    if (bullets.length) {
+                        bullets[i].className = ' ';
+                    }
+
+                    if (guns.length) {
+                        guns[i].className = "on";
+                    }
+                }
+                if (bullets.length) {
+                    bullets[pos].className = 'on';
+                }
+                if (guns.length) {
+                    guns[pos].className = "on";
+                }
+
+                if (lazyload) {
+                    handleLozyLoad(id, pos);
+                }
+
+                direc.find('.direction-txt').find('.white').text(pos + 1);
+
+                if (callback) {
+                    callback(pos);
+                }
+
+            }
+        });
+
+        direc.find('.direction-txt').find('.f999').text(count + '张');
+
+        direc.find('.prev').on('click', function () {
+            slider.prev();
+        });
+
+        direc.find('.next').on('click', function () {
+            slider.next();
+        });
+
+
+        if (numSlide) {
+
+            $('#' + idwrap).find('.num').find('em').on('click', function () {
+                var o = $(this);
+                var i = o.index();
+                slider.slide(i, time);
+            });
+        }
+    });
+
+};
+
+
+

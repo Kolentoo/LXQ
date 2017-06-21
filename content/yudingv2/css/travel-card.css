@@ -1,0 +1,1294 @@
+@charset "UTF-8";
+.dialog-login .dialog-login-confirm, .step .step-box, .input-checkbox, .dialog-login .other-login a, .section-select {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+body {
+  min-width: 1000px;
+  font-family: "Microsoft Yahei"; }
+
+*[hidden] {
+  display: none; }
+
+a,
+body,
+button,
+div,
+em,
+h1,
+h2,
+h3,
+hr,
+html,
+input,
+label,
+li,
+option,
+select,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: none; }
+
+button,
+li,
+ul {
+  list-style: none; }
+
+a {
+  color: #333;
+  text-decoration: none; }
+
+img {
+  vertical-align: middle;
+  border: 0px; }
+
+.right {
+  float: right; }
+
+em,
+h1,
+h2,
+h3,
+i,
+option,
+select {
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #333; }
+
+input[type=checkbox] {
+  filter: alpha(opacity=0);
+  opacity: 0; }
+
+[defaultChecked] + .input-checkbox,
+input[type=checkbox]:checked + .input-checkbox {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #4fc1e9;
+  border-color: #4fc1e9;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/checkbox-checked.png"); }
+
+.section-li .input-checkbox-box {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #4fc1e9;
+  border-color: #4fc1e9;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/checkbox-checked.png"); }
+
+.input-checkbox {
+  cursor: pointer; }
+
+.dialog-login .dialog-login-confirm {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 0 5px;
+  background-color: #ccc;
+  text-align: center;
+  color: #fff; }
+
+.dialog-login .dialog-login-confirm {
+  background-color: #e5004f; }
+
+.input-checkbox, .section-select, .section-select option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.head {
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  height: 94px;
+  background-color: #fff; }
+  .head .content {
+    height: 94px; }
+
+.content {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+  .content:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+.call {
+  float: right;
+  background-position: left center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 178px;
+  height: 64px;
+  padding-top: 30px;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/call.jpg"); }
+
+.call .call-num,
+.call .call-time {
+  display: block;
+  font-size: 12px;
+  text-indent: 20px; }
+
+.call .call-time {
+  color: #757575;
+  font-style: italic; }
+
+.call .call-num {
+  font-size: 22px;
+  color: #e50057;
+  font-family: Arial,Helvetica,sans-serif; }
+
+.step {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 153px;
+  position: relative; }
+  .step .step-line,
+  .step .step-line-finish {
+    display: block;
+    position: absolute;
+    left: 132px;
+    top: 52px;
+    width: 738px;
+    height: 8px;
+    background-color: #e6e6e6;
+    z-index: 1; }
+  .step .step-line-finish {
+    width: 0;
+    background-color: #f93868;
+    transition: 0.3s width ease;
+    z-index: 2; }
+  .step .step-line-finish-2 {
+    width: 150px; }
+  .step .step-line-finish-3 {
+    width: 340px; }
+  .step .step-line-finish-4 {
+    width: 560px; }
+  .step .step-line-finish-5 {
+    width: 750px; }
+  .step .step-content {
+    position: relative;
+    top: 30px;
+    left: 52px;
+    height: 90px;
+    z-index: 5; }
+  .step .step-box {
+    width: 110px; }
+  .step .step-box-2 {
+    margin-left: 80px; }
+  .step .step-box-3 {
+    margin-left: 80px; }
+  .step .step-box-4 {
+    margin-left: 86px; }
+  .step .step-box-5 {
+    margin-left: 85px; }
+  .step .step-box-hover .step-num {
+    background-position: -50px 0; }
+  .step .step-box-hover .step-word {
+    color: #e60e58; }
+  .step .step-box-finish .step-num {
+    background-position: -100px 0;
+    text-indent: -999em; }
+  .step .step-num {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+    background-image: url("//r03.uzaicdn.com/content/yudingv2/images/step.png"); }
+  .step .step-word {
+    display: block;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+    color: #cccccc; }
+
+.main {
+  float: left;
+  width: 702px; }
+
+.layout-right {
+  float: right; }
+
+.finally {
+  width: 278px;
+  border: 1px solid #e0e0e0;
+  padding-bottom: 20px; }
+  .finally .finally-title {
+    line-height: 46px;
+    height: 46px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333; }
+  .finally .finally-box,
+  .finally .finally-box-title {
+    display: block;
+    width: 240px;
+    padding: 0 20px; }
+  .finally .finally-box-title {
+    line-height: 50px;
+    height: 50px;
+    font-size: 14px;
+    color: #999; }
+  .finally .finally-box-margin {
+    margin-top: 10px; }
+
+.finally-box {
+  font-size: 14px;
+  color: #333;
+  line-height: 22px;
+  overflow: hidden; }
+  .finally-box .finally-description {
+    float: left; }
+  .finally-box .finally-price {
+    float: right; }
+  .finally-box .finally-description-all {
+    width: 240px;
+    line-height: 24px; }
+  .finally-box .finally-price-hover {
+    color: #f93868; }
+
+.finally-line {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px dashed #e0e0e0;
+  display: block;
+  width: 240px;
+  margin-top: 20px;
+  height: 0px; }
+
+.price {
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 238px;
+  padding: 20px;
+  border: 1px solid #f2f2f2;
+  border-top: 0;
+  border-bottom: 0;
+  background-color: #fcf8f2;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/price-pay.jpg"); }
+  .price .price-word {
+    float: left;
+    font-size: 18px;
+    color: #333; }
+  .price .price-pay {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f93868; }
+  .price .price-tips {
+    float: left;
+    text-align: right;
+    width: 238px;
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 10px;
+    color: #999; }
+  .price:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+.input-checkbox {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  vertical-align: middle;
+  outline: none; }
+
+.input-checkbox.no_select {
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: #ccc !important;
+  background-color: #ccc !important;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/checkbox-checked.png") !important; }
+
+.main_card_input, .main_card_f1 .entry input, .main_card_f2 .entry input, .main_card_f4 .entry input {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 10px;
+  border: 1px solid #e0e0e0;
+  color: #999;
+  outline: none; }
+
+input.error {
+  border: 1px solid #e72d6d !important; }
+
+input.error + .error_entry {
+  display: block; }
+
+input.blur {
+  -webkit-box-shadow: 0px 0px 2px #2fa6e5;
+  -moz-box-shadow: 0px 0px 2px #2fa6e5;
+  box-shadow: 0px 0px 2px #2fa6e5; }
+
+input.blur_ {
+  -webkit-box-shadow: 0px 0px 0px #2fa6e5 !important;
+  -moz-box-shadow: 0px 0px 0px #2fa6e5 !important;
+  box-shadow: 0px 0px 0px #2fa6e5 !important; }
+
+.dialog-login {
+  display: block;
+  width: 800px;
+  height: 430px;
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -400px;
+  margin-top: -215px;
+  z-index: 55; }
+  .dialog-login .member,
+  .dialog-login .quick {
+    float: left;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 260px;
+    padding: 0 70px;
+    height: 430px;
+    background-color: #fff; }
+  .dialog-login:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .dialog-login .dialog-login-title {
+    line-height: 83px;
+    height: 83px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold; }
+    .dialog-login .dialog-login-title a {
+      font-weight: normal;
+      color: #999; }
+    .dialog-login .dialog-login-title .m {
+      float: left; }
+    .dialog-login .dialog-login-title .p {
+      float: right; }
+    .dialog-login .dialog-login-title .font-black {
+      color: #333; }
+  .dialog-login .phone-box {
+    display: none;
+    height: 194px; }
+  .dialog-login .dialog-login-label {
+    line-height: 30px;
+    height: 30px;
+    display: block;
+    font-size: 14px;
+    color: #333; }
+  .dialog-login .main_card_input, .dialog-login .main_card_f1 .entry input, .main_card_f1 .entry .dialog-login input, .dialog-login .main_card_f2 .entry input, .main_card_f2 .entry .dialog-login input, .dialog-login .main_card_f4 .entry input, .main_card_f4 .entry .dialog-login input {
+    display: block;
+    width: 248px;
+    height: 20px;
+    padding-top: 9px;
+    padding-bottom: 8px; }
+  .dialog-login .captcha-inputb {
+    height: 26px;
+    padding-top: 7px;
+    padding-bottom: 7px; }
+  .dialog-login .dialog-login-tips {
+    line-height: 30px;
+    height: 30px;
+    display: block;
+    font-size: 14px;
+    color: #999; }
+  .dialog-login .captcha {
+    float: right;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #666;
+    background-color: #e0e0e0;
+    margin-right: 10px;
+    width: 70px;
+    height: 26px; }
+    .dialog-login .captcha:after {
+      background-color: #f93868;
+      color: #fff; }
+  .dialog-login .captcha-hover {
+    background-color: #f93868;
+    color: #fff; }
+  .dialog-login .captcha-input {
+    line-height: 26px;
+    height: 26px;
+    float: left;
+    width: 145px; }
+  .dialog-login .dialog-login-confirm {
+    width: 260px;
+    height: 40px;
+    margin: 30px 0 0;
+    font-size: 18px;
+    *margin-top: 15px; }
+  .dialog-login .dialog-login-line {
+    position: absolute;
+    left: 400px;
+    top: 70px;
+    width: 0;
+    height: 300px;
+    border-left: 1px dashed #e0e0e0; }
+  .dialog-login .icon-pd,
+  .dialog-login .icon-user {
+    float: left;
+    width: 44px;
+    height: 38px;
+    background-color: #f0f2f5;
+    background-image: url("//r03.uzaicdn.com/content/yudingv2/images/icon.png"); }
+  .dialog-login .icon-pd {
+    background-position: -44px 0; }
+  .dialog-login .icon-input {
+    float: left;
+    width: 184px;
+    padding: 10px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    height: 20px;
+    color: #999; }
+  .dialog-login .remember-box {
+    margin-top: 13px;
+    *margin-top: -5px; }
+    .dialog-login .remember-box a {
+      float: right; }
+  .dialog-login .member-box .main_card_input, .dialog-login .member-box .main_card_f1 .entry input, .main_card_f1 .entry .dialog-login .member-box input, .dialog-login .member-box .main_card_f2 .entry input, .main_card_f2 .entry .dialog-login .member-box input, .dialog-login .member-box .main_card_f4 .entry input, .main_card_f4 .entry .dialog-login .member-box input {
+    padding: 0;
+    height: 38px; }
+  .dialog-login .remember-tips {
+    float: left;
+    line-height: 17px;
+    height: 17px;
+    margin-left: 10px; }
+  .dialog-login .input-remember {
+    float: left;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #4fc1e9;
+    vertical-align: middle; }
+    .dialog-login .input-remember i {
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin: 2px auto 0; }
+  .dialog-login input[type=checkbox]:checked + .input-remember i, .dialog-login .input-checkbox-box1 i {
+    background-color: #4fc1e9; }
+  .dialog-login .input-checkbox-box1 i {
+    background-color: #4fc1e9; }
+  .dialog-login .other-login {
+    float: left;
+    margin-top: 20px;
+    color: #999;
+    font-size: 14px;
+    line-height: 27px; }
+    .dialog-login .other-login a {
+      width: 27px;
+      height: 27px;
+      vertical-align: middle; }
+  .dialog-login .other-login-icon-qq,
+  .dialog-login .other-login-icon-weibo {
+    background: url("//r03.uzaicdn.com/content/yudingv2/images/other-login.png"); }
+  .dialog-login .other-login-icon-weibo {
+    background-position: -27px 0; }
+  .dialog-login .close {
+    width: 24px;
+    height: 24px;
+    background: url("//r03.uzaicdn.com/content/yudingv2/images/close1.png") no-repeat;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px; }
+
+.dialog-full {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 50; }
+
+.error_entry {
+  position: absolute;
+  right: 0px;
+  top: 40px;
+  font-size: 14px;
+  color: #e60e58;
+  border: 1px solid #e0e0e0;
+  padding: 4px;
+  padding-right: 10px;
+  padding-left: 37px;
+  border-radius: 2px;
+  background: url("//r03.uzaicdn.com/content/yudingv2/images/close.png") no-repeat 10px center #fff;
+  display: none;
+  z-index: 3; }
+
+.order-state {
+  margin: auto;
+  font-size: 16px;
+  color: #e60e58;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  padding: 30px 0;
+  margin-bottom: 20px; }
+  .order-state a {
+    color: #2fa6e5;
+    text-decoration: underline;
+    margin-left: 30px; }
+
+.w_100 {
+  width: 100%; }
+
+.uzai_date {
+  position: absolute;
+  left: 18px;
+  top: 32px;
+  width: 435px;
+  height: 260px;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 8;
+  -webkit-box-shadow: 0px 0px 2px #f8f8f8;
+  -moz-box-shadow: 0px 0px 2px #f8f8f8;
+  box-shadow: 0px 0px 2px #f8f8f8;
+  display: none; }
+
+.uzai_date_left {
+  float: left;
+  width: 200px;
+  margin-left: 12px;
+  margin-top: 12px; }
+  .uzai_date_left table {
+    width: 100%;
+    line-height: 22px;
+    font-size: 12px;
+    color: #333333;
+    cursor: pointer; }
+  .uzai_date_left td {
+    text-align: center; }
+  .uzai_date_left td.cfa004b {
+    color: #fa004b; }
+  .uzai_date_left td.c999999 {
+    color: #999999; }
+  .uzai_date_left td.cfff {
+    color: #fff;
+    background: #2fa6e5;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; }
+  .uzai_date_left .uzai_date_bot {
+    border: 1px solid #d6d6d6;
+    text-align: center;
+    width: 90px;
+    line-height: 28px;
+    font-size: 12px;
+    color: #333333;
+    cursor: pointer;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-top: 10px; }
+    .uzai_date_left .uzai_date_bot:hover {
+      border: 1px solid #7dd1fe;
+      color: #2fa6e5; }
+
+.uzai_date_top {
+  font-size: 14px;
+  text-align: center; }
+
+.uzai_date_left_l {
+  float: left;
+  cursor: pointer;
+  color: #999999; }
+
+.uzai_date_left_r {
+  float: right;
+  cursor: pointer;
+  color: #999999; }
+
+/*弹出框*/
+.body_shade {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  z-index: 50;
+  display: none; }
+
+.body_shade_show {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -240px;
+  margin-top: -180px;
+  background: #fff;
+  z-index: 999;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  width: 360px;
+  padding: 30px 60px;
+  padding-bottom: 45px; }
+  .body_shade_show h2 {
+    text-align: center;
+    color: #333333;
+    font-size: 24px;
+    font-weight: normal; }
+  .body_shade_show p {
+    color: #333333;
+    font-size: 18px;
+    margin-top: 45px; }
+  .body_shade_show .shade_buttom {
+    text-align: center;
+    overflow: hidden;
+    margin-top: 15px; }
+    .body_shade_show .shade_buttom button {
+      background: #fff;
+      color: #e60e58;
+      border: 1px solid #e60e58;
+      cursor: pointer;
+      border-radius: 10px;
+      cursor: pointer;
+      outline: none;
+      font-size: 18px;
+      padding: 0px 10px;
+      line-height: 40px;
+      width: 100%;
+      margin-top: 20px; }
+      .body_shade_show .shade_buttom button:hover {
+        background: #e60e58;
+        color: #fff; }
+  .body_shade_show .close {
+    width: 24px;
+    height: 24px;
+    background: url("//r03.uzaicdn.com/content/yudingv2/images/close1.png") no-repeat;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 30px; }
+
+/*loading*/
+.storage {
+  display: none;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px 130px;
+  font-size: 14px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+  line-height: 30px;
+  margin-left: -230px; }
+  .storage img {
+    margin-right: 20px; }
+
+* {
+  margin: 0;
+  font-family: "Microsoft Yahei"; }
+
+.clear {
+  clear: both; }
+
+.main_card_t {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  width: 960px;
+  margin: auto; }
+
+.main_card_t .title {
+  font-size: 18px;
+  line-height: 30px;
+  color: #333; }
+
+.subtitle {
+  margin-top: 15px; }
+  .subtitle span {
+    font-size: 14px;
+    color: #666666;
+    padding-right: 10px; }
+  .subtitle span.c2fa6e5 {
+    color: #2fa6e5; }
+
+.detail {
+  margin-top: 10px; }
+  .detail span {
+    font-size: 14px;
+    color: #999999;
+    line-height: 30px;
+    float: left;
+    width: 230px; }
+    .detail span i {
+      padding-right: 55px;
+      color: #333;
+      font-style: normal; }
+
+.shop_cart {
+  margin-top: 55px; }
+  .shop_cart .num {
+    padding-left: 5px;
+    font-size: 18px;
+    color: #e60e58;
+    line-height: 40px; }
+    .shop_cart .num .f24 {
+      font-size: 24px; }
+
+.shopping_cart {
+  float: left;
+  font-size: 14px;
+  color: #333;
+  /*padding-left:40px;
+	background:url(//r03.uzaicdn.com/content/yudingv2/images/shopping-cart.png) no-repeat left center;*/
+  line-height: 40px; }
+
+.main_card_m {
+  border: 1px solid #e0e0e0;
+  width: 1000px;
+  margin: 20px auto auto;
+  margin-bottom: 20px; }
+
+.main_card_m_top {
+  background: #fafafa;
+  line-height: 50px;
+  font-size: 16px;
+  color: #333;
+  padding-left: 20px; }
+
+.main_card_pay {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 15px;
+  padding-bottom: 18px;
+  border-bottom: 1px dashed #e1e1e1; }
+
+.main_card_pay_left {
+  float: left;
+  color: #333;
+  font-size: 14px;
+  margin-right: 25px;
+  line-height: 30px; }
+
+.main_card_pay_right {
+  float: left;
+  width: 730px; }
+  .main_card_pay_right p {
+    font-size: 14px;
+    color: #333;
+    line-height: 30px; }
+
+.add_card {
+  float: right;
+  line-height: 50px;
+  color: #2fa6e5;
+  font-size: 14px;
+  padding-right: 10px; }
+
+.main_card_f {
+  margin: 35px auto auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+  height: 67px;
+  *zoom: 1; }
+
+.main_card_f1 {
+  float: left;
+  width: 240px; }
+  .main_card_f1 .entry {
+    position: relative;
+    z-index: 1; }
+    .main_card_f1 .entry input {
+      width: 208px; }
+
+.main_card_f1_span {
+  display: block;
+  margin-bottom: 15px;
+  height: 16px; }
+
+.main_card_f2 {
+  width: 235px;
+  margin-left: 30px;
+  float: left; }
+  .main_card_f2 .entry input {
+    width: 53px;
+    margin-right: 10px;
+    float: left; }
+
+.main_card_f3 {
+  width: 35px;
+  float: left;
+  margin-left: 30px; }
+  .main_card_f3 .num {
+    line-height: 35px;
+    color: #e60e58; }
+
+.main_card_f4 {
+  width: 110px;
+  float: left;
+  margin-left: 30px; }
+  .main_card_f4 .entry input {
+    width: 96px; }
+  .main_card_f4 .entry input.blur {
+    -webkit-box-shadow: 0px 0px 2px #2fa6e5;
+    -moz-box-shadow: 0px 0px 2px #2fa6e5;
+    box-shadow: 0px 0px 2px #2fa6e5; }
+
+.main_card_f5 {
+  width: 70px;
+  float: left;
+  margin-left: 50px; }
+  .main_card_f5 .entry input {
+    width: 70px;
+    color: #fff;
+    background: #e60e58;
+    height: 34px;
+    line-height: 34px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none; }
+
+.main_card_f6 {
+  width: 70px;
+  float: left;
+  margin-left: 0; }
+  .main_card_f6 .entry input {
+    width: 70px;
+    color: #fff;
+    background: #e60e58;
+    height: 36px;
+    line-height: 36px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none; }
+
+.main_card_fo {
+  border: 1px solid #e0e0e0;
+  width: 960px;
+  margin: 20px auto auto;
+  padding: 20px;
+  overflow: hidden;
+  margin-bottom: 20px; }
+  .main_card_fo .right_input {
+    float: right;
+    width: 150px;
+    color: #fff;
+    background: #e60e58;
+    height: 50px;
+    line-height: 50px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px; }
+  .main_card_fo .payment {
+    padding-left: 30px;
+    background: url("//r03.uzaicdn.com/content/yudingv2/images/payment.png") no-repeat left center #fff;
+    float: left;
+    line-height: 50px; }
+    .main_card_fo .payment span {
+      font-size: 20px;
+      color: #e60e58; }
+  .main_card_fo .money {
+    padding-left: 38px;
+    background: url("//r03.uzaicdn.com/content/yudingv2/images/money.png") no-repeat left center #fff;
+    float: left;
+    line-height: 50px;
+    margin-left: 50px; }
+    .main_card_fo .money span {
+      font-size: 20px;
+      color: #e60e58; }
+
+.order_card {
+  width: 1000px; }
+  .order_card tr {
+    line-height: 40px; }
+  .order_card th {
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    color: #666666;
+    padding-left: 30px;
+    font-weight: normal; }
+  .order_card td {
+    color: #333333;
+    padding-left: 30px; }
+    .order_card td input {
+      color: #fff;
+      background: #e60e58;
+      cursor: pointer;
+      outline: 0;
+      border: 0;
+      border-radius: 4px;
+      text-align: center;
+      width: 76px;
+      height: 28px;
+      line-height: 28px;
+      font-size: 14px; }
+
+.bof1 {
+  border-top: 1px dashed #e1e1e1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 920px;
+  padding-left: 0;
+  padding-right: 0;
+  height: 67px; }
+  .bof1 a.card_close {
+    display: block;
+    margin-right: -20px;
+    float: right;
+    width: 11px;
+    height: 11px;
+    top: 10px;
+    right: -20px;
+    background: url("//r03.uzaicdn.com/content/yudingv2/images/card_close.jpg"); }
+
+.bfefcf9 {
+  background: #fefcf9; }
+
+.remind {
+  margin: auto;
+  text-align: right;
+  line-height: 50px;
+  color: #999999;
+  width: 990px; }
+
+.main_card_t_left {
+  float: left;
+  width: 710px;
+  border-right: 1px dashed #e1e1e1;
+  padding-right: 10px; }
+
+.main_card_t_right {
+  float: left;
+  margin-left: 15px; }
+
+/*支付宝支付*/
+.main_card_m_qr {
+  margin: auto;
+  width: 250px;
+  margin-top: 40px;
+  padding-bottom: 40px; }
+  .main_card_m_qr p {
+    font-size: 16px;
+    margin-bottom: 10px; }
+  .main_card_m_qr img {
+    width: 250px;
+    height: 250px; }
+
+/*信用卡支付*/
+.main_card_prompt {
+  margin: auto;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+  line-height: 22px;
+  width: 960px; }
+  .main_card_prompt .clearing-checkbox {
+    line-height: 52px;
+    height: 52px;
+    margin-left: -10px;
+    font-size: 14px; }
+    .main_card_prompt .clearing-checkbox .input-checkbox {
+      width: 10px;
+      height: 10px; }
+    .main_card_prompt .clearing-checkbox .input-checkbox3,
+    .main_card_prompt .clearing-checkbox [defaultChecked] + .input-checkbox,
+    .main_card_prompt .clearing-checkbox input[type=checkbox]:checked + .input-checkbox {
+      background-image: url("//r03.uzaicdn.com/content/yudingv2/images/checkbox-checked-hasread.png");
+      background-color: #fff; }
+    .main_card_prompt .clearing-checkbox .input-checkbox3 {
+      background-image: url("//r03.uzaicdn.com/content/yudingv2/images/checkbox-checked-hasread.png");
+      background-color: #fff; }
+    .main_card_prompt .clearing-checkbox i {
+      color: #999; }
+      .main_card_prompt .clearing-checkbox i a {
+        color: #4fc1e9; }
+  .main_card_prompt .submits-btn-orders {
+    float: right;
+    line-height: 50px;
+    height: 50px;
+    width: 150px;
+    background-color: #e5004f;
+    color: #fff;
+    font-size: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+
+.main_card_prompt_f {
+  width: 960px;
+  margin: 20px auto auto; }
+  .main_card_prompt_f span.title {
+    color: #e5004f; }
+  .main_card_prompt_f p {
+    font-size: 14px; }
+  .main_card_prompt_f p.c333 {
+    color: #333333;
+    margin-top: 20px; }
+  .main_card_prompt_f p.c666 {
+    margin-top: 10px;
+    color: #666666;
+    line-height: 30px; }
+
+.main_card_m_prompt {
+  margin: 25px; }
+  .main_card_m_prompt .main_card_m_prompt_t {
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #e0e0e0; }
+    .main_card_m_prompt .main_card_m_prompt_t .choice {
+      float: right;
+      color: #2fa6e5;
+      line-height: 70px;
+      cursor: pointer; }
+    .main_card_m_prompt .main_card_m_prompt_t .way {
+      float: left;
+      color: #333;
+      width: 130px;
+      line-height: 70px; }
+    .main_card_m_prompt .main_card_m_prompt_t .img {
+      float: left;
+      position: relative; }
+      .main_card_m_prompt .main_card_m_prompt_t .img img {
+        border: 1px solid #e0e0e0;
+        padding: 10px 50px;
+        width: 200px;
+        height: 50px; }
+      .main_card_m_prompt .main_card_m_prompt_t .img img.card {
+        width: auto;
+        height: auto;
+        padding: 0;
+        border: 0;
+        position: absolute;
+        bottom: 0;
+        right: 0; }
+    .main_card_m_prompt .main_card_m_prompt_t .num {
+      float: left;
+      line-height: 70px;
+      font-size: 16px;
+      margin-left: 20px;
+      color: #333; }
+  .main_card_m_prompt .caution {
+    color: #e5004f;
+    margin-top: 20px; }
+
+.fill_main_input {
+  width: 435px;
+  height: 36px;
+  margin-top: 15px;
+  float: left;
+  line-height: 36px;
+  margin-right: 30px;
+  *zoom: 1; }
+  .fill_main_input .fill_main_input_l {
+    float: left;
+    width: 120px; }
+  .fill_main_input span {
+    color: #e60e58;
+    padding-left: 5px;
+    line-height: 36px;
+    margin: 0; }
+  .fill_main_input input {
+    width: 280px;
+    float: left;
+    position: relative;
+    z-index: 0; }
+  .fill_main_input p {
+    width: 290px;
+    float: left;
+    line-height: 36px;
+    color: #333; }
+    .fill_main_input p span {
+      color: #999999; }
+  .fill_main_input input.w_195 {
+    width: 195px;
+    margin-left: 12px; }
+  .fill_main_input input.w_180 {
+    width: 180px; }
+  .fill_main_input button {
+    float: left;
+    line-height: 36px;
+    height: 36px;
+    width: 88px;
+    margin-left: 10px;
+    background-color: #e5004f;
+    color: #fff;
+    font-size: 14px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+  .fill_main_input select {
+    padding: 7px;
+    line-height: 20px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #e0e0e0;
+    color: #999; }
+  .fill_main_input:nth-child(even) {
+    margin-left: 30px;
+    margin-right: 0px; }
+
+.error_entry {
+  display: none;
+  position: absolute;
+  right: 24px;
+  top: 40px;
+  font-size: 14px;
+  color: #e60e58;
+  border: 1px solid #e0e0e0;
+  padding: 4px 10px 4px 37px;
+  border-radius: 2px;
+  line-height: 20px;
+  background: url("//r03.uzaicdn.com/content/yudingv2/images/close.png") no-repeat 10px center #fff; }
+
+.section-select {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  line-height: 34px;
+  height: 34px;
+  background-repeat: no-repeat;
+  background-position: 90% 150%;
+  float: left;
+  z-index: 9;
+  padding: 0 20px 0 15px;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  font-size: 12px;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/select-arrow.png");
+  cursor: pointer;
+  position: relative; }
+  .section-select:hover {
+    outline: #4fc1e9;
+    border: 1px solid #4fc1e9; }
+  .section-select option {
+    background-color: #fff;
+    text-align: center; }
+  .section-select span {
+    display: block;
+    line-height: 34px;
+    text-align: center;
+    padding-left: 0;
+    color: #333; }
+  .section-select .section-select_option {
+    z-index: 9;
+    display: none;
+    position: absolute;
+    top: 31px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    overflow: hidden;
+    background: #fff; }
+    .section-select .section-select_option a {
+      display: block;
+      line-height: 30px; }
+      .section-select .section-select_option a:hover {
+        color: #fff;
+        background: #4ec1e9; }
+
+.z20 {
+  *z-index: 20; }
+
+.z19 {
+  *z-index: 19; }
+
+.z18 {
+  *z-index: 18; }
+
+.z17 {
+  *z-index: 17; }
+
+.z16 {
+  *z-index: 16; }
+
+.z15 {
+  *z-index: 15; }
+
+.z14 {
+  *z-index: 14; }
+
+.z13 {
+  *z-index: 13; }
+
+.z12 {
+  *z-index: 12; }
+
+.z11 {
+  *z-index: 11; }
+
+.z10 {
+  *z-index: 10; }
+
+.z09 {
+  *z-index: 9; }
+
+.z08 {
+  *z-index: 8; }

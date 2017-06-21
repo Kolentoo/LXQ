@@ -1,0 +1,104 @@
+﻿*{
+    padding: 0;
+    margin: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@charset "UTF-8";
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    /*word-break:break-all;*/
+    word-wrap:break-word;
+}
+input{
+    white-space:nowrap;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+ul,li,ol{
+    list-style: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+a{
+    text-decoration: none;
+    border: none;
+    outline: none;
+    tap-highlight-color: rgba(0,0,0,0);
+    focus-ring-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-focus-ring-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0,0,0,0);
+    -moz-focus-ring-color: rgba(0, 0, 0, 0);
+}
+a:visited{
+    color: inherit;
+}
+input,button{
+    outline: none;
+}
+
+html{
+    font-size: 50px;
+}
+html, body{
+    background: #F4F4F4;
+}
+body {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    margin: 0 auto;
+    font-family: 'STHeiti','Microsoft YaHei',Helvetica,Arial,sans-serif;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/*弹框开始*/
+.uzai_layer{height: 100%;position: fixed;width: 100%;background: #000;display: none;top: 0px;z-index: 100;filter:alpha(opacity=60);opacity:0.6;}
+.uzai_layer_main{display:none;z-index: 101;width: 6.5rem;height: 2.8rem;position: fixed;left: 50%;top: 50%;margin-top: -1.4rem;margin-left: -3.25rem;background: #fff;border-radius: 0.1rem;box-shadow: 0px 0px 0.1rem #000;}
+.uzai_layer_main h2{padding: 0.55rem;line-height: 0.7rem;font-size: 0.3rem;color: #666666;border-bottom: 1px solid #d4d4d4;margin:0px;}
+.uzai_layer_main_confirm{height: 1rem;overflow: hidden;}
+.uzai_layer_main_confirm .cancel_{text-align: center;line-height: 1rem;width: 3.2rem;float: left;border-right: 1px solid #d4d4d4;font-size: 0.3rem;color: #666666;}
+.uzai_layer_main_confirm .confirm{text-align: center;line-height: 1rem;width: 3.2rem;float: left;font-size: 0.3rem;color: #f93868;}
+/*弹框结束*/
+/*
+#layer_img{position:absolute;  z-index:999;  transform: translateX(-50%) translateY(-50%);-ms-transform:translateX(-50%) translateY(-50%); 	/!* IE 9 *!/-moz-transform:translateX(-50%) translateY(-50%); 	/!* Firefox *!/-webkit-transform:translateX(-50%) translateY(-50%); /!* Safari 和 Chrome *!/-o-transform:translateX(-50%) translateY(-50%);left:50%;top:50%;background:#fff;padding:0.1rem;/!*max-width:7rem;*!/width:100%;-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;-webkit-touch-callout:none;}
+*/
+
+#layer_img{position:absolute;width:100%;z-index:101; transform: translate(50%,-50%);left:-50%;top:50%;}
+
+
+/* 下拉列表开始 */
+.scdiv{width: 6.54rem; height: 0.82rem; border-radius: 5px; background-color: #fff; box-shadow: 0px 4px 5px #ddd; font-size: 0.14rem;}
+.lc{width: 6.54rem; height: 0.62rem; padding-top: 0.1rem;}
+.timc{line-height: 0.62rem; background-repeat: no-repeat; background-size: 0.44rem 0.45rem; background-position: 0.17rem 0.1rem; padding-left: 0.75rem; width: 1.25rem; border-right: 1px solid #e4e4e4; font-size: 0.24rem;}
+.div_sc{width: 4.3rem; overflow-x: hidden; position: relative; height: 100%;}
+.consc{border: none; width: 10.3rem; color: #c5c5c5; line-height: 0.6rem; height: 100%; border: none; background: none; padding-left: 0.2rem; font-size: 0.28rem;}
+.fl{float: left;}
+.fr{float: right;}
+.select{width: 6.54rem; border-radius: 5px 5px 0 0; margin: 10px auto;}
+.xing{position: absolute; right: -0.2rem; top: 0.2rem; color: #f93868;}
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after{display: block; content: "";}
+.clearfix:after{clear: both;}
+.clearfix{zoom: 1;}
+.corff0000{color: #333;}
+.div_sc:after{content: ""; display: block; position: absolute; right: 0.2rem; width: 0.22rem; height: 0.13rem; top: 0.28rem; background-size: 100% 100%; background-image: url(../../images/library/jiantou2.png);}
+select{/*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/ appearance:none; -moz-appearance:none; /* Firefox */ -webkit-appearance:none; /* Safari 和 Chrome */
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+/* 下拉列表结束 */

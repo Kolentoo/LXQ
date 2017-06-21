@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+table{border-collapse:collapse;}
+.protitle .title{font:600 24px "微软雅黑"; color:#71af17;}
+.lvyoucn_pro{padding-bottom:17px; text-align:left;}
+.topleft{float:left; width:600px; padding-top:7px;}
+.topright{float:right; width:160px;}
+.rightshare{background:url(../image/bg/producebg.gif) no-repeat 0px 44%; padding-top:3px; padding-bottom:3px; padding-left:20px;}
+.share{padding-right:10px; border-right:1px solid #333333; margin-right:5px; float:left; width:26px; padding-top:3px;}
+.sharelogo{float:left; width:90px;}
+.sharelogo a img{padding:0 3px;}
+.rightgt{position:absolute; right:-1px; top:-1px;}
+.protitle{ border-bottom:1px solid #cbdab4;  margin-bottom:20px; padding-left:15px; padding-top:13px; padding-bottom:5px; padding-bottom:10px;}
+.zyx-lefttop{overflow:hidden;zoom:1}
+.zyx-xx{ float:left; margin-left:15px;} 
+
+
+#znextn-main{ width:990px; margin-top:10px;}
+.znextn-left{ float:left; width:787px; border: solid #c8dcb5 1px;}
+.znextn_pro{ background:url(../image/bg/znextx-p1_03.gif) repeat-x; height:22px;border-bottom:solid #c6dbb4 1px; padding-top:10px;}
+.znextn_title{ font-size:14px; color:#346101;padding-left:22px;}
+.znextn_title1{ font-size:14px; color:#346101;padding-left:15px;}
+
+.znextn-jp{ font-size:12px; color:#45b100; text-align:left; font-weight:bold; padding-top:6px; padding-bottom:6px; padding-left:22px;}
+.znextn-bnb{ padding-right:3px;}
+.znextn_btnsd{background-color:transparent;border:0px solid; margin-left:8px;}
+.znext-pro1{ border-bottom:solid #f4f4f4 1px; padding-top:15px; padding-bottom:10px; padding-left:22px; color:#e06716;  margin-bottom:10px;}
+.znext-prleft{ float:left; width:120px; background-color:#e3e3e3; padding:5px; margin-left:22px; display:inline;}
+.znextn-jie{ width:80px; padding-top:5px; background-color:#FFFFFF; padding-left:20px; padding-right:20px;}
+.znext-jie1{ color:#e06716;}
+.znextn-jie2{ font-size:18px; font-weight:bold; font-family:Arial;}
+.znext-prright{ float:left; line-height:18px; padding-top:20px; width:584px; padding-left:20px;}
+.znext_btn{background-color:transparent;border:0px solid; margin-left:15px;}
+.znext-pp{ font-size:14px; font-weight:bold; color:#346101; padding-bottom:5px;}
+.znext-pp3{ padding-top:55px;padding-bottom:30px; text-align:center;}
+.znext-tet{ font-weight:bold;}
+.znext-tet1{ padding-left:30px;}
+.znext-right{ float:right; width:191px; border: solid #c8dcb5 1px;}
+.znextn-ss{ font-size:14px; color:#346101; padding-top:20px; padding-left:18px; padding-bottom:35px; line-height:24px;}
+.znextn-qs{ font-weight:bold; color:#FF0000; font-family:Arial;}
+.znextn-xi table td{padding:8px;}
+.znext-prright table td{padding:5px;}
+.znextn-djz{ color:#e06716}

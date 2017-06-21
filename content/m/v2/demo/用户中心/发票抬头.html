@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>悠哉旅行网触屏版</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="/content/m/v2/styles/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/user/user.css" rel="stylesheet" />
+    <script src="/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/core','/content/m/v2/scripts/user/user'], function (core, user) {
+            user.init();
+        });
+    </script>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">编辑发票抬头</div>
+            </div>
+            <div class="d-r"></div>
+        </header>
+        <section class="usually-info">
+            <ul class="forms-listing slice-mod f14">
+                <li class="list-item"><input type="text" class="textbox f14 g10" value="上海悠哉国际旅行社有限公司"></li>
+            </ul>
+            <p class="fixed-btn-wrap"><input type="submit" value="保存" class="btn-submit bg-red white f18 yahei tc"></p>
+        </section>
+    </div>
+</body>
+</html>

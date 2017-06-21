@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>手机悠哉网 -  会员登录 </title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/user/user.css" rel="stylesheet" />
+    <script src="/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/_src/core', '/content/m/v2/scripts/_src/user/user'], function (core, user) {
+            user.init();
+        });
+    </script>
+    <style>
+        html, body { background: #fff; }
+    </style>
+
+</head>
+<body>
+
+    <div class="w user">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m"><div class="tit">重置密码</div></div>
+            <div class="d-r"></div>
+        </header>
+
+        <section class="user-login">
+            <form>
+                <ul class="info-listing">
+                    <li class="info-item clearfix">
+                        <i class="icon-pen fl"></i>
+                        <div class="item-main"><input type="text" placeholder="验证码" id="captcha" name="captcha" class="textbox f16" /><input type="button" value="获取验证码" id="j_gainCheckCode" class="btn-gain tc"><button class="btn-regain tc hide"><span class="f666"><i>60</i>’S</span><br><span class="f999">重新获取</span></button></div>
+                    </li>
+                    <li class="info-item clearfix">
+                        <i class="icon-lock fl"></i>
+                        <div class="item-main"><input type="password" placeholder="密码" id="password" name="password" class="textbox f16" /><span class="pwd-switch"><i class="switch-icon vm"></i></span></div>
+                    </li>
+                    <li class="info-item tc"><input type="button" id="j_resetPwdMobile" class="btn-reset f20" value="重置密码" /></li>
+                </ul>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>

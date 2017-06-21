@@ -1,0 +1,245 @@
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link href='/content/zhifuv2/css/travel.css'  rel='stylesheet' />
+<title></title>
+</head>
+<body>
+    <!--  Head begin -->
+     
+   <div class="head">
+        <div class="content">
+            <img src="//r03.uzaicdn.com/content/zhifuv2/images/logo.jpg" width="210" height="94" alt="logo" />
+            <div class="call">
+                <i class="call-time">预订热线：9:00~21:00</i>
+                <em class="call-num">1010-9898</em>
+            </div>
+        </div>
+    </div>
+    <!-- head end -->
+    <!-- step begin -->
+    <div class="step">
+        <hr class="step-line" />
+        <hr class="step-line-finish step-line-finish-4">
+        <ul class="step-content">
+            <li class="step-box step-box-finish">
+                <span class="step-num">1</span>
+                <em class="step-word">填写订单</em>
+            </li>
+            <li class="step-box step-box-2 step-box-finish">
+                <span class="step-num">2</span>
+                <em class="step-word">填写游客信息</em>
+            </li>
+            <li class="step-box step-box-3 step-box-finish">
+                <span class="step-num">3</span>
+                <em class="step-word">核对订单</em>
+            </li>
+            <li class="step-box step-box-4 step-box-hover">
+                <span class="step-num">4</span>
+                <em class="step-word">支付</em>
+            </li>
+            <li class="step-box step-box-5">
+                <span class="step-num">5</span>
+                <em class="step-word">支付成功</em>
+            </li>
+        </ul>
+    </div>
+    <!-- step end -->
+<!--订单信息 start-->
+     
+
+         <div class='main_card_t'>
+             <div class='main_card_t_left'>
+                  <p class='title'>&lt;一价全含 升级版金牌法瑞意12-13日&gt;销售冠军!四晚五星，四次火车，少女峰，凡尔赛宫，法国南部，贡多拉游船，塞纳河游船，3次特色餐</p>
+                  <div class='subtitle'><span>欧洲-一价全含 升级版金牌法国瑞士意大利12日</span><span class='c2fa6e5'>BJS138252</span></div>
+                  <div class='detail'>
+                      <span>订单号：<i>C623191728</i></span>
+                      <span>出发城市：<i>北京</i></span><div class="clear"></div>
+                      <span>出发日期：<i>2017年04月29日</i></span>
+                      <span>出行人数：<i>1成人    0儿童</i></span>
+                  </div>
+             </div>
+             <div class='main_card_t_right'>
+                  <div class='shop_cart'>
+                      <span class='shopping_cart'>应付金额：</span>
+                      <span class='num'>￥<span class='f24'>23600.00</span></span>
+                  </div>
+             </div>
+             <div class='clear'></div>
+         </div>
+    <!--订单信息 end-->
+<form id="formpay" method="post" action="/proc_fourPayNew/" target="_blank">  
+      
+              <div class='main_card_m'>
+                 <div class='main_card_m_top'><span class='supervise' style="cursor:pointer" onclick="window.open('/quick_pay_listNew')">管理我的快捷支付</span>支付方式</div>
+                 
+                              <div class='main_card_m_t' id="IsBank">
+                                    <span>已选择的支付方式</span>
+                                    <div class='pattern'>
+                                        <input id="CheckedBank0" style="display:none" name="pay_bank" type="radio" value="JSB"  paytype="KJ" />
+                                        <a href="javascript:void(0)"><div class="left pro">
+          <img   src="//r.uzaicdn.com/content/1/image/order/js.jpg" alt="江苏银行" /><span class="min_right">快</span>
+            </div><div class="clear"></div></a>
+                                    </div>
+                                    <span id="qita">其他支付方式</span>
+                              </div>
+                         
+
+<div class="bank_card">
+    <div class="bank_card_top">
+        <ul>
+            <li class="hover" style="border-left: 0px;">平台支付</li>
+            <li>网银支付</li>
+            <li>快捷支付</li>
+            <li style="border-right: 0px;">绑定支付</li>
+        </ul>
+    </div>
+    <div class="bank_card_m">
+        <div class="bank_card_m1">
+            <div class="bank_card_m1_img">
+                <div class="bank_card_m1_title">支付平台 <span>支付宝支持信用卡和储蓄卡在线支付</span></div>
+                <li class='selected'><a href="javascript:void(0)"><img alt="银联支付" src="//r.uzaicdn.com/content/1/image/order/upoplogo.png"/></a><input checked="checked" paytype="PT" value="UNIONPAY"   name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="银联快捷支付" src="//r.uzaicdn.com/content/1/image/order/upoplogokj.png"/></a><input paytype="PT" value="UNIONPAYKJ"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="支付宝" src="//r.uzaicdn.com/content/1/image/order/qyfk43_03.jpg"/></a><input paytype="PT" value="alipay"  name="pay_bank"  type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="微信支付" src="//r.uzaicdn.com/content/1/image/order/wx.jpg"/></a><input paytype="PT" value="wx"  name="pay_bank" type='radio' /></li>
+                
+                <li><a href="javascript:void(0)"><img alt="手机支付" src="//r.uzaicdn.com/content/1/image/order/mobilepaylogo.jpg"/></a><input paytype="PT" value="MobilePay"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="易生支付" src="//r.uzaicdn.com/content/1/image/order/bhe.png"/></a><input paytype="PT" value="bhecard"  name="pay_bank" type='radio' /></li>
+                <li class="dl-coupon"><a href="javascript:void(0)"><img alt="" src="/content/v1/images/order/dlzf.png"/></a><input paytype="" value=""  name="" type='radio' /></li>
+                
+            </div>
+            <div class="bank_card_m1_img" hidden>
+             <div class="bank_card_m1_title">网银支付 <span>需要开通网银</span></div>
+                <li><a href="javascript:void(0)"><img alt="招商银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_31.jpg"/></a><input paytype="WY" value="CMB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="中国银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_40.jpg"/></a><input paytype="WY" value="BOC"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="中国工商银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_29.jpg"/></a><input paytype="WY" value="ICBC"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="中国建设银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_27.jpg"/></a><input paytype="WY" value="CCB"  name="pay_bank"  type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="宁波银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_63.jpg"/></a><input paytype="WY" value="NBCB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="广东发展银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_50.jpg"/></a><input paytype="WY" value="GDB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="上海银行" src="//r.uzaicdn.com/content/1/image/order/shyh.jpg"/></a><input paytype="WY"  value="SHYH" name="pay_bank"  type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="兴业银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_47.jpg"/></a><input  paytype="WY" value="CIB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="中国民生银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_49.jpg"/></a><input paytype="WY" value="CMBC"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="交通银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_80.jpg"/></a><input paytype="WY" value="BCOM"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="平安银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_57.jpg"/></a><input paytype="WY" value="PAB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="杭州银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_79.jpg"/></a><input paytype="WY" value="HZB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="浦发银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_41.jpg"/></a><input paytype="WY" value="SPDB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="浦发银行信用卡" src="//r.uzaicdn.com/content/1/image/order/spdx_logo.jpg"/></a><input paytype="WY" value="SPDBX"  name="pay_bank"  type='radio' /></li>
+            </div>
+            <div class="bank_card_m1_img" hidden>
+             <div class="bank_card_m1_title">信用卡快捷支付 <span>一步验证，无需网银</span></div>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">快</div><img alt="中国工商银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_29.jpg"/></div></a><input paytype="KJ" value="ICBC"  name="pay_bank"   type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">快</div><img alt="中国建设银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_27.jpg"/></div></a><input paytype="KJ" value="CCB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">快</div><img alt="中国银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_40.jpg"/></div></a><input paytype="KJ" value="BOC"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">快</div><img alt="中信银行" src="//r.uzaicdn.com/content/1/image/order/zx.jpg"/></div></a><input paytype="KJ" value="CITIC"  name="pay_bank"  type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">快</div><img alt="上海农村商业银行" src="//r.uzaicdn.com/content/1/image/order/shny.jpg"/></div></a><input paytype="KJ" value="SRCB"  name="pay_bank"  type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">快</div><img alt="江苏银行" src="//r.uzaicdn.com/content/1/image/order/js.jpg"/></div></a><input paytype="KJ" value="JSB"  name="pay_bank" type='radio' /></li>
+                 <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">快</div><img alt="交通银行" src="//r.uzaicdn.com/content/1/image/order/jtyh.jpg"/></div></a><input paytype="KJ" value="HSBC"  name="pay_bank" type='radio' /></li>
+
+            </div>
+            <div class="bank_card_m1_img" hidden>
+             <div class="bank_card_m1_title">银联绑定支付 <span>信用卡支付</span></div>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="中国工商银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_29.jpg"/></div></a><input paytype="BDCC"  value="ICBC"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="中国银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_40.jpg"/></div></a><input  paytype="BDCC" value="BOC"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="中国邮政储蓄银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_64.jpg"/></div></a><input paytype="BDCC" value="PSBC"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="中国建设银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_27.jpg"/></div></a><input paytype="BDCC" value="CCB"  name="pay_bank"  type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="中信银行" src="//r.uzaicdn.com/content/1/image/order/zx.jpg"/></div></a><input paytype="BDCC"  value="CNCB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="浦发银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_41.jpg"/></div></a><input  paytype="BDCC" value="SPDB"  name="pay_bank"  type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="兴业银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_47.jpg"/></div></a><input paytype="BDCC" value="CIB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="中国招商银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_31.jpg"/></div></a><input paytype="BDCC" value="CMB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="平安银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_57.jpg"/></div></a><input paytype="BDCC"  value="PAB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="民生银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_49.jpg"/></div></a><input paytype="BDCC" value="CMBC"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="广发银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_50.jpg"/></div></a><input paytype="BDCC" value="GDB"  name="pay_bank" type='radio' /></li>
+            </div>
+            <div class="bank_card_m1_title marg-t25">
+                旅游卡支付</div>
+            <div class="bank_card_m1_img">
+                <li><a href="javascript:void(0)">
+                    <img width="100px" height="36px" src="//r.uzaicdn.com/content/1/image/order/daijinka.jpg"></a><input
+                        paytype="UZ" value="daijinka" name="pay_bank" type='radio' /></li>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+  
+     <input type="hidden" value="KJ_JSB" name="BankcodeAll" id="BankcodeAll" />
+     <input type="hidden" value="" name="BankImg" id="BankImg" />
+     <input type="hidden" value="1751747" id="userid" />
+     <input type="hidden" value="" id="hidSupplierNo"  />
+     <input type="hidden" value="008" id="hidSupplierFlag" name="hidSupplierFlag"/>
+     <input type="hidden" value="1" id="hidNum" />
+     <input type="hidden" value="138252" id="hidProductID" />
+     <input type="hidden" value="1072896" id="hidTuanID" />   
+     <input id="order_id" name="order_id" value="2980AFEF3D8DE7414C2677C3F99D3507" type="hidden" />
+     <input type="hidden" id="hdPayType" name="hdPayType" value="THREEPAY" />
+     <input type="hidden" id="hdPayMoney" name="hdPayMoney" value="23600.00" />
+     <input type="hidden" id="hdIsUzai" name="hdIsUzai" value="0" />
+     <input  type="hidden" value="1" id="isBank"/>
+     <input  type="hidden" value="2980AFEF3D8DE7414C2677C3F99D3507" id="OrderIdDES"/>
+     <input  type="hidden" value="C623191728" id="OrderCode"/>
+     <input  type="hidden" value="691728" id="OrderId"/>
+     <input type="hidden" value="0" id="IsUseBankPreferential" />
+     <input type="hidden" id="PayChannle_M"  value="83" />
+     <input type="hidden" id="PayChannle_IOS"  value="88" />
+     <input type="hidden" id="PayChannel_Android"  value="95" />
+     <input type="hidden" id="PayChannel_PC"  value="-1" />
+
+     
+      <input type="hidden" value="1" id="hidProductType" />
+        <input type="hidden" value="9265" id="hidLocation" />
+</form>
+<!--付款按钮start-->
+ 
+    <div class='main_card_fo'>
+        <input type='button'  onclick="oncontract(691728,1,1,'1',0)" class='right_input' value='确认付款'/>
+        <p>若超出支付限额，请致电<span><em class="call-num">1010-9898</em></span>由客服专员为您拆单，分批支付</p>
+    </div>
+
+<!--付款按钮end-->
+<!--提示信息Start-->
+ <div class='storage'><img src='//r03.uzaicdn.com/content/zhifuv2/images/wait.gif'/>正在确认库存，请稍后......</div>
+<!--提示信息end-->
+<!--付款信息Start-->
+<div class='body_shade'></div>
+<div class='body_shade_show' id="fukuan">
+    <h2>付款确认</h2>
+    <p>完成付款后，请根据您的情况点击下面的按钮</p>
+    <div class='shade_buttom'>
+        <button class='right' onclick="GetPayStatus('N','691728', 'manager', 'C623191728')">付款不成功，重新支付</button>
+        <button onclick="GetPayStatus('Y','691728', 'manager', 'C623191728')">已完成付款</button>
+        <button id="youhuiBUtton" onclick="GetPayStatus('YH','691728', 'manager', 'C623191728')">修改优惠方案及支付方式</button>
+    </div>
+    <a href="javascript:void(0)" class='close'></a>
+</div>
+<div class='body_shade_show' id="youhui">
+    <h2>请修改优惠方案</h2>
+    <p>您选择的优惠方案已不可用，请重新选择优惠方案</p>
+    <div class='shade_buttom'>
+        <button onclick="window.location.href='/proc_youhui/2980AFEF3D8DE7414C2677C3F99D3507'">确定</button>
+    </div>
+    <a href="javascript:void(0)" class='close'></a>
+</div>
+<!--支付渠道不可用的弹窗-->
+<div class='body_shade_show' id="youhui_NO">
+    <h2>请修改优惠方案</h2>
+    <p>您选择的优惠方案仅可在<lable id="lblPlat"></lable>支付，请根据您的情况点击下面的按钮</p>
+    <div class='shade_buttom'>
+        <button onclick="close1()">关闭</button>
+        <button onclick="window.location.href='/proc_youhui/2980AFEF3D8DE7414C2677C3F99D3507'">修改优惠方案及支付方式</button>
+    </div>
+    <a href="javascript:void(0)" class='close' onclick="close1()"></a>
+</div>
+<input type="hidden" id="PageType"  value="1" />
+  <input  type="hidden" value='0' id="CheckBankPreferentialId"/>
+<!--付款信息end-->
+
+
+    <script type='text/javascript' src='//r02.uzaicdn.com/content/zhifuv2/scripts/jquery-1.11.1.min.js?20161115&v=4DC834D16A0D219D5C2B8A5B814569E4'  ></script><script type='text/javascript' src='//r.uzaicdn.com/content/zhifuv2/scripts/travel.js?20161115&v=CFFA9409E2DB229336DD6DC48E847E79'  ></script><script type='text/javascript' src='//r01.uzaicdn.com/content/zhifuv2/scripts/fournew_proc.js?20161115&v=9CB7D53A26E042C6D5D6DCFDD501A8C1'  ></script><script type='text/javascript' src='//r03.uzaicdn.com/content/yudingv2/scripts/core_new.js?20161115'  ></script>
+</body>
+</html>

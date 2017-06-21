@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" manifest="http://m.uzai.com/manifest/global.appcache">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>特价机票</title>
+    <meta name="keywords" content="x" />
+    <meta name="description" content="x" />
+    <link href="http://r.uzaicdn.com/content/m/v1/styles/_src/core.css" rel="stylesheet" />
+    <script src="http://r.uzaicdn.com/content/m/v1/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['http://r.uzaicdn.com/content/m/v1/scripts/core', '/content/m/v1/scripts/tejia/jp'], function (core, jp) {
+            jp.rush();
+        });
+    </script>
+    <style>
+        .tejia-jp { padding-top: 40px; }
+        .tejia-jp dl { margin-bottom: 10px; }
+        .tejia-jp dl dd { background: #fff; border-bottom: 1px solid #ccc; padding: 9px 10px; }
+        .tejia-jp dl dd .qu, .tejia-jp dl dd .fan { background: #6b0; color: #fff; display: inline-block; vertical-align: middle; width: 20px; height: 20px; text-align: center; margin-right: 5px; }
+        .tejia-jp dl dd .fan { background: #f60; }
+        .tejia-jp dl dd .p3 { color: #fff; text-align: center; font-size: 11px;border:1px solid #ccc;position:relative; }
+        .tejia-jp dl dd .p3 i{position:absolute;left:0}
+         .tejia-jp dl dd .p3 .per{display:inline-block;vertical-align:top;height:16px;background:#fc957c;}
+        .tejia-jp dl dd .tit img { margin: 0 5px; }
+        .tejia-jp dl dd .tit { margin-bottom: 7px; }
+
+        .tejia-jp dl dd .ing { border-color: #f60;color: #f60; }
+        .tejia-jp dl dd .will { border-color: #6b0;color: #6b0; }
+        .tejia-jp dl dd .over { border-color: #999;color: #666;background:#999; }
+
+        .tejia-jp .rush-timer-active dt { color: #f60; padding-bottom: 3px; }
+        .tejia-jp .rush-timer-active dt .rush-timer-box i { border-radius: 2px; background: #f60; font-size: 10px; padding: 2px 1px; color: #fff; }
+        .tejia-jp .rush-timer-unactive dt { color: #999; padding-bottom: 3px; }
+        .tejia-jp .rush-timer-unactive dt .rush-timer-box i { border-radius: 2px; background: #999; font-size: 10px; padding: 2px 1px; color: #fff; }
+
+        .wait { background: #fff; border-top: 1px solid #ccc; padding: 20px 0; }
+        .slogon { padding: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m"><div class="tit">特价机票</div></div>
+            <div class="d-r"></div>
+        </header>
+        <section id="j_tejiaJP" class="tejia-jp f14">
+            <input type="hidden" value="2014-7-21 12:53:03" name="DateTimeNow" id="DateTimeNow">
+            <div class="banner mb10">
+                <img src="/content/m/v1/images/tejia/t1.jpg"  alt="特价机票" class="block g10" />
+            </div>
+
+            <!--激活-->
+            <dl class="rush-timer-wrap  rush-timer-active">
+                <dt class="pl10 pr10 clearfix">
+                    <span class="fl">15:00</span>
+                    <div class="fr">
+                        距离结束时间 <span class="rush-timer-box"  data-endtime="2014/7/15 15:59:00" data-endtime2="2014/7/15 15:00:00"><i class="shi">00</i>:<i class="fen">00</i>:<i class="miao">00</i></span>
+                    </div>
+                </dt>
+                <dd>
+                    <a href="#" class="block clearfix" >
+                        <div class="pic fl">
+                            <div class="tit f333 mb5 mt5">上海浦东
+                                <img src="/content/m/v1/images/tejia/t1.png" width="22" alt="" class="vm" />
+                                东京成田</div>
+                            <div class="txt"><i class="qu">去</i>07-14  周一&nbsp;&nbsp;&nbsp; <i class="fan">返</i>07-19  周二</div>
+                        </div>
+                        <div class="fr price">
+                            <p class="p1 f15 f60">￥4234</p>
+                            <span class="p2"><img src="/content/m/v1/images/jipiao/j4.png" width="12" alt="" class="vm" /> 赠礼包</span>
+                            <div class="p3 ing" style="text-align:left;"><span class="per" style="width:40%"></span><i>已抢购40%</i></div>
+                        </div>
+                    </a>
+                </dd>
+                <dd>
+                    <a href="#" class="block clearfix" >
+                        <div class="pic fl">
+                            <div class="tit f333 mb5 mt5">上海浦东
+                                <img src="/content/m/v1/images/tejia/t1.png" width="22" alt="" class="vm" />
+                                东京成田</div>
+                            <div class="txt"><i class="qu">去</i>07-14  周一&nbsp;&nbsp;&nbsp; <i class="fan">返</i>07-19  周二</div>
+                        </div>
+                        <div class="fr price">
+                            <p class="p1 f15 f60">￥4234</p>
+                            <span class="p2"><img src="/content/m/v1/images/jipiao/j4.png" width="12" alt="" class="vm" /> 赠礼包</span>
+                            <div class="p3 over">抢光了...</div>
+                        </div>
+                    </a>
+                </dd>
+            </dl>
+
+            <!--未激活-->
+             <dl class="rush-timer-wrap rush-timer-unactive">
+                <dt class="pl10 pr10 clearfix">
+                    <span class="fl">17:00</span>
+                    <div class="fr">
+                        距离开始时间 <span class="rush-timer-box" data-endtime="2014/7/15 18:00:00" data-endtime2="2014/7/15 17:00:00"><i class="shi">00</i>:<i class="fen">00</i>:<i class="miao">00</i></span>
+                    </div>
+                </dt>
+                <dd>
+                    <a href="#" class="block clearfix" >
+                        <div class="pic fl">
+                            <div class="tit f333 mb5 mt5">上海浦东
+                                <img src="/content/m/v1/images/tejia/t1.png" width="22" alt="" class="vm" />
+                                东京成田</div>
+                            <div class="txt"><i class="qu">去</i>07-14  周一&nbsp;&nbsp;&nbsp; <i class="fan">返</i>07-19  周二</div>
+                        </div>
+                        <div class="fr price">
+                            <p class="p1 f15 f60">￥4234</p>
+                            <span class="p2"><img src="/content/m/v1/images/jipiao/j4.png" width="12" alt="" class="vm" /> 赠礼包</span>
+                            <div class="p3 will">尚未开场</div>
+                        </div>
+                    </a>
+                </dd>
+                <dd>
+                    <a href="#" class="block clearfix" >
+                        <div class="pic fl">
+                            <div class="tit f333 mb5 mt5">上海浦东
+                                <img src="/content/m/v1/images/tejia/t1.png" width="22" alt="" class="vm" />
+                                东京成田</div>
+                            <div class="txt"><i class="qu">去</i>07-14  周一&nbsp;&nbsp;&nbsp; <i class="fan">返</i>07-19  周二</div>
+                        </div>
+                        <div class="fr price">
+                            <p class="p1 f15 f60">￥4234</p>
+                            <span class="p2"><img src="/content/m/v1/images/jipiao/j4.png" width="12" alt="" class="vm" /> 赠礼包</span>
+                            <div class="p3 will">尚未开场</div>
+                        </div>
+                    </a>
+                </dd>
+            </dl>
+
+
+            <h2 class="pl10">17:00</h2>
+            <div class="tc wait f999">
+                <img src="/content/m/v1/images/tejia/t2.png" width="45" alt="" class="vm" />
+                尚未开卖,敬请期待!
+            </div>
+
+               <div class="order-part">
+            <p class="p1 tc lh3" style="border:1px solid #ccc;border-left:0;border-right:0;background:#fff;">
+                <a href="http://u.uzai.com/mobile/order">我的订单</a>
+            </p>
+             
+        </div>
+
+            <div class="tc slogon">
+                <img src="/content/m/v1/images/tejia/t3.png" width="122" alt="" class="vm" />
+            </div>
+
+
+        </section>
+
+     
+
+    </div>
+</body>
+</html>

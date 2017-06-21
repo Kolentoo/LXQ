@@ -1,0 +1,522 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>天气预报</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="http://r01.uzaicdn.com/content/v1/styles/core.css">
+    <script src="http://r01.uzaicdn.com/content/v1/scripts/core.js"></script>
+    <!--[if lt IE 9]><script src="http://r.uzaicdn.com/content/libs/html5shiv.js"></script><![endif]-->
+    <!--[if IE 6]><script src="http://r.uzaicdn.com/content/libs/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script><script>DD_belatedPNG.fix('.png');</script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="/content/v1/_src/styles/scenic/scenic.css">
+
+    <link type="text/css" rel="stylesheet" href="//r01.uzaicdn.com/content/weather/weather.css" />
+    <link type="text/css" rel="stylesheet" href="//r01.uzaicdn.com/content/weather/treeWeather.css" />
+
+    <script src="http://r01.uzaicdn.com/static/base/lazyload/jquery.lazyload.js"></script>
+    <script src="http://r01.uzaicdn.com/content/libs/plugin/pcas/pcasunzip.js" type="text/javascript" charset="gb2312"></script>
+    <script src="/content/v1/_src/scripts/scenic/weatherCalendar.js"></script>
+    <script type="text/javascript">
+        var treeid = '415';
+        var isChina = '1';
+        var sceneryname = "厦门";
+    </script>
+    <script type="text/javascript" src='/content/v1/_src/scripts/scenic/treeWeather.js'></script>
+    <script src="/content/v1/_src/scripts/scenic/scenic.js"></script>
+</head>
+<body>
+
+    <section class="crumbs w clearfix">
+        <span class="fl ml10">您的位置：</span>
+        <ul class="clearfix fl">
+            <li class="fl"><a href="http://www.uzai.com" class="ml10">首页</a><sub class="songti">-&gt;</sub></li>
+            <li class="fl"><a href="">国内游</a><sub class="songti">-&gt;</sub></li>
+            <li class="fl"><a href="">福建旅游</a><sub class="songti">-&gt;</sub></li>
+            <li class="fl"><a href="">厦门旅游</a><sub class="songti">-&gt;</sub></li>
+            <li class="fl f666"><strong>福建厦门天气预报一周查询</strong></li>
+        </ul>
+    </section>
+
+    <!-- season-con start-->
+    <div class="travel-criticism season-con w clearfix weather-report">
+        <div class="con-left fl">
+            <div class="scenic-side">
+                <div class="side-tip clearfix">
+                    <div class="season-icon8 fl png"></div>
+                    <div class="t2 f16 fl"><h2>厦门旅游指南</h2></div>
+                </div>
+                <div class="guide clearfix tc">
+                    <ul class="guide1 fl">
+                        <li class="clearfix">
+                            <span class="season-icon1 season-icon png"></span>
+                            <span class="txt "><a href="">厦门景点介绍</a></span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="season-icon2 season-icon png"></span>
+                            <span class="txt"><a href="">厦门当地购物</a></span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="season-icon3 season-icon png"></span>
+                            <span class="txt"><a href="">厦门风景图片</a></span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="season-icon4 season-icon png"></span>
+                            <span class="txt"><a href="">厦门交通工具</a></span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="season-icon5 season-icon png"></span>
+                            <span class="txt"><a href="">厦门地图查看</a></span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="season-icon6 season-icon png"></span>
+                            <span class="txt"><a href="">厦门天气预报</a></span>
+                        </li>
+                        <li class="clearfix last">
+                            <span class="season-icon7 season-icon png"></span>
+                            <span class="txt"><a href="">厦门旅游报价</a></span>
+                        </li>
+                    </ul>
+                    <ul class="guide2 fr">
+                        <li class="clearfix">
+                            <span class="season-icon1 season-icon png"></span>
+                            <span class="txt"><a href="">厦门当地购物</a></span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="season-icon2 season-icon png"></span>
+                            <span class="txt"><a href="">厦门注意事项</a></span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="season-icon3 season-icon png"></span>
+                            <span class="txt"><a href="">厦门特色美食</a></span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="season-icon4 season-icon png"></span>
+                            <span class="txt"><a href="">厦门旅游佳季</a></span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="season-icon5 season-icon png"></span>
+                            <span class="txt"><a href="">厦门旅游点评</a></span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="season-icon6 season-icon png"></span>
+                            <span class="txt"><a href="">厦门旅游攻略</a></span>
+                        </li>
+                        <li class="clearfix last">
+                            <span class="season-icon7 season-icon png"></span>
+                            <span class="txt"><a href="">厦门当季线路</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="scenic-side">
+                <div class="side-topic">
+                    <a href="">
+                        <div class="side-tip clearfix">
+                            <div class="season-icon9 fl png"></div>
+                            <div class="t2 f16 fl"><h2>目的地推荐</h2></div>
+                            <div class="place-more fr songti">></div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="scenic-place">
+                    <dl class="destination clearfix d1 d2">
+                        <dt class="d f14"><a href="">厦门</a></dt>
+                        <dd><a href="" title="鼓浪屿">鼓浪屿</a></dd>
+                        <dd><a href="" title="鼓浪屿">万石山</a></dd>
+                        <dd><a href="" title="鼓浪屿">海湾公园</a></dd>
+                        <dd><a href="" title="鼓浪屿">胡里山炮</a></dd>
+                        <dd><a href="" title="鼓浪屿">菽庄花园</a></dd>
+                        <dd><a href="" title="鼓浪屿">大轮山</a></dd>
+                        <dd><a href="" title="鼓浪屿">日月谷温</a></dd>
+                        <dd><a href="" title="鼓浪屿">五老峰</a></dd>
+                        <dd><a href="" title="鼓浪屿">狮山</a></dd>
+                        <dd><a href="" title="鼓浪屿">鳌园</a></dd>
+                        <dd><a href="" title="鼓浪屿">琴园</a></dd>
+                        <dd><a href="" title="鼓浪屿">厦门大桥</a></dd>
+                        <dd><a href="" title="鼓浪屿">集美航天…</a></dd>
+                        <dd><a href="" title="鼓浪屿">天界寺</a></dd>
+                        <dd><a href="" title="鼓浪屿">龙舟池</a></dd>
+                    </dl>
+                    <dl class="destination clearfix d2">
+                        <dt class="d f14"><a href="">厦门</a></dt>
+                        <dd><a href="" title="鼓浪屿">鼓浪屿</a></dd>
+                        <dd><a href="" title="鼓浪屿">万石山</a></dd>
+                        <dd><a href="" title="鼓浪屿">海湾公园</a></dd>
+                        <dd><a href="" title="鼓浪屿">胡里山炮</a></dd>
+                        <dd><a href="" title="鼓浪屿">菽庄花园</a></dd>
+                        <dd><a href="" title="鼓浪屿">大轮山</a></dd>
+                        <dd><a href="" title="鼓浪屿">日月谷温</a></dd>
+                        <dd><a href="" title="鼓浪屿">五老峰</a></dd>
+                        <dd><a href="" title="鼓浪屿">狮山</a></dd>
+                        <dd><a href="" title="鼓浪屿">鳌园</a></dd>
+                        <dd><a href="" title="鼓浪屿">琴园</a></dd>
+                        <dd><a href="" title="鼓浪屿">厦门大桥</a></dd>
+                        <dd><a href="" title="鼓浪屿">集美航天…</a></dd>
+                        <dd><a href="" title="鼓浪屿">天界寺</a></dd>
+                        <dd><a href="" title="鼓浪屿">龙舟池</a></dd>
+                    </dl>
+                    <dl class="destination clearfix d2">
+                        <dt class="d f14"><a href="">厦门</a></dt>
+                        <dd><a href="" title="鼓浪屿">鼓浪屿</a></dd>
+                        <dd><a href="" title="鼓浪屿">万石山</a></dd>
+                        <dd><a href="" title="鼓浪屿">海湾公园</a></dd>
+                        <dd><a href="" title="鼓浪屿">胡里山炮…</a></dd>
+                        <dd><a href="" title="鼓浪屿">菽庄花园</a></dd>
+                        <dd><a href="" title="鼓浪屿">大轮山</a></dd>
+                        <dd><a href="" title="鼓浪屿">日月谷温…</a></dd>
+                        <dd><a href="" title="鼓浪屿">五老峰</a></dd>
+                        <dd><a href="" title="鼓浪屿">狮山</a></dd>
+                        <dd><a href="" title="鼓浪屿">鳌园</a></dd>
+                        <dd><a href="" title="鼓浪屿">琴园</a></dd>
+                        <dd><a href="" title="鼓浪屿">厦门大桥</a></dd>
+                        <dd><a href="" title="鼓浪屿">集美航天…</a></dd>
+                        <dd><a href="" title="鼓浪屿">天界寺</a></dd>
+                        <dd><a href="" title="鼓浪屿">龙舟池</a></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="scenic-side">
+                <div class="side-tip clearfix">
+                    <div class="season-icon10 fl png"></div>
+                    <div class="t2 f16 fl"><h2>厦门旅游点评介绍</h2></div>
+                </div>
+                <div class="column">
+                    <p class="p1">厦门旅游点评为您提供去厦门旅游要多少钱,厦门旅游准备事项,交通,体验等详细信息，为厦门之旅提供咨询,产品,购买等服务！ </p>
+                    <p class="p1">悠哉旅游网真实的用户评论信息，尤其对厦门旅游体验,去厦门旅游要多少钱的评论发自用户真实评论。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="con-right fr criticism-right report-right">
+            <div class="report-intro1 report-intro">
+                <div class="side-tip clearfix">
+                    <div class="report-icon11 fl png"></div>
+                    <div class="t2 f16 fl"><h2>福建厦门天气预报一周查询</h2></div>
+                    <div class="city-choice" id="j_cityChoice">
+                        <div class="other-city f16 fr tc">
+                            <div class="cf1 pointer">
+                                <span class="cs">其他城市</span>
+                                <i class="down"></i>
+                            </div>
+                        </div>
+                        <div class="city-select f14 hide">
+                            <form id="searchForm" action="/WeatherSearch" method="post">
+                                <span class="s1">请选择城市</span>
+                                <select name="select_Province" class="f14 s2"></select>
+                                <select name="select_Province_city" class="f14 s2"></select>
+                                <span class="confirm f14 pointer" id="J_choose">确定</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!--天气预订-->
+                <div class="whd">
+                    <!--天气-->
+                    <div class="weatherBox">
+                        <!--weather top-->
+                        <div class="weatherBox-title clearfix">
+                            <div class="weatherBox-tLeft">
+                                <div class="tLeft_layer">
+                                    <input type="hidden" value="2015-12-04、2015-12-05、2015-12-06、2015-12-07、2015-12-08、2015-12-09、2015-12-10、" id="bookDate" />
+                                </div>
+                            </div>
+                            <div class="weatherBox-tRi mr10">
+                                请选择您要订阅的日期，当期已选择：
+                                <span class="J_rq red" id="dateList">
+
+                                    <em class="2015-12-04">12-04、</em>
+
+                                    <em class="2015-12-05">12-05、</em>
+
+                                    <em class="2015-12-06">12-06、</em>
+
+                                    <em class="2015-12-07">12-07、</em>
+
+                                    <em class="2015-12-08">12-08、</em>
+
+                                    <em class="2015-12-09">12-09、</em>
+
+                                    <em class="2015-12-10">12-10、</em>
+
+                                </span><input type="button" class="J_dy" value="" />
+                            </div>
+                        </div>
+                        <!--/weather top-->
+                        <!--weather table-->
+                        <div class="wo_calendar" id="div_Calendar" style="overflow:hidden;">
+                        </div>
+                        <!--/weather table-->
+                    </div>
+                    <!--/天气-->
+                </div>
+                <!--/天气预订-->
+
+            </div>
+            <div class="report-intro2 report-intro">
+                <div class="side-tip clearfix">
+                    <div class="report-icon12 fl png"></div>
+                    <div class="t2 f16 fl"><h2>厦门今日出游指数</h2></div>
+                </div>
+                <div class="report-tips">
+                    <ul class="clearfix">
+                        <li class="fl tips-pic1 tc">
+                            <div class="li-box">
+                                <div class="chart chart1"></div>
+                                <p class="p1 f333 f14">穿衣指数：</p>
+                                <div class="tips-star png"></div>
+                            </div>
+                        </li>
+                        <li class="fl tips-pic1 tc">
+                            <div class="li-box">
+                                <div class="chart chart2"></div>
+                                <p class="p1 f333 f14">舒适度指数：</p>
+                                <div class="tips-star png"></div>
+                            </div>
+                        </li>
+                        <li class="fl tips-pic1 tc">
+                            <div class="li-box">
+                                <div class="chart chart3"></div>
+                                <p class="p1 f333 f14">紫外线指数：</p>
+                                <div class="tips-star png"></div>
+                            </div>
+                        </li>
+                        <li class="fl tips-pic1 tc last">
+                            <div class="li-box">
+                                <div class="chart chart4"></div>
+                                <p class="p1 f333 f14">旅游指数：</p>
+                                <div class="tips-star png"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="season-intro3">
+                <div class="side-tip clearfix">
+                    <div class="season-icon12 fl png"></div>
+                    <div class="t2 f16 fl"><h2>厦门旅游线路</h2></div>
+                    <div class="route-more fl"><a href="">更多>></a></div>
+                    <div class="start-city f16 fr tc" id="j_sc">
+                        <div class="cf1 pointer">
+                            <span class="cs"><span class="cs1">北京</span>出发</span>
+                            <i class="down"></i>
+                        </div>
+                        <div class="cf2 f14 clearfix">
+                            <div class="c1 s4 c2">不限</div>
+                            <div class="c1"><span class="s5">|</span><span class="s4">北京</span></div>
+                            <div class="c1"><span class="s5">|</span><span class="s4">天津</span></div>
+                            <div class="c1"><span class="s5">|</span><span class="s4">石家庄</span></div>
+                            <div class="c1"><span class="s5">|</span><span class="s4">太原</span></div>
+                            <div class="c1"><span class="s5">|</span><span class="s4">沈阳</span></div>
+                            <div class="c1"><span class="s5">|</span><span class="s4">大连</span></div>
+                            <div class="c1"><span class="s5">|</span><span class="s4">上海</span></div>
+                            <div class="c1 s4 c2">北京</div>
+                            <div class="c1"><span class="s5">|</span><span class="s4">天津</span></div>
+                            <div class="c1"><span class="s5">|</span><span class="s4">石家庄</span></div>
+                            <div class="c1"><span class="s5">|</span><span class="s4">太原</span></div>
+                            <div class="c1"><span class="s5">|</span><span class="s4">沈阳</span></div>
+                            <div class="c1"><span class="s5">|</span><span class="s4">大连</span></div>
+                            <div class="c1"><span class="s5">|</span><span class="s4">上海</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="pro-box" id="j_proBox">
+                        <ul>
+                            <li class="clearfix p-shell">
+                                <div class="pro1 hotel-pro1">
+                                    <div class="pro-pic fl"><a href=""><img src="http://r.uzaicdn.com/content/m/images/common/gray.gif" data-original="/content/v1/images/scenic/jiaji1.jpg" alt=""></a></div>
+                                    <div class="pro-price fr f14 clearfix">
+                                        <div class="hotel-icon">正常，推荐</div>
+                                        <div class="price2">¥<span class="s3 f24 b">37500</span>起</div>
+                                        <div class="price3">
+                                            <span class="s2">抵</span>
+                                            <span class="s1">￥20</span>
+                                        </div>
+                                    </div>
+                                    <dl class="pro-detail clearfix">
+                                        <dt class="d1 f14"><a href="">【厦门出发】迪拜阿联酋6天<厦门出发，ka+cx>(厦门出发)</a></dt>
+                                        <dd class="d4 f666">体验海滨魅力，探寻土楼神秘之旅！飞机往返，休闲自在！</dd>
+                                        <dd class="d2 clearfix">
+                                            <span class="s1">行程天数：<em>3天</em></span>
+                                            <span class="s2">最近出发班期：<em>2015/10/@1,2015/11/@1</em></span>
+                                        </dd>
+                                        <dd class="d3">
+                                            <span class="s1">线路编号：<em>SHT54855</em></span>
+                                            <span class="s2">满意度：<em>98%</em></span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="clearfix p-shell">
+                                <div class="pro1 hotel-pro1">
+                                    <div class="pro-pic fl"><a href=""><img src="http://r.uzaicdn.com/content/m/images/common/gray.gif" data-original="/content/v1/images/scenic/jiaji1.jpg" alt=""></a></div>
+                                    <div class="pro-price fr f14 clearfix">
+                                        <div class="hotel-icon">正常，推荐</div>
+                                        <div class="price2">¥<span class="s3 f24 b">37500</span>起</div>
+                                        <div class="price3">
+                                            <span class="s2">抵</span>
+                                            <span class="s1">￥20</span>
+                                        </div>
+                                    </div>
+                                    <dl class="pro-detail clearfix">
+                                        <dt class="d1 f14"><a href="">【厦门出发】迪拜阿联酋6天<厦门出发，ka+cx>(厦门出发)</a></dt>
+                                        <dd class="d4 f666">体验海滨魅力，探寻土楼神秘之旅！飞机往返，休闲自在！</dd>
+                                        <dd class="d2 clearfix">
+                                            <span class="s1">行程天数：<em>3天</em></span>
+                                            <span class="s2">最近出发班期：<em>2015/10/@1,2015/11/@1</em></span>
+                                        </dd>
+                                        <dd class="d3">
+                                            <span class="s1">线路编号：<em>SHT54855</em></span>
+                                            <span class="s2">满意度：<em>98%</em></span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="clearfix p-shell">
+                                <div class="pro1 hotel-pro1">
+                                    <div class="pro-pic fl"><a href=""><img src="http://r.uzaicdn.com/content/m/images/common/gray.gif" data-original="/content/v1/images/scenic/jiaji1.jpg" alt=""></a></div>
+                                    <div class="pro-price fr f14 clearfix">
+                                        <div class="hotel-icon">正常，推荐</div>
+                                        <div class="price2">¥<span class="s3 f24 b">37500</span>起</div>
+                                        <div class="price3">
+                                            <span class="s2">抵</span>
+                                            <span class="s1">￥20</span>
+                                        </div>
+                                    </div>
+                                    <dl class="pro-detail clearfix">
+                                        <dt class="d1 f14"><a href="">【厦门出发】迪拜阿联酋6天<厦门出发，ka+cx>(厦门出发)</a></dt>
+                                        <dd class="d4 f666">体验海滨魅力，探寻土楼神秘之旅！飞机往返，休闲自在！</dd>
+                                        <dd class="d2 clearfix">
+                                            <span class="s1">行程天数：<em>3天</em></span>
+                                            <span class="s2">最近出发班期：<em>2015/10/@1,2015/11/@1</em></span>
+                                        </dd>
+                                        <dd class="d3">
+                                            <span class="s1">线路编号：<em>SHT54855</em></span>
+                                            <span class="s2">满意度：<em>98%</em></span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="clearfix p-shell">
+                                <div class="pro1 hotel-pro1">
+                                    <div class="pro-pic fl"><a href=""><img src="http://r.uzaicdn.com/content/m/images/common/gray.gif" data-original="/content/v1/images/scenic/jiaji1.jpg" alt=""></a></div>
+                                    <div class="pro-price fr f14 clearfix">
+                                        <div class="hotel-icon">正常，推荐</div>
+                                        <div class="price2">¥<span class="s3 f24 b">37500</span>起</div>
+                                        <div class="price3">
+                                            <span class="s2">抵</span>
+                                            <span class="s1">￥20</span>
+                                        </div>
+                                    </div>
+                                    <dl class="pro-detail clearfix">
+                                        <dt class="d1 f14"><a href="">【厦门出发】迪拜阿联酋6天<厦门出发，ka+cx>(厦门出发)</a></dt>
+                                        <dd class="d4 f666">体验海滨魅力，探寻土楼神秘之旅！飞机往返，休闲自在！</dd>
+                                        <dd class="d2 clearfix">
+                                            <span class="s1">行程天数：<em>3天</em></span>
+                                            <span class="s2">最近出发班期：<em>2015/10/@1,2015/11/@1</em></span>
+                                        </dd>
+                                        <dd class="d3">
+                                            <span class="s1">线路编号：<em>SHT54855</em></span>
+                                            <span class="s2">满意度：<em>98%</em></span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="clearfix p-shell">
+                                <div class="pro1 hotel-pro1">
+                                    <div class="pro-pic fl"><a href=""><img src="http://r.uzaicdn.com/content/m/images/common/gray.gif" data-original="/content/v1/images/scenic/jiaji1.jpg" alt=""></a></div>
+                                    <div class="pro-price fr f14 clearfix">
+                                        <div class="hotel-icon">正常，推荐</div>
+                                        <div class="price2">¥<span class="s3 f24 b">37500</span>起</div>
+                                        <div class="price3">
+                                            <span class="s2">抵</span>
+                                            <span class="s1">￥20</span>
+                                        </div>
+                                    </div>
+                                    <dl class="pro-detail clearfix">
+                                        <dt class="d1 f14"><a href="">【厦门出发】迪拜阿联酋6天<厦门出发，ka+cx>(厦门出发)</a></dt>
+                                        <dd class="d4 f666">体验海滨魅力，探寻土楼神秘之旅！飞机往返，休闲自在！</dd>
+                                        <dd class="d2 clearfix">
+                                            <span class="s1">行程天数：<em>3天</em></span>
+                                            <span class="s2">最近出发班期：<em>2015/10/@1,2015/11/@1</em></span>
+                                        </dd>
+                                        <dd class="d3">
+                                            <span class="s1">线路编号：<em>SHT54855</em></span>
+                                            <span class="s2">满意度：<em>98%</em></span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="clearfix p-shell">
+                                <div class="pro1 hotel-pro1">
+                                    <div class="pro-pic fl"><a href=""><img src="http://r.uzaicdn.com/content/m/images/common/gray.gif" data-original="/content/v1/images/scenic/jiaji1.jpg" alt=""></a></div>
+                                    <div class="pro-price fr f14 clearfix">
+                                        <div class="hotel-icon">正常，推荐</div>
+                                        <div class="price2">¥<span class="s3 f24 b">37500</span>起</div>
+                                        <div class="price3">
+                                            <span class="s2">抵</span>
+                                            <span class="s1">￥20</span>
+                                        </div>
+                                    </div>
+                                    <dl class="pro-detail clearfix">
+                                        <dt class="d1 f14"><a href="">【厦门出发】迪拜阿联酋6天<厦门出发，ka+cx>(厦门出发)</a></dt>
+                                        <dd class="d4 f666">体验海滨魅力，探寻土楼神秘之旅！飞机往返，休闲自在！</dd>
+                                        <dd class="d2 clearfix">
+                                            <span class="s1">行程天数：<em>3天</em></span>
+                                            <span class="s2">最近出发班期：<em>2015/10/@1,2015/11/@1</em></span>
+                                        </dd>
+                                        <dd class="d3">
+                                            <span class="s1">线路编号：<em>SHT54855</em></span>
+                                            <span class="s2">满意度：<em>98%</em></span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="clearfix p-shell">
+                                <div class="pro1 hotel-pro1">
+                                    <div class="pro-pic fl"><a href=""><img src="http://r.uzaicdn.com/content/m/images/common/gray.gif" data-original="/content/v1/images/scenic/jiaji1.jpg" alt=""></a></div>
+                                    <div class="pro-price fr f14 clearfix">
+                                        <div class="hotel-icon">正常，推荐</div>
+                                        <div class="price2">¥<span class="s3 f24 b">37500</span>起</div>
+                                        <div class="price3">
+                                            <span class="s2">抵</span>
+                                            <span class="s1">￥20</span>
+                                        </div>
+                                    </div>
+                                    <dl class="pro-detail clearfix">
+                                        <dt class="d1 f14"><a href="">【厦门出发】迪拜阿联酋6天<厦门出发，ka+cx>(厦门出发)</a></dt>
+                                        <dd class="d4 f666">体验海滨魅力，探寻土楼神秘之旅！飞机往返，休闲自在！</dd>
+                                        <dd class="d2 clearfix">
+                                            <span class="s1">行程天数：<em>3天</em></span>
+                                            <span class="s2">最近出发班期：<em>2015/10/@1,2015/11/@1</em></span>
+                                        </dd>
+                                        <dd class="d3">
+                                            <span class="s1">线路编号：<em>SHT54855</em></span>
+                                            <span class="s2">满意度：<em>98%</em></span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="route-more2 tr">
+                    <a href="">更多>></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- season-con end-->
+    <!--免费订阅-->
+    <div class="J_dy_box">
+        <p class="J_dy_close"><span class="f20 pointer" title="关闭">&times;</span></p>
+        <p class="dy_email"><label class="f14">请留下您的email地址</label><input id="txt_Email" maxlength="50" type="text" class="dy_input" /><input onclick="bookWeather('email')" class="btn" type="button" value="提交" /></p>
+        <p class="dy_phone"><label class="f14">请留下您的手机号码</label><input id="txt_Phone" maxlength="11" type="text" class="dy_input" /><input onclick="bookWeather('phone')" class="btn" type="button" value="提交" /></p>
+    </div>
+    <!--/免费订阅-->
+</body>
+</html>

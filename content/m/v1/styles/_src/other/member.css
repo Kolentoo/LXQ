@@ -1,0 +1,34 @@
+.member-grade{ background: #eec370;}
+.member-grade .main-box{ position: relative;}
+.member-grade .main-inner{ width: 100%; position: absolute; left: 0; top: 40px;}
+.member-grade .main-hd{ border-left: 8px solid #b25c1c; color: #b25c1c; font-size: 36px; line-height: 1.2; letter-spacing: 10px; margin: 0 40px; padding-left: 15px;}
+
+.member-grade .grade-itmes{ margin: 2.689% 2.268% 0;}
+.member-grade .grade-itmes .c-565706{ color: #565706;}
+.member-grade .grade-itmes .icon-grade{ background: url(/content/v1/images/other/i1.png) no-repeat; display: inline-block; height: 60px; width: 141px; position: absolute; left: -25px; top: -12px; _left: -30px;}
+.member-grade .grade-itme{ width: 18.838%; float: left; margin: 0 3.08%; padding-top: 18.485%; position: relative; _display: inline;}
+.member-grade .grade-itme .item-bd{ color: #a74702;}
+
+.member-grade .criteria-items{ margin: 6.722% 2.1% 0;}
+.member-grade .criteria-item{ float: left; width: 15.85%; margin: 0 2.807%; padding-left: 11.842%; _display: inline; _padding-left: 11.6%;}
+.member-grade .criteria-item .item-hd{ color: #7e3703;}
+.member-grade .criteria-item .item-bd{ color: #a74702;}
+
+.member-grade .note-box{ margin: 0 4.201%; padding: 25px 0;}
+.member-grade .note-box .note-hd{ color: #b25c1c;}
+.member-grade .note-box .note-bd{ color: #634203; padding: 20px 0;}
+.member-grade .note-items li{ margin: 0 12%; _margin: 0 10%;}
+.member-grade .note-items-1{ border-right: 2px solid #855802; box-shadow: 1px 0 0 #fff;}
+
+.member-grade .intro-items .item-hd{ color: #eed366; padding: 3% 6% 0; _zoom: 1;}
+.member-grade .intro-items .item-bd{ padding: 0 6%; _zoom: 1;}
+.member-grade .intro-items .scope-info{ color: #fdf4d1;}
+.member-grade .intro-items .item-info{ color: #e2b816;}
+
+.member-grade .main-1 .main-bg{ padding: 115px 0 45px;}
+.member-grade .main-2 .main-inner{ top: 12%; _top: 2%;}
+.member-grade .main-3 .main-inner{ top: 6%; _top: 2%;}
+.member-grade .main-3 .main-hd{ border-left-color: #eed366; color: #eed366;}
+.member-grade .main-3 .main-bd{ margin: 1% 5.042% 0;}
+
+.ufooter{ margin-top: 0;}

@@ -1,0 +1,78 @@
+
+<!doctype html>
+<html lang="en" ng-app="uzaiApp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <title>定制游_定制旅游-悠哉旅游网</title>
+    <meta name="keywords" content="定制旅游,定制游,定制旅行" />
+    <meta name="description" content="悠哉旅游网提供高端私人定制旅游，专业定制旅游顾问按您的需求，为您1对1定制旅游方案，休闲游/度假游/购物游定制旅游高端旅行者的首要选择，享受专属你的私人旅行。" />
+    <link rel="Shortcut Icon" href="//r.uzaicdn.com/favicon-sj.ico" type="image/x-icon" />
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/com/font.js "></script>
+    <link href="http://r03.uzaicdn.com/content/m/v2/styles/_src/custom/base.css" rel="stylesheet">
+    <link href="http://r03.uzaicdn.com/content/m/v2/styles/_src/custom/product_list.css" rel="stylesheet">
+
+
+
+</head>
+
+<body ng-controller="IndexController">
+    <div>
+        <header class="bg-transparent white-topbar">
+            <a href="http://mdingzhi.uzai.com/" target="_self" href="" class="fl top-back"><i class="left-ico black-ico"></i></a>
+            <a target="_self" class="fr"></a>
+            <div class="title">
+                <h1></h1></div>
+        </header>
+        <div class="main">
+            <div class="load-dialog">
+            </div>
+            <div id="pList" class="con">
+                <ul id="scroller" class="conul">
+                    <li ng-repeat="product in products" on-finish-render class="conli" style="position: relative;" ng-click="JumpPage(product.LinkUrl,product.ProductID)">
+
+                        <img ng-show="{{$index}}==0" src="http://r03.uzaicdn.com/content/m/v2/images/custom/new1.png" class="new ng-cloak" />
+                        <img src="http://r03.uzaicdn.com/content/m/v2/images/custom/dzy.png" class="dzy ng-cloak" ng-hide="isEven(product.LinkUrl)">
+
+                        <img ng-src="{{ product.ImgPath }} " class="listimg ng-cloak" />
+                        <div class="imgdes bgfff ">
+                            <p class="font30 cor000 p1 ng-cloak"><i class="redlogo "></i><i class="dz " ng-hide="isEven(product.LinkUrl)">[定制]</i><i class="desc" ng-bind-html="product.ProductName | trustHtml"></i></p>
+                            <div class="imgbot clearfix ">
+                                <span class="font24 fl "><i class="adrimg verm "></i><i class="cor999 font24 verm ng-cloak " ng-bind="product.CityName + '出发'"></i></span>
+                                <span class="fr corf93868 noqdy ng-cloak" ng-show="isEven(product.LinkUrl) "><i class="font24 ">￥</i><i class="font40 ng-cloak " ng-bind="product.Price"></i><i class="font24 cor999 ">起</i></span>
+                                <span class="fr qdz ng-cloak" ng-hide="isEven(product.LinkUrl) ">去定制&nbsp;&nbsp;→</span>
+                            </div>
+                        </div>
+                    </li>
+                    <button ng-click='fn1()' style='display:none;'>button</button>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://r03.uzaicdn.com/content/libs/jquery-2.1.1.min.js "></script>
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/common/angular.min.js "></script>
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/common/api.js "></script>
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/custom/iscroll.js "></script>
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/custom/product_list.js "></script>
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/common/angular-lazyload.js "></script>
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/common/pagestatistics.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+/* 
+* @Author: lxq
+* @Date:   2016-06-27 11:26:31
+* @Last Modified by:   lxq
+* @Last Modified time: 2016-08-02 16:36:59
+*/
+
+.banner {background: url(/content/subject/pc-piaoliu160627/img/banner.jpg) no-repeat center center;height: 697px;}
+.cont1-box {background: url(/content/subject/pc-piaoliu160627/img/bj1.jpg) no-repeat center center;height: 983px;}
+.cont2-box {background: url(/content/subject/pc-piaoliu160627/img/bj2.jpg) no-repeat center center;height: 961px;}
+.cont3-box {background: url(/content/subject/pc-piaoliu160627/img/bj3.jpg) no-repeat center center;height: 1705px;}
+.cont4-box {background: url(/content/subject/pc-piaoliu160627/img/bj4.jpg) no-repeat center center;height: 1296px;}
+.cont5-box {background: url(/content/subject/pc-piaoliu160627/img/bj5.jpg) no-repeat center center;height: 1290px;}
+.cont6-box {background: url(/content/subject/pc-piaoliu160627/img/bj6.jpg) no-repeat center center;height: 1071px;}
+.cont3-box .pro-con {padding-top: 200px;}
+.pro-con {width: 1000px;margin:0 auto;}
+.pro-con1 .pro1 .txt {width: 450px;color:#0081fe;padding-top:46px;}
+.txt {_display:inline;}
+.txt dt{font-size: 24px;}
+.txt dd{font-size: 18px;line-height: 28px;}
+.label {background: url(/content/subject/pc-piaoliu160627/img/label.jpg) no-repeat;width: 102px;height: 36px;line-height: 36px;text-align: center;color:#fff;font-size: 16px;left: 10px;top: 15px;position: absolute;}
+.product {width: 537px;margin-left: 10px;background: #fff;border-radius: 12px;_display:inline;}
+.product .chart {width: 322px;position: relative;_display:inline;}
+.product .chart img{border-radius: 10px;height: 239px;}
+.product .detail {width: 215px;text-align: center;_display:inline;}
+.product .detail .name {height: 54px;overflow: hidden;font-size: 20px;margin:15px 9px 30px;text-align: left;}
+.product .detail .name a{color:#232323;}
+.product .detail del{font-size: 16px;color:#232323;}
+.product .detail .price {color:#ff1975;font-size: 18px;margin-top: -8px;}
+.product .detail .price i{font-size: 48px;font-family: Georgia;}
+.product .detail .btn {width: 138px;margin:10px auto 0;}
+.product .detail .btn a{display: inline-block;color:#fff;background: #ff1975;line-height: 43px;width: 100%;text-align: center;font-size: 20px;border-radius: 8px;}
+.product .detail .btn a:hover {background: #ff3083;}
+
+.pro2 {margin-top: 50px;}
+.pro2 .txt {width: 450px;color:#0081fe;width: 415px;margin:50px 0 0 24px;}
+.pro3 {margin-top: 50px;}
+.pro3 .txt {margin-top: 5px;}
+.route-box {_display:inline;}
+.route-box ul{_display:inline;}
+.cont3-box .route-box {margin-left: 10px;width: 550px;}
+.cont3-box .route-list {margin-right: 35px;}
+.route-list {width: 239px;background: #fff;border-radius: 12px;padding-bottom: 8px;_display:inline;}
+.route-list .chart {width: 239px;position: relative;}
+.route-list .chart img{border-radius: 10px 10px 0 0;height: 182px;}
+.route-list .name {font-size: 16px;height: 46px;overflow: hidden;position: absolute;left: 0;bottom: 0;background: rgba(0,0,0,0.4);background: #000\9;filter: alpha(opacity=70);padding:0 5px;}
+.route-list .name a{color:#fff;}
+.route-list .book {padding-top: 4px;}
+.route-list del{font-size: 13px;color:#232323;width: 100px;padding-left: 5px;margin-top: 15px;}
+.route-list .price {width: 130px;font-size: 14px;color:#ff1975;}
+.route-list .price i{font-size: 32px;font-family: Georgia;padding-right: 5px;}
+
+.cont3-box .pro-con2 {padding-top: 130px;}
+.cont3-box .pro-con2 .pro2 {margin-top: 35px;}
+.cont3-box .pro-con2 .pro2 .route-box {width: 807px;margin-left: 100px;}
+.cont3-box .pro-con2 .route-box .route-list {margin:0 15px;}
+.pro-con2 .pro1 .txt {width: 410px;color:#0081fe;padding-top:42px;margin-left: 31px;}
+
+.cont4-box .pro-con1 {padding-top: 65px;}
+.cont4-box .pro-con1 .pro2 {margin-top: 0;}
+.cont4-box .pro-con1 .pro2 .txt {margin-left: 0;}
+.cont4-box .pro-con1 .pro2 .route-list {margin:0 30px 0 10px;}
+.cont4-box .pro-con1 .pro3 {margin-top: 60px;}
+.cont4-box .pro-con1 .pro3 .txt {margin:40px 0 0 18px;}
+.cont4-box .pro-con2 {padding-top: 100px;}
+.cont4-box .pro-con2 .pro2 .route-box {width: 807px;margin-left: 100px;}
+.cont4-box .pro-con2 .route-box .route-list {margin:0 15px;}
+
+.cont5-box .pro-con1 {padding-top: 45px;}
+.cont5-box .pro-con2 {padding-top: 130px;}
+.cont5-box .pro-con1 .pro2 .route-box {width: 807px;margin:-15px 0 0 100px;}
+.cont5-box .pro-con1 .route-box .route-list {margin:0 15px;}
+
+.cont6-box .pro-con1 {padding-top: 45px;}
+.cont6-box .pro-con1 .pro2 .route-box {width: 807px;margin:-15px 0 0 100px;}
+.cont6-box .pro-con1 .route-box .route-list {margin:0 15px;}
+
+.subject-intro-more {background: #0081fe;}
+.tit-inner {background: url(/content/subject/pc-piaoliu160627/img/subject-more.png) no-repeat center center;height: 54px;}

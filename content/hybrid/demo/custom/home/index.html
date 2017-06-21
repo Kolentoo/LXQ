@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html ng-app="dingzhi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <title>私人定制旅游_定制旅行-优定制</title>
+    <meta name="keywords" content="私人定制旅游,定制旅游,高端旅游,定制旅行" />
+    <meta name="description" content="悠哉旅游网提供高端私人定制旅游，专业定制旅游顾问按您的需求，为您1对1定制旅游方案，休闲游/度假游/购物游定制旅游高端旅行者的首要选择，享受专属你的私人旅行。" />
+    <link rel="Shortcut Icon" href="//r.uzaicdn.com/favicon-sj.ico" type="image/x-icon" />
+
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <link href="http://r03.uzaicdn.com/content/m/v2/styles/_src/chanel/swiper.min.css" type="text/css" rel="stylesheet" />
+    <link href="http://r03.uzaicdn.com/content/m/v2/styles/_src/custom/base.css" type="text/css" rel="stylesheet">
+    <link href="http://r03.uzaicdn.com/content/m/v2/styles/_src/custom/index.css" type="text/css" rel="stylesheet">
+</head>
+<body ng-controller="dingzhiindexController" ontouchstart="">
+    <div class="white-cover"></div>
+    <div class="content index-con">
+        <!-- 头部 -->
+        <header class="bg-transparent white-topbar border-bot on">
+            <a href="http://m.uzai.com" class="fl top-back"><i class="black-ico"></i></a>
+            <a class="fr" id="Telephone"><i class="phone-ico"></i></a>
+            <div class="title"><h1>首页</h1></div>
+        </header>
+
+        <!-- 内容 -->
+        <div class="main" >
+            <!-- 头部 -->
+            <div class="head">
+                <div class="slide-banner swiper-containerF">
+                    <div class="img swiper-wrapper">
+                        <div class="swiper-slide" ng-repeat="x in index.Banner">
+                            <img ng-src="{{x.PicUrl}}" ng-click="bannerjump(x.ID)" ng-if="$index==0"/>
+                            <img data-src="{{x.PicUrl}}" ng-click="bannerjump(x.ID)" ng-if="$index>0" class="swiper-lazy" />
+                            <div class="swiper-lazy-preloader" ng-if="$index>0"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="slide-link">
+                    <div class="box swiper-containerS">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide" ng-repeat="x in index.IndexDestination" on-finish-render>
+                                <a ng-click="jumpurl(1,x.DestCityID,x.DestCityName)">
+                                    <i><img ng-src="{{x.DesPic[0].DestCityPicUrl}}" /></i>
+                                    <span>{{x.DestCityName}}</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <span class="l"></span>
+                        <span class="r"></span>
+                    </div>
+                    <!-- 收缩按钮 -->
+                    <div class="down-btn down_btn"><a class="btn"></a></div>
+                </div>
+            </div>
+
+            <!-- 出游主题 -->
+            <div class="travel-b">
+                <h2 class="com-t"></h2>
+                <div class="box">
+                    <div class="a-box">
+                        <a class="img" ng-click="jumpurl(2,index.TravelTheme[0].TravelThemeId,index.TravelTheme[0].TravelName)">
+                            <img ng-src="{{index.TravelTheme[0].TravelPicUrl}}">
+                            <span class="b-cover"></span>
+                            <span class="name"></span>
+                            <span class="tit">{{index.TravelTheme[0].TravelName}}</span>
+                        </a>
+                    </div>
+                    <div class="b-box">
+                        <a class="s img" ng-click="jumpurl(2,index.TravelTheme[1].TravelThemeId,index.TravelTheme[1].TravelName)">
+                            <img ng-src="{{index.TravelTheme[1].TravelPicUrl}}">
+                            <span class="b-cover"></span>
+                            <span class="name"></span>
+                            <span class="tit">{{index.TravelTheme[1].TravelName}}</span>
+                        </a>
+                        <a class="s img" ng-click="jumpurl(2,index.TravelTheme[2].TravelThemeId,index.TravelTheme[2].TravelName)">
+                            <img ng-src="{{index.TravelTheme[2].TravelPicUrl}}">
+                            <span class="b-cover"></span>
+                            <span class="name"></span>
+                            <span class="tit">{{index.TravelTheme[2].TravelName}}</span>
+                        </a>
+                    </div>
+                    <div class="c-box">
+                        <a class="b img" ng-click="jumpurl(2,index.TravelTheme[3].TravelThemeId,index.TravelTheme[3].TravelName)">
+                            <img ng-src="{{index.TravelTheme[3].TravelPicUrl}}">
+                            <span class="b-cover"></span>
+                            <span class="name"></span>
+                            <span class="tit">{{index.TravelTheme[3].TravelName}}</span>
+                        </a>
+                        <a class="s img" ng-click="jumpurl(2,index.TravelTheme[4].TravelThemeId,index.TravelTheme[4].TravelName)">
+                            <img ng-src="{{index.TravelTheme[4].TravelPicUrl}}">
+                            <span class=" b-cover"></span>
+                            <span class="name"></span>
+                            <span class="tit">{{index.TravelTheme[4].TravelName}}</span>
+                        </a>
+                        <a class="s img" ng-click="jumpurl(2,index.TravelTheme[5].TravelThemeId,index.TravelTheme[5].TravelName)">
+                            <img ng-src="{{index.TravelTheme[5].TravelPicUrl}}">
+                            <span class=" b-cover"></span>
+                            <span class="name"></span>
+                            <span class="tit">{{index.TravelTheme[5].TravelName}}</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 案列列表 copy -->
+            <div class="case-b">
+                <h2 class="com-t"></h2>
+                <div class="part-ls">
+                    <div class="part" ng-repeat="x in index.IndexCase">
+                        <img lazy-src="{{x.CasePicUrl.replace('r01','r03')}}">
+                        <div class="b-cover"></div>
+                        <a ng-click="jumpurl(4,x.CaseId,'')" class="name">
+                            <span class="t">{{x.CaseTitle}}</span>
+                            <span class="red-hr"></span>
+                            <span class="p"></span>
+                        </a>
+                        <i class="l"></i>
+                        <i class="r"></i>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 底部，只有首页有 -->
+        <footer>
+            <div class="con border-top">
+                <a href="" class="index-btn on"><i></i><span>首页</span></a>
+                <a ng-click="jumpurl(3,'','')" class="custom-btn"><i></i><span>定制</span></a>
+                <a href="../Order/List.html" class="order-btn"><i></i><span>订单</span></a>
+            </div>
+        </footer>
+    </div>
+    <span class="gotoTop"></span>
+    
+</body>
+
+<script type="text/javascript" src="http://r03.uzaicdn.com/content/libs/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/com/font.js"></script>
+<script type="text/javascript" src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/com/swiper-3.3.1.min.js"></script>
+<script type="text/javascript" src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/common/api.js"></script>
+<script type="text/javascript" src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/common/angular.min.js"></script>
+<script type="text/javascript" src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/custom/index.js"></script>
+<script src="http://api.map.baidu.com/api?v=1.4"></script>
+<script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/common/pagestatistics.js"></script>
+<script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/common/angular-lazyload.js"></script>
+</html>

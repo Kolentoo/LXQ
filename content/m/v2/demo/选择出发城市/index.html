@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" manifest="http://m.uzai.com/manifest/global.appcache">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>选择出发城市</title>
+    <meta name="keywords" content="x" />
+    <meta name="description" content="x" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/choose/choose.css" rel="stylesheet" />
+    <script src="/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/_src/core', '/content/m/v2/scripts/choose/choose'], function (core, choose) {
+            choose.init();
+        });
+    </script>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">选择出发城市</div>
+            </div>
+            <div class="d-r">
+
+            </div>
+        </header>
+
+
+        <div class="choose-list clearfix" id="j_chooseList">
+            <div class="tit f13 tc">
+                <input type="search" name="search" autocomplete="off" value="输入城市名或首字母查询" />
+                <i></i>
+            </div>
+
+            <div class="search-data hide" id="j_searchData">
+                <dl></dl>
+            </div>
+
+            <div class="bd">
+                <div class="current" id="j_current">
+                    当前定位：<span class="f333 f15 city">...</span>
+                </div>
+                <div class="history" id="j_history">
+                    <dl>
+                        <dt>历史选择</dt>
+                    </dl>
+                </div>
+
+                <div class="hotcity" id="j_hotcity">
+                    <dl>
+                        <dt>热门出发城市</dt>
+                        <dd>上海</dd>
+                        <dd>北京</dd>
+                        <dd>成都</dd>
+                    </dl>
+                </div>
+
+                <div class="alpha">
+                    <dl>
+                        <dt id="j_a">A</dt>
+                        <dd></dd>
+                    </dl>
+
+                    <dl>
+                        <dt id="j_b">B</dt>
+                        <dd>北京</dd>
+                         
+                    </dl>
+
+                    <dl>
+                        
+                        <dt id="j_c">C</dt>
+                        <dd><a href="#" data-id="2" data-city="cc">长春</a></dd>
+                        <dd><a href="#">常州</a></dd>
+                        <dd><a href="#">长沙</a></dd>
+                        <dd><a href="#">成都</a></dd>
+                        <dd><a href="#">重庆</a></dd>
+                    </dl>
+
+                    <dl>
+                        <dt id="j_d">D</dt>
+                        <dd>大连</dd>
+                        
+                    </dl>
+
+                    <dl>
+                        <dt id="j_e">E</dt>
+                        <dd></dd>
+                    </dl>
+
+                    <dl>
+                        <dt id="j_f">F</dt>
+                        <dd>福州</dd>
+                    </dl>
+
+                    <dl>
+                        <dt id="j_g">G</dt>
+                        <dd>广州</dd>
+                    </dl>
+
+                    <dl>
+                        <dt id="j_h">H</dt>
+                        <dd>杭州</dd>
+                        <dd>合肥</dd>
+                        <dd>海口</dd>
+                    </dl>
+
+                    <dl>
+                        <dt id="j_i">I</dt>
+                        <dd></dd>
+                    </dl>
+                    <dl>
+                        <dt id="j_j">J</dt>
+                        <dd>吉林</dd>
+                        <dd>济南威海</dd>
+                        <dd>金华</dd>
+                        <dd>江门</dd>
+                    </dl>
+
+                    <dl>
+                        <dt id="j_k">K</dt>
+                        <dd></dd>
+                    </dl>
+                    <dl>
+                        <dt id="j_l">L</dt>
+                        <dd></dd>
+                    </dl>
+                    <dl>
+                        <dt id="j_m">M</dt>
+                        <dd></dd>
+                    </dl>
+                    <dl>
+                        <dt id="j_n">N</dt>
+                        <dd>南京</dd>
+                        <dd>宁波</dd>
+                        <dd>南昌</dd>
+                        <dd>南通</dd>
+                        <dd>南宁</dd>
+                    </dl>
+                    <dl>
+                        <dt id="j_p">P</dt>
+                        <dd></dd>
+                    </dl>
+                    <dl>
+                        <dt id="j_q">Q</dt>
+                        <dd>泉州</dd>
+                    </dl>
+                    <dl>
+                        <dt id="j_r">R</dt>
+                        <dd></dd>
+                    </dl>
+                    <dl>
+                        <dt id="j_s">S</dt>
+                        <dd>石家庄</dd>
+                        <dd>沈阳</dd>
+                        <dd>上海</dd>
+                        <dd>深圳</dd>
+                    </dl>
+                    <dl>
+                        <dt id="j_t">T</dt>
+                        <dd>天津</dd>
+                        <dd>太原</dd>
+                    </dl>
+                    <dl>
+                        <dt id="j_w">W</dt>
+                        <dd>威海</dd>
+                        <dd>无锡</dd>
+                        <dd>武汉</dd>
+                    </dl>
+                    <dl>
+                        <dt id="j_x">X</dt>
+                        <dd>厦门</dd>
+                    </dl>
+                    <dl>
+                        <dt id="j_y">Y</dt>
+                        <dd>宜昌</dd>
+                        <dd>银川</dd>
+                    </dl>
+                    <dl>
+                        <dt id="j_z">Z</dt>
+                        <dd>郑州</dd>
+                       
+                    </dl>
+
+                </div>
+            </div>
+
+            <div class="hd">
+                <ul>
+                    <li><a href="#j_current">当前</a></li>
+                    <li><a href="#j_history">历史</a></li>
+                    <li><a href="#j_hotcity">热门</a></li>
+                    <li><a href="#j_a">A</a></li>
+                    <li><a href="#j_b">B</a></li>
+                    <li><a href="#j_c">C</a></li>
+                    <li><a href="#j_d">D</a></li>
+                    <li><a href="#j_e">E</a></li>
+                    <li><a href="#j_f">F</a></li>
+                    <li><a href="#j_g">G</a></li>
+                    <li><a href="#j_h">H</a></li>
+                    <li><a href="#j_j">J</a></li>
+                    <li><a href="#j_k">K</a></li>
+                    <li><a href="#j_l">L</a></li>
+                    <li><a href="#j_m">M</a></li>
+                    <li><a href="#j_n">N</a></li>
+                    <li><a href="#j_o">O</a></li>
+                    <li><a href="#j_p">P</a></li>
+                    <li><a href="#j_q">Q</a></li>
+                    <li><a href="#j_r">R</a></li>
+                    <li><a href="#j_s">S</a></li>
+                    <li><a href="#j_t">T</a></li>
+                    <li><a href="#j_w">W</a></li>
+                    <li><a href="#j_x">X</a></li>
+                    <li><a href="#j_y">Y</a></li>
+                    <li><a href="#j_z">Z</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>

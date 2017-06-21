@@ -1,0 +1,51 @@
+/* CSS Document */
+.uzmap{text-align:left; width:990px; margin-bottom:10px;}
+.uzmap_main{border:2px solid #e2efc0; background:#ffffff;}
+.uzm_title{background:#f6fae9; height:32px; line-height:32px; border-bottom:1px solid #e2efc0; padding-left:15px;}
+.uzm_tname{background:url(../image/bg/dttitbg.gif) no-repeat left center; padding-left:20px; font-weight:bold; font-size:14px;}
+.uzm_ctit{background:#fffdee; height:30px; line-height:30px; border-bottom:1px solid #e9e1d1; padding-left:15px;}
+.uzm_ctname{background:url(/content/1/image/icon/orgbg.gif) no-repeat left center; padding-left:20px;}
+.uzm_ctname a{ color:#734500;}
+.uzmap_cont{padding:5px 0;}
+#nav{border-bottom:1px solid #e2efc0; padding-left:10px; height:32px; clear:both;}
+#main{clear:both;padding-top:5px;}
+.uzmp_citytit{background:url(/content/1/image/bg/dttitbg02.gif) no-repeat left center; padding-top:5px; padding-left:10px; margin-left:15px;  height:28px; line-height:28px; }
+.uzmp_citytit a{font-size:14px; font-weight:bold; color:#ff9900; *white-space:nowrap;}
+.uzmp_cityname{border-bottom:1px dashed #dddddd; font-size:14px;}
+.cityname{height:28px; line-height:28px; padding-top:5px; padding-left:25px !important; }
+.cityname a{font-size:14px !important; font-weight:bold; color:#83be0d !important;}
+.uzmp_cityname ul{padding-left:15px;}
+.uzmp_cityname ul li,.uzmap_cont02 ul li{float:left; border-right:1px solid #666666; margin-top:5px; margin-bottom:10px; padding:0 10px; *white-space:nowrap;}
+.uzmp_cityname ul li a,.uzmap_cont02 ul li a{color:#666666;}
+.uzmp_cityname ul li a:hover,.uzmap_cont02 ul li a:hover{color:#FF6600;}
+.uzmap_cont02{padding-left:20px; font-size:14px; padding-top:5px;}
+
+a.nav_button
+{
+color: #ffffff;
+float:left; margin:0 3px; background:url(/content/1/image/bg/dtbg02.gif) no-repeat left top; width:80px; height:32px; line-height:32px; text-align:center; white-space:nowrap;
+display: block;
+}
+a.nav_button_msout
+{
+color: #333333;
+background:url(/content/1/image/bg/dtbg01.gif) no-repeat left top; width:80px; height:33px; line-height:33px;
+display: block;
+float: left;
+text-align:center;
+margin:0 3px;
+}
+a.bglink{background:url(/content/1/image/bg/dtbg01.gif) no-repeat left top; width:80px; height:33px; line-height:33px; text-align:center; color:#333333;}
+a.nav_button:link
+{
+}
+a.nav_button:hover
+{
+color: #333333;
+background:url(/content/1/image/bg/dtbg01.gif) no-repeat left top; width:80px; height:33px; line-height:33px;
+text-align:center;
+}
+
+/**/
+.uzmap_cont02 dt{font-weight:bold;padding:8px 0 8px 12px;}
+.uzmap_cont02 dt a{color:#390;}

@@ -1,0 +1,198 @@
+.white-topbar {
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    background: #fff;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #000;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.white-topbar .top-back {
+    padding-left: 0.30rem;
+    line-height: 0.88rem;
+    padding-right: 12px;
+    font-size: 0.30rem;
+    color: #fff;
+}
+
+.white-topbar .black-ico {
+    width: 0.58rem;
+    height: 0.58rem;
+    display: inline-block;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/back_ico.png") no-repeat;
+    background-size: 100% auto;
+    vertical-align: middle;
+}
+
+.white-topbar .fr {
+    margin-right: 0;
+    position: relative;
+    height: 0.88rem;
+    width: 0.88rem;
+    margin-left: 28px;
+}
+
+img {
+    display: block;
+}
+
+* {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    ;
+}
+
+.title_img {
+    font-size: .36rem;
+}
+
+html,
+body {
+    background: #f0f0f0;
+}
+
+.wrapper {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    top: 0.88rem;
+    bottom: 0rem;
+}
+
+#scroller {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+.recordlist {
+    width: 7rem;
+    margin: 0 auto;
+}
+
+.recordlist li {
+    width: 100%;
+    border: 1px solid #d0d0d0;
+    border-radius: 0.1rem;
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: 0.24rem;
+    height: 2.5rem;
+    position: relative;
+}
+
+.orderimg {
+    width: 2.3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);-webkit-transform: translateY(-50%);
+}
+
+.order-content {
+    width: 4.7rem;
+}
+
+.order-number {
+    color: #666;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    border-bottom: 1px solid #f4f4f4;
+    padding-left: 0.25rem;
+    position: relative;
+}
+
+.font24 {
+    font-size: 0.24rem;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+.delivery {
+    position: absolute;
+    right: 0.2rem;
+    top: 0.1rem;
+}
+
+.yes {
+    color: #0088ff;
+}
+
+.no {
+    color: #e5004f;
+}
+
+.travel-bag {
+    color: #444;
+    padding-top: 0.26rem;
+
+    padding-left: 0.25rem;
+    padding-right: .15rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    margin-bottom:0.25rem;
+}
+
+.font32 {
+    font-size: 0.32rem;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+.font26 {
+    font-size: 0.26rem;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+.numvalue {
+    color: #e5004f;
+        padding-right: 0.1rem;
+    vertical-align: middle;
+}
+
+.integral {
+    color: #666;
+    padding-left: 0.25rem;
+    vertical-align: middle;
+    padding-bottom: .2rem;
+}
+.verm{
+    vertical-align: middle;
+}
+.chenghao{
+        font-size: 0.3rem;
+    vertical-align: middle;
+}
+.button-hide{
+    display: none;
+}
+
+/*.common-pop{margin: 1.5rem auto 0rem auto;width:2rem}*/
+
+.nodata{background:url("http://r03.uzaicdn.com/content/hybrid/images/member/zwsj.png") no-repeat;
+    width:1.5rem;height:2rem;text-align:center;font-size: .35rem;padding-top:1.6rem;
+    margin:auto auto;color:#bbb;display: none;background-size: 1.5rem 1.5rem;margin-top: 2rem;}

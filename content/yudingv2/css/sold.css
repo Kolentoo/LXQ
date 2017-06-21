@@ -1,0 +1,1596 @@
+﻿@charset "UTF-8";
+.dialog-login .dialog-login-confirm, .sale-newline .point-confirm, .return-page .submits-btn-orders, .step .step-box, .input-checkbox, .dialog-login .other-login a, .slide-btn, .product .product-id,
+.product .product-subhead, .product .product-departure-city,
+.product .product-departure-date,
+.product .product-trip-people, .sale-newline .section-li-content, .sale-newline .point, .sale-coupon-box, .user-info-content .user-info-span, .store-current .store-current-address,
+.store-current .store-current-name,
+.store-current .store-current-tel, .return-page .return-click, .section-select, .section-date, .section-arrow, .mandatory {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+body {
+  min-width: 1000px;
+  font-family: "Microsoft Yahei"; }
+
+*[hidden] {
+  display: none; }
+
+a,
+body,
+button,
+div,
+em,
+h1,
+h2,
+h3,
+hr,
+html,
+input,
+label,
+li,
+option,
+select,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: none; }
+
+button,
+li,
+ul {
+  list-style: none; }
+
+a {
+  color: #333;
+  text-decoration: none; }
+
+img {
+  vertical-align: middle;
+  border: 0px; }
+
+.right {
+  float: right; }
+
+em,
+h1,
+h2,
+h3,
+i,
+option,
+select {
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #333; }
+
+input[type=checkbox] {
+  filter: alpha(opacity=0);
+  opacity: 0; }
+
+[defaultChecked] + .input-checkbox,
+input[type=checkbox]:checked + .input-checkbox {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #4fc1e9;
+  border-color: #4fc1e9;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/checkbox-checked.png"); }
+
+.section-li .input-checkbox-box {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #4fc1e9;
+  border-color: #4fc1e9;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/checkbox-checked.png"); }
+
+.input-checkbox {
+  cursor: pointer; }
+
+.dialog-login .dialog-login-confirm, .sale-newline .point-confirm, .return-page .submits-btn-orders {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 0 5px;
+  background-color: #ccc;
+  text-align: center;
+  color: #fff; }
+
+.dialog-login .dialog-login-confirm, .sale-newline .point-confirm-hover,
+.sale-newline .point-confirm:hover, .return-page .submits-btn-orders {
+  background-color: #e5004f; }
+
+.input-checkbox, .user-info-content .user-info-textarea, .section-select, .section-select option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.head {
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  height: 94px;
+  background-color: #fff; }
+  .head .content {
+    height: 94px; }
+
+.content {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+  .content:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+.call {
+  float: right;
+  background-position: left center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 178px;
+  height: 64px;
+  padding-top: 30px;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/call.jpg"); }
+
+.call .call-num,
+.call .call-time {
+  display: block;
+  font-size: 12px;
+  text-indent: 20px; }
+
+.call .call-time {
+  color: #757575;
+  font-style: italic; }
+
+.call .call-num {
+  font-size: 22px;
+  color: #e50057;
+  font-family: Arial,Helvetica,sans-serif; }
+
+.step {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 153px;
+  position: relative; }
+  .step .step-line,
+  .step .step-line-finish {
+    display: block;
+    position: absolute;
+    left: 132px;
+    top: 52px;
+    width: 738px;
+    height: 8px;
+    background-color: #e6e6e6;
+    z-index: 1; }
+  .step .step-line-finish {
+    width: 0;
+    background-color: #f93868;
+    transition: 0.3s width ease;
+    z-index: 2; }
+  .step .step-line-finish-2 {
+    width: 150px; }
+  .step .step-line-finish-3 {
+    width: 340px; }
+  .step .step-line-finish-4 {
+    width: 560px; }
+  .step .step-line-finish-5 {
+    width: 750px; }
+  .step .step-content {
+    position: relative;
+    top: 30px;
+    left: 52px;
+    height: 90px;
+    z-index: 5; }
+  .step .step-box {
+    width: 110px; }
+  .step .step-box-2 {
+    margin-left: 80px; }
+  .step .step-box-3 {
+    margin-left: 80px; }
+  .step .step-box-4 {
+    margin-left: 86px; }
+  .step .step-box-5 {
+    margin-left: 85px; }
+  .step .step-box-hover .step-num {
+    background-position: -50px 0; }
+  .step .step-box-hover .step-word {
+    color: #e60e58; }
+  .step .step-box-finish .step-num {
+    background-position: -100px 0;
+    text-indent: -999em; }
+  .step .step-num {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+    background-image: url("//r03.uzaicdn.com/content/yudingv2/images/step.png"); }
+  .step .step-word {
+    display: block;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+    color: #cccccc; }
+
+.main {
+  float: left;
+  width: 702px; }
+
+.layout-right {
+  float: right; }
+
+.finally {
+  width: 278px;
+  border: 1px solid #e0e0e0;
+  padding-bottom: 20px; }
+  .finally .finally-title {
+    line-height: 46px;
+    height: 46px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333; }
+  .finally .finally-box,
+  .finally .finally-box-title {
+    display: block;
+    width: 240px;
+    padding: 0 20px; }
+  .finally .finally-box-title {
+    line-height: 50px;
+    height: 50px;
+    font-size: 14px;
+    color: #999; }
+  .finally .finally-box-margin {
+    margin-top: 10px; }
+
+.finally-box {
+  font-size: 14px;
+  color: #333;
+  line-height: 22px;
+  overflow: hidden; }
+  .finally-box .finally-description {
+    width: 160px;
+    float: left; }
+  .finally-box .finally-price {
+    width: 70px;
+    text-align: right;
+    float: right; }
+  .finally-box .finally-description-all {
+    width: 240px;
+    display: block;
+    line-height: 24px; }
+  .finally-box .finally-price-hover {
+    color: #f93868; }
+
+.finally-line {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px dashed #e0e0e0;
+  display: block;
+  width: 240px;
+  margin-top: 20px;
+  height: 0px; }
+
+.price {
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 238px;
+  padding: 20px;
+  border: 1px solid #f2f2f2;
+  border-top: 0;
+  border-bottom: 0;
+  background-color: #fcf8f2;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/price-pay.jpg"); }
+  .price .price-word {
+    float: left;
+    font-size: 18px;
+    color: #333; }
+  .price .price-pay {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f93868; }
+  .price .price-tips {
+    float: left;
+    text-align: right;
+    width: 238px;
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 10px;
+    color: #999; }
+  .price:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+.input-checkbox {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  vertical-align: middle;
+  outline: none; }
+
+.input-checkbox.no_select {
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: #ccc !important;
+  background-color: #ccc !important;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/checkbox-checked.png") !important; }
+
+.main_card_input {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 10px;
+  border: 1px solid #e0e0e0;
+  color: #999;
+  outline: none; }
+
+input.error {
+  border: 1px solid #e72d6d !important; }
+
+input.error + .error_entry {
+  display: block; }
+
+input.blur {
+  -webkit-box-shadow: 0px 0px 2px #2fa6e5;
+  -moz-box-shadow: 0px 0px 2px #2fa6e5;
+  box-shadow: 0px 0px 2px #2fa6e5; }
+
+input.blur_ {
+  -webkit-box-shadow: 0px 0px 0px #2fa6e5 !important;
+  -moz-box-shadow: 0px 0px 0px #2fa6e5 !important;
+  box-shadow: 0px 0px 0px #2fa6e5 !important; }
+
+.dialog-login {
+  display: block;
+  width: 800px;
+  height: 430px;
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -400px;
+  margin-top: -215px;
+  z-index: 55; }
+  .dialog-login .member,
+  .dialog-login .quick {
+    float: left;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 260px;
+    padding: 0 70px;
+    height: 430px;
+    background-color: #fff; }
+  .dialog-login:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .dialog-login .dialog-login-title {
+    line-height: 83px;
+    height: 83px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold; }
+    .dialog-login .dialog-login-title a {
+      font-weight: normal;
+      color: #999; }
+    .dialog-login .dialog-login-title .m {
+      float: left; }
+    .dialog-login .dialog-login-title .p {
+      float: right; }
+    .dialog-login .dialog-login-title .font-black, .dialog-login .dialog-login-title .store-current, .dialog-login .dialog-login-title .store-current .store-current-name, .store-current .dialog-login .dialog-login-title .store-current-name {
+      color: #333; }
+  .dialog-login .phone-box {
+    display: none;
+    height: 194px; }
+  .dialog-login .dialog-login-label {
+    line-height: 30px;
+    height: 30px;
+    display: block;
+    font-size: 14px;
+    color: #333; }
+  .dialog-login .main_card_input {
+    display: block;
+    width: 248px;
+    height: 20px;
+    padding-top: 9px;
+    padding-bottom: 8px; }
+  .dialog-login .captcha-inputb {
+    height: 26px;
+    padding-top: 7px;
+    padding-bottom: 7px; }
+  .dialog-login .dialog-login-tips {
+    line-height: 30px;
+    height: 30px;
+    display: block;
+    font-size: 14px;
+    color: #999; }
+  .dialog-login .captcha {
+    float: right;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #666;
+    background-color: #e0e0e0;
+    margin-right: 10px;
+    width: 70px;
+    height: 26px; }
+    .dialog-login .captcha:after {
+      background-color: #f93868;
+      color: #fff; }
+  .dialog-login .captcha-hover {
+    background-color: #f93868;
+    color: #fff; }
+  .dialog-login .captcha-input {
+    line-height: 26px;
+    height: 26px;
+    float: left;
+    width: 145px; }
+  .dialog-login .dialog-login-confirm {
+    width: 260px;
+    height: 40px;
+    margin: 30px 0 0;
+    font-size: 18px;
+    *margin-top: 15px; }
+  .dialog-login .dialog-login-line {
+    position: absolute;
+    left: 400px;
+    top: 70px;
+    width: 0;
+    height: 300px;
+    border-left: 1px dashed #e0e0e0; }
+  .dialog-login .icon-pd,
+  .dialog-login .icon-user {
+    float: left;
+    width: 44px;
+    height: 38px;
+    background-color: #f0f2f5;
+    background-image: url("//r03.uzaicdn.com/content/yudingv2/images/icon.png"); }
+  .dialog-login .icon-pd {
+    background-position: -44px 0; }
+  .dialog-login .icon-input {
+    float: left;
+    width: 184px;
+    padding: 10px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    height: 20px;
+    color: #999; }
+  .dialog-login .remember-box {
+    margin-top: 13px;
+    *margin-top: -5px; }
+    .dialog-login .remember-box a {
+      float: right; }
+  .dialog-login .member-box .main_card_input {
+    padding: 0;
+    height: 38px; }
+  .dialog-login .remember-tips {
+    float: left;
+    line-height: 17px;
+    height: 17px;
+    margin-left: 10px; }
+  .dialog-login .input-remember {
+    float: left;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #4fc1e9;
+    vertical-align: middle; }
+    .dialog-login .input-remember i {
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin: 2px auto 0; }
+  .dialog-login input[type=checkbox]:checked + .input-remember i, .dialog-login .input-checkbox-box1 i {
+    background-color: #4fc1e9; }
+  .dialog-login .input-checkbox-box1 i {
+    background-color: #4fc1e9; }
+  .dialog-login .other-login {
+    float: left;
+    margin-top: 20px;
+    color: #999;
+    font-size: 14px;
+    line-height: 27px; }
+    .dialog-login .other-login a {
+      width: 27px;
+      height: 27px;
+      vertical-align: middle; }
+  .dialog-login .other-login-icon-qq,
+  .dialog-login .other-login-icon-weibo {
+    background: url("//r03.uzaicdn.com/content/yudingv2/images/other-login.png"); }
+  .dialog-login .other-login-icon-weibo {
+    background-position: -27px 0; }
+  .dialog-login .close {
+    width: 24px;
+    height: 24px;
+    background: url("//r03.uzaicdn.com/content/yudingv2/images/close1.png") no-repeat;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px; }
+
+.dialog-full {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 50; }
+
+.error_entry {
+  position: absolute;
+  right: 0px;
+  top: 40px;
+  font-size: 14px;
+  color: #e60e58;
+  border: 1px solid #e0e0e0;
+  padding: 4px;
+  padding-right: 10px;
+  padding-left: 37px;
+  border-radius: 2px;
+  background: url(//r03.uzaicdn.com/content/yudingv2/images/close.png) no-repeat 10px center #fff;
+  display: none;
+  z-index: 3; }
+
+.order-state {
+  margin: auto;
+  font-size: 16px;
+  color: #e60e58;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  padding: 30px 0;
+  margin-bottom: 20px; }
+  .order-state a {
+    color: #2fa6e5;
+    text-decoration: underline;
+    margin-left: 30px; }
+
+.w_100 {
+  width: 100%; }
+
+.uzai_date {
+  position: absolute;
+  left: 18px;
+  top: 32px;
+  width: 435px;
+  height: 260px;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 8;
+  -webkit-box-shadow: 0px 0px 2px #f8f8f8;
+  -moz-box-shadow: 0px 0px 2px #f8f8f8;
+  box-shadow: 0px 0px 2px #f8f8f8;
+  display: none; }
+
+.uzai_date_left {
+  float: left;
+  width: 200px;
+  margin-left: 12px;
+  margin-top: 12px; }
+  .uzai_date_left table {
+    width: 100%;
+    line-height: 22px;
+    font-size: 12px;
+    color: #333333;
+    cursor: pointer; }
+  .uzai_date_left td {
+    text-align: center; }
+  .uzai_date_left td.cfa004b {
+    color: #fa004b; }
+  .uzai_date_left td.c999999 {
+    color: #999999; }
+  .uzai_date_left td.cfff {
+    color: #fff;
+    background: #2fa6e5;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; }
+  .uzai_date_left .uzai_date_bot {
+    border: 1px solid #d6d6d6;
+    text-align: center;
+    width: 90px;
+    line-height: 28px;
+    font-size: 12px;
+    color: #333333;
+    cursor: pointer;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-top: 10px; }
+    .uzai_date_left .uzai_date_bot:hover {
+      border: 1px solid #7dd1fe;
+      color: #2fa6e5; }
+
+.uzai_date_top {
+  font-size: 14px;
+  text-align: center; }
+
+.uzai_date_left_l {
+  float: left;
+  cursor: pointer;
+  color: #999999; }
+
+.uzai_date_left_r {
+  float: right;
+  cursor: pointer;
+  color: #999999; }
+
+/*弹出框*/
+.body_shade {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  z-index: 50;
+  display: none; }
+
+.body_shade_show {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -240px;
+  margin-top: -180px;
+  background: #fff;
+  z-index: 999;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  width: 360px;
+  padding: 30px 60px;
+  padding-bottom: 45px; }
+  .body_shade_show h2 {
+    text-align: center;
+    color: #333333;
+    font-size: 24px;
+    font-weight: normal; }
+  .body_shade_show p {
+    color: #333333;
+    font-size: 18px;
+    margin-top: 45px; }
+  .body_shade_show .shade_buttom {
+    text-align: center;
+    overflow: hidden;
+    margin-top: 15px; }
+    .body_shade_show .shade_buttom button {
+      background: #fff;
+      color: #e60e58;
+      border: 1px solid #e60e58;
+      cursor: pointer;
+      border-radius: 10px;
+      cursor: pointer;
+      outline: none;
+      font-size: 18px;
+      padding: 0px 10px;
+      line-height: 40px;
+      width: 100%;
+      margin-top: 20px; }
+      .body_shade_show .shade_buttom button:hover {
+        background: #e60e58;
+        color: #fff; }
+  .body_shade_show .close {
+    width: 24px;
+    height: 24px;
+    background: url(//r03.uzaicdn.com/content/yudingv2/images/close1.png) no-repeat;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 30px; }
+
+/*loading*/
+.storage {
+  display: none;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px 130px;
+  font-size: 14px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+  line-height: 30px;
+  margin-left: -230px;
+  margin-top: -45px;  }
+  .storage img {
+    margin-right: 20px; }
+
+.clear {
+  clear: both; }
+
+.dashen-line {
+  border-top: 1px dashed #e0e0e0;
+  height: 0; }
+
+.solid-line {
+  border-top: 1px solid #e0e0e0;
+  height: 0; }
+
+.font-click, .store-others {
+  color: #4fc1e9; }
+
+.font-black, .store-current, .store-current .store-current-name {
+  color: #333; }
+
+.font-hover, .mandatory {
+  color: #f93868; }
+
+.font-gray {
+  color: #666; }
+
+.font-light-gray, .store-current {
+  color: #999; }
+
+.text-align-right {
+  text-align: right; }
+
+.slide-btn {
+  background-repeat: no-repeat;
+  background-position: 100% -700%;
+  min-width: 70px;
+  text-align: left;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/arrow.png");
+  margin-right: 20px; }
+
+.slide-btn-hover {
+  background-position: 100% 1000%; }
+
+.insurance,
+.product,
+.return-page,
+.sale,
+.single-room,
+.store,
+.user-info {
+  width: 700px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+  line-height: 22px;
+  overflow: hidden; }
+
+.product {
+  width: 660px;
+  padding: 20px; }
+  .product .product-title {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    word-spacing: 2px;
+    color: #333; }
+  .product .product-subhead {
+    color: #666;
+    margin: 20px 0; }
+  .product .product-id {
+    display: inline; }
+  .product .product-departure-city,
+  .product .product-departure-date,
+  .product .product-trip-people {
+    color: #999;
+    margin-top: 20px; }
+  .product .product-departure-city,
+  .product .product-trip-people {
+    margin-left: 50px; }
+
+.sale {
+  border-top: 0; }
+  .sale .dashen-line {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 660px; }
+  .sale:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+.sale-content,
+.section-ul-title,
+.user-info-content {
+  display: block;
+  width: 660px;
+  padding-left: 40px; }
+
+.section-ul-title {
+  line-height: 49px;
+  height: 49px;
+  border-bottom: 1px solid #e0e0e0; }
+
+.sale-content {
+  line-height: 22px;
+  margin: 5px 0 0;
+  padding-bottom: 5px; }
+  .sale-content .section-li {
+    color: #333; }
+  .sale-content .section-li-hover {
+    color: #f93868; }
+  .sale-content::after {
+    content: "";
+    clear: both;
+    display: block; }
+
+.login-tips,
+.section-li {
+  float: left;
+  font-size: 14px;
+  color: #666; }
+
+.section-li-width-1 {
+  width: 100px; }
+
+.section-li-width-2 {
+  width: 247px;
+  padding-left: 18px;
+  min-height: 22px; }
+
+.section-li-width-3 {
+  width: 82px;
+  padding-left: 18px; }
+
+.section-li-width-4 {
+  width: 160px;
+  text-align: right; }
+
+.main .insurance .sale-content .section-li-width-1_ {
+  width: 290px;
+  padding: 5px 0; }
+  .main .insurance .sale-content .section-li-width-1_ a {
+    line-height: 20px;
+    height: 20px; }
+
+.section-li-width-1_1 {
+  width: 290px; }
+
+.section-li-width-2_ {
+  width: 147px;
+  padding-left: 18px; }
+
+.section-li-width-3_ {
+  width: 82px;
+  padding-left: 18px; }
+
+.section-li-width-4_ {
+  width: 70px;
+  text-align: right; }
+
+.por {
+  position: relative; }
+
+.section-li-all {
+  width: 640px; }
+  .section-li-all:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+.section-title {
+  line-height: 50px;
+  height: 50px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  z-index: 1;
+  background-color: #fafafa;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  text-indent: 20px; }
+  .section-title::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 15px;
+    display: block;
+    width: 4px;
+    height: 18px;
+    background-color: #f93868; }
+
+.sale-immediate {
+  /* height: 23px; */
+    margin-top: 10px;
+    overflow: hidden;}
+
+.login-tips {
+  width: 465px;
+  line-height: 22px;
+  height: 22px; }
+
+.sale-newline .section-li-content {
+  width: 526px;
+  line-height: 32px; }
+
+.sale-newline .section-li {
+  line-height: 32px;
+  height: 32px; }
+
+.sale-newline .point .main_card_input {
+  width: 280px;
+  float: left;
+  margin-top: -2px; }
+
+.sale-newline .point i {
+  display: block;
+  margin-top: 10px; }
+
+.sale-newline .point-confirm {
+  width: 48px;
+  line-height: 30px;
+  height: 30px; }
+
+.sale-coupon {
+  float: left;
+  width: 200px;
+  color: #fff;
+  margin-top: 0;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  cursor: pointer; }
+
+.sale-coupon-num {
+  font-size: 22px; }
+
+.sale-coupon-box {
+  background-repeat: no-repeat;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/coupon-top.png");
+  background-color: #9fc9fe;
+  width: 175px;
+  padding-left: 25px;
+  padding-top: 15px; }
+  .sale-coupon-box .sale-coupon-date,
+  .sale-coupon-box .sale-coupon-num {
+    display: block;
+    line-height: 26px; }
+  .sale-coupon-box .sale-coupon-date {
+    font-size: 12px; }
+
+.sale-coupon-id {
+  line-height: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: 1px solid #e0e0e0;
+  border-top: 0;
+  background-color: #fff;
+  display: block;
+  font-size: 12px;
+  text-indent: 25px;
+  position: relative;
+	zoom:1; }
+
+.sale-coupon-hover .sale-coupon-box,
+.sale-coupon:hover .sale-coupon-box {
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/coupon-top-hover.png");
+  background-color: #6cadff; }
+
+.insurance .sale-content .section-li a {
+  line-height: 34px;
+  height: 34px; }
+
+.single-room {
+  overflow: visible; }
+  .single-room .section-li-width-3 {
+    width: 347px;
+    padding-left: 18px;
+    text-align: center; }
+  .single-room .sale-content .section-li {
+    line-height: 30px;
+    height: 30px; }
+  .single-room .sale-content .section-li-width-1 {
+    cursor: pointer; }
+  .single-room .section-li-content {
+    float: left;
+    width: 640px;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 15px;
+    padding: 20px 0; }
+
+    .section-li-content-attachment {
+    float: left;
+    width: 640px;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 15px;
+    padding: 20px 0;
+    }
+
+
+.user-info-content {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .user-info-content .user-info-span label {
+    line-height: 36px;
+    float: left; }
+  .user-info-content .user-info-tel {
+    margin-left: 100px; }
+  .user-info-content .user-info-note {
+    display: block;
+    overflow: hidden; }
+    .user-info-content .user-info-note:after {
+      content: '.';
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    .user-info-content .user-info-note label {
+      float: left; }
+  .user-info-content .user-info-textarea {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    width: 538px;
+    height: 83px;
+    padding: 10px;
+    resize: none;
+    outline: none;
+    color: #999;
+    font-family: "Microsoft Yahei"; }
+    .user-info-content .user-info-textarea::-webkit-input-placeholder {
+      font-size: 14px; }
+  .user-info-content input {
+    width: 175px; }
+
+.store-current {
+  float: left;
+  width: 429px;
+  padding-left: 40px;
+  font-size: 14px;
+  border-right: 1px dashed #e0e0e0; }
+  .store-current .store-current-name {
+    line-height: 50px;
+    height: 50px;
+    font-size: 16px; }
+  .store-current .store-current-address em,
+  .store-current .store-current-address label {
+    float: left; }
+  .store-current .store-current-address em {
+    width: 380px; }
+
+.store-others {
+  float: left;
+  width: 190px;
+  min-height: 122px;
+  line-height: 122px;
+  padding-right: 40px;
+  text-align: center; }
+
+.return-page {
+  padding: 10px 20px;
+  width: 660px; }
+  .return-page .return-click {
+    line-height: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-indent: 35px;
+    background-image: url("//r03.uzaicdn.com/content/yudingv2/images/return.jpg"); }
+  .return-page .submits-btn-orders {
+    float: right;
+    line-height: 50px;
+    height: 50px;
+    width: 150px;
+    font-size: 20px; }
+
+.section-select {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: 90% 200%;
+  width: 58px;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  font-size: 12px;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/select-arrow.png");
+  *z-index: 9;
+  position: relative; }
+  .section-select:hover {
+    outline: #4fc1e9;
+    border: 1px solid #4fc1e9; }
+  .section-select option {
+    background-color: #fff;
+    text-align: center; }
+  .section-select span {
+    display: block;
+    line-height: 30px;
+    text-align: center; }
+  .section-select .section-select_option {
+    display: none;
+    position: absolute;
+    top: 31px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 9;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    overflow: hidden;
+    background: #fff; }
+    .section-select .section-select_option a {
+      display: block;
+      line-height: 30px; }
+      .section-select .section-select_option a:hover {
+        color: #fff;
+        background: #4ec1e9; }
+
+.section-date {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-position: 95% 230%;
+  width: 128px;
+  border: 1px solid #e0e0e0;
+  font-size: 12px;
+  text-indent: 10px;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/select-arrow.png"); }
+  .section-date:hover {
+    outline: #4fc1e9;
+    border: 1px solid #4fc1e9; }
+
+.section-arrow {
+  background-repeat: no-repeat;
+  background-position: 0 -18px;
+  margin: 0 10px;
+  width: 8px;
+  height: 5px;
+  vertical-align: middle;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/slide-arrow.png"); }
+
+.section-arrow-hover {
+  background-position: 0 0; }
+
+.margin-top-20, .user-info-content .user-info-note, .store-current, .store-others {
+  margin-top: 20px; }
+
+.margin-bottom-20, .store-current {
+  margin-bottom: 20px; }
+
+.border-top-0 {
+  border-top: 0; }
+
+.border-bottom-0 {
+  border-bottom: 0; }
+
+.mandatory {
+  line-height: 30px;
+  height: 30px;
+  vertical-align: middle;
+  font-size: 24px;
+  margin: 0 10px; }
+
+.point {
+  margin-top: 5px; }
+
+.sale-coupon:hover .bank_desc_m {
+  display: block; }
+
+.bank_desc_m {
+  display: none;
+  text-indent: 0;
+  z-index: 99;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  border: 1px solid #dbdbdb;
+  padding: 10px;
+  width: 176px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0px 0px 2px #b1b1b1;
+  -moz-box-shadow: 0px 0px 2px #b1b1b1;
+  box-shadow: 0px 0px 2px #b1b1b1;
+  line-height: 22px;
+  color: #999999;
+  font-size: 12px;
+  background: #fff; }
+  .bank_desc_m:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    left: 24px;
+    top: -6px;
+    position: absolute;
+    -webkit-box-shadow: -1px 1px 0px #b1b1b1;
+    -moz-box-shadow: -1px 1px 0px #b1b1b1;
+    box-shadow: -1px 1px 0px #b1b1b1;
+    transform: rotate(135deg);
+    background: #fff;
+    z-index: 3; }
+
+.overf-auto {
+  overflow: visible; }
+
+.sold_main {
+  width: 640px;
+  margin-left: 20px; }
+
+.right {
+  float: right; }
+
+.sold_main_li {
+  margin-top: 10px; }
+  .sold_main_li span {
+    margin-right: 30px;
+    color: #2fa6e5; }
+  .sold_main_li span.select {
+    text-decoration: underline;
+    color: #e5004f;
+    cursor: pointer; }
+
+.sold_main_li_m {
+  margin-top: 10px; }
+
+.w_80 {
+  width: 80px; }
+
+/*选择门店*/
+.pop-store-info {
+  background: #fff;
+  border: 1px solid #0099d9;
+  display: none;
+  height: 558px;
+  width: 898px;
+  margin: -280px 0 0 -450px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 1000;
+  _position: absolute; }
+
+.pop-store-info .pop-close {
+  color: #fff;
+  cursor: pointer;
+  font: 700 24px/26px simsun;
+  height: 24px;
+  width: 24px;
+  overflow: hidden; }
+
+.pop-store-info .pop-close:hover {
+  color: #e5004f; }
+
+.pop-store-info .pop-hd {
+  background: #0099d9;
+  height: 24px;
+  padding: 9px 20px; }
+
+.pop-store-info .pop-bd {
+  padding: 0 20px; }
+
+.pop-store-info .step-bar {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  overflow: hidden; }
+
+.pop-store-info .step-bar .step-item {
+  float: left; }
+
+.pop-store-info .step-bar .num-nub {
+  border: 1px solid #0099d9;
+  border-radius: 50%;
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  width: 38px;
+  _position: relative;
+  _top: -1px; }
+
+.pop-store-info .step-bar .icon-arrow {
+  background: url("/content/v1/images/order/icon7.png") no-repeat;
+  display: inline-block;
+  height: 12px;
+  width: 38px;
+  margin: 0 30px; }
+
+.pop-store-info .step-bar .on .num-nub {
+  background: #0099d9;
+  color: #fff; }
+
+.pop-store-info .search-bar {
+  padding: 20px 0 15px; }
+
+.pop-store-info .search-bar .textbox {
+  height: 23px;
+  line-height: 23px;
+  width: 200px;
+  padding: 0 5px; }
+
+.pop-store-info .search-bar .btn-search {
+  border: 0 none;
+  border-radius: 4px;
+  height: 26px;
+  padding: 0 7px; }
+
+.pop-store-info .search-bar .bg-red:hover {
+  background: #e7325d; }
+
+.pop-store-info .store-choose-box {
+  border: 1px solid #aaa;
+  width: 365px; }
+
+.pop-store-info .store-items {
+  height: 286px;
+  padding: 0 13px; }
+
+.pop-store-info .store-item {
+  padding: 3px 0; }
+
+.pop-store-info .store-map {
+  border: 1px solid #aaa;
+  height: 300px;
+  width: 474px; }
+
+.pop-store-info .btn-bar {
+  padding-top: 20px; }
+
+.pop-store-info .btn-bar .btn-confirm {
+  border: 0 none;
+  border-radius: 8px;
+  height: 50px;
+  width: 150px; }
+
+.pop-store-info .btn-bar .bg-red:hover {
+  background: #e7325d; }
+
+.store-location {
+  background: url("/content/v1/images/hotel/i8.png") no-repeat;
+  display: inline-block;
+  height: 88px;
+  width: 88px;
+  margin: -44px 0 0 -44px;
+  position: absolute; }
+
+.store-location .location-inner {
+  width: 42px;
+  margin-left: -21px;
+  position: absolute;
+  left: 50%;
+  top: 50%; }
+
+.store-location .location-icon {
+  background: url("/content/v1/images/hotel/i6.png") no-repeat;
+  cursor: pointer;
+  display: inline-block;
+  height: 54px;
+  width: 42px;
+  position: absolute;
+  left: 0;
+  top: -53px; }
+
+.store-location .location-num {
+  background: url("/content/v1/images/hotel/i7.png") no-repeat;
+  display: inline-block;
+  height: 31px;
+  line-height: 31px;
+  width: 30px;
+  position: absolute;
+  left: 6px;
+  top: 8px; }
+
+.store-location .on .location-icon {
+  background-image: url("/content/v1/images/hotel/i6-on.png"); }
+
+.store-location .on .location-num {
+  color: #e5004f; }
+
+.use-tips .text-hover {
+  z-index: 1;
+  *margin-right: 20px; }
+
+.white {
+  color: #fff; }
+
+.fl {
+  float: left; }
+
+.f16 {
+  font-size: 16px; }
+
+.fr {
+  float: right; }
+
+.vm {
+  vertical-align: middle; }
+
+.f18 {
+  font-size: 18px; }
+
+.tc {
+  text-align: center; }
+
+.f24 {
+  font-size: 24px; }
+
+.clearfix {
+  display: block; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.mr10 {
+  margin-right: 10px; }
+
+.ml10 {
+  margin-left: 10px; }
+
+.select-box,
+.textbox,
+.txta {
+  border: 1px solid #ddd;
+  -webkit-transition: border-color 0.5s ease;
+  -o-transition: border-color 0.5s ease;
+  transition: border-color 0.5s ease; }
+
+.bg-f60,
+.bg-red {
+  background: #e5004f; }
+
+.pop-store-info .search-bar .btn-search {
+  border: 0 none;
+  border-radius: 4px;
+  height: 26px;
+  padding: 0 7px; }
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  cursor: pointer;
+  -webkit-appearance: button; }
+
+.pop-store-info .store-choose-box {
+  border: 1px solid #aaa;
+  width: 365px; }
+
+.store-choose-box {
+  border: 1px solid #ddd;
+  padding: 7px 0; }
+
+.pop-store-info .store-items {
+  height: 286px;
+  padding: 0 13px; }
+
+.store-choose-box .store-items {
+  max-height: 286px;
+  overflow-y: auto;
+  padding: 0 20px;
+  _height: 286px; }
+
+.f14 {
+  font-size: 14px; }
+
+.pop-store-info .store-item {
+  padding: 3px 0; }
+
+.store-choose-box .store-item .store-detail {
+  margin-left: 22px; }
+
+.f999 {
+  color: #999; }
+
+.mr5 {
+  margin-right: 5px; }
+
+.z-8{
+  *z-index:8;
+}
+.z-7{
+  *z-index:7;
+}
+.z-6{
+  *z-index:6;
+}
+.z-5{
+  *z-index:5;
+}
+.z-4{
+  *z-index:4;
+}
+/*选择门店结束*/
+
+
+.fn-mask { background-color: #000; opacity: 0.5; filter: alpha(opacity=50); z-index: 998; position: fixed; _position: absolute; left: 0; top: 0; width: 100%; height: 100%; -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; }
+
+/* ui-pop start */
+.ui-pop { background: #fff; border-radius: 2px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); padding: 0 30px; position: fixed; left: 50%; top: 50%; z-index: 1000; _position: absolute; }
+.ui-pop .pop-close { color: #666; font: bold 28px simsun; height: 28px; width: 28px; overflow: hidden; position: absolute; right: 7px; top: 7px; cursor: pointer; line-height: 28px; }
+.ui-pop .pop-close:hover { color: #e5004f; }
+.ui-pop .pop-hd { border-bottom: 1px solid #ddd; color: #e5004f; font-size: 20px; height: 60px; line-height: 60px; }
+.ui-pop .tips-cont { position: relative; }
+.ui-pop .icon-warn { background-position: -50px -240px; height: 20px; width: 20px; position: absolute; left: 10px; top: 2px; }
+.ui-pop-fix { position: static; margin: 0; z-index: 1; box-shadow: none; left: unset; top: unset; border-radius: 0; _position: static; }
+/* ui-pop end */
+
+.pop-tips-box { margin: -100px 0 0 -200px; width: 400px; }
+.pop-tips-box .pop-bd { padding: 30px 0; }
+.pop-tips-box .tips-cont { margin-bottom: 25px; }
+.pop-tips-box .tips-cont .cont-text { margin-left: 40px; }
+.pop-tips-box .input-bar { margin: 0 0 30px 40px; }
+.pop-tips-box .bar-inner { display: inline-block; text-align: left; width: 288px; position: relative; }
+.pop-tips-box .tb-wrap { position: relative; }
+.pop-tips-box .tb-wrap .info { background: none; border: 1px solid #e5004f; color: #e5004f; padding: 0 5px; position: absolute; top: 23px; right: 0; z-index: 10; }
+.pop-tips-box .textbox { border-radius: 2px; height: 28px; width: 230px; padding: 0 5px; }
+.pop-tips-box .change-code { color: #0099d9; cursor: pointer; position: absolute; right: 1px; top: 1px; }
+.pop-tips-box .change-code:hover .blue{ color: #e5004f;}
+.pop-tips-box .change-code img { border-radius: 2px; height: 28px; width: 70px; vertical-align: middle;}
+.pop-tips-box .btn-bar .btn-item { background: #e5004f; border: none; border-radius: 5px; color: #fff; font-size: 16px; height: 32px; line-height: 32px; padding: 0 30px; }
+
+/* 兜礼 */
+.coupon-price .sale-coupon-num {width: 65px;}
+.coupon-price .dl-sign {margin-right: 25px;color:#e5004f;font-size: 20px;}

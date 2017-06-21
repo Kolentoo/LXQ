@@ -1,0 +1,148 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>特卖会</title>
+    <meta name="keywords" content="特卖会" />
+    <meta name="description" content="特卖会" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/temai/temai.css" rel="stylesheet" />
+    <script src="http://r01.uzaicdn.com/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['http://r01.uzaicdn.com/content/m/v2/scripts/_src/core', '/content/m/v2/scripts/temai/temai'], function (core, temai) {
+            temai.init();
+        });
+    </script>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">特卖会</div>
+            </div>
+            <div class="d-r"></div>
+        </header>
+
+        <section class="temai f14">
+            <form action="/OrderSuccess" method="POST" id="temaiorder">
+
+                <div class="order-info">
+
+                    <img src="http://r.uzaicdn.com/SaleProductPics/20141020/20141020134418625.jpg?w=400&h=300" alt="" class="g3 fl mr10 block" />
+
+                    <div class="txt">
+                        <p class="p1 f14 f333 lh2">吴测试特卖会20141020003</p>
+                        <p class="p2 f12">2014-11-09</p>
+                        <p class="p3 clearfix">
+                            <span class="fl f12 mt5">自由行丨上海出发</span>
+                            <span class="fr orange f14">
+                                ￥<b class="f20">5900</b>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="order-list mb10">
+                    <h2>数量选择</h2>
+                    <div class="box" id="j_numControl">
+                        <ul>
+                            <li class="clearfix">
+                                <span class="fl f999">份数<span class="f999 f12">(每份可供<b class="fs">2</b>人使用）</span></span>
+                                <div class="fr">
+                                    <div class="fn-math" id="j_fenshu">
+                                        <span class="s1"></span>
+                                        <input value="1" id="buynum" name="buynum" class="s2" readonly type="text">
+                                        <span class="s3"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <span class="fl f999">出行人数</span>
+                                <div class="fr">
+                                    <div class="fn-math" id="j_renshu">
+                                        <span class="s1"></span>
+                                        <input id="person" name="person" value="2" class="s2" readonly type="text">
+                                        <span class="s3"></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="order-list order-list-contact" id="j_orderContact">
+                    <div class="box">
+                        <ul>
+                            <li class="clearfix">
+                                <span class="fl f999 g4">联系人</span>
+                                <div>
+                                    <input id="username" name="username" type="text" placeholder="请输入联系人" />
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <span class="fl f999 g4">手机</span>
+                                <div>
+                                    <input id="usermobile" name="usermobile" type="text" maxlength="11" placeholder="请输入手机" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="order-list order-list-users">
+                    <h2>填写旅客信息</h2>
+                    <div class="box" id="j_orderListUsers">
+                        <ul>
+
+                            <li class="clearfix">
+                                <span class="fl f999 g4 f14">第<span>1</span>位旅客</span>
+                                <div class="fl g6">
+                                    <a href="#" class="block">
+                                        <p class="p1 f16">陈静310105198501073635</p>
+                                        <p class="p2 f12 f999"></p>
+                                    </a>
+                                </div>
+                                <span class="arrow"></span>
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="order-summary clearfix">
+                    <div class="info fl g5 tc">
+                        <p class="f60">
+                            <span class="block">￥<b class="f18" data-unitprice="5900">5900</b></span>
+                        </p>
+                        <p class="f666">订单总额</p>
+                    </div>
+                    <input type="button" id="ordersubmit" class="lh3 fr btn btn-on PayBtn g5" style="margin:0 auto;" value="提交订单" />
+                </div>
+
+                <input type="hidden" id="cutNum" name="cutNum" value="2">
+                <input type="hidden" id="pid" name="pid" value="88107">
+                <input type="hidden" id="gdate" name="gdate" value="2014-11-09">
+                <input type="hidden" id="ischina" name="ischina" value="0">
+                <input type="hidden" id="tourid" name="tourid" value="74">
+
+            </form>
+        </section>
+
+    </div>
+
+
+
+</body>
+</html>
+

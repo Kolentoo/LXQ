@@ -1,0 +1,55 @@
+.icon-history{ background: no-repeat; display: inline-block;}
+body{ background: #f5f5f5;}
+.box-fix{ display: inline-block; width: 100%; *width: auto; vertical-align: top;}
+.slice-mod{ background: #fff; border: 1px solid #dcdcdc;}
+
+.global-crumbs{ height: 54px; line-height: 54px;}
+.global-crumbs .crumbs-hd{ padding-left: 20px; position: relative; top: -2px;}
+.global-crumbs a{ color: #666; vertical-align: middle;}
+.global-crumbs a:hover{ color: #e5004f;}
+.global-crumbs sub{ color: #999; padding: 2px 5px 0; vertical-align: middle;}
+
+.mod-hd{ border-bottom: 2px solid #0099d9; height: 24px; line-height: 24px; padding: 8px 10px;}
+
+.side{ width: 26.89%;}
+
+.side-hot-destination .icon-hot{ background-image: url(/content/v1/images/other/i43.png); height: 22px; width: 24px;}
+.side-hot-destination .sub-hd{ background: #ffecf0; height: 40px; line-height: 40px; padding: 0 20px;}
+.side-hot-destination .destination-items{ padding: 0 10px;}
+.side-hot-destination .destination-items .item-hd{ border-top: 1px dashed #dcdcdc; padding: 15px 10px 0;}
+.side-hot-destination .destination-items .item-hd a{ color: #e5004f;}
+.side-hot-destination .destination-items .item-hd a:hover{ color: #e7325d;}
+.side-hot-destination .destination-items .first{ border-top: none;}
+.side-hot-destination .destination-items .item-bd{ padding: 0 10px 15px;}
+.side-hot-destination .destination-items .item-bd a{ color: #666; float: left; width: 29.333%; margin-top: 8px; overflow: hidden; padding: 3px 2%; white-space: nowrap; *width: 28.95%; _width: 28.599%;}
+.side-hot-destination .destination-items .item-bd a:hover{ background: #fdedec; color: #e5004f;}
+
+
+.main-box{ margin-left: 28.571%;}
+
+.recently-viewed-box .icon-record{ background-image: url(/content/v1/images/other/i44.png); height: 24px; width: 27px;}
+.recently-viewed-box .icon-empty{ background-position: -30px -280px; height: 18px; width: 14px;}
+.recently-viewed-box .empty-record:hover .blue { color: #e5004f;}
+.recently-viewed-box .mod-bd{ padding-top: 40px;}
+.recently-viewed-box .fn-pager{ border-top: 1px solid #dcdcdc; *position: relative;}
+.browsing-history-box{ border-left: 1px dashed #dcdcdc; margin-left: 100px; position: relative; _display: inline;}
+.browsing-history-box .icon-origin{ background-image: url(/content/v1/images/other/i48.png); height: 23px; width: 17px; position: absolute; left: -9px; top: -20px;}
+.browsing-history-box .donut-wrap{ background: #fff; margin-top: -11px; padding: 2px 0; position: absolute; left: -6px; top: 50%;}
+.browsing-history-box .icon-donut{ background-position: -30px -310px; height: 11px; width: 11px;}
+.browsing-history-box .tag-date{ background-image: url(/content/v1/images/other/i47.png); color: #6dcdff; height: 34px; line-height: 34px; width: 44px; padding-top: 10px; position: absolute; left: -80px; top: -20px;}
+.browsing-history-box .browsing-list .list-item{ margin-bottom: 40px; padding: 0 10px 0 2.677%; position: relative;}
+.browsing-history-box .browsing-list .item-date{ margin-top: -11px; position: absolute; left: -80px; top: 50%;}
+.browsing-history-box .browsing-list .item-pic{ border: 1px solid #ddd; width: 20.055%; position: relative;}
+.browsing-history-box .browsing-list .tag-type{ background: #333; background: rgba(0, 0, 0, 0.6); padding: 0 5px; position: absolute; left: 5px; top: 5px;}
+.browsing-history-box .browsing-list .btn-detail{ background: #e5004f; border-radius: 5px; display: inline-block; height: 35px; line-height: 35px; width: 95px;}
+.browsing-history-box .browsing-list .btn-detail:hover{ background: #e7325d;}
+.browsing-history-box .browsing-list .item-main{ margin: 0 110px 0 22.284%;}
+.browsing-history-box .browsing-list .im-hd a:hover{ color: #e5004f; text-decoration: underline;}
+
+.main-box .guess-like-box .mod-hd { padding: 15px 20px 10px; }
+.guess-like-box .mod-hd .hd-icon { background-image: url(/content/v1/images/other/i45.png); display: inline-block; height: 18px; width: 20px; margin-right: 10px; }
+.guess-like-box .mod-hd .hd-cont { color: #0099d9; }
+.guess-like-box .mod-hd .icon-refresh { display: inline-block; }
+
+.fruitless-box{ padding-bottom: 30px;}
+.fruitless-box .icon-uz{ background-image: url(/content/v1/images/hotel/i5.png); height: 69px; width: 68px; margin-right: 15px;}

@@ -1,0 +1,60 @@
+#play_info{z-index:100000;width:auto;display:inline;right:0;}
+    /*线路推荐*/
+.jd_rtbot{padding:20px 0;}
+.jd_hot{background:#fcfcfc; border:1px solid #f0f0f0; padding:10px;color:#FF9900;}
+.jd_hot a{padding:0 5px; color:#FF9900;}
+.jd_hot a:hover{color:#FF6600;}
+.jd_next{padding:10px;}
+.jd_rcbtit{background:#F8FFF4; height:39px; line-height:39px; padding-left:15px; padding-right:15px; border:1px solid #74AD19; font-size:14px; font-weight:bold;color:#529000;border-bottom:none;}
+.selectstyle{background:#ffffff; border-top:1px solid #979797; border-left:1px solid #d0d0d0; border-right:1px solid #d0d0d0; border-bottom:1px solid #e6e6e6; padding:2px;}
+.jd_rcbot table{border-collapse:collapse;border:1px solid #74AD19;}
+.jd_rcbot table th{background:#FFFDED; padding:10px; text-align:center; font-weight:normal;color:#aa662b;}
+.jd_rcbot table td{text-align:center; border-top:1px solid #eaeaea;padding:5px 0;}
+.jd_rcbot table td.texleft{text-align:left;}
+.jd_rcbot table td h3{padding-bottom:2px;}
+.jd_rcbot table td h3 a{font-size:14px; font-weight:lighter; color:#66a502;}
+.jd_rcbot table td h3 a:hover{color:#FF9900;}
+.jd_rcbot table td p{line-height:20px; }
+.salenum{font-size:16px; font-weight:bold; color:#ff6600; padding-right:3px;}
+.red{color:#ff0000;}
+.jd_rcbot table td p.textpa{line-height:26px;padding-top:2px;}
+.textpa a{text-decoration:none; color:#66A502; font-size:14px; font-weight:lighter;}
+.textpa a:hover{color:#ff9900;}
+
+table.wtable-week{border:1px solid #E4E4E4;border-top:none;border-collapse:collapse;font-size:14px;}
+table.wtable-week tr th{height:38px;border:1px solid #E4E4E4;font-weight:normal;background:#EAFEDB;}
+table.wtable-week tr td{text-align:center;border:1px solid #E4E4E4;padding:5px 0;color:#666666;}
+table.wtable-week tr td.yellowbg{background:#FEFFF5;line-height:22px;color:#333;}
+table.wtable-week tr td a.green{color:#66c300;text-decoration:underline;}
+table.wtable-week tr td a.green:hover{color:#ff6600;}
+table.wtable-week tr td.morew{font-size:12px;text-align:left;padding-left:40px;height:40px;}
+table.wtable-week tr td.morew a{color:#ff6600;}
+table.wtable-week tr td.morew a:hover{text-decoration:underline;}
+.weather-index{border:1px solid #74AD19;margin-bottom:10px;}
+.weather-index .hd{height:38px;line-height:38px;background:#F8FFF4;padding:0 10px;color:#529000;font-weight:bold;border-bottom:1px solid #D3ECC6;font-size:14px;}
+.weather-index .bd ul{overflow:hidden;}
+.weather-index .bd ul li{float:left;width:170px;border-right:1px solid #D3ECC6;padding:0 15px; height:220px;line-height:18px;_display:inline;}
+.weather-index .bd ul li img{margin:15px auto; display:block;}
+.weather-index .bd ul li em{font-style:normal;color:#ff6600;}
+.s-city{ line-height:14px; padding:10px 0;}
+.s-city dt{ float:left; display:inline; font-size:12px; font-weight:bold; background:url(http://r01.uzaicdn.com/static/outbound/images/s-city.jpg) 0 center no-repeat; padding-left:20px;}
+.s-city dd{ float:left; display:inline; border-left:1px solid #666; padding:0 10px;}
+.s-city dd a{font-size:12px;font-weight:normal;}
+.s-city dd.first{ border-left:0px; padding-left:2px;}
+.fr{float:right;}
+
+.directionBox
+{
+	border:1px solid #BBDFAA;
+	line-height:18px;
+}
+.directionTitle
+{
+	background: none repeat scroll 0 0 #F5FFF1;
+    border-bottom: 1px solid #BBDFAA;
+	font-size:14px;
+	font-weight:700;
+	color:#53ad00;
+	padding:5px 10px;
+}
+

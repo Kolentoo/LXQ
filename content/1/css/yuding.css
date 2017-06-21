@@ -1,0 +1,31 @@
+/* page */
+#page{width:990px; overflow: visible; _display:inline-block; margin:0 auto;}
+/* zhuce */
+#yuding{width:990px; margin:0 auto; margin-bottom:10px; text-align:left;}
+.yudingtopimg{margin-bottom:10px;}
+.yuding_main{border-left:1px solid #deddd9; border-right:1px solid #deddd9; border-bottom:1px solid #deddd9;}
+.yudingtitle{background:url(../images/layout/yudingtitle.gif) repeat-x left top; height:30px;£¾/*IE only*/height /*IE5.5*/:41px; padding-top:11px; font-size:18px; font-weight:bold; color:#74c401; padding-left:20px;}
+.yuding_content{background:url(../images/layout/zhucebg.gif) repeat-x left top; padding:0 30px 30px 30px;}
+.yuding_mc{padding-bottom:20px; padding-top:30px; border-bottom:1px dashed #deddd9;}
+.yuding_mc p{line-height:25px;}
+.yuding_mc p.title{font-size:14px; font-weight:bold; color:#252525;}
+.yuding_mc table td{padding:5px 3px; font-size:12px;}
+.text{padding:5px 40px;}
+.text p a{font-size:14px; font-weight:bold; text-decoration:none; color:#ff0066;}
+.yuding_but{padding:15px 0 0 0;}
+
+.xScrollStick{
+ position:absolute;
+  background:url(../image/bg/djk_bg.jpg) repeat-x left top;
+    width:158px;
+	height:50px;
+	background:url(bg.jpg) no-repeat;
+	padding:12px 0 0 20px;
+	font-size:14px;
+	color:#339900;
+	line-height:20px;
+	border:1px solid #d7d7d7;
+}
+
+
+.d2 { right:0px;top:208px; }

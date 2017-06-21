@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>悠哉旅游网</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon-precomposed" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-startup-image" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/my/my.css" rel="stylesheet" />
+    <script src="http://r02.uzaicdn.com/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/_src/core', '/content/m/v2/scripts/my/my'], function (core, my) {
+            my.init();
+        });
+    </script>
+</head>
+<body>
+    <div class="max-w640 w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">U点商城</div>
+            </div>
+            <div class="d-r">
+            </div>
+        </header>
+        <section class="exchange-store">
+            <div class="top-info-bar white f18 tc">目前您有：<i id="j_nowCurrency" class="now-currency f22">10</i>点</div>
+            <div class="exchange-list">
+                <a href="#" class="list-item block clearfix exchanged">
+                    <div class="item-side fl"><img src="/content/m/v2/images/my/icon31.png" alt="" class="g10 vm"></div>
+                    <dl class="item-main f666 f13">
+                        <dt class="red f15">悠哉旅游优惠券</dt>
+                        <dd class="dd1">剩余：<i class="num-box f15">0</i>张</dd>
+                        <dd class="dd2">消耗点数：<i class="red f20 lh1">20</i></dd>
+                    </dl>
+                    <span class="tag-bar white f14 hide">已兑完</span>
+                </a>
+                <a href="#" class="list-item block clearfix">
+                    <div class="item-side fl"><img src="/content/m/v2/images/my/icon32.png" alt="" class="g10 vm"></div>
+                    <dl class="item-main f666 f13">
+                        <dt class="red f15">悠哉旅游优惠券</dt>
+                        <dd class="dd1">剩余：<i class="num-box f15">2</i>张</dd>
+                        <dd class="dd2">消耗点数：<i class="red f20 lh1">20</i></dd>
+                    </dl>
+                    <span class="tag-bar white f14 hide">已兑完</span>
+                </a>
+                <a href="#" class="list-item block clearfix">
+                    <div class="item-side fl"><img src="/content/m/v2/images/my/icon33.png" alt="" class="g10 vm"></div>
+                    <dl class="item-main f666 f13">
+                        <dt class="red f15">悠哉旅游优惠券</dt>
+                        <dd class="dd1">剩余：<i class="num-box f15">10</i>张</dd>
+                        <dd class="dd2">消耗点数：<i class="red f20 lh1">20</i></dd>
+                    </dl>
+                    <span class="tag-bar white f14 hide">已兑完</span>
+                </a>
+            </div>
+            <div class="notice-bar bg-white p10">兑换实物的用户，通常在一周内安排发送，如遇国定节假日将顺延，请您谅解。</div>
+        </section>
+    </div>
+    <div id="j_popRuleBox" class="pop-rule-box bg-white">
+        <div class="pop-hd f18 tc">活动规则</div>
+        <div class="pop-bd"></div>
+        <div class="pop-ft tc"><button class="btn-confirm bg-f60 white f20 yahei">我知道了</button></div>
+    </div>
+    <div class="pop-exchange-info pop-mod">
+        <div class="pop-inner p10">
+            <div class="pop-hd ellipsis tc f22 b">xxx电子券</div>
+            <div class="exchange-pic tc"><img src="/content/m/v2/images/my/p5.jpg" alt=""></div>
+            <div class="intro-box mt5 p5">
+                <div class="intro-hd f14 b tc">简介</div>
+                <div class="intro-bd f11">觉得方式看见的健康是放大镜觉得方式看见的健康是放大镜减肥的就减肥的水库附近看到解决方式的咖啡机减肥的就记得是风景简介几节课就看见健康健康。</div>
+            </div>
+            <div class="pop-ft tc mt15">
+                <p class="c-7ecaf1 f15">优惠券将以短信的形式发送至您的手机</p>
+                <p class="mt5"><input type="text" placeholder="输入手机号码" class="phone-num f16 tc g8"></p>
+                <p class="tc mt15"><input type="button" class="btn-item btn-send j_popClose bg-f60 white f20 yahei" value="发送"></p>
+            </div>
+            <i class="pop-close j_popClose"></i>
+        </div>
+    </div>
+    <div id="j_popTipsEs" class="pop-tips-es pop-mod">
+        <div class="pop-inner">
+            <div class="tips-cont tips-error">
+                <dl class="cont-txt tc">
+                    <dt class="txt-hd f19">啊偶</dt>
+                    <dd class="txt-bd f15">点数不足</dd>
+                </dl>
+                <i class="pop-close j_popClose"></i>
+            </div>
+            <div class="pop-ft tc mt15"><a href="#" class="btn-item j_popClose bg-f60 white f20">快去赚积分</a></div>
+        </div>
+    </div>
+</body>
+</html>

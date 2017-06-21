@@ -1,0 +1,2232 @@
+
+
+ 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta http-equiv="content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+
+    <link href='//r03.uzaicdn.com/content/yudingv2/css/sold.css?v=1.5&v=4ABC004F862A6D27CE377491804836FF'  rel='stylesheet' />
+
+    <title>填写订单 - 众信旅游悠哉网</title>
+    <!--[if lt IE 8]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        try {
+            document.domain = 'uzai.com';
+        } catch (e) { }
+
+        function renderBooklist(){
+            // ------------------ 打造参数 begin ---------------------
+            // 订单参数
+            var order = new Common().getOrder();
+            var orderParam = BookList.orderParam(order.adultCount, order.childCount, order.adultAmount, order.childAmount);
+            // 附加产品
+            var attachments = [];
+            $("ul[id^='attachment_']").each(function () {
+                var attachmentName = $(this).find("input[type='hidden'][id='attatchmentName']").val();
+                var attachmentPrice = parseFloat($(this).find("input[type='hidden'][id='attachmentPrice']").val());
+                var attachmentCount = parseInt($(this).find('span[id="attachmentCount"]').html(), 10) || 0;
+                var attachmentType = $(this).find("input[type='hidden'][id='attachmentType']").val();
+                if (attachmentCount > 0) {
+                    var attachment = BookList.attachProduct(attachmentName, null, attachmentPrice, attachmentCount, attachmentType);
+                    attachments.push(attachment);
+                }
+            });
+            // 选择的优惠活动
+            var activities = [];
+            var selectedActivities = PreferentialProject.selectedActivities;
+            if (selectedActivities) {
+                for (var i = 0; i < selectedActivities.length; i++) {
+                    var preferential = selectedActivities[i];
+                    for (var j = 0; j < preferential.Activities.length; j++) {
+                        var activity = preferential.Activities[j];
+                        var _activity = BookList.preferentialActivity(activity.PreferentialName, activity.MaxPreAmount, 0);
+                        activities.push(_activity);
+                    }
+                }
+            }
+            // 选择的优惠活动.积分
+            var usedPoint = PreferentialProject.usedPoint;
+            if (usedPoint) {
+                var pointActivity = BookList.preferentialActivity("积分抵扣", usedPoint.price, 1);
+                activities.push(pointActivity);
+            }
+            // 选择的优惠活动.优惠券
+            var selectedCoupons = PreferentialProject.selectedCoupons;
+            if (selectedCoupons) {
+                var thirdPartyUserSource = $("#txtThirdPartyUserSource").val(); //获取会员来源
+                var startcityid = _uzw.cookie.get("startcityid");
+                var title = "优惠券抵扣"
+                if (thirdPartyUserSource == 1 && startcityid == 2 && selectedCoupons.suppelierID==35) {
+                    title = "兜礼优惠券抵扣";
+                }
+                var couponsActivtiy = BookList.preferentialActivity(title, selectedCoupons.price, 2, selectedCoupons.ticketType);
+                activities.push(couponsActivtiy);
+            }
+            // ------------------ 打造参数 end---------------------
+            // 调用render方法获取预订清单html并替换
+            var html = BookList.render(orderParam, attachments, activities);
+            //$('#bookList').html(_html);
+            document.getElementById("bookList").innerHTML = html;
+        }
+
+        // ---------------------------------绑定selectChange事件------------------------------
+        // 附加产品通用selectChange事件
+        function attachmentChange(e) {
+            // 附加产品类型(0=单房差，1=保险，2=境外参, 3=其他附加产品)
+            var type = $(e).parents("ul").find("input[type='hidden'][id='attachmentType']").val();
+
+            if (!$uzaiattachEx.valExclusive(e)) {
+                return false;
+            }
+
+            var count = parseInt($(e).html());
+            if (type == 0) {
+                $('#txtHiddenUtourSingleCount').val(count);
+            }
+            if (type == 2) {
+                $('#txtHiddenUtourOutCount').val(count);
+            }
+            $(e).parent().parent().find("span[id='attachmentCount']").html(count);
+            renderBooklist();
+        }
+        // 附加产品日期选择通用selectChange事件
+        function attachmentDateChange(e) {
+            var dateInfo = $(e).attr("dateInfo");//eg:9424950,2016-09-10,58,50.0000
+            $(e).parent().parent().find("#hidDateInfo").val(dateInfo);
+        }
+        // ---------------------------------绑定selectChange事件------------------------------
+        function pointBlur(e) {
+            $(e).removeClass('blur');
+        }
+        function couponBlur(e) {
+            $(e).removeClass('blur');
+        }
+
+        function descToggle(e) {
+            $(e).toggleClass('section-arrow-hover');
+            $(e).parent().parent().find("li[class='section-li-content-attachment']").toggle();
+        }
+
+        /*获取影响附加产品返佣的价格/*宝钢会员获取附加产品中返佣的金额进行打折 包含如下：
+        //观光旅游- 4 餐饮服务-8 地图-9 其他-12 镜外参团-100002
+        */
+        function returnOutRebate() {
+
+            var outRebateTotal = 0; //附加产品影响返佣总金额
+            $("ul[id^='attachment_']").each(function () {
+                var attachmentName = $(this).find("input[type='hidden'][id='attatchmentName']").val();
+                var attachmentPrice = parseFloat($(this).find("input[type='hidden'][id='attachmentPrice']").val());
+                var attachmentCount = parseInt($(this).find('span[id="attachmentCount"]').html(), 10) || 0;
+                var attachmentType = $(this).find("input[type='hidden'][id='attachmentType']").val();
+                var addProductType = ["4", "8", "9", "12", "100002"]; //影响返佣的附加产品类型
+                if (attachmentCount > 0 && $.inArray(attachmentType, addProductType) >= 0) {
+                    outRebateTotal += attachmentCount * attachmentPrice
+                }
+            });
+            return outRebateTotal
+        }
+    </script>
+    <script type="text/javascript">
+        // 登录成功后刷新当前页面
+        function transfer() {
+            var href = window.location.href;
+            window.location = href;
+        }
+    </script>
+</head>
+<body>
+    <!--  Head begin -->
+    <div class="head">
+        <div class="content">
+            <a href="http://www.uzai.com"><img src="//r03.uzaicdn.com/content/yudingv2/images/logo.jpg" width="210" height="94" alt="logo" /></a>
+            <div class="call">
+                <i class="call-time">预订热线：9:00~21:00</i>
+                <em class="call-num">1010-9898</em>
+            </div>
+        </div>
+    </div>
+    <!-- head end -->
+    <!-- step begin -->
+    <div class="step">
+        <hr class="step-line" />
+        <hr class="step-line-finish step-line-finish-1" />
+        <ul class="step-content">
+            <li class="step-box step-box-hover">
+                <span class="step-num">1</span>
+                <em class="step-word">填写订单</em>
+            </li>
+            <li class="step-box step-box-2">
+                <span class="step-num">2</span>
+                <em class="step-word">填写游客信息</em>
+            </li>
+            <li class="step-box step-box-3">
+                <span class="step-num">3</span>
+                <em class="step-word">核对订单</em>
+            </li>
+            <li class="step-box step-box-4">
+                <span class="step-num">4</span>
+                <em class="step-word">支付</em>
+            </li>
+            <li class="step-box step-box-5">
+                <span class="step-num">5</span>
+                <em class="step-word">支付成功</em>
+            </li>
+        </ul>
+    </div>
+<form id="one_form" name="one_form" action="/proc_one2/do" method="post">
+    <!-- step end -->
+    <div class="content">
+        <!-- main begin -->
+        <!-- 预订清单 begin -->
+        <div class="layout-right" id="bookList">
+            <div class="finally">
+                <h2 class="finally-title">预订清单</h2>
+                <h3 class="finally-box-title">旅游团费</h3>
+                <div class="finally-box">
+                    <span class="finally-description">1成人 × ¥12000</span>
+                    <span class="finally-price">¥12000</span>
+                </div>
+                <div class="finally-box">
+                    <span class="finally-description">0儿童 × ¥12000</span>
+                    <span class="finally-price">¥0</span>
+                </div>
+                <hr class="finally-line" />
+                <h3 class="finally-box-title finally-box-title-all">附加产品</h3>
+
+                <hr class="finally-line" />
+                <h3 class="finally-box-title">优惠信息</h3>
+
+            </div>
+            <div class="price">
+                <span class="price-word">总计：</span>
+                <span class="price-pay">¥<span id='spanPayAmount'>12000.00</span></span>
+            </div>
+        </div>
+        <!-- 预订清单 end -->
+        <div class="main">
+            <!-- 产品信息 begin -->
+            <div class="product">
+                <h1 class="product-title">
+                    <a class="a1 line-name" id="lineName" data-id="139084" data-godate="2017-8-4"
+                
+                    target="_blank">&lt;【非标】新加坡+普吉岛6晚8日（测试团）&gt;送无自费，新航直飞，普吉五星酒店+新加坡精品酒店，鱼尾狮公园，滨海艺术中心</a>
+                    <span class="cf30">
+                    </span>
+                </h1>
+                <h2 class="product-subhead">[东南亚-新加坡普吉岛6晚8日]
+                    <a 
+                         target="_blank" class="product-id font-click">SHS139084</a>
+                </h2>
+                <hr class="dashen-line" />
+                <div class="product-departure-date">
+                    出发日期：<em class="font-black">2017-8-4</em>
+                </div>
+                <div class="product-departure-city">
+                    出发城市：<em class="font-black">上海市  </em>
+                </div>
+                <div class="product-trip-people">
+                    出行人数：<em class="font-black">1成人&nbsp;&nbsp;0儿童</em>
+                </div>
+            </div>
+            <!-- 产品信息 end -->
+
+            <!-- 附加产品 begin-->
+            <div id="divAddProduct">
+                <!-- 保险 begin -->
+                
+                <!-- 保险 end -->
+
+                <!-- 单房差 begin -->
+                
+                <!-- 单房差 end -->
+
+                <!-- 境外参  begin -->
+                
+                <!-- 境外参 end -->
+
+                <!-- 其他附加产品 begin -->
+                
+                <!-- 其他附加产品 end -->
+            </div>
+            <!-- 附加产品 end-->
+            <input type="hidden" id="txtHiddenUseVoucher" name="txtHiddenUseVoucher" />
+            <input type="hidden" id="txtThirdPartyUserSource" name="txtThirdPartyUserSource" value="0" />
+            <!-- 优惠方案 begin -->
+            <div class="sale border-top-0 overf-auto" id="preferentialProject">
+                <h2 class="section-title">优惠方案</h2>
+                <!-- 只有出境跟团游才拉取优惠活动 -->
+                
+
+<style>
+#u10 {
+  font-family:'微软雅黑'; 
+  font-style:normal;
+  font-size:20px;
+  color:#E5004F;
+}
+</style>
+
+
+    <!-- 优惠活动 -->
+    
+        <ul class="section-ul-title">
+            <li class="section-li section-li-width-1">优惠类型</li>
+            <li class="section-li section-li-width-2">活动优惠</li>
+            <li class="section-li section-li-width-3">金额</li>
+            <li class="section-li section-li-width-4">使用状态</li>
+        </ul>
+        
+                    <ul class="sale-content" id="ul_category_1">
+                
+                <li class="section-li section-li-width-1">银行优惠</li>
+                
+                    <li class="section-li section-li-width-2">测试线上中行直连</li>
+                    <li class="section-li section-li-width-3 section-li-hover">¥100.00</li>
+                    <li class="section-li section-li-width-4">
+                        <input id="657" type="checkbox" name="preferential_1" value="657" />
+                        <label for="657" class="input-checkbox"
+                         onclick="PreferentialProject.activitySelect(this, 657, 1)"></label>
+                    </li>
+                
+            </ul>
+            
+                        <ul class="sale-content">
+                    
+                        <li class="section-li section-li-width-1">&nbsp;</li>
+                        <li class="section-li section-li-width-2">卡bin测试限2人</li>
+                        <li class="section-li section-li-width-3 section-li-hover">¥1.00</li>
+                        <li class="section-li section-li-width-4">
+                            <input id="694" type="checkbox" name="preferential_1" value="694" />
+                            <label for="694" class="input-checkbox" 
+                            onclick="PreferentialProject.activitySelect(this, 694, 1)"></label>
+                        </li>
+                            
+                    </ul>
+                
+                        <ul class="sale-content">
+                    
+                        <li class="section-li section-li-width-1">&nbsp;</li>
+                        <li class="section-li section-li-width-2">测试优惠长度测试优惠长度测试优惠长度测试优惠长度</li>
+                        <li class="section-li section-li-width-3 section-li-hover">¥1.00</li>
+                        <li class="section-li section-li-width-4">
+                            <input id="734" type="checkbox" name="preferential_1" value="734" />
+                            <label for="734" class="input-checkbox" 
+                            onclick="PreferentialProject.activitySelect(this, 734, 1)"></label>
+                        </li>
+                            
+                    </ul>
+                
+                <hr class="dashen-line" />
+            
+                    <ul class="sale-content" id="ul_category_2">
+                
+                <li class="section-li section-li-width-1">立减优惠</li>
+                
+                    <li class="section-li section-li-width-2">特价抢购</li>
+                    <li class="section-li section-li-width-3 section-li-hover">¥1000.00</li>
+                    <li class="section-li section-li-width-4">
+                        <input id="0" type="checkbox" name="preferential_2" value="0" />
+                        <label for="0" class="input-checkbox"
+                         onclick="PreferentialProject.activitySelect(this, 0, 2)"></label>
+                    </li>
+                
+            </ul>
+            
+                <hr class="dashen-line" />
+            
+                    <ul class="sale-immediate sale-content" id="ul_category_3">
+                
+                <li class="section-li section-li-width-1">标准优惠</li>
+                
+                    <li class="section-li section-li-width-2">在线支付立减</li>
+                    <li class="section-li section-li-width-3 section-li-hover">¥200.00</li>
+                    <li class="section-li section-li-width-4">
+                        <input id="167" type="checkbox" name="preferential_3" value="167" />
+                        <label for="167" class="input-checkbox"
+                         onclick="PreferentialProject.activitySelect(this, 167, 3)"></label>
+                    </li>
+                
+            </ul>
+            
+
+
+
+    <!-- 积分和优惠券开始 -->
+    <div class="clear"></div>
+    <!--积分-->
+    
+
+    <!--优惠券-->
+    
+        <hr class="solid-line" />
+        <ul class="sale-content sale-newline overf-auto" id="coupons">
+            <div class="section-li section-li-width-1">抵用券/红包</div>
+            
+                <span class="login-tips" style="margin-top:5px">您还未登录，<a href="javascript:;"  class="font-click" onclick="javascript:_uzw.iframe.pop('https://u.uzai.com/QuickLogin', 640, 315)">登录</a>后才能使用优惠券</span>
+            
+        </ul>
+    
+
+
+<!-- 积分和优惠券结束 -->
+<!-- 隐藏域 -->
+<input type="hidden" id="hidActivityData" value="{&quot;ProductId&quot;:&quot;139084&quot;,&quot;JourneyCode&quot;:null,&quot;TuanQi&quot;:&quot;2017-8-4&quot;,&quot;TuanNo&quot;:&quot;TS1700017526&quot;,&quot;Preferentials&quot;:[{&quot;CategoryID&quot;:1,&quot;MutexCode&quot;:&quot;100100100&quot;,&quot;CategoryExtendValue&quot;:&quot;&quot;,&quot;CategoryName&quot;:&quot;银行优惠&quot;,&quot;InnerMutex&quot;:0,&quot;Activities&quot;:[{&quot;Suppliers&quot;:&quot;&quot;,&quot;Source&quot;:0,&quot;PreferentialID&quot;:657,&quot;PreferentialName&quot;:&quot;测试线上中行直连&quot;,&quot;SubTypeId&quot;:32,&quot;SubTypeName&quot;:&quot;银行优惠&quot;,&quot;SubTypeExtendValue&quot;:&quot;银行&quot;,&quot;ParentTypeId&quot;:1,&quot;ParentTypeExtendValue&quot;:&quot;&quot;,&quot;ParentTypeName&quot;:&quot;银行优惠&quot;,&quot;MutexCode&quot;:&quot;100100101&quot;,&quot;ParentMutexCode&quot;:&quot;100100100&quot;,&quot;ParentInnerMutex&quot;:0,&quot;MaxPreAmount&quot;:100.00,&quot;MaxAmountStrategyId&quot;:716,&quot;ValuationWay&quot;:&quot;25&quot;,&quot;ValuationWayText&quot;:&quot;按人头&quot;,&quot;ValuationRules&quot;:&quot;58&quot;,&quot;ValuationRulesExtendValue&quot;:&quot;online&quot;,&quot;AdaptationGroup&quot;:26,&quot;AdaptationGroupText&quot;:&quot;不限&quot;,&quot;PayChannel&quot;:&quot;120&quot;,&quot;PayChannelExtendValue&quot;:&quot;KJ_BOC&quot;,&quot;PayChannelText&quot;:&quot;中行直连&quot;,&quot;Checked&quot;:false},{&quot;Suppliers&quot;:&quot;&quot;,&quot;Source&quot;:0,&quot;PreferentialID&quot;:694,&quot;PreferentialName&quot;:&quot;卡bin测试限2人&quot;,&quot;SubTypeId&quot;:32,&quot;SubTypeName&quot;:&quot;银行优惠&quot;,&quot;SubTypeExtendValue&quot;:&quot;银行&quot;,&quot;ParentTypeId&quot;:1,&quot;ParentTypeExtendValue&quot;:&quot;&quot;,&quot;ParentTypeName&quot;:&quot;银行优惠&quot;,&quot;MutexCode&quot;:&quot;100100101&quot;,&quot;ParentMutexCode&quot;:&quot;100100100&quot;,&quot;ParentInnerMutex&quot;:0,&quot;MaxPreAmount&quot;:1.00,&quot;MaxAmountStrategyId&quot;:763,&quot;ValuationWay&quot;:&quot;25&quot;,&quot;ValuationWayText&quot;:&quot;按人头&quot;,&quot;ValuationRules&quot;:&quot;55&quot;,&quot;ValuationRulesExtendValue&quot;:&quot;reduce&quot;,&quot;AdaptationGroup&quot;:26,&quot;AdaptationGroupText&quot;:&quot;不限&quot;,&quot;PayChannel&quot;:&quot;63&quot;,&quot;PayChannelExtendValue&quot;:&quot;PT_UNIONPAYKJ&quot;,&quot;PayChannelText&quot;:&quot;银联在线支付快捷&quot;,&quot;Checked&quot;:false},{&quot;Suppliers&quot;:&quot;&quot;,&quot;Source&quot;:0,&quot;PreferentialID&quot;:734,&quot;PreferentialName&quot;:&quot;测试优惠长度测试优惠长度测试优惠长度测试优惠长度&quot;,&quot;SubTypeId&quot;:32,&quot;SubTypeName&quot;:&quot;银行优惠&quot;,&quot;SubTypeExtendValue&quot;:&quot;银行&quot;,&quot;ParentTypeId&quot;:1,&quot;ParentTypeExtendValue&quot;:&quot;&quot;,&quot;ParentTypeName&quot;:&quot;银行优惠&quot;,&quot;MutexCode&quot;:&quot;100100101&quot;,&quot;ParentMutexCode&quot;:&quot;100100100&quot;,&quot;ParentInnerMutex&quot;:0,&quot;MaxPreAmount&quot;:1.00,&quot;MaxAmountStrategyId&quot;:802,&quot;ValuationWay&quot;:&quot;25&quot;,&quot;ValuationWayText&quot;:&quot;按人头&quot;,&quot;ValuationRules&quot;:&quot;55&quot;,&quot;ValuationRulesExtendValue&quot;:&quot;reduce&quot;,&quot;AdaptationGroup&quot;:26,&quot;AdaptationGroupText&quot;:&quot;不限&quot;,&quot;PayChannel&quot;:&quot;63&quot;,&quot;PayChannelExtendValue&quot;:&quot;PT_UNIONPAYKJ&quot;,&quot;PayChannelText&quot;:&quot;银联在线支付快捷&quot;,&quot;Checked&quot;:false}]},{&quot;CategoryID&quot;:2,&quot;MutexCode&quot;:&quot;200100100&quot;,&quot;CategoryExtendValue&quot;:null,&quot;CategoryName&quot;:&quot;立减优惠&quot;,&quot;InnerMutex&quot;:0,&quot;Activities&quot;:[{&quot;Suppliers&quot;:null,&quot;Source&quot;:1,&quot;PreferentialID&quot;:0,&quot;PreferentialName&quot;:&quot;特价抢购&quot;,&quot;SubTypeId&quot;:33,&quot;SubTypeName&quot;:&quot;特价抢购&quot;,&quot;SubTypeExtendValue&quot;:&quot;特价&quot;,&quot;ParentTypeId&quot;:2,&quot;ParentTypeExtendValue&quot;:null,&quot;ParentTypeName&quot;:&quot;立减优惠&quot;,&quot;MutexCode&quot;:&quot;200100101&quot;,&quot;ParentMutexCode&quot;:&quot;200100100&quot;,&quot;ParentInnerMutex&quot;:0,&quot;MaxPreAmount&quot;:1000.00,&quot;MaxAmountStrategyId&quot;:0,&quot;ValuationWay&quot;:&quot;25&quot;,&quot;ValuationWayText&quot;:&quot;按人头&quot;,&quot;ValuationRules&quot;:&quot;58&quot;,&quot;ValuationRulesExtendValue&quot;:&quot;advance&quot;,&quot;AdaptationGroup&quot;:26,&quot;AdaptationGroupText&quot;:&quot;不限&quot;,&quot;PayChannel&quot;:null,&quot;PayChannelExtendValue&quot;:null,&quot;PayChannelText&quot;:null,&quot;Checked&quot;:true}]},{&quot;CategoryID&quot;:3,&quot;MutexCode&quot;:&quot;300100100&quot;,&quot;CategoryExtendValue&quot;:&quot;&quot;,&quot;CategoryName&quot;:&quot;标准优惠&quot;,&quot;InnerMutex&quot;:1,&quot;Activities&quot;:[{&quot;Suppliers&quot;:&quot;,41,&quot;,&quot;Source&quot;:0,&quot;PreferentialID&quot;:167,&quot;PreferentialName&quot;:&quot;在线支付立减&quot;,&quot;SubTypeId&quot;:38,&quot;SubTypeName&quot;:&quot;网订立减&quot;,&quot;SubTypeExtendValue&quot;:&quot;立减&quot;,&quot;ParentTypeId&quot;:3,&quot;ParentTypeExtendValue&quot;:&quot;&quot;,&quot;ParentTypeName&quot;:&quot;标准优惠&quot;,&quot;MutexCode&quot;:&quot;300100102&quot;,&quot;ParentMutexCode&quot;:&quot;300100100&quot;,&quot;ParentInnerMutex&quot;:1,&quot;MaxPreAmount&quot;:200.00,&quot;MaxAmountStrategyId&quot;:193,&quot;ValuationWay&quot;:&quot;25&quot;,&quot;ValuationWayText&quot;:&quot;按人头&quot;,&quot;ValuationRules&quot;:&quot;58&quot;,&quot;ValuationRulesExtendValue&quot;:&quot;online&quot;,&quot;AdaptationGroup&quot;:26,&quot;AdaptationGroupText&quot;:&quot;不限&quot;,&quot;PayChannel&quot;:&quot;59&quot;,&quot;PayChannelExtendValue&quot;:&quot;all&quot;,&quot;PayChannelText&quot;:&quot;不限&quot;,&quot;Checked&quot;:true}]}],&quot;MutexRelation&quot;:{&quot;MutexName&quot;:&quot;适用于PC的通用优惠类别互斥规则&quot;,&quot;Rules&quot;:[{&quot;Id&quot;:1,&quot;MutexId&quot;:1,&quot;CategoryCode&quot;:&quot;100100100&quot;,&quot;MutexCategoryCode&quot;:&quot;200100100&quot;,&quot;DeleteFlag&quot;:false},{&quot;Id&quot;:2,&quot;MutexId&quot;:1,&quot;CategoryCode&quot;:&quot;100100100&quot;,&quot;MutexCategoryCode&quot;:&quot;300100100&quot;,&quot;DeleteFlag&quot;:false}]},&quot;Strategies&quot;:null,&quot;StrategyRules&quot;:null}" />
+
+
+<script type='text/javascript' src='//r01.uzaicdn.com/content/yudingv2/scripts/preferentialproject.js?v=1.6&v=63772CE0D1F4D30DD29D36C2825FEDA0'  ></script>
+
+                
+
+            </div>
+            <!-- 优惠方案 end -->
+
+            <!-- 联系人信息 begin -->
+            <div class="user-info margin-top-20" id="contact_info">
+                <h2 class="section-title">联系人信息</h2>
+                <div class="user-info-content">
+                    <div>
+                        <span class="user-info-span" style="position:relative;">
+                            <label>姓名：</label>
+                            <input type="text" id="txt_name" name="txt_name" maxlength="15" value="" class="main_card_input" placeholder="请输入姓名" pattern=".+" data-error='姓名输入有误' />
+                            <em class="mandatory">*</em>
+                        </span>
+                        <span class="user-info-span user-info-tel" style="position:relative;">
+                            <label>手机号：</label>
+                            <input type="text" id="txt_mobile" name="txt_mobile" value="" class="main_card_input" placeholder="请输入11位手机号" pattern="\d{11}$" data-error='手机号码填写错误' />
+                            <em class="mandatory">*</em>
+                        </span>
+                    </div>
+                  <div class='clear'></div>
+                    <span class="user-info-note">
+                    <label>备注：</label>
+                    <textarea class="user-info-textarea" id="txt_des" name="txt_des" maxlength="200" placeholder="请备注您对产品的其他要求"></textarea>
+                  </span>
+                </div>
+            </div>
+            <!-- 联系人信息 end -->
+
+            <!-- 门店信息 begin -->
+            <div class="store margin-top-20">
+                <h2 class="section-title">选择门店<em class="font-gray">（请选择离您最近的服务门店提交旅客资料）</em></h2>
+                
+                    <div class="store-current">
+                        <span class="store-current-name">
+                          当前选择：<em class="font-hover" id="selectedStoreName">上海客服中心</em></span>
+                        <span class="store-current-address">
+                          <label>地址：</label><em class="font-gray" id="selectedStoreAddress"></em></span>
+                        
+                            <span class="store-current-tel">
+                              电话：<em class="font-gray" id="selectedStoreTel">1010-9898(网站)或400-998-2060(移动)</em>
+                            </span>
+                        
+                        <input type="hidden" id="salesDefaultStore" name="salesDefaultStore" value="785" />
+                    </div>
+                
+                <input type="hidden" id="storeId" value="785" />
+                <input type="hidden" id="storeName" />
+                <input type="hidden" id="storeAddress" />
+                <input type="hidden" id="storeTel" />
+                
+                <a href="javascript:;" class="store-others">选择其他门店为您服务</a>
+                
+            </div>
+            <!-- 门店信息 end -->
+
+            <!-- 返回产品详情页 begin -->
+            <div class="return-page margin-top-20">
+                <button class="submits-btn-orders" type="button"  onclick="activityValidate()" >提交订单</button>
+                <a href="http://sh.uzai.com/tour-139084.html" class="return-click font-click">返回产品详情页</a>
+            </div>
+            <!-- 返回产品详情页 end -->
+        </div>
+        <!-- main end -->
+    </div>
+
+    <!--  登陆信息 Begin -->
+    <div class="dialog-login" style="display:none">
+        <a href="#" id="j_dialog_login_close"class="close"></a>
+        <!-- 快速预订  Begin -->
+        <div class="quick">
+            <h2 class="dialog-login-title">快速预订</h2>
+            <label class="dialog-login-label">订单联系人手机号</label>
+            <div><input class="main_card_input" placeholder="联系人手机号" type="text" pattern="\d{11}" data-error='手机号码填写错误'/></div>
+            <label class="dialog-login-label margin-top-20">短信验证码</label>
+            <span class="main_card_input captcha-inputb">
+              <input class="captcha-input blur_" type="text"/><button class="captcha">获取验证码</button>
+            </span>
+            <span class="dialog-login-tips">稍后我们会将您的验证码发送至该手机</span>
+            <button class="dialog-login-confirm">快速预订</button>
+        </div>
+        <!-- 快速预订  End -->
+        <hr class="dialog-login-line" />
+        <!-- 会员  Begin -->
+        <div class="member">
+            <h2 class="dialog-login-title">
+              <a href="#" id="j_tab_member" class="m font-black ">会员登录</a>
+              <a href="#" id="j_tab_phone" class="p ">动态密码登录</a></h2>
+            <div class="member-box">
+                <label class="dialog-login-label">账号</label>
+                <span class="main_card_input">
+                <i class="icon-user"></i>
+                <input class="icon-input"type="text" placeholder="请输入账号"/>
+              </span>
+                <label class="dialog-login-label margin-top-20">密码</label>
+                <span class="main_card_input">
+                <i class="icon-pd"></i>
+                <input class="icon-input"type="password"/>
+              </span>
+                <div class="remember-box">
+                    <input type="checkbox" id="remember" />
+                    <label for="remember" class="input-remember"><i></i></label>
+                    <span class="remember-tips">记住我</span>
+                    <a href="#" class="font-click">忘记密码？</a>
+                </div>
+            </div>
+            <div class="phone-box">
+                <label class="dialog-login-label">手机号码</label>
+                <input class="main_card_input" placeholder="联系人手机号" type="text" />
+                <label class="dialog-login-label margin-top-20">短信验证码</label>
+                <span class="main_card_input">
+                <input class="captcha-input"type="text"/><button class="captcha captcha-hover">获取验证码</button>
+              </span>
+            </div>
+            <button class="dialog-login-confirm">登录</button>
+            <span class="other-login">
+              直接使用合作账号登录
+              <a href="#" class="other-login-icon-qq"></a>
+              <a href="#" class="other-login-icon-weibo"></a>
+            </span>
+        </div>
+        <!-- 会员  Begin -->
+    </div>
+    <div class="dialog-full" style="display:none"></div>
+    <!--  登陆信息 End -->
+
+    <!--遮罩层和弹出层-->
+    <div class='body_shade'></div>
+    <div class='storage'><img src='//r03.uzaicdn.com/content/yudingv2/images/wait.gif' alt="loading" />正在处理，请稍候......</div>
+    <div class='body_shade_show'>
+        <h2>请修改优惠方案</h2>
+        <p>您选择的优惠方案不可用，请重新选择，点击确定后刷新当前页。</p>
+        <div class='shade_buttom'>
+            <button type="button" onclick="javascript:window.location.reload();" >确定</button>
+        </div>
+        <a href='#' class='close' onclick="closeTip()" ></a>
+    </div>
+
+    <!-- 选择门店弹出面板  -->
+    
+
+<div id="j_popStoreInfo" class="pop-store-info">
+            <p class="pop-hd clearfix">
+                <em class="hd-cont white f16 fl">选择提交资料门店</em>
+                <span class="pop-close tc fr j_popClose">×</span>
+            </p>
+            <div class="pop-bd">
+                <ol class="step-bar clearfix">
+                    <li class="step-item on"><i class="num-nub blue f24 tc mr10 vm">1</i><span class="f18 vm">选择门店并下单支付</span><i class="icon-arrow vm png"></i></li>
+                    <li class="step-item"><i class="num-nub blue f24 tc mr10 vm">2</i><span class="f18 vm">到线下门店提供资料</span><i class="icon-arrow vm png"></i></li>
+                    <li class="step-item"><i class="num-nub blue f24 tc mr10 vm">3</i><span class="f18 vm">资料通过后准备出游</span></li>
+                </ol>
+                <div class="search-bar">
+                
+                <select name="" id="selectStoreCity" class="select-box f16 ml10 vm" onchange="StoreCityChange();">
+                    
+                    <option value="1" selected='selected'>
+                        北京</option>
+                    
+                    <option value="3" >
+                        天津</option>
+                    
+                    <option value="8" >
+                        石家庄</option>
+                    
+                    <option value="286" >
+                        西安</option>
+                    
+                    <option value="12" >
+                        唐山</option>
+                    
+                    <option value="13" >
+                        廊坊</option>
+                    
+                    <option value="2" >
+                        上海</option>
+                    
+                    <option value="43" >
+                        武汉</option>
+                    
+                    <option value="57" >
+                        南京</option>
+                    
+                    <option value="19" >
+                        杭州</option>
+                    
+                    
+                </select>
+                <select name="" id="selectStoreArea" class="select-box f16 ml10 vm" onchange="StoreAreaChange();">
+                    <option>--请选择区--</option>
+                </select>
+                <select id="storeAreaOption" style="display: none;">
+                    
+                    <option value="海淀区" data-city="1">
+                        海淀区</option>
+                    
+                    <option value="丰台区" data-city="1">
+                        丰台区</option>
+                    
+                    <option value="朝阳区" data-city="1">
+                        朝阳区</option>
+                    
+                    <option value="东城区" data-city="1">
+                        东城区</option>
+                    
+                    <option value="西城区" data-city="1">
+                        西城区</option>
+                    
+                    <option value="大兴区" data-city="1">
+                        大兴区</option>
+                    
+                    <option value="石景山区" data-city="1">
+                        石景山区</option>
+                    
+                    <option value="昌平区" data-city="1">
+                        昌平区</option>
+                    
+                    <option value="和平区" data-city="3">
+                        和平区</option>
+                    
+                    <option value="南开区" data-city="3">
+                        南开区</option>
+                    
+                    <option value="河东区" data-city="3">
+                        河东区</option>
+                    
+                    <option value="滨海区" data-city="3">
+                        滨海区</option>
+                    
+                    <option value="河西区" data-city="3">
+                        河西区</option>
+                    
+                    <option value="西青区" data-city="3">
+                        西青区</option>
+                    
+                    <option value="桥西区" data-city="8">
+                        桥西区</option>
+                    
+                    <option value="裕华区" data-city="8">
+                        裕华区</option>
+                    
+                    <option value="雁塔区" data-city="286">
+                        雁塔区</option>
+                    
+                    <option value="新城区" data-city="286">
+                        新城区</option>
+                    
+                    <option value="路北区" data-city="12">
+                        路北区</option>
+                    
+                    <option value="广阳区" data-city="13">
+                        广阳区</option>
+                    
+                    <option value="普陀区" data-city="2">
+                        普陀区</option>
+                    
+                    <option value="浦东新区" data-city="2">
+                        浦东新区</option>
+                    
+                    <option value="黄浦区" data-city="2">
+                        黄浦区</option>
+                    
+                    <option value="长宁区" data-city="2">
+                        长宁区</option>
+                    
+                    <option value="虹口区" data-city="2">
+                        虹口区</option>
+                    
+                    <option value="徐汇区" data-city="2">
+                        徐汇区</option>
+                    
+                    <option value="闵行区" data-city="2">
+                        闵行区</option>
+                    
+                    <option value="武昌区" data-city="43">
+                        武昌区</option>
+                    
+                    <option value="青山区" data-city="43">
+                        青山区</option>
+                    
+                    <option value="江岸区" data-city="43">
+                        江岸区</option>
+                    
+                    <option value="洪山区" data-city="43">
+                        洪山区</option>
+                    
+                    <option value="鼓楼区" data-city="57">
+                        鼓楼区</option>
+                    
+                    <option value="江宁区" data-city="57">
+                        江宁区</option>
+                    
+                    <option value="上城区" data-city="19">
+                        上城区</option>
+                    
+                    <option value="拱墅区" data-city="19">
+                        拱墅区</option>
+                    
+                </select>
+                
+                <input type="search" class="textbox f16 ml10 vm" id="storeSearchText" placeholder="请输入门店名" />
+                <input type="button" value="搜门店" id="storeSearch" class="btn-search bg-red white f14 yahei ml10 vm" />
+            </div>
+            <div class="store-box clearfix">
+                <div class="store-choose-box fl">
+                    
+                    <div class="store-items f14" id="storeItems">
+                        
+                        <label class="store-item" data-city="1" data-area="海淀区" data-longitude="116.317098" data-latitude="39.949733">
+                            <input type="radio" name="cbStore" value="288" class="radio-box vm" /><span class="store-hd f16 ml10 vm">紫竹桥店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市海淀区西三环北路22-6号</span>
+                                
+                                <br />
+                                电话：010-68790466、010-68790458
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="海淀区" data-longitude="116.3212720000" data-latitude="39.9700070000">
+                            <input type="radio" name="cbStore" value="343" class="radio-box vm" /><span class="store-hd f16 ml10 vm">苏州桥店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市海淀区北三环西路60-1</span>
+                                
+                                <br />
+                                电话：010-88513880
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="海淀区" data-longitude="116.3404980000" data-latitude="39.9898810000">
+                            <input type="radio" name="cbStore" value="344" class="radio-box vm" /><span class="store-hd f16 ml10 vm">五道口店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市海淀区中关村甲334号楼底商</span>
+                                
+                                <br />
+                                电话：010-82616922、010-82613819
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="海淀区" data-longitude="116.315194" data-latitude="39.986292">
+                            <input type="radio" name="cbStore" value="346" class="radio-box vm" /><span class="store-hd f16 ml10 vm">中关村店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市海淀区善缘街立方庭大厦1层1号</span>
+                                
+                                <br />
+                                电话：010-82886277
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="海淀区" data-longitude="116.374724" data-latitude="39.973492">
+                            <input type="radio" name="cbStore" value="387" class="radio-box vm" /><span class="store-hd f16 ml10 vm">北太平庄店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    海淀区北三环中路32号-4</span>
+                                
+                                <br />
+                                电话：010-82087058
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="海淀区" data-longitude="116.306552" data-latitude="40.059005">
+                            <input type="radio" name="cbStore" value="397" class="radio-box vm" /><span class="store-hd f16 ml10 vm">上地店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市海淀区上地十街1号院6号楼1层101</span>
+                                
+                                <br />
+                                电话：010-82176898/82176878
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="海淀区" data-longitude="116.3039090000" data-latitude="39.9143630000">
+                            <input type="radio" name="cbStore" value="486" class="radio-box vm" /><span class="store-hd f16 ml10 vm">公主坟店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市海淀区复兴路51号凯德晶品购物中心LG层32号</span>
+                                
+                                <br />
+                                电话：010-88197586
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="海淀区" data-longitude="116.311266" data-latitude="39.994731">
+                            <input type="radio" name="cbStore" value="675" class="radio-box vm" /><span class="store-hd f16 ml10 vm">海淀桥店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市海淀区颐和园路8号8幢1号楼106C</span>
+                                
+                                <br />
+                                电话：010-62642066
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="丰台区" data-longitude="116.3730450000" data-latitude="39.8606770000">
+                            <input type="radio" name="cbStore" value="289" class="radio-box vm" /><span class="store-hd f16 ml10 vm">大峡谷凯德mall店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    丰台区南三环西路16号 凯德mall大峡谷店二层</span>
+                                
+                                <br />
+                                电话：010-87562858
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="丰台区" data-longitude="116.377868" data-latitude="39.847875">
+                            <input type="radio" name="cbStore" value="328" class="radio-box vm" /><span class="store-hd f16 ml10 vm">马家堡店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    丰台区马家堡西路26号院2号楼底商</span>
+                                
+                                <br />
+                                电话：010-87599306
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="丰台区" data-longitude="116.436626" data-latitude="39.871351">
+                            <input type="radio" name="cbStore" value="331" class="radio-box vm" /><span class="store-hd f16 ml10 vm">方庄店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市丰台区蒲芳路22号楼22-2幢1层底商（方庄环岛西南角）</span>
+                                
+                                <br />
+                                电话：010-87680160
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="丰台区" data-longitude="116.2980440000" data-latitude="39.8237420000">
+                            <input type="radio" name="cbStore" value="483" class="radio-box vm" /><span class="store-hd f16 ml10 vm">丰台永旺店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    丰台区丰葆路88号院1号楼 永旺梦乐城 2层208商铺（丰葆路马路东侧）</span>
+                                
+                                <br />
+                                电话：010-83816166
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.458135" data-latitude="39.944941">
+                            <input type="radio" name="cbStore" value="290" class="radio-box vm" /><span class="store-hd f16 ml10 vm">工体店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市朝阳区新东路8号首开铂郡1-001（悠咖啡内）</span>
+                                
+                                <br />
+                                电话：010-64645882
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.482273" data-latitude="39.945099">
+                            <input type="radio" name="cbStore" value="293" class="radio-box vm" /><span class="store-hd f16 ml10 vm">众信旅游北京呼叫中心</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市朝阳区朝阳公园路8号（朝阳公园西二门）</span>
+                                
+                                <br />
+                                电话：1010 9898
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.473102" data-latitude="40.009737">
+                            <input type="radio" name="cbStore" value="318" class="radio-box vm" /><span class="store-hd f16 ml10 vm">望京花园店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市朝阳区望京南湖东园101号楼-12号底商</span>
+                                
+                                <br />
+                                电话：010-64715881
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.458347" data-latitude="39.966249">
+                            <input type="radio" name="cbStore" value="319" class="radio-box vm" /><span class="store-hd f16 ml10 vm">三元桥店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市朝阳区曙光西里甲1号商业10号（三元桥第三置业大厦底商）</span>
+                                
+                                <br />
+                                电话：010-58221286
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.410738" data-latitude="40.009202">
+                            <input type="radio" name="cbStore" value="320" class="radio-box vm" /><span class="store-hd f16 ml10 vm">亚运村店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市朝阳区亚运村大屯路慧忠北里408号</span>
+                                
+                                <br />
+                                电话：010-85584144
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.49793" data-latitude="39.920854">
+                            <input type="radio" name="cbStore" value="321" class="radio-box vm" /><span class="store-hd f16 ml10 vm">朝阳路店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市朝阳区东四环中路56号远洋国际中心A座一层108室</span>
+                                
+                                <br />
+                                电话：010-65505598,010-65505578
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.482273" data-latitude="39.945099">
+                            <input type="radio" name="cbStore" value="322" class="radio-box vm" /><span class="store-hd f16 ml10 vm">北京总店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市朝阳区朝阳公园路8号（朝阳公园西二门）</span>
+                                
+                                <br />
+                                电话：010-64489898
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.418948" data-latitude="39.994432">
+                            <input type="radio" name="cbStore" value="323" class="radio-box vm" /><span class="store-hd f16 ml10 vm">安慧桥店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市朝阳区安苑北里2号楼底商（西藏大厦西200米）</span>
+                                
+                                <br />
+                                电话：010- 64939889
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.4748940000" data-latitude="39.9990400000">
+                            <input type="radio" name="cbStore" value="325" class="radio-box vm" /><span class="store-hd f16 ml10 vm">望京凯德MALL店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市朝阳区广顺北大街33号凯德Mall 3层k05商铺</span>
+                                
+                                <br />
+                                电话：010-64718528
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.518961" data-latitude="39.929783">
+                            <input type="radio" name="cbStore" value="335" class="radio-box vm" /><span class="store-hd f16 ml10 vm">朝阳大悦城店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市朝阳区朝阳北路107号院55号楼珠江罗马嘉园底商</span>
+                                
+                                <br />
+                                电话：010-85517518，85517618
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.460789" data-latitude="39.924167">
+                            <input type="radio" name="cbStore" value="336" class="radio-box vm" /><span class="store-hd f16 ml10 vm">光华路店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市朝阳区东大桥路8号SOHO尚都南塔2167</span>
+                                
+                                <br />
+                                电话：010-59000721
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.4697900000" data-latitude="39.9149860000">
+                            <input type="radio" name="cbStore" value="337" class="radio-box vm" /><span class="store-hd f16 ml10 vm">国贸店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市朝阳区建国路99号中服大厦一层02号</span>
+                                
+                                <br />
+                                电话：010-65812089
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.466803" data-latitude="39.889789">
+                            <input type="radio" name="cbStore" value="338" class="radio-box vm" /><span class="store-hd f16 ml10 vm">劲松店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    朝阳区劲松三区301号楼底商（劲松桥西南角）</span>
+                                
+                                <br />
+                                电话：010-67791218
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.458104" data-latitude="39.899664">
+                            <input type="radio" name="cbStore" value="339" class="radio-box vm" /><span class="store-hd f16 ml10 vm">双井店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市朝阳区广渠门外大街5号院52号楼08</span>
+                                
+                                <br />
+                                电话：010-58241766
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.467521" data-latitude="39.93562">
+                            <input type="radio" name="cbStore" value="340" class="radio-box vm" /><span class="store-hd f16 ml10 vm">团结湖店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市朝阳区东三环北路19号楼中青大厦1层101室</span>
+                                
+                                <br />
+                                电话：010-65007796
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.4477970000" data-latitude="39.9158830000">
+                            <input type="radio" name="cbStore" value="341" class="radio-box vm" /><span class="store-hd f16 ml10 vm">建国门店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市朝阳区日坛路6号1号楼1层1D单元</span>
+                                
+                                <br />
+                                电话：010-85728123
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.604705" data-latitude="39.931076">
+                            <input type="radio" name="cbStore" value="485" class="radio-box vm" /><span class="store-hd f16 ml10 vm">常营店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市朝阳区东五环朝阳北路龙湖长楹天街购物中心西区4层07B</span>
+                                
+                                <br />
+                                电话：010-85095639
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.4595" data-latitude="39.9136">
+                            <input type="radio" name="cbStore" value="489" class="radio-box vm" /><span class="store-hd f16 ml10 vm">永安里店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市建国门外大街甲8号B座B1层108号</span>
+                                
+                                <br />
+                                电话：010-85114311
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.465643" data-latitude="39.923319">
+                            <input type="radio" name="cbStore" value="490" class="radio-box vm" /><span class="store-hd f16 ml10 vm">财富中心店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    东三环中路7号院财富购物中心一层底商</span>
+                                
+                                <br />
+                                电话：010-65002705
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.4543470000" data-latitude="39.9773310000">
+                            <input type="radio" name="cbStore" value="670" class="radio-box vm" /><span class="store-hd f16 ml10 vm">太阳宫凯德mall店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市朝阳区太阳宫中路太阳宫凯德mall  3层20A</span>
+                                
+                                <br />
+                                电话：84430608
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="朝阳区" data-longitude="116.42223" data-latitude="40.046777">
+                            <input type="radio" name="cbStore" value="672" class="radio-box vm" /><span class="store-hd f16 ml10 vm">北苑店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市朝阳区北苑路28号院1号楼01层（01）103内F1-120</span>
+                                
+                                <br />
+                                电话：010-84928803
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="东城区" data-longitude="116.439994" data-latitude="39.934866">
+                            <input type="radio" name="cbStore" value="324" class="radio-box vm" /><span class="store-hd f16 ml10 vm">朝阳门店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市东城区豆瓣胡同2号楼2-0底商</span>
+                                
+                                <br />
+                                电话：010-64018092
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="东城区" data-longitude="116.4222130000" data-latitude="39.9563840000">
+                            <input type="radio" name="cbStore" value="326" class="radio-box vm" /><span class="store-hd f16 ml10 vm">安定门店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市东城区雍和宫东河沿1号（雍和宫桥西北角，金鼎轩南100米左右）</span>
+                                
+                                <br />
+                                电话：010-64400877
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="东城区" data-longitude="116.421676" data-latitude="39.905543">
+                            <input type="radio" name="cbStore" value="327" class="radio-box vm" /><span class="store-hd f16 ml10 vm">崇文门店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市东城区新怡家园5号楼1层5单元01商业09底商（新世界女子百货对面）</span>
+                                
+                                <br />
+                                电话：010-67081861
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="东城区" data-longitude="116.427727" data-latitude="39.903619">
+                            <input type="radio" name="cbStore" value="674" class="radio-box vm" /><span class="store-hd f16 ml10 vm">国瑞城店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市东城区崇外大街18号1幢北京国瑞购物中心LG层C30</span>
+                                
+                                <br />
+                                电话：010-87555016
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="西城区" data-longitude="116.381192" data-latitude="39.906915">
+                            <input type="radio" name="cbStore" value="329" class="radio-box vm" /><span class="store-hd f16 ml10 vm">宣武门店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市西城区前门西大街141号（宣武门教堂外西侧）</span>
+                                
+                                <br />
+                                电话：010-66033678、010-66033698
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="西城区" data-longitude="116.371329" data-latitude="39.912283">
+                            <input type="radio" name="cbStore" value="333" class="radio-box vm" /><span class="store-hd f16 ml10 vm">复兴门店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市西城区复兴门内大街28号凯晨世贸中心中座B一层</span>
+                                
+                                <br />
+                                电话：010-59566258
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="西城区" data-longitude="116.370412" data-latitude="39.919201">
+                            <input type="radio" name="cbStore" value="334" class="radio-box vm" /><span class="store-hd f16 ml10 vm">金融街店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市西城区太平桥大街98号中海凯旋1号1单元1A</span>
+                                
+                                <br />
+                                电话：010-58596958
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="西城区" data-longitude="116.363172" data-latitude="39.943814">
+                            <input type="radio" name="cbStore" value="345" class="radio-box vm" /><span class="store-hd f16 ml10 vm">西直门店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市西直门桥东南角国二招宾馆向东100米</span>
+                                
+                                <br />
+                                电话：010-66157142
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="西城区" data-longitude="116.364537" data-latitude="39.929497">
+                            <input type="radio" name="cbStore" value="488" class="radio-box vm" /><span class="store-hd f16 ml10 vm">阜成门店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市西城区阜城门内大街249号</span>
+                                
+                                <br />
+                                电话：010-66027863
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="西城区" data-longitude="116.3591110000" data-latitude="39.9474820000">
+                            <input type="radio" name="cbStore" value="643" class="radio-box vm" /><span class="store-hd f16 ml10 vm">西直门凯德MALL店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市西城区西直门外大街1号6层09B号</span>
+                                
+                                <br />
+                                电话：010-58302155
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="西城区" data-longitude="116.352105" data-latitude="39.913711">
+                            <input type="radio" name="cbStore" value="676" class="radio-box vm" /><span class="store-hd f16 ml10 vm">长安商场店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市西城区复兴门外大街15号 长安商场1层 西侧2号商铺</span>
+                                
+                                <br />
+                                电话：010-68082404
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="大兴区" data-longitude="116.508803" data-latitude="39.809128">
+                            <input type="radio" name="cbStore" value="330" class="radio-box vm" /><span class="store-hd f16 ml10 vm">亦庄店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京经济技术开发区荣华中路北京华联力宝购物中心一层（南门）</span>
+                                
+                                <br />
+                                电话：010-59792529
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="大兴区" data-longitude="116.333466" data-latitude="39.793832">
+                            <input type="radio" name="cbStore" value="723" class="radio-box vm" /><span class="store-hd f16 ml10 vm">众信旅游西红门荟聚店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    西红门荟聚购物中心6-02-02-SU （2层迪卡侬旁）</span>
+                                
+                                <br />
+                                电话：60297790,10109898-9-045
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="石景山区" data-longitude="116.2269830000" data-latitude="39.9123390000">
+                            <input type="radio" name="cbStore" value="398" class="radio-box vm" /><span class="store-hd f16 ml10 vm">石景山店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市石景山区石景山路22号长城大厦一层（华联商厦东侧）</span>
+                                
+                                <br />
+                                电话：010-68636189/68636190
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="1" data-area="昌平区" data-longitude="116.325883" data-latitude="40.081792">
+                            <input type="radio" name="cbStore" value="487" class="radio-box vm" /><span class="store-hd f16 ml10 vm">回龙观华联店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    北京市昌平区回龙观镇回龙观西大街111号华联商场1层</span>
+                                
+                                <br />
+                                电话：010-50954966
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="3" data-area="和平区" data-longitude="117.215811" data-latitude="39.121896">
+                            <input type="radio" name="cbStore" value="347" class="radio-box vm" /><span class="store-hd f16 ml10 vm">国际大厦店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    天津市和平区南京路75号 天津国际大厦二层</span>
+                                
+                                <br />
+                                电话：022-23399898
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="3" data-area="和平区" data-longitude="117.192107" data-latitude="39.141305">
+                            <input type="radio" name="cbStore" value="348" class="radio-box vm" /><span class="store-hd f16 ml10 vm">荣业大街店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    天津市和平区荣业大街6-8号，新世界花园底商</span>
+                                
+                                <br />
+                                电话：022-87762689
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="3" data-area="和平区" data-longitude="117.206994" data-latitude="39.133868">
+                            <input type="radio" name="cbStore" value="463" class="radio-box vm" /><span class="store-hd f16 ml10 vm">恒隆广场店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    天津市和平区兴安路166号 恒隆广场 （西庭）5040</span>
+                                
+                                <br />
+                                电话：022-23459188
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="3" data-area="和平区" data-longitude="117.205101" data-latitude="39.12372">
+                            <input type="radio" name="cbStore" value="679" class="radio-box vm" /><span class="store-hd f16 ml10 vm">世纪都会店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    天津市和平区南京路181号世纪都会商厦5层512号</span>
+                                
+                                <br />
+                                电话：022-23469518
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="3" data-area="南开区" data-longitude="117.178211" data-latitude="39.082313">
+                            <input type="radio" name="cbStore" value="399" class="radio-box vm" /><span class="store-hd f16 ml10 vm">时代奥城店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    天津市南开区宾水西道与凌宾路交口时代奥城广场5号楼一层</span>
+                                
+                                <br />
+                                电话：022-58171798
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="3" data-area="南开区" data-longitude="117.168475" data-latitude="39.137472">
+                            <input type="radio" name="cbStore" value="400" class="radio-box vm" /><span class="store-hd f16 ml10 vm">西市大街店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    天津市南开区西市大街76号A区格调春天花园底商</span>
+                                
+                                <br />
+                                电话：022-87872660
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="3" data-area="南开区" data-longitude="117.18701" data-latitude="39.140584">
+                            <input type="radio" name="cbStore" value="462" class="radio-box vm" /><span class="store-hd f16 ml10 vm">大悦城店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    天津市南开区南门外大街2号大悦城购物中心北区2层D-33</span>
+                                
+                                <br />
+                                电话：022-58100030
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="3" data-area="南开区" data-longitude="117.180231" data-latitude="39.151694">
+                            <input type="radio" name="cbStore" value="464" class="radio-box vm" /><span class="store-hd f16 ml10 vm">富力广场店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    天津市南开区北马路127号天津富力广场2层206</span>
+                                
+                                <br />
+                                电话：022-59008255
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="3" data-area="南开区" data-longitude="117.131201" data-latitude="39.144082">
+                            <input type="radio" name="cbStore" value="677" class="radio-box vm" /><span class="store-hd f16 ml10 vm">熙悦汇店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    天津市南开区黄河道与密云路交口熙悦汇购物中心211-212 </span>
+                                
+                                <br />
+                                电话：022-87800618
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="3" data-area="河东区" data-longitude="117.223674" data-latitude="39.134246">
+                            <input type="radio" name="cbStore" value="424" class="radio-box vm" /><span class="store-hd f16 ml10 vm">嘉里汇店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    天津河东区六纬路238号嘉里汇L2009</span>
+                                
+                                <br />
+                                电话：022-24268860
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="3" data-area="河东区" data-longitude="117.259516" data-latitude="39.130833">
+                            <input type="radio" name="cbStore" value="680" class="radio-box vm" /><span class="store-hd f16 ml10 vm">河东万达广场店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    天津市河东区津滨大道53号万达商业广场步行街206号</span>
+                                
+                                <br />
+                                电话：022-10109898-614,022-58711990
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="3" data-area="滨海区" data-longitude="117.712397" data-latitude="39.031523">
+                            <input type="radio" name="cbStore" value="437" class="radio-box vm" /><span class="store-hd f16 ml10 vm">滨海新区店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    天津开发区第二大街与新城西路交口泰达MSD广场A座1层104B</span>
+                                
+                                <br />
+                                电话：022-58173398
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="3" data-area="滨海区" data-longitude="117.735636" data-latitude="39.037973">
+                            <input type="radio" name="cbStore" value="482" class="radio-box vm" /><span class="store-hd f16 ml10 vm">滨海永旺店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    天津市经济技术开发区时尚东路29号600区永旺梦乐城天津泰达二层225</span>
+                                
+                                <br />
+                                电话：022-59857259
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="3" data-area="滨海区" data-longitude="117.669516" data-latitude="39.022547">
+                            <input type="radio" name="cbStore" value="681" class="radio-box vm" /><span class="store-hd f16 ml10 vm">上海道店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    天津市自贸试验区（中心商务区）上海道1256号</span>
+                                
+                                <br />
+                                电话：022-10109898
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="3" data-area="河西区" data-longitude="117.219914" data-latitude="39.08398">
+                            <input type="radio" name="cbStore" value="678" class="radio-box vm" /><span class="store-hd f16 ml10 vm">新业广场店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    天津市河西区黑牛城道125号新业广场三层A312（耀莱成龙影院旁）</span>
+                                
+                                <br />
+                                电话：022-59007880
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="3" data-area="河西区" data-longitude="117.218944" data-latitude="39.096281">
+                            <input type="radio" name="cbStore" value="682" class="radio-box vm" /><span class="store-hd f16 ml10 vm">乐园道店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    天津市河西区越秀路乐园道9号银河国际购物中心B1F吉野家门口扶梯下</span>
+                                
+                                <br />
+                                电话：022-10109898
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="3" data-area="西青区" data-longitude="117.224078" data-latitude="39.031439">
+                            <input type="radio" name="cbStore" value="683" class="radio-box vm" /><span class="store-hd f16 ml10 vm">印象城门市部</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    友谊南路111号天津印象城L2-09</span>
+                                
+                                <br />
+                                电话：022-10109898,022-58710191
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="8" data-area="桥西区" data-longitude="114.5177800000" data-latitude="38.0486910000">
+                            <input type="radio" name="cbStore" value="649" class="radio-box vm" /><span class="store-hd f16 ml10 vm">石家庄北国商城店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    石家庄市桥西区中山东路188号街北国商城六层</span>
+                                
+                                <br />
+                                电话：0311-89669191
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="8" data-area="桥西区" data-longitude="114.487366" data-latitude="38.047023">
+                            <input type="radio" name="cbStore" value="1979" class="radio-box vm" /><span class="store-hd f16 ml10 vm">石家庄自强路店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    石家庄市桥西区自强路55号宏苑宾馆一层</span>
+                                
+                                <br />
+                                电话：0311-89901313
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="8" data-area="裕华区" data-longitude="114.553555" data-latitude="38.033100">
+                            <input type="radio" name="cbStore" value="687" class="radio-box vm" /><span class="store-hd f16 ml10 vm">石家庄万达店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    石家庄市裕华区建华南大街211号裕华万达广场C1-2号商业00单元0104 </span>
+                                
+                                <br />
+                                电话：0311-67591988
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="286" data-area="雁塔区" data-longitude="108.916207" data-latitude="34.244763">
+                            <input type="radio" name="cbStore" value="657" class="radio-box vm" /><span class="store-hd f16 ml10 vm">高新路店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    陕西省西安市雁塔区高新路53号尚中心一楼</span>
+                                
+                                <br />
+                                电话：10109898转9转730  029-81773496
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="286" data-area="雁塔区" data-longitude="108.966046" data-latitude="34.204221">
+                            <input type="radio" name="cbStore" value="936" class="radio-box vm" /><span class="store-hd f16 ml10 vm">曲江新区店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    陕西省西安市曲江新区翠华路与雁展路交汇处东北角</span>
+                                
+                                <br />
+                                电话：10109898转9转731;029-89664585
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="286" data-area="雁塔区" data-longitude="108.950438" data-latitude="34.23525">
+                            <input type="radio" name="cbStore" value="939" class="radio-box vm" /><span class="store-hd f16 ml10 vm">西安长安路店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    陕西省西安市雁塔区长安路18号音乐学院艺术交流中心底层商铺</span>
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="286" data-area="新城区" data-longitude="109.003338" data-latitude="34.275132">
+                            <input type="radio" name="cbStore" value="937" class="radio-box vm" /><span class="store-hd f16 ml10 vm">金花路店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    西安市长乐中路242号  西北国际茶城</span>
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="12" data-area="路北区" data-longitude="118.162631" data-latitude="39.631865">
+                            <input type="radio" name="cbStore" value="688" class="radio-box vm" /><span class="store-hd f16 ml10 vm">唐山新华道店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    唐山市路北区新华西道111号君瑞国际底商</span>
+                                
+                                <br />
+                                电话：0315-5397188
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="12" data-area="路北区" data-longitude="118.0838" data-latitude="39.381">
+                            <input type="radio" name="cbStore" value="1906" class="radio-box vm" /><span class="store-hd f16 ml10 vm">唐山大里路店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    唐山市路北区大里北路底商123-45号，张大里东门对面</span>
+                                
+                                <br />
+                                电话：0315-2396660
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="13" data-area="广阳区" data-longitude="116.713763" data-latitude="39.532217">
+                            <input type="radio" name="cbStore" value="690" class="radio-box vm" /><span class="store-hd f16 ml10 vm">北京众信国际旅行社股份有限公司廊坊分公司</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    廊坊市广阳区天利得益商务中心一期第一幢1单元107号房</span>
+                                
+                                <br />
+                                电话：0316-2369206
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="2" data-area="普陀区" data-longitude="121.425501" data-latitude="31.261144">
+                            <input type="radio" name="cbStore" value="785" class="radio-box vm" /><span class="store-hd f16 ml10 vm">上海客服中心</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    </span>
+                                
+                                <br />
+                                电话：1010-9898(网站)或400-998-2060(移动)
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="2" data-area="普陀区" data-longitude="121.425654" data-latitude="31.260911">
+                            <input type="radio" name="cbStore" value="881" class="radio-box vm" /><span class="store-hd f16 ml10 vm">铜川店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    上海市普陀区铜川路70号新城市中心广场1楼</span>
+                                
+                                <br />
+                                电话：021-20533552
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="2" data-area="普陀区" data-longitude="121.41719" data-latitude="31.273768">
+                            <input type="radio" name="cbStore" value="884" class="radio-box vm" /><span class="store-hd f16 ml10 vm">万里店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    上海市普陀区新村路1500号家乐福2楼5HWL-202</span>
+                                
+                                <br />
+                                电话：021-66282290
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="2" data-area="浦东新区" data-longitude="121.5204" data-latitude="31.238847">
+                            <input type="radio" name="cbStore" value="878" class="radio-box vm" /><span class="store-hd f16 ml10 vm">浦东陆家嘴体验店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    上海市浦东新区东昌路592号</span>
+                                
+                                <br />
+                                电话：021-51135501，021-51135500
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="2" data-area="浦东新区" data-longitude="121.565246" data-latitude="31.234029">
+                            <input type="radio" name="cbStore" value="885" class="radio-box vm" /><span class="store-hd f16 ml10 vm">浦东联洋店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    上海市浦东新区芳甸路185号联洋家乐福B1层LY_S-5</span>
+                                
+                                <br />
+                                电话：021-50762809
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="2" data-area="浦东新区" data-longitude="121.511578" data-latitude="31.240468">
+                            <input type="radio" name="cbStore" value="1250" class="radio-box vm" /><span class="store-hd f16 ml10 vm">上海金茂大厦店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    上海市浦东新区世纪大道88号金茂大厦裙房4楼</span>
+                                
+                                <br />
+                                电话：021-53863219
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="2" data-area="黄浦区" data-longitude="121.472328" data-latitude="31.225801">
+                            <input type="radio" name="cbStore" value="879" class="radio-box vm" /><span class="store-hd f16 ml10 vm">淮海路旗舰店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    上海市黄浦区淮海中路456号</span>
+                                
+                                <br />
+                                电话：021-63131982,021-63306328,021-63391632
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="2" data-area="黄浦区" data-longitude="121.483834" data-latitude="31.236331">
+                            <input type="radio" name="cbStore" value="882" class="radio-box vm" /><span class="store-hd f16 ml10 vm">上海人民广场体验店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    上海市黄浦区西藏中路96号</span>
+                                
+                                <br />
+                                电话：021-56509122
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="2" data-area="黄浦区" data-longitude="121.474848" data-latitude="31.21229">
+                            <input type="radio" name="cbStore" value="1175" class="radio-box vm" /><span class="store-hd f16 ml10 vm">上海日月光店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    上海市黄浦区徐家汇路618号2F-XJH03室</span>
+                                
+                                <br />
+                                电话：021-33562186
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="2" data-area="黄浦区" data-longitude="121.494243" data-latitude="31.217197">
+                            <input type="radio" name="cbStore" value="1816" class="radio-box vm" /><span class="store-hd f16 ml10 vm">上海陆家浜店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    上海市黄浦区陆家浜路1100号新邻生活站B1F-01B</span>
+                                
+                                <br />
+                                电话：021-60564993
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="2" data-area="长宁区" data-longitude="121.400037" data-latitude="31.202337">
+                            <input type="radio" name="cbStore" value="883" class="radio-box vm" /><span class="store-hd f16 ml10 vm">上海古北体验店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    上海市长宁区水城南路268号古北家乐福2楼</span>
+                                
+                                <br />
+                                电话：021-62566892
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="2" data-area="长宁区" data-longitude="121.422398" data-latitude="31.225065">
+                            <input type="radio" name="cbStore" value="886" class="radio-box vm" /><span class="store-hd f16 ml10 vm">中山公园店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    上海市长宁区长宁路1018号B2层25P-B201</span>
+                                
+                                <br />
+                                电话：021-52660533
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="2" data-area="长宁区" data-longitude="121.394491" data-latitude="31.21187">
+                            <input type="radio" name="cbStore" value="1856" class="radio-box vm" /><span class="store-hd f16 ml10 vm">上海仙霞路店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    上海市长宁区仙霞路500号</span>
+                                
+                                <br />
+                                电话：021-62088211
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="2" data-area="虹口区" data-longitude="121.484584" data-latitude="31.276621">
+                            <input type="radio" name="cbStore" value="1146" class="radio-box vm" /><span class="store-hd f16 ml10 vm">上海虹口公园店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    上海市虹口区西江湾路388号家乐福B1层SHHK_B101</span>
+                                
+                                <br />
+                                电话：021-56203128
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="2" data-area="虹口区" data-longitude="121.497928" data-latitude="31.285276">
+                            <input type="radio" name="cbStore" value="1237" class="radio-box vm" /><span class="store-hd f16 ml10 vm">上海曲阳店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    上海市虹口区曲阳路560号1楼</span>
+                                
+                                <br />
+                                电话：021-55610130
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="2" data-area="徐汇区" data-longitude="121.448654" data-latitude="31.195858">
+                            <input type="radio" name="cbStore" value="1148" class="radio-box vm" /><span class="store-hd f16 ml10 vm">上海徐家汇店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    上海市徐汇区天钥桥路319号1层C座</span>
+                                
+                                <br />
+                                电话：021-64752188
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="2" data-area="闵行区" data-longitude="121.384894" data-latitude="31.113398">
+                            <input type="radio" name="cbStore" value="1248" class="radio-box vm" /><span class="store-hd f16 ml10 vm">上海莘庄龙之梦店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    上海市闵行区沪闵路6088号凯德龙之梦2层 </span>
+                                
+                                <br />
+                                电话：021-52275528
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="43" data-area="武昌区" data-longitude="114.317928" data-latitude="30.571596">
+                            <input type="radio" name="cbStore" value="947" class="radio-box vm" /><span class="store-hd f16 ml10 vm">积玉桥店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    武昌区万达公馆万达广场二期9-11商铺</span>
+                                
+                                <br />
+                                电话：027-88059995
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="43" data-area="武昌区" data-longitude="114.285672" data-latitude="30.61394">
+                            <input type="radio" name="cbStore" value="948" class="radio-box vm" /><span class="store-hd f16 ml10 vm">香港路店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    武汉市香港路241号紫藤花园1栋1层6号</span>
+                                
+                                <br />
+                                电话：027-85888892
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="43" data-area="青山区" data-longitude="114.382737" data-latitude="30.632007">
+                            <input type="radio" name="cbStore" value="949" class="radio-box vm" /><span class="store-hd f16 ml10 vm">众圆广场店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    武汉市青山区和平大道955号武商众园广场C区3层44号</span>
+                                
+                                <br />
+                                电话：027- 86849997
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="43" data-area="江岸区" data-longitude="114.302431" data-latitude="30.601487">
+                            <input type="radio" name="cbStore" value="950" class="radio-box vm" /><span class="store-hd f16 ml10 vm">融科天城店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    武汉市江岸区球场街融科天诚二期32号商铺（解放大道球场街车站旁）</span>
+                                
+                                <br />
+                                电话：027- 82798758
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="43" data-area="江岸区" data-longitude="114.27498" data-latitude="30.58872">
+                            <input type="radio" name="cbStore" value="951" class="radio-box vm" /><span class="store-hd f16 ml10 vm">武汉万松园店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    武汉市江汉区万松园23号</span>
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="43" data-area="洪山区" data-longitude="114.415752" data-latitude="30.507145">
+                            <input type="radio" name="cbStore" value="952" class="radio-box vm" /><span class="store-hd f16 ml10 vm">武汉光谷店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    武汉市洪山区光谷步行街德意风情街8号楼一楼</span>
+                                
+                                <br />
+                                电话：027-87509997
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="57" data-area="鼓楼区" data-longitude="118.758554" data-latitude="32.051633">
+                            <input type="radio" name="cbStore" value="1139" class="radio-box vm" /><span class="store-hd f16 ml10 vm">众信旅游南京清凉门店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    南京市鼓楼区清凉门大街1号环宇城B103-2</span>
+                                
+                                <br />
+                                电话：025-84752905 025-84752906
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="57" data-area="江宁区" data-longitude="118.827586" data-latitude="31.935872">
+                            <input type="radio" name="cbStore" value="1204" class="radio-box vm" /><span class="store-hd f16 ml10 vm">众信旅游南京百家湖店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    南京市江宁区双龙大道1698号F426</span>
+                                
+                                <br />
+                                电话：025-86155889
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="19" data-area="上城区" data-longitude="120.171916" data-latitude="30.24818">
+                            <input type="radio" name="cbStore" value="1165" class="radio-box vm" /><span class="store-hd f16 ml10 vm">杭州旗舰店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    杭州市上城区惠民路79-1号（近延安路）</span>
+                                
+                                <br />
+                                电话：0571-86888781；86888782；86888783
+                                
+                            </div>
+                        </label>
+                        
+                        <label class="store-item" data-city="19" data-area="拱墅区" data-longitude="120.15479" data-latitude="30.298155">
+                            <input type="radio" name="cbStore" value="1872" class="radio-box vm" /><span class="store-hd f16 ml10 vm">浙江众信湖墅南路店</span>
+                            <div class="store-detail f999">
+                                <span class="mr5">
+                                    湖墅南路458号</span>
+                                
+                                <br />
+                                电话：0571-86888791/792
+                                
+                            </div>
+                        </label>
+                        
+                    </div>
+                    
+                </div>
+                <div class="store-map fr" id="storeMapContainer">
+                </div>
+            </div>
+                <p class="btn-bar tc">
+                    <input type="button" value="确认" class="btn-confirm bg-red white f24 yahei j_popClose" />
+                    <input type="hidden" id="j_selectingStore" value="" />
+                </p>
+            </div>
+        </div>
+
+
+    <input type="hidden" id="isLogin" value="0" />
+    <input type="hidden" id="hidSelectedActivities" name="hidSelectedActivities" />
+    <!--------------------------  uzai原有的隐藏域，请勿随意改动 begin ------------------------->
+    <input type="hidden" id="hiddenOrderStr" value="" />
+    <input type="hidden" id="hiddenLocation" value="11803" />
+        
+    
+    <input type="hidden" id="txtHiddenPId" name="txtHiddenPId" value="139084" />
+    <input type="hidden" id="txtHiddenNums" name="txtHiddenNums" value="1" />
+    <input type="hidden" id="txtHiddenGoDate" name="txtHiddenGoDate" value="2017-8-4" />
+    <input type="hidden" id="txtHiddenUzaiPrice" name="txtHiddenUzaiPrice" value="12000" />
+    <input type="hidden" id="txtHiddenChildPrice" name="txtHiddenChildPrice" value="12000" />
+    <input type="hidden" id="txtHiddenPersonNum" name="txtHiddenPersonNum" value="1" />
+    <input type="hidden" id="txtHiddenChildNum" name="txtHiddenChildNum" value="0" />
+    <input type="hidden" id="txtHiddenMType" name="txtHiddenMType" value="1" />
+    <input type="hidden" id="txtHiddenMinPerson" name="txtHiddenMinPerson" value="1" />
+    <input type="hidden" id="txtHiddenMaxPerson" name="txtHiddenMaxPerson" value="35" />
+    <input type="hidden" id="txtHiddenIsPay" name="txtHiddenIsPay" value="True" />
+    <input type="hidden" id="txtHiddenCity" name="txtHiddenCity" value="2" />
+    <input type="hidden" id="txtHiddenDays" name="txtHiddenDays" value="8" />
+
+    <input type="hidden" id="txtHiddenScoreRatio" name="txtHiddenScoreRatio" value="0" />
+    <input type="hidden" id="txtHiddenSafe" name="txtHiddenSafe" />
+    <input type="hidden" id="hidSupplierFlag" value="008" />
+    <input type="hidden" id="hidIsOutPluckPro" name="hidIsOutPluckPro" value="0" /><!--是否是众信外采产品-->
+    <input type="hidden" id="txtHiddenLinker" name="txtHiddenLinker" />
+    <input type="hidden" id="txtSubmitHiddenAdd" name="txtSubmitHiddenAdd" />
+    <input type="hidden" id="txtHiddenUtourSingleCount" name="txtHiddenUtourSingleCount" />
+    <input type="hidden" id="txtHiddenUtourOutCount" name="txtHiddenUtourOutCount" />
+    <!--------------------------  uzai原有的隐藏域，请勿随意改动 end --------------------------->
+
+     
+     
+<div id="j_popTipsBox_orderpermission" class="ui-pop pop-tips-box hide" style="display: none;">
+    <div class="pop-hd">
+        <em class="hd-cont red f20">提示</em></div>
+    <div class="pop-bd">
+        <div class="tips-cont f16 clearfix">
+            <i class="icon-warn icon-common-main fl png"></i>
+            <p class="cont-text">
+
+            </p>
+        </div>
+        <p class="input-bar">
+            <span class="bar-inner">
+            
+            </span>
+
+        </p>
+        <p class="btn-bar tc">
+
+        </p>
+    </div>
+    <span class="pop-close pointer lh1 j_popClose"><i class="close-icon">×</i></span>
+</div>
+
+
+</form>
+</body>
+</html>
+<!--统一静态资源引用-->
+
+<script src="//api.map.baidu.com/api?v=2.0&ak=jcrU5VmM7XaabOsWXPIvwi7s&s=1"></script>
+
+
+<script type='text/javascript' src='//r02.uzaicdn.com/content/yudingv2/scripts/jquery-1.11.1.min.js?v=4DC834D16A0D219D5C2B8A5B814569E4'  ></script><script type='text/javascript' src='//r01.uzaicdn.com/content/yudingv2/scripts/sold.js?v=1.5&v=ECBCEDAA6A6EABA54A70538055951691'  ></script><script type='text/javascript' src='//r.uzaicdn.com/content/yudingv2/scripts/input.js?v=1.5&v=81ADF511A8A0F1A26369D1487E906551'  ></script><script type='text/javascript' src='//r01.uzaicdn.com/content/yudingv2/scripts/booklist.js?v=1.5&v=9C6DC400A2AC10C288CF50C479408821'  ></script><script type='text/javascript' src='//10.1.25.225/content/v1/scripts/core.js'  ></script><script type='text/javascript' src='//r03.uzaicdn.com/content/yudingv2/scripts/tour_one.js?v=1.5&v=F9CF6AA564D72A00739C4EBE5182D076'  ></script><script type='text/javascript' src='//r.uzaicdn.com/content/yudingv2/scripts/order_new.js?v=1.5&v=7B3027FD553FC88748D617DFC16FF6E5'  ></script><script type='text/javascript' src='//r03.uzaicdn.com/content/yudingv2/scripts/attachment.js?v=1.5&v=B294B8A1A1BD81A23AC4E91CBBB23D45'  ></script><script type='text/javascript' src='//r.uzaicdn.com/content/yudingv2/scripts/common.js?v=1.5&v=F0A05723B946297D1F5D281EE6E78135'  ></script><script type='text/javascript' src='//r.uzaicdn.com/content/yudingv2/scripts/core_new.js?v=1.5'  ></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        document.domain = "uzai.com";
+        // 设置默认选中的活动
+        var result = PreferentialProject.setChecked();
+        if (!result) {
+            renderBooklist(); //没有默认选中的活动，所以需要手动render一次预订清单   
+        }
+        // 保险默认选中
+        $('#insurance').first().find('a:last').click();
+
+        // 解决火狐浏览器的兼容性问题
+        $('#txtUseScore').removeAttr('disabled');
+    });
+</script>
+<!--预订清单中的html模板 begin -->
+<script type="text/html" id="bookListTemplate">
+    <div class="finally">
+        <h2 class="finally-title">预订清单</h2>
+        <h3 class="finally-box-title">旅游团费</h3>
+        <div class="finally-box">
+            <span class="finally-description">{adultCount}成人 × ¥{adultAmount}</span>
+            <span class="finally-price">¥{adultTotal}</span>
+        </div>
+        <div class="finally-box">
+            <span class="finally-description">{childCount}儿童 × ¥{childAmount}</span>
+            <span class="finally-price">¥{childTotal}</span>
+        </div>
+        <hr class="finally-line" />
+        <h3 class="finally-box-title finally-box-title-all">附加产品</h3>
+        {attachmentHtml}
+        <hr class="finally-line" />
+        <h3 class="finally-box-title">优惠信息</h3>
+        {activityHtml}
+    </div>
+    <div class="price">
+        <span class="price-word">总计：</span>
+        <span class="price-pay">¥<span id='spanPayAmount'>{totalAmount}<span></span>
+    </div>
+</script>
+<script type="text/html" id="attachTemplate">
+    <div class="{finallyClass}">
+        <span class="finally-description finally-description-all">{attachmentName}</span>
+        <span class="finally-description">{attachmentCount}份 × ¥{attachmentAmount}</span>
+        <span class="finally-price finally-price-hover">¥{attachmentTotalAmount}</span>
+    </div>
+</script>
+<script type="text/html" id="activityTemplate">
+    <div class="finally-box">
+        <span class="finally-description">{activityName}</span>
+        <span class="finally-price finally-price-hover">-¥{preTotalAmount}</span>
+    </div>
+</script>
+<!-- 预订清单中的html模板 end -->
+<!-- 附加产品 扩展对象  start-->
+<script type="text/javascript">
+    var $uzaiattachEx = (function (w) {
+        var _uzaiattachEx = function () {
+
+        };
+        //验证 排他逻辑
+        _uzaiattachEx.prototype.valExclusive = function (obj) {
+            obj = $(obj);
+            var ul = obj.closest("ul");
+            var relationId = ul.attr("id").replace("attachment_", "");
+            var addProductTypeId = $("#txtHiddenAddProductTypeId_" + relationId).val(); //附加产品类型
+            var personNums = parseInt(obj.text().trim()); //购买份数
+            var pNames = [$("#txtHiddenAddProductName_" + relationId).val()];
+            /******优惠产品排他性判断********/
+            if (addProductTypeId == 11 || addProductTypeId == 16 || addProductTypeId == 19) {
+                var isExc = $("#txtHiddenIsExclude_" + relationId).val();
+                if (isExc == 1 && personNums > 0) {//表示当前选择的是排他性限制并且购买分数>0
+                    //网订立减、专享特惠等产品排他性判断        
+                    if (addProductTypeId == 11 || addProductTypeId == 16 || addProductTypeId == 19) {
+                        var isExc = $("#txtHiddenIsExclude_" + relationId).val();
+                        if (isExc == 1 && personNums > 0) {//表示当前选择的是排他性限制并且购买分数>0
+                            //网订立减、专享特惠等产品排他性判断        
+                         
+                            var k = 0;
+                            $("input[id^='txtHiddenAddProductTypeId_'][value='11'],input[id^='txtHiddenAddProductTypeId_'][value='16'],input[id^='txtHiddenAddProductTypeId_'][value='19']").each(function () {
+                                var AddProdcutId = $(this).attr("id");
+                                var AddRelationID = AddProdcutId.substr(AddProdcutId.lastIndexOf("_") + 1); //关系Id，不重复
+                                if (relationId == AddRelationID) {
+                                    return;
+                                }
+                                var pul = $(this).closest("ul");
+                                var choiceVal = parseInt(pul.find("#attachmentCount").text().trim());//已经选择的值
+                              
+                                var IsExclude = $("#txtHiddenIsExclude_" + AddRelationID).val(); //排他性
+                                if (IsExclude == 1) {
+                                    if (choiceVal > 0) {
+                                        k++;
+                                    }
+                                    // pNames += $("#txtHiddenAddProductName_" + AddRelationID).val() + "、";
+                                    pNames.push($("#txtHiddenAddProductName_" + AddRelationID).val());
+                                }
+                            });
+                            if (k >= 1) {
+                                if (pNames.length > 0) {
+                                    alert("优惠项" + pNames.join(",") + "不能同时享受，敬请谅解！");
+                                    /*重新选择0份*/
+                                    window.setTimeout(function () {
+                                        ul.find(".section-select_option a:contains(0):first").click();
+                                    });
+                                    return false;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return true;
+            /*******优惠产品排他性判断End*******/
+
+        };
+
+        //初始化附加产品默认值（选择份数）及是否显示的控制
+        _uzaiattachEx.prototype.defaultProductSet = function () {
+            var person = parseInt($("#txtHiddenPersonNum").val()); //成人数
+            var child = parseInt($("#txtHiddenChildNum").val()); //儿童数
+            //循环的是适用人群
+            $("input[id^='txtHiddenIsUserPersonType_']").each(function () {
+                var id = $(this).attr("id");
+                var relationId = id.substr(id.lastIndexOf("_") + 1); //关系Id，不重复
+                var ValuationType = $("#txtHiddenValuationType_" + relationId).val(); //计价方式
+                var default_nums = 0; //按行人数计价默认值
+                var default_order_nums = 0; //按订单数计价默认值
+                var user_Pserson_Type = $(this).val(); //适用人群 0->通用,1->成人,2->儿童
+                var includeEnale = $("#txtHiddenAddProductIncludeEnable_" + relationId).val()//就否强制包含
+                if (ValuationType == 0)//按照订单数计价方式
+                {
+                    //如果是按照订单数计价，就一定要设置该附加产品为“包含”(防止后台没有设置)
+                    //$("#txtHiddenAddProductIncludeEnable_" + relationId).val(1); //一定要包含
+                    default_order_nums = $("#txtHiddenValuationType_Nums_" + relationId).val(); //按照订单数计价【必须买几份】
+
+                }
+                else {
+                    //按照行人数计价
+                    var valuationType_Parameter = parseInt($("#txtHiddenValuationType_Parameter_" + relationId).val()); //设置X人/份
+                    var valuationType_MinNums = parseInt($("#txtHiddenValuationType_MinNums_" + relationId).val()); //计价方式生效的最小值
+                    var valuationType_MaxNums = parseInt($("#txtHiddenValuationType_MaxNums_" + relationId).val()); //计价方式生效的最大值
+                    var sum_personNums = 0; //通用：成人+儿童
+                    if (user_Pserson_Type == 0) {
+                        sum_personNums = person + child; //通用：儿童+成人【儿童也当成人看】
+                    }
+                    else if (user_Pserson_Type == 1) {
+                        sum_personNums = person; //成人：只看成人数是否在规定范围内
+                    }
+                    else if (user_Pserson_Type == 2) {
+                        sum_personNums = child; //儿童：只看成人数是否在规定范围内
+                    }
+                    if (!(sum_personNums >= valuationType_MinNums && sum_personNums <= valuationType_MaxNums)) {
+                        //不在规定的计价范围内
+                       // $("#tr_" + relationId).css("display", "none"); //隐藏
+                    }
+                    else {
+                      //  $("#tr_" + relationId).css("display", ""); //清掉样式
+                        if ($("#txtHiddenAddProductName_" + relationId).val() == "人等优惠") {
+                            default_nums = 1;
+                        }
+                        else {
+                            if (sum_personNums % valuationType_Parameter == 0) {
+                                default_nums = sum_personNums / valuationType_Parameter; //取整数
+                            }
+                            else {
+                                //如果是专享特惠、网订立减、银行活动则向下取整，比如买二送一，如果是三人则返回一个
+                                if ($("#txtHiddenAddProductTypeId_" + relationId).val() == "11" || $("#txtHiddenAddProductTypeId_" + relationId).val() == "16" || $("#txtHiddenAddProductTypeId_" + relationId).val() == "19") {
+                                    default_nums = Math.floor(sum_personNums / valuationType_Parameter); //向下取整数
+                                } else {
+                                    default_nums = Math.ceil(sum_personNums / valuationType_Parameter); //向上取整数
+                                }
+                            }
+                        }
+                    }
+                }
+                //将默认值保存到隐藏域中
+                $("#txtHiddenDefaultNums_" + relationId).val(default_nums);
+                $("#txtHiddenDefaultOrderNums_" + relationId).val(default_order_nums);
+
+                var ul = $(this).closest("ul");
+
+                $.each(ul.find(".section-select_option a"), function (i, n) {
+                    try {
+                        //设置如果是强制包含，添加只能选择一个选项逻辑
+                        var val = parseInt($(n).text().trim());
+                        if (includeEnale == 1) { //是否强制包含 
+                            var def_nums = ValuationType == 0 ? default_order_nums : default_nums;//是按订单数，还是人数计价
+                            if (val == def_nums) {
+                                attachmentChange($(this));
+                            } else {
+                                if (val < def_nums) {
+                                    $(n).remove();
+                                }
+                            }
+                        }
+                        if (val > default_nums) {
+                            $(n).remove();
+                        }
+                    } catch (e) {
+
+                    }
+                })
+            });
+        }
+
+        return new _uzaiattachEx();
+    })(window)
+
+    $(function () {
+        $uzaiattachEx.defaultProductSet();
+    })
+</script>
+
+
+<!--ptengine基础代码开始-->
+<script type="text/javascript">
+    window._pt_lt = new Date().getTime();
+    window._pt_sp_2 = [];
+    _pt_sp_2.push('setAccount,49512ddd');
+
+    //新增用户对应Ptengine用户ID 
+    if (_uzw.cookie.get("user")) {
+        var user = _uzw.cookie.get("user");
+        var reg = new RegExp("(^|&)PtengineUserId=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r = user.match(reg);
+        var user_PtengineUserId = r == null ? "" : r[2];
+        if (user_PtengineUserId != "") {
+            _pt_sp_2.push('setCustomVar,def01,svid,value,' + user_PtengineUserId + ',0');
+        }
+    }
+
+    var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+
+    (function () {
+        var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
+        atag.src = _protocol + 'js.ptengine.cn/js/pta.js';
+        var stag = document.createElement('script'); stag.type = 'text/javascript'; stag.async = true;
+        stag.src = _protocol + 'js.ptengine.cn/js/pts.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(atag, s); s.parentNode.insertBefore(stag, s);
+    })();
+</script>
+<!--ptengine基础代码结束-->

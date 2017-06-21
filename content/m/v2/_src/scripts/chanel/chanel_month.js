@@ -1,0 +1,28 @@
+$(document).ready(function() {
+
+    var _img=$('.img-lazy');
+    imgLoad(_img);
+
+    $(window).scroll(function(){
+        imgLoad(_img);
+    });
+
+    $('.season-recommend .sel-ls li').click(function () {
+        $(this).siblings().removeClass('on');
+        $(this).addClass('on');
+        /*
+        var index = $(this).index();
+        $('.season-recommend .ls').siblings().hide();
+        $('.season-recommend .ls').eq(index).show();
+        */
+    });
+
+});
+
+function ProductLink(ProductId) {
+    window.location = "http://m.uzai.com/waptour-" + ProductId + ".html";
+}
+
+function LoadProduct(key) {
+    $("#partialViewDiv").load("WhereToGoProduct/"+key);
+}

@@ -1,0 +1,40 @@
+/*
+* @Author: lxq
+* @Date:   2016-12-23 14:47:49
+* @Last Modified by:   lxq
+* @Last Modified time: 2016-12-27 11:20:25
+*/
+
+
+/* 宝钢支付 */
+
+.fl {float: left;}
+.clearfix::after {clear: both;content: " ";display: block;font-size: 0;height: 0;visibility: hidden;}
+.hide {display: none;}
+.tc {text-align: center;}
+
+.pay-tab .item-con {width: 650px;margin:0 auto;}
+.pay-tab .item-details {margin-left: 65px;}
+.pay-tab .item-details .detail-list {margin-top: 25px;position: relative;}
+.pay-tab .item-details .dl1,
+.pay-tab .item-details .dl3 {margin-left: 42px;}
+.pay-tab .item-details label .s1 {color:#333;font-size: 14px;}
+.pay-tab .item-details .input-box {width: 228px;line-height: 34px;font-size: 14px;border:1px solid #e0e0e0;padding-left: 10px;border-radius: 5px;
+color:#333;}
+.pay-tab .item-details .phone {border:none;}
+.pay-tab .item-details .input-out {border-color:#e5004f;}
+.pay-tab .item-details .input-on {border-color:#0099d9;}
+.pay-tab .item-details .label-tips {color:#e7325d;font-size: 14px;padding-left: 10px;line-height: 36px;background: #fff;
+border:1px solid #e0e0e0;border-radius: 5px;position: absolute;top: 38px;right: 0;padding:0 10px;margin-right: 243px;z-index:15;}
+.pay-tab .item-details .code-btn {width: 100px;height: 32px;line-height: 32px;color:#fff;text-align: center;font-size: 16px;background: #e5004f;
+border-radius: 5px;margin:2px 0 0 10px;}
+.pay-tab .item-details .code-btn .p1 {cursor: pointer;}
+.pay-tab .item-details .code-btn:hover {background: #ce0047;}
+.pay-tab .item-con .btn-bg-box {width: 150px;margin:0 auto;}
+.pay-tab .item-con .btn-out {background: #f0f0f0;color:#999;width: 150px;line-height: 48px;height: 50px;border-radius: 5px;text-align: center;
+margin-top:30px;font-size: 24px;border:none;cursor: auto;padding:0;}
+.pay-tab .item-con .btn-bg {cursor: pointer;background: #e5004f;color:#fff;}
+.pay-tab .item-con .btn-bg:hover {background: #ce0047;}
+.pay-tab .item-con .btn-time {background: #f0f0f0;color:#999;}
+.pay-tab .item-con .btn-time:hover {background: #f0f0f0;color:#999;}
+.pay-tab .item-con .icon-bg {background: url(/content/zhifuv2/images/bg-tips.png) no-repeat;width: 16px;height: 16px;margin:11px 5px 0 0;}

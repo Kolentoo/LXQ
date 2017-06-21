@@ -1,0 +1,304 @@
+body{ background: #f5f5f5;}
+input::-webkit-input-placeholder{ color: #999;}
+input::-moz-placeholder{ color: #999;}
+input:-ms-input-placeholder{ color: #999;}
+.icon-jipiao{ background: no-repeat; display: inline-block;}
+.bg-white{ background: #fff;}
+.border-arrow{ border: 5px solid #fff; font-size:0; height:0; line-height: 0; width: 0; overflow: hidden;}
+.box-fix { display: inline-block; width: 100%; *width: auto; vertical-align: top; }
+.box-outer{ position: relative; z-index: 10;}
+.c2fa6e5{ color: #2fa6e5;}
+.cf93868{ color: #f93868;}
+.cfb84a2{ color: #fb84a2;}
+
+/* cities-select-mod start */
+.cities-select-mod{ border: 1px solid #2fa6e5; width: 508px; position: absolute; left: -1px; top: 20px; z-index: 10;}
+.cities-select-mod .csm-hd{ padding: 7px 10px; position: relative;}
+.cities-select-mod .close-wrap{ color: #2fa6e5; display: inline-block; height: 12px; width: 12px; position: absolute; right: 10px; top: 10px;}
+.cities-select-mod .close-wrap:hover{ color: #f93868;}
+.cities-select-mod .close-icon{ position: absolute; left: -3px; top: -7px;}
+.cities-select-tab .hd{ background: #f6fcff; padding: 0 10px;}
+.cities-select-tab .hd-list{ border-bottom: 2px solid #dadada;}
+.cities-select-tab .hd-list li{ border-bottom: 2px solid #dadada; cursor: pointer; float: left; width: 14.285%; *width: 14.2%; position: relative; bottom: -2px;padding:6px 0;}
+.cities-select-tab .arrow-icon{ border: 3px solid #f6fcff; border-bottom-color: #2fa6e5; border-top: none; display: none; margin-left: -3px; position: absolute; left: 50%; bottom: 0;}
+.cities-select-tab .hd-list li:hover{ border-bottom-color: #2fa6e5; color: #2fa6e5;}
+.cities-select-tab .hd-list .on{ border-bottom-color: #2fa6e5; color: #2fa6e5; font-weight: bold;}
+.cities-select-tab .hd-list .on .arrow-icon{ display: inline-block;}
+.cities-select-tab .bd{ padding: 10px;}
+.cities-select-tab .select-item{ border: 1px solid #fff; cursor: pointer; float: left; width: 69px; padding: 1px 5px;}
+.cities-select-tab .select-item:hover{ background: #fff4f7; border-color: #fb88a4; color: #f93868;}
+/* cities-select-mod end */
+
+/* index start */
+.banner-wrap .w{ position: relative;z-index:2;}
+.banner-slides{ height: 340px; overflow: hidden; position: relative; z-index: 0;}
+.banner-slides .slide-item{ background: no-repeat center 0; height: 340px; width: 100%;}
+.banner-slides .pagination{ position: absolute; left: 50%; bottom: 10px;margin-left: 500px; z-index: 10;}
+.banner-slides .pagination li{ display: inline-block; *display: inline; zoom: 1; margin: 0 2px;}
+.banner-slides .pagination a{ background: #f1f1f1; border: 2px solid #fff; border-radius: 50%; box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5) inset; display: block; text-indent: -9999px; height: 12px; width: 12px;}
+.banner-slides .pagination .on a{ background: #f93868; box-shadow: 0 0 rgba(0, 0, 0, 0.0);}
+
+/*** jipiao-search-box start ***/
+.jipiao-search-box{ border: 3px solid #2fa6e5; border-top: none; height: 292px; width: 42.352%; position: absolute; left: 0; top: -320px;}
+.jipiao-search-box .control-radio{background-position:0 center; background-image: url(/content/v1/images/jipiao/icon2.png); cursor: pointer; height: 20px; line-height: 20px; width:28px;padding-left: 15px;}
+.jipiao-search-box .control-radio label{cursor:pointer;}
+.jipiao-search-box .control-radio input{ display: none;}
+.jipiao-search-box .control-radio-on{ background-image: url(/content/v1/images/jipiao/icon2-on.png);}
+.jipiao-search-box .datalist-wrap{ display: inline-block; *display: inline; zoom: 1; height: 36px;}
+.jipiao-search-box .datalist-box{ display: inline-block; *display: inline; zoom: 1; position: relative;z-index: 100;}
+.jipiao-search-box .datalist-box .db-info-bar{ background: #f0faff; border: 1px solid #aaa; border-radius: 4px; display: inline-block; *display: inline; zoom: 1; height: 20px; padding: 7px 5px;}
+.jipiao-search-box .datalist-box .db-info-bar .select-cont{width:40px;border:none;background:none;}
+.jipiao-search-box .datalist-box .arrow-icon{ border-color: #f0faff; border-top-color: #aaa; border-bottom: none; *vertical-align: baseline;}
+.jipiao-search-box .datalist-box .textbox{ background: none; width: 140px;}
+.jipiao-search-box .datalist-box .select-wrap{ width: 100%; *position: absolute; *left: 0; *top: 36px;}
+.jipiao-search-box .datalist-box .select-list{ max-height: 245px; overflow-y: auto; _height: 245px;}
+.jipiao-search-box .datalist-box .select-list li{ cursor: pointer; padding: 3px 5px;}
+.jipiao-search-box .datalist-box .cabin-select{ border: 1px solid #aaa; border-radius: 4px;}
+.jipiao-search-box .datalist-box .cabin-select li:hover{ background: #f0faff;}
+.jipiao-search-box .datalist-box .airline-select{ border: 1px solid #fb88a4; width: 250px;}
+.jipiao-search-box .datalist-box .airline-select .al-hd{ background: #fb88a4; padding: 5px 0;}
+.jipiao-search-box .datalist-box .airline-select li{ position: relative;}
+.jipiao-search-box .datalist-box .airline-select li.on{ background: #fff4f7; color: #d9284d;font-weight:bold;}
+.jipiao-search-box .datalist-box .airline-select .item-code{ position: absolute; right: 5px;}
+
+.jipiao-search-box .icon-aircraft{ background-image: url(/content/v1/images/jipiao/icon1.png); height: 26px; width: 27px;}
+.jipiao-search-box .space{ margin-left: 20px;}
+.jipiao-search-box .jsb-hd{ background: #2fa6e5;}
+.jipiao-search-box .jsb-bd{ padding: 10px 2.976% 5px; _padding: 10px 1.488% 5px;}
+.jipiao-search-box .forms-listing li.line{ padding: 6px 0; *vertical-align: middle;}
+.jipiao-search-box .forms-listing .fade-on { opacity: 0.5; filter: alpha(opacity=50); }
+.jipiao-search-box .forms-listing .g4{ *width: 39.9%;}
+.jipiao-search-box .jsb-bd .forms-listing .ft-bar{ border-top: 1px dashed #aaa; padding-top: 15px; position: relative;z-index:3;}
+.jipiao-search-box .fill{ width: 94.68%; padding: 0 2.659%;}
+.jipiao-search-box .tb-wrap{ border: 1px solid #aaa;position:relative;z-index:3; *vertical-align: middle;}
+.jipiao-search-box .cities-select-wrap{ z-index:4;}
+
+.jipiao-search-box .tb-wrap .after-calendar{position: absolute;left:-1px;top: 20px; *top: 22px;}
+.jipiao-search-box .tb-wrap .after-calendar th{background:#eee;line-height: 22px;}
+.jipiao-search-box .textbox{ border: 0 none; height: 20px; line-height: 20px;}
+.jipiao-search-box .swap-wrap{ margin: 0 15%; position: relative; _zoom: 1;}
+.jipiao-search-box .swap-wrap .sw-border{ border-top: 1px solid #aaa; position: absolute; left: 0; top: 50%;}
+.jipiao-search-box .btn-swap{ background: #aaa; display: inline-block; font-size: 13px; height: 20px; line-height: 20px; width: 20px; position: relative;}
+.jipiao-search-box .btn-swap:hover{ background: #f93868;}
+.jipiao-search-box .btn-search{ background: #f93868; border: 0 none; border-radius: 4px; height: 35px; line-height: 35px; width: 24.05%; position: absolute; right: 1px;}
+.jipiao-search-box .btn-search:hover{ background: #e0325d;}
+/*** jipiao-search-box end ***/
+
+.index-main{ margin-top: 25px;}
+.index-main .main-hd{ border-bottom: 2px solid #2fa6e5;}
+.index-main .main-hd .icon-aircraft{ background-image: url(/content/v1/images/jipiao/icon23.png); height: 22px; width: 43px;}
+.index-main .main-hd .hd-cont{ color: #039;}
+
+.index-main .side{ width: 26.89%;}
+.index-main .main-box{ margin-right: 26.89%;position: relative;z-index:1;}
+.index-main .air-ticket-item{ float: left; width: 31.034%; margin-top: 20px; margin-right: 2.298%; _display: inline;}
+.index-main .air-ticket-item .ati-inner{ background: #fff; border: 1px solid #dcdcdc; display: block; height: 85px; padding: 30px 10px;}
+.index-main .air-ticket-item .ati-inner:hover{ background: #f0faff;}
+.index-main .air-ticket-item .icon-aircraft{ background-image: url(/content/v1/images/jipiao/icon24.png); height: 14px; width: 41px;}
+.index-main .air-ticket-item .item-icon{ margin: 0 40%;}
+.index-main .air-ticket-item .item-middle{ padding: 5px 0; position: relative;}
+.index-main .air-ticket-item .line-icon{ border-top: 1px solid #ccc; position: absolute; left: 0; top: 50%; _top: 17px;}
+.index-main .air-ticket-item .transfer-icon{ background: #fff; border: 1px solid #bbb; border-radius: 50%; display: inline-block; height: 22px; line-height: 22px; width: 22px; position: relative;}
+.index-main .air-ticket-item .item-date{ padding-top: 6px;}
+.index-main .air-ticket-item .price-mod{ color: #999;}
+.index-main .air-ticket-item .price{ color: #f93868;}
+
+.special-ticket-tab .main-hd{ margin-right: 2.299%;}
+.special-ticket-tab .hd-list{ margin-left: 135px;}
+.special-ticket-tab .hd-list li{ cursor: pointer; float: left; padding: 10px 0; position: relative; *height: 14px; _padding: 5px 0;z-index:1;}
+.special-ticket-tab .hd-list em{ border-left: 1px solid #aaa; display: inline-block; padding: 0 10px;}
+.special-ticket-tab .hd-list .arrow-icon{ border: 0 solid #f0f0f0; border-bottom-color: #2fa6e5; border-top: none; margin-left: -5px; position: absolute; left: 50%; bottom: 0; _bottom: -3px;}
+.special-ticket-tab .hd-list .on,
+.special-ticket-tab .hd-list li:hover{ color: #2fa6e5;}
+.special-ticket-tab .hd-list .on .arrow-icon{ border-width: 5px;}
+.special-ticket-tab .hd-list .first em{ border-left: none;}
+/* index end */
+
+/* list start */
+.jipiao-list-search-wrap{ margin: 20px 0;}
+.jipiao-list-search .select-box{ border: 1px solid #bdbdbd; height: 22px; line-height: 22px;}
+.jipiao-list-search .textbox{ border: 1px solid #bdbdbd; height: 22px; line-height: 22px;}
+.jipiao-list-search .btn-search{ background: #2fa6e5; border: 0 none; border-radius: 4px; height: 26px; line-height: 24px; padding: 0 7px;}
+.jipiao-list-search .btn-search:hover{ background: #2a95ce;}
+.jipiao-list-search .search-bar{ background: #f0faff; border: 1px solid #6ecdff; padding: 10px 0;}
+.jipiao-list-search .search-bar .side-left{ margin-left: 1.683%; *display: inline;}
+.jipiao-list-search .search-bar .side-right{ margin-right: 1.683%; padding-top: 8px; *display: inline;}
+.jipiao-list-search .search-bar .bar-main{ margin: 0 70px 0 90px;}
+.jipiao-list-search .search-bar .bar-main .tb-wrap{display:inline;position: relative;}
+.jipiao-list-search .search-bar .bar-main .tb-wrap .after-calendar{position: absolute;left:0; _left: 5px; top: 21px; *top: 33px; _top: 35px;}
+.jipiao-list-search .search-bar .bar-main .tb-wrap .after-calendar th{background:#eee;line-height: 22px;}
+.jipiao-list-search .search-bar .bar-main li.line{ padding: 10px 0;}
+.jipiao-list-search .search-bar .bar-main li.line .fade-on{opacity: 0.5; filter: alpha(opacity=50); }
+.jipiao-list-search .search-bar .textbox{ width: 15%; margin-right: 1.2%; padding: 0 0.486%; *width: 14.7%; }
+.jipiao-list-search .search-bar .select-box{ margin-right: 1.5%;}
+.jipiao-list-search .search-bar .bar-main .cities-select-mod{ border: 1px solid #2fa6e5; width: 508px; position: absolute; left: 0; _left: 5px; top: 21px; *top: 33px; _top: 35px; z-index: 10;}
+.jipiao-list-search-wrap .search-fixed{ background: #fafdfe; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3); width: 100%; position: fixed; left: 0; top: 0; z-index: 100; _position: absolute;}
+.jipiao-list-search-wrap .search-fixed .search-bar{ background: none; border: none;}
+
+.jipiao-list-search .datalist-box{display: inline-block;zoom:1; *display: inline;width: 35%;position: relative;z-index: 100;}
+.jipiao-list-search .datalist-box input.textbox{width:180px;}
+.jipiao-list-search .datalist-box .airline-select{position: absolute;left:70px;top:24px;}
+
+.jipiao-list-search .datalist-box .airline-select{ border: 1px solid #fb88a4; width: 250px;}
+.jipiao-list-search .datalist-box .airline-select .al-hd{ background: #fb88a4; padding: 5px 0;}
+.jipiao-list-search .datalist-box .airline-select li{ position: relative;cursor: pointer;padding:2px 3px;}
+.jipiao-list-search .datalist-box .airline-select li.on{ background: #fff4f7; color: #d9284d;font-weight:bold;}
+.jipiao-list-search .datalist-box .airline-select .item-code{ position: absolute; right: 5px;}
+
+.list-main .control-checkbox{ background-image: url(/content/v1/images/hotel/checkbox.png); cursor: pointer; height: 18px; width: 18px;}
+.list-main .control-checkbox input{ display: none;}
+.list-main .control-checkbox-on{ background-image: url(/content/v1/images/hotel/checkbox-on.png);}
+
+.list-main .side{ width: 26.89%;}
+.list-main .side-filter{ border: 1px solid #dcdcdc;}
+.list-main .side-filter .icon-filter{ background-image: url(/content/v1/images/jipiao/icon8.png); height: 26px; width: 27px;}
+.list-main .side-filter .clear-all{ border: 1px solid #dcdcdc; border-radius: 2px; padding: 2px 5px;}
+.list-main .side-filter .clear-all:hover{ background: #2fa6e5; border-color: #2fa6e5; color: #fff;}
+.list-main .side-filter .sf-hd{ background: #fff; background: -webkit-linear-gradient(top, #fff, #f4f4f4); background: -moz-linear-gradient(top, #fff, #f4f4f4); background: -ms-linear-gradient(top, #fff, #f4f4f4); background: -o-linear-gradient(top, #fff, #f4f4f4); background: linear-gradient(top, #fff, #f4f4f4); border-bottom: 2px solid #2fa6e5; padding: 7px 10px 5px;}
+.list-main .side-filter .filter-item{ border-top: 1px dashed #dcdcdc; padding: 15px;}
+.list-main .side-filter .filter-item:nth-child(2n){ background: #fbfbfb;}
+.list-main .side-filter .filter-item:hover{ background: #f0faff;}
+.list-main .side-filter .filter-item p{ padding-bottom: 3px;}
+.list-main .side-filter .filter-item p label{cursor:pointer;}
+.list-main .side-filter dl.first{ border-top: none;}
+
+.list-main .main-box{ margin-left: 28.571%; zoom: 1;}
+.list-main .visibility-fix{ visibility: visible;}
+
+.list-main .hover-wrap{ display: inline-block; position: relative;}
+.list-main .text-hover{ cursor: help; line-height: 1.2;}
+.list-main .text-hover:hover{ border-bottom: 1px dotted #2fa6e5;}
+.list-main .hover-tips{ border: 1px solid #2fa6e5; display: none; position: absolute; left: 0; top: 19px; z-index: 10;}
+.list-main .tips-bar{ white-space: nowrap;}
+.list-main .hover-wrap-on{ z-index: 10;}
+.list-main .hover-wrap-on .hover-tips{ display: block;}
+
+/*** flight-filtrate-mod start ***/
+.flight-filtrate-mod .ffm-hd{ border: 1px solid #dcdcdc; border-bottom: 2px solid #2fa6e5; height: 23px; padding: 8px 0 7px;}
+.flight-filtrate-mod .ffm-hd .icon-tips{ background-image: url(/content/v1/images/jipiao/icon11.png); height: 16px; width: 16px;}
+.flight-filtrate-mod .ffm-hd .icon-journey{ background-image: url(/content/v1/images/jipiao/icon9.png); height: 9px; width: 41px;}
+.flight-filtrate-mod .ffm-hd .icon-double{ background-image: url(/content/v1/images/jipiao/icon10.png); height: 17px; width: 41px;}
+.flight-filtrate-mod .ffm-hd .hd-side{ padding-top: 3px;}
+.flight-filtrate-mod .ffm-bd{ border: 1px solid #dcdcdc; border-top: none;}
+.flight-filtrate-mod .sort-bar{ background: #f0efef;}
+.flight-filtrate-mod .sort-bar .btn-switch{ background: #fff; border: 1px solid #2fa6e5; border-radius: 12px; display: inline-block; height: 26px; line-height: 26px; width: 102px;}
+.flight-filtrate-mod .sort-bar .btn-switch em{ color: #2fa6e5; display: block; margin-left: 25px;}
+.flight-filtrate-mod .sort-bar .switch-icon{ background: #2fa6e5; border-radius: 50%; display: inline-block; float: left; height: 20px; width: 20px; margin: 3px 0 0 4px;}
+.flight-filtrate-mod .sort-bar .bar-side .on{ background: #2fa6e5;}
+.flight-filtrate-mod .sort-bar .bar-side .on em{ color: #fff; margin: 0 25px 0 0;}
+.flight-filtrate-mod .sort-bar .bar-side .on .switch-icon{ background: #fff; float: right; margin: 3px 4px 0 0;}
+.flight-filtrate-mod .sort-bar .bar-main{ margin-right: 125px;}
+.flight-filtrate-mod .sort-bar .icon-sort{ background-image: url(/content/v1/images/jipiao/icon12.png); height: 16px; width: 10px;}
+.flight-filtrate-mod .sort-bar .bm-hd{ margin: 0 10px;}
+.flight-filtrate-mod .sort-bar .sort-item{ cursor: pointer; display: inline-block; text-align: center; width: 86px; margin: 0 10px; padding: 5px 0; vertical-align: middle;}
+.flight-filtrate-mod .sort-bar .sort-item:hover,
+.flight-filtrate-mod .sort-bar .bar-main .on{ background: #2fa6e5; color: #fff;}
+.flight-filtrate-mod .sort-bar .sort-item:hover .sort-up,
+.flight-filtrate-mod .sort-bar .bar-main .on .sort-up{ background-image: url(/content/v1/images/jipiao/icon12-up.png);}
+.flight-filtrate-mod .sort-bar .sort-item:hover .sort-down,
+.flight-filtrate-mod .sort-bar .bar-main .on .sort-down{ background-image: url(/content/v1/images/jipiao/icon12-down.png);}
+.flight-filtrate-mod .fruitless-box{ padding: 120px 0;}
+.flight-filtrate-mod .fruitless-box .icon-fruitless{ background-image: url(/content/v1/images/jipiao/icon25.png); height: 170px; width: 148px;}
+
+/****** filtrate-list start ******/
+.flight-filtrate-mod .filtrate-list .price{ color: #f93868;}
+.flight-filtrate-mod .filtrate-list .filtrate-item{ border-top: 1px solid #6ecdff;}
+.flight-filtrate-mod .filtrate-list .first{ border-top: none;}
+.flight-filtrate-mod .filtrate-list .ii-side{ width: 83px;}
+.flight-filtrate-mod .filtrate-list .ii-main{ margin-right: 100px; zoom: 1;}
+
+.flight-filtrate-mod .flight-info{ padding: 0 10px; position: relative; *vertical-align: middle;}
+.flight-filtrate-mod .flight-info:hover{ background: #f0faff;}
+.flight-filtrate-mod .flight-info .flight-info-item{ border-top: 1px dashed #dcdcdc; padding: 10px 0;}
+.flight-filtrate-mod .flight-info .first{ border-top: none;}
+.flight-filtrate-mod .flight-info .icon-time{ background-image: url(/content/v1/images/jipiao/icon13.png); height: 13px; width: 13px;}
+.flight-filtrate-mod .flight-info .icon-journey{ background-image: url(/content/v1/images/jipiao/icon14.png); height: 8px; width: 225px;}
+.flight-filtrate-mod .flight-info .icon-transfer{ background-image: url(/content/v1/images/jipiao/icon15.png); height: 8px; width: 225px;}
+.flight-filtrate-mod .flight-info .btn-switch{ background: #2fa6e5; border-radius: 4px; cursor: pointer; display: inline-block; height: 22px; width: 70px;}
+.flight-filtrate-mod .flight-info .btn-switch .arrow-icon{ border-color: #2fa6e5; border-top-color: #fff; border-bottom: none; position: relative; top: -2px;}
+.flight-filtrate-mod .flight-info .btn-switch:hover{ background: #2a95ce;}
+.flight-filtrate-mod .flight-info .btn-switch:hover .arrow-icon{ border-color: #2a95ce; border-top-color: #fff;}
+.flight-filtrate-mod .flight-info .ii-side{ margin-top: -49px; position: absolute; right: 10px; top: 50%;}
+.flight-filtrate-mod .flight-info .ii-side .on .arrow-icon{ border-bottom: 5px solid #fff; border-top: none; top: -7px;}
+.flight-filtrate-mod .flight-info .ii-side .on:hover .arrow-icon{ border-bottom-color: #fff;}
+.flight-filtrate-mod .flight-info .aircraft-info-items{ width: 140px;}
+.flight-filtrate-mod .flight-info .ai-side{ line-height: 36px; width: 40px;}
+.flight-filtrate-mod .flight-info .ai-main{ margin-left: 45px;}
+.flight-filtrate-mod .flight-info .cabin-info{ width: 14%; padding-top: 25px;}
+.flight-filtrate-mod .flight-info .fly-info{ margin: 0 14% 0 140px; zoom: 1;}
+.flight-filtrate-mod .flight-info .fly-info .airport-bar{ *padding-top: 5px;}
+.flight-filtrate-mod .flight-info .route-cont{ margin: 0 31%;}
+.flight-filtrate-mod .flight-info .transfer-list{ cursor: default; margin-left: 41%;}
+.flight-filtrate-mod .flight-info .transfer-list .transfer-icon{ background: #2fa6e5; border-radius: 3px; padding: 0 1px 0 2px;}
+.flight-filtrate-mod .flight-info .transfer-info-items{ display: none; height: 0; width: 0; position: relative; z-index: 10;}
+.flight-filtrate-mod .flight-info .transfer-info-items .tib-inner{ border: 1px solid #6ecdff; line-height: 1.8; padding: 5px 10px; position: absolute; left: 0; top: 0; word-break: break-all; word-wrap: break-word; white-space: nowrap;}
+.flight-filtrate-mod .flight-info .transfer-info-items .arrow-icon{ display: inline-block; height: 7px; width: 14px; overflow: hidden; position: absolute; left: 35px; top: -7px; z-index: 1;}
+.flight-filtrate-mod .flight-info .transfer-info-items .arrow-icon em{ color: #6ecdff; position: absolute; left: 0; top: 0;}
+.flight-filtrate-mod .flight-info .transfer-info-items .arrow-icon i{ color: #fff; position: absolute; left: 0; top: 1px;}
+.flight-filtrate-mod .flight-info .transfer-info-items .transfer-info-item{ border-top: 1px dashed #dcdcdc; padding: 5px;}
+.flight-filtrate-mod .flight-info .transfer-info-items .first{ border-top: none;}
+
+.flight-filtrate-mod .other-info-items{ display: none;}
+.flight-filtrate-mod .other-info-items .btn-order{ background: #f93868; border-radius: 4px; cursor: pointer; display: inline-block; height: 22px; width: 70px;}
+.flight-filtrate-mod .other-info-items .btn-order:hover{ background: #e0325d;}
+.flight-filtrate-mod .other-info-item:hover{ background: #f0faff;}
+.flight-filtrate-mod .other-info-item .oii-inner{ border-top: 1px solid #dcdcdc; margin: 0 10px; padding: 15px 0;}
+.flight-filtrate-mod .other-info-item .ii-main{ margin-left: 100px;}
+.flight-filtrate-mod .other-info-item .price{ margin-left: 20%;}
+/****** filtrate-list end ******/
+
+/*** flight-filtrate-mod end ***/
+
+.pop-tips-mod{ height: 300px; width: 570px; margin: -150px 0 0 -285px; position: fixed; left: 50%; top: 50%; z-index: 1000; _position: absolute;}
+.pop-tips-mod .pop-close{ font-size: 34px; height: 15px; width: 15px; overflow: hidden; position: absolute; right: 23px; top: 23px; z-index: 10;}
+.pop-tips-mod .pop-close:hover{ color: #f93868;}
+.pop-tips-mod .pop-close .close-icon{ position: absolute; left: -2px; top: -9px; _top: -10px;}
+.pop-tips-mod .tips-box{ padding: 70px 60px 60px;}
+.pop-tips-mod .tips-box .icon-uz{ background-image: url(/content/v1/images/jipiao/icon26.png); height: 170px; width: 120px;}
+.pop-tips-mod .tips-box .tips-cont{ margin-left: 150px;}
+.pop-tips-mod .tips-box .check-info{ color: #fb84a2; line-height: 170px;}
+.pop-tips-mod .tips-box .failure-ifno{ padding-top: 30px;}
+/* list end */
+
+/* order detail start */
+.jipiao-order-detail .ml20{ margin-left: 20px;}
+.jipiao-order-detail .ml50{ margin-left: 50px;}
+.jipiao-order-detail .order-detail-items{ border: 1px solid #dcdcdc; margin-top: 20px; padding: 0 10px;}
+.jipiao-order-detail .order-detail-items .odi-hd{ border-bottom: 1px solid #dcdcdc; padding: 5px 0;}
+.jipiao-order-detail .order-detail-items .odi-hd .hd-cont{ display: inline-block;}
+.jipiao-order-detail .order-detail-items .link-back:hover{ color: #f93868;}
+.jipiao-order-detail .order-detail-items .btn-pay{ background: #f93868; border-radius: 5px; display: inline-block; height: 30px; line-height: 30px; padding: 0 20px;}
+.jipiao-order-detail .order-detail-items .btn-pay:hover{ background: #e0325d;}
+
+.jipiao-order-detail .order-info-box{ background: #f0faff;}
+.jipiao-order-detail .order-info-box td{ padding: 5px 10px;}
+.jipiao-order-detail .order-info-box .price{ color: #f93868;}
+.jipiao-order-detail .order-info-box .arrow-icon{ border-color: #f0faff; border-bottom-color: #2fa6e5; border-top: none;}
+.jipiao-order-detail .order-info-box .detail-info{ cursor: help; display: inline-block; position: relative;}
+.jipiao-order-detail .order-info-box .detail-info-box{ border: 1px solid #e5e5e5; padding: 5px 10px 0; position: absolute; right: 0; top: 30px;}
+.jipiao-order-detail .order-info-box .detail-info-box td{ padding: 5px 15px;}
+.jipiao-order-detail .order-info-box .detail-info-on{ z-index: 10;}
+.jipiao-order-detail .order-info-box .detail-info-on .detail-info-box{ display: block;}
+
+.jipiao-order-detail .flight-info-items{ padding: 0 15px;}
+.jipiao-order-detail .flight-info-items .flight-info-item{ border-top: 1px dashed #dcdcdc; padding: 10px 0 15px;}
+.jipiao-order-detail .flight-info-items .first{ border-top: none;}
+.jipiao-order-detail .flight-info-items .fii-bd{ margin-top: 20px;}
+.jipiao-order-detail .flight-info-items .flight-icon{ width: 80px;}
+
+.jipiao-order-detail .info-table{ background: #f8f9f9; border: 1px solid #ebebeb; border-top: none;}
+.jipiao-order-detail .info-table th,
+.jipiao-order-detail .info-table td{ padding: 7px;}
+.jipiao-order-detail .info-table th{ background: #f0faff;}
+
+.jipiao-order-detail .rule-list li{ padding: 5px 0;}
+/* order detail end */
+
+.city-filter-mod{position:absolute;background:#fff;border:1px solid #f93868;*width:240px;min-width:240px;z-index:101;box-shadow:0 0 5px rgba(0,0,0,.5);display:none;overflow:hidden;max-height:330px;left:-1px;top:20px;}
+.city-filter-mod li{line-height:22px;height:22px;padding:0 5px;cursor:pointer;}
+.city-filter-mod li.li-none{color:#f93868;}
+.city-filter-mod .on{background:#ffecf1;color:#f93868;font-weight:bold;}
+.city-filter-mod .s1{float:left}
+.city-filter-mod .s2{float:right;font-family:Verdana;font-size:10px;}
+
+.jipiao-list-search .city-filter-mod{left:0;top:21px;}

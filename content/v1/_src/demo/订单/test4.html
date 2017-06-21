@@ -1,0 +1,422 @@
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='//r03.uzaicdn.com/content/zhifuv2/css/travel.css' rel='stylesheet' />
+    <!-- <link rel="stylesheet" type="text/css" href="/content/zhifuv2/css/travel.css"> -->
+    <link rel="stylesheet" href="//r.uzaicdn.com/content/zhifuv2/css/pay-bj.css" />
+    <title></title>
+</head>
+<body>
+    
+    <div class="book-top">
+        <div class="top-con clearfix w">
+            <div class="top-inner clearfix">
+                <div class="book-logo fl">
+                    <a href="http://www.uzai.com" class="block" target="_blank">
+                        <div class="logo-con png"></div>
+                    </a>
+                </div>
+                <div class="tel fr clearfix">
+                    <div class="phone png fl"></div>
+                    <div class="p-number fr">
+                        <p class="p1">预订热线：9:00～21:00</p>
+                        <p class="p2 b">1010-9898</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="IsOrder2017" value="1" />
+    <div class="book-progress w">
+        <ul class="p-con clearfix">
+            <li class="p-list p-list-1 fl list-over">
+                <p class="cricle-line"></p>
+                <div class="list-inner">
+                    <div class="cricle">
+                        <p class="p1 b">01</p>
+                        <i class="book-icon1 png"></i>
+                    </div>
+                    <p class="p2">填写信息与核对</p>
+                    <p class="p3"></p>
+                </div>
+            </li>
+            <li class="p-list p-list-2 fl list-ing">
+                <p class="cricle-line"></p>
+                <div class="list-inner">
+                    <div class="cricle">
+                        <p class="p1 b">02</p>
+                        <i class="book-icon1 png"></i>
+                    </div>
+                    <p class="p2">在线支付</p>
+                    <p class="p3"></p>
+                </div>
+            </li>
+            <li class="p-list p-list-3 fl">
+                <div class="list-inner">
+                    <div class="cricle">
+                        <p class="p1 b">03</p>
+                        <i class="book-icon1 png"></i>
+                    </div>
+                    <p class="p2">成功提交</p>
+                    <p class="p3"></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <!--订单信息 start-->
+    
+
+         <div class='main_card_t'>
+             <div class='main_card_t_left'>
+                  <p class='title'>&lt;【非标】新加坡+普吉岛6晚8日（测试团）&gt;送无自费，新航直飞，普吉五星酒店+新加坡精品酒店，鱼尾狮公园，滨海艺术中心</p>
+                   
+                      <div class='subtitle'><span></span><span class='c2fa6e5'></span></div>
+                   
+                  <div class='detail'>
+                      <span>订单号：<i>C2810842429100</i></span>
+                      
+                         <span>出发城市：<i>上海</i></span>
+                       
+                      <div class="clear"></div>
+                       
+                        <span>出发日期：<i>2017年09月13日</i></span>
+                        <span>出行人数：<i>1成人    0儿童</i></span>
+                       
+                     
+                  </div>
+             </div>
+             <div class='main_card_t_right'>
+                  <div class='shop_cart'>
+                      <span class='shopping_cart'>应付金额：</span>
+                      <span class='num'>￥<span class='f24'>18501.00</span></span>
+                  </div>
+             </div>
+             <div class='clear'></div>
+         </div>
+    <!--订单信息 end-->
+    <form id="formpay" method="post" action="/BaosteelPayNew/" target="_self" class="pay-tab">
+    <div class='main_card_m'>
+        <div class='main_card_m_top'>
+            <span class='supervise' style="cursor: pointer" onclick="window.open('/quick_pay_listNew')">
+                管理我的快捷支付</span>积分支付</div>
+        <div class="bd">
+            <div id="tagPay">
+                <div id="tagContentBG" class="item">
+                    <div class="item-con">
+                        <ul class="item-details">
+                            <li class="detail-list clearfix dl1">
+                                <div class="label-box fl">
+                                    <label class="tel-number">
+                                        <span class="s1">手机号：</span></label>
+                                    <input class="phone input-box" type="tel" name="phone" id="phone" value="13564898797"
+                                        maxlength="11" placeholder="请输入您的手机号" readonly="value">
+                                </div>
+                                <div class="phone-tips label-tips hide clearfix">
+                                    <p class="p1 fl">
+                                        请输入11位正确手机号码</p>
+                                </div>
+                            </li>
+                            <li class="detail-list clearfix dl2">
+                                <div class="label-box fl">
+                                    <label class="jf-number">
+                                        <span class="s1">使用积分数量：</span></label>
+                                    <input class="jf input-box" id="jf" MaxLength="8" type="tel" name="jf" value="">
+                                </div>
+                                <div class="code-btn fl">
+                                    <p class="p1">
+                                        获取验证码</p>
+                                    <p class="p2 hide">
+                                        <i>60</i></p>
+                                </div>
+                                <div class="jf-tips label-tips hide clearfix">
+                                    <p class="p1 fl">
+                                        积分不足,请充值</p>
+                                </div>
+                            </li>
+                            <li class="detail-list clearfix dl3 hide">
+                                <div class="label-box fl">
+                                    <label class="code-number">
+                                        <span class="s1">验证码：</span></label>
+                                    <input class="code input-box" type="tel" name="code" value="" maxlength="6">
+                                </div>
+                                <div class="code-tips label-tips hide clearfix">
+                                    <p class="p1 fl">
+                                        请输入正确验证码</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="btn-bg-box">
+                            <input value="立即支付" class="btn-out" type="submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" name="hdOrder" id="hdOrder" value="708615" />
+    <input type="hidden" name="hdIsSuccess" id="hdIsSuccess" value="true" />
+    <input type="hidden" name="hdMsg" id="hdMsg" value="007" />
+    <input type="hidden" name="hdPrice" id="hdPrice" value="18501.00" />
+    <input type="hidden" name="hdOuttradeno" id="hdOuttradeno" value="708615" />
+    <input type="hidden" name="hdOrderCode" id="hdOrderCode" value="C2810842429100" />
+    </form>
+    <!--提示信息Start-->
+    <div class='storage'>
+        <img src='//r03.uzaicdn.com/content/zhifuv2/images/wait.gif' />正在确认库存，请稍后......</div>
+    <!--提示信息end-->
+    <!--付款信息Start-->
+    <div class='body_shade'>
+    </div>
+    <div class='body_shade_show' id="fukuan">
+        <h2>
+            付款确认</h2>
+        <p>
+            完成付款后，请根据您的情况点击下面的按钮</p>
+        <div class='shade_buttom'>
+            <button class='right' onclick="GetPayStatus('N','680623', 'zheng', 'C618580623')">
+                付款不成功，重新支付</button>
+            <button onclick="GetPayStatus('Y','680623', 'zheng', 'C618580623')">
+                已完成付款</button>
+            <button id="youhuiBUtton" onclick="GetPayStatus('YH','680623', 'zheng', 'C618580623')">
+                修改优惠方案及支付方式</button>
+        </div>
+        <a href="javascript:void(0)" class='close'></a>
+    </div>
+    <div class='body_shade_show' id="youhui">
+        <h2>
+            请修改优惠方案</h2>
+        <p>
+            您选择的优惠方案已不可用，请重新选择优惠方案</p>
+        <div class='shade_buttom'>
+            <button onclick="window.location.href='/proc_youhui/756AB007243974DFF55774DF697BD001'">
+                确定</button>
+        </div>
+        <a href="javascript:void(0)" class='close'></a>
+    </div>
+    <!--支付渠道不可用的弹窗-->
+    <div class='body_shade_show' id="youhui_NO">
+        <h2>
+            请修改优惠方案</h2>
+        <p>
+            您选择的优惠方案仅可在<lable id="lblPlat"></lable>支付，请根据您的情况点击下面的按钮</p>
+        <div class='shade_buttom'>
+            <button onclick="close1()">
+                关闭</button>
+            <button onclick="window.location.href='/proc_youhui/756AB007243974DFF55774DF697BD001'">
+                修改优惠方案及支付方式</button>
+        </div>
+        <a href="javascript:void(0)" class='close' onclick="close1()"></a>
+    </div>
+    <input type="hidden" id="PageType" value="1" />
+    <input type="hidden" value='0' id="CheckBankPreferentialId" />
+    <!--付款信息end-->
+    <!-- <script type='text/javascript' src='//r03.uzaicdn.com/content/zhifuv2/scripts/jquery-1.11.1.min.js?20161115'  ></script> -->
+    <script src="//r03.uzaicdn.com/content/v1/scripts/core.js?v=20161201"></script>
+    <script type='text/javascript' src='//r03.uzaicdn.com/content/zhifuv2/scripts/travel.js?20161115'></script>
+    <script type='text/javascript' src='//r03.uzaicdn.com/content/zhifuv2/scripts/fournew_proc.js?20161115'></script>
+    <script type='text/javascript' src='//r03.uzaicdn.com/content/yudingv2/scripts/core_new.js?20161115'></script>
+    <script type='text/javascript' src='//r03.uzaicdn.com/content/zhifuv2/scripts/pay-bj.js'></script>
+    
+    
+    <div class="simple-footer">
+        
+<!----FOOTER START--->
+    <div class="sp-footer">
+        
+<div class="foot-copyright w">
+    <span>上海悠哉国际旅行社有限公司</span>
+    <span>Copyright 2005-2016 Uzai.com</span>
+    <span>许可证编号:L-SH-CJ00112</span>
+    <span class="foot-aboutlink"><a target="_blank" href="http://www.miibeian.gov.cn">沪ICP备06021606号</a></span>
+    <span>悠哉呼叫中心来电显示号码为：<em class="red">10109898</em></span>
+</div>
+<div class="foot-aboutlink w">
+    <span><a href="http://www.uzai.com" rel="nofollow">众信旅游悠哉网</a></span>
+    <span><a target="_blank" href="http://www.uzai.com/history/" rel="nofollow">悠哉历程</a></span>
+    <span><a target="_blank" href="http://www.uzai.com/about/privacy/" rel="nofollow">隐私保护</a></span>
+    <span><a target="_blank" class="red" href="http://www.uzai.com/about/RecruitUtour" rel="nofollow">诚聘英才</a></span>
+    <span><a target="_blank" href="http://www.uzai.com/utour-about/" rel="nofollow">关于我们</a></span>
+    <span><a target="_blank" class="red" href="http://www.uzai.com/about/utour-store#f" rel="nofollow">营业网点</a></span>
+    <span><a target="_blank" href="http://www.uzai.com/sitemap/">网站地图</a></span>
+    <span><a target="_blank" href="http://www.uzai.com/sitelinks/">友情链接</a></span>
+    <span><a target="_blank" href="http://www.uzai.com/qa/helplist-9.html" rel="nofollow">商务合作</a></span>
+    
+    <span class="noborder"><a id="j_advise" href="javascript:void(0);" rel="nofollow">意见反馈</a></span>
+</div>
+
+    </div>
+<!----FOOTER PART END---->
+<div class="footerjs">
+
+
+<!--ve营销-->
+
+<!--DSP广告-->
+
+<!--国双科技 Gridsum tracking code begin. -->
+<script type='text/javascript'>
+    var _gsq = _gsq || [];
+    (function () {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = (location.protocol == 'https:' ? 'https://ssl.' : 'http://static.') + 'gridsumdissector.com/js/Clients/GWD-002793-B024A5/gs.js';
+        var firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(s, firstScript);
+    })();
+</script>
+<!--Gridsum tracking code end. -->
+<!--晶赞营销代码开始-->
+<script type="text/javascript">
+    if ("undefined" == typeof __zp_tag_params) {
+        var __zp_tag_params = {
+            pagetype: "other"
+        };
+    }
+    (function (param) {
+        var c = { query: [], args: param || {} };
+        c.query.push(["_setAccount", "639"]); //固定参数
+        (window.__zpSMConfig = window.__zpSMConfig || []).push(c);
+        var zp = document.createElement("script"); zp.type = "text/javascript"; zp.async = true;
+        zp.src = ("https:" == document.location.protocol ? "https:" : "http:") + "//cdn.zampda.net/s.js";
+        var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(zp, s);
+    })(window.__zp_tag_params);
+</script>
+<!--晶赞营销代码结束-->
+<!--ptengine基础代码开始-->
+<script type="text/javascript">
+    window._pt_lt = new Date().getTime();
+    window._pt_sp_2 = [];
+    _pt_sp_2.push('setAccount,49512ddd');
+
+    //新增用户对应Ptengine用户ID 高银辉 2016-11-21 
+    if (_uzw.cookie.get("user")) { 
+        var user = _uzw.cookie.get("user");
+        var reg = new RegExp("(^|&)PtengineUserId=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r  = user.match(reg);  
+        var user_PtengineUserId = r == null ? "" : r[2];
+        if (user_PtengineUserId != "")
+            {
+            _pt_sp_2.push('setCustomVar,def01,svid,value,' + user_PtengineUserId + ',0');
+        }
+    }
+
+    var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+
+    (function () {
+        var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
+        atag.src = _protocol + 'js.ptengine.cn/js/pta.js';
+        var stag = document.createElement('script'); stag.type = 'text/javascript'; stag.async = true;
+        stag.src = _protocol + 'js.ptengine.cn/js/pts.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(atag, s); s.parentNode.insertBefore(stag, s);
+    })();
+</script>
+<!--ptengine基础代码结束-->
+<!--品友-->
+<script type="text/javascript">
+    var _py = _py || [];
+    _py.push(['a', '3Os..3Y-1Ql4EXqRmqOaJOvnG1X']);
+    _py.push(['domain', 'stats.ipinyou.com']);
+    _py.push(['e', '']);
+-function (d) {
+    var s = d.createElement('script'),
+        e = d.body.getElementsByTagName('script')[0]; e.parentNode.insertBefore(s, e),
+        f = 'https:' == location.protocol;
+    s.src = (f ? 'https' : 'http') + '://' + (f ? 'fm.ipinyou.com' : 'fm.p0y.cn') + '/j/adv.js';
+} (document);
+</script>
+<noscript>
+    <img src="//stats.ipinyou.com/adv.gif?a=3Os..3Y-1Ql4EXqRmqOaJOvnG1X&e=" style="display: none;" />
+</noscript>
+<!--Google js-->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-27817301-1', 'uzai.com');
+    var full_url = window.location.pathname + window.location.search + window.location.hash;
+
+    ga('send', 'pageview', full_url);
+</script> 
+
+<!--baidu js-->
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?56452a885539b585d447916fa4bfca59";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+<!--众信 baidu js-->
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?c0fb73081cbc7d5e7d68bbcc113343e9";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+﻿<!--seo 自动推送代码-->
+
+<!-- 360 begin-->
+<script type="text/javascript">
+    var _mvq = _mvq || [];
+    _mvq.push(['$setAccount', 'm-196944-0']);
+    _mvq.push(['$logConversion']);
+    (function () {
+        var mvl = document.createElement('script');
+        mvl.type = 'text/javascript';
+        mvl.async = true;
+        mvl.src = ('https:' == document.location.protocol ? 'https://static-ssl.mediav.com/mvl.js' : 'http://static.mediav.com/mvl.js');
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(mvl, s);
+    })();
+
+</script>
+<!--360 end -->
+<!-- 易博 begin-->
+<script type="text/javascript">
+    var _adwq = _adwq || [];
+    _adwq.push(['_setAccount', 'x4o4b']);
+    _adwq.push(['_setDomainName', '.uzai.com']);
+    _adwq.push(['_trackPageview']);
+
+    (function () {
+        var adw = document.createElement('script');
+        adw.type = 'text/javascript';
+        adw.async = true;
+        adw.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://s') + '.emarbox.com/js/adw.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(adw, s);
+    })();
+</script>
+<!-- 易博 end-->
+<!--Criteo begin -->
+<script type="text/javascript" src="//static.criteo.net/js/ld/ld.js" async=""></script>
+<!--Criteo end -->
+<!--99click begin -->
+
+<!--99click end -->
+
+</div>
+    </div>
+    
+</body>
+</html>

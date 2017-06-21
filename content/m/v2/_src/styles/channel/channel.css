@@ -1,0 +1,36 @@
+.g-mod-menu-wrap{ height: 58px;}
+.bg-white{ background: #fff;}
+.bdt{ border-top: 1px solid #ddd;}
+.bdb{ border-bottom: 1px solid #ddd;}
+
+.focus-slider-wrap{ position: relative;}
+.focus-slider-inner { width: 9999px; overflow: hidden; position: relative; -webkit-overflow-scrolling: touch; }
+.focus-slider{ overflow: hidden; position: relative;}
+.focus-slider .slider-item{ border-radius: 10px; float: left; overflow: hidden; position: relative;}
+.focus-slider .cont-bar{ background: rgba(0, 0, 0, 0.5); color: #fff; height: 35px; line-height: 35px; position: absolute; left: 0; bottom: 0;}
+.focus-slider .cont-bar .bar-side{ background: #e5004f; height: 100%;}
+.focus-slider .cont-bar .line-hd{ margin-right: 85px;}
+.focus-slider .direction{ background: rgba(0, 0, 0, 0.5); color: #fff; position: absolute; top: 8px; right: 0;}
+
+.mod-hd .hd-icon{ background: #e5004f; border-radius: 3px; display: inline-block; height: 16px; width: 5px;}
+.mod-hd .mt2{ margin-top: 2px;}
+.mod-hd .more{ position: relative;}
+.mod-hd .more:after { border: 1px solid #999; border-width: 0 1px 1px 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); content: " "; position: absolute; right: 0; top: 5px; width: 7px; height: 7px; }
+.visa-free-mod .destination-item{ position: relative;}
+.visa-free-mod .destination-item .item-cont{ color: #fff; text-shadow: 2px 2px 3px rgba(0,0,0,0.8); margin-top: -27px; position: absolute; top: 50%; left: 0;}
+
+.gallery-mod{ padding: 20px 17px;}
+.gallery-mod .gallery-item{ position: relative;}
+.gallery-mod .gallery-item:first-child{ width: 36.138%;}
+.gallery-mod .gallery-item:nth-child(2),
+.gallery-mod .gallery-item:nth-child(3){ width: 29.785%; margin-left: 2.145%;}
+.gallery-mod .gallery-item:nth-child(4){ width: 61.716%; margin: 2.145% 0 0 2.145%;}
+.gallery-mod .item-hd{ color: #fff; text-shadow: 2px 2px 3px rgba(0,0,0,0.8); position: absolute; left: 5px; top: 5px;}
+
+.line-list li { border-top: 1px solid #ddd; }
+.line-list li:first-child { border-top: none; }
+.line-list a { padding: 10px 0; }
+.line-list .pic { width: 60px; float: left; }
+.line-list .pic img { display: block; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+.line-list .txt { margin: 0 90px 0 70px; }
+.line-list .item-side{ padding-top: 15px;}

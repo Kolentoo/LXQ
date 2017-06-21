@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>悠哉旅游网</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/my/my.css?vddd" rel="stylesheet" />
+    <script src="/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/_src/core', '/content/m/v2/scripts/_src/my/my'], function (core, my) {
+            my.init();
+        });
+    </script>
+</head>
+<body>
+    <div class="max-w640 w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">签到</div>
+            </div>
+            <div class="d-r">
+            </div>
+        </header>
+        <section class="check-in">
+            <div class="check-in-box">
+                <div class="ci-top-bar clearfix">
+                    <div class="inner p10">
+                        <a href="#" class="bar-link f60 f14 fr pr10">获奖记录</a>
+                        <div class="bar-main ellipsis f666 f13">已有N个用户赚到U点......</div>
+                    </div>
+                </div>
+                <div class="ci-main tc">
+                    <dl class="user-box">
+                        <dd class="user-icon"><img src="/content/m/v2/images/my/p9.jpg" alt=""></dd>
+                        <dt class="user-name f15">John Smintm</dt>
+                    </dl>
+                    <div class="btn-bar mt10"><input type="button" value="开始签到" id="j_btnCheckin" class="btn-checkin white f15 g8"><!-- <input type="button" value="今日已签" id="j_btnCheckin" class="btn-checkin btn-disabled white f15 g8"> --></div>
+                </div>
+                <ul class="ci-info f999 tc mt10 clearfix">
+                    <li>今日获得：<i class="red f14">100</i>点</li>
+                    <li>剩余U点：<i class="red f14">1000</i>点</li>
+                </ul>
+            </div>
+            <div class="mod-hd bg-white mt10 clearfix">
+                <div class="fl pt10 pl10"><i class="hd-icon vm"></i><em class="f15 ml5 vm">U点抽大奖</em></div>
+                <span id="j_btnRule" class="btn-rule f60 f14 fr pl10 pr10"><i class="query-icon white tc mr5">？</i>签到规则</span>
+            </div>
+            <div class="activity-box">
+                <ul id="j_activityItems" class="activity-items bg-white f13 tc lh1 clearfix">
+                    <li>
+                        <span class="activity-item earn-ud">
+                            <p><img src="/content/m/v2/images/my/icon35.png" alt=""></p>
+                            <p class="ai-hd ellipsis f666">赚U点</p>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="#" class="activity-item">
+                            <p><img src="/content/m/v2/images/my/icon36.png" alt=""></p>
+                            <p class="ai-hd ellipsis f666">抽奖大转盘</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="activity-item">
+                            <p><img src="/content/m/v2/images/my/icon37.png" alt=""></p>
+                            <p class="ai-hd ellipsis f666">分享立减</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="activity-item">
+                            <p><img src="/content/m/v2/images/my/icon38.png" alt=""></p>
+                            <p class="ai-hd ellipsis f666">兑换商城</p>
+                        </a>
+                    </li>
+                </ul>
+                <div id="j_fullColumn" class="full-column">
+                    <div id="j_fullColumnSlider" class="full-column-slider">
+                        <div class="slider-inner clearfix">
+                            <div class="slider-item"><a href="#"><img src="/content/m/v2/images/my/p10.jpg" alt=""></a></div>
+                            <div class="slider-item"><a href="#"><img src="/content/m/v2/images/my/p15.jpg" alt=""></a></div>
+                        </div>
+                    </div>
+                    <p class="num tc">
+                        <em class="on"></em>
+                        <em></em>
+                    </p>
+                </div>
+                <dl class="prize-box">
+                    <dt class="prize-hd"><em class="hd-cont red f15">获奖名单</em><i class="icon-cloud"></i></dt>
+                    <dd class="prize-bd">
+                        <ul class="prize-listing white f14">
+                            <li>恭喜“青青笑了”成功领取iPhone6！</li>
+                            <li>恭喜“青青笑了”成功领取iPhone6！</li>
+                            <li>恭喜“青青笑了”成功领取iPhone6！</li>
+                            <li>恭喜“青青笑了”成功领取iPhone6！</li>
+                            <li>恭喜“青青笑了”成功领取iPhone6！</li>
+                        </ul>
+                        <i class="icon-part"></i>
+                    </dd>
+                    <dd class="prize-ft"></dd>
+                </dl>
+            </div>
+        </section>
+        <footer class="ft-copyright tc pt10 pb10">
+            <p>本次活动最终解释权归悠哉旅游所有</p>
+            <p class="f10">全国统一服务电话：４００－０００－８８８８</p>
+        </footer>
+    </div>
+    <div class="ci-mask"></div>
+    <div class="share-earn-currency tc">
+        <div class="icon-wrap"><span class="icon-currency"></span></div>
+        <div class="white f17 pt10">
+            <p>签到已完成</p>
+            <p>分享就能赚点数</p>
+        </div>
+    </div>
+    <div id="j_popRuleBox" class="pop-rule-box bg-white">
+        <div class="pop-hd white f18 tc">签到规则</div>
+        <div class="pop-bd">
+            <div class="cont-box f15 p10">
+                <p>抽奖规则抽奖规则抽奖规则抽奖规则抽奖规则抽奖规则抽</p>
+                <p>奖规则抽奖规则抽奖规则抽奖规则抽奖规则抽奖规则抽奖规则抽奖规则则抽奖规则抽奖规则抽奖规则抽奖规</p>
+            </div>
+        </div>
+        <span class="pop-close white f20 tc j_popClose"><i class="close-icon">&times;</i></span>
+    </div>
+    <div id="j_popUdAdd" class="pop-ud-add">
+        <div class="ud-add-box bg-white tc p10">
+            <div class="pop-hd"><img src="/content/m/v2/images/my/icon54.png" alt="" width="168"></div>
+            <!-- 分享成功标签 <div class="pop-hd"><img src="/content/m/v2/images/my/icon55.png" alt="" width="193"></div> -->
+            <div class="pop-bd pt10"><img src="/content/m/v2/images/my/p16.jpg" alt="" class="g10 vm"></div>
+            <span class="pop-close white f20 tc j_popClose"><i class="close-icon">&times;</i></span>
+        </div>
+    </div>
+    <div id="j_popShareBox" class="pop-share-box">
+        <div class="pop-hd white f18 tc">活动规则</div>
+        <div class="pop-bd">
+            <div class="cont-box f15 p10">
+                <p>1、每日分享可获10U点，分享后返回即可查看</p>
+                <p>2、分享后可进入“分享立减”板块查看专属线路特惠价格</p>
+            </div>
+            <dl class="share-box tc">
+                <input type="button" class="btn-share white f15 g8 noborder" value="立即分享" />
+            </dl>
+        </div>
+        <span class="pop-close white f20 tc j_popClose"><i class="close-icon">&times;</i></span>
+    </div>
+</body>
+</html>

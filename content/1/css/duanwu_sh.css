@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* ŒÂ“ª◊®º≠ 2012.02.28 by ¡ı“‰¡˙ */
+.back{background:none;}
+
+#swrap{width:990px; margin:0 auto;}
+#sbanner{height:286px; background:url(/content/subject/fiveone/image/banner.jpg) no-repeat; position:relative;}
+#sbanner .snav{position:absolute; top:255px; left:215px;}
+#sbanner .snav li{float:left; margin-right:3px;}
+#sbanner .snav li a{display:block; width:73px; height:31px; background:url(/content/subject/fiveone/image/nav.gif) no-repeat; text-align:center; line-height:30px; color:#08508B;}
+#sbanner .snav li a:hover{text-decoration:underline;}
+#sbanner .snav li a.curs{background:url(/content/subject/fiveone/image/nav_cur.gif) no-repeat; color:#fff;}
+
+#scontent{background:#9FDEFF url(/content/subject/fiveone/image/bg_topbg.jpg) top right no-repeat;}
+#scontent .shd{position:relative; height:55px;}
+#scontent .shd .menu{position:absolute; width:985px; height:56px; padding-left:45px; padding-top:18px; top:-10px; left:-21px; background:url(/content/subject/fiveone/image/menubg.png) no-repeat;}
+#scontent .shd .menu li{float:left;}
+#scontent .shd .menu li a{display:block; width:90px; height:40px; text-align:center; line-height:40px; color:#fff; font-weight:bold; font-size:14px; background:url(/content/subject/fiveone/image/navline.gif) right no-repeat;}
+#scontent .shd .menu li a.last{background:none;}
+#scontent .shd .menu li a.activ{background:url(/content/subject/fiveone/image/navbg01.gif) no-repeat; color:#ff6600;}
+#scontent .shd .menu li a:hover{text-decoration:underline; color:#ff9900;}
+#scontent .sbd{padding-bottom:10px; background:url(/content/subject/fiveone/image/bg_btmbg.jpg) left bottom no-repeat;}
+#scontent .sbd .leftpan{width:277px; float:left; margin:10px; display:inline;}
+#scontent .sbd .rightpan{width:683px; float:left; margin:10px 0;}
+
+/*left*/
+.menupan{box-shadow:2px 2px 3px #6FC4FD; margin-bottom:10px;}
+.menupan .mhd{height:44px;}
+.menupan .mhd h2{line-height:44px; text-align:center; font-size:18px; font-family:"Microsoft YaHei"; color:#fff; font-weight:600;}
+.menu01{background:url(/content/subject/fiveone/image/left_top.jpg) no-repeat;}
+.menu02{background:url(/content/subject/fiveone/image/left_top_02.jpg) no-repeat;}
+.menupan .mbd{background:#fff; padding-bottom:10px; zoom:1;}
+.menupan .mbd dl{margin:0; padding:10px 20px; line-height:24px;}
+.menupan .mbd dl a:hover{text-decoration:underline; color:#ff6600;}
+.menupan .mbd dl dt a{color:#ff6600; font-weight:bold; font-size:14px;}
+.menupan .mbd dl dd{width:79px; float:left;}
+.menupan .mbd dl dd a{color:#165FAE;}
+.menupan .mlist{margin:0 0 0 10px; _margin-left:0;}
+.menupan .mlist li{float:left; width:113px; border:1px solid #CDCDCD; line-height:24px; background:#F1F1F1; text-align:center; margin:10px 0 0 10px;}
+.menupan .mlist li a{color:#195ab2;}
+.menupan .mlist li a:hover{color:#ff6600;}
+.menupan .tlist{margin:10px 0 10px 20px;}
+.menupan .tlist li{float:left; width:80px; line-height:22px;}
+.menu02 .mbd{background:#FFF8E8;}
+.menu02 .mbd .mlist li{border:none; line-height:18px; background:none; text-align:left;}
+.menu02 .mbd .mlist li a{color:#7d4b06;}
+.menu02 .mbd .mlist li a:hover{color:#ff6600;}
+.menupan .mbd .rlist{margin:10px 20px;}
+.menupan .mbd .rlist li{line-height:24px;}
+.menupan .mbd .rlist li a.morelv{float:right; color:#ff6600;}
+.menupan .mbd .rlist li a.morelv:hover{text-decoration:underline;}
+
+/*right*/
+.crumb{padding: 0 0 10px 10px;}
+.crumb a{color:#195ab2;}
+.crumb a:hover{text-decoration:underline;}
+.rightpan .slider{height:292px; background:url(/content/subject/fiveone/image/sliderbg.jpg) no-repeat;}
+.rightpan .slider .stit{height:30px; padding-top:20px;}
+.rightpan .slider .stit h3{display:inline; color:#fff; font-size:18px; font-family:"Microsoft YaHei"; font-weight:bold; padding-left:20px;}
+.rightpan .slider .stit span{float:right; margin-right:40px;}
+.rightpan .slider .stit span em{font-style:normal; color:#ff6600;}
+.rightpan .slider .slider-box{position:relative;}
+.rightpan .slider .slider-box ul li{float:left;display:inline;width:215px;text-align:center;text-align:center;margin-top:15px;overflow:hidden;}
+.rightpan .slider .slider-box ul li div{width:180px;padding:10px;border:1px solid #CDCDCD; background:#fff;text-align:left;overflow:hidden;}
+.rightpan .slider .slider-box ul li a{color:#1f5aa9; font-size:14px; font-weight:bold; line-height:22px;}
+.rightpan .slider .slider-box ul li a:hover{color:#ff6600;}
+.rightpan .slider .slider-box ul li p{margin-top:5px;}
+.money{float:right; line-height:18px;}
+.money01{*margin-top:-20px;}
+.money i{font-style:normal; color:#ff6600;}
+.money b{font-size:18px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#ff6600;}
+
+.listpan{background:#fff;}
+.listpan .list-tit{background:#FFD986; height:40px; line-height:40px; padding:0 20px;}
+.listpan .list-tit h1{color:#4f301e; font-size:18px; font-family:"Microsoft YaHei"; font-weight:bold;}
+.listpan .list-tit .moreline{float:right; color:#ff6600;}
+.listpan .list-tit .moreline a{color:#ff6600;}
+.listpan .list-tit .moreline a:hover{text-decoration:underline;}
+.listpan .list-tit h3{color:#4f301e; font-size:18px; font-family:"Microsoft YaHei";}
+.listpan .list-box ul li{padding:10px 20px; border-bottom:1px dotted #AB8A3E; color:#666666; clear:both; zoom:1;}
+.listpan .list-box ul li .m{padding:5px; border:1px solid #CDCDCD; float:left; width:145px; margin-right:10px;}
+.listpan .list-box ul li{padding:10px 20px; border-bottom:1px dotted #AB8A3E;}
+.listpan .list-box ul li a{color:#7d4b06; font-weight:bold; font-size:14px;}
+.listpan .list-box ul li a:hover{color:#ff6600;}
+.listpan .list-box ul li .m a{display:block; border:1px solid #CDCDCD;}
+.listpan .list-box ul li .m a:hover{border-color:#ff6600;}
+.listpan .list-box ul li .t{width:476px; margin-top:10px; float:left;}
+.listpan .list-box ul li .t{line-height:18px;}
+.listpan .list-box ul li dl{margin:0;}
+.listpan .list-box ul li .t dl dt{line-height:24px; padding-bottom:10px;}
+.listpan .list-box ul li .t dl dd .money{margin-top:30px;}
+.listpan .list-box ul li dl dt{line-height:24px;}
+.listpan .list-box ul li dl dd{line-height:20px; clear:right;}
+.listpan .list-box ul li.li01{border-bottom:1px solid #E2CBAB;}
+.listpan .list-box ul li.gray{background-color:#FFF8E8;}
+
+/*listpage*/
+.rightpan .area-tit{height:54px; position:relative; background:#fff;}
+.rightpan .area-tit h1{position:absolute; top:5px; left:-8px; padding-left:25px; color:#fff; font-size:18px; font-family:"Microsoft YaHei"; background:url(/content/subject/fiveone/image/tbg.jpg) left no-repeat; line-height:50px; display:block; width:378px; font-weight:bold;}
+
+/***list slider***/
+.infiniteCarousel{width:670px;position:relative;height:240px;margin:0 auto;}
+.infiniteCarousel .wrapper{width:632px;height:240px;position:absolute;top:0;left:0;overflow:hidden;margin-left:20px;display:inline;*margin-left:15px;*width:640px;}
+.infiniteCarousel ul a img{}
+.infiniteCarousel .wrapper ul{width:9999px;position:absolute;top:0;margin:0;padding:0;}
+.infiniteCarousel ul li{}
+.infiniteCarousel .arrow{display:block;height:42px;width:42px;text-indent:-999px;position:absolute;top:95px;cursor:pointer;overflow:hidden;}
+.infiniteCarousel .arrow:hover{outline:none;}
+.infiniteCarousel .forward{right:-5px;background:url(/content/subject/fiveone/image/arrow_right.png) no-repeat 0 0}
+.infiniteCarousel .back{left:-5px;background:url(/content/subject/fiveone/image/arrow_left.png) no-repeat 0 0}
+
+.crumb span h1{display:inline; font-weight:normal; font-size:12px;}
+
+
+
+

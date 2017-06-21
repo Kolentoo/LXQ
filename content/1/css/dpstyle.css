@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+.orange{
+	color:#FF6600;
+}
+.btmline{
+	width:100%;
+	border-bottom:1px dashed #cccccc;
+	height:15px;
+	margin:15px 0;
+	clear:both;
+}
+
+.dpwrap{
+	width:970px; 
+	height:auto; 
+	margin:0 auto;
+	padding:0 10px; 
+	text-align:left;
+}
+.dp_top{
+	width:950px;
+	height:55px;
+	background:#F8FFEE;
+	margin:0 0 5px 0;
+	padding:5px 10px;
+}
+.dp_top .aimg{
+	float:left;
+	margin-right:20px;
+}
+.dp_top p{
+	line-height:24px;
+}
+.dp_top p a{
+	font-size:14px;
+	color:#333333;
+	font-weight:bold;
+}
+.dp_top p a.moredp{
+	font-size:12px;
+	color:#339900;
+	text-decoration:underline;
+	margin-left:20px;
+	font-weight:normal;
+}
+.dp_left{
+	width:750px;
+	height:auto;
+	float:left;
+}
+.customer{
+	width:105px;
+	height:60px;
+	margin-right:20px;
+	text-align:center;
+	line-height:22px;
+	padding-top:15px;
+	float:left;
+}
+.border1gray{
+	border:1px solid #cccccc;
+}
+.customer b{
+	font-size:14px;
+	color:#339900;
+	font-weight:bold;
+}
+.customer span b{
+	color:#FF6600;
+}
+.customer .orange{color:#ff6600;}
+.textpan{
+	width:602px;
+	height:auto;
+	background:#FEF8F4;
+	float:left;
+	padding:10px;
+}
+.comitem{
+	color:#333333;
+}
+.dpicon{
+	float:right;
+	color:#ff6600;
+}
+.textpan p{
+	font-size:24px;
+	margin:15px 0;
+	clear:both;
+}
+.comtime{
+	color:#989898;
+	float:right;
+}
+.pre{float:left;}
+.next{float:right;}
+.morecom{
+	float:right; 
+	margin:15px 0;
+}
+.morecom a{
+	color:#339900;
+	text-decoration:underline;
+}
+.recline{
+	font-size:14px;
+	color:#339900;
+	margin-bottom:15px;
+}
+.linepan{
+	width:750px;
+	
+}
+.bggray{background:#F1F1F1;}
+.linepan dl{
+	padding:10px;
+	margin:0;
+	line-height:24px;
+}
+.linepan dl dt{
+	float:left;
+	margin-right:20px;
+}
+.linepan dl dd{color:#666666;}
+a.linename{
+	font-size:14px; 
+	color:#333333;
+}
+.moreline{
+	float:right;
+}
+.moreline a{color:#339900; text-decoration:underline;}
+
+.dp_right{
+	width:200px;
+	height:auto;
+	float:left;
+	padding:10px;
+	color:#989898;
+	line-height:18px;
+}
+.righttitle{
+	padding:0 0 0 20px;
+	background:url(image/righticon.jpg) left center no-repeat;
+	color:#339900;
+	font-size:14px;
+	border-bottom:1px dashed #cccccc;
+	margin-bottom:10px;
+	line-height:24px;
+}

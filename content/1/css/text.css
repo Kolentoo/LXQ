@@ -1,0 +1,5 @@
+.text_con_div { padding:10px; border:1px solid #E6EDF2; background:#F9FCFD; text-align:left;}
+.text_con_div h2 { padding:5px 10px; background:#D2E1EE; font-size:14px; font-weight:bold; color:#324976;}
+.text_con_div p { padding:10px 50px; font-size:13px; color:#333333; line-height:24px; text-indent:26px;}
+.text_con_list { padding:10px 50px; font-size:13px; color:#333333; line-height:24px;}
+.righttopp { text-align:left;}

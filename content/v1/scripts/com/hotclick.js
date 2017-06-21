@@ -1,0 +1,4 @@
+/*! uzai - v0.1.11 - 2017 */
+
+!function(){$(function(){$("body").on("click","a",function(){var a=$(this),b=a.parents("[data-chunk]").attr("data-chunk")||"body";if("body"!=b){var c=(parseInt($(window).width()/2,10),1),d=1,e=encodeURIComponent(a.attr("href")),f=location.host+location.pathname,g=_ug.cityID,h="//aj.uzai.com/hotclike.ashx?type=p&v=json",i="&o="+b+"&w="+c+"&h="+d+"&d="+e+"&url="+f+"&startcity="+g+"&rnd="+Math.random(),j=new Image;j.src=h+i}}),$("body").on("click","[data-seed]",function(){var a=$(this),b=encodeURIComponent(a.attr("data-seed")),c=location.host+location.pathname,d=_ug.cityID,e="//aj.uzai.com/hotclike.ashx?type=p&v=json",f="&o=data-seed&w=1&h=1&d="+b+"&url="+c+"&startcity="+d+"&rnd="+Math.random(),g=new Image;g.src=e+f})})}();
+//# sourceMappingURL=/sourcemaps/content/v1/scripts/com/hotclick.js.map

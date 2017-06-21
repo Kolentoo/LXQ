@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+.qz-center{ padding-bottom:17px; text-align:left;}
+.qz-righttopp{ padding:10px 0 10px 15px; border-top:#c4cfd6 dashed 1px;}
+.qz-bn{ border:#dbdbdb solid 1px; padding:17px 40px; background:#f7f7f7; margin-bottom:20px;}
+.qzpage5-main{ border:solid #99CC01 1px; padding:30px 55px 43px 33px; background:#FFFFFF; line-height:18px;}
+.qzpages5-top{ padding-left:342px; padding-bottom:28px; font-size:16px; font-weight:bold; color:#70AF16;}
+.qzpage5-line{ padding-right:15px;}
+.qzpage5-h2{ background:url(../image/qz-images/qzpage5_15.gif) no-repeat center left; font-size:13px; color:#FE9900; font-weight:bold; padding-left:15px;}
+.qzpage5-bg{ background-color:#FDFAF1; padding:10px 40px 14px 18px;}
+.qzpage5-bg1{ padding:10px 40px 14px 18px;}

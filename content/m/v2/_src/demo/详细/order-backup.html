@@ -1,0 +1,142 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>选择班期</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <link rel="apple-touch-icon-precomposed" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-startup-image" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link href="/content/m/v2/_src/styles/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/_src/styles/detail/detail.css" rel="stylesheet" />
+    <script src="http://r01.uzaicdn.com/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script type="text/javascript">
+        seajs.use(['http://r01.uzaicdn.com/content/m/v2/scripts/core', 'http://r01.uzaicdn.com/content/libs/plugin/jsonCalendar/jsonCalendar.min', 'http://r01.uzaicdn.com/content/m/v2/scripts/detail/order', 'http://r01.uzaicdn.com/content/m/v2/scripts/detail/detail'], function (core, calendar, order, detail) {
+            order.init();
+            detail.init();
+        });
+    </script>
+
+    <style>
+        body{background:#fff;}
+        .order-detail{padding:10px;}
+    </style>
+
+    <!------------------------GA-------------------->
+    <script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-27817301-10', 'uzai.com');
+    ga('send', 'pageview');
+    </script>
+    <!------------------------BaiDu-------------------->
+    <!------------------------国双-------------------->
+    <!-- Gridsum tracking code begin. -->
+    <script type='text/javascript'>
+    var _gsq = _gsq || [];
+    (function () {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = (location.protocol == 'https:' ? 'https://ssl.' : 'http://static.') + 'gridsumdissector.com/js/Clients/GWD-002800-E6A64F/gs.js';
+        var firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(s, firstScript);
+    })();
+    </script>
+
+
+    <img src="http://hm.baidu.com/hm.gif?si=ec2cbd968f53448c8f9796112a7d72a1&amp;et=0&amp;nv=0&amp;st=4&amp;lt=1465289852&amp;v=wap-1-0.1&amp;rnd=390847838" width="0" height="0" />
+
+    <script type="text/javascript">
+        function ProductChoiceGoDate() {
+                _gsq.push(["T", "GWD-002800", "track", "/targetpage/wap/xiayibu1"]);
+                _gsq.push(["T", "GWD-002800", "trackEvent", "下单流程页", "选择班期", "下一步1"]);
+            }
+    </script>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">行程</div>
+            </div>
+            <div class="d-r">
+
+            </div>
+        </header>
+        <div id="j_orderDetail" class="order-detail">
+            <div class="calendar-mobile">
+                <div class="sm-calendar" id="j_smartCalendar"></div>
+            </div>
+            <div class="calendar-tips-bar f999 p10 clearfix">
+                <span class="blue fl"><a></a></span>
+                <span class="fr hide"><i class="icon-dot mr5 vm"></i><em class="vm">表示库存紧张</em></span>
+            </div>
+            <div class="favorable-bar bg-white bdt mt10 p10 clearfix hide">
+                <span class="bar-main f666 fl">优惠：<em class="red f13"></em></span>
+                <span class="bar-side f999 fr"></span>
+            </div>
+            <menu id="j_numControl" class="order-listing slice-mod">
+                <li class="ol-item clearfix">
+                    <span class="f15 fl">成人价<span class="f14 ml5"><i></i>元/人</span></span>
+                    <div class="fn-math fr clearfix">
+                        <span class="s1"></span>
+                        <input value="1" data-type="adult" readonly type="text" class="s2">
+                        <span class="s3"></span>
+                    </div>
+                </li>
+                <li class="ol-item clearfix">
+                    <span class="f15 fl">儿童价<span class="f14 ml5"><i></i>元/人</span></span>
+                    <div class="fn-math fr clearfix">
+                        <span class="s1"></span>
+                        <input value="0" data-type="child" readonly type="text" class="s2">
+                        <span class="s3"></span>
+                    </div>
+                </li>
+
+                <li class="ol-item clearfix">
+
+                </li>
+            </menu>
+
+        </div>
+        <footer class="footer-order clearfix">
+            <a class="btn-tel fl f16" href="tel:4000008888"><i class="icon-tel mr5 vm"></i>电话咨询</a>
+            <a href="#" id="ordersubmit" class="btn-order f18 fr" onclick="ProductChoiceGoDate()">开始预订</a>
+        </footer>
+    </div>
+
+    <aside class="detail-aside" id="detail-aside">
+        <div class="detail-aside-wrap">
+
+            <div class="tit"><a href="javascript:void(0)" class="close" style=" display:none;">×</a>优惠信息</div>
+
+            <div class="detail-aside-inner" style="height: 519px;">
+                <input hours="32" value="0" id="isFreeWifi" type="hidden">
+                <div class="inner"></div>
+            </div>
+
+        </div>
+    </aside>
+
+
+    <input type="hidden" value="133030" id="pid" />
+    <input type="hidden" value="1" id="tid" />
+    <input type="hidden" value="1" id="hid_minperson" />
+    <input type="hidden" value="35" id="hid_maxpersn" />
+    <input type="hidden" id="hidFirstDay" value="2016/06/15" />
+
+    <input type="hidden" id="hidJgids" value='{"A":76119}' />
+    <input type="hidden" id="hidJgid" value='' />
+</body>
+</html>

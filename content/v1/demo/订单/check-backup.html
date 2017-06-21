@@ -1,0 +1,339 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>机票订单核对</title>
+  <meta name="keywords" content="邮轮旅游" />
+  <meta name="description" content="悠哉旅游网（uzai.com）专业提供&lt;%=Model.StartcityName%>出发邮轮旅行报价，邮轮旅游价格，想知道邮轮旅游要多少钱，上悠哉旅游网" />
+
+  <link rel="stylesheet" href="/content/v1/_src/styles/core.css">
+  <script src="/content/v1/scripts/core.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="http://r.uzaicdn.com/content/libs/html5shiv.js"></script>
+  <![endif]-->
+
+  <!--[if IE 6]>
+    <script src="http://r.uzaicdn.com/content/libs/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script>
+    <script>
+      DD_belatedPNG.fix('.png');
+    </script>
+  <![endif]-->
+  <link rel="stylesheet" href="/content/v1/_src/styles/jipiao/order.css" />
+  <script src="http://r.uzaicdn.com/combo/static/base/easing/jquery.easing.1.3.js,Scripts/slidejs/slides.min.jquery.js,static/base/lazyload/jquery.lazyload.js"></script>
+  <script src="/content/v1/_src/scripts/jipiao/order.js"></script>
+
+</head>
+<body>
+
+  <!--header start-->
+  <header>
+
+    <!--top bar start-->
+    <div class="newHeader" data-chunk="global-top">
+      <div class="w">
+          <!--starting-->
+          <div class="newCity">
+          <div class="newCity-phone fl"><a target="_blank" title="下载手机客户端" href="http://www.uzai.com/app/">下载手机客户端</a></div>
+          <i style="border-left:1px solid #C8C8C8;margin:10px 6px 0 5px;line-height:12px;float:left;">&nbsp;</i>
+              <p class="newCity-tie fl">出发地：</p>
+                <div class="newCity-thick fl">
+
+
+
+                  <a target="_blank" href="http://sh.uzai.com" cityid="2" >上海</a>
+
+                  <a target="_blank" href="http://bj.uzai.com" cityid="1" >北京</a>
+
+                  <a href="http://www.uzai.com/quanguo/" class="cur">全国出发</a>
+
+              </div>
+          </div>
+          <!--/starting-->
+          <!--login-->
+          <ul class="newMenu">
+              <li class="newMenu-weixin J-newMenu-weixin">
+        <a href="javascript:;" rel="nofollow">+悠哉微信</a>
+        <div class="newMenu-weixinTip J-newMenu-weixinTip">
+          <em></em>
+          <div class="fl newMenu-weixinTip-left">
+            <p class="newMenu-weixinTip-leftYH">扫描二维码成为<br/>悠哉旅游网微信好友！</p>
+            <div class="clearfix">
+              <img src="http://r.uzaicdn.com/static/index/images/wx2.jpg" alt="" class="fl"/>
+              <div class="fl newMenu-weixinTip-leftMsg">
+                <p>悠哉旅游网微信号：</p>
+                <p class="uzaiweixin">uzai_travel</p>
+              </div>
+            </div>
+          </div>
+          <div class="fr"><img src="http://r.uzaicdn.com/static/index/images/wx1.jpg" alt=""/></div>
+        </div>
+      </li>
+      <li class="newMenu-order">
+                  <a href="http://www.uzai.com/myhistory" target="_blank" class="" title="最近浏览产品" rel="nofollow">最近浏览产品</a>
+              </li>
+      <li class="verline_gray"></li>
+              <li class="newMenu-order">
+                  <a href="http://u.uzai.com/manage/Index" class="" title="我的订单" rel="nofollow">我的订单</a>
+              </li>
+              <li class="verline_gray"></li>
+              <li class="newMenu-quickreg J-login1">
+                <div class="newQuickreg clearfix">
+                    <a href="http://u.uzai.com/register" title="注册" rel="nofollow">注册</a>
+                    <a href="http://u.uzai.com/register" class="newMenu-song200 J-quickreg" rel="nofollow"></a>
+                </div>
+                <div class="newMenu-popUb J-popUb"></div>
+              </li>
+              <li class="newMenu-manage J-newManage J-login">
+                  <a href="http://u.uzai.com/manage/Index" class="newMenu-manage-a J-newManage-a clearfix" rel="nofollow"><i class="i1">我的悠哉</i><i class="i2"></i></a>
+                  <ul class="newMenu-mytab J-newTab">
+                      <li><a title="我的订单" href="http://u.uzai.com/manage/order" rel="nofollow">我的订单</a></li>
+                      <li><a title="出游点评" href="http://u.uzai.com/manage/tour-record" rel="nofollow">出游点评</a></li>
+                      <li><a title="我的咨询" href="http://u.uzai.com/manage/zixun" rel="nofollow">我的咨询</a></li>
+                      <li><a title="我的收藏" href="http://u.uzai.com/manage/UserCollectionList" class="fn-borBo" rel="nofollow">我的收藏</a></li>
+                      <li><a title="我的资料" href="http://u.uzai.com/manage/personal-info" rel="nofollow">我的资料</a></li>
+                      <li><a title="会员特权" href="http://u.uzai.com/manage/MembershipPrivileges" rel="nofollow">我的专享</a></li>
+                  </ul>
+              </li>
+              <li class="verline_gray"></li>
+              <li class="newMenu-login J-login1">
+                  <a href="http://u.uzai.com/reguser" rel="nofollow">登录</a>
+              </li>
+              <li class="newMenu-weclome J-login">
+                  <a href="" class="J-userName" rel="nofollow">cmy</a><span class="userGrade"><a title="会员" href="http://u.uzai.com/reg/UserGradeMember" target="_blank" rel="nofollow"><img src="http://r.uzaicdn.com/Content/1/images/icon_vip30.gif" alt="会员"></a></span> &nbsp;[<a href="http://u.uzai.com/loginout" rel="nofollow">退出</a>]&nbsp;
+                  <div class="userOrderPart2">
+                      <a class="closetip" href="javascript:;" rel="nofollow"></a>
+                      <div class="tip">
+                          <em>◆</em>
+                          <span>◆</span>
+                      </div>
+                      <p class="w230">完成<a href="" class="b" rel="nofollow">手机安全验证</a>后，可<a href="" class="b" rel="nofollow">获得100悠币</a></p>
+                      <p class="w230">完成<a href="" class="b" rel="nofollow">邮箱安全验证</a>后，可<a href="" class="b" rel="nofollow">获得100悠币</a></p></div>
+              </li>
+              <li class="verline_gray verline_grayIe6 J-verline"></li>
+          </ul>
+          <!--/login-->
+      </div>
+    </div>
+    <!--top bar end-->
+  </header>
+  <!--header end-->
+
+  <div class="sHeadInner w">
+    <div class="d1">
+      <a title="悠哉旅游网" href="http://www.uzai.com">
+        <img src="http://r.uzaicdn.com/content/common/logo.gif" alt="悠哉旅游网">
+      </a>
+    </div>
+    <div class="d2">
+      <p class="p2"><img alt="预订时间" src="http://r.uzaicdn.com/content/1/images/H-time.jpg"></p>
+      <p class="p1">400-000-8888</p>
+    </div>
+  </div>
+
+  <ul class="order-step w clearfix">
+    <li class="on"><img class="png" src="/content/v1/images/order/step-bar-on.png" alt="" /><em>填写</em></li>
+    <li class="on"><img class="png" src="/content/v1/images/order/step-bar-on.png" alt="" /><em>核对</em></li>
+    <li><img class="png" src="/content/v1/images/order/step-bar.png" alt="" /><em>确认及支付</em></li>
+    <li><img class="png" src="/content/v1/images/order/step-bar.png" alt="" /><em>完成</em></li>
+  </ul>
+
+  <div class="check-info mt15 w">
+
+    <div class="info-cont lightgray-box clearfix">
+
+      <div class="g7 fl">
+        <div class="pt10 clearfix">
+          <p class="g4 fl">上海-北京</p>
+          <p class="g3 fl">2014年1月1日</p>
+          <p class="g3 fl">约6小时55分钟</p>
+        </div>
+        <div class="mt5">
+
+          <div class="white-box">
+            <table class="g10">
+              <tr>
+                <th colspan="4"><strong>中国东方航空公司MU535</strong><span class="ml10">空客315（中）</span></th>
+              </tr>
+              <tr>
+                <td><em>起飞</em></td>
+                <td><em>1月1日 08：45</em></td>
+                <td>北京首都国际机场</td>
+                <td><span class="em">飞行</span></td>
+                <td>约1小时20分钟</td>
+              </tr>
+              <tr>
+                <td>到达</td>
+                <td>1月1日 08：45</td>
+                <td>北京首都国际机场</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td><span class="swop white tc">中转</span></td>
+                <td><hr class="g7 vm fl" /></td>
+                <td>青岛</td>
+                <td><span class="em">停留</span></td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+
+        <div class="pt10 clearfix">
+          <p class="g4 fl">北京-上海</p>
+          <p class="g3 fl">2014年1月2日</p>
+          <p class="g3 fl">约6小时55分钟</p>
+        </div>
+        <div class="mt5">
+
+          <div class="white-box">
+            <table class="g10">
+              <tr>
+                <th colspan="4"><strong>中国东方航空公司MU535</strong><span class="ml10">空客315（中）</span></th>
+              </tr>
+              <tr>
+                <td><em>起飞</em></td>
+                <td><em>1月1日 08：45</em></td>
+                <td>北京首都国际机场</td>
+                <td><span class="em">飞行</span></td>
+                <td>约1小时20分钟</td>
+              </tr>
+              <tr>
+                <td>到达</td>
+                <td>1月1日 08：45</td>
+                <td>北京首都国际机场</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td><span class="swop white tc">中转</span></td>
+                <td><hr class="g7 vm fl" /></td>
+                <td>青岛</td>
+                <td><span class="em">停留</span></td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="g3 fl">
+        <dl class="amount-box">
+          <dt class="lh1 pb10"><em class="f14 b">订单总价</em><i class="price orange ml10">￥<em class="f24">1507</em></i></dt>
+          <dd>
+            <p><strong>票价/机建燃油</strong></p>
+            <p class="clearfix">
+              <span class="fl">普通成人</span>
+              <span class="orange ml30 fl"><i class="price">￥<em>912</em></i>+<i class="price">￥<em>555</em></i>/人</span>
+              <span class="fr">1人</span>
+            </p>
+            <div class="clearfix">
+              <div class="tip-box mt5 fr">
+                <span class="hover-text">退改签规则</span>
+                <div class="tip-detail tip-table">
+                  <table class="g10">
+                    <tr>
+                      <th>退票：</th>
+                      <td>退票规定</td>
+                    </tr>
+                    <tr>
+                      <th>改签：</th>
+                      <td>改签规定</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </dd>
+        </dl>
+      </div>
+
+    </div>
+
+    <div class="passenger-info lightgray-box mt15">
+      <div class="white-box">
+
+        <h3 class="b">乘机人信息</h3>
+        <table class="g10 mt5">
+          <tr>
+            <th>姓名</th>
+            <th>类型</th>
+            <th>证件类型</th>
+            <th>证件号</th>
+            <th>航空意外险</th>
+            <th>航空延误险</th>
+          </tr>
+          <tr>
+            <td>张三</td>
+            <td>成人</td>
+            <td>身份证</td>
+            <td>310123456789657589</td>
+            <td>一份</td>
+            <td>一份</td>
+          </tr>
+          <tr>
+            <td>张三</td>
+            <td>成人</td>
+            <td>身份证</td>
+            <td>310123456789657589</td>
+            <td>————</td>
+            <td>一份</td>
+          </tr>
+        </table>
+
+        <h3 class="b mt15">联系人信息</h3>
+        <p class="contacts-info mt5">
+          <span>姓名：<em>张三</em></span>
+          <span class="ml30">手机：<em>1213456789101</em></span>
+          <span class="ml30">电子邮箱：<em>zhangsan@sina.com</em></span>
+        </p>
+
+        <h3 class="b mt15">配送信息</h3>
+        <p class="contacts-info mt5">
+          <span>配送方式<em>邮寄行程单（快递）（含机票行程单）</em></span>
+          <span class="ml30">配送地址：<em>北京市东城区锡条路1111号101室（100000，张三）</em></span>
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="btn-bar clearfix">
+      <p class="fr">
+        <a href="#" class="btn-prev f14 b">返回上一步</a>
+        <a href="#" class="btn-next white f24 tc yahei">确认支付</a>
+        <span class="ml10 vb">由于航班价格变化频繁，请在<em class="orange">15分钟内</em>完成支付</span>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- footer start -->
+  <footer class="w">
+      <div class="foot-copyright">
+          <span>Copyright 2005-2013 Uzai.com</span>
+          <span>许可证编号:L-SH-00647</span>
+          <span>沪ICP备06021606号</span>
+          <span>悠哉呼叫中心位于上海，来电显示号码为：<font class="red">021-60561828</font></span>
+      </div>
+      <div class="foot-aboutlink">
+          <span><a href="/">悠哉旅游网</a></span>
+          <span><a target="_blank" href="http://www.uzai.com/history/" rel="nofollow">悠哉历程</a></span>
+          <span><a target="_blank" href="http://www.uzai.com/about/privacy/"rel="nofollow">隐私保护</a></span>
+          <span><a target="_blank" style="color: #f60;" href="http://job.uzai.com/about/job/" rel="nofollow">诚聘英才</a></span>
+          <span><a target="_blank" href="http://www.uzai.com/about/" rel="nofollow">关于我们</a></span>
+          <span><a target="_blank" href="http://www.uzai.com/sitemap/">网站地图</a></span>
+          <span><a target="_blank" href="http://www.uzai.com/sitelinks/">友情链接</a></span>
+          <span class="noborder"><a target="_blank" href="http://www.uzai.com/qa/helplist-9.html">商务合作</a></span>
+      </div>
+  </footer>
+  <!-- footer end -->
+
+</body>
+</html>

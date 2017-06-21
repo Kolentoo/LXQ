@@ -1,0 +1,8 @@
+node_modules/
+*.log
+/styles/grogshop
+/styles/index
+/styles/list
+/styles/reservation
+/styles/about
+/styles/detail

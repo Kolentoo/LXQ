@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-cn" manifest="http://m.uzai.com/manifest/global.appcache">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>悠哉旅行网触屏版</title>
+    <meta name="keywords" content="x" />
+    <meta name="description" content="x" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/user/user.css" rel="stylesheet" />
+    <script src="/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/_src/core'], function (core) {
+        });
+    </script>
+</head>
+<body>
+    <div class="w">
+        <section class="my-uzai">
+            <div class="info-status-box fn-bs">
+                <div class="user-status">
+                    <div class="off tc" id='j_userUnlogin'>
+                        <p class="offline"><a href="#" class="btn-login red f18 tc">立即登录</a></p>
+                    </div>
+                    <div id='j_userLogin' class="user-info-box on hide">
+                        <div class="top-bar tr">
+                            <a href="#" class="user-sign white"><i class="icon-item vm"></i><br><em>签到</em></a>
+                        </div>
+                        <div class="info-main tc">
+                            <a href="http://u.uzai.com/mobile/EditUser">
+                                <img class="user-icon g10 vm" src="/content/m/v2/images/user/p2.jpg" />
+                                <span class="user-name f18 vm">一只小小鸟</span>
+                                <img src="/content/m/v2/images/common/v1.png" alt="" class="grade-icon ml5 vm">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-bar f666 tc clearfix">
+                    <a href="#" class="bar-item">
+                        <p class="icon-wrap"><i class="icon-item"><em class="num-icon f14 tc">1</em></i></p>
+                        <p>全部订单</p>
+                    </a>
+                    <a href="#" class="bar-item">
+                        <p class="icon-wrap"><i class="icon-item"><em class="num-icon f14 tc">1</em></i></p>
+                        <p>待付款</p>
+                    </a>
+                    <a href="#" class="bar-item">
+                        <p class="icon-wrap"><i class="icon-item"><em class="num-icon f14 tc show">1</em></i></p>
+                        <p>待评价</p>
+                    </a>
+                </div>
+            </div>
+            <ul class="info-menu f14 mt10">
+                <li class="item-0"><a href="#"><span class="icon-wrap mr10 vm"><i class="icon-item"><em class="num-icon f14 tc">1</em></i></span><em class="vm">全部订单</em></a></li>
+                <li class="item-1"><a href="#"><span class="icon-wrap mr10 vm"><i class="icon-item"></i></span><em class="vm">我的U币</em></a></li>
+                <li class="item-2"><a href="#"><span class="icon-wrap mr10 vm"><i class="icon-item"></i></span><em class="vm">我的积分</em></a></li>
+                <li class="item-3"><a href="#"><span class="icon-wrap mr10 vm"><i class="icon-item"></i></span><em class="vm">我的优惠券</em></a></li>
+            </ul>
+            <ul class="info-menu f14 mt10">
+                <li class="item-4"><a href="#"><span class="icon-wrap mr10 vm"><i class="icon-item"></i></span><em class="vm">常用信息</em></a></li>
+                <li class="item-5"><a href="#"><span class="icon-wrap mr10 vm"><i class="icon-item"></i></span><em class="vm">我的收藏</em></a></li>
+            </ul>
+            <ul class="info-menu f14 mt10">
+                <li class="item-6"><a href="#"><span class="icon-wrap mr10 vm"><i class="icon-item"></i></span><em class="vm">关于我们</em></a></li>
+                <!-- <li class="item-7"><a href="#"><span class="icon-wrap mr10 vm"><i class="icon-item"></i></span><em class="vm">意见反馈</em></a></li> -->
+                <li class="item-8"><a href="tel:400-998-2060"><span class="icon-wrap mr10 vm"><i class="icon-item"></i></span><em class="vm">客服电话</em><span class="tel-num red">400-998-2060</span></a></li>
+            </ul>
+        </section>
+    </div>
+    <div class="g-mod-menu-wrap">
+        <div class="g-mod-menu">
+            <ul class="f14 tc clearfix">
+                <li>
+                    <a href="/IndexDestination"><i class="f18"></i>
+                        <p class="f666">目的地</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/EasyGo"><i class="f18"></i>
+                        <p class="f666">说走就走</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/"><i class="f18"></i>
+                        <p class="f666">首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/daren"><i class="f18"></i>
+                        <p class="f666">达人秀</p>
+                    </a>
+                </li>
+                <li class="on">
+                    <a href="http://u.uzai.com/mobile/UserIndex"><i class="f18"></i>
+                        <p class="f666">我的</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

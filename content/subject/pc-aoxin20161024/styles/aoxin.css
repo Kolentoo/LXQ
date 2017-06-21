@@ -1,0 +1,136 @@
+/*
+* @Author: lichen
+* @Date:   2016-10-24 09:18:35
+* @Last Modified by:   lichen
+* @Last Modified time: 2016-11-03 15:19:42
+*/
+body{width: 100%;overflow-x:hidden;}
+.banner{background:#eee7bc url(/content/subject/pc-aoxin20161024/images/ax01.jpg) no-repeat center center;width: 100%;height: 758px;}
+
+.con-1-1{position: relative;}
+.con-1::before{background: url(/content/subject/pc-aoxin20161024/images/ax02.jpg) no-repeat center top;width: 100%;height: 492px;content: '';position: absolute;top:0;}
+.con-1{background: #eee7bc;width: 100%;position: relative;padding-bottom: 70px;}
+.con-1-1-main{background: url(/content/subject/pc-aoxin20161024/images/ax26.png) no-repeat center center;width: 1236px;height: 778px;margin: 0 auto;position: relative;z-index: 2;}
+.shodows{position: absolute;top:729px;left: 50%;z-index: 1;margin-left: -640px;}
+.con-1-1-main .main-l{width: 512px;margin-top: 130px;}
+.con-1-1-main .main-l .p1{font-size: 33px;color: #0093f3;font-weight: bolder;margin-left: 130px;}
+.con-1-1-main .main-l .p2{font-size: 20px;color: #fff;width: 352px;height: 30px;background: #d82a2c;text-align: center;line-height: 30px;margin-left: 128px;margin-top: 64px;_margin-top:-3px;}
+.con-1-1-main .main-l .p3{margin-top:120px;margin-left: 90px;}
+.con-1-1-main .main-l .p3 p{font-size: 20px;color: #3f3f3f;line-height: 30px;}
+.con-1-1-main .main-l .p4{font-size: 18px;color: #666464;margin-top: 94px;margin-left: 55px;}
+.con-1-1-main .main-r{width: 500px;margin-top: 196px;margin-left: 123px;}
+.con-1-1-main .main-r dl{color: #393939;line-height: 28px;}
+.con-1-1-main .main-r dl dt{font-weight: bolder;font-size: 20px;}
+.con-1-1-main .main-r dl dd{font-size: 18px;}
+.con-1-2{position: relative;margin-top:20px;}
+.con-1-2 .xiong{position: absolute;top:-20px;left: 50%;z-index: 100;margin-left: -350px;}
+.con-1-main-2{width: 1190px;margin: 0 auto;position: relative;margin-top: -3px;}
+.con-1-2 .main-tit{background: url(/content/subject/pc-aoxin20161024/images/ax02.png) no-repeat center center;width: 1190px;height: 160px;margin: 0 auto;position: relative;z-index: 3;}
+.con-1-main-2 .main{width: 1130px;background: #fff;border-radius: 10px;padding: 60px 30px 30px;margin: 0 auto;padding-bottom: 30px;margin-top: -16px;position: relative;z-index: 1;box-shadow: 0 0 20px #fff;}
+.jtab{margin-top: 30px;}
+.map{background: url(/content/subject/pc-aoxin20161024/images/ax03.jpg) no-repeat center center;width: 1130px;height: 602px;position: relative;}
+.map .tite{font-size: 16px;color: #fff;cursor: pointer;}
+.map .tpte{position: absolute;}
+.map .tpte:hover{transform:scale(1.2);-web-transform:scale(1.2);-ms-transform:scale(1.2);-moz-transform:scale(1.2);-o-transform:scale(1.2);}
+.map .p1{position: absolute;left: 570px;top: 154px;}
+.map .p2{position: absolute;left: 554px;top: 269px;}
+.map .p3{position: absolute;left: 562px;top:320px;}
+.map .p4{position: absolute;left: 543px;top: 403px;}
+.map .p6{position: absolute;left: 443px;top: 456px;}
+.map .i1{left: 480px;top: 90px;}
+.map .i2{left: 480px;top: 223px;}
+.map .i3{left: 463px;top: 340px;}
+.map .i4{left: 640px;top: 298px;}
+.map .i5{left: 332px;top: 394px;}
+.jtab{margin-left: -10px;width: 1160px;_margin-left:-20px;}
+.jtab .hd{margin-left: 10px;margin-right: 10px;}
+.jtab .hd li{position: relative;}
+.jtab .hd .list{margin-top: 21px;}
+.jtab .hd .shadow{background: rgba(0,0,0,0.4);width: 298px;height: 190px;position: absolute;color: #fff;font-size: 24px;font-weight: bolder;text-align: center;line-height: 190px;top:0;*left:0;}
+.jtab .hd .on .shadow{opacity: 0;filter:alpha(opacity=0); }
+.jtab .bd{margin-left: 10px;margin-right: 10px;}
+.jtab .bd .item{position: relative;}
+.jtab .bd .shod{width: 812px;height: 54px;background: rgba(0,0,0,0.5);position: absolute;top: 346px;padding: 7px 6px;box-sizing: border-box;overflow: hidden;font-size: 16px;color: #fff;*left:-2px;}
+/* .jtab2 .bd{margin-left: 10px;margin-right: 10px;} */
+.road-model{position: relative;width: 1160px;margin-left: -10px;_margin-left:-20px;}
+.road-model .list-road {_display:inline;}
+.road-model .list-road:hover{box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);}
+/* .road-model .list-s{margin-left: 20px;} */
+.road-model .list-l{position: relative;}
+.road-model .list-l .showed{width: 374px;background: rgba(0,0,0,0.5);padding:4px 6px;box-sizing: border-box;position: absolute;*left: 0;bottom: 0;}
+.road-model .list-l .showed a{color: #fff;font-size: 18px;display: block;height: 50px;overflow: hidden;}
+.road-model .list-r{text-align: center;width: 177px;}
+.road-model .list-r .dollar{font-size: 36px;color: #f75c62;border-bottom: 1px dashed #b2cde8;margin: 0 auto;width: 165px;margin-top: 80px;}
+.road-model .list-r .dollar span{font-size: 22px;}
+.road-model .list-r del{font-size: 16px;color: #666;}
+.road-model .list-r .day-time{font-size: 14px;color: #31aff9;margin-top: 16px;}
+.road-model .list-r .btn{width: 141px;height: 43px;background: url(/content/subject/pc-aoxin20161024/images/ax03.png) no-repeat center center;text-align: center;line-height: 43px;margin: 0 auto;margin-top: 30px;}
+.road-model .list-r .btn a{color: #fff;font-weight: bolder;font-size: 24px;}
+.road-model .list-r .btn:hover{background: url(/content/subject/pc-aoxin20161024/images/ax25.png) no-repeat center center;text-align: center;line-height: 43px;margin: 0 auto;margin-top: 30px;height: 43px;}
+
+/* .road-model .list-r .btn:hover{background:#e5004f;} */
+.road-model .list{width: 551px;height: 294px;border:2px solid #31aff9;margin-top: 20px;margin-left: 10px;margin-right: 10px;}
+.road-model .list-none{width: 555px;height: 298px;border:none;position: relative;overflow: hidden;}
+.road-model .list-none p{font-size: 24px;color:#fff;position: absolute;font-weight: bolder;top:10px;left: 10px;}
+.moreroad{display: block;color: #1e84e9;font-size: 28px;font-weight: bolder;width: 155px;margin: 0 auto;margin-top: 35px;}
+.moreroad:hover{color: #0d5aa6;}
+.sddj{width: 555px;height: 298px;background: rgba(0, 0, 0, 0);color: #fff;font-size: 16px;overflow: hidden;padding: 5px;box-sizing: border-box;}
+.sddj .ps{position: absolute;bottom: 0;opacity: 0;filter:alpha(opacity=0);}
+.sddjs:hover .sddj{position: absolute;top:0;background: rgba(0, 0, 0, 0.5);*filter:alpha(opacity=100);*left: -5px;*top:-20px;}
+.sddjs:hover .p1{opacity: 0;filter:alpha(opacity=0);}
+.sddjs:hover .ps{opacity: 1;filter:alpha(opacity=100);}
+.con-1-2 .shodows-t{position: absolute;top:102px;left: 50%;z-index: 2;margin-left: -620px;}
+.con-1-2 .shodows-b{position: absolute;bottom:-78px;left: 50%;z-index: 1;margin-left: -640px;}
+
+.con-2::before{background: url(/content/subject/pc-aoxin20161024/images/ax10.jpg) no-repeat center top;width: 100%;height: 173px;content: '';position: absolute;top:0;}
+.con-2{background: #55b8f8;width: 100%;position: relative;overflow: hidden;}
+.con-2 .list{position: relative;}
+.con-2 .tii-bg{background: #000;opacity: 0.6;width: 555px;height: 69px;position: absolute;top:230px;filter:alpha(opacity=60);*left:0;}
+.con-2 .tit{position: relative;top:-64px;left: 24px;}
+
+.con-2-1{position: relative;}
+.con-2-1 .main-tit{background: url(/content/subject/pc-aoxin20161024/images/ax04.png) no-repeat center center;height: 124px;position: relative;top:192px;z-index: 5;}
+.con-2-1 i{background: url(/content/subject/pc-aoxin20161024/images/ax07.png) no-repeat center center;height: 84px;}
+.con-2-1 .main{width: 1130px;background: #fff;border-radius: 10px;padding: 60px 30px 30px;margin: 0 auto;padding-bottom: 30px;margin-top: 192px;position: relative;z-index: 1;box-shadow: 0 0 20px #fff;}
+.con-2-1 .shodows-t{position: absolute;top:274px;left: 50%;z-index: 4;margin-left: -620px;}
+.con-2-1 .shodows-b{position: absolute;bottom:-83px;left: 50%;margin-left: -640px;}
+.con-2-1 .tit-qiu{margin-top: 10px;}
+.con-2-1 .tit-dong{margin-top: 5px;}
+.con-2-1 .tit-xia{margin-top: 10px;}
+.con-2-1 .yang-l{position: absolute;left: 50%;top: 226px;z-index: 100;margin-left: -540px;}
+.con-2-1 .yang-r{position: absolute;left: 50%;top: 123px;z-index: 100;margin-left: 320px;}
+
+
+.con-2-2{position: relative;margin-top: 78px;}
+.con-2-2 .main-tit{background: url(/content/subject/pc-aoxin20161024/images/ax06.png) no-repeat center center;height: 100px;position: relative;margin-top: 20px;z-index: 3;}
+.con-2-2 .main{width: 1130px;background: #fff;border-radius: 10px;padding: 60px 30px 30px;margin: 0 auto;padding-bottom: 30px;overflow: hidden;z-index: 1;position: relative;box-shadow: 0 0 20px #fff;}
+.con-2-2 .shodows-t{position: absolute;top:57px;left: 50%;z-index: 2;margin-left: -620px;}
+.con-2-2 .shodows-b{position: absolute;bottom:-83px;left: 50%;z-index: 0;margin-left: -640px;}
+
+
+
+
+.subject-intro-more{position: relative;width: 1190px;margin: 0 auto;}
+.subject-intro-more .tit{top:0;left: 0;}
+.tit-inner{background: url(/content/subject/pc-aoxin20161024/images/ax12.png) no-repeat center center;height: 100px;position: relative;z-index: 3;}
+.subject-intro-more .main i{color: #fff;font-size: 40px;background: rgba(0, 0, 0, 0.5);padding: 23px 20px;margin: 0 auto;position: relative;top:-205px;}
+.subject-intro-more .item{position: relative;}
+.subject-intro-more ul{background: #fff;padding: 0 30px;border-radius: 10px;padding-top: 60px;}
+.subject-intro-more li{background: none;}
+.subject-intro-more .shodows-t{position: absolute;top:62px;left: 317px;}
+.subject-intro-more .shodows-b{position: absolute;bottom:23px;left: 317px;}
+
+
+.con-2-3{position: relative;margin-top: 78px;}
+.j_nav{position: absolute;left: 50%;margin-left: 740px;top:50%;margin-top:500px;}
+.j_nav ul{background: #0088db;padding: 5px;_width:100px;}
+.j_nav li{font-size: 26px;color: #fff;background: url(/content/subject/pc-aoxin20161024/images/ax18.png) repeat center center;width: 140px;text-align: center;border-top:1px dashed #fff;height: 58px;line-height: 58px;cursor: pointer;}
+.j_nav .on .p1{color: #fff96c;font-weight: bolder;}
+.j_nav .nav-list-first{border-top:none;padding-top: 20px;}
+.j_nav .back{background: url(/content/subject/pc-aoxin20161024/images/ax17.png) no-repeat center center;height: 73px;text-align: center;line-height: 73px;margin-top: 11px;color: #fff;
+	font-size: 26px;}
+.add-c{position: absolute;top:-80px;z-index: -1;left: -16px;}
+.add-d{position: absolute;top:-116px;z-index: 0;left: 16px;}
+.con-2-3 .shodows-t{position: absolute;top:57px;left: 50%;z-index: 2;margin-left: -620px;}
+.con-2-3 .shodows-b{position: absolute;bottom:30px;left: 50%;z-index: 0;margin-left: -640px;}
+.nav-on{position: fixed;left: 50%;margin-left: 740px;top:-10%;}

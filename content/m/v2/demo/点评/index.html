@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>悠哉旅行网触屏版</title>
+    <link href="/content/m/v2/styles/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/dianping/dianping.css" rel="stylesheet" />
+    <script src="http://r01.uzaicdn.com/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script src="http://r01.uzaicdn.com/content/m/v2/sea-modules/iscroll/iscroll4/iscroll.js"></script>
+    <script src="http://r01.uzaicdn.com/content/m/v2/scripts/dianping/iscroll.js"></script>
+    <script>
+        seajs.use(['http://r01.uzaicdn.com/content/m/v2/scripts/core', '/content/m/v2/scripts/dianping/dianping'], function (core, dianping) {
+            dianping.init();
+            $("li .zan").click(function () {
+                var id = this.id;
+                $.post("/ashx/AddDingNum.ashx", { "DaRenID": id.replace("ding", "") },
+                  function (data) {
+                      if (data == "1") {
+                          var dingNum = $("#zan" + id.replace("ding", "")).html().replace("赞", "");
+                          $("#zan" + id.replace("ding", "")).html("赞" + (parseInt(dingNum) + 1).toString());
+                      }
+                  });
+            });
+        });
+    </script>
+</head>
+
+
+<body>
+
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"></div>
+            <div class="d-m">
+                <div class="tit">悠友好评</div>
+            </div>
+            <div class="d-r">
+            </div>
+        </header>
+
+
+        <section class="dianping" id="j_dianping">
+            <div class="item" id="wrapper1">
+                <div class="inner" id="thelist1">
+
+                    <ul class="dp-list" data-page="1">
+
+                        <li>
+                            <div class="hd clearfix mb5"><img src="http://r.uzaicdn.com/userhead/3a1caf4a-4ccf-4221-bf83-028e370ff2b9.jpg" width="35" class="vm mr5" /><span class="f18 f33">马先生</span> <span class="f10 f999">03月30日</span> <span class="green fr f16 fn-bs">安徽</span></div>
+                            <div class="bd mb10 f13">因为没有成团，换了行程咯。悠哉还是服务态度很热情，很耐心的啦，下次出去还是会找悠哉。</div>
+                            <div class="pic ">
+                                <div class="item">
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=a4ad6c94-643e-431a-8745-afd08afbfd34.jpg&t=2&w=93&h=100" alt="" />
+
+                                </div>
+                            </div>
+                            <div class="ft clearfix">
+                                <span class="fl zan fn-bs" id="ding1525"><i class="fn-bs"></i><span class="ding" id="zan1525">赞0</span></span>
+
+                                <span class="fl view "><i class="fn-bs"></i><a href="http://sh.uzai.com/waptour-73934.html">查看线路</a></span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="hd clearfix mb5"><img src="http://r.uzaicdn.com/userhead/26.jpg" width="35" class="vm mr5" /><span class="f18 f33">黄女士</span> <span class="f10 f999">03月30日</span> <span class="green fr f16 fn-bs">九华山</span></div>
+                            <div class="bd mb10 f13">总体满意，导游讲解到位，无强制推销， 价廉物美 物超所值</div>
+                            <div class="pic ">
+                                <div class="item">
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=fa72af7a-4fe4-46ae-a7e7-ab4c583ea78c.jpg&t=2&w=93&h=100" alt="" />
+
+                                </div>
+                            </div>
+                            <div class="ft clearfix">
+                                <span class="fl zan fn-bs" id="ding1524"><i class="fn-bs"></i><span class="ding" id="zan1524">赞0</span></span>
+
+                                <span class="fl view "><i class="fn-bs"></i><a href="http://sh.uzai.com/waptour-69260.html">查看线路</a></span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="hd clearfix mb5"><img src="http://r.uzaicdn.com/userhead/3a1caf4a-4ccf-4221-bf83-028e370ff2b9.jpg" width="35" class="vm mr5" /><span class="f18 f33">马先生</span> <span class="f10 f999">03月30日</span> <span class="green fr f16 fn-bs">泰州</span></div>
+                            <div class="bd mb10 f13">很不错的赏花之旅，花漂亮，行程安排的很好，贺导演很关心，很热情，很耐心，司机师傅也很好哦。</div>
+                            <div class="pic ">
+                                <div class="item">
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=a4c4765e-c136-444d-805c-a37d5c1360f1.jpg&t=2&w=93&h=100" alt="" />
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=bea8c0eb-c6f0-4d87-9eb9-63990860b754.jpg&t=2&w=93&h=100" alt="" />
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=d73617d9-c8fe-49ae-b714-ad4a4269f3a7.jpg&t=2&w=93&h=100" alt="" />
+
+                                </div>
+                            </div>
+                            <div class="ft clearfix">
+                                <span class="fl zan fn-bs" id="ding1523"><i class="fn-bs"></i><span class="ding" id="zan1523">赞0</span></span>
+
+                                <span class="fl view "><i class="fn-bs"></i><a href="http://sh.uzai.com/waptour-100368.html">查看线路</a></span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="hd clearfix mb5"><img src="http://r.uzaicdn.com/userhead/47.jpg" width="35" class="vm mr5" /><span class="f18 f33">陈先生</span> <span class="f10 f999">03月30日</span> <span class="green fr f16 fn-bs">邮轮</span></div>
+                            <div class="bd mb10 f13">组织有序，船上设施服务贴心，会推荐朋友前住，</div>
+                            <div class="pic ">
+                                <div class="item">
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=cd233615-b908-40dc-b1a0-5483b48eba5f.jpg&t=2&w=93&h=100" alt="" />
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=10661def-b672-49c9-bfaf-6b92647e5423.jpg&t=2&w=93&h=100" alt="" />
+
+                                </div>
+                            </div>
+                            <div class="ft clearfix">
+                                <span class="fl zan fn-bs" id="ding1522"><i class="fn-bs"></i><span class="ding" id="zan1522">赞0</span></span>
+
+                                <span class="fl view "><i class="fn-bs"></i><a href="http://sh.uzai.com/waptour-98675.html">查看线路</a></span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="hd clearfix mb5"><img src="http://r.uzaicdn.com/userhead/21.jpg" width="35" class="vm mr5" /><span class="f18 f33">杨女士</span> <span class="f10 f999">03月30日</span> <span class="green fr f16 fn-bs">上海</span></div>
+                            <div class="bd mb10 f13">油菜花观赏2小时，把时间都放门口那块油菜地了，拍照将近了一个多小时，后来进去一大片花海，时间不够了好多都没得逛，草莓地草莓都不是很满意，大个的也有不过很少啦，一斤20快买回家了，篮子还送的蛮好的</div>
+                            <div class="pic ">
+                                <div class="item">
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=f92f895e-57c0-4642-a0f2-0a90f09b8b13.jpg&t=2&w=93&h=100" alt="" />
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=39b55862-f87b-4ba1-ae04-9b63cdf08cd4.jpg&t=2&w=93&h=100" alt="" />
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=c81ecb48-6f9d-46fc-b00c-03d460acae67.jpg&t=2&w=93&h=100" alt="" />
+
+                                </div>
+                            </div>
+                            <div class="ft clearfix">
+                                <span class="fl zan fn-bs" id="ding1521"><i class="fn-bs"></i><span class="ding" id="zan1521">赞0</span></span>
+
+                                <span class="fl view "><i class="fn-bs"></i><a href="http://sh.uzai.com/waptour-73674.html">查看线路</a></span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="hd clearfix mb5"><img src="http://r.uzaicdn.com/userhead/43.jpg" width="35" class="vm mr5" /><span class="f18 f33">曹女士</span> <span class="f10 f999">03月30日</span> <span class="green fr f16 fn-bs">厦门</span></div>
+                            <div class="bd mb10 f13">参加悠哉网 厦门四天自助游  很好住的环境很干净  出门很方便  总体很满意  回城时希望明确一下登机的航站楼！</div>
+                            <div class="pic ">
+                                <div class="item">
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=f3044a8d-96d6-4bd0-af38-38d0df982086.jpg&t=2&w=93&h=100" alt="" />
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=4d9365eb-30b1-4829-9516-b075f0815835.jpg&t=2&w=93&h=100" alt="" />
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=601e9f8b-59d0-40ba-8b30-76cee8a704a6.jpg&t=2&w=93&h=100" alt="" />
+
+                                </div>
+                            </div>
+                            <div class="ft clearfix">
+                                <span class="fl zan fn-bs" id="ding1520"><i class="fn-bs"></i><span class="ding" id="zan1520">赞0</span></span>
+
+                                <span class="fl view "><i class="fn-bs"></i><a href="http://sh.uzai.com/waptour-98691.html">查看线路</a></span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="hd clearfix mb5"><img src="http://r.uzaicdn.com/userhead/50.jpg" width="35" class="vm mr5" /><span class="f18 f33">李女士</span> <span class="f10 f999">03月30日</span> <span class="green fr f16 fn-bs">三亚</span></div>
+                            <div class="bd mb10 f13">很划算的，主要機票和住宿便宜，半個我們剩了一筆開銷，春秋航班太差了，說好晚上7點多的飛機，結果延誤了好幾個小時，近十點才起飛的</div>
+                            <div class="pic ">
+                                <div class="item">
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=2f0bd2b2-2aa5-4972-a180-4e30733fcd27.jpg&t=2&w=93&h=100" alt="" />
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=f408de55-5954-4ed6-be22-7155524d9808.jpg&t=2&w=93&h=100" alt="" />
+
+                                </div>
+                            </div>
+                            <div class="ft clearfix">
+                                <span class="fl zan fn-bs" id="ding1519"><i class="fn-bs"></i><span class="ding" id="zan1519">赞0</span></span>
+
+                                <span class="fl view "><i class="fn-bs"></i><a href="http://sh.uzai.com/waptour-94466.html">查看线路</a></span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="hd clearfix mb5"><img src="http://r.uzaicdn.com/userhead/13.jpg" width="35" class="vm mr5" /><span class="f18 f33">沈女士</span> <span class="f10 f999">03月30日</span> <span class="green fr f16 fn-bs">三亚</span></div>
+                            <div class="bd mb10 f13">超赞！导游璐璐服务也特别到位，全程介绍各种景点，特色，这次三亚之旅非常开心</div>
+                            <div class="pic ">
+                                <div class="item">
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=ca0b4920-d2fa-4b00-a262-92a3b81b117a.jpg&t=2&w=93&h=100" alt="" />
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=6a1eb247-caa0-442e-9ae6-f57ea4f478b8.jpg&t=2&w=93&h=100" alt="" />
+
+                                </div>
+                            </div>
+                            <div class="ft clearfix">
+                                <span class="fl zan fn-bs" id="ding1518"><i class="fn-bs"></i><span class="ding" id="zan1518">赞1</span></span>
+
+                                <span class="fl view "><i class="fn-bs"></i><a href="http://sh.uzai.com/waptour-64904.html">查看线路</a></span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="hd clearfix mb5"><img src="http://r.uzaicdn.com/userhead/30.jpg" width="35" class="vm mr5" /><span class="f18 f33">张先生</span> <span class="f10 f999">03月30日</span> <span class="green fr f16 fn-bs">澳新</span></div>
+                            <div class="bd mb10 f13">非常精彩的旅行，就是太累了，有四天要凌晨三点多就起床</div>
+                            <div class="pic ">
+                                <div class="item">
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=69bc5fad-4be3-4346-83aa-c8851f4b0b81.jpg&t=2&w=93&h=100" alt="" />
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=0103db8a-f9b5-40a8-8d2e-007d86b6ceb6.jpg&t=2&w=93&h=100" alt="" />
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=da11501a-ecb6-44d9-8fb5-b068aef25068.jpg&t=2&w=93&h=100" alt="" />
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=8c0e7a1f-754e-4393-bd0f-b027214c08f1.jpg&t=2&w=93&h=100" alt="" />
+
+                                </div>
+                            </div>
+                            <div class="ft clearfix">
+                                <span class="fl zan fn-bs" id="ding1517"><i class="fn-bs"></i><span class="ding" id="zan1517">赞0</span></span>
+
+                                <span class="fl view "><i class="fn-bs"></i><a href="http://sh.uzai.com/waptour-29389.html">查看线路</a></span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="hd clearfix mb5"><img src="http://r.uzaicdn.com/userhead/4.jpg" width="35" class="vm mr5" /><span class="f18 f33">汪女士</span> <span class="f10 f999">03月30日</span> <span class="green fr f16 fn-bs">塞班</span></div>
+                            <div class="bd mb10 f13">整体还行，价格低嘛，全程不含餐自己吃的，塞班岛很小，食物等价格不低。环境很美</div>
+                            <div class="pic ">
+                                <div class="item">
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=c10b8b92-2bb8-4a02-842d-134a0211126c.jpg&t=2&w=93&h=100" alt="" />
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=cfb77dbe-aa04-4820-8676-501b8c47a228.jpg&t=2&w=93&h=100" alt="" />
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=075163a5-9d11-427d-8286-329751c65676.jpg&t=2&w=93&h=100" alt="" />
+
+                                    <img src="http://r.uzaicdn.com/picPhone.aspx?file=ed810ef7-e938-4dcb-bb8e-79cfc73c33f3.jpg&t=2&w=93&h=100" alt="" />
+
+                                </div>
+                            </div>
+                            <div class="ft clearfix">
+                                <span class="fl zan fn-bs" id="ding1516"><i class="fn-bs"></i><span class="ding" id="zan1516">赞0</span></span>
+
+                                <span class="fl view "><i class="fn-bs"></i><a href="http://sh.uzai.com/waptour-82008.html">查看线路</a></span>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div id="pullUp1" class="init">
+                        <span class="pullUpIcon"></span><span class="pullUpLabel">向上拉刷新页面...</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <div class="g-mod-menu-wrap">
+
+        <div class="g-mod-menu">
+            <ul class="f14 tc clearfix">
+                <li>
+                    <a href="/IndexDestination">
+                        <i class="f18"></i>
+                        <p class="f666">目的地</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/EasyGo">
+                        <i class="f18"></i>
+                        <p class="f666">说走就走</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <i class="f18"></i>
+                        <p class="f666">首页</p>
+                    </a>
+                </li>
+                <li class="on">
+                    <a href="/daren">
+                        <i class="f18"></i>
+                        <p class="f666">达人秀</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://u.uzai.com/mobile/UserIndex">
+                        <i class="f18"></i>
+                        <p class="f666">我的</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+   
+
+</body>
+</html>

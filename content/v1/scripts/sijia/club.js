@@ -1,0 +1,4 @@
+/*! uzai - v0.1.11 - 2017 */
+
+function clubSlide(){var a=$("#j_bannerSlides");a.slides({preload:!0,preloadImage:"//r.uzaicdn.com/content/v1/images/common/preload.gif",currentClass:"on",fadeSpeed:300,effect:"fade",crossfade:!0,hoverPause:!1,pause:1e3,play:6e3,generatePagination:!0}),a.find(".slides_control").css({width:"100%"}),$(".slides_container").each(function(){var a=$(this),b=a.next(".pagination");b.get(0)&&b.find("li").on("mouseenter",function(){var a=$(this);a.find("a").click()})})}function clubTab(a){var b=$("#"+a);b.get(0)||(b=$("."+a)),b.find(".bd").find(".item").eq(0).show(),b.find(".hd").on("click","li",function(){var a=$(this),b=a.index();a.addClass("on").siblings().removeClass("on"),a.parents(".hd").next(".bd").find(".item").hide().eq(b).show()})}$(function(){clubSlide(),clubTab("j_activityMain")});
+//# sourceMappingURL=/sourcemaps/content/v1/scripts/sijia/club.js.map

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html ng-app="myApp" style="font-size: 40px">
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+
+    <meta name="keywords" content="">
+    <meta name="description" content="众信悠哉旅行带您发现最新最潮旅游玩法，热门旅游线路，更多惊喜，尽在众信悠哉旅游网。
+">
+    <script src=" http://r03.uzaicdn.com/content/hybrid/scripts/common/font.js"></script>
+    <link href=" http://r03.uzaicdn.com/content/hybrid/styles/custom/base.css" rel="stylesheet">
+    <link href=" http://r03.uzaicdn.com/content/hybrid/styles/discover/index.css" rel="stylesheet">
+    <title>发现-众信悠哉旅行手机站</title>
+    <style>
+        .white-topbar {
+            display: block;
+            background-color: gray;
+        }
+        .link {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 1.5rem;
+            width: 5rem;
+            height: 5rem;
+            border: 1px solid #000;
+        }
+        .link-test {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 7.5rem;
+            width: 5rem;
+            height: 5rem;
+            border: 1px solid #000;
+        }
+    </style>
+
+    <!-- <base href="/content/hybrid/html/test-route/"> -->
+</head>
+
+<body ng-controller="index">
+    <!-- 头部 -->
+    <header class="bg-transparent white-topbar">
+        <a target="_self" href="#" class="fl top-back" ng-show="header_leftIcon"><i class="left-ico black-ico"></i></a>
+        <a target="_self" class="fr"></a>
+        <div class="title_img" ng-bind="header_title">哈哈哈</div>
+    </header>
+    <a href="#main"  class="link">
+      什么也没有呀，什么也没有，点击就有main了~
+    </a>
+
+    <a href="#test"  class="link-test">
+      什么也没有呀，什么也没有，点击就有test了~
+    </a>
+
+    
+    <script src=" http://r03.uzaicdn.com/content/libs/frame/angular/angular.min.js"></script>
+    <script src=" http://r03.uzaicdn.com/content/hybrid/scripts/test-route/api.js"></script>
+    <script src=" http://r03.uzaicdn.com/content/hybrid/scripts/test-route/index.js"></script>
+</body>
+
+</html>

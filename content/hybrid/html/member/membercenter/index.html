@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html ng-app='mindex'>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="keywords" content="私人定制旅游,定制旅游,高端旅游,定制旅行">
+    <meta name="description" content="">
+    <script src="http://r03.uzaicdn.com/content/hybrid/scripts/common/font.js"></script>
+    <link href="http://r03.uzaicdn.com/content/hybrid/styles/common/base.css" rel="stylesheet">
+    <link href="http://r03.uzaicdn.com/content/hybrid/styles/member/index.css" rel="stylesheet">
+    <title>会员俱乐部</title>
+    <script type="text/javascript" src="http://r03.uzaicdn.com/content/libs/frame/angular/angular.min.js" defer></script>
+</head>
+
+<body ng-controller="mindexController">
+    <!-- 头部 -->
+    <header id="j_header" class="bg-transparent white-topbar">
+        <a target="_self" ng-click="callback('https://u.uzai.com/mobile/userindex',true,false)" class="fl top-back"><i class="left-ico black-ico"></i></a>
+        <a target="_self" class="fr"></a>
+        <div class="title_img">会员俱乐部</div>
+    </header>
+    <!-- 第一部分开始 -->
+    <div class="main-content">
+        <div class="main-contentbj">
+            <img ng-src="{{index.MemberInfo.HeadUrl}}" class="headphoto" />
+            <div class="userinformation">
+                <p class="nickname font36 ng-cloak" ng-if="index.MemberInfo.NickName.length<=6">{{index.MemberInfo.NickName}}<span class="v v-{{index.MemberInfo.UserGrade}}"></span></p>
+                <p class="nickname font36 ng-cloak" ng-if="index.MemberInfo.NickName.length>6">{{index.MemberInfo.NickName | limitTo:6}}...<span class="v v-{{index.MemberInfo.UserGrade}}"></span></p>
+                <p>
+                    <span class="font30 intergral">账户积分:</span>
+                    <span class="font30 intergral-value ng-cloak">{{index.MemberInfo.MemberPoint}}</span>
+                </p>
+            </div>
+            <span class="privilege font26" ng-click="memberlevel(index.MemberInfo.UserGrade)">等级特权</span>
+        </div>
+        <span class="bjbottom" src="http://r03.uzaicdn.com/content/hybrid/images/member/bjbottom.png"></span>
+    </div>
+    <div class="selectare">
+        <ul class="content-select clearfix">
+            <li class="mall fl">
+                <p class="tubiao"><span class="mailimg" ng-click="JumpUrl(1)"></span></p>
+                <p class="font28">积分商城</p>
+            </li>
+            <li class="mall fl">
+                <p class="tubiao"><span class="group" ng-click="JumpUrl(2)"></span></p>
+                <p class="font28">专属团</p>
+            </li>
+            <li class="mall fl">
+                <p class="tubiao"><span class="memberactive" ng-click="JumpUrl(3)"></span></p>
+                <p class="font28">会员活动</p>
+            </li>
+            <li class="mall fl">
+                <p class="tubiao"><span class="uquan" ng-click="JumpUrl(4)"></span></p>
+                <p class="font28">U圈定制</p>
+            </li>
+        </ul>
+    </div>
+    <div class="xiaoguo"></div>
+    <!-- 第一部分结束 -->
+    <!-- 第二部分开始 -->
+    <h2 class="xian">
+        <span class="font30">会员专属团</span>
+    </h2>
+    <div class="main_list1" ng-repeat="e in index.ExclusiveGroup" ng-click="gproduct(e.Productype,e.Fid)">
+        <a><img ng-src="{{e.FilePath}}" class="img"></a>
+        <p class="title ng-cloak">{{e.Title}}</p>
+        <div class="main_list1_f">
+            <span class="right ng-cloak"><span class="dollar">¥</span> {{e.Price}} <span class="rise">起</span></span>
+            <span class="add ng-cloak">{{e.City}}出发</span>
+        </div>
+    </div>
+    <div class="more">
+        <a class="morebtn font26" ng-click="JumpUrl(2)">更多</a>
+    </div>
+    <!-- 第二部分结束 -->
+    <!-- 第三部分开始 -->
+    <h2 class="xian mt40">
+        <span class="font30">会员活动</span>
+    </h2>
+    <div class="mainlist1" ng-repeat="a in index.MemberActivity"  ng-click="JumpUrl(5,a.ID)">
+        <a class="clearfix">
+            <div class="time">
+                <span class="year">{{a.CreateDate.substr(0,4)}}</span>
+                <span class="month"><i>{{a.CreateDate.substr(5,2)}}</i><i class="pie">月</i></span>
+            </div>
+            <img ng-src="{{a.FilePath}}" class="img" />
+            <div class='mainlist1_right'>
+                <p class="title ng-cloak">{{a.Title}}</p>
+                <span class="ng-cloak">{{a.Content}}</span>
+            </div>
+        </a>
+    </div>
+    <div class="more mt-20">
+        <a class="morebtn font26" ng-click="JumpUrl(3)">更多</a>
+    </div>
+    <!-- 第三部分结束 -->
+</body>
+<script type="text/javascript" src="http://r03.uzaicdn.com/content/libs/jquery-2.1.1.min.js" defer></script>
+<script type="text/javascript" src="http://r03.uzaicdn.com/content/hybrid/scripts/common/api.js" defer></script>
+<script type="text/javascript" src="http://r03.uzaicdn.com/content/hybrid/scripts/common/app-bridge.js" defer></script>
+<script type="text/javascript" src="http://r03.uzaicdn.com/content/hybrid/scripts/member/index.js" defer></script>
+<script src="http://api.map.baidu.com/api?v=1.4" defer ></script>
+</html>

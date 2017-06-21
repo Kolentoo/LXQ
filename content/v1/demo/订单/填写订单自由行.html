@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>填写订单 - 悠哉旅游网</title>
+    <link rel="Shortcut Icon" href="//r.uzaicdn.com/favicon.ico" type="image/x-icon" />
+    <meta name="keywords" content="旅游,旅游网,自由行,跟团游,公司旅游" />
+    <meta name="description" content="悠哉旅游网（Uzai.com）－中国最专业、全面的旅游线路和自助游预订网站，一站式个性化旅游服务提供商；跟团游+自助游+公司旅游专家；出境游、周边游、国内游、酒店、签证；出发地：上海、北京、杭州、深圳、成都、南京。" />
+    <script>        document.domain = 'uzai.com'; //"localhost";</script>
+    <link rel="stylesheet" href="//r01.uzaicdn.com/content/v1/styles/core.css" />
+    <script src="//r01.uzaicdn.com/content/v1/scripts/core.js"></script>
+    <!--[if lt IE 9]><script src="//r.uzaicdn.com/content/libs/html5shiv.js"></script><![endif]-->
+    <!--[if IE 6]><script src="//r.uzaicdn.com/content/libs/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script><script>DD_belatedPNG.fix('.png');</script><![endif]-->
+    <link rel="stylesheet" href="//r01.uzaicdn.com/content/v1/styles/order/common.css" />
+    <link rel="stylesheet" href="/content/v1/styles/order/order.css" />
+    <script src="//r01.uzaicdn.com/Scripts/common/Mammon/ycsDiscountUI.PC.js" type="text/javascript"></script>
+    <script src="//r01.uzaicdn.com/content/v1/scripts/order/order.js"></script>
+    <script src="//r01.uzaicdn.com/static/base/powerfloat/jquery-powerFloat-min.js"></script>
+    <script src="//api.map.baidu.com/api?v=2.0&ak=jcrU5VmM7XaabOsWXPIvwi7s&s=1"></script>
+</head>
+<body>
+    <div id="loadingDiv" class="xs" style="text-align: center; display: none;">
+        <img src="//r.uzaicdn.com/content/1/image/order/loading.gif" />
+        <br />
+        正在提交，请稍后。。。
+    </div>
+
+    <div class="sp-header">
+        <div class="w clearfix">
+            <div class="fl d-logo">
+                <div class="d1 fl">
+                    <a href="http://www.uzai.com"><img src="//r.uzaicdn.com/content/v1/images/common/logo.png" class="block" alt="悠哉旅游网" title="悠哉旅游网" /></a>
+                </div>
+            </div>
+            <div class="fr d-tel" title="免长途费，马上拨打电话预订吧！">
+                <i class="icon-common-top png"></i>
+
+                    <span class="s1">预订热线：9:00~21:00</span>
+
+                <span class="s2">1010-9898</span>
+            </div>
+        </div>
+    </div>
+    <input id="pid" type="hidden" value="16186" />
+    <input id="hidProductType" type="hidden" value="2" />
+    <input type="hidden" id="track_pageType" value="order" />
+
+    <nav class="order-step bg-white f666 f16 yahei w clearfix">
+        <div class="step-item first on"><p><em>1.填写订单</em></p></div>
+        <div class="step-item"><p><em>2.填写游客信息</em></p></div>
+        <div class="step-item"><p><em>3.核对订单</em></p></div>
+        <div class="step-item"><p><em>4.支  付</em></p></div>
+        <div class="step-item last"><p><em>5.预订成功</em></p></div>
+    </nav>
+
+    <form id="one_form" action="/proc_one/do" method="post">
+    <section class="travel-order mt10 w clearfix">
+
+        <div id="j_side" class="side fr">
+            <div class="order-listing-box bg-white pt15 pb15">
+                <h2 class="mod-item-hd">
+                    <hr />
+                    <em class="hd-cont bg-white f16 yahei pr10">预订清单</em>
+                    <div class="switch-wrap bg-white pl10"><span class="switch pointer"><i class="border-arrow on"></i></span></div>
+                </h2>
+                <div class="mod-item-bd">
+                    <div class="order-listing-wrap pb10 pt15">
+                        <div class="order-listing">
+                            <div class="sub-hd"><em class="hd-cont f14 yahei">旅游团费</em></div>
+                            <ul class="listing-item-bd">
+                                <li class="pt5 clearfix"><span class="item-main fl">
+                                    <i id="b_personnums">1</i>成人<i class="pl10 pr10">X</i><i class="price">￥0</i></span>
+                                    <span class="price orange f14 fr">￥<i id="s_personall">0</i></span></li>
+                                <li class="pt5 clearfix"><span class="item-main fl">
+                                    <i id="b_childnums">0</i>儿童<i class="pl10 pr10">X</i><i class="price">￥0</i></span>
+                                    <span class="price orange f14 fr">￥<i id="s_childall">0</i></span></li>
+                            </ul>
+                            <div class="sub-hd pt15 addList hide"><em class="hd-cont f14 yahei">附加产品</em></div>
+                            <dl class="listing-item-bd addList hide">
+                            </dl>
+                            <div class="sub-hd pt15 saleList hide"><em class="hd-cont f14 yahei">优惠信息</em></div>
+                            <ul class="listing-item-bd saleList hide">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="total-bar mt10 clearfix"><span class="f16 yahei fl">总计：</span><span class="price orange f18 b fr">￥<i id="offerPrice">0</i></span></div>
+
+
+
+                </div>
+            </div>
+
+            <div id="discountInfo" class="ycs-info-mod tc hide">
+                <div class="info-box">
+                    <p class="f14">获得<i class="icon-sycee png"></i>X<span id="discountPercent"></span>，抵扣<b id="discountPrice"></b>元</p>
+                    <p class="f20">现价：<b class="price" id="presentPrice"></b>元</p>
+                </div>
+                <div class="info-box">
+                    <p class="excess-time f20">剩余时间<b class="f24 ml10"><i class="num-hour">00</i>:<i class="num-minute">00</i>:<i class="num-second">00</i></b></p>
+                </div>
+            </div>
+            <div id="monkey" class="ycs-mod pointer mt5 hide"></div>
+            <!-- 迎财神弹框标签 -->
+            <div id="j_popYcsMod" class="pop-ycs-mod hide">
+                <i class="icon-1 png"></i>
+                <span class="pop-close tc">&times;</span>
+                <div class="mod-inner">
+                    <i class="icon-2 png"></i>
+                    <i class="icon-3 png"></i>
+                    <div class="pop-cont tc"><i class="icon-4 png"></i></div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="main-box">
+           <div class="box-fix bg-white pt15 pb15">
+
+                <h2 class="mod-item-hd"><hr /><em class="hd-cont bg-white f16 yahei pr10">线路信息</em></h2>
+                <div class="mod-item-bd">
+                    <div class="info-border pt10 pb10 mt10">
+                        <table class="info-table f14 yahei g10">
+                            <tr>
+                                <th class="g4"><div class="item-cont">线路名称</div></th>
+                                <th><div class="item-cont">出发城市</div></th>
+                                <th><div class="item-cont">出游时间</div></th>
+                                <th class="g3"><div class="item-cont">出游人数</div></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="item-cont f12 songti">
+                                        <a class="a1 line-name" id="lineName" href="http://sh.uzai.com/tour-16186.html"
+                                                target="_blank">【悠游】<昆明、大理、丽江、香格里拉6日>石卡雪山、虎跳峡，昆明飞香格里拉</a><span class="cf30">
+                                                    </span>
+                                    </div>
+                                </td>
+                                <td><div class="item-cont">上海市  </div></td>
+                                <td><div class="item-cont">2016-4-11</div></td>
+                                <td>
+                                    <div class="item-cont">
+                                        <label for="">成人</label><input type="text" name="txtPersonNums" id="txtPersonNums" class="textbox num-box tc ml5" value="1" maxlength="2" />
+                                        <label for="" class="ml10">儿童</label><input type="text" name="txtChildNums" id="txtChildNums" class="textbox num-box tc ml5" value="0" maxlength="2" />
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+
+
+
+                <h2 class="mod-item-hd mt25"><hr /><em class="hd-cont bg-white f16 yahei pr10">附加产品信息</em></h2>
+
+                <div class="mod-item-bd" id="divAddProduct">
+
+                    <div class="sub-hd pt15"><em class="hd-cont f14 yahei">保险产品</em>
+
+                            <span class="f666">（每位出游人限购1份保险，白金、钻石会员可免费获赠旅游意外险）</span>
+
+                    </div>
+                    <div class="info-border pt10 pb10 mt5">
+                        <table class="info-table f14 yahei g10">
+                            <tr>
+                                <th class="g4" style="text-align:left;"><div class="item-cont">名称</div></th>
+                                <th><div class="item-cont">使用日期</div></th>
+                                <th><div class="item-cont">价格</div></th>
+                                <th><div class="item-cont">单位</div></th>
+                                <th><div class="item-cont">份数/天数</div></th>
+                            </tr>
+
+
+                            <tr id="tr_4803562">
+                                <td style="text-align:left;"><div class="item-cont">
+                                    <a class="line-name" target='_blank' href='http://www.uzai.com/qa/helplist-4.html' style="line-height: 17px;" id="add_4803562">
+                                        <i>悠哉平安境内长线经典型4-7日</i></a>
+                                </div></td>
+                                <td>
+                                    <div class="item-cont">
+                                        <input id="txtHiddenIsUserPersonType_4803562" type="hidden"
+                                                    value="0" />
+                                        <input id="txtHiddenValuationType_4803562" type="hidden" value="1" />
+
+                                        <input id="txtHiddenValuationType_Nums_4803562" type="hidden"
+                                            value="0" />
+                                        <input id="txtHiddenValuationType_Parameter_4803562" type="hidden"
+                                            value="1" />
+                                        <input id="txtHiddenValuationType_MinNums_4803562" type="hidden"
+                                            value="1" />
+                                        <input id="txtHiddenValuationType_MaxNums_4803562" type="hidden"
+                                            value="99" />
+
+                                        <input id="txtHiddenDefaultNums_4803562" type="hidden" />
+                                        <input id="txtHiddenDefaultOrderNums_4803562" type="hidden" />
+                                        <input id="txtHiddenAddProductId_4803562" type="hidden" value="62888" />
+                                        <input id="txtHiddenDateRange_4803562" type="hidden" value="0" />
+
+                                        <input id="txtHiddenIsExclude_4803562" type="hidden" value="0" />
+
+
+                                        --
+
+                                    </div>
+                                </td>
+                                <td><div class="item-cont">
+
+                                    <input id="txtHiddenAddProductPdateEnable_4803562" type="hidden" value="792551" />
+                                    <input id="txtHiddenAddProductProfit_4803562" type="hidden" value="7.5000" />
+                                    <span class="price orange f14">￥<b id="td_price_4803562" isBaoxian='1'>15</b></span>
+
+                                    </div>
+                                </td>
+                                <td><div class="item-cont">
+                                    <input type="hidden" id="hdunits_4803562" value="元/人" />
+                                            元/人</div></td>
+                                <td>
+                                    <div class="item-cont">
+                                        <input id="txtHiddenAddProductTypeId_4803562" type="hidden"
+                                            value="3" />
+                                        <input id="txtHiddenAddProductIncludeEnable_4803562" type="hidden"
+                                            value="0" />
+                                        <input id="txtHiddenAddProductSHAddtionPriceId_4803562" type="hidden"
+                                            value="" />
+                                        <input id="txtHiddenAddProductSHAddtionCountId_4803562" type="hidden"
+                                            value="" />
+                                        <input id="txtHiddenAddProductSupplierNO_4803562" type="hidden"
+                                            value="" />
+                                        <input id="txtHiddenAddProductName_4803562" type="hidden" value="悠哉平安境内长线经典型4-7日" />
+
+                                        <select id="ddl_nums_4803562" style="min-width: 34px;">
+                                            </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="trhide" style="display:none;">
+                                <td colspan="5" style="text-align: left; color: #666; line-height: 22px;">
+                                    <div class="item-cont">
+
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                            <tr id="tr_4803563">
+                                <td style="text-align:left;"><div class="item-cont">
+                                    <a class="line-name" target='_blank' href='http://www.uzai.com/qa/helplist-4.html' style="line-height: 17px;" id="add_4803563">
+                                        <i>悠哉平安境内长线普通型4-7日</i></a>
+                                </div></td>
+                                <td>
+                                    <div class="item-cont">
+                                        <input id="txtHiddenIsUserPersonType_4803563" type="hidden"
+                                                    value="0" />
+                                        <input id="txtHiddenValuationType_4803563" type="hidden" value="1" />
+
+                                        <input id="txtHiddenValuationType_Nums_4803563" type="hidden"
+                                            value="0" />
+                                        <input id="txtHiddenValuationType_Parameter_4803563" type="hidden"
+                                            value="1" />
+                                        <input id="txtHiddenValuationType_MinNums_4803563" type="hidden"
+                                            value="1" />
+                                        <input id="txtHiddenValuationType_MaxNums_4803563" type="hidden"
+                                            value="200" />
+
+                                        <input id="txtHiddenDefaultNums_4803563" type="hidden" />
+                                        <input id="txtHiddenDefaultOrderNums_4803563" type="hidden" />
+                                        <input id="txtHiddenAddProductId_4803563" type="hidden" value="62883" />
+                                        <input id="txtHiddenDateRange_4803563" type="hidden" value="0" />
+
+                                        <input id="txtHiddenIsExclude_4803563" type="hidden" value="0" />
+
+
+                                        --
+
+                                    </div>
+                                </td>
+                                <td><div class="item-cont">
+
+                                    <input id="txtHiddenAddProductPdateEnable_4803563" type="hidden" value="792539" />
+                                    <input id="txtHiddenAddProductProfit_4803563" type="hidden" value="5.0000" />
+                                    <span class="price orange f14">￥<b id="td_price_4803563" isBaoxian='1'>10</b></span>
+
+                                    </div>
+                                </td>
+                                <td><div class="item-cont">
+                                    <input type="hidden" id="hdunits_4803563" value="元/人" />
+                                            元/人</div></td>
+                                <td>
+                                    <div class="item-cont">
+                                        <input id="txtHiddenAddProductTypeId_4803563" type="hidden"
+                                            value="3" />
+                                        <input id="txtHiddenAddProductIncludeEnable_4803563" type="hidden"
+                                            value="0" />
+                                        <input id="txtHiddenAddProductSHAddtionPriceId_4803563" type="hidden"
+                                            value="" />
+                                        <input id="txtHiddenAddProductSHAddtionCountId_4803563" type="hidden"
+                                            value="" />
+                                        <input id="txtHiddenAddProductSupplierNO_4803563" type="hidden"
+                                            value="" />
+                                        <input id="txtHiddenAddProductName_4803563" type="hidden" value="悠哉平安境内长线普通型4-7日" />
+
+                                        <select id="ddl_nums_4803563" style="min-width: 34px;">
+                                            </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="trhide" style="display:none;">
+                                <td colspan="5" style="text-align: left; color: #666; line-height: 22px;">
+                                    <div class="item-cont">
+
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                            <tr id="tr_4803564">
+                                <td style="text-align:left;"><div class="item-cont">
+                                    <a class="line-name" target='_blank' href='http://www.uzai.com/qa/helplist-4.html' style="line-height: 17px;" id="add_4803564">
+                                        <i>悠哉平安境内长线尊贵型4-7日</i></a>
+                                </div></td>
+                                <td>
+                                    <div class="item-cont">
+                                        <input id="txtHiddenIsUserPersonType_4803564" type="hidden"
+                                                    value="0" />
+                                        <input id="txtHiddenValuationType_4803564" type="hidden" value="1" />
+
+                                        <input id="txtHiddenValuationType_Nums_4803564" type="hidden"
+                                            value="0" />
+                                        <input id="txtHiddenValuationType_Parameter_4803564" type="hidden"
+                                            value="1" />
+                                        <input id="txtHiddenValuationType_MinNums_4803564" type="hidden"
+                                            value="1" />
+                                        <input id="txtHiddenValuationType_MaxNums_4803564" type="hidden"
+                                            value="99" />
+
+                                        <input id="txtHiddenDefaultNums_4803564" type="hidden" />
+                                        <input id="txtHiddenDefaultOrderNums_4803564" type="hidden" />
+                                        <input id="txtHiddenAddProductId_4803564" type="hidden" value="62891" />
+                                        <input id="txtHiddenDateRange_4803564" type="hidden" value="0" />
+
+                                        <input id="txtHiddenIsExclude_4803564" type="hidden" value="0" />
+
+
+                                        --
+
+                                    </div>
+                                </td>
+                                <td><div class="item-cont">
+
+                                    <input id="txtHiddenAddProductPdateEnable_4803564" type="hidden" value="792554" />
+                                    <input id="txtHiddenAddProductProfit_4803564" type="hidden" value="10.0000" />
+                                    <span class="price orange f14">￥<b id="td_price_4803564" isBaoxian='1'>20</b></span>
+
+                                    </div>
+                                </td>
+                                <td><div class="item-cont">
+                                    <input type="hidden" id="hdunits_4803564" value="元/人" />
+                                            元/人</div></td>
+                                <td>
+                                    <div class="item-cont">
+                                        <input id="txtHiddenAddProductTypeId_4803564" type="hidden"
+                                            value="3" />
+                                        <input id="txtHiddenAddProductIncludeEnable_4803564" type="hidden"
+                                            value="0" />
+                                        <input id="txtHiddenAddProductSHAddtionPriceId_4803564" type="hidden"
+                                            value="" />
+                                        <input id="txtHiddenAddProductSHAddtionCountId_4803564" type="hidden"
+                                            value="" />
+                                        <input id="txtHiddenAddProductSupplierNO_4803564" type="hidden"
+                                            value="" />
+                                        <input id="txtHiddenAddProductName_4803564" type="hidden" value="悠哉平安境内长线尊贵型4-7日" />
+
+                                        <select id="ddl_nums_4803564" style="min-width: 34px;">
+                                            </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="trhide" style="display:none;">
+                                <td colspan="5" style="text-align: left; color: #666; line-height: 22px;">
+                                    <div class="item-cont">
+
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                            <tr id="tr_4803565">
+                                <td style="text-align:left;"><div class="item-cont">
+                                    <a class="line-name" target='_blank' href='http://www.uzai.com/qa/helplist-4.html' style="line-height: 17px;" id="add_4803565">
+                                        <i>悠哉平安境内高原险4-7日</i></a>
+                                </div></td>
+                                <td>
+                                    <div class="item-cont">
+                                        <input id="txtHiddenIsUserPersonType_4803565" type="hidden"
+                                                    value="0" />
+                                        <input id="txtHiddenValuationType_4803565" type="hidden" value="1" />
+
+                                        <input id="txtHiddenValuationType_Nums_4803565" type="hidden"
+                                            value="0" />
+                                        <input id="txtHiddenValuationType_Parameter_4803565" type="hidden"
+                                            value="1" />
+                                        <input id="txtHiddenValuationType_MinNums_4803565" type="hidden"
+                                            value="1" />
+                                        <input id="txtHiddenValuationType_MaxNums_4803565" type="hidden"
+                                            value="99" />
+
+                                        <input id="txtHiddenDefaultNums_4803565" type="hidden" />
+                                        <input id="txtHiddenDefaultOrderNums_4803565" type="hidden" />
+                                        <input id="txtHiddenAddProductId_4803565" type="hidden" value="62895" />
+                                        <input id="txtHiddenDateRange_4803565" type="hidden" value="0" />
+
+                                        <input id="txtHiddenIsExclude_4803565" type="hidden" value="0" />
+
+
+                                        --
+
+                                    </div>
+                                </td>
+                                <td><div class="item-cont">
+
+                                    <input id="txtHiddenAddProductPdateEnable_4803565" type="hidden" value="792620" />
+                                    <input id="txtHiddenAddProductProfit_4803565" type="hidden" value="12.5000" />
+                                    <span class="price orange f14">￥<b id="td_price_4803565" isBaoxian='1'>25</b></span>
+
+                                    </div>
+                                </td>
+                                <td><div class="item-cont">
+                                    <input type="hidden" id="hdunits_4803565" value="元/人" />
+                                            元/人</div></td>
+                                <td>
+                                    <div class="item-cont">
+                                        <input id="txtHiddenAddProductTypeId_4803565" type="hidden"
+                                            value="3" />
+                                        <input id="txtHiddenAddProductIncludeEnable_4803565" type="hidden"
+                                            value="0" />
+                                        <input id="txtHiddenAddProductSHAddtionPriceId_4803565" type="hidden"
+                                            value="" />
+                                        <input id="txtHiddenAddProductSHAddtionCountId_4803565" type="hidden"
+                                            value="" />
+                                        <input id="txtHiddenAddProductSupplierNO_4803565" type="hidden"
+                                            value="" />
+                                        <input id="txtHiddenAddProductName_4803565" type="hidden" value="悠哉平安境内高原险4-7日" />
+
+                                        <select id="ddl_nums_4803565" style="min-width: 34px;">
+                                            </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="trhide" style="display:none;">
+                                <td colspan="5" style="text-align: left; color: #666; line-height: 22px;">
+                                    <div class="item-cont">
+
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                        <div id="safetyNotice" class="hide ml10 mr10 cf30">旅游保险能够给您的出行安全带来更多保障，所以悠哉网建议您务必购买旅游保险。如您放弃购买，则行程中的风险和损失将由您自行承担。</div>
+
+                    </div>
+
+                    <div class="sub-hd pt15"><em class="hd-cont f14 yahei">单房差</em>
+
+                    </div>
+                    <div class="info-border pt10 pb10 mt5">
+                        <table class="info-table f14 yahei g10">
+                            <tr>
+                                <th class="g4" style="text-align:left;"><div class="item-cont">名称</div></th>
+                                <th><div class="item-cont">使用日期</div></th>
+                                <th><div class="item-cont">价格</div></th>
+                                <th><div class="item-cont">单位</div></th>
+                                <th><div class="item-cont">份数/天数</div></th>
+                            </tr>
+
+
+                            <tr id="tr_4803561">
+                                <td style="text-align:left;"><div class="item-cont">
+                                    <a class="line-name" href='javascript:void(0);' style="line-height: 17px;" id="add_4803561">
+                                        <span class='arrowFlag'>▼</span><i>SHF16186单房差</i></a>
+                                </div></td>
+                                <td>
+                                    <div class="item-cont">
+                                        <input id="txtHiddenIsUserPersonType_4803561" type="hidden"
+                                                    value="1" />
+                                        <input id="txtHiddenValuationType_4803561" type="hidden" value="1" />
+
+                                        <input id="txtHiddenValuationType_Nums_4803561" type="hidden"
+                                            value="0" />
+                                        <input id="txtHiddenValuationType_Parameter_4803561" type="hidden"
+                                            value="1" />
+                                        <input id="txtHiddenValuationType_MinNums_4803561" type="hidden"
+                                            value="1" />
+                                        <input id="txtHiddenValuationType_MaxNums_4803561" type="hidden"
+                                            value="99" />
+
+                                        <input id="txtHiddenDefaultNums_4803561" type="hidden" />
+                                        <input id="txtHiddenDefaultOrderNums_4803561" type="hidden" />
+                                        <input id="txtHiddenAddProductId_4803561" type="hidden" value="43682" />
+                                        <input id="txtHiddenDateRange_4803561" type="hidden" value="0" />
+
+                                        <input id="txtHiddenIsExclude_4803561" type="hidden" value="0" />
+
+
+                                        --
+
+                                    </div>
+                                </td>
+                                <td><div class="item-cont">
+
+                                    <input id="txtHiddenAddProductPdateEnable_4803561" type="hidden" value="" />
+                                    <input id="txtHiddenAddProductProfit_4803561" type="hidden" value="0" />
+                                    <span class="price orange f14">￥<b id="td_price_4803561" >0</b></span>
+
+                                    </div>
+                                </td>
+                                <td><div class="item-cont">
+                                    <input type="hidden" id="hdunits_4803561" value="元" />
+                                            元</div></td>
+                                <td>
+                                    <div class="item-cont">
+                                        <input id="txtHiddenAddProductTypeId_4803561" type="hidden"
+                                            value="13" />
+                                        <input id="txtHiddenAddProductIncludeEnable_4803561" type="hidden"
+                                            value="0" />
+                                        <input id="txtHiddenAddProductSHAddtionPriceId_4803561" type="hidden"
+                                            value="" />
+                                        <input id="txtHiddenAddProductSHAddtionCountId_4803561" type="hidden"
+                                            value="" />
+                                        <input id="txtHiddenAddProductSupplierNO_4803561" type="hidden"
+                                            value="" />
+                                        <input id="txtHiddenAddProductName_4803561" type="hidden" value="SHF16186单房差" />
+
+                                        <select id="ddl_nums_4803561" style="min-width: 34px;">
+                                            </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="trhide" style="display:none;">
+                                <td colspan="5" style="text-align: left; color: #666; line-height: 22px;">
+                                    <div class="item-cont">
+                                        本产品按2人入住1间客房核算价格，单人出行请在出行前补单房差以享受单人房间；多人出行出现单人，可选择出行后在当地与同行亲友共享双人房并加床（即3人1间），请在预订时告知，我社会尽量安排，如无法安排则须在出行前补单房差。<br />
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+                <h2 class="mod-item-hd mt25"><hr /><em class="hd-cont bg-white f16 yahei pr10">优惠信息</em></h2>
+                <div class="mod-item-bd" id="DiscountDiv">
+                    <div class="favorable-tab mod-item-tab j_orderTab f666 f14 yahei pt10">
+                        <input type="hidden" id="" />
+                        <ul class="hd clearfix">
+
+                            <li>使用U币</li>
+
+                            <li>使用积分</li>
+
+                            <li class="list-box clearfix">
+                                <div class="tab-list clearfix">
+                                    <p class="hd-list fl">使用现金券/红包</p>
+                                    <span class="hover-wrap f12 fl clearfix">
+                                        <div class="icon-listtips fl png text-hover c36b"></div>
+                                        <div class="hover-tips bg-white tips-cont">
+                                            <div class="p10">
+                                                <p>折扣券使用说明：</p>
+                                                <p>1. 折扣券只针对线路价格进行打折，优惠保险等附加产品不属于打折范围；</p>
+                                                <p>2. 如遇打折后，线路价格出现小数的情况，系统会自动去掉小数并在线路价格基础上+1；</p>
+                                            </div>
+                                            <span class="arrow-icon f14 songti lh1"><em>◆</em><i>◆</i></span>
+                                        </div>
+                                    </span>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                        <div class="bd pt15">
+
+                            <div class="item hide">
+                                <div class="clearfix fr use-tips">
+                                    <span class="hover-wrap f12 fr">
+                                        <em class="text-hover c36b">U币使用说明</em>
+                                        <div class="hover-tips bg-white tips-cont">
+                                            <div class="p10">
+                                                <p>* 如果您持有U币，可在预订时使用（使用时请确认已转化为新版U币）。</p>
+                                                <p>* U币使用规则：</p>
+                                                <p class="pl10">U币使用总额不得超过产品U币优惠上限；</p>
+                                                <p class="pl10">U币可以多张累计使用；</p>
+                                                <p class="pl10">U币不找零、不折现，如在产品中使用的U币数额高于此产品U币优惠上限，超过部分自动作废；</p>
+                                                <p>* 如果你持有未绑定的U币，请先绑定。绑定后的U币信息会出现在下方的U币列表中。</p>
+                                                <p class="pl10">悠哉旅游网保留对U币使用的最终解释权。</p>
+                                            </div>
+                                            <span class="arrow-icon f14 songti lh1"><em>◆</em><i>◆</i></span>
+                                        </div>
+                                    </span>
+                                </div>
+                                <p>最高可使用<em class="orange"><i id="canUseUcoin">20</i>U币</em>，
+
+                                已使用<em class="orange"><i id="usedUcoin">0</i>U币</em>，当前余额<em class="orange"><i id="ucoinCount">100</i>U币</em></p>
+                                <div class="info-border pt10 pb10 mt10" style="max-height:200px;overflow:auto;">
+
+                                    <table id="ucoinTable" class="info-table f333 f14 yahei g10">
+                                        <tr>
+                                            <th class="g4"><div class="item-cont">编号</div></th>
+                                            <th><div class="item-cont">有效期</div></th>
+                                            <th><div class="item-cont">面值</div></th>
+                                            <th><div class="item-cont">状态</div></th>
+                                        </tr>
+
+                                        <tr>
+                                            <td><div class="item-cont num-listing"><label for=""><input type="checkbox" name="ucoinUsed" value="D6C317311E" money="100" class="checkbox mr5 vm">D6C317311E</label></div></td>
+                                            <td><div class="item-cont">2016/11/23</div></td>
+                                            <td><div class="item-cont orange">100</div></td>
+                                            <td><div class="item-cont">可用</div></td>
+                                        </tr>
+
+                                    </table>
+
+                                </div>
+
+                                <p class="mt15"><span class="f666 f14 mr10">绑定U币</span><span class="use-bar vm clearfix"><input type="text" id="txtBindUcoin"
+                                    class="textbox medium-textbox fl"><i class="btn-use pointer tc fl" id="btnBindUcoin">绑定</i></span><span class="ml10 cf30" style="position:relative;"></span></p>
+
+                            </div>
+
+                            <div class="item hide">
+
+                                <span class="use-bar vm clearfix"><input type="text" id="txtUseScore" placeholder="请输入50的整数倍" class="textbox medium-textbox fl onlynum" /><i id="btnUseScore"
+                                    class="btn-use pointer tc fl">使用</i></span><span class="ml10 cf30" style="position:relative;"></span>
+                                <span class="ml10">当前剩余<em class="orange"><i id="scoreCount">0</i>积分</em>（<em class="orange">50</em>积分 = <em class="orange">1</em>元）</span>
+                                <input type="hidden" id="txtHiddenUseScore" name="txtHiddenUseScore" />
+
+                            </div>
+
+                            <div class="item hide">
+
+                                <span class="use-bar vm clearfix"><input type="text" id="txtUseVoucher" placeholder="输入券号" class="textbox medium-textbox fl w160"><i id="btnUseVoucher"
+                                    class="btn-use pointer tc fl">使用</i></span><span class="ml10 cf30" style="position:relative;"></span><span class="ml10">现金券/红包一旦使用，生成订单后，将无法退回。</span>
+                                <input type="hidden" id="txtHiddenUseVoucher" name="txtHiddenUseVoucher" />
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <h2 class="mod-item-hd mt25"><hr /><em class="hd-cont bg-white f16 yahei pr10">联系人信息</em></h2>
+                <div class="mod-item-bd">
+                    <menu id="linkInfo" class="info-listing forms-listing contact-info f666 f14 yahei pt10">
+                        <li class="clearfix">
+                            <div class="fl g5"><label for="" class="info-hd tr vm"><i class="required orange mr5">*</i>联系人姓名</label><input
+                                type="text" id="txt_name" name="txt_name" maxlength="15" value="首席" class="textbox w-textbox ml10 vm" /><span class="cf30"></span></div>
+                            <div class="fl g5"><label for="" class="info-hd tr vm"><i class="required orange mr5">*</i>手机号码</label><input
+                                type="text" id="txt_mobile" name="txt_mobile" maxlength="11" value="" class="textbox w-textbox ml10 vm onlynum" /><span class="cf30"></span></div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="fl g5"><label for="" class="info-hd tr vm">邮箱</label><input type="text" class="textbox w-textbox ml10 vm"
+                                id="txt_email" maxlength="40" name="txt_email" value="shouxi@qq.com" /><span class="cf30"></span></div>
+                            <div class="fl g5"><label for="" class="info-hd tr vm">固定电话</label><input type="text" class="textbox phone-l tc ml10 vm onlynum"
+                                id="txt_start_phone" name="txt_start_phone" maxlength="4" /><input type="text" class="textbox phone-r ml10 vm onlynum"
+                                id="txt_end_phone" name="txt_end_phone" maxlength="8" /><span class="cf30"></span></div>
+                        </li>
+                        <li>
+                            <label for="" class="info-hd tr mt5 vt">特殊要求</label><textarea  name="txt_des" id="txt_des" class="txta f12 ml10 p5" cols="30" rows="10" maxlength="200" placeholder="请勿超过200个字符"></textarea>
+                        </li>
+                    </menu>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                <h2 class="mod-item-hd mt25 wifiDelivery hide"><hr /><em class="hd-cont bg-white f16 yahei pr10">移动wifi配送方式</em></h2>
+                <div class="mod-item-bd wifiDelivery hide">
+                    <input type="hidden" id="txtHiddenWifiDelivery" name="txtHiddenWifiDelivery"/>
+                    <ul class="select-items j_selectItems">
+                        <li value="B">
+                            <div class="item-main">
+                                <em class="item-cont f999 f14 yahei">B设备自提、现场领取及返还地点（上海地区）</em>
+                                <span class="hover-wrap cur-auto ml10">
+                                    <em class="text-hover c36b">查看详细</em>
+                                    <div class="hover-tips bg-white tips-table tw-400">
+                                        <table class="table-item table-tl g10">
+                                            <tr>
+                                                <td>地址: 浦东机场迎宾大道6001号（磁悬浮，轨交2号线站上方）上海大众空港宾馆北楼壹层（房号：6136）</td>
+                                            </tr>
+                                            <tr>
+                                                <td>时间：周一到周日 9:30-20:00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>直线：18516218986</td>
+                                            </tr>
+                                        </table>
+                                        <span class="arrow-icon f14 songti lh1"><em>◆</em><i>◆</i></span>
+                                    </div>
+                                </span>
+                            </div>
+                            <i class="icon-checked png"></i>
+                        </li>
+                        <li value="C">
+                            <div class="item-main">
+                                <em class="item-cont f999 f14 yahei">C快递领取，费用自理(上海地区)</em>
+                                <span class="hover-wrap cur-auto ml10">
+                                    <em class="text-hover c36b">查看详细</em>
+                                    <div class="hover-tips bg-white tips-table tw-400">
+                                        <table class="table-item table-tl g10">
+                                            <tr>
+                                                <td>中通送货上门并代收500元押金。</td>
+                                            </tr>
+                                            <tr>
+                                                <td>【请在快递中留下便签注明姓名、订单号、以及归还押金的账号，收到您寄还的机器后会将500元押金归还到您留下的账号内】</td>
+                                            </tr>
+                                            <tr>
+                                                <td>快递寄还地址：上海市浦东机场迎宾大道6001号，大众空港宾馆北楼壹层（房号：6136），收件人：途鸽，电话：18516218986</td>
+                                            </tr>
+                                        </table>
+                                        <span class="arrow-icon f14 songti lh1"><em>◆</em><i>◆</i></span>
+                                    </div>
+                                </span>
+                                <p class="delivery-address mt10"><label for="" class="f999 f14 yahei">您的地址</label><input type="text"
+                                    id="txtWifiDeliveryAddress" name="txtWifiDeliveryAddress" placeholder="详细地址" class="textbox address-bar ml10"></p>
+                            </div>
+                            <i class="icon-checked png"></i>
+                        </li>
+                        <li value="E">
+                            <div class="item-main">
+                                <em class="item-cont f999 f14 yahei">E设备自提、现场领取及返还地点（北京地区）</em>
+                                <span class="hover-wrap cur-auto ml10">
+                                    <em class="text-hover c36b">查看详细</em>
+                                    <div class="hover-tips bg-white tips-table tw-400">
+                                        <table class="table-item table-tl g10">
+                                            <tr>
+                                                <td>北京首都机场T3取返还地址：T3航站楼一层邮局隔壁WIFI伴侣电话卡柜台（直线：18500235463 ；18500236463）</td>
+                                            </tr>
+                                            <tr>
+                                                <td>北京首都机场T2取返还地址：T2航站楼2层西头阳光百代网络休闲港（直线：18500235463 ；18500236463）</td>
+                                            </tr>
+                                            <tr>
+                                                <td>快递返还请寄：北京市朝阳区机场南平里43楼4门6层2号，收件人：途鸽，电话：18500235463/010-57263119</td>
+                                            </tr>
+                                        </table>
+                                        <span class="arrow-icon f14 songti lh1"><em>◆</em><i>◆</i></span>
+                                    </div>
+                                </span>
+                            </div>
+                            <i class="icon-checked png"></i>
+                        </li>
+                        <li value="G">
+                            <div class="item-main">
+                                <em class="item-cont f999 f14 yahei">G上海吴淞口邮轮码头</em>
+                                <span class="hover-wrap cur-auto ml10">
+                                    <em class="text-hover c36b">查看详细</em>
+                                    <div class="hover-tips bg-white tips-table tw-400">
+                                        <table class="table-item table-tl g10">
+                                            <tr>
+                                                <td>上海市宝山区宝杨路1号宝杨路码头出发大厅咨询处（邮轮出发当日取机：11:00-15:00，邮轮返回当日还机：07:00-14:00）</td>
+                                            </tr>
+                                            <tr>
+                                                <td>联系电话：4008792168，13916115201，13817812131(订单请至少提前3 天预订，不接收当天临时订单)</td>
+                                            </tr>
+                                        </table>
+                                        <span class="arrow-icon f14 songti lh1"><em>◆</em><i>◆</i></span>
+                                    </div>
+                                </span>
+                            </div>
+                            <i class="icon-checked png"></i>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div id="submitDiv" class="ft-info-bar box-fix yahei mt15 clearfix">
+                <input type="button" id="btnSubmit" value="提交订单" class="btn-submit f18 yahei tc fr">
+                <div class="bar-main bg-white clearfix">
+                    <a href="http://sh.uzai.com/tour-16186.html"
+                        class="link-back orange f18 fl">返回上一步</a>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<div id="j_popStoreInfo" class="pop-store-info">
+    <p class="pop-hd clearfix">
+        <em class="hd-cont white f16 fl">选择提交资料门店</em>
+        <span class="pop-close tc fr j_popClose">&times;</span>
+    </p>
+    <div class="pop-bd">
+        <ol class="step-bar clearfix">
+            <li class="step-item on"><i class="num-nub blue f24 tc mr10 vm">1</i><span class="f18 vm">选择门店并下单支付</span><i class="icon-arrow vm png"></i></li>
+            <li class="step-item"><i class="num-nub blue f24 tc mr10 vm">2</i><span class="f18 vm">到线下门店提供资料</span><i class="icon-arrow vm png"></i></li>
+            <li class="step-item"><i class="num-nub blue f24 tc mr10 vm">3</i><span class="f18 vm">资料通过后准备出游</span></li>
+        </ol>
+        <div class="search-bar">
+
+            <input type="search" class="textbox f16 ml10 vm" id="storeSearchText" placeholder="请输入门店名">
+            <input type="button" value="搜门店" id="storeSearch" class="btn-search bg-red white f14 yahei ml10 vm">
+        </div>
+        <div class="store-box clearfix">
+            <div class="store-choose-box fl">
+
+            </div>
+            <div class="store-map fr" id="storeMapContainer"></div>
+        </div>
+        <p class="btn-bar tc"><input type="button" value="确认" class="btn-confirm bg-red white f24 yahei j_popClose"><input type="hidden" id="j_selectingStore" value=""></p>
+    </div>
+</div>
+
+
+    <div class="login_pay_dh" id="dv_Repeat" style="display: none;">
+        <div class="login_paybg_dh">
+            <div class="login_tit_dh">
+                <h1>
+                    温馨提示</h1>
+                <a class='pop-close' href='javascript:void(0);' onclick="close_repeat_div();">&times;</a>
+            </div>
+            <div class="login_input_dh margin_right_dh" style="max-height: 315px;">
+                <div class="P1_dh">
+                    您已有未出行的订单：
+                </div>
+            </div>
+            <div class="P2_dh" style="text-align: center;">
+                <input name="btnCancel" id="btnCancel" type="button" class="fn-btn fn-btn-on" value="修改原订单"
+                    disabled="disabled" />
+                &nbsp;
+                <input name="btnGoOn" id="btnGoOn" type="button" class="fn-btn fn-btn-gray" value="我要强行下单" />
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="hiddenOrderStr" value="" />
+    <input type="hidden" id="hiddenLocation" value="6894" />
+
+
+    <input type="hidden" id="txtHiddenPId" name="txtHiddenPId" value="16186" />
+    <input type="hidden" id="txtHiddenNums" name="txtHiddenNums" value="1" />
+    <input type="hidden" id="txtHiddenGoDate" name="txtHiddenGoDate" value="2016-4-11" />
+    <input type="hidden" id="txtHiddenUzaiPrice" name="txtHiddenUzaiPrice" value="0" />
+    <input type="hidden" id="txtHiddenChildPrice" name="txtHiddenChildPrice" value="0" />
+    <input type="hidden" id="txtHiddenPersonNum" name="txtHiddenPersonNum" value="1" />
+    <input type="hidden" id="txtHiddenChildNum" name="txtHiddenChildNum" value="0" />
+    <input type="hidden" id="txtHiddenMType" name="txtHiddenMType" value="2" />
+    <input type="hidden" id="txtHiddenMinPerson" name="txtHiddenMinPerson" value="2" />
+    <input type="hidden" id="txtHiddenMaxPerson" name="txtHiddenMaxPerson" value="0" />
+    <input type="hidden" id="txtHiddenIsPay" name="txtHiddenIsPay" value="True" />
+    <input type="hidden" id="txtHiddenCity" name="txtHiddenCity" value="2" />
+    <input type="hidden" id="txtHiddenDays" name="txtHiddenDays" value="6" />
+    <input type="hidden" id="txtHiddenPersonUcoin" name="txtHiddenPersonUcoin" value="20" />
+    <input type="hidden" id="txtHiddenChildUcoin" name="txtHiddenChildUcoin" value="0" />
+    <input type="hidden" id="txtHiddenScoreRatio" name="txtHiddenScoreRatio" value="50" />
+    <input type="hidden" id="txtHiddenUcoinPrices" name="txtHiddenUcoinPrices" />
+    <input type="hidden" id="txtHiddenSafe" name="txtHiddenSafe" />
+    <input type="hidden" id="hidSupplierFlag" value="" />
+    <input type="hidden" id="txtHiddenLinker" name="txtHiddenLinker" />
+    <input type="hidden" id="txtSubmitHiddenAdd" name="txtSubmitHiddenAdd" />
+    <input type="hidden" id="txtHiddenUtourSingleCount" name="txtHiddenUtourSingleCount" />
+    <input type="hidden" id="txtHiddenUtourOutCount" name="txtHiddenUtourOutCount" />
+    </form>
+
+<!----FOOTER START--->
+    <div class="sp-footer">
+
+<div class="foot-copyright">
+    <span>Copyright 2005-2016 Uzai.com</span>
+    <span>许可证编号:L-SH-CJ00112</span>
+    <span>沪ICP备06021606号</span>
+    <span>悠哉呼叫中心来电显示号码为：<font class="red">021-10109898 <i class="f666">或</i> 010-10109898</font></span>
+</div>
+<div class="foot-aboutlink">
+    <span><a href="http://www.uzai.com" rel="nofollow">悠哉旅游网</a></span>
+    <span><a target="_blank" href="http://www.uzai.com/history/" rel="nofollow">悠哉历程</a></span>
+    <span><a target="_blank" href="http://www.uzai.com/about/privacy/" rel="nofollow">隐私保护</a></span>
+    <span><a target="_blank" class="red" href="http://www.uzai.com/about/RecruitUtour" rel="nofollow">诚聘英才</a></span>
+    <span><a target="_blank" href="http://www.uzai.com/about/" rel="nofollow">关于我们</a></span>
+    <span><a target="_blank" class="red" href="http://www.uzai.com/about/utour-store#f" rel="nofollow">营业网点</a></span>
+    <span><a target="_blank" href="http://www.uzai.com/sitemap/">网站地图</a></span>
+    <span><a target="_blank" href="http://www.uzai.com/sitelinks/">友情链接</a></span>
+    <span class="noborder"><a target="_blank" href="http://www.uzai.com/qa/helplist-9.html" rel="nofollow">商务合作</a></span>
+</div>
+    </div>
+<!----FOOTER PART END---->
+<div class="footerjs">
+
+
+
+<!--ve营销-->
+
+
+<!--DSP广告-->
+
+
+<!--品友-->
+<script type="text/javascript">
+    var _py = _py || [];
+    _py.push(['a', '3Os..3Y-1Ql4EXqRmqOaJOvnG1X']);
+    _py.push(['domain', 'stats.ipinyou.com']);
+    _py.push(['e', '']);
+    -function (d) {
+        var s = d.createElement('script'),
+        e = d.body.getElementsByTagName('script')[0]; e.parentNode.insertBefore(s, e),
+        f = 'https:' == location.protocol;
+        s.src = (f ? 'https' : 'http') + '://' + (f ? 'fm.ipinyou.com' : 'fm.p0y.cn') + '/j/adv.js';
+    }(document);
+</script>
+<noscript>
+    <img src="//stats.ipinyou.com/adv.gif?a=3Os..3Y-1Ql4EXqRmqOaJOvnG1X&e=" style="display: none;" /></noscript>
+
+
+<!--Google js-->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-27817301-1', 'uzai.com');
+    var full_url = window.location.pathname + window.location.search + window.location.hash;
+
+    ga('send', 'pageview', full_url);
+</script>
+
+<!--悠哉 baidu js-->
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?c6ca6ea4f6a82938e24232a7a3da3949";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<!--众信 baidu js-->
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?40b326259e577b18a52f2e2ac55d9bfa";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?a3dc6e4ea7fc10d1543395ebe6516d12";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+﻿<!--seo 自动推送代码-->
+
+
+<!--国双科技 Gridsum tracking code begin. -->
+<script type='text/javascript'>
+    var _gsq = _gsq || [];
+    (function () {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = (location.protocol == 'https:' ? 'https://ssl.' : 'http://static.') + 'gridsumdissector.com/js/Clients/GWD-002793-B024A5/gs.js';
+        var firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(s, firstScript);
+    })();
+</script>
+<!--Gridsum tracking code end. -->
+
+<!-- 360 begin-->
+<script type="text/javascript">
+    var _mvq = _mvq || [];
+    _mvq.push(['$setAccount', ' m-196944-0']);
+    _mvq.push(['$logConversion']);
+    (function () {
+        var mvl = document.createElement('script');
+        mvl.type = 'text/javascript'; mvl.async = true;
+        mvl.src = ('https:' == document.location.protocol ? 'https://static-ssl.mediav.com/mvl.js' : 'http://static.mediav.com/mvl.js');
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(mvl, s);
+    })();
+
+</script>
+<!--360 end -->
+
+<!-- 易博 begin-->
+<script type="text/javascript">
+    var _adwq = _adwq || [];
+    _adwq.push(['_setAccount', 'x4o4b']);
+    _adwq.push(['_setDomainName', '.uzai.com']);
+    _adwq.push(['_trackPageview']);
+
+    (function () {
+        var adw = document.createElement('script');
+        adw.type = 'text/javascript';
+        adw.async = true;
+        adw.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://s') + '.emarbox.com/js/adw.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(adw, s);
+    })();
+</script>
+
+<!-- 易博 end-->
+
+<!--Criteo begin -->
+<script type="text/javascript" src="//static.criteo.net/js/ld/ld.js" async="true"></script>
+<!--Criteo end -->
+
+
+
+</div>
+    <table id="j_hoverTipsTable" class="hover-tips-table bg-white g10 hide">
+        <tr>
+            <th class="g7">区域</th>
+            <th>费用</th>
+        </tr>
+        <tr>
+            <td rowspan="3">内环以内+陆家嘴环路以内</td>
+            <td>国际短线免费两次</td>
+        </tr>
+        <tr>
+            <td>国际长线免费三次</td>
+        </tr>
+        <tr>
+            <td>团队订单免费两次</td>
+        </tr>
+        <tr>
+            <td>内环以外，中环以内（浦西）</td>
+            <td>10元/次</td>
+        </tr>
+        <tr>
+            <td>中环以内（浦东）</td>
+            <td>20元/次</td>
+        </tr>
+        <tr>
+            <td>中环以外，外环以内（浦西）</td>
+            <td>30元/次</td>
+        </tr>
+        <tr>
+            <td>中环以外，外环以内（浦东）</td>
+            <td>40元/次</td>
+        </tr>
+        <tr>
+            <td>外环以外（浦西）</td>
+            <td>50元/次</td>
+        </tr>
+        <tr>
+            <td>松江、嘉定、青浦、川沙镇、原南汇区、奉贤县、曹路镇、崇明、金山、上海浦东机场</td>
+            <td>不配送</td>
+        </tr>
+    </table>
+    <script src="//r01.uzaicdn.com/Scripts/TourOrder/tour_one.js" type="text/javascript"></script>
+</body>
+</html>

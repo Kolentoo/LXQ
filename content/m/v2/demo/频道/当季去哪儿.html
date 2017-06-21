@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <script src="http://r03.uzaicdn.com/content/libs/jquery-2.1.1.min.js"></script>
+    <script src="http://r03.uzaicdn.com/content/hybrid/scripts/common/font.js"></script>
+    <link href="http://r03.uzaicdn.com/content/m/v2/styles/_src/chanel/chanel_n.css" type="text/css" rel="stylesheet"/>
+    <title></title>
+</head>
+<body>
+<div class="content city-content">
+    <header class="bg-transparent white-topbar ">
+        <a target="_self" href="javascript:goBack();" class="fl top-back"><i class="left-ico black-ico"></i>返回</a>
+        <a target="_self" class="fr"></a>
+        <div class="title"><h1>当季去哪儿</h1></div>
+    </header>
+
+    <div class="main">
+        <nav>
+            <div class="layout-box border-bot">
+                <div class="son-box">欧洲热门目的地</div>
+            </div>
+        </nav>
+        <section class="over-hide">
+            <div class="part">
+                <a href="" class="img"><img src="../../../images/channel/hot_city.jpg"></a>
+                <p>法国</p>
+            </div>
+            <div class="part">
+                <a href="" class="img"><img src="../../../images/channel/hot_city.jpg"></a>
+                <p>法国</p>
+            </div>
+            <div class="part">
+                <a href="" class="img"><img src="../../../images/channel/hot_city.jpg"></a>
+                <p>法国</p>
+            </div>
+            <div class="part">
+                <a href="" class="img"><img src="../../../images/channel/hot_city.jpg"></a>
+                <p>法国</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="season-recommend">
+        <nav>
+            <div class="layout-box">
+                <div class="son-box border-top"></div>
+                <div class="con">当季推荐</div>
+                <div class="son-box border-top"></div>
+            </div>
+        </nav>
+        <ul class="sel-ls layout-box border-bot">
+            <li class="son-box on"><a>12月</a></li>
+            <li class="son-box"><a>1月</a></li>
+            <li class="son-box"><a>2月</a></li>
+        </ul>
+        <section>
+            <div class="ls">
+                <div class="part layout-box">
+                    <a class="img" href=""><img src=""><em>1钻</em></a>
+                    <div class="son-box">
+                        <p>【上海出发】法瑞意+德国9晚11日卢浮宫、德国ICE列车、东航往返直飞</p>
+                        <p class="low"><span class="red">减150</span><span class="blue">手机特惠</span></p>
+                        <div class="bot">
+                            <span class="fl">12人出行</span>
+                            <span class="fr"><em><i>￥</i>888</em>起</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+
+</div>
+
+<script>
+    $('.season-recommend .sel-ls li').click(function(){
+        $(this).siblings().removeClass('on');
+        $(this).addClass('on');
+        var index=$(this).index();
+        $('.season-recommend .ls').siblings().hide();
+        $('.season-recommend .ls').eq(index).show();
+    });
+</script>
+
+</body>
+</html>

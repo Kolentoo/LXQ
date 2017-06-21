@@ -1,0 +1,66 @@
+﻿ .obr_ortit00{background:#fff0fc; height:30px; line-height:30px; padding-left:20px; font-weight:bold; color:#ff5fa3;}
+.obr_oright{float:right; width:230px; border:1px solid #ffe2ed; height:268px; overflow:hidden;}
+.obttitle200{background:#ffffff; height:28px; line-height:28px; padding-left:10px; font-weight:bold; font-size:12px; color:#333333;border-bottom:1px solid #ffe2ed;border-top:1px solid #ffe2ed;}
+.obbaner02{border:1px solid #ffe2ed; background-color:#fdf8ff; position:relative; height:268px; overflow:hidden;}
+.p01l_main00{background:#fdf8ff; border-left:1px solid #ffe2ed; border-top:1px solid #ffe2ed; border-right:1px solid #ffe2ed; height:90px; overflow:hidden;}
+.part01ltitle00{height:30px; line-height:30px; padding-left:10px; font-weight:bold; color:#be5ab6; border-bottom:1px solid #ffe2ed;}
+.ssbot00{padding:10px 5px 10px 10px;  border-bottom:1px solid #ffe2ed; line-height:18px;background:#fdf8ff;}
+.obl_two00{background:#fdf8ff; border-left:1px solid #ffe2ed; border-right:1px solid #ffe2ed; border-bottom:1px solid #ffe2ed; margin-bottom:10px;}
+       .obl_three,.obl_four{background:#ffffff; border:1px solid #D8ECB8; margin-bottom:10px;}
+ .obr_two_tit{padding-top:5px; padding-bottom:5px; background:url(/content/1/image/bg/companyt_11.jpg) no-repeat 0% 10%; padding-left:30px; margin-left:15px; font-weight:bold; font-size:14px; }
+.comcase{ font-weight:normal; font-size:12px;}
+.comrs{ color:#ff6600; font-size:12px; font-weight:normal; margin-left:6px;}
+.comborder_right_1{ border-right:1px solid #ff9900;}
+.obr_text h3 a{font-size:14px; font-weight:bold;}
+.obr_text h3 a:hover,.rightext h3 a:hover,.obt_thmain table td h3 a:hover,.obr_four_main table td h3 a:hover{color:#FF9900;}
+.comzty{padding:0 0 0px 15px; line-height:18px;}
+.comleft{ float:left;border-right:1px dashed #cccccc; width:396px;border-bottom:1px dashed #999999; height:280px;}
+.comleft1{ float:left;border-right:1px dashed #cccccc; width:396px;}
+.height280{height:250px; overflow:hidden;}
+.comzco{ font-size:14px; font-weight:bold; color:#279add;}
+.comlefimg{float:left; width:100px;}
+.comright{ float:left; padding-left:10px;border-bottom:1px dashed #999999; height:280px;}
+.comright1{ float:left; padding-left:10px;}
+.compadding{ padding-bottom:4px;}
+.comrightext{padding-top:0px; float:left; width:276px;}
+.comzty a{font-size:14px;color:#279add; }
+.comzty a:hover{color:#FF9900;}
+.padding_right_20{padding-right:20px;}
+.comobr_cont{padding-bottom:6px;}
+.comleftim{ float:left;}
+.comtextl{ float:left; padding-left:10px; width:200px; padding-top:10px;}
+.comtop{ padding-top:14px;}
+.comine{ background:url(/content/1/image/daoyouimages/companyin_24.jpg) no-repeat left; padding-left:20px; padding-bottom:5px;}
+.comine1{ background:url(/content/1/image/daoyouimages/companyin_27.jpg) no-repeat left; padding-left:20px; padding-bottom:5px;}
+.comine2{ background:url(/content/1/image/daoyouimages/companyin_29.jpg) no-repeat left; padding-left:20px;}
+.comte{padding-right:5px;}
+.comzty1{padding:0 0 0px 15px;border-bottom:1px dashed #999999; line-height:18px; padding-top:15px; margin-bottom:15px;}
+.comzty1 a{font-size:12px;color:#279add;}
+.comzty1 a:hover{color:#FF9900;}
+a.cororgg{color:#ff6600;}
+.obr_three h3 a,.obt_city .cityname a{ text-decoration:none;}
+.obt_city .cityname a{color:#ff5fa3;}
+.chen_margin_bottom_5{padding:10px 0px;  border:1px solid #66a502; border-bottom:0px; background:url(../image/bg/nebg.gif) repeat-x left top; overflow:hidden;}
+
+.rightasa {
+    background: url("../image/icon/orgbg.gif") no-repeat scroll 2px 2px transparent;
+    margin: 0;
+    padding: 0 13px;
+}
+.dline_top{ height:40px; background:#88c22c url(../image/company/linebg.png) repeat-x;}
+.dline_top .dline_good{ height:24px; line-height:24px; font-size:16px; font-weight:bold; color:#ffffff; background:url(../image/company/line-icon.png) no-repeat; padding-left:30px; margin:7px 0 0 7px; display:inline; float:left;}
+.dline_top .dline_nav{ float:right; margin-right:50px; display:inline;}
+.dline_top .dline_nav li{ float:left; height:36px; margin-left:5px; margin-top:4px; }
+.dline_top .dline_nav li.current{  }
+.dline_top .dline_nav li .dline_navleft{ display:block; float:left;  width:6px; height:36px; }
+.dline_top .dline_nav li .dline_navmid{ display:block; float:left; height:36px; line-height:36px; padding:0 10px; font-size:14px; color:#ffffff; font-weight:bold; }
+.dline_top .dline_nav li .dline_navright{ display:block; float:left;  width:6px; height:36px;}
+.dline_top .dline_nav li.current .dline_navleft{ background:url(../image/company/line-tableft.png) no-repeat;}
+.dline_top .dline_nav li.current .dline_navmid{ color:#666; background:url(../image/company/line-tabmiddle.png) repeat-x;}
+.dline_top .dline_nav li.current .dline_navright{ background:url(../image/company/line-tabright.png) no-repeat;}
+
+.dline_snav{ background:#f7fde9; width:100%; }
+.dline_snav .dline_snavlist{ background:#f7fde9; padding:12px 20px; border-bottom: 1px solid #dbebb3;}
+.dline_snav .snavitem{ padding:0 8px 0 6px; margin:5px 0; display:inline; border-right:1px solid #666;}
+.dline_snav .last{ border-right:none;}
+.dline_snav .curritem{ color:#ff9900;}

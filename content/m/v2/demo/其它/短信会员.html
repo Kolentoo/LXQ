@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <title>-悠哉旅游网</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="http://r01.uzaicdn.com/content/m/v2/styles/core.css" rel="stylesheet" />
+    <script src="http://r01.uzaicdn.com/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['http://r01.uzaicdn.com/content/m/v2/scripts/core', 'http://r01.uzaicdn.com/content/m/v2/scripts/com/slider'], function (core, slider) {
+            $(function () {
+                var wh = $(window).height();
+                var ww = $(window).width();
+                var bannerH = $('.focus-logo ').height();
+
+                $('#j_topSliderWrap').height(wh - bannerH-20);
+                $('#j_topSlider').height(wh - bannerH - 20);
+                $('#j_topSlider').find('a').height(wh - bannerH - 20)
+
+            });
+            slider.api("j_topSlider", "j_topSliderWrap", 5000, true);
+        });
+    </script>
+    <style>
+        html, body { background: #fff; height: 100%; overflow: hidden; }
+        .focus-logo { background: #333; height: 15%; display: table; width: 100%; }
+        .focus-logo .cell { display: table-cell; width: 100%; padding: 5px 0 15px; }
+        .top-slider-wrap { position: relative; }
+        .top-slider-wrap .num { height: 9px; line-height: 9px; position: fixed; bottom: 20px; text-align: center; -moz-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); left: 50%; }
+        .top-slider-wrap .num em { background: #fff; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; display: inline-block; height: 9px; width: 9px; overflow: hidden; margin: 0 3px; border: 1px solid #f93868; }
+        .top-slider-wrap .num .on { background: #f93868; }
+        .top-slider-inner { width: 9999px; overflow: hidden; position: relative; -webkit-overflow-scrolling: touch; }
+        .top-slider { overflow: hidden; }
+        .top-slider .slider-item { float: left; position: relative; }
+        .top-slider .slider-item a{ -webkit-overflow-scrolling: touch;display:block;overflow:auto;overflow-x:hidden;}
+        .top-slider .slider-item img { display: block; width: 100%; margin-bottom: 15px; }
+        .top-slider .slider-item .txt { border-top: 1px solid #ccc; margin: 0 15px;padding-top:5px;  }
+        .top-slider .slider-item h2 { line-height: 45px; height: 45px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+
+        .top-slider .slider-item p { padding: 10px; padding-top: 0; }
+    </style>
+
+</head>
+<body>
+    <div class="w">
+        <div class="focus-logo ">
+            <div class="cell vm tc">
+                <img class="vm" src="/content/v1/images/common/logo-light2.png" style="width:45%" alt="" />
+            </div>
+        </div>
+
+        <div class="slide-mod p10">
+
+            <section id="j_topSliderWrap" class="top-slider-wrap">
+                <div id="j_topSlider" class="top-slider">
+                    <div class="top-slider-inner clearfix f16">
+
+                        <div class="slider-item">
+                            <a href="#">
+                                <img src="http://r.uzaicdn.com/pic/12000/p11922/w400/h300/t1/" alt="">
+                                <div class="txt">
+                                    <h2 class="tc f28">土耳其一地7晚10日游</h2>
+                                    <p>
+                                        【以弗所古城】该城是古代商业及宗教重镇，曾为古罗马帝国的重要城市，全盛期约有25万人口，面积超过809公顷。现遗留下来的有容纳二万五千人的露天剧场，大型市集、浴场、神殿、庙宇等，气势恢宏，令人赞叹不已。这座城市的黄金时期从亚历山大帝开始，其后成为一个基督教中心，基督教的重要人物如圣约翰、圣保罗、圣母玛丽亚均在以弗所度过晚年，其中圣约翰更于古城去世。圣母玛丽亚就诞生于此。
+                                        【以弗所古城】该城是古代商业及宗教重镇，曾为古罗马帝国的重要城市，全盛期约有25万人口，面积超
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="slider-item">
+                            <a href="#">
+                                <img src="http://r.uzaicdn.com/pic/12000/p11922/w400/h300/t1/" alt="">
+                                <div class="txt">
+                                    <h2 class="tc f28">土耳其一地7晚10日游</h2>
+                                    <p>
+                                        【以弗所古城】该城是古代商业及宗教重镇，曾为古罗马帝国的重要城市，全盛期约有25万人口，面积超过809公顷。现遗留下来的有容纳二万五千人的露天剧场，大型市集、浴场、神殿、庙宇等，气势恢宏，令人赞叹不已。这座城市的黄金时期从亚历山大帝开始，其后成为一个基督教中心，基督教的重要人物如圣约翰、圣保罗、圣母玛丽亚均在以弗所度过晚年，其中圣约翰更于古城去世。圣母玛丽亚就诞生于此。
+                                        【以弗所古城】该城是古代商业及宗教重镇，曾为古罗马帝国的重要城市，全盛期约有25万人口，面积超
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="slider-item">
+                            <a href="#">
+                                <img src="http://r.uzaicdn.com/pic/12000/p11922/w400/h300/t1/" alt="">
+                                <div class="txt">
+                                    <h2 class="tc f28">土耳其一地7晚10日游</h2>
+                                    <p>
+                                        【以弗所古城】该城是古代商业及宗教重镇，曾为古罗马帝国的重要城市，全盛期约有25万人口，面积超过809公顷。现遗留下来的有容纳二万五千人的露天剧场，大型市集、浴场、神殿、庙宇等，气势恢宏，令人赞叹不已。这座城市的黄金时期从亚历山大帝开始，其后成为一个基督教中心，基督教的重要人物如圣约翰、圣保罗、圣母玛丽亚均在以弗所度过晚年，其中圣约翰更于古城去世。圣母玛丽亚就诞生于此。
+                                        【以弗所古城】该城是古代商业及宗教重镇，曾为古罗马帝国的重要城市，全盛期约有25万人口，面积超
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="slider-item">
+                            <a href="#">
+                                <img src="http://r.uzaicdn.com/pic/12000/p11922/w400/h300/t1/" alt="">
+                                <div class="txt">
+                                    <h2 class="tc f28">土耳其一地7晚10日游</h2>
+                                    <p>
+                                        【以弗所古城】该城是古代商业及宗教重镇，曾为古罗马帝国的重要城市，全盛期约有25万人口，面积超过809公顷。现遗留下来的有容纳二万五千人的露天剧场，大型市集、浴场、神殿、庙宇等，气势恢宏，令人赞叹不已。这座城市的黄金时期从亚历山大帝开始，其后成为一个基督教中心，基督教的重要人物如圣约翰、圣保罗、圣母玛丽亚均在以弗所度过晚年，其中圣约翰更于古城去世。圣母玛丽亚就诞生于此。
+                                        【以弗所古城】该城是古代商业及宗教重镇，曾为古罗马帝国的重要城市，全盛期约有25万人口，面积超
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <p class="num tc">
+                    <em class="on"></em>
+                    <em></em>
+                    <em></em>
+                    <em></em>
+                </p>
+            </section>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

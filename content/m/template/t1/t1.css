@@ -1,0 +1,11 @@
+﻿.w { margin:0 auto;}
+.banner img { display:block;width:100%;}
+.list ul { box-shadow:1px 1px 2px rgba(0,0,0,.2);border-radius:5px;}
+.list li {border-top:1px solid #d5d3d7; border-bottom:1px solid #828182;line-height:43px;padding:10px;}
+.list li a { font-size:20px;display:block;}
+.list li a img { float:left;margin-right:10px;}
+.list li a .arrow { width:7px;height:14px;background-image:url(/content/weixintemplete/t1/t4.png);margin-top:16px;}
+
+.list li:first-child { border-top:0;}
+.list li:last-child { border:0;}
+

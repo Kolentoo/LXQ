@@ -1,0 +1,33 @@
+#zty{width:990px; margin:0 auto;}
+.zt_part0100,.zt_part0200{margin-bottom:10px; text-align:left;}
+.zt_part0100 .part01banner00{background:#f5f8fc; padding:4px; border:1px solid #dbe5eb; width:610px; float:left; height:260px; overflow:hidden;}
+.zt_part0100 .pbanner_right00{float:left; width:145px; overflow:hidden;}
+.pb_rightnow00{background:url(http://sh.uzai.com/content/1/image/bg/ztbannerbg.gif) no-repeat left top; width:145px; padding:14px 5px 4px 15px; height:50px; overflow:hidden; border-bottom:1px solid #fff;}
+.pb_right{background:#fafbfd; width:145px; padding:13px 5px 5px 5px; margin-left:10px; height:45px; overflow:hidden; }
+.zt_part0100 .pbanner_left00{float:left; width:465px;}
+.pb_rightnow00 span{color:#ffffcc; }
+.pb_rightnow00 span a{font-size:14px; font-weight:bold;color:#ffffcc;}
+.pb_rightnow00 span a:hover{color:#FFFF99;}
+.salenum{ font-size:14px; font-weight:bold; color:#ffffcc;}
+.pb_rightnow00 p{color:#ffffff; line-height:20px; padding-top:5px;}
+.pb_right span a{color:#80c000; font-size:14px;}
+.pb_right span a:hover{color:#ff9900;}
+.pb_right p{line-height:20px; color:#666666; padding-top:5px;}
+.zt_part0100 .zt_pright00{float:right; width:358px;border:1px solid #dbe5eb; height:268px; overflow:hidden; }
+.zt_part0100 .zt_prtop00{border-bottom:1px solid #EEE; padding:15px; height:104px; overflow:hidden; position:relative;}
+.zt_part0100 .zt_prbot00{padding:15px; height:104px; overflow:hidden; position:relative;}
+.zt_part0100 .zttjtb00{position:absolute; right:0px; top:0px;} 
+.zt_prname00{padding-bottom:10px;}
+.zt_prname a{font-size:14px; font-weight:bold; color:#0099ff;}
+.zt_prleft00{float:left; width:215px; }
+.zt_prleft00 ul li{line-height:22px; color:#666666;}
+.zt_prleft00 ul li span{color:#FF6600;}
+.zt_prright00{float:right; width:100px;}
+.zt_prright00 img{border:1px solid #666666;}
+.number{font-size:16px; font-weight:bold;}
+.zt_prleft00 ul li span.cline{padding-left:5px; color:#999999; text-decoration:line-through;}
+.zt_part0200{padding:5px 10px; border:3px solid #c5dcff; z-index:100;}
+.zt_p02cont00{padding:15px 0 15px 10px;}
+.bordbottom{border-bottom:1px dashed #999999;}
+.zt_p02name00{padding-bottom:5px; font-weight:bold; font-size:14px; color:#0099ff; padding-left:10px;}
+.zt_p02ul00 ul li{float:left; line-height:26px; font-size:14px; color:#333333; white-space:nowrap; width:125px; padding-left:10px; z-index:100;}

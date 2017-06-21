@@ -1,0 +1,45 @@
+
+body { background: #f0f0f0; overflow-y: visible; }
+.wrapper-sj { width: 1035px; margin: 0 auto; overflow: hidden; position: relative; }
+.diqiu { width: 1035px; height: 620px; overflow: hidden; }
+.diqiu img { -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); -webkit-animation: rotate infinite linear 20s; -o-animation: rotate infinite linear 20s; -ms-animation: rotate infinite linear 20s; animation: rotate infinite linear 20s; }
+.logo-sj { width: 256px; height: 121px; background: url("/content/subject/pc-shengji20160802/images/sj01.png") no-repeat; margin: 100px auto; }
+.content-main { width: 1035px; height: 300px; color: #333333; text-indent: 2em; background-color: #f0f0f0; position: absolute; top: 470px; overflow: hidden; }
+.content-main div span { color: #e5004f; font-weight: bold; }
+.content-main div { width: 542px; height: 109px; margin: 50px auto; line-height: 30px; font-size: 18px; }
+.footer-sj { margin: 0 auto; width: 1035px; height: 50px; text-align: center; position: absolute; top: 690px; }
+.footer-sj span { margin: 0 5px; color: #666; font-size: 12px; }
+.content-che { position: absolute; top: 115px; right: 435px; }
+.content-chelun-l { position: absolute; top: 348px; left: 438px; }
+.content-chelun-r { position: absolute; top: 348px; right: 474px; }
+.content-yinying { position: absolute; top: 365px; right: 436px; }
+.content-xuxian { width: 622px; height: 21px; margin: 0px auto; position: absolute; top: 450px; left: 3px; }
+.content-sj { position: absolute; left: 0; top: 199px; width: 1035px; height: 800px; }
+.content-chelun-l img, .content-chelun-r img { -webkit-transform: rotate(680deg); -moz-transform: rotate(80deg); -ms-transform: rotate(80deg); transform: rotate(80deg); -webkit-animation: xuanzhuan infinite linear 1s; -moz-animation: xuanzhuan infinite linear 1s; -ms-animation: xuanzhuan infinite linear 1s; animation: xuanzhuan infinite linear 1s; }
+
+@-webkit-keyframes rotate {
+  from { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(-360deg); -ms-transform: rotate(-360deg); -o-transform: rotate(-360deg); transform: rotate(-360deg); }
+}
+@-moz-keyframes rotate {
+  from { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(-360deg); -ms-transform: rotate(-360deg); -o-transform: rotate(-360deg); transform: rotate(-360deg); }
+}
+@keyframes rotate {
+  from { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(-360deg); -ms-transform: rotate(-360deg); -o-transform: rotate(-360deg); transform: rotate(-360deg); }
+}
+
+@-webkit-keyframes xuanzhuan {
+  from { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-moz-keyframes xuanzhuan {
+  from { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@keyframes xuanzhuan {
+  from { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+

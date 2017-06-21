@@ -1,0 +1,23 @@
+#imgGoogleMaps { height: 400px; background-repeat: no-repeat; background-position: 0px 0px; cursor: move; }
+
+/*地图页样式改版*/
+.side-list-diqu {  }
+.side-list-diqu .mt15 { margin-top: 15px; }
+.side-hot .title {   color: #FFFFFF; height: 37px; }
+.side-comment { border: 1px solid #BBDFAA; margin-top: 15px; }
+.side-comment .title { background: none repeat scroll 0 0 #F8FFF4; border-bottom: 1px solid #BBDFAA; color: #339900; line-height: 32px; }
+.side-comment .comment-list { font-family: SimSun; padding: 0 10px; }
+.side-list-diqu .side-comment .comment-list dt { font-size: 12px; }
+.side-comment .comment-list dt { font-size: 14px; margin-top: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 248px; }
+.side-comment .comment-list dd { border-bottom: 1px solid #E8E8E8; padding: 5px 0; }
+.side-comment .comment-list dd p { color: #666666; line-height: 160%; }
+
+.side-comment .comment-list dd strong { color: #FF0000; font-weight: normal; padding-left: 5px; vertical-align: text-top; }
+
+.side-intr .title { background: none repeat scroll 0 0 #F8FFF4; border-bottom: 1px solid #BBDFAA; color: #339900; line-height: 32px; }
+.side-intr { border: 1px solid #BBDFAA; margin-top: 15px; }
+
+.side-intr .intr-con { padding: 15px 10px; }
+
+.side-list-diqu .side-intr .intr-con p { line-height: 160%; }
+.side-intr .intr-con p { color: #666666; line-height: 160%; text-indent: 2em; }

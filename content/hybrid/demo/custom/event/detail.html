@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app='MyModule' ng-controller='MyCtrl'>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+
+    <meta name="keywords" content="{{title_m}}定制旅游,{{title_m}}定制游，{{title_m}}定制旅行">
+    <meta name="description" content="悠哉旅游网提供高端私人定制旅游，专业定制旅游顾问按您的需求，为您1对1定制旅游方案，休闲游/度假游/购物游定制旅游高端旅行者的首要选择，享受专属你的私人旅行。
+">
+    <script src="http://r03.uzaicdn.com/content/libs/jquery-2.1.1.min.js"></script>
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/com/font.js"></script>
+    <script type="text/javascript" src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/common/angular.min.js"></script>
+    <script type="text/javascript" src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/common/api.js"></script>
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/custom/case_details.js"></script>
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/custom/iscroll.js"></script>
+    <script src="http://r03.uzaicdn.com/content/m/v2/scripts/_src/common/pagestatistics.js"></script>
+    <link href="http://r03.uzaicdn.com/content/m/v2/styles/_src/custom/base.css" rel="stylesheet">
+    <link href="http://r03.uzaicdn.com/content/m/v2/styles/_src/custom/case_details.css" rel="stylesheet">
+    <title ng-bind="title_m"></title>
+</head>
+<body>
+<div class="content"  >
+    <!-- 头部 -->
+    <header class="bg-transparent white-topbar">
+        <a target="_self" href="../home/index.html" class="fl top-back"><i class="left-ico black-ico"></i></a>
+        <a target="_self" class="fr"></a>
+        <div class="title"><h1 ng-bind="title_m"></h1></div>
+    </header>
+    <!-- 内容 -->
+    <div id='wrapper'>
+        <div class="main">
+            <div class="main_top">
+                <a href="#"><img ng-src="{{FilePath}}"/></a>
+                <p ng-bind="title_m"></p>
+            </div>
+            <div class="main_m">
+                <div ng-repeat='value in values' on-finish-render>
+                    <img data-src="{{value.ImageUrl}}"/>
+                    <p ng-bind="value.ImageDescribe"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='foot'>
+        <a class='customer' href="../order/index.html?departureCityName={{departureCityName}}">我要定制</a>
+    </div>
+</div>
+</body>
+</html>

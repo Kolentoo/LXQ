@@ -1,0 +1,93 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.raid_wrap{width:990px; height:auto; margin:0 auto;}
+.r_leftpan{width:170px; height:auto; float:left; margin-right:10px;}
+  .rl_list01{width:168px; height:auto; border:1px solid #E3E3E3; margin-bottom:10px;}
+  .rl_list01 dl{margin:0;}
+  .rl_list01 dl dt{color:#000; font-weight:bold; height:28px; line-height:28px; border-bottom:1px solid #E2E6E9; padding-left:10px;}
+  .rl_list01 dl dd{background:#F5F8FD; line-height:23px; height:23px; padding:3px 0 3px 10px;}
+  .rl_list01 dl dd a{padding-left:25px; display:inline-block; background:url(/content/1/image/bg/icon.png) left no-repeat;  overflow:hidden;}
+	.rl_list01 dl dd a.da01{background-position:0 2px;}
+	.rl_list01 dl dd a.da02{background-position:0 -20px;}
+	.rl_list01 dl dd a.da03{background-position:0 -40px;}
+	.rl_list01 dl dd a.da04{background-position:0 -60px;}
+	.rl_list01 dl dd a.da05{background-position:0 -80px;}
+	.rl_list01 dl dd a.da06{background-position:0 -100px;}
+	.rl_list01 dl dd a.da07{background-position:0 -120px;}
+	.rl_list01 dl dd a.da08{background-position:0 -140px;}
+	.rl_list01 dl dd a.da09{background-position:0 -160px;}
+	.rl_list01 dl dd a.da10{background-position:0 -180px;}
+	.rl_list01 dl dd a.da11{background-position:0 -200px;}
+  .rl_list02{border:1px solid #E3E3E3; margin-bottom:10px;}
+  .rl_list02 .rltitle{color:#2d2d2d; height:29px; line-height:29px; background:url(/content/1/image/bg/gl_tb03.gif) repeat-x; padding-left:10px;}
+  .rl_list02 ul.tourism li{float:left; line-height:28px; width:60px; margin:0 10px;}
+  .rl_list02 ul.tourism li a{color:#996633;}
+  .rl_list02 ul.tourism li a:hover{color:#FF6600; text-decoration:underline;}
+  .rl_list02 ul.callback{line-height:18px; padding:10px; color:#666666;}
+  .rl_list02 ul.callback li span{color:#669900; line-height:24px;}
+  .rl_list02 ul.callback li.btm_line{border-bottom:1px dashed #E5E5E7;}
+.r_rightpan{width:808px; height:auto; float:left;}
+  .r_despan{width:498px; height:225px; border:1px solid #E5E5E7; margin-right:6px; float:left;}
+  .r_despan .destitle{height:36px; line-height:36px; background:url(/content/1/image/bg/gl_tbg01.gif) repeat-x; padding:0 25px;}
+  .r_despan .destitle a{float:right;}
+  .r_despan .destitle h2{display:inline; color:#529000; font-size:14px;}
+  .r_despan p{padding:10px 25px; color:#666666; line-height:18px; border-bottom:1px dashed #ECDCC5; text-indent:2em;}
+  .r_despan p a{color:#ff800b;}
+  .r_despan p a:hover{text-decoration:underline;}
+  .r_despan dl{margin:10px 25px;}
+  .r_despan dl dt{color:#383838; font-weight:bold; line-height:24px;}
+  .r_despan dl dd{word-wrap:break-word;}
+  .r_despan dl dd a{color:#996633; line-height:22px; margin-right:10px;}
+  .r_despan dl dd a:hover{color:#FF6600;}
+  .r_slider{width:300px; height:225px; border:1px solid #E5E5E7; float:left; position:relative; overflow:hidden;}
+  .r_slider ul.slider_m{position:absolute;}
+  .r_slider ul.slider_n{position:absolute; right:20px; bottom:10px; z-index:3;}
+  .r_slider ul.slider_n li{display:block; width:21px; height:21px; background:url(/content/1/image/bg/slidernav02.gif) no-repeat; color:#4d3e24; float:left; cursor:pointer; text-align:center; line-height:21px; margin:0 2px;}
+  .r_slider ul.slider_n li.over_num{background:url(/content/1/image/bg/slidernav01.gif) no-repeat;}
+  .r_linelist{ border:1px solid #88C22C; padding-bottom:20px; margin-top:10px;}
+     .rlist_title{height:32px; line-height:32px; background:url(/content/1/image/bg/gl_tbg02.gif) repeat-x; padding:0 25px;}
+	 .rlist_title span{float:right; margin-top:4px;}
+	 .rlist_title span a{display:inline-block; width:68px; height:28px; text-align:center;}
+	 .rlist_title span a#over_Tab{background:url(/content/1/image/bg/tabnavbg.gif) no-repeat;}
+	 .rlist_title h2{display:inline; color:#529000; font-size:14px;}
+	 .listbox{padding:15px 25px; border-bottom:1px dashed #CCCCCC;}
+	   .list_m{width:100px; height:75px; border:1px solid #D5E2C7; padding:9px; float:left; margin-right:10px;}
+	   .listbox p{color:#666666; line-height:18px;}
+	   .listbox p span a{color:#529000; line-height:24px;}
+	   .listbox p span a:hover{color:#FF6600;}
+	   .listbox p a{color:#FF6600;}
+	   .listbox p a:hover{text-decoration:underline;}
+	   .listinfo{clear:both; text-align:right; margin-top:10px;}
+	   .listinfo a{color:#996633; }
+	   .listinfo a:hover{color:#FF9900;text-decoration:underline;}
+
+  .r_pages{text-align:right; margin-top:20px;}
+  .r_pages a{display:inline-block; border:1px solid #D4E0BF; color:#333333; height:23px; width:23px; text-align:center; line-height:23px; margin:0 3px;}
+  .r_pages a.rlist_pre{width:59px; background:#E2F5C2;}
+  .r_pages a#nowpage{color:#529000; font-weight:bold;}
+/**攻略详细页**/
+.r_rightpan .article_Title{padding-left:15px;}
+.article_Title span.spt{font-size:18px; font-weight:bold; line-height:24px; color:#5C759E;}
+#ckepop{float:right;}
+.article_m{width:798px; border:1px solid #FFF38A; background:#FFFFD9; margin:10px 0 0 8px;}
+.article_m dl{float:left; padding:10px; margin:0; width:369px; line-height:24px;}
+.article_m dl dd.rdl_m{float:left; margin-right:10px;}
+.article_m dl dt{font-weight:bold; color:#CC0000;}
+.article_m dl dt a{color:#AF7817;}
+.article_m dl dt a:hover{color:#FF6600;}
+.article_m dl dd{color:#666666;}
+.article_m dl.rightborder1px{border-right:1px solid #FFF38A;}
+.artwrap{width:800px; margin-left:8px; height:auto; padding:20px 0;}
+.artwrap p{text-indent:2em; line-height:24px; font-size:14px;}
+/**聚合地图页**/
+.tag_wrap{width:986px; margin:0 auto; border:2px solid #DEEFBF; padding-bottom:20px;}
+   .tag_head{height:32px; background:#F5FAE9; border-bottom:1px solid #DEEFBF; padding:7px 15px 0;}
+   .tag_head span{margin:0 2px -1px;}
+   .tag_head span{display:inline-block; width:80px; height:33px; line-height:33px; text-align:center; background:url(/content/1/image/bg/tag_navbg02.gif) no-repeat; color:#fff; cursor:pointer;}
+   .tag_head span.overTag{background:url(/content/1/image/bg/tag_navbg.gif) no-repeat; color:#4b4b4b;}
+   .tag_tabs dl{padding:10px 0; margin:0; line-height:24px; font-size:14px; border-bottom:1px dashed #DADADA;}
+   .tag_tabs dl.noborder{border:0;}
+   .tag_tabs dl dt{color:#83be0d; font-weight:bold; padding-left:23px;}
+   .tag_tabs dl dd{margin:0;}
+   .tag_tabs dl dd a{width:102px; display:inline-block; text-align:center;}

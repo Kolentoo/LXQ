@@ -1,0 +1,267 @@
+/*
+* @Author: lxq
+* @Date:   2016-11-15 11:01:52
+* @Last Modified by:   jonas hsiao
+* @Last Modified time: 2016-11-18 13:38:16
+*/
+
+
+html, body{ width: 100%; overflow-x: hidden;}
+.banner {background: url(/content/subject/pc-laodian161115/img/banner.jpg) no-repeat center center #ffc602;height: 650px;}
+
+.pic-show {
+	height: 385px; position: relative; overflow: hidden; z-index: 0;width: 399px;margin-left: 50px;_display:inline;
+	_margin-left: 63px;
+	.slides_container { display: block; overflow: hidden; }
+	.slides_container .slide-item { height: 299px; width: 100%; }
+	.pagination { z-index: 10; position: absolute; bottom: 9px; left: 50%; margin-left: -80px; clear: both; }
+	.pagination li {background: url(/content/subject/pc-laodian161115/img/nav2.png) no-repeat;width: 22px;height: 22px;float: left;margin:0 3px;
+	_display:inline;}
+	.pagination li a { text-indent: -9999px; display: block;width: 22px;height: 22px;}
+	.pagination .on {background: url(/content/subject/pc-laodian161115/img/nav1.png) no-repeat;}
+	.si1 {background: url(/content/subject/pc-laodian161115/img/pic1.jpg) no-repeat;}
+    .si2 {background: url(/content/subject/pc-laodian161115/img/pic2.jpg) no-repeat;}
+    .si3 {background: url(/content/subject/pc-laodian161115/img/pic3.jpg) no-repeat;}
+    .si4 {background: url(/content/subject/pc-laodian161115/img/pic4.jpg) no-repeat;}
+    .si5 {background: url(/content/subject/pc-laodian161115/img/pic5.jpg) no-repeat;}
+    .si6 {background: url(/content/subject/pc-laodian161115/img/pic6.jpg) no-repeat;}
+}
+
+.cont1-box {
+	position: relative;z-index:15;
+	background: url(/content/subject/pc-laodian161115/img/bj1.jpg) no-repeat center center #ffc602;height: 795px;
+	.cont1-con {padding-top: 310px;width: 1100px;margin:0 auto;z-index:15;position: relative;}
+	.introduce {
+		width: 560px;
+		dl{
+			font-size: 16px;color:#000;margin-bottom: 25px;
+			dd{text-indent:2em;}
+			b{font-size: 20px;color:#e81c1f;}
+		}
+		.address {
+			padding:8px 0;width: 560px;background: #e81c1f;border-radius:25px;
+			.p1 {font-size: 20px;color:#fff;font-weight:bold;margin-left: 35px;}
+		}
+	}
+	.decorate {position: absolute;top: 660px;left: 50%;margin-left: -820px;background: url(/content/subject/pc-laodian161115/img/decorate1.png) no-repeat;
+		width: 211px;height: 495px;z-index:6;}
+}
+
+.cont2-box {
+	background: #ffc602;padding-bottom: 250px;position: relative;
+	.cont2-con {padding-top: 50px;position: relative;z-index:10;}
+	.topic {background: url(/content/subject/pc-laodian161115/img/topic2.png) no-repeat center center;height: 188px;}
+	.present-box {
+		.present1 {
+			h2{text-align: center;font-size: 48px;margin: 45px 0 30px 0;}
+			.present-con {
+				background: #ffec04;box-shadow: 0 0 16px 16px rgba(255,198,2,0.9);width: 1110px;margin:0 auto;border-radius:25px;
+				.p1 {font-size: 30px;color:#e81c1f;font-weight:bold;width: 690px;margin:35px 0 0 50px;line-height: 48px;_display:inline;}
+				.line {background: url(/content/subject/pc-laodian161115/img/line.jpg) no-repeat;width: 4px;height: 214px;}
+				.pre-pic {margin:30px 30px 0 0;_display:inline;_margin:8px 2px 0 0;}
+			}
+		}
+		.present2 {
+			h2{text-align: center;font-size: 48px;margin:45px 0 30px 0;}
+			.present-con {
+				width: 1150px;margin:0 auto;border-radius:25px;
+				.pre-list {
+					width: 535px;background: #ffec04;border-radius:35px;box-shadow: 0 0 16px 16px rgba(255,198,2,0.9);margin:0 20px 40px;_display:inline;
+					.pre-pic {margin:0 auto;}
+					.pic1 {
+						width: 410px;padding:60px 0 30px 0;
+						img{max-height:172px;}
+					}
+					.pic2 {
+						width: 424px;padding:10px 0 6px 0;
+						img{max-height:246px;}
+					}
+					.pic3 {
+						width: 408px;padding:35px 0 25px 0;
+						img{max-height:211px;}
+					}
+					.pic4 {
+						width: 413px;padding:35px 0 25px 0;
+						img{max-height:211px;}
+					}
+					.pic5 {
+						width: 273px;padding:35px 0 25px 0;
+						img{max-height:212px;}
+					}
+					.pic6 {
+						width: 151px;padding:25px 0 23px 0;
+						img{max-height:224px;}
+					}
+					.pre-txt {
+						border-top: 1px dotted #ffa601;
+						.p1 {font-size: 30px;color:#e81c1f;font-weight:bold;padding:20px 30px;}
+					}
+				}
+			}
+		}
+		.present3 {
+			h2{text-align: center;font-size: 48px;margin: 45px 0 30px 0;}
+			.present-con {
+				background: #ffec04;width: 1110px;border-radius:35px;margin:0 auto;
+				dl{
+					padding:30px;
+					dd {color:#e81c1f;font-size: 24px;}
+				}
+			}
+		}
+	}
+	.decorate {
+		z-index:5;
+		.png {position: absolute;}
+		.d-list2 {background: url(/content/subject/pc-laodian161115/img/decorate3.png) no-repeat;width: 258px;height: 436px;top: 660px;
+			left: 50%;margin-left: -952px;}
+		.d-list3 {background: url(/content/subject/pc-laodian161115/img/decorate4.png) no-repeat;width: 419px;height: 169px;top: 370px;
+			left: 50%;margin-left: -550px;}
+		.d-list4 {background: url(/content/subject/pc-laodian161115/img/decorate2.png) no-repeat;width: 292px;height: 115px;top: 190px;
+			right: 50%;margin-right: -951px;}
+	}
+}
+
+.cont3-box {
+	background: #e9293c;position: relative;
+	.line1 {background: url(/content/subject/pc-laodian161115/img/line1.jpg) no-repeat center center;height: 15px;}
+	.line2 {background: url(/content/subject/pc-laodian161115/img/line2.jpg) no-repeat center center;height: 15px;margin-top: 75px}
+	.cont3-con {
+		padding-top: 50px;
+		.topic {background: url(/content/subject/pc-laodian161115/img/topic3.png) no-repeat center center;height: 153px;}
+	}
+	.route-group {
+		.title {margin-top: 15px;}
+		.t1 {background:url(/content/subject/pc-laodian161115/img/title1.png) no-repeat center center;height: 63px;}
+		.t2 {background:url(/content/subject/pc-laodian161115/img/title2.png) no-repeat center center;height: 55px;}
+		.t3 {background:url(/content/subject/pc-laodian161115/img/title3.png) no-repeat center center;height: 70px;}
+		.t4 {background:url(/content/subject/pc-laodian161115/img/title4.png) no-repeat center center;height: 83px;}
+		.route-tab {
+			.hd {
+				margin:30px auto 0;width: 800px;
+				li{width: 174px;line-height: 54px;cursor: pointer;background: #e9293c;color:#fff;font-size: 24px;text-align: center;
+					border:3px solid #fff;border-radius:30px;margin:0 10px;_display:inline;}
+				li:hover {background:#fff;color:#e9293c;}
+				.on {background:#fff;color:#e9293c;}
+				}
+		}
+		.goods{
+			width: 1136px;margin:35px auto 0;
+			.g-list {
+				background: #ffec04;padding-bottom: 15px;width: 260px;margin:0 12px 24px;transition:all ease 0.5s;top: 0;position: relative;
+				_display:inline;
+				.chart {
+					position: relative;
+					img{max-height:195px;}
+					.label {
+						background:url(/content/subject/pc-laodian161115/img/label.png) no-repeat;width: 110px;height: 30px;position: absolute;
+						left: 0;top: 20px;color:#fff;font-size: 14px;line-height: 30px;
+						.lj {padding-left: 9px;}
+						b{color:#ffec04;}
+						i{margin-left: 5px}
+					}
+				}
+				.detail {
+					padding:8px 15px 0;
+					.name a{font-size: 14px;font-weight:bold;height: 40px;overflow: hidden;display: inline-block;}
+					.price {font-size: 18px;color:#e81c1f;text-align: center;margin: -3px 0 3px 0;}
+					.book {
+						del{color:#333;}
+						.bq {color:#000;}
+					}
+					.b-btn {
+						background: #e81c1f;width: 230px;height: 40px;line-height: 40px;text-align: center;margin-top: 7px;
+						a{font-size: 24px;color:#fff;font-weight:bold;width: 100%;display: inline-block;}
+					}
+					.b-btn:hover {background: #d11a1c;}
+				}
+			}
+			.g-list:hover {top: -10px;}
+		}
+	}
+	.decorate {
+		.png {position: absolute;}
+		.d-list1 {background: url(/content/subject/pc-laodian161115/img/decorate6.png) no-repeat;width: 222px;height: 398px;top: -120px;left: 50%;
+			margin-left: -990px;}
+		.d-list2 {background: url(/content/subject/pc-laodian161115/img/decorate7.png) no-repeat;width: 419px;height: 169px;top: 286px;left: 50%;
+			margin-left: -810px;}
+		.d-list3 {background: url(/content/subject/pc-laodian161115/img/decorate8.png) no-repeat;width: 351px;height: 282px;top: 5px;right: 50%;
+			margin-right: -680px;}
+		.d-list4 {background: url(/content/subject/pc-laodian161115/img/decorate9.png) no-repeat;width: 211px;height: 275px;top: 400px;right: 50%;
+			margin-right: -850px;}
+		.d-list5 {background: url(/content/subject/pc-laodian161115/img/decorate10.png) no-repeat;width: 238px;height: 311px;top: 1500px;left: 50%;
+			margin-left: -990px;}
+		.d-list6 {background: url(/content/subject/pc-laodian161115/img/decorate11.png) no-repeat;width:94px;height: 99px;top: 2300px;left: 50%;
+			margin-left: -875px;}
+		.d-list7 {background: url(/content/subject/pc-laodian161115/img/decorate12.png) no-repeat;width: 342px;height: 312px;top: 1900px;right: 50%;
+			margin-right: -951px;}
+	}
+}
+
+.cont4-box {
+	background: #ffc602;position: relative;padding-bottom: 250px;
+	.cont4-con {
+		margin-bottom: 180px;padding-top: 50px;position: relative;z-index:12;
+		.topic {background: url(/content/subject/pc-laodian161115/img/topic4.png) no-repeat center center;height: 168px;}
+		.store-box {
+			background: #ffec04;border-radius:35px;width: 1100px;margin:35px auto 0;box-shadow: 0 0 16px 16px rgba(255,198,2,0.9);
+			.store {
+				padding:50px;
+				.p1 {width: 275px;padding-left: 55px;}
+				.p2 {width: 613px;padding-left: 30px;}
+				.store-title {
+					h2{font-size: 36px;color:#9f7e0c;}
+					border-bottom: 1px solid #5f8868;padding-bottom: 20px;
+				}
+				.store-con {
+					.p1 {font-size: 30px;margin-top: -3px;}
+					.p2 {font-size: 26px;border-left: 1px solid #5f8868;}
+					.s-list {border-bottom: 1px dashed #5f8868;padding:20px 0;}
+				}
+			}
+		}
+	}
+	.subject-intro-more {position: relative;z-index:15;}
+	.subject-intro-more .tit {background:url(/content/subject/pc-laodian161115/img/subject-title.png) no-repeat center center;height: 69px; }
+	.decorate {
+		.png {position: absolute;}
+		.d-list1 {background: url(/content/subject/pc-laodian161115/img/decorate14.png) no-repeat;width: 321px;height: 687px;top: 800px;left: 50%;
+			margin-left: -995px;}
+		.d-list2 {background: url(/content/subject/pc-laodian161115/img/decorate15.png) no-repeat;width: 351px;height: 873px;top: 490px;right: 50%;
+			margin-right: -920px;}
+		.d-list3 {background: url(/content/subject/pc-laodian161115/img/decorate16.png) no-repeat;width:413px;height: 506px;bottom: 5px;right: 50%;
+			margin-right: -960px;}
+	}
+}
+
+.navigation {
+	background: #ffec04;width: 140px;border-radius:8px;position: absolute;top: 650px;right: 0;padding-bottom: 10px;z-index:20;
+	.nav-box {position: relative;}
+	.nav-top {background: url(/content/subject/pc-laodian161115/img/nav-top.png) no-repeat;width: 160px;height: 192px;position: absolute;top: -75px;
+		left: -20px;}
+	.nav-con {
+		width: 120px;margin:0 auto;padding-top: 120px;
+		.nav-list {
+			.p1 {color:#e81c1f;background: #ffec04;width: 120px;height: 48px;line-height: 46px;text-align: center;font-weight:bold;font-size: 24px;
+				cursor:pointer;border-radius:8px;color:#e81c1f;}
+			.p1:hover {background: #e81c1f;color:#fff;}
+			.on {background: #e81c1f;color:#fff;}
+		}
+	}
+	.back {
+		cursor:pointer;width: 120px;margin:0 auto;background: #ffec04;
+		.top {background: url(/content/subject/pc-laodian161115/img/top.png) no-repeat;height: 11px;width: 16px;margin:0 auto;position: relative;top: 15px;}
+		.p1 {color:#e81c1f;width: 120px;height: 48px;line-height: 46px;font-weight:bold;font-size: 24px;
+				border-radius:8px;color:#e81c1f;text-align: center;padding-top: 10px;}
+	}
+	.back:hover {
+		background: #e81c1f;border-radius:8px;
+		.p1 {color:#fff;}
+		.top {background: url(/content/subject/pc-laodian161115/img/top2.png) no-repeat;}
+	}
+}
+
+.nav-on {position: fixed;top: 13%;right: 0;}
+
+
+

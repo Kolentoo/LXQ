@@ -1,0 +1,807 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>私家团_悠哉私家团旅游-悠哉旅游网</title>
+    <meta name="keywords" content="旅游,旅游网,自由行,跟团游,公司旅游" />
+    <meta name="description" content="悠哉旅游网（Uzai.com）－中国最专业、全面的旅游线路和自助游预订网站，一站式个性化旅游服务提供商；跟团游+自助游+公司旅游专家；出境游、周边游、国内游、酒店、签证；出发地：上海、北京、杭州、深圳、成都、南京。" />
+    <link rel="Shortcut Icon" href="//r.uzaicdn.com/favicon-sj.ico" type="image/x-icon" />
+
+    <!-- build:[href] /content/v1/styles/sijia/ -->
+    <link rel="stylesheet" href="/content/v1/_src/styles/sijia/common.css">
+    <!-- /build -->
+    <!-- build:js /content/v1/scripts/core.js -->
+    <script src="/content/libs/jquery-1.11.1.min.js"></script>
+    <script src="/content/libs/jquery.cookie.js"></script>
+    <script src="/content/libs/_util.js"></script>
+    <script src="/content/v1/_src/scripts/common.js"></script>
+    <!-- /build -->
+    <!--[if lt IE 9]><script src="//r.uzaicdn.com/content/libs/html5shiv.js"></script><![endif]-->
+    <!--[if IE 6]><script src="//r.uzaicdn.com/content/libs/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script><script>DD_belatedPNG.fix('.png');</script><![endif]-->
+
+    <!-- build:[href] /content/v1/styles/sijia/ -->
+    <link rel="stylesheet" href="/content/v1/_src/styles/sijia/custom.css">
+    <!-- /build -->
+    <script src="/content/libs/plugin/jcarousel/jquery.jcarousel.min.js"></script>
+    <script src="/content/libs/plugin/jsonCalendar/jsonCalendar.min.js"></script>
+    <!-- build:[src] /content/v1/scripts/sijia/ -->
+    <script src="/content/v1/_src/scripts/sijia/citylist.js"></script>
+    <!-- /build -->
+    <!-- build:[src] /content/v1/scripts/sijia/ -->
+    <script src="/content/v1/_src/scripts/sijia/custom.js"></script>
+    <!-- /build -->
+</head>
+<body>
+
+    <div class="jqmWindow" id="calenderPartEven">
+    </div>
+    <header class="header yahei g10">
+        <div class="top-bar f14 w clearfix">
+            <div class="tb-left fl">
+                <a href="http://www.uzai.com/app/?ly=toplist" target="_blank" title="下载手机客户端" class="download-client">下载手机客户端</a>
+                <span class="divide-item">|</span>
+                <a href="http://www.uzai.com/" title="悠哉旅游网" class="sitelink">悠哉旅游网</a>
+            </div>
+            <div class="tb-right fr">
+                <span class="login-status" id="j_loginStatus"></span>
+                <span class="divide-item">|</span>
+                <a href="https://u.uzai.com/manage/Index" title="我的订单" rel="nofollow">我的订单</a>
+                <span class="divide-item">|</span>
+                <a href="http://www.uzai.com/myhistory" target="_blank" title="最近浏览产品" rel="nofollow">最近浏览产品</a>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="w clearfix">
+                <a href="/Index" target="_blank" class="logo fl">
+                    <img src="/content/v1/images/sijia/logo.png" title="" alt="">
+                </a>
+                <span class="telephone f666 f18 fr" title="免长途费，马上拨打电话预订吧！">
+                    <i class="icon-tel icon-sijia vm png">&nbsp;</i><span class="pl5 vm">预定热线：1010-9898</span>
+                </span>
+                <nav class="nav-menu f18">
+                    <ul id="j_navMenu" class="clearfix">
+                        <li class="item-wrap"><a href="/Index" class="nav-item">首页</a></li>
+                        <li class="item-wrap"><a href="/List" class="nav-item">目的地</a></li>
+                        <li class="item-wrap"><a href="#" class="nav-item">订制案例</a></li>
+                        <li class="item-wrap"><a href="/about" class="nav-item">关于我们</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-wrap" style="background: url(/content/v1/images/sijia/bg.jpg) no-repeat center 0;">
+        <div class="custom-main w">
+            <div class="main-cont clearfix">
+                <div class="side yahei fr">
+                    <div class="side-custom">
+                        <div class="custom-hd f16">我的优定制  ·  预览</div>
+                        <div class="custom-bd f13" id="j_resultBox">
+                            <dl class="custom-info clearfix" id="j_reCustom">
+                                <dt class="info-hd f14 tr fl">定制类型：</dt>
+                                <dd class="info-bd"></dd>
+                            </dl>
+                            <dl class="custom-info clearfix" id="j_reDest">
+                                <dt class="info-hd f14 tr fl">目的地：</dt>
+                                <dd class="info-bd"></dd>
+                            </dl>
+                            <dl class="custom-info clearfix" id="j_reCity">
+                                <dt class="info-hd f14 tr fl">出发城市：</dt>
+                                <dd class="info-bd"></dd>
+                            </dl>
+                            <dl class="custom-info clearfix" id="j_reDate">
+                                <dt class="info-hd f14 tr fl">出游时间：</dt>
+                                <dd class="info-bd">
+
+                                </dd>
+                            </dl>
+                            <dl class="custom-info clearfix" id="j_reBuddy">
+                                <dt class="info-hd f14 tr fl">同游伙伴：</dt>
+                                <dd class="info-bd">
+
+                                </dd>
+                            </dl>
+                            <dl class="custom-info clearfix" id="j_reHotel">
+                                <dt class="info-hd f14 tr fl">常住酒店：</dt>
+                                <dd class="info-bd">
+
+                                </dd>
+                            </dl>
+                            <dl class="custom-info clearfix" id="j_reBudget">
+                                <dt class="info-hd f14 tr fl">预算：</dt>
+                                <dd class="info-bd">
+
+                                </dd>
+                            </dl>
+                            <dl class="custom-info clearfix" id="j_reContact">
+                                <dt class="info-hd f14 tr fl">联系人信息：</dt>
+                                <dd class="info-bd">
+
+                                </dd>
+                            </dl>
+                            <dl class="custom-info clearfix" id="j_reContactEmail">
+                                <dt class="info-hd f14 tr fl">电子邮箱：</dt>
+                                <dd class="info-bd">
+
+                                </dd>
+                            </dl>
+
+                            <dl class="custom-info clearfix">
+                                <dt class="info-hd f14 tr fl">验证码：</dt>
+                                <dd class="info-bd valid">
+                                    <input maxlength="4" type="text" class="textbox mt10" id="txtValidator" name="txtValidator" />
+                                    <img src="//dingzhi.uzai.com/code" title="看不清，换一张?" alt="看不清，换一张" class="pointer" id="img1" onclick='javascript:this.src="/code?" + Math.random()' />
+                                </dd>
+                            </dl>
+
+                        </div>
+                        <div class="custom-ft tr">
+                            <a class="btn-submit f14 tc">提&nbsp;&nbsp;&nbsp;&nbsp;交</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-box yahei">
+                    <form id="sijiaOrderInfo" action="">
+                        <input type="hidden" id="customType" name="customType" />
+                        <input type="hidden" id="LocationName" name="LocationName" />
+                        <input type="hidden" id="StartCityName" name="StartCityName" />
+                        <input type="hidden" id="GoDate" name="GoDate" />
+                        <input type="hidden" id="DayInfo" name="DayInfo" />
+                        <input type="hidden" id="PerSonName" name="PerSonName" />
+                        <input type="hidden" id="Person" name="Person" />
+                        <input type="hidden" id="Clild" name="Clild" />
+                        <input type="hidden" id="HotelInfo" name="HotelInfo" />
+                        <input type="hidden" id="YuSuan" name="YuSuan" />
+                        <input type="hidden" id="UserName" name="UserName" />
+                        <input type="hidden" id="Tel" name="Tel" />
+                        <input type="hidden" id="Email" name="Email" />
+                        <input type="hidden" id="IsOut" name="IsOut" value="1" />
+                    </form>
+
+                    <div class="custom-mod box-fix" id="j_customMod">
+                        <div class="mod-inner">
+                            <div class="custom-hd f14">
+                                <ul class="custom-step clearfix" id="j_customStep">
+                                    <li class="ok">
+                                        <a href="javascript:void(0);" class="on">目的地<i class="arrow-bottom songti"><em>◆</em></i></a>
+                                    </li>
+                                    <li>
+                                        <sub>&gt;</sub>
+                                        <a href="javascript:void(0);">出游时间<i class="arrow-bottom songti"><em>◆</em></i></a>
+                                    </li>
+                                    <li>
+                                        <sub>&gt;</sub>
+                                        <a href="javascript:void(0);">同游伙伴<i class="arrow-bottom songti"><em>◆</em></i></a>
+                                    </li>
+                                    <li>
+                                        <sub>&gt;</sub>
+                                        <a href="javascript:void(0);">常住酒店<i class="arrow-bottom songti"><em>◆</em></i></a>
+                                    </li>
+                                    <li>
+                                        <sub>&gt;</sub>
+                                        <a href="javascript:void(0);">预算<i class="arrow-bottom songti"><em>◆</em></i></a>
+                                    </li>
+                                    <li>
+                                        <sub>&gt;</sub>
+                                        <a href="javascript:void(0);">联系信息<i class="arrow-bottom songti"><em>◆</em></i></a>
+                                    </li>
+                                    <li>
+                                        <sub>&gt;</sub>
+                                        <a href="javascript:void(0);">预览<i class="arrow-bottom songti"><em>◆</em></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="custom-bd">
+                                <p class="custom-divide"><span class="arrow-mod songti"><em>◆</em><i>◆</i></span></p>
+                                <div class="destination-box custom-block" id="j_destinationBox">
+                                    <div class="custom-cont-box">
+                                        <menu class="site-box hd f14" id="j_siteBox">
+                                            <li class="clearfix">
+                                                <label for="" class="site-box-hd hd-type tr fl">定制类型：</label>
+                                                <div class="item-main">
+                                                    <div class="custom-type"><span class="type-item mr5 on">公司</span><span class="type-item mr5">个人</span></div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <label for="" class="site-box-hd hd-type tr fl">目的地：</label>
+                                                <div class="item-main">
+                                                    <div class="site-type"><span class="type-item mr5 on">出境</span><span class="type-item mr5">国内</span></div>
+                                                    <div class="mt15">
+                                                        <span class="site-box-bd">
+                                                            <input type="text" id="txtDestiation" maxlength="20" placeholder="请输入您想去的目的地或直接点击下方推荐" class="textbox f14 yahei">
+                                                            <ul id="j_sjCustomAutocomp" class="sj-custom-autocomp hide"></ul>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <label for="" class="site-box-hd hd-textbox tr fl">出发城市：</label>
+                                                <div class="item-main">
+                                                    <span class="site-box-bd">
+                                                        <input type="text" id="txtCity" maxlength="10" placeholder="请输入您的出发城市" value="上海" disabled="disabled" class="textbox f14 yahei">
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <label for="" class="site-box-hd tr fl">热门目的地：</label>
+                                            </li>
+                                        </menu>
+                                        <div class="bd">
+                                            <div class="item">
+
+                                        <dl class="scenic-mod clearfix">
+                                            <dt class="scenic-hd f14 tr fl">出境</dt>
+                                            <dd class="scenic-bd">
+                                                <div class="scenic-carousel">
+                                                    <span class="btn-box prev fl"><i class="f16 songti"><em>◆</em></i></span>
+                                                    <span class="btn-box next fr"><i class="f16 songti"><em>◆</em></i></span>
+                                                    <div class="scenic-carousel-inner">
+                                                        <ul class="scenic-list clearfix">
+
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="爱尔兰">
+
+                                                                  <img src="//r04.uzaicdn.com/sceneryimageupload/9168/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">爱尔兰</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="澳大利亚">
+
+                                                                  <img src="//r04.uzaicdn.com/sceneryimageupload/10762/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">澳大利亚</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="大溪地">
+
+                                                                  <img src="//r06.uzaicdn.com/sceneryimageupload/27639/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">大溪地</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="德国">
+
+                                                                  <img src="//r04.uzaicdn.com/sceneryimageupload/9312/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">德国</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="法国">
+
+                                                                  <img src="//r05.uzaicdn.com/sceneryimageupload/9423/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">法国</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="韩国">
+
+                                                                  <img src="//r07.uzaicdn.com/sceneryimageupload/11042/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">韩国</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="荷兰">
+
+                                                                  <img src="//r07.uzaicdn.com/sceneryimageupload/9556/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">荷兰</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="加拿大">
+
+                                                                  <img src="//r06.uzaicdn.com/sceneryimageupload/10516/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">加拿大</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="肯尼亚">
+
+                                                                  <img src="//r07.uzaicdn.com/sceneryimageupload/10478/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">肯尼亚</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="马尔代夫">
+
+                                                                  <img src="//r06.uzaicdn.com/sceneryimageupload/11323/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">马尔代夫</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="毛里求斯">
+
+                                                                  <img src="//r07.uzaicdn.com/sceneryimageupload/10504/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">毛里求斯</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="美国">
+
+                                                                  <img src="//r06.uzaicdn.com/sceneryimageupload/10595/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">美国</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="日本">
+
+                                                                  <img src="//r05.uzaicdn.com/sceneryimageupload/11414/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">日本</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="瑞士">
+
+                                                                  <img src="//r04.uzaicdn.com/sceneryimageupload/9735/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">瑞士</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="塞舌尔">
+
+                                                                  <img src="//r08.uzaicdn.com/sceneryimageupload/10510/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">塞舌尔</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="泰国">
+
+                                                                  <img src="//r08.uzaicdn.com/sceneryimageupload/11652/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">泰国</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="新加坡">
+
+                                                                  <img src="//r08.uzaicdn.com/sceneryimageupload/11803/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">新加坡</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="意大利">
+
+                                                                  <img src="//r05.uzaicdn.com/sceneryimageupload/10131/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">意大利</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="印度尼西亚">
+
+                                                                  <img src="//r06.uzaicdn.com/sceneryimageupload/11970/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">印度尼西亚</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="英国">
+
+                                                                  <img src="//r05.uzaicdn.com/sceneryimageupload/10232/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                   <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">英国</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </dd>
+                                          </dl>
+                                       </div>
+                                       <div class="item hide">
+                                        <dl class="scenic-mod clearfix">
+                                            <dt class="scenic-hd f14 tr fl">国内</dt>
+                                            <dd class="scenic-bd">
+                                                <div class="scenic-carousel">
+                                                    <span class="btn-box prev fl"><i class="f16 songti"><em>◆</em></i></span>
+                                                    <span class="btn-box next fr"><i class="f16 songti"><em>◆</em></i></span>
+                                                    <div class="scenic-carousel-inner">
+                                                        <ul class="scenic-list clearfix">
+
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="安徽">
+                                                                    <img src="//r05.uzaicdn.com/sceneryimageupload/3/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                        <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">安徽</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="海南">
+                                                                    <img src="//r05.uzaicdn.com/sceneryimageupload/2259/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                        <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">海南</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="河南">
+                                                                    <img src="//r08.uzaicdn.com/sceneryimageupload/2614/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                        <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">河南</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);" title="浙江">
+                                                                    <img src="//r06.uzaicdn.com/sceneryimageupload/7222/m/600x450.jpg?imageView2/1/w/96/h/75/format/jpg" alt="">
+                                                                    <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                                    <div class="hd-bar">
+                                                                        <div class="mask">&nbsp;</div>
+                                                                        <div class="hd-wrap f13 tc"><div class="text-ellipsis">浙江</div></div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        </div>
+                                       </div>
+                                    </div>
+                                    <div class="btn-bar tr"><input type="button" class="btn-next f14" value="下一步"></div>
+                                </div>
+                                <div class="date-box custom-block clearfix hide" id="j_dateBox">
+                                    <div class="custom-cont-box clearfix">
+                                        <div class="custom-cont-main fl">
+
+                                            <div class="date-calendar-wrap" id="j_dateCaledar">
+
+                                            </div>
+
+                                        </div>
+                                        <div class="days-side custom-cont-side fr">
+                                            <div class="sub-hd"><i class="icon-triangle songti mr5 vm"><em>◆</em></i><em class="hd-cont f14 vm">请选择出行天数（不含往返交通时间）</em></div>
+                                            <ul class="days-items f14 tc">
+                                                <li class="on"><a href="javascript:void(0);" class="days-item">3-5天<i class="icon-day-pick icon-sijia png">&nbsp;</i></a></li>
+                                                <li><a href="javascript:void(0);" class="days-item">6-9天<i class="icon-day-pick icon-sijia png">&nbsp;</i></a></li>
+                                                <li><a href="javascript:void(0);" class="days-item">10-15天<i class="icon-day-pick icon-sijia png">&nbsp;</i></a></li>
+                                                <li><a href="javascript:void(0);" class="days-item">16天以上<i class="icon-day-pick icon-sijia png">&nbsp;</i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="btn-bar tr"><input type="button" class="btn-next f14" value="下一步"></div>
+                                </div>
+                                <div class="buddy-box custom-block clearfix hide" id="j_buddyBox">
+                                    <div class="custom-cont-box clearfix">
+                                        <div class="buddy-main custom-cont-main fl">
+                                            <div class="sub-hd"><i class="icon-triangle songti mr5 vm"><em>◆</em></i><em class="hd-cont f14 vm">选择您的同游伙伴</em></div>
+                                            <div class="buddy-cont">
+                                                <ul class="buddy-items f14 tc clearfix">
+                                                    <li class="on">
+                                                        <a href="javascript:void(0);">
+                                                            <div class="item-pic"><img src="//r01.uzaicdn.com/content/v1/images/sijia/pic30.jpg" alt=""></div>
+                                                            <div class="item-hd">携爱侣</div>
+                                                            <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);">
+                                                            <div class="item-pic"><img src="//r01.uzaicdn.com/content/v1/images/sijia/pic31.jpg" alt=""></div>
+                                                            <div class="item-hd">陪父母</div>
+                                                            <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);">
+                                                            <div class="item-pic"><img src="//r01.uzaicdn.com/content/v1/images/sijia/pic32.jpg" alt=""></div>
+                                                            <div class="item-hd">带孩子</div>
+                                                            <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);">
+                                                            <div class="item-pic"><img src="//r01.uzaicdn.com/content/v1/images/sijia/pic33.jpg" alt=""></div>
+                                                            <div class="item-hd">三代同游</div>
+                                                            <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);">
+                                                            <div class="item-pic"><img src="//r01.uzaicdn.com/content/v1/images/sijia/pic34.jpg" alt=""></div>
+                                                            <div class="item-hd">挽闺蜜</div>
+                                                            <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);">
+                                                            <div class="item-pic"><img src="//r01.uzaicdn.com/content/v1/images/sijia/pic35.jpg" alt=""></div>
+                                                            <div class="item-hd">同哥们</div>
+                                                            <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);">
+                                                            <div class="item-pic"><img src="//r01.uzaicdn.com/content/v1/images/sijia/pic36.jpg" alt=""></div>
+                                                            <div class="item-hd">陪客户</div>
+                                                            <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);">
+                                                            <div class="item-pic"><img src="//r01.uzaicdn.com/content/v1/images/sijia/pic37.jpg" alt=""></div>
+                                                            <div class="item-hd">企业团体</div>
+                                                            <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="buddy-side custom-cont-side fr">
+                                            <div class="sub-hd"><i class="icon-triangle songti mr5 vm"><em>◆</em></i><em class="hd-cont f14 vm">出行人数</em></div>
+                                            <ul class="num-items f14">
+                                                <li><label for="" class="item-hd">成人：</label><input id="txtAdult" onkeyup="this.value=this.value.replace(/\D/g,'')" type="text" maxlength="2" class="textbox tc" value="2">人</li>
+                                                <li><label for="" class="item-hd">儿童：</label><input id="txtChild" onkeyup="this.value=this.value.replace(/\D/g,'')" type="text" maxlength="2" class="textbox tc">人</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="btn-bar tr"><input type="button" class="btn-next f14" value="下一步"></div>
+                                </div>
+                                <div class="hotel-box custom-block hide" id="j_hotelBox">
+                                    <div class="custom-cont-box">
+                                        <div class="sub-hd"><i class="icon-triangle songti mr5 vm"><em>◆</em></i><em class="hd-cont f14 vm">选择您喜欢的酒店类型</em></div>
+                                        <div class="hotel-cont">
+                                            <ul class="hotel-items f14 tc">
+                                                <li>
+                                                    <a href="javascript:void(0);" title="相当于超五星酒店">
+                                                        <div class="item-pic"><img src="//r01.uzaicdn.com/content/v1/images/sijia/pic38.jpg" alt=""></div>
+                                                        <div class="item-hd">奢华型</div>
+                                                        <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" title="相当于国内五星酒店">
+                                                        <div class="item-pic"><img src="//r01.uzaicdn.com/content/v1/images/sijia/pic39.jpg" alt=""></div>
+                                                        <div class="item-hd">豪华型</div>
+                                                        <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" title="相当于国内四星酒店">
+                                                        <div class="item-pic"><img src="//r01.uzaicdn.com/content/v1/images/sijia/pic40.jpg" alt=""></div>
+                                                        <div class="item-hd">舒适型</div>
+                                                        <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" title="相当于国内三星酒店">
+                                                        <div class="item-pic"><img src="//r01.uzaicdn.com/content/v1/images/sijia/pic41.jpg" alt=""></div>
+                                                        <div class="item-hd">经济型</div>
+                                                        <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" title="当地特色民宿">
+                                                        <div class="item-pic"><img src="//r01.uzaicdn.com/content/v1/images/sijia/pic42.jpg" alt=""></div>
+                                                        <div class="item-hd">民宿</div>
+                                                        <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="budget-box custom-block hide" id="j_budgetBox">
+                                    <div class="custom-cont-box">
+                                        <div class="sub-hd"><i class="icon-triangle songti mr5 vm"><em>◆</em></i><em class="hd-cont f14 vm">选择您的人均旅行预算</em></div>
+                                        <div class="budget-cont">
+                                            <ul class="budget-items f14 tc">
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="item-pic"><i class="icon-calc icon-sijia png">&nbsp;</i></div>
+                                                        <div class="item-hd">5,000以下</div>
+                                                        <span class="currency-icon yahei lh1">￥</span>
+                                                        <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="item-pic"><i class="icon-calc icon-sijia png">&nbsp;</i></div>
+                                                        <div class="item-hd">5,001-15,000</div>
+                                                        <span class="currency-icon yahei lh1">￥</span>
+                                                        <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="item-pic"><i class="icon-calc icon-sijia png">&nbsp;</i></div>
+                                                        <div class="item-hd">15,001-30,000</div>
+                                                        <span class="currency-icon yahei lh1">￥</span>
+                                                        <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="item-pic"><i class="icon-calc icon-sijia png">&nbsp;</i></div>
+                                                        <div class="item-hd">30,001-50,000</div>
+                                                        <span class="currency-icon yahei lh1">￥</span>
+                                                        <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="item-pic"><i class="icon-calc icon-sijia png">&nbsp;</i></div>
+                                                        <div class="item-hd">50,001以上</div>
+                                                        <span class="currency-icon yahei lh1">￥</span>
+                                                        <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="item-pic"><i class="icon-calc icon-sijia png">&nbsp;</i></div>
+                                                        <div class="item-hd">不确定</div>
+                                                        <span class="currency-icon yahei lh1">￥</span>
+                                                        <span class="icon-pick icon-sijia png">&nbsp;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-box custom-block hide" id="j_contactBox">
+                                    <div class="custom-cont-box">
+                                        <div class="sub-hd"><i class="icon-triangle songti mr5 vm"><em>◆</em></i><em class="hd-cont f14 vm">请输入您的联系信息，方便我们的旅游管家为您提供1对1的旅游定制服务。</em></div>
+                                        <div class="contact-cont" style="padding-top:30px;">
+                                            <menu class="info-listing f14 tc">
+                                                <li><label for="" class="info-hd tr pr5">您的姓名：</label><input id="txtName" type="text" placeholder="请输入您的姓名" maxlength="10" class="textbox"></li>
+                                                <li><label for="" class="info-hd tr pr5">手机号码：</label><input id="txtMobile" type="text" placeholder="请输入您的手机号码" class="textbox"></li>
+                                                <li><label for="" class="info-hd tr pr5">电子邮箱：</label><input id="txtEmail" type="text" placeholder="请输入您的电子邮箱" maxlength="50" class="textbox"></li>
+
+                                            </menu>
+                                        </div>
+                                        <br /><br />&nbsp;&nbsp;【温馨提示】提交需求后，非会员将自动升级为悠哉会员，享受会员专属服务。
+                                    </div>
+                                    <div class="btn-bar tr"><a href="javascript:void(0);" class="btn-next f14 tc">预览</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <dl class="step-box f14">
+                <dt class="step-hd f18 tc">3步定制</dt>
+                <dd class="step-bd f666">
+                    <ul class="step-items clearfix">
+                        <li class="item-1"><i class="item-icon png"></i><div class="item-cont">通过在线、电话或微信提交定制需求，1对1旅游管家为您提供服务。</div></li>
+                        <li class="item-2"><i class="item-icon png"></i><div class="item-cont">为您量身定制出行计划，沟通确定行程，报价和签约付款。</div></li>
+                        <li class="item-3"><i class="item-icon png"></i><div class="item-cont">全程跟踪服务，为您和家人提供美好的旅游体验。</div></li>
+                    </ul>
+                </dd>
+            </dl>
+            <p class="contact-us f999 tc"><span class="info-item">联系我们：1010-9898</span><span class="info-item">工作时间：09:00 AM—18:00 PM</span></p>
+        </div>
+
+    </section>
+
+    <!-- build:include ../_partial/footer.html -->
+    This will be replaced by the content of _partial/footer.html
+    <!-- /build -->
+
+    <div class="pop-mod">
+        <p class="mask"></p>
+        <div class="pop-finish wrap-box" id="j_popFinish">
+            <p class="clearfix">
+                <a href="javascript:void(0);" class="pop-close yahei pointer fr mt5 mr5"><i class="close-icon">&times;</i></a>
+            </p>
+            <dl class="tips-info yahei">
+                <dt class="info-hd tc"><i class="icon-item png vm"></i><em class="vm">提交成功!</em></dt>
+                <dd class="info-bd f666">
+                    <p>您已成功提交定制信息，旅游管家会在1个工作日内<br>以<em class="tel-num">021-60561828</em> 联系您，<br>请您保持手机畅通。</p>
+                </dd>
+            </dl>
+            <p class="decorate-part icon-sijia png"></p>
+            <p class="uzai-mascot png"></p>
+        </div>
+    </div>
+</body>
+</html>

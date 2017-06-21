@@ -1,0 +1,511 @@
+.white-cover{
+    width: 100%;
+    height: 100%;
+    background: #F4F4F4;
+    position: fixed;
+    top: 0;
+    z-index: 98;
+}
+.content .main{
+    padding-top: 0;
+}
+.white-topbar>.title h1{
+    font-size: 0;
+}
+.index-con .white-topbar.on{
+    background: none;
+    z-index: 10;
+}
+.index-con .white-topbar.on:after{
+    border: 0;
+}
+.index-con .head .slide-banner{
+    width: 100%;
+    height: 5rem;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.index-con .head .slide-banner img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.index-con .head .slide-banner .swiper-pagination{
+    position: absolute;
+    bottom: 0.18rem;
+    left: 50%;
+    margin-left: -0.36rem;
+    width: 0.8rem;
+}
+.index-con .head .slide-banner .swiper-pagination-bullet{
+    width: 0.14rem;
+    height: 0.14rem;
+    display: inline;
+    float: left;
+    margin-right: 0.05rem;
+    background: #bbbbbb;
+    border-radius: 0.07rem;
+    -webkit-border-radius: 0.07rem;
+    margin-left: 0;
+    opacity: 1;
+}
+.index-con .head .slide-banner .swiper-pagination-bullet-active{
+    width: 0.30rem;
+    background: #f93868;
+}
+.index-con .slide-link{
+    width: 100%;
+    position: relative;
+    top: -0.37rem;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/index_l_t.png") no-repeat;
+    background-size: 100% auto;
+    padding-top: 0.44rem;
+    overflow: hidden;
+    z-index: 2;
+}
+.index-con .slide-link .box{
+    padding: 0.06rem 0;
+    position: relative;
+    background: #FFFFFF;
+}
+.index-con .slide-link .box .l,.index-con .slide-link .box .r{
+    width: 0.32rem;
+    height: 1.52rem;
+    display: block;
+    position: absolute;
+    top: 0.3rem;
+    z-index: 2;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/left.png") no-repeat;
+    background-size: 100% auto;
+    display: none;
+}
+.index-con .slide-link .box .l{
+    left: 0;
+}
+.index-con .slide-link .box .r{
+    right: 0;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/right.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link ul{
+    width: 1000%;
+    padding-top: 0.3rem;
+    height: 1.6rem;
+    overflow: hidden;
+    display: none;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/index_link_bg.jpg") repeat-x center left;
+    background-size: 2.82rem .7rem;
+}
+.index-con .slide-link li{
+    float: left;
+    width: 1rem;
+}
+.index-con .slide-link ul a{
+    display: block;
+    width: 1.2rem;
+    color: #666666;
+    font-size: 0.24rem;
+    line-height: 0.26rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.index-con .slide-link ul span{
+    padding-top: 0.1rem;
+    display: inline-block;
+}
+.index-con .slide-link i{
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+}
+.index-con .slide-link i img{
+    width: 100%;
+    height: 100%;
+}
+.index-con .slide-link a:active img{
+    border: 1px solid #f93868;
+    box-sizing: border-box;
+    border-radius: 50%;
+    -wekit-border-radius: 50%;
+}
+.index-con .slide-link a:active span{
+    color: #f93868;
+}
+.index-con .slide-link .first{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/first.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .second{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/second.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.index-con .slide-link .third{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/third.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .fourth{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/fourth.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .fifth{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/fifth.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .sixth{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/sixth.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .seventh{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/seventh.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .eighth{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/eighth.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .ninth{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/ninth.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .tenth{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/tenth.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .first:active{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/first_a.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .second:active{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/second_a.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .third:active{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/third_a.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .fourth:active{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/fourth_a.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .fifth:active{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/fifth_a.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .sixth:active{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/sixth_a.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .seventh:active{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/seventh_a.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .eighth:active{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/eighth_a.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .ninth:active{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/ninth_a.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .tenth:active{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/tenth_a.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.index-con .slide-link .down-btn{
+    width: 100%;
+    height: 0.77rem;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/index_l_b.png") no-repeat;
+    background-size: 100% auto;
+    padding-top: 0.06rem;
+}
+.index-con .slide-link .down-btn .btn{
+    width: 0.77rem;
+    height: 0.77rem;
+    display: block;
+    margin: -0.06rem auto 0;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/up-btn.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .slide-link .down-btn .btn.on{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/down-btn.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .com-t{
+    width: 6.5rem;
+    height: 0.75rem;
+    margin: 0 auto;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/index_t_01.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .travel-b{
+    margin: -0.25rem 0.24rem 0.32rem;
+    font-size: 0.24rem;
+    color: #FFFFFF;
+}
+.index-con .travel-b .box{
+    position: relative;
+    height: 3.05rem;
+    margin: 0.32rem auto 0;
+}
+.index-con .travel-b .box .a-box{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.index-con .travel-b .box .b-box{
+    position: absolute;
+    top: 0;
+    left: 26%;
+}
+.index-con .travel-b .box .c-box{
+    position: absolute;
+    top: 0;
+    left: 52%;
+}
+.index-con .travel-b .box .img{
+    display: block;
+}
+.index-con .travel-b .box .a-box .img{
+    height: 3.04rem;
+    display: block;
+}
+.b-cover{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+}
+.index-con .travel-b img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+.index-con .travel-b .b-cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.index-con .travel-b a:active .b-cover{
+    background: rgba(246,59,107,.7);
+}
+.index-con .travel-b .a-box,.index-con .travel-b .b-box{
+    width: 24%;
+}
+.index-con .travel-b .c-box{
+    width: 48%;
+}
+.index-con .travel-b .s{
+    height: 1.46rem;
+}
+.index-con .travel-b .b-box .s:first-child{
+    margin-bottom: 0.12rem;
+}
+.index-con .travel-b .c-box .s{
+    margin-right: 3%;
+    float: left;
+    width: 48.5%;
+}
+.index-con .travel-b .c-box .s:last-child{
+    margin: 0;
+}
+.index-con .travel-b .b {
+    width: 100%;
+    height: 1.46rem;
+    display: block;
+    margin-bottom: 0.12rem;
+}
+.index-con footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.98rem;
+}
+.index-con footer .con{
+    background: #FFFFFF;
+    height: 100%;
+}
+.index-con footer a{
+    width: 33.3%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    font-size: 0.20rem;
+    color: #666;
+}
+.index-con footer .on{
+    color: #f93868;
+}
+.index-con footer .index-btn,.index-con footer .order-btn{
+    margin-top: 0.12rem;
+}
+.index-con footer .index-btn i,.index-con footer .order-btn i{
+    width: 0.5rem;
+    height: 0.48rem;
+    display: block;
+    margin: 0 auto;
+}
+.index-con footer .index-btn i{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/index_ico.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con footer .order-btn i{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/order_ico.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con footer .custom-btn i{
+    width: 1.21rem;
+    height: 1.14rem;
+    display: block;
+    margin: 0 auto;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/custom_ico.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con footer .custom-btn{
+    position: relative;
+    z-index: 2;
+    top: -0.5rem;
+    line-height: 0.35rem;
+}
+.index-con .case-b{
+    padding-bottom: 1.2rem;
+}
+.index-con .case-b .com-t{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/index_t_02.png") no-repeat center;
+    background-size: 100% auto;
+}
+.index-con .white-topbar .phone-ico{
+    width: 0.6rem;
+    height: 0.6rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/ico/phone_ico.png") no-repeat;
+    background-size: 100% auto;
+}
+.index-con .case-b .part-ls{
+    margin: 0 12px;
+}
+.index-con .case-b .part{
+    margin-bottom: 10px;
+    height: 2.6rem;
+    position: relative;
+    border-radius: 0.1rem;
+    -webkit-border-radius: 0.1rem;
+    overflow: hidden;
+}
+.index-con .case-b .part img{
+    width: 100%;
+    vertical-align: middle;
+}
+.index-con .case-b .r,
+.index-con .case-b .l{
+    position: absolute;
+    top: 48%;
+    width: 0.2rem;
+    height: 0.2rem;
+    background: #F4F4F4;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.index-con .case-b .name{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: 1rem;
+    margin-top: -0.7rem;
+    color: #FFFFFF;
+    padding-top: .4rem;
+    text-align: center;
+}
+.index-con .case-b .part:nth-child(even) .name{
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/case_n_bg.png") no-repeat top center;
+    background-size: 5.25rem auto;
+}
+.index-con .case-b .name span{
+    display: block;
+    font-size: 0.3rem;
+    width: 5rem;
+    margin: 0 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-shadow: 0 0 2px #666;
+}
+.index-con .case-b .name .p{
+    font-size: 0.24rem;
+    color: #e1e1e1;
+}
+.index-con .case-b .name .p i{
+    color: #FFFFFF;
+}
+.index-con .case-b .name .red-hr{
+    width: 0.45rem;
+    height: 0.03rem;
+    background: #f93b6b;
+    margin: 0.25rem auto 0.12rem;
+}
+.index-con .case-b .com-t{
+    margin-bottom: 0.35rem;
+}
+.index-con .case-b .l{
+    left: -0.07rem;
+}
+.index-con .case-b .r{
+    right: -0.07rem;
+}
+.index-con .case-b .b-cover{
+    position: absolute;
+    top: 0;
+}
+.gotoTop{
+    position: fixed;
+}
+.uzai-down-pop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+.uzai-down-pop .con{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -3rem 0 0 -2.3rem ;
+    width: 3.06rem;
+    height: 2.54rem;
+    padding: 3.46rem 0.77rem 0;
+    background: url("http://r03.uzaicdn.com/content/m/v2/images/index_new/uzai_pop.png") no-repeat;
+    background-size: 100% auto;
+}
+.uzai-down-pop .con a{
+    height: 0.6rem;
+    width: 3.06rem;
+    line-height: 0.58rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 0.2rem;
+    color: #7b6c5a;
+    font-size: 0;
+}
+.uzai-down-pop .con .down-btn{
+    height: 0.7rem;
+    line-height: 0.68rem;
+    color: #ffffff;
+    font-size: 0;
+}
+.uzai-down-pop a.top-btn{
+    width: 0.64rem;
+    height: 0.64rem;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

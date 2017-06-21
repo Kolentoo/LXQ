@@ -1,0 +1,265 @@
+﻿/***active page base css***/
+.activePG{font:12px/1.5 arial,宋体}
+ 
+a{color:#333;}
+a:hover{color:#333;text-decoration:underline;}
+.visa em,.visa i,.visa s{font-style:normal;}
+.noborder{border:0;}
+.fix{width:100%;height:0px;overflow:hidden;clear:both;display:block;}
+
+.visa .f12{font-size:12px;}
+.visa .f14{font-size:14px;}
+.visa .f16{font-size:16px;}
+.visa .f18{font-size:18px;}
+.visa .f20{font-size:20px;}
+.visa .f22{font-size:22px;}
+.visa .f24{font-size:24px;}
+
+.visa .b{font-weight:bold;}
+.visa dl,.visa dt,.visa dd{padding:0;margin:0;}
+
+.visa .f333{color:#333;}
+.visa .f666{color:#666;}
+.visa .f999{color:#999;}
+
+.visa .fl{float:left;}
+.visa .fr{float:right;}
+.visa .yahei{font-family:"microsoft YaHei","雅黑"}
+
+.visa .hide{display:none;}
+.visa .noborder{border:0;margin:0}
+/*end base css*/
+
+/*color*/
+.visa .blue{color:#3366cc;}
+.orange{color:#f60}
+.green{color:#329900;}
+.brown{color:#9b660f;}
+.brown2{color:#630;}
+/*---------------------------------------------------------------------------------*/
+.newNav{color:#333;width:600px;float:left;font-family:"宋体"}
+.newNav a{color:#390;margin:0 6px;}
+.newNav em{margin:0 6px;font-style:normal;color:#666;}
+
+.visa{width:990px;margin:0 auto 15px;}
+.visa .left{width:220px;overflow:hidden;}
+.visa .right{width:753px;overflow:hidden;}
+
+.left .bk{border:1px solid #bfe1af;margin-bottom:10px;}
+.left .bk .hd a{float:right;font-family:"宋体"}
+.left .bk table td a{background:url(http://r.uzaicdn.com/content/visa/images/V15.gif) no-repeat;display:inline-block;width:68px;height:30px;}
+.left .bk table td a:hover{background-position:0 -30px;}
+
+.left .search{border:2px solid #ff9900;padding:10px 15px;margin-bottom:0;}
+.left .search h2{margin:4px 0 6px;}
+.search .input1{width:110px;border:1px solid #bfe1b0;color:#999;line-height:17px;}
+.search td{padding:5px 2px; }
+.search select{width:110px;}
+
+.left .notice{padding:10px 15px;border-top:0;}
+.left h2{margin:9px 0;}
+.notice p{background:url(http://r.uzaicdn.com/content/visa/images/v3.jpg) no-repeat left 10px;padding-left:12px;line-height:22px;margin-bottom:3px;}
+
+.youshi h2{padding:0;margin:0;line-height:29px;padding-left:15px;height:29px;border-bottom:1px solid #bfe1af}
+.youshi .bd{padding:10px 10px 0;}
+.youshi .hd{background:#f6fff1;}
+.youshi p{background:url(http://r.uzaicdn.com/content/visa/images/v3.jpg) no-repeat left 10px;padding-left:12px;line-height:22px;margin-bottom:3px;}
+.youshi dl{margin-bottom:12px;height:44px;border-bottom:1px dotted #ddd;overflow:hidden;padding-bottom:8px;}
+.youshi dd{width:141px;float:right;line-height:20px;color:#666;}
+.youshi dt{width:45px;text-align:center;float:left;}
+ 
+.qa h2{padding:0;margin:0;line-height:29px;padding-left:15px;height:29px;}
+.qa .bd{padding:10px 13px;font-family:"宋体";}
+.qa .hd{background:#f6fff1;border-bottom:1px solid #bfe1af;}
+.qa .hd a{margin:8px 5px 0 0;height:16px;overflow:hidden;}
+.qa p{background:url(http://r.uzaicdn.com/content/visa/images/v3.jpg) no-repeat left 10px;padding-left:12px;line-height:22px;margin-bottom:3px;}
+.qa p a{color:#3366cc;}
+
+.right .sign{margin-bottom:10px;}
+.right .bk .hd {border-bottom: 1px solid #329900;height: 26px;line-height: 28px;overflow:hidden}
+.right .bk .hd .tt{background:#329900;color: #fff;padding: 0 16px;overflow:hidden;float:left;}
+.right .bk .bd{border:1px solid #e4e4e4;border-top:0;}
+
+.condition{margin-bottom:10px;}
+.condition .bd{padding-top:15px;}
+.condition dl{padding:0 10px;border-bottom:1px dotted #ccc;margin-bottom:10px;padding-bottom:3px;}
+.condition dt{width:55px;float:left;padding-left:5px;}
+.condition dd.d1{width:660px;float:right;}
+.condition dd.d1 a{color:#3366cc;margin-right:20px;white-space:nowrap;padding-bottom:10px;float:left;display:inline;}
+
+.hotvisa{margin-bottom:10px;}
+.hotvisa .bd{padding-top:15px;}
+.hotvisa dl{padding:0 15px;margin-bottom:0;padding-bottom:0;width:721px;overflow:hidden;}
+.hotvisa dt{border-bottom:1px solid #e4e4e4;position:relative;height:36px;}
+.hotvisa dt b{border-bottom:1px solid #53ad00;position:absolute;left:0;top:0;height:36px;line-height:36px;}
+
+.hotvisa dd.d1{width:720px;overflow:hidden;padding:15px 15px 0;}
+.hotvisa dd.d1 a{color:#3366cc;margin-right:10px;white-space:nowrap;float:left;}
+
+.hotvisa dd div{float:left;width:324px;margin-right:15px;padding-right:20px;margin-bottom:15px;height:75px;}
+.hotvisa dd div a.blue{margin-top:12px;}
+.hotvisa dd div .fr{margin-top:7px;font-size:24px;color:#f60;}
+
+.tip{padding:15px 15px 25px;border:1px solid #eaeaea;line-height:23px;color:#666}
+.tip h2{margin-bottom:14px;}
+
+
+.sfooter{border-top:4px solid #329900;padding-bottom:20px;width:990px;margin:0 auto;}
+.sfooter a{color:#333}
+.sfooter .dCopyRight{text-align:center;padding:10px 0 8px 0;line-height:23px;color:#ccc;}
+.sfooter .dCopyRight a{margin:0 5px;}
+.sfooter .dCopyRight a:hover{text-decoration:underline;color:#f90}
+.sfooter .dCopyRight2{text-align:center;margin-bottom:10px;}
+.sfooter .dSubject{border:1px solid #e5e5e5;padding:10px 15px 5px;background:#fbfbfb;}
+.sfooter dl{padding:0;margin:0;margin-bottom:5px;line-height:21px;}
+.sfooter dl a{color:#999;margin-right:4px;}
+.sfooter dl a:hover{text-decoration:underline;color:#f90}
+.sfooter dt{color:#000;font-weight:bold;float:left;width:70px;}
+
+.righttopp{z-index:1;}
+.tips h2{padding-bottom:15px;}
+.tips h2 a{font-weight:normal;}
+
+.visaTab .item li{border-bottom:1px solid #e4e4e4;margin-bottom:12px;height:75px;overflow:hidden;padding:5px 0 16px;}
+.visaTab .item .pic{float:left;margin-right:20px;display:inline;overflow:hidden;margin-top:4px;}
+.visaTab .item .pic a img{margin-bottom:0;}
+.visaTab .item .picTrim1 a img{margin-top:0;margin-bottom:0;}
+.visaTab .item .mid{float:left;width:480px;line-height:19px;padding:0;}
+.visaTab .item .right{float:right;width:150px;line-height:25px;text-align:right;margin-top:0;}
+.visaTab .item .right .p1{color:#666;}
+.visaTab .item .right .p1 span{padding-right:5px;font-size:24px;color:#f30;}
+.visaTab .item .noborder{border:0;}
+
+.visaTab .item .mid div span{float:left;}
+.visaTab .item .mid div .s1{width:150px;}
+.visaTab .item .mid div .s2{width:150px;}
+.visaTab .item .mid div .s3{width:100px;}
+
+.visaTab{overflow:hidden;margin-bottom:10px;}
+.visaTab .hd{height:35px;overflow:hidden;position:relative;z-index:2;}
+.visaTab .hd ul{float:left;clear:both;display:inline;}
+.visaTab .hd li{height:35px;text-align:center;float:left;width:105px;float:left;margin-right:3px;display:inline;}
+.visaTab .hd li a{color:#666;font-weight:bold;font-size:14px;background:url(http://r.uzaicdn.com/content/visa/images/v8.jpg) no-repeat 0 0;float:left;height:35px;width:105px;overflow:hidden;line-height:35px;text-decoration:none;}
+.visaTab .hd li.on a{color:#53ad00;background:url(http://r.uzaicdn.com/content/visa/images/v9.jpg) no-repeat 0 0;}
+.visaTab .bd{padding:15px 0 0;color:#333;border:1px solid #339901;position:relative;margin-top:-1px;z-index:1;}
+.visaTab .bd .item{display:none;}
+.visaTab .bd .item li{padding:0 20px 10px;}
+.visaTab .bd p{line-height:22px;}
+.visaTab .bd p.p0{margin-bottom:5px;}
+.visaTab .bd .d0{line-height:21px;color:#666;margin-bottom:15px;padding:0 20px;}
+
+.visaTab2{overflow:hidden;margin-bottom:15px;}
+.visaTab2 .hd{height:29px;overflow:hidden;position:relative;z-index:2;}
+.visaTab2 .hd ul{float:left;clear:both;display:inline;margin-left:20px;}
+.visaTab2 .hd li{height:27px;text-align:center;float:left;float:left;margin-right:4px;display:inline;}
+.visaTab2 .hd li a{color:#666;background:url(http://r.uzaicdn.com/content/visa/images/v11.jpg) repeat-x 0 0;float:left;height:27px;padding:0 15px;overflow:hidden;line-height:27px;text-decoration:none;border:1px solid #ddd;}
+.visaTab2 .hd li.on a{background:#fff;border:1px solid #d6eccc;border-bottom:1px solid #fff;font-weight:bold;}
+.visaTab2 .bd{padding:8px 0 0;color:#333;border-top:1px solid #d6eccc;position:relative;margin-top:-1px;z-index:1;}
+.visaTab2 .bd .item{display:none;}
+.visaTab2 .bd .item li{padding:0 20px 10px;}
+.visaTab2 .bd p{line-height:22px;}
+.visaTab2 .bd p.p0{margin-bottom:5px;}
+.visaTab2 .bd .d0{line-height:21px;color:#666;margin-bottom:7px;padding:0 10px 0 20px;}
+
+.visaTab2 .tbInner td{padding:10px 25px;background:#fff;line-height:21px;}
+.visaTab2 .tbInner table{background:#e4e4e4;}
+.visaTab2 .tbInner th{padding:10px 10px 10px 10px;background:#f6f6f6;}
+.visaTab2 .tbInner .td1{background:#f6f6f6;text-align:center;}
+
+.visaDesc{margin-bottom:15px;}
+.visaDesc img{margin-top:-4px;}
+
+.visaDesc2{margin-bottom:20px;line-height:23px;}
+.visaDesc2 h2{margin-bottom:6px;}
+
+.visaDesc3{margin:15px 0;}
+.visaDesc3 h1{margin-bottom:10px;display:block;margin-top:5px;}
+.visaDesc3 .pic {display: inline;float: left;margin-right: 20px;overflow: hidden;}
+.visaDesc3 .mid {float: left;padding: 0;width:500px;}
+.visaDesc3 .mid div span{float:left;}
+.visaDesc3 .mid div .s1 {width:223px;}
+.visaDesc3 .mid div .s2 {width: 150px;}
+.visaDesc3 .fr{margin:91px 15px 0 0}
+
+.visaDesc4{margin-bottom:15px;line-height:21px;border:1px solid #ffd6a1;background:#fffef1;padding:10px 15px 11px;}
+.visaDesc4 h2{margin-bottom:5px;}
+
+.mianqian .bd{line-height:26px;padding:15px 15px;}
+
+
+.material .dT{border-bottom: 1px solid #329900;height: 26px;line-height: 26px;margin-bottom:10px;}
+
+.material .d0{text-align:right;}
+.material .d0 a{float:right;padding-left:20px;}
+.material .d0 .aprint{background:url(http://r.uzaicdn.com/content/visa/images/v12.jpg) no-repeat 0 center;margin-right:12px;}
+.material .d0 .aEmail{background:url(http://r.uzaicdn.com/content/visa/images/v13.jpg) no-repeat 0 center;}
+
+
+
+.proMsgTab{overflow:hidden;margin-bottom:20px;}
+.proMsgTab .hd{height:29px;overflow:hidden;border-bottom:2px solid #ffd8b1;}
+.proMsgTab .hd ul{width:600px;float:left;clear:both;display:inline;margin-left:10px;}
+.proMsgTab .hd li{height:28px;text-align:center;margin-right:3px;float:left;display:inline-block;border:1px solid #ffcc99;border-bottom:0;padding:0 20px;background:url(http://r.uzaicdn.com/content/product/p10.gif) repeat-x 0 0;position:relative;overflow:hidden;}
+.proMsgTab .hd li.trim1{border:0px;float:right;color:#999;width:350px;text-align:right;line-height:18px;margin-top:5px;}
+.proMsgTab .hd li a{color:#666666;font-weight:bold;font-size:14px;height:30px;overflow:hidden;line-height:30px;}
+.proMsgTab .hd li a em{font-size:12px;font-style:normal;font-family:"Arial";}
+.proMsgTab .hd li.cur{background:url(http://r.uzaicdn.com/content/product/p6.gif) repeat-x 0 0;}
+.proMsgTab .hd li.cur a{color:#663300;}
+.proMsgTab .hd li.cur a:hover{text-decoration:none;}
+.proMsgTab .bd{padding:15px 0 5px;color:#333;}
+.proMsgTab .bd .item{display:none;}
+.proMsgTab .bd .p1{margin-bottom:5px;}
+.proMsgTab .bd .p2{line-height:18px;width:100%;}
+.proMsgTab .bd .p2 .e1{width:39px;float:left;}
+.proMsgTab .bd .p2 .e2{width:878px;float:right;}
+.proMsgTab .item li {border-bottom: 1px solid #E8E8E8;margin-bottom: 15px;padding:0 15px 10px;}
+.proReviewListTrim1 .e1 {color: #333;font-weight: bold;margin-right: 5px;width: 70px;}
+.proMsgTab .item li .e2 {color: #36c;margin-right: 5px;width: 120px;}
+.proMsgTab .item li .e3 {color: #999;font-size: 13px;width: 120px;}
+.anpager{padding:0 15px;margin-bottom:10px;}
+.anpager a{background:none repeat scroll 0 0 #FFF;border:1px solid #E0E0E0;color:#333;display:inline-block;text-decoration:none;cursor:pointer;margin:0 10px 0 0;padding:4px 7px 3px;}
+
+
+/***leaveMsg***/
+.leaveMsg{color: #333;padding: 15px 20px 5px;background:#f7f5f2;}
+.leaveMsg p{width:100%;clear:both;float:left;margin-bottom:10px;}
+.leaveMsg p.p2{display:none;}
+.leaveMsg label.label1{width:60px;float:left;text-align:left;padding-right:15px;color:#333;margin-top:7px;}
+.leaveMsg label.label2{width:60px;float:left;text-align:left;padding-right:15px;color:#333}
+.leaveMsg .s1{float:left;width:540px;}
+.leaveMsg .s2{float:left;width:81px;}
+#submitMsg input{background:url(http://r.uzaicdn.com/content/visa/images/v18.jpg) no-repeat;width:68px;height:30px;display:block;text-indent:-999px;}
+#submitMsg input:hover{background-position:0 -30px;}
+.leaveMsg .s1 label input{}
+.leaveMsg .s1 input.input1{border:1px solid #ccc;width:165px;padding:5px 2px;}
+.leaveMsg .s1 input.input2{padding:0;margin:0;margin-right:3px;}
+.leaveMsg textarea{width:520px;height:100px;border:1px solid #ccc;padding:2px 0;}
+.leaveMsg .s1 label{width:520px;float:left;height:18px;}
+
+/*2012-09-21*/
+.pline{margin-bottom:7px;}
+.pline .plines{width:330px;display:inline-block;}
+.qa .bd p span{margin-right:5px;font-weight:bold;}
+.material .dT .td{background:#f0f0f0;float: left;padding: 0 16px;}
+.material .dT span{margin-right:4px;cursor:pointer;}
+.material .dT .tt {background:#329900;color: #fff;padding: 0px 16px;float:left;}
+.pline{line-height:1.5;}
+.lineBtn{padding-top:8px;}
+.lineBtn a{display:inline-block;width:121px;height:38px;background:url(http://r.uzaicdn.com/content/visa/images/v17.jpg) no-repeat;}
+.lineBtn a:hover{background-position:0 -38px;}
+.q1{font-weight:bold;color:#36c;}
+.p2 .q1{color:#333;}
+.anpager a.cur{background:#e7e7e7;border:1px solid #8d8d8d;color:#333;display:inline-block;text-decoration:none;cursor:pointer;margin:0 10px 0 0;padding:4px 7px 3px;}
+.issueLeaveMsg{font-weight:bold;color:#53ad00;font-size:14px;}
+
+
+
+
+
+
+
+
+
+
+
+

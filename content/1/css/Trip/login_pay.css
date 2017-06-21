@@ -1,0 +1,27 @@
+.login_pay_dh {background:url(/content/1/image/order/login_bg_dh.jpg);}
+.login_paybg_dh { position:absolute; top:3px; left:3px; width:634px; height:244px; background:#fff url(/content/1/image/order/login_line_dh.gif) no-repeat 317px 45px; text-align:center;}
+.login_tit_dh { height:40px; background:url(/content/1/image/order/login_titbg_dh.jpg);}
+.login_tit_dh h1 { margin:0px; padding:0 0 0 20px; font-size:14px; font-weight:bold; color:#043465; line-height:40px; text-align:left;}
+.login_tit_dh img { position:absolute; top:8px; right:20px;}
+.login_input_dh { width:310px; height:200px; position:relative; top:2px; left:3px; float:left; text-align:left;*margin-top:-20px;}
+.margin_right_dh { margin-right:8px;}
+.P1_dh { position:relative; width:260px; top:30px; left:40px; font-size:14px; color:#333; line-height:30px; overflow:hidden;}
+.P1_dh span {  display:block; float:left;}
+.P1_dh input { height:22px; border:1px solid #669ED6;}
+.P2_dh { position:relative; width:230px; top:45px; left:96px;}
+.P2_dh input { width:113px; height:28px; background:url(/content/1/image/order/login_btnbg_dh.jpg) no-repeat; border:0px; font-size:13px; font-weight:bold; color:#FFF;}
+.P3_dh { position:relative; width:230px; top:65px; left:40px; font-size:12px; color:#666; line-height:20px;}
+
+.P4_dh { position:relative; width:260px; top:30px; left:40px; font-size:14px; color:#333; line-height:30px; overflow:hidden;}
+.P4_dh span { width:42px; display:block; float:left;}
+.P4_dh input { width:140px; height:22px; border:1px solid #669ED6;}
+
+.P5_dh { position:relative; width:260px; top:45px; left:40px; font-size:14px; color:#333; line-height:30px; overflow:hidden;}
+.P5_dh span { width:42px; display:block; float:left;}
+.P5_dh input { width:140px; height:22px; border:1px solid #669ED6;}
+
+.P6_dh { position:relative; width:180px; top:65px; left:82px; font-size:12px; color:#666; line-height:20px;}
+.P6_dh input { width:113px; height:28px; background:url(/content/1/image/order/login_btnbg_dh.jpg) no-repeat; border:0px; font-size:13px; font-weight:bold; color:#FFF;}
+.P6_dh a { padding:0 5px; line-height:30px; font-size:12px; color:#006600; text-decoration:underline;}
+.P6_dh a:hover {color:#FF6600;}
+.sp_error{color: Red; font-size:12px; margin-left:2px; line-height:22px;}

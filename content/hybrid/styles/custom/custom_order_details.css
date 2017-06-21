@@ -1,0 +1,53 @@
+.main{background:#f0f0f0;position:relative;min-height:100%;padding-bottom:1rem;margin-top:0.2rem;}
+.main_m{margin:0.24rem;border-radius: 0.1rem;background:#fff;position:relative;}
+.right{float:right;}
+.left{float:left;}
+.clear{clear:both;}
+.main_m .title{position:absolute;width:1.84rem;height:0.6rem;background:#f93868;color:#fff;border-radius:0.3rem; text-align:center;line-height:0.6rem;font-size:0.28rem;left:50%;margin-left:-0.92rem;top:-0.3rem;}
+.main_m .title_cancel{color:#fff;background:#999999;}
+.center{text-align:center;}
+.main_m .center{padding-top:0.5rem;}
+.main_m .center .adr{padding-left:0.3rem;background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/adr.png) no-repeat left center;background-size:0.21rem 0.27rem;font-size:0.28rem;}
+.main_m .center .adr_cancel{background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/adr_.png) no-repeat left center;background-size:0.21rem 0.27rem;}
+.headtitle{position:absolute;z-index:2;top:1.3rem; left:0rem;box-shadow:1px 1px 5px #ccc;width:100%;background:#fff;}
+.headtitle .w_100{position:relative; margin-left:0.15rem;}
+.headtitle .pic{background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/spot.png) no-repeat #fff;background-size:0.19rem 0.40rem;width:0.19rem;height:0.40rem;margin-top:-0.2rem;top:50%;position:absolute;right:0.2rem; }
+.headtitle span{color:#666666;display:block;padding:0.3rem 0.54rem;font-size:0.3rem;line-height:0.4rem;height: 1rem; vertical-align: middle;   display: table-cell;padding-left:1rem;background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/xiang_title.png) no-repeat 0.3rem center;background-size:0.58rem 0.58rem;}
+.headtitle span.headtitle_cancel{background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/xiang_title_.png) no-repeat 0.3rem center;background-size:0.58rem 0.58rem;}
+.headtitle:active{}
+.renjun{margin-top:1.8rem;padding:0.3rem;border-bottom:1px dashed #e1e1e1;    overflow: hidden;}
+.main_detailed{padding:0.35rem;    padding-bottom: 0.35rem;  padding-top: 0.09rem;}
+.main_detailed .left{width:2.65rem;color:#999999;font-size:0.26rem;line-height:0.4rem;padding-left:0.5rem;margin-top:0.2rem;}
+.main_detailed .left span{font-size:0.26rem;color:#666666;}
+.main_detailed .n1{background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/enterprise.png) no-repeat left center;background-size:0.41rem 0.41rem;}
+.main_detailed .n2{background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/team.png) no-repeat left center;background-size:0.41rem 0.41rem;}
+.main_detailed .n3{background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/day.png) no-repeat left center;background-size:0.41rem 0.41rem;}
+.main_detailed .n4{background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/who.png) no-repeat left center;background-size:0.41rem 0.41rem;}
+.main_detailed .n5{background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/peer.png) no-repeat left center;background-size:0.41rem 0.41rem;}
+.main_detailed .n6{background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/hotel.png) no-repeat left center;background-size:0.41rem 0.41rem;}
+.renjun .n7{background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/rmb.png) no-repeat left center;background-size:0.41rem 0.41rem;width:auto;color:#999999;font-size:0.28rem;line-height:0.4rem;padding-left:0.5rem;}
+.renjun .n7 span{    color: #666666;}
+.main_m_t{height:0.8rem;border-bottom:1px solid #dddddd;}
+.main_m_t span{padding-left:1rem;line-height:0.8rem;font-size:0.32rem;display:block;}
+.main_m_t span.n1{background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/contacts.png) no-repeat 0.3rem center;background-size:0.58rem 0.58rem;}
+.main_m_t span.n1_cancel{background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/contacts_.png) no-repeat 0.3rem center;background-size:0.58rem 0.58rem;}
+.main_m_t span.n2{background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/remarks.png) no-repeat 0.3rem center;background-size:0.58rem 0.58rem;}
+.main_m_t span.n2_cancel{background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/remarks_.png) no-repeat 0.3rem center;background-size:0.58rem 0.58rem;}
+.main_m_detailed{padding:0.3rem;min-height:1rem;}
+.main_m_detailed p{font-size:0.28rem;line-height:0.44rem;color:#999999;}
+.main_m_detailed p span{font-size:0.26rem;color:#999999;}
+.main_m_detailed p span.ng-binding{font-size:0.26rem;color:#666666;}
+.foot{background:#fff;height:0.98rem;position:fixed;left:0px;bottom:0px;width:100%;border-top:1px solid #dcdcdc;text-align:center;}
+.foot #quxiaobtn{display: inline-block;font-size:0.36rem;width:3.4rem;height:0.84rem;border-radius: 0.1rem;border:1px solid #dcdcdc;    line-height: 0.84rem;background:#fff;margin:0rem 0.12rem;margin-top:0.05rem;color:#666666;font-family: 'STHeiti','Microsoft YaHei',Helvetica,Arial,sans-serif;}
+.foot a.customer{background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/customer.png) 0.63rem center no-repeat #f93868;border-radius: 0.1rem;background-size:0.39rem 0.38rem;border:0px;color:#fff;padding-left:0.4rem;width:3rem;display:inline-block;height:0.84rem;line-height:0.84rem;margin-top:0.07rem;}
+.foot a.customer_{    width: 6.6rem;background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/customer.png) 2.5rem center no-repeat #f93868;background-size: 0.39rem 0.38rem;}
+.main_headtitle{position:relative;width:100%;}
+.cancel{text-align:center;padding-bottom:0.3rem;padding-top:0.1rem;}
+.cancel span{font-size:0.36rem;color:#bbbbbb;padding-left:0.56rem;background:url(http://r03.uzaicdn.com/content/hybrid/images/custom/cancel.png) left center no-repeat;line-height:0.4rem;background-size:0.41rem 0.41rem;}
+
+.layer{height: 100%;position: fixed;width: 100%;background: #000;opacity: 0.6;display: none;top: 0px;z-index: 3;}
+.layer_main{display:none;z-index: 4;width: 6.5rem;height: 2.8rem;position: fixed;left: 50%;top: 50%;margin-top: -1.4rem;margin-left: -3.25rem;background: #fff;border-radius: 0.1rem;box-shadow: 0px 0px 0.1rem #000;}
+.layer_main h2{padding: 0.55rem;line-height: 0.7rem;font-size: 0.3rem;color: #666666;border-bottom: 1px solid #d4d4d4;}
+.layer_main_confirm{height: 1rem;overflow: hidden;}
+.layer_main_confirm .cancel_{text-align: center;line-height: 1rem;width: 3.2rem;float: left;border-right: 1px solid #d4d4d4;font-size: 0.3rem;color: #666666;}
+.layer_main_confirm .confirm{text-align: center;line-height: 1rem;width: 3.2rem;float: left;font-size: 0.3rem;color: #f93868;}

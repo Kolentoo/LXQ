@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" manifest="http://m.uzai.com/manifest/global.appcache">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>新增乘机人</title>
+    <link href="http://r.uzaicdn.com/content/m/v1/styles/_src/core.css" rel="stylesheet" />
+    <link href="http://r.uzaicdn.com/content/m/v1/styles/tejia/jp.css" rel="stylesheet" />
+    <script src="http://r.uzaicdn.com/content/m/v1/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['http://r.uzaicdn.com/content/m/v1/scripts/core'], function (core) {
+            $('.orders-jp').find('dl').on('click', function () {
+                var o = $(this);
+                var os = o.siblings('dl');
+                os.removeClass('on');
+                if (o.hasClass('on')) {
+                    o.removeClass('on');
+                } else {
+                    o.addClass('on');
+                }
+
+
+                o.find('a').on('click', function () {
+                    //选择国家事件
+                    $('#j_fnHeader').find('.d-r').find('input').show();
+                    $('.country').hide();
+                })
+
+            });
+
+            $('.pop-country').on('click', function () {
+                var o = $(this);
+                $('.country').show();
+                $('#j_fnHeader').find('.d-r').find('input').hide();
+            });
+
+        });
+    </script>
+    <style>
+        .orders-jp { padding-top: 40px; }
+        .orders-jp td{padding:8px 10px;border-bottom:1px solid #ccc;background:#fff;vertical-align:middle;}
+        .orders-jp .view-arrow { position:relative;width:100%;height:20px;}
+        .orders-jp .view-arrow::after{position:absolute;right:0;top:5px;width:8px;height:8px;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);content:" ";border:1px solid #ccc;border-top:0;border-left:0;}
+
+         .orders-jp dl { border-bottom: 1px solid #ccc; line-height: 3; }
+        .orders-jp dt { background: #fff; padding-left: 10px;font-size:15px; }
+
+        .orders-jp dl dt .fr { position: relative; border: 1px solid #ccc; border-left: 0; border-top: 0; transform: rotate(45deg); -webkit-transform:rotate(-45deg);width: 8px; height: 8px; margin-right: 10px; margin-top: 19px; }
+        .orders-jp dl dd { display: none; }
+        .orders-jp dl dd a { padding-left: 10px; border-bottom: 1px solid #ccc; background-color: #e5e5e5;font-size:15px;color:#333; }
+        .orders-jp dl dd a:last-child { border-bottom: 0; }
+        .orders-jp dl.on dd { display: block; }
+
+        .country{position:fixed;left:0;top:0;width:100%;height:100%;padding-top:40px;z-index:9;background:#fff;}
+
+    </style>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m"><div class="tit">新增乘机人</div></div>
+            <div class="d-r tc">
+                <input type="button" value="完成" />
+            </div>
+        </header>
+        <section class="orders-jp">
+
+            <table class="g10">
+                <tr>
+                    <td class="td1">姓(英文）<br />Last Name</td>
+                    <td class="tr"><input value="XIE" /></td>
+                </tr>
+                 <tr>
+                    <td class="td1">名(英文）<br />First Name</td>
+                    <td class="tr"><input value="JIAN" /></td>
+                </tr>
+                <tr>
+                    <td>护照签发国</td>
+                     <td class="tr pop-country">
+                        <a href="#" class="block view-arrow"></a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>证件号码</td>
+                    <td class="tr"><input value="A69569865" /></td>
+                </tr>
+
+                 <tr>
+                    <td>证件有效期</td>
+                    <td class="tr"><input type="date" /></td>
+                </tr>
+
+                 <tr>
+                    <td>国籍</td>
+                    <td class="tr pop-country">
+                        <a href="#" class="block view-arrow"></a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>性别</td>
+                    <td class="tr"><select><option>男</option><option>女</option></select></td>
+                </tr>
+
+                 <tr>
+                    <td>出生年月</td>
+                    <td class="tr"><input type="date" /></td>
+                </tr>
+
+                
+
+            </table>
+
+
+             <div class="country hide">
+
+            <dl>
+                <dt class="clearfix">
+                    <span class="fl">A</span>
+                    <span class="fr"></span>
+                </dt>
+                <dd>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                </dd>
+            </dl>
+
+             <dl>
+                <dt class="clearfix">
+                    <span class="fl">B</span>
+                    <span class="fr"></span>
+                </dt>
+                <dd>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                </dd>
+            </dl>
+
+             <dl>
+                <dt class="clearfix">
+                    <span class="fl">C</span>
+                    <span class="fr"></span>
+                </dt>
+                <dd>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                </dd>
+            </dl>
+
+
+             <dl>
+                <dt class="clearfix">
+                    <span class="fl">D</span>
+                    <span class="fr"></span>
+                </dt>
+                <dd>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                </dd>
+            </dl>
+
+            </div>
+
+        </section>
+    </div>
+</body>
+</html>

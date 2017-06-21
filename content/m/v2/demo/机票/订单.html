@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>机票</title>
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/history/history.css" rel="stylesheet" />
+    <script src="/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+    seajs.use(['/content/m/v2/scripts/_src/core'], function (core) {
+        $('#j_changeFlight').on('click', function () {
+            _uzm.mask.show();
+            _unitMask();
+            var ot = $(this).parent('.tit').next('dl');
+            $('#j_jpInfo').show();
+            $('#j_jpInfo .jp-info').on('click', function () {
+                _uzm.mask.hide();
+                ot.html($(this).html());
+                $('#j_jpInfo').hide();
+            })
+        });
+
+        $('#j_changeHotel').on('click', function () {
+            _uzm.mask.show();
+            _unitMask();
+            var ot = $(this).parent('.tit').next('dl');
+            $('#j_jdInfo').show();
+            $('#j_jdInfo .jd-info').on('click', function () {
+                _uzm.mask.hide();
+                ot.html($(this).html());
+                $('#j_jdInfo').hide();
+            })
+        });
+
+        //点击mask,返回原始状态
+        var _unitMask = function () {
+            $('.fn-mask').on('click', function () {
+                $('#j_jpInfo').hide();
+                $('#j_jdInfo').hide();
+                _uzm.mask.hide();
+            });
+        }
+        
+
+
+    });
+    </script>
+
+    <style>
+       
+        .blue { color: #099fde; }
+        .orders-jp .tit{}
+
+        .orders-jp .tit { background: #fff; border-bottom: 1px solid #ccc; line-height: 40px; padding: 0 15px 0 10px; }
+        .orders-jp .tit .fr { position: relative; }
+        .orders-jp .tit .fr:before { position: absolute; right: -10px; top: 12px; content: " "; border: 1px solid #ccc; border-left: 0; border-top: 0; width: 10px; height: 10px; transform: rotate(-45deg); }
+
+        .jp-info dd { background: #fff; padding: 0 0 0px; border-bottom: 1px solid #ccc;position:relative; }
+        .jp-info .qu, .jp-info .fan { background: #21ae59; color: #fff; display: inline-block; vertical-align: middle; width: 20px; height: 20px; text-align: center; margin-right: 5px; position:absolute;left:0;top:0;}
+        .jp-info .fan { background: #f60; }
+       
+        
+        .jp-info dd table td{width:33.333%;text-align:center;font-size:14px;padding:3px 0}
+
+        .jd-info{background:#fff;}
+        .jd-info dd img.fl { width: 105px; }
+        .jd-info dd { padding:10px 10px 10px;border-bottom:1px solid #ccc; }
+
+        .fn-math { }
+        .fn-math span { display: inline-block; vertical-align: middle; position: relative; text-align: center; }
+        .fn-math .s1 { width: 20px; height: 20px; border: 1px solid #21ae59; border-radius: 50%; }
+        .fn-math .s1:after { content: ' '; position: absolute; left: 2px; top: 10px; border-bottom: 1px solid #21ae59; width: 16px; }
+        .fn-math .s2 { width: 30px;vertical-align:middle;border:none;text-align:center; }
+        .fn-math .s3 { width: 20px; height: 20px; border: 1px solid #21ae59; border-radius: 50%; }
+        .fn-math .s3:after { content: ' '; position: absolute; left: 2px; top: 10px; border-bottom: 1px solid #21ae59; width: 17px; }
+        .fn-math .s3:before { content: ' '; position: absolute; left: 10px; top: 2px; border-right: 1px solid #21ae59; height: 17px; }
+
+        .summary .info{background:#fff;height:45px;}
+        .summary .f60{padding-top:8px;line-height:14px;}
+
+        #j_jpInfo, #j_jdInfo { position:fixed;bottom:0;left:0;width:100%;z-index:999;background:#dddddd;}
+
+        #j_jpInfo .jp-info { margin-bottom: 10px;border-bottom:1px solid #ccc; }
+        #j_jpInfo dd{border-bottom:0;}
+        #j_jpInfo .jp-info:last-child { margin-bottom: 0; }
+        #j_jdInfo dd{background:#fff;}
+
+    </style>
+</head>
+<body>
+    <section class="w">
+        
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">填写订单</div>
+            </div>
+            <div class="d-r">
+              
+            </div>
+        </header>
+
+        <section class="orders-jp">
+
+            <div class="tit clearfix f14">
+                <span class="fl">机票信息</span>
+                <span class="fr" id="j_changeFlight">更换航班</span>
+            </div>
+            <dl class="mb10 jp-info">
+                <dd>
+                    <span class="qu">去</span>
+                    <table class="g10">
+                        <tr>
+                            <td>上海</td>
+                            <td>上海东方航空</td>
+                            <td>马尔代夫</td>
+                        </tr>
+                        <tr>
+                            <td><b class="f17">22:45</b></td>
+                            <td><img class="vm mb5" width="23" src="http://r.uzaicdn.com/content/m/v1/images/jipiao/j2.png" alt="" /></td>
+                            <td><b class="f17">06:05(+1)</b></td>
+                        </tr>
+                        <tr>
+                            <td>浦东国际机场</td>
+                            <td>2014年11月11日</td>
+                            <td>马累机场</td>
+                        </tr>
+                    </table>
+
+                </dd>
+                <dd>
+                    <span class="fan">返</span>
+                    <table class="g10">
+                        <tr>
+                            <td>马尔代夫</td>
+                            <td>上海东方航空</td>
+                            <td>上海</td>
+                        </tr>
+                        <tr>
+                            <td><b class="f17">22:45</b></td>
+                            <td><img class="vm mb5" width="23" src="http://r.uzaicdn.com/content/m/v1/images/jipiao/j2.png" alt="" /></td>
+                            <td><b class="f17">06:05(+1)</b></td>
+                        </tr>
+                        <tr>
+                            <td>马累机场</td>
+                            <td>2014年11月11日</td>
+                            <td>浦东国际机场</td>
+                        </tr>
+                    </table>
+
+                </dd>
+            </dl>
+
+            <div class="tit clearfix f14">
+                <span class="fl">酒店信息</span>
+                <span class="fr" id="j_changeHotel">更换酒店</span>
+            </div>
+            <dl class="mb10 jd-info">
+                <dd class="clearfix">
+                    <img class="fl mr10" src="http://r01.uzaicdn.com/pic/10639/m/w160/h120/t1/" alt="" />
+                    <div class="fl">
+                        <p class="f16 b f333">毛里求斯四季酒店</p>
+                        <p>入住日期:2014年10月21日</p>
+                        <p>离店日期:2014年10月26日</p>
+                        <p>毛里求斯皇后区皇后大道321号</p>
+                    </div>
+                </dd>
+
+                <dd class="clearfix">
+                    <span class="fl">房型选择</span>
+                    <span class="fl">
+                        <select>
+                            <option value="value">舒适大床房</option>
+                        </select>
+                    </span>
+                    <span class="arrow fr"></span>
+                </dd>
+
+                <dd class="clearfix">
+                    <span class="fl">房间数</span>
+                    <div class="fr">
+                        <div class="fn-math">
+                            <span class="s1"></span>
+                            <input class="s2" value="1">
+                            <span class="s3"></span>
+                        </div>
+                    </div>
+                </dd>
+
+
+            </dl>
+
+            <div class="summary clearfix">
+                <div class="info fl g5 tc">
+                    <p class="f60">
+                        <span class="block">￥<b class="f18">2249</b></span>
+                    </p>
+                    <p class="f666">订单总额</p>
+                </div>
+                <input type="button" class="lh3 fr btn btn-on PayBtn g5" style="margin:0 auto;" value="提交订单" />
+            </div>
+
+        </section>
+    </section>
+
+
+    <div class="hide" id="j_jpInfo">
+        <dl class="jp-info">
+            <dd>
+                <span class="qu">去</span>
+                <table class="g10">
+                    <tr>
+                        <td>上海</td>
+                        <td>上海东方航空</td>
+                        <td>马尔代夫</td>
+                    </tr>
+                    <tr>
+                        <td><b class="f17">22:45</b></td>
+                        <td><img class="vm mb5" width="23" src="http://r.uzaicdn.com/content/m/v1/images/jipiao/j2.png" alt="" /></td>
+                        <td><b class="f17">06:05(+1)</b></td>
+                    </tr>
+                    <tr>
+                        <td>浦东国际机场</td>
+                        <td>2014年11月11日</td>
+                        <td>马累机场</td>
+                    </tr>
+                </table>
+
+            </dd>
+            <dd>
+                <span class="fan">返</span>
+                <table class="g10">
+                    <tr>
+                        <td>马尔代夫</td>
+                        <td>上海东方航空</td>
+                        <td>上海</td>
+                    </tr>
+                    <tr>
+                        <td><b class="f17">22:45</b></td>
+                        <td><img class="vm mb5" width="23" src="http://r.uzaicdn.com/content/m/v1/images/jipiao/j2.png" alt="" /></td>
+                        <td><b class="f17">06:05(+1)</b></td>
+                    </tr>
+                    <tr>
+                        <td>马累机场</td>
+                        <td>2014年11月11日</td>
+                        <td>浦东国际机场</td>
+                    </tr>
+                </table>
+
+            </dd>
+        </dl>
+        <dl class="jp-info">
+            <dd>
+                <span class="qu">去</span>
+                <table class="g10">
+                    <tr>
+                        <td>上海</td>
+                        <td>上海东方航空</td>
+                        <td>马尔代夫</td>
+                    </tr>
+                    <tr>
+                        <td><b class="f17">22:45</b></td>
+                        <td><img class="vm mb5" width="23" src="http://r.uzaicdn.com/content/m/v1/images/jipiao/j2.png" alt="" /></td>
+                        <td><b class="f17">06:05(+1)</b></td>
+                    </tr>
+                    <tr>
+                        <td>1浦东国际机场</td>
+                        <td>2014年11月11日</td>
+                        <td>马累机场</td>
+                    </tr>
+                </table>
+
+            </dd>
+            <dd>
+                <span class="fan">返</span>
+                <table class="g10">
+                    <tr>
+                        <td>马尔代夫</td>
+                        <td>上海东方航空</td>
+                        <td>上海</td>
+                    </tr>
+                    <tr>
+                        <td><b class="f17">22:45</b></td>
+                        <td><img class="vm mb5" width="23" src="http://r.uzaicdn.com/content/m/v1/images/jipiao/j2.png" alt="" /></td>
+                        <td><b class="f17">06:05(+1)</b></td>
+                    </tr>
+                    <tr>
+                        <td>马累机场</td>
+                        <td>2014年11月11日</td>
+                        <td>2浦东国际机场</td>
+                    </tr>
+                </table>
+
+            </dd>
+        </dl>
+    </div>
+
+    <div id="j_jdInfo" class="hide">
+        <dl class="jd-info">
+            <dd class="clearfix">
+                <img class="fl mr10" src="http://r01.uzaicdn.com/pic/10639/m/w160/h120/t1/" alt="" />
+                <div class="fl">
+                    <p class="f16 b f333">1毛里求斯四季酒店</p>
+                    <p>入住日期:2014年10月21日</p>
+                    <p>离店日期:2014年10月26日</p>
+                    <p>毛里求斯皇后区皇后大道321号</p>
+                </div>
+            </dd>
+        </dl>
+        <dl class="jd-info">
+            <dd class="clearfix">
+                <img class="fl mr10" src="http://r01.uzaicdn.com/pic/10639/m/w160/h120/t1/" alt="" />
+                <div class="fl">
+                    <p class="f16 b f333">2毛里求斯四季酒店</p>
+                    <p>入住日期:2014年10月21日</p>
+                    <p>离店日期:2014年10月26日</p>
+                    <p>毛里求斯皇后区皇后大道321号</p>
+                </div>
+            </dd>
+        </dl>
+        <dl class="jd-info">
+            <dd class="clearfix">
+                <img class="fl mr10" src="http://r01.uzaicdn.com/pic/10639/m/w160/h120/t1/" alt="" />
+                <div class="fl">
+                    <p class="f16 b f333">3毛里求斯四季酒店</p>
+                    <p>入住日期:2014年10月21日</p>
+                    <p>离店日期:2014年10月26日</p>
+                    <p>毛里求斯皇后区皇后大道321号</p>
+                </div>
+            </dd>
+        </dl>
+    </div>
+
+
+</body>
+</html>

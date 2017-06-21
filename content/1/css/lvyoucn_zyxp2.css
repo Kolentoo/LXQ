@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+table{border-collapse:collapse;}
+.protitle .title{font:600 24px "微软雅黑"; color:#71af17;}
+.lvyoucn_pro{padding-bottom:17px; text-align:left;}
+.topleft{float:left; width:600px; padding-top:7px;}
+.topright{float:right; width:160px;}
+.rightshare{background:url(../image/bg/producebg.gif) no-repeat 0px 44%; padding-top:3px; padding-bottom:3px; padding-left:20px;}
+.share{padding-right:10px; border-right:1px solid #333333; margin-right:5px; float:left; width:26px; padding-top:3px;}
+.sharelogo{float:left; width:90px;}
+.sharelogo a img{padding:0 3px;}
+.products{border:1px solid #cbdab4; background:url(../image/bg/producebg0.gif) repeat-x left top; position:relative; margin-bottom:20px;}
+.rightgt{position:absolute; right:-1px; top:-1px;}
+.protitle{ border-bottom:1px solid #cbdab4;  margin-bottom:20px; padding-left:15px; padding-top:13px; padding-bottom:5px; padding-bottom:10px;}
+.zyx-lefttop{overflow:hidden;zoom:1}
+.zyx-xx{ float:left; margin-left:15px;} 
+.free-ntit{line-height: 24px; margin-left:6px; padding-top:8px;}
+.free-ntit ul{ float:left; color: #8f8f8f;}
+.free-ntit ul strong{ color: #000; font-weight: bold; }
+.free-ntit ul li{ padding: 0 4px 0 0px; font-size: 12px;  text-align: center; line-height: 15px;  float:left;}
+.free-ntit ul li.free-a{ background: url(../image/icon/zyx-num.gif) no-repeat; width:15px; height:15px; font-weight: bolder; color:#FFFFFF; padding-top:1px;}
+.free-ntit ul li.free-al{ background: url(../image/icon/zyx-num1.gif) no-repeat; font-weight: bolder; width:15px; height:15px; color:#FFFFFF; padding-top:1px; }
+.padleft98{margin-left:90px;}
+
+
+#znextn-main{ width:990px; margin-top:10px;}
+.znextn-left{ float:left; width:787px; border: solid #c8dcb5 1px;}
+.znextn_pro{ background:url(../image/bg/znextx-p1_03.gif) repeat-x; height:22px;border-bottom:solid #c6dbb4 1px; padding-top:10px;}
+.znextn_title{ font-size:14px; color:#346101;padding-left:22px;}
+.znextn_title1{ font-size:14px; color:#346101;padding-left:15px;}
+.znext_btn{background-color:transparent;border:0px solid; margin-left:15px;}
+.znext-right{ float:right; width:189px; border: solid #c8dcb5 1px;}
+.znextn-ss{ font-size:14px; color:#346101; padding-top:20px; padding-left:18px; padding-bottom:35px; line-height:24px;}
+.znextn-qs{ font-weight:bold; color:#FF0000; font-family:Arial;}
+.znextn-xi{ width:787px;}
+.znextn-xi table td{padding:15px;line-height:15px;}
+.znextn-bp{ font-weight:bold; color:#e06716; padding-left:22px; padding-top:10px; padding-bottom:10px;}
+.znextn-djz{ color:#e06716}
+.znextn-jp{ font-size:14px; color:#346101;padding-left:22px; text-align:left; font-weight:bold; padding-top:6px; padding-bottom:6px; border-bottom:solid #eaeaea 1px;background: url(../image/icon/znextn1-p_03.gif) repeat-x; margin-bottom:1px;}
+.znext-pp3{ padding-top:55px;padding-bottom:30px; text-align:center;}
+.znextn-bnb{ padding-right:3px;}
+
+/* tishi */
+.title_sll
+        {
+            padding:15px 15px !important;
+            font-size: 12px;
+            font-family: "宋体";
+            border-top: 1px solid #EEE;
+            border-bottom: 1px solid #EEE;
+            text-align: left;
+            color:#999;
+            line-height:20px;
+        }

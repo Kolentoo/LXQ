@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>悠哉旅游网</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon-precomposed" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-startup-image" href="http://r.uzaicdn.com/content/m/images/apple-touch-icon-144x144-precomposed.png" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/user/user.css" rel="stylesheet" />
+    <script src="http://r02.uzaicdn.com/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script type="text/javascript">
+        seajs.use(['/content/m/v2/scripts/core','/content/m/v2/scripts/user/user'], function (core, user) {
+            user.init();
+        });
+    </script>
+</head>
+<body>
+    <div class="w login-wrap">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">用户登录</div>
+            </div>
+            <div class="d-r">
+            </div>
+        </header>
+        <section class="login-box">
+            <menu class="input-list">
+                <li class="clearfix"><i class="icon-1 fl"></i><div class="item-main"><input type="text" id="username" name="username" placeholder="请输入手机号" class="textbox f16 g10"></div></li>
+                <li class="clearfix"><i class="icon-2 fl"></i><div class="item-main"><input type="password" id="password" name="password" placeholder="请输入密码" class="textbox f16 g10"></div></li>
+            </menu>
+            <p class="tr pt10"><a href="#" class="f13">忘记密码？</a></p>
+            <ul class="btn-list tc">
+                <li><input type="submit" id="j_btnSubmit" class="btn-item btn-login bg-f60 f20 b g10" value="登 录"></li>
+                <li><a href="#" class="btn-item btn-reguser bg-7ec39a f20 b g10">注 册</a></li>
+            </ul>
+            <div class="other-login-box pb10">
+                <div class="olb-hd"><img src="/content/m/v2/images/user/u19.png" alt="" class="g10"></div>
+                <ul class="olb-bd f15 tc mt10 fn-flex">
+                    <li>
+                        <a href="#">
+                            <i class="icon-1"></i><br>
+                            <span>微 信</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-2"></i><br>
+                            <span>腾讯微博</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-3"></i><br>
+                            <span>Q Q</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-4"></i><br>
+                            <span>新浪微博</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

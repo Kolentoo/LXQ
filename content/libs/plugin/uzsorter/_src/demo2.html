@@ -1,0 +1,2882 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link type="text/css" href="http://report.uzai.com/Manager/basetheme/css.css" />
+    <script src="../../../jquery-1.11.1.min.js"></script>
+    <style>
+        *{font-size:12px;padding:0;margin:0;}
+        table{width:100%;}
+        .sale-product{cursor:pointer;}
+    </style>
+    <script>
+        $(function () {
+            var box = $('#j_sortTB');
+            var cloneNode = box.children('tbody').clone();
+            $('#j_Clonetb').append(cloneNode);
+            var nbody = $('#j_Clonetb').children('tbody');
+            var tbody = $('#j_sortTB').children('tbody');
+
+            var _sortCount = function (a, b) {
+                var aa = $.trim($(a).children('td').eq(4).attr('data-tag'));
+                var bb = $.trim($(b).children('td').eq(4).attr('data-tag'));
+                var th=box.find('.sale-product');
+                if (th.attr('data-tag') == 'asc') {
+                    return parseInt(aa) > parseInt(bb) ? -1 : 1;
+                } else {
+                    return parseInt(aa) > parseInt(bb) ? 1 : -1;
+                }
+            }
+
+            var _sortDesti = function (a, b) {
+                var aa = $.trim($(a).children('td').eq(4).attr('data-tag'));
+                var bb = $.trim($(b).children('td').eq(4).attr('data-tag'));
+                var th = box.find('.destination');
+                if (th.attr('data-tag') == 'asc') {
+                    return parseInt(aa) > parseInt(bb) ? -1 : 1;
+                } else {
+                    return parseInt(aa) > parseInt(bb) ? 1 : -1;
+                }
+            }
+
+            box.find('.sale-product').on('click', function () {
+                var o = $(this);
+                var tag = o.attr('data-tag');
+                if (tag == 'asc') {
+                    o.attr('data-tag', 'desc');
+                    o.find('span').html('↑');
+                } else {
+                    o.attr('data-tag', 'asc');
+                    o.find('span').html('↓');
+                }
+                var nclone = nbody.clone();//新克隆
+                box.find('tbody').remove();//删除老节点
+                box.append(nclone.children('tr').sort(_sortCount));
+            });
+
+            box.find('.destination').on('click', function () {
+                var o = $(this);
+                var tag = o.attr('data-tag');
+                if (tag == 'asc') {
+                    o.attr('data-tag', 'desc');
+                    o.find('span').html('↑');
+                } else {
+                    o.attr('data-tag', 'asc');
+                    o.find('span').html('↓');
+                }
+                var nclone = nbody.clone();//新克隆
+                box.find('tbody').remove();//删除老节点
+                box.append(nclone.children('tr').sort(_sortDesti));
+            });
+
+
+
+        });
+    </script>
+</head>
+<body>
+
+  
+    <table id="j_sortTB" class="fn-table fn-table-mouse">
+        <thead>
+            <tr style=" background: none repeat scroll 0 0 #e3f5ff;border: 1px solid #cedced;font-weight: bold;padding: 2px;line-height:24px;">
+                <th>分站</th>
+                <th>业务类型</th>
+                <th class="destination">目的地<span>↑</span></th>
+                <th>景区</th>
+                <th class="sale-product">在售产品<span>↑</span></th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr data-count="12" data-code="001001008002">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="2427">[2427]河北</td>
+                <td>[2475]秦皇岛</td>
+                <td data-tag="12">12</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('2475').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="2475" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('2475').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001008002">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001008002">
+                                        <td>BJN73871</td>
+                                        <td>[73871]【十一】山海关、北戴河火车2日游</td>
+                                        <td>￥412.00</td>
+                                        <td>[2475]秦皇岛</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008002">
+                                        <td>BJN76138</td>
+                                        <td>[76138]南北戴河、天下第一关、老龙头常规双汽2日游</td>
+                                        <td>￥208.00</td>
+                                        <td>[2475]秦皇岛</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008002002">
+                                        <td>BJN75401</td>
+                                        <td>[75401]【十一海韵风情】北戴河、金沙湾大世界、长城号游船出海观光汽车2日游</td>
+                                        <td>￥333.00</td>
+                                        <td>[2477]黄金海岸</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008002003">
+                                        <td>BJN74246</td>
+                                        <td>[74246]【十一】山海关、北戴河、承德双座4日游</td>
+                                        <td>￥908.00</td>
+                                        <td>[2478]山海关</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008002003">
+                                        <td>BJN79585</td>
+                                        <td>[79585]南北戴河、山海关、黄金海岸火车3日游</td>
+                                        <td>￥478.00</td>
+                                        <td>[2478]山海关</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008002003">
+                                        <td>BJN80068</td>
+                                        <td>[80068]南北戴河、天下第一关、老龙头常规双汽2日游</td>
+                                        <td>￥200.00</td>
+                                        <td>[2478]山海关</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008002005">
+                                        <td>BJN74113</td>
+                                        <td>[74113]【十一海韵风情半自助】南北戴河双汽半自助2日游</td>
+                                        <td>￥248.00</td>
+                                        <td>[2480]鸽子窝公园</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008002035">
+                                        <td>BJN80069</td>
+                                        <td>[80069]南北戴河赏海景半自助双汽2日游</td>
+                                        <td>￥221.00</td>
+                                        <td>[15586]北戴河沙雕大世界</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008002038">
+                                        <td>BJN77677</td>
+                                        <td>[77677]【十一】北戴河、乐岛、渔岛，双岛休闲巴士2日游</td>
+                                        <td>￥429.00</td>
+                                        <td>[15681]乐岛海洋公园</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008002044">
+                                        <td>BJN82626</td>
+                                        <td>[82626]【中秋节特惠团】东戴河止锚湾、南北戴河金沙湾沙雕大世界吃海鲜3日游</td>
+                                        <td>￥626.00</td>
+                                        <td>[16130]金沙湾旅游区</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008002045">
+                                        <td>BJN77675</td>
+                                        <td>[77675]【十一】南北戴河自由行2日游</td>
+                                        <td>￥278.00</td>
+                                        <td>[16142]北戴河沙雕大世界戏水乐园</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008002045">
+                                        <td>BJN80067</td>
+                                        <td>[80067]南北戴河、黄金海岸沙雕大世界品海鲜高品质2日游</td>
+                                        <td>￥333.00</td>
+                                        <td>[16142]北戴河沙雕大世界戏水乐园</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="7" data-code="001001008015">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="2427">[2427]河北</td>
+                <td>[2476]北戴河</td>
+                <td data-tag="7">7</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('2476').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="2476" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('2476').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001008015">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001008015">
+                                        <td>BJN74113</td>
+                                        <td>[74113]【十一海韵风情半自助】南北戴河双汽半自助2日游</td>
+                                        <td>￥248.00</td>
+                                        <td>[2476]北戴河</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008015">
+                                        <td>BJN75401</td>
+                                        <td>[75401]【十一海韵风情】北戴河、金沙湾大世界、长城号游船出海观光汽车2日游</td>
+                                        <td>￥333.00</td>
+                                        <td>[2476]北戴河</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008015">
+                                        <td>BJN77675</td>
+                                        <td>[77675]【十一】南北戴河自由行2日游</td>
+                                        <td>￥278.00</td>
+                                        <td>[2476]北戴河</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008015">
+                                        <td>BJN77677</td>
+                                        <td>[77677]【十一】北戴河、乐岛、渔岛，双岛休闲巴士2日游</td>
+                                        <td>￥429.00</td>
+                                        <td>[2476]北戴河</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008015">
+                                        <td>BJN80067</td>
+                                        <td>[80067]南北戴河、黄金海岸沙雕大世界品海鲜高品质2日游</td>
+                                        <td>￥333.00</td>
+                                        <td>[2476]北戴河</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008015">
+                                        <td>BJN80069</td>
+                                        <td>[80069]南北戴河赏海景半自助双汽2日游</td>
+                                        <td>￥221.00</td>
+                                        <td>[2476]北戴河</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008015">
+                                        <td>BJN82626</td>
+                                        <td>[82626]【中秋节特惠团】东戴河止锚湾、南北戴河金沙湾沙雕大世界吃海鲜3日游</td>
+                                        <td>￥626.00</td>
+                                        <td>[2476]北戴河</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="16" data-code="001001008003">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="2427">[2427]河北</td>
+                <td>[2508]承德</td>
+                <td data-tag="16">16</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('2508').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="2508" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('2508').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001008003">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001008003">
+                                        <td>BJN74055</td>
+                                        <td>[74055]承德避暑山庄景区、普宁寺、普佑寺景区、棒槌山双汽2日游</td>
+                                        <td>￥392.00</td>
+                                        <td>[2508]承德</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008003">
+                                        <td>BJN74246</td>
+                                        <td>[74246]【十一】山海关、北戴河、承德双座4日游</td>
+                                        <td>￥908.00</td>
+                                        <td>[2508]承德</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008003">
+                                        <td>BJN78281</td>
+                                        <td>[78281]承德避暑山庄景区、木兰围场、塞罕坝单座单汽3日休闲游</td>
+                                        <td>￥649.00</td>
+                                        <td>[2508]承德</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008003">
+                                        <td>BJN78985</td>
+                                        <td>[78985]承德避暑山庄景区、普宁普佑寺 布达拉行宫景区二选一、棒槌山双座2日全景游</td>
+                                        <td>￥398.00</td>
+                                        <td>[2508]承德</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008003">
+                                        <td>BJN78989</td>
+                                        <td>[78989]承德避暑山庄、普宁寺、普佑寺、布达拉宫汽车2日游</td>
+                                        <td>￥415.00</td>
+                                        <td>[2508]承德</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008003">
+                                        <td>BJN80443</td>
+                                        <td>[80443]承德避暑山庄景区、普宁寺、普佑寺景区、棒槌山单座单汽2日游</td>
+                                        <td>￥438.00</td>
+                                        <td>[2508]承德</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008003">
+                                        <td>BJN80617</td>
+                                        <td>[80617]承德避暑山庄、外八庙双汽半自助2日游</td>
+                                        <td>￥309.00</td>
+                                        <td>[2508]承德</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008003">
+                                        <td>BJN82694</td>
+                                        <td>[82694]【十一】承德避暑山庄景区+普宁寺+普佑寺景区+棒槌山双座2日游</td>
+                                        <td>￥370.00</td>
+                                        <td>[2508]承德</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008003001">
+                                        <td>BJN82701</td>
+                                        <td>[82701]【十一】承德避暑山庄景区+普宁寺·普佑寺景区+布达拉 行宫景区双座2日游</td>
+                                        <td>￥404.00</td>
+                                        <td>[2509]避暑山庄</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008003002">
+                                        <td>BJN75911</td>
+                                        <td>[75911]皇家园林木兰围场草原双汽3日游</td>
+                                        <td>￥478.00</td>
+                                        <td>[2510]木兰围场</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008003002">
+                                        <td>BJN77522</td>
+                                        <td>[77522]木兰围场(塞罕坝森林公园) 锡林郭勒盟巴彦高勒大草原双汽3日游</td>
+                                        <td>￥658.00</td>
+                                        <td>[2510]木兰围场</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008003002">
+                                        <td>BJN77779</td>
+                                        <td>[77779]内蒙古锡林郭勒、中国最美小城镇多伦草原游牧越野3日游</td>
+                                        <td>￥557.00</td>
+                                        <td>[2510]木兰围场</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008003002">
+                                        <td>BJN77900</td>
+                                        <td>[77900]坝上花开、策马扬鞭、木兰围场、赠整只烤全羊双汽3日深度游</td>
+                                        <td>￥533.00</td>
+                                        <td>[2510]木兰围场</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008003002">
+                                        <td>BJN78085</td>
+                                        <td>[78085]【十一】乌兰布统、木兰围场（塞罕坝国家森林公园）双汽3日游</td>
+                                        <td>￥715.00</td>
+                                        <td>[2510]木兰围场</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008003002">
+                                        <td>BJN82628</td>
+                                        <td>[82628]【中秋特惠团】承德避暑山庄、木兰围场乌兰布统大草原、蛤蟆坝金秋景摄影双汽3日游</td>
+                                        <td>￥715.00</td>
+                                        <td>[2510]木兰围场</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008003016">
+                                        <td>BJN80889</td>
+                                        <td>[80889]丰宁坝上草原、洒然嘉年华特价2日游&lt;赠蒙古歌舞表演&gt;</td>
+                                        <td>￥165.00</td>
+                                        <td>[2524]京北第一草原</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001008004">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="2427">[2427]河北</td>
+                <td>[2548]张家口</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('2548').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="2548" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('2548').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001008004">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001008004002">
+                                        <td>BJN80771</td>
+                                        <td>[80771]【毕业季】张北草原双汽2日&lt;张北草原，篝火晚会享受草原风情&gt;</td>
+                                        <td>￥368.00</td>
+                                        <td>[2550]张北坝上草原</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="2" data-code="001001008016">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="2427">[2427]河北</td>
+                <td>[2594]白洋淀</td>
+                <td data-tag="2">2</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('2594').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="2594" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('2594').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001008016">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001008016">
+                                        <td>BJN74233</td>
+                                        <td>[74233]踏春白洋淀、浓情泛舟特色巴士2日游</td>
+                                        <td>￥348.00</td>
+                                        <td>[2594]白洋淀</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008016">
+                                        <td>BJN75836</td>
+                                        <td>[75836]白洋淀泛舟赏荷、搞笑小嘎子生态休闲2日游</td>
+                                        <td>￥333.00</td>
+                                        <td>[2594]白洋淀</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="2" data-code="001001008007">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="2427">[2427]河北</td>
+                <td>[2605]唐山</td>
+                <td data-tag="2">2</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('2605').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="2605" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('2605').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001008007">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001008007">
+                                        <td>BJN79773</td>
+                                        <td>[79773]月坨岛浪漫休闲纯玩巴士2日游</td>
+                                        <td>￥408.00</td>
+                                        <td>[2605]唐山</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008007001">
+                                        <td>BJN69748</td>
+                                        <td>[69748]清东陵探秘大清王国历史兴衰，祈愿纳福1日游</td>
+                                        <td>￥188.00</td>
+                                        <td>[2606]清东陵</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001029291">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="2427">[2427]河北</td>
+                <td>[8448]十渡碧波园</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8448').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8448" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8448').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029291">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029291">
+                                        <td>BJN73650</td>
+                                        <td>[73650]十渡孤山寨 、拒马河乐园欢乐双汽2日游</td>
+                                        <td>￥298.00</td>
+                                        <td>[8448]十渡碧波园</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="3" data-code="001001008017">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="2427">[2427]河北</td>
+                <td>[13424]月坨岛</td>
+                <td data-tag="3">3</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('13424').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="13424" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('13424').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001008017">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001008017">
+                                        <td>BJN74240</td>
+                                        <td>[74240]月坨岛休闲纯玩巴士二日游</td>
+                                        <td>￥428.00</td>
+                                        <td>[13424]月坨岛</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008017">
+                                        <td>BJN79773</td>
+                                        <td>[79773]月坨岛浪漫休闲纯玩巴士2日游</td>
+                                        <td>￥408.00</td>
+                                        <td>[13424]月坨岛</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008017">
+                                        <td>BJN79777</td>
+                                        <td>[79777]月坨岛莉莉丝别墅住宿、休闲纯玩巴士2日游</td>
+                                        <td>￥438.00</td>
+                                        <td>[13424]月坨岛</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="5" data-code="001001008008">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="2427">[2427]河北</td>
+                <td>[13440]丰宁</td>
+                <td data-tag="5">5</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('13440').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="13440" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('13440').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001008008">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001008008">
+                                        <td>BJN76115</td>
+                                        <td>[76115]【十一】丰宁草原、闪电湖、洒然嘉年华、BBQ自助烧烤巴士2日游</td>
+                                        <td>￥322.00</td>
+                                        <td>[13440]丰宁</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008008">
+                                        <td>BJN76116</td>
+                                        <td>[76116]丰宁坝上草原、大汗行宫草原日出双汽2日游</td>
+                                        <td>￥188.00</td>
+                                        <td>[13440]丰宁</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008008">
+                                        <td>BJN80505</td>
+                                        <td>[80505]丰宁坝上越野车穿越草原 洒然嘉年华 BBQ烧烤双汽深度2日游</td>
+                                        <td>￥514.00</td>
+                                        <td>[13440]丰宁</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008008">
+                                        <td>BJN80889</td>
+                                        <td>[80889]丰宁坝上草原、洒然嘉年华特价2日游&lt;赠蒙古歌舞表演&gt;</td>
+                                        <td>￥165.00</td>
+                                        <td>[13440]丰宁</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008008001">
+                                        <td>BJN75911</td>
+                                        <td>[75911]皇家园林木兰围场草原双汽3日游</td>
+                                        <td>￥478.00</td>
+                                        <td>[13441]坝上草原</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001008006">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="2427">[2427]河北</td>
+                <td>[2590]保定</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('2590').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="2590" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('2590').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001008006">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001008006003002">
+                                        <td>BJN73696</td>
+                                        <td>[73696]野三坡百里峡、十渡东湖港游山玩水、休闲巴士2日游</td>
+                                        <td>￥328.00</td>
+                                        <td>[15253]百里峡</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001029033">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="2427">[2427]河北</td>
+                <td>[15594]孤山寨</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('15594').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="15594" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('15594').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029033">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029033002">
+                                        <td>BJN73650</td>
+                                        <td>[73650]十渡孤山寨 、拒马河乐园欢乐双汽2日游</td>
+                                        <td>￥298.00</td>
+                                        <td>[15594]孤山寨</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001029297">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="2427">[2427]河北</td>
+                <td>[19873]十渡</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('19873').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="19873" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('19873').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029297">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029297">
+                                        <td>BJN73696</td>
+                                        <td>[73696]野三坡百里峡、十渡东湖港游山玩水、休闲巴士2日游</td>
+                                        <td>￥328.00</td>
+                                        <td>[19873]十渡</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="6" data-code="001001008018">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="2427">[2427]河北</td>
+                <td>[21618]承德避暑山庄</td>
+                <td data-tag="6">6</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('21618').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="21618" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('21618').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001008018">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001008018">
+                                        <td>BJN74246</td>
+                                        <td>[74246]【十一】山海关、北戴河、承德双座4日游</td>
+                                        <td>￥908.00</td>
+                                        <td>[21618]承德避暑山庄</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008018">
+                                        <td>BJN78281</td>
+                                        <td>[78281]承德避暑山庄景区、木兰围场、塞罕坝单座单汽3日休闲游</td>
+                                        <td>￥649.00</td>
+                                        <td>[21618]承德避暑山庄</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008018">
+                                        <td>BJN80617</td>
+                                        <td>[80617]承德避暑山庄、外八庙双汽半自助2日游</td>
+                                        <td>￥309.00</td>
+                                        <td>[21618]承德避暑山庄</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008018">
+                                        <td>BJN82628</td>
+                                        <td>[82628]【中秋特惠团】承德避暑山庄、木兰围场乌兰布统大草原、蛤蟆坝金秋景摄影双汽3日游</td>
+                                        <td>￥715.00</td>
+                                        <td>[21618]承德避暑山庄</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008018">
+                                        <td>BJN82694</td>
+                                        <td>[82694]【十一】承德避暑山庄景区+普宁寺+普佑寺景区+棒槌山双座2日游</td>
+                                        <td>￥370.00</td>
+                                        <td>[21618]承德避暑山庄</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001008018">
+                                        <td>BJN82701</td>
+                                        <td>[82701]【十一】承德避暑山庄景区+普宁寺·普佑寺景区+布达拉 行宫景区双座2日游</td>
+                                        <td>￥404.00</td>
+                                        <td>[21618]承德避暑山庄</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="16" data-code="001001021">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="5405">[5405]山西</td>
+                <td>[5405]山西</td>
+                <td data-tag="16">16</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('5405').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="5405" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('5405').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001021">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001021">
+                                        <td>BJN60411</td>
+                                        <td>[60411]中秋山西五台山、大同云冈石窟、悬空寺双汽3日游</td>
+                                        <td>￥748.00</td>
+                                        <td>[5405]山西</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021">
+                                        <td>BJN63790</td>
+                                        <td>[63790]晋祠、平遥古城、乔家大院、壶口瀑布、洪洞大槐树、中国华门、王家大院双高4日游</td>
+                                        <td>￥1423.00</td>
+                                        <td>[5405]山西</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021">
+                                        <td>BJN73424</td>
+                                        <td>[73424]【中秋】【深度静心之旅】山西五台山祈福文化双汽3日游</td>
+                                        <td>￥668.00</td>
+                                        <td>[5405]山西</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021001">
+                                        <td>BJN60480</td>
+                                        <td>[60480]山西晋祠、 平遥古城、乔家大院双高2日游</td>
+                                        <td>￥850.00</td>
+                                        <td>[5406]太原</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021001">
+                                        <td>BJN66890</td>
+                                        <td>[66890]【中秋】五台山、平遥古城、乔家大院纯玩双汽3日游</td>
+                                        <td>￥693.00</td>
+                                        <td>[5406]太原</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021001">
+                                        <td>BJN67604</td>
+                                        <td>[67604]山西晋祠 、五台山双高3日游</td>
+                                        <td>￥1132.00</td>
+                                        <td>[5406]太原</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021001">
+                                        <td>BJN73955</td>
+                                        <td>[73955]黄河壶口瀑布、平遥古城、乔家大院、关帝庙、大槐树动高5日游</td>
+                                        <td>￥1869.00</td>
+                                        <td>[5406]太原</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021002">
+                                        <td>BJN72843</td>
+                                        <td>[72843]【中秋】大同云冈石窟、悬空寺、恒山豪华巴士2日游</td>
+                                        <td>￥568.00</td>
+                                        <td>[5444]大同</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021003">
+                                        <td>BJN60314</td>
+                                        <td>[60314]山西五台山拜佛祈福纯玩双汽2日游</td>
+                                        <td>￥344.00</td>
+                                        <td>[5496]五台山</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021003">
+                                        <td>BJN72844</td>
+                                        <td>[72844]【十一国庆】五台山祈福、平遥古城、阎锡山故居、乔家大院访晋商高铁3日游</td>
+                                        <td>￥1432.00</td>
+                                        <td>[5496]五台山</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021003">
+                                        <td>BJN76983</td>
+                                        <td>[76983]【祈福之旅】五台山祈福纯玩双汽2日游</td>
+                                        <td>￥333.00</td>
+                                        <td>[5496]五台山</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021003">
+                                        <td>BJN77058</td>
+                                        <td>[77058]【半自助】【祈福之旅】五台山一地祈福自助之旅</td>
+                                        <td>￥235.00</td>
+                                        <td>[5496]五台山</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021004">
+                                        <td>BJN67185</td>
+                                        <td>[67185]【中秋】【赵氏孤儿发源地】山西平遥古城、乔家大院、藏山双汽3日游</td>
+                                        <td>￥623.00</td>
+                                        <td>[5555]阳泉</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021005">
+                                        <td>BJN69758</td>
+                                        <td>[69758]乔家大院、渠家大院、平遥古城双人自助游</td>
+                                        <td>￥378.00</td>
+                                        <td>[5580]平遥</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021005">
+                                        <td>BJN72842</td>
+                                        <td>[72842]【十一探访清明节发源地】黄河壶口大瀑布、平遥古城访晋商、踏青赴绵山高铁3日游</td>
+                                        <td>￥1386.00</td>
+                                        <td>[5580]平遥</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021005004">
+                                        <td>BJN74286</td>
+                                        <td>[74286]【黄河文化，寻根祭祖】壶口瀑布、洪洞大槐树、华门、王家大院双高3日游</td>
+                                        <td>￥1038.00</td>
+                                        <td>[5584]王家大院</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="6" data-code="001001021001">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="5405">[5405]山西</td>
+                <td>[5406]太原</td>
+                <td data-tag="6">6</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('5406').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="5406" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('5406').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001021001">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001021001">
+                                        <td>BJN60480</td>
+                                        <td>[60480]山西晋祠、 平遥古城、乔家大院双高2日游</td>
+                                        <td>￥850.00</td>
+                                        <td>[5406]太原</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021001">
+                                        <td>BJN66890</td>
+                                        <td>[66890]【中秋】五台山、平遥古城、乔家大院纯玩双汽3日游</td>
+                                        <td>￥693.00</td>
+                                        <td>[5406]太原</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021001">
+                                        <td>BJN67604</td>
+                                        <td>[67604]山西晋祠 、五台山双高3日游</td>
+                                        <td>￥1132.00</td>
+                                        <td>[5406]太原</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021001">
+                                        <td>BJN73955</td>
+                                        <td>[73955]黄河壶口瀑布、平遥古城、乔家大院、关帝庙、大槐树动高5日游</td>
+                                        <td>￥1869.00</td>
+                                        <td>[5406]太原</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021001002">
+                                        <td>BJN63790</td>
+                                        <td>[63790]晋祠、平遥古城、乔家大院、壶口瀑布、洪洞大槐树、中国华门、王家大院双高4日游</td>
+                                        <td>￥1423.00</td>
+                                        <td>[5408]晋祠</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021001039003">
+                                        <td>BJN72842</td>
+                                        <td>[72842]【十一探访清明节发源地】黄河壶口大瀑布、平遥古城访晋商、踏青赴绵山高铁3日游</td>
+                                        <td>￥1386.00</td>
+                                        <td>[14249]绵山水涛沟</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="3" data-code="001001021002">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="5405">[5405]山西</td>
+                <td>[5444]大同</td>
+                <td data-tag="3">3</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('5444').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="5444" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('5444').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001021002">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001021002">
+                                        <td>BJN60411</td>
+                                        <td>[60411]中秋山西五台山、大同云冈石窟、悬空寺双汽3日游</td>
+                                        <td>￥748.00</td>
+                                        <td>[5444]大同</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021002">
+                                        <td>BJN72843</td>
+                                        <td>[72843]【中秋】大同云冈石窟、悬空寺、恒山豪华巴士2日游</td>
+                                        <td>￥568.00</td>
+                                        <td>[5444]大同</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021002047">
+                                        <td>BJN73955</td>
+                                        <td>[73955]黄河壶口瀑布、平遥古城、乔家大院、关帝庙、大槐树动高5日游</td>
+                                        <td>￥1869.00</td>
+                                        <td>[5491]关帝庙</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="8" data-code="001001021003">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="5405">[5405]山西</td>
+                <td>[5496]五台山</td>
+                <td data-tag="8">8</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('5496').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="5496" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('5496').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001021003">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001021003">
+                                        <td>BJN60314</td>
+                                        <td>[60314]山西五台山拜佛祈福纯玩双汽2日游</td>
+                                        <td>￥344.00</td>
+                                        <td>[5496]五台山</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021003">
+                                        <td>BJN60411</td>
+                                        <td>[60411]中秋山西五台山、大同云冈石窟、悬空寺双汽3日游</td>
+                                        <td>￥748.00</td>
+                                        <td>[5496]五台山</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021003">
+                                        <td>BJN67604</td>
+                                        <td>[67604]山西晋祠 、五台山双高3日游</td>
+                                        <td>￥1132.00</td>
+                                        <td>[5496]五台山</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021003">
+                                        <td>BJN72844</td>
+                                        <td>[72844]【十一国庆】五台山祈福、平遥古城、阎锡山故居、乔家大院访晋商高铁3日游</td>
+                                        <td>￥1432.00</td>
+                                        <td>[5496]五台山</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021003">
+                                        <td>BJN73424</td>
+                                        <td>[73424]【中秋】【深度静心之旅】山西五台山祈福文化双汽3日游</td>
+                                        <td>￥668.00</td>
+                                        <td>[5496]五台山</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021003">
+                                        <td>BJN76983</td>
+                                        <td>[76983]【祈福之旅】五台山祈福纯玩双汽2日游</td>
+                                        <td>￥333.00</td>
+                                        <td>[5496]五台山</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021003">
+                                        <td>BJN77058</td>
+                                        <td>[77058]【半自助】【祈福之旅】五台山一地祈福自助之旅</td>
+                                        <td>￥235.00</td>
+                                        <td>[5496]五台山</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021003032">
+                                        <td>BJN66890</td>
+                                        <td>[66890]【中秋】五台山、平遥古城、乔家大院纯玩双汽3日游</td>
+                                        <td>￥693.00</td>
+                                        <td>[5528]普化寺</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001021004">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="5405">[5405]山西</td>
+                <td>[5555]阳泉</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('5555').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="5555" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('5555').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001021004">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001021004">
+                                        <td>BJN67185</td>
+                                        <td>[67185]【中秋】【赵氏孤儿发源地】山西平遥古城、乔家大院、藏山双汽3日游</td>
+                                        <td>￥623.00</td>
+                                        <td>[5555]阳泉</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="9" data-code="001001021005">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="5405">[5405]山西</td>
+                <td>[5580]平遥</td>
+                <td data-tag="9">9</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('5580').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="5580" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('5580').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001021005">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001021005">
+                                        <td>BJN66890</td>
+                                        <td>[66890]【中秋】五台山、平遥古城、乔家大院纯玩双汽3日游</td>
+                                        <td>￥693.00</td>
+                                        <td>[5580]平遥</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021005">
+                                        <td>BJN67185</td>
+                                        <td>[67185]【中秋】【赵氏孤儿发源地】山西平遥古城、乔家大院、藏山双汽3日游</td>
+                                        <td>￥623.00</td>
+                                        <td>[5580]平遥</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021005">
+                                        <td>BJN69758</td>
+                                        <td>[69758]乔家大院、渠家大院、平遥古城双人自助游</td>
+                                        <td>￥378.00</td>
+                                        <td>[5580]平遥</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021005">
+                                        <td>BJN72842</td>
+                                        <td>[72842]【十一探访清明节发源地】黄河壶口大瀑布、平遥古城访晋商、踏青赴绵山高铁3日游</td>
+                                        <td>￥1386.00</td>
+                                        <td>[5580]平遥</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021005">
+                                        <td>BJN72844</td>
+                                        <td>[72844]【十一国庆】五台山祈福、平遥古城、阎锡山故居、乔家大院访晋商高铁3日游</td>
+                                        <td>￥1432.00</td>
+                                        <td>[5580]平遥</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021005">
+                                        <td>BJN73955</td>
+                                        <td>[73955]黄河壶口瀑布、平遥古城、乔家大院、关帝庙、大槐树动高5日游</td>
+                                        <td>￥1869.00</td>
+                                        <td>[5580]平遥</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021005001">
+                                        <td>BJN60480</td>
+                                        <td>[60480]山西晋祠、 平遥古城、乔家大院双高2日游</td>
+                                        <td>￥850.00</td>
+                                        <td>[5581]平遥古城墙</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021005001">
+                                        <td>BJN63790</td>
+                                        <td>[63790]晋祠、平遥古城、乔家大院、壶口瀑布、洪洞大槐树、中国华门、王家大院双高4日游</td>
+                                        <td>￥1423.00</td>
+                                        <td>[5581]平遥古城墙</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021005004">
+                                        <td>BJN74286</td>
+                                        <td>[74286]【黄河文化，寻根祭祖】壶口瀑布、洪洞大槐树、华门、王家大院双高3日游</td>
+                                        <td>￥1038.00</td>
+                                        <td>[5584]王家大院</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="7" data-code="001001021012">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="5405">[5405]山西</td>
+                <td>[5582]乔家大院</td>
+                <td data-tag="7">7</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('5582').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="5582" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('5582').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001021012">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001021012">
+                                        <td>BJN60480</td>
+                                        <td>[60480]山西晋祠、 平遥古城、乔家大院双高2日游</td>
+                                        <td>￥850.00</td>
+                                        <td>[5582]乔家大院</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021012">
+                                        <td>BJN63790</td>
+                                        <td>[63790]晋祠、平遥古城、乔家大院、壶口瀑布、洪洞大槐树、中国华门、王家大院双高4日游</td>
+                                        <td>￥1423.00</td>
+                                        <td>[5582]乔家大院</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021012">
+                                        <td>BJN66890</td>
+                                        <td>[66890]【中秋】五台山、平遥古城、乔家大院纯玩双汽3日游</td>
+                                        <td>￥693.00</td>
+                                        <td>[5582]乔家大院</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021012">
+                                        <td>BJN67185</td>
+                                        <td>[67185]【中秋】【赵氏孤儿发源地】山西平遥古城、乔家大院、藏山双汽3日游</td>
+                                        <td>￥623.00</td>
+                                        <td>[5582]乔家大院</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021012">
+                                        <td>BJN69758</td>
+                                        <td>[69758]乔家大院、渠家大院、平遥古城双人自助游</td>
+                                        <td>￥378.00</td>
+                                        <td>[5582]乔家大院</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021012">
+                                        <td>BJN72844</td>
+                                        <td>[72844]【十一国庆】五台山祈福、平遥古城、阎锡山故居、乔家大院访晋商高铁3日游</td>
+                                        <td>￥1432.00</td>
+                                        <td>[5582]乔家大院</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021012">
+                                        <td>BJN73955</td>
+                                        <td>[73955]黄河壶口瀑布、平遥古城、乔家大院、关帝庙、大槐树动高5日游</td>
+                                        <td>￥1869.00</td>
+                                        <td>[5582]乔家大院</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="4" data-code="001001021007">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="5405">[5405]山西</td>
+                <td>[5634]临汾</td>
+                <td data-tag="4">4</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('5634').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="5634" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('5634').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001021007">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001021007">
+                                        <td>BJN63790</td>
+                                        <td>[63790]晋祠、平遥古城、乔家大院、壶口瀑布、洪洞大槐树、中国华门、王家大院双高4日游</td>
+                                        <td>￥1423.00</td>
+                                        <td>[5634]临汾</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021007030">
+                                        <td>BJN72842</td>
+                                        <td>[72842]【十一探访清明节发源地】黄河壶口大瀑布、平遥古城访晋商、踏青赴绵山高铁3日游</td>
+                                        <td>￥1386.00</td>
+                                        <td>[5636]壶口瀑布</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021007030">
+                                        <td>BJN73955</td>
+                                        <td>[73955]黄河壶口瀑布、平遥古城、乔家大院、关帝庙、大槐树动高5日游</td>
+                                        <td>￥1869.00</td>
+                                        <td>[5636]壶口瀑布</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001021007003">
+                                        <td>BJN74286</td>
+                                        <td>[74286]【黄河文化，寻根祭祖】壶口瀑布、洪洞大槐树、华门、王家大院双高3日游</td>
+                                        <td>￥1038.00</td>
+                                        <td>[5637]洪洞大槐树</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="15" data-code="001001029">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8415">[8415]北京</td>
+                <td>[8415]北京</td>
+                <td data-tag="15">15</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8415').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8415" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8415').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029">
+                                        <td>BJN75183</td>
+                                        <td>[75183]北京故宫、恭王府、颐和园、鼓楼、南锣鼓巷纯玩1日游</td>
+                                        <td>￥218.00</td>
+                                        <td>[8415]北京</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029293">
+                                        <td>BJN61558</td>
+                                        <td>[61558]【销量冠军】八达岭长城、十三陵定陵纯玩1日游</td>
+                                        <td>￥208.00</td>
+                                        <td>[8416]八达岭长城</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029293">
+                                        <td>BJN72893</td>
+                                        <td>[72893]【销量冠军】八达岭长城、定陵、鸟巢、水立方纯玩1日游</td>
+                                        <td>￥173.00</td>
+                                        <td>[8416]八达岭长城</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029293">
+                                        <td>BJN80693</td>
+                                        <td>[80693]【5环内免费接】八达岭长城、十三陵定陵纯玩1日游</td>
+                                        <td>￥198.00</td>
+                                        <td>[8416]八达岭长城</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029292">
+                                        <td>BJN69134</td>
+                                        <td>[69134]北京颐和园、恭王府、雍和宫祈福金牌1日游</td>
+                                        <td>￥248.00</td>
+                                        <td>[8425]颐和园</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029022">
+                                        <td>BJN73869</td>
+                                        <td>[73869]怀柔青龙峡踏青、红螺寺赏红螺三绝巴士2日游</td>
+                                        <td>￥318.00</td>
+                                        <td>[8437]红螺寺</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029025">
+                                        <td>BJN61858</td>
+                                        <td>[61858]延庆船游龙庆峡、远足松山深处巴士2日游</td>
+                                        <td>￥418.00</td>
+                                        <td>[8440]龙庆峡</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029036">
+                                        <td>BJN77664</td>
+                                        <td>[77664]古北水镇风情、司马台长城探险巴士1日游</td>
+                                        <td>￥183.00</td>
+                                        <td>[8451]司马台长城</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029125">
+                                        <td>BJN77670</td>
+                                        <td>[77670]古北水镇风情巴士1日游</td>
+                                        <td>￥168.00</td>
+                                        <td>[8540]古北口长城</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029125">
+                                        <td>BJN77970</td>
+                                        <td>[77970]密云自然古村落古北水镇 雾灵湖游轮观光巴士2日游</td>
+                                        <td>￥418.00</td>
+                                        <td>[8540]古北口长城</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029183">
+                                        <td>BJN67191</td>
+                                        <td>[67191]门头沟双龙峡踏青、探秘爨底下汽车2日游</td>
+                                        <td>￥289.00</td>
+                                        <td>[8598]双龙峡</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029008001">
+                                        <td>BJN61561</td>
+                                        <td>[61561]北京故宫、圆明园、天坛、品烤鸭纯玩1日游</td>
+                                        <td>￥248.00</td>
+                                        <td>[12491]天坛公园</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029033003">
+                                        <td>BJN74021</td>
+                                        <td>[74021]十渡东湖港、拒马河乐园踏青1日游</td>
+                                        <td>￥68.00</td>
+                                        <td>[15707]东湖港</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029033003">
+                                        <td>BJN75509</td>
+                                        <td>[75509]十渡东湖港赏初春美景、碧波园BBQ自助烧烤、拒马河漂流1日游</td>
+                                        <td>￥176.00</td>
+                                        <td>[15707]东湖港</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029297">
+                                        <td>BJN74229</td>
+                                        <td>[74229]十渡仙西山登高、BBQ烧烤、拒马乐园赏青巴士1日游</td>
+                                        <td>￥129.00</td>
+                                        <td>[19873]十渡</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="3" data-code="001001029293">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8415">[8415]北京</td>
+                <td>[8416]八达岭长城</td>
+                <td data-tag="3">3</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8416').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8416" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8416').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029293">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029293">
+                                        <td>BJN61558</td>
+                                        <td>[61558]【销量冠军】八达岭长城、十三陵定陵纯玩1日游</td>
+                                        <td>￥208.00</td>
+                                        <td>[8416]八达岭长城</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029293">
+                                        <td>BJN72893</td>
+                                        <td>[72893]【销量冠军】八达岭长城、定陵、鸟巢、水立方纯玩1日游</td>
+                                        <td>￥173.00</td>
+                                        <td>[8416]八达岭长城</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029293">
+                                        <td>BJN80693</td>
+                                        <td>[80693]【5环内免费接】八达岭长城、十三陵定陵纯玩1日游</td>
+                                        <td>￥198.00</td>
+                                        <td>[8416]八达岭长城</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001029004">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8415">[8415]北京</td>
+                <td>[8419]北京故宫</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8419').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8419" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8419').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029004">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029004">
+                                        <td>BJN75183</td>
+                                        <td>[75183]北京故宫、恭王府、颐和园、鼓楼、南锣鼓巷纯玩1日游</td>
+                                        <td>￥218.00</td>
+                                        <td>[8419]北京故宫</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="3" data-code="001001029005">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8415">[8415]北京</td>
+                <td>[8420]国家体育场(鸟巢)</td>
+                <td data-tag="3">3</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8420').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8420" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8420').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029005">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029005">
+                                        <td>BJN61558</td>
+                                        <td>[61558]【销量冠军】八达岭长城、十三陵定陵纯玩1日游</td>
+                                        <td>￥208.00</td>
+                                        <td>[8420]国家体育场(鸟巢)</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029005">
+                                        <td>BJN72893</td>
+                                        <td>[72893]【销量冠军】八达岭长城、定陵、鸟巢、水立方纯玩1日游</td>
+                                        <td>￥173.00</td>
+                                        <td>[8420]国家体育场(鸟巢)</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029005">
+                                        <td>BJN80693</td>
+                                        <td>[80693]【5环内免费接】八达岭长城、十三陵定陵纯玩1日游</td>
+                                        <td>￥198.00</td>
+                                        <td>[8420]国家体育场(鸟巢)</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="3" data-code="001001029006">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8415">[8415]北京</td>
+                <td>[8421]国家游泳中心(水立方)</td>
+                <td data-tag="3">3</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8421').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8421" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8421').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029006">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029006">
+                                        <td>BJN61558</td>
+                                        <td>[61558]【销量冠军】八达岭长城、十三陵定陵纯玩1日游</td>
+                                        <td>￥208.00</td>
+                                        <td>[8421]国家游泳中心(水立方)</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029006">
+                                        <td>BJN72893</td>
+                                        <td>[72893]【销量冠军】八达岭长城、定陵、鸟巢、水立方纯玩1日游</td>
+                                        <td>￥173.00</td>
+                                        <td>[8421]国家游泳中心(水立方)</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029006">
+                                        <td>BJN80693</td>
+                                        <td>[80693]【5环内免费接】八达岭长城、十三陵定陵纯玩1日游</td>
+                                        <td>￥198.00</td>
+                                        <td>[8421]国家游泳中心(水立方)</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="2" data-code="001001029292">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8415">[8415]北京</td>
+                <td>[8425]颐和园</td>
+                <td data-tag="2">2</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8425').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8425" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8425').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029292">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029292">
+                                        <td>BJN69134</td>
+                                        <td>[69134]北京颐和园、恭王府、雍和宫祈福金牌1日游</td>
+                                        <td>￥248.00</td>
+                                        <td>[8425]颐和园</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029292">
+                                        <td>BJN75183</td>
+                                        <td>[75183]北京故宫、恭王府、颐和园、鼓楼、南锣鼓巷纯玩1日游</td>
+                                        <td>￥218.00</td>
+                                        <td>[8425]颐和园</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001029022">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8415">[8415]北京</td>
+                <td>[8437]红螺寺</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8437').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8437" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8437').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029022">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029022">
+                                        <td>BJN73869</td>
+                                        <td>[73869]怀柔青龙峡踏青、红螺寺赏红螺三绝巴士2日游</td>
+                                        <td>￥318.00</td>
+                                        <td>[8437]红螺寺</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001029025">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8415">[8415]北京</td>
+                <td>[8440]龙庆峡</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8440').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8440" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8440').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029025">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029025">
+                                        <td>BJN61858</td>
+                                        <td>[61858]延庆船游龙庆峡、远足松山深处巴士2日游</td>
+                                        <td>￥418.00</td>
+                                        <td>[8440]龙庆峡</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="3" data-code="001001029028">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8415">[8415]北京</td>
+                <td>[8443]明十三陵</td>
+                <td data-tag="3">3</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8443').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8443" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8443').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029028">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029028">
+                                        <td>BJN61558</td>
+                                        <td>[61558]【销量冠军】八达岭长城、十三陵定陵纯玩1日游</td>
+                                        <td>￥208.00</td>
+                                        <td>[8443]明十三陵</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029028">
+                                        <td>BJN72893</td>
+                                        <td>[72893]【销量冠军】八达岭长城、定陵、鸟巢、水立方纯玩1日游</td>
+                                        <td>￥173.00</td>
+                                        <td>[8443]明十三陵</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029028">
+                                        <td>BJN80693</td>
+                                        <td>[80693]【5环内免费接】八达岭长城、十三陵定陵纯玩1日游</td>
+                                        <td>￥198.00</td>
+                                        <td>[8443]明十三陵</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001029217">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8415">[8415]北京</td>
+                <td>[13423]怀柔</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('13423').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="13423" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('13423').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029217">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029217002">
+                                        <td>BJN73869</td>
+                                        <td>[73869]怀柔青龙峡踏青、红螺寺赏红螺三绝巴士2日游</td>
+                                        <td>￥318.00</td>
+                                        <td>[8446]青龙峡</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001029036">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8415">[8415]北京</td>
+                <td>[8451]司马台长城</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8451').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8451" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8451').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029036">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029036">
+                                        <td>BJN77664</td>
+                                        <td>[77664]古北水镇风情、司马台长城探险巴士1日游</td>
+                                        <td>￥183.00</td>
+                                        <td>[8451]司马台长城</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001029038">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8415">[8415]北京</td>
+                <td>[8453]雍和宫</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8453').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8453" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8453').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029038">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029038">
+                                        <td>BJN69134</td>
+                                        <td>[69134]北京颐和园、恭王府、雍和宫祈福金牌1日游</td>
+                                        <td>￥248.00</td>
+                                        <td>[8453]雍和宫</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001029067">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8415">[8415]北京</td>
+                <td>[8482]恭王府</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8482').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8482" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8482').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029067">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029067">
+                                        <td>BJN69134</td>
+                                        <td>[69134]北京颐和园、恭王府、雍和宫祈福金牌1日游</td>
+                                        <td>￥248.00</td>
+                                        <td>[8482]恭王府</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="2" data-code="001001029125">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8415">[8415]北京</td>
+                <td>[8540]古北口长城</td>
+                <td data-tag="2">2</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8540').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8540" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8540').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029125">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029125">
+                                        <td>BJN77670</td>
+                                        <td>[77670]古北水镇风情巴士1日游</td>
+                                        <td>￥168.00</td>
+                                        <td>[8540]古北口长城</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029125">
+                                        <td>BJN77970</td>
+                                        <td>[77970]密云自然古村落古北水镇 雾灵湖游轮观光巴士2日游</td>
+                                        <td>￥418.00</td>
+                                        <td>[8540]古北口长城</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001029127">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8415">[8415]北京</td>
+                <td>[8542]鼓楼</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8542').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8542" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8542').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029127">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029127">
+                                        <td>BJN75183</td>
+                                        <td>[75183]北京故宫、恭王府、颐和园、鼓楼、南锣鼓巷纯玩1日游</td>
+                                        <td>￥218.00</td>
+                                        <td>[8542]鼓楼</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001029183">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8415">[8415]北京</td>
+                <td>[8598]双龙峡</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8598').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8598" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8598').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029183">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029183">
+                                        <td>BJN67191</td>
+                                        <td>[67191]门头沟双龙峡踏青、探秘爨底下汽车2日游</td>
+                                        <td>￥289.00</td>
+                                        <td>[8598]双龙峡</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001029008">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8415">[8415]北京</td>
+                <td>[8423]天坛</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8423').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8423" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8423').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029008">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029008001">
+                                        <td>BJN61561</td>
+                                        <td>[61561]北京故宫、圆明园、天坛、品烤鸭纯玩1日游</td>
+                                        <td>￥248.00</td>
+                                        <td>[12491]天坛公园</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="2" data-code="001001029216">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8415">[8415]北京</td>
+                <td>[13420]密云</td>
+                <td data-tag="2">2</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('13420').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="13420" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('13420').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001029216">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001029216">
+                                        <td>BJN77670</td>
+                                        <td>[77670]古北水镇风情巴士1日游</td>
+                                        <td>￥168.00</td>
+                                        <td>[13420]密云</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001029216">
+                                        <td>BJN77970</td>
+                                        <td>[77970]密云自然古村落古北水镇 雾灵湖游轮观光巴士2日游</td>
+                                        <td>￥418.00</td>
+                                        <td>[13420]密云</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="2" data-code="001001031">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8783">[8783]天津</td>
+                <td>[8783]天津</td>
+                <td data-tag="2">2</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8783').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8783" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8783').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001031">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001031">
+                                        <td>BJN73013</td>
+                                        <td>[73013]天津特色、塘沽出海、摩天轮观光1日游</td>
+                                        <td>￥128.00</td>
+                                        <td>[8783]天津</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                    <tr data-tree="001001031003">
+                                        <td>BJN75274</td>
+                                        <td>[75274]【早知有盘山，何必下江南】蓟州盘山风景区直通车1日游</td>
+                                        <td>￥128.00</td>
+                                        <td>[8786]盘山</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001031003">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8783">[8783]天津</td>
+                <td>[8786]盘山</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8786').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8786" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8786').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001031003">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001031003">
+                                        <td>BJN75274</td>
+                                        <td>[75274]【早知有盘山，何必下江南】蓟州盘山风景区直通车1日游</td>
+                                        <td>￥128.00</td>
+                                        <td>[8786]盘山</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001031006">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8783">[8783]天津</td>
+                <td>[8789]五大道</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8789').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8789" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8789').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001031006">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001031006">
+                                        <td>BJN73013</td>
+                                        <td>[73013]天津特色、塘沽出海、摩天轮观光1日游</td>
+                                        <td>￥128.00</td>
+                                        <td>[8789]五大道</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001031010">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8783">[8783]天津</td>
+                <td>[8793]海河外滩公园</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('8793').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="8793" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('8793').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001031010">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001031010">
+                                        <td>BJN73013</td>
+                                        <td>[73013]天津特色、塘沽出海、摩天轮观光1日游</td>
+                                        <td>￥128.00</td>
+                                        <td>[8793]海河外滩公园</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001031095">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8783">[8783]天津</td>
+                <td>[15200]洋货市场</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('15200').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="15200" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('15200').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001031095">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001031095">
+                                        <td>BJN73013</td>
+                                        <td>[73013]天津特色、塘沽出海、摩天轮观光1日游</td>
+                                        <td>￥128.00</td>
+                                        <td>[15200]洋货市场</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr data-count="1" data-code="001001031096">
+                <td>北京</td>
+                <td>周边跟团</td>
+                <td data-tag="8783">[8783]天津</td>
+                <td>[15201]瓷房子</td>
+                <td data-tag="1">1</td>
+                <td>
+                    <div style="position:relative;">
+
+                        <a onclick="javascript:document.getElementById('15201').style.display='block';" href="javascript:">查看线路</a>
+
+
+                        <div id="15201" style="display:none;position:absolute;right:0;top:25px;z-index:99;width:1024px;border:2px solid #ddd;padding:20px;background:#fff">
+                            <div onclick="javascript:document.getElementById('15201').style.display='none';" style="position:absolute;right:2px;top:2px;font-size:18px;font-weight:bold;cursor:pointer;" class="close">×</div>
+
+                            <table class="fn-table fn-table-mouse" data-code="001001031096">
+                                <tbody>
+                                    <tr>
+                                        <th>产品编号</th>
+                                        <th>产品名称</th>
+                                        <th>线路价格</th>
+                                        <th>途径地</th>
+                                        <th>出发城市</th>
+                                    </tr>
+
+                                    <tr data-tree="001001031096">
+                                        <td>BJN73013</td>
+                                        <td>[73013]天津特色、塘沽出海、摩天轮观光1日游</td>
+                                        <td>￥128.00</td>
+                                        <td>[15201]瓷房子</td>
+                                        <td>北京</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <div id="j_Clonetb" style="display:none;">
+
+    </div>
+
+</body>
+</html>

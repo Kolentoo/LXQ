@@ -1,0 +1,16 @@
+﻿.tejia-jp { padding-top: 40px; }
+.tejia-jp dl { margin-bottom: 10px; }
+.tejia-jp dl dd { background: #fff; border-bottom: 1px solid #ccc; padding: 9px 10px; }
+.tejia-jp dl dd .qu, .tejia-jp dl dd .fan { background: #6b0; color: #fff; display: inline-block; vertical-align: middle; width: 20px; height: 20px; text-align: center; margin-right: 5px; }
+.tejia-jp dl dd .fan { background: #f60; }
+.tejia-jp dl dd .p3 { color: #fff; text-align: center; border-radius: 4px; font-size: 11px; }
+.tejia-jp dl dd .tit img { margin: 0 5px; }
+.tejia-jp dl dd .tit{margin-bottom:7px;}
+.tejia-jp dl dd .ing { background-color: #f60; }
+.tejia-jp dl dd .will { background-color: #6b0; }
+.tejia-jp dl dd .over { background-color: #999; }
+
+.tejia-jp .rush-timer-active dt { color: #f60;padding-bottom:3px; }
+.tejia-jp .rush-timer-active dt .rush-timer-box i { border-radius: 2px; background: #f60; font-size:10px;padding:2px 1px;color: #fff;}
+.tejia-jp .rush-timer-unactive dt { color: #999;padding-bottom:3px; }
+.tejia-jp .rush-timer-unactive dt .rush-timer-box i { border-radius: 2px; background: #999;font-size:10px;padding:2px 1px;color: #fff; }

@@ -1,0 +1,14 @@
+﻿html { background:#f6f6f6;}
+.w { margin:0 auto;}
+.banner img { display:block;width:100%;}
+.list { }
+.list .list-wrap { }
+.list li {border-bottom:1px solid #bbb;}
+.list li a { padding:5px 5px;height:40px;overflow:hidden;display:block;}
+.list li:last-child {border-bottom:none;}
+.list li .p1 { font-size:14px;color:#333;}
+.list li .p2 { color:#666;}
+.list li .pic { width:38px;margin-right:15px;}
+.list li .pic img { width:100%;}
+.list li .arr {display:inline-block;vertical-align:top;margin:12px 5px 0 0;width:16px;}
+.list li .arr img { width:100%;}

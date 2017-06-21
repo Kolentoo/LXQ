@@ -1,0 +1,137 @@
+body{
+	background-color: #f4f4f4;
+}
+.eventdec{
+	background-color: #fff;
+	padding-left:0.45rem;
+	padding-right: 0.45rem;
+	border-bottom: 1px solid #ddd;
+}
+.eventdec h2{
+	font-size: 0.36rem;
+	color: #333;
+	text-align: justify;
+	padding-top: 0.35rem;
+	padding-bottom: 0.35rem;
+}
+
+.font24{
+	font-size: 0.24rem;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+.verm{
+    vertical-align: middle;
+}
+.information span{
+	color: #999;
+}
+.ml20{
+	margin-left: 0.15rem;
+}
+.information i{
+	color: #e5004f;
+}
+.information{
+	padding-bottom: 0.32rem;
+	text-align: left;
+}
+.eventul li{
+	padding-top: 0.24rem;
+}
+.eventul{
+	width: 7rem;
+	margin: 0 auto;
+	padding-bottom: 0.24rem;
+}
+.imgpho{
+	width:7.02rem;
+	height: 3.99rem;
+	border-radius: 0.1rem;
+}
+.imgdec{
+	font-size: 0.28rem;
+	color: #999;
+	-webkit-text-size-adjust: none;
+	text-align: justify;
+	padding-left:0.22rem;
+	padding-right: 0.22rem;
+	padding-top: 0.24rem;
+	line-height: 0.39rem;
+}
+.wrapper{
+	position: absolute;
+    width: 100%;
+    overflow: hidden;
+    top: 0.88rem;
+    bottom: 0rem;
+}
+#scroller {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+    background: #f4f4f4;
+}
+
+
+.white-topbar {
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    background: #fff;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #000;
+    border-bottom: 1px solid #ddd;
+}
+.white-topbar .top-back {
+    padding-left: 0.30rem;
+    line-height: 0.88rem;
+    padding-right: 12px;
+    font-size: 0.30rem;
+    color: #fff;
+}
+.white-topbar .black-ico {
+    width: 0.58rem;
+    height: 0.58rem;
+    display: inline-block;
+    background: url("http://r03.uzaicdn.com/content/hybrid/images/custom/back_ico.png") no-repeat;
+    background-size: 100% auto;
+    vertical-align: middle;
+}
+.white-topbar .fr {
+    margin-right: 0;
+    position: relative;
+    height: 0.88rem;
+    width: 0.88rem;
+    margin-left: 28px;
+}
+img{
+	display: block;
+}
+ * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.title_img {
+    font-size: .36rem;
+}

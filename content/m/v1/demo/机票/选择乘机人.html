@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" manifest="http://m.uzai.com/manifest/global.appcache">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>选择乘机人</title>
+    <link href="http://r.uzaicdn.com/content/m/v1/styles/_src/core.css" rel="stylesheet" />
+    <link href="http://r.uzaicdn.com/content/m/v1/styles/tejia/jp.css" rel="stylesheet" />
+    <script src="http://r.uzaicdn.com/content/m/v1/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['http://r.uzaicdn.com/content/m/v1/scripts/core'], function (core) {
+            $('.orders-jp').find('tr').on('click', function () {
+                var o = $(this);
+                if (o.hasClass('on')) {
+                    o.removeClass('on');
+                } else {
+                    o.addClass('on');
+                }
+            })
+        });
+    </script>
+    <style>
+        .orders-jp { padding-top: 40px; }
+        .orders-jp .add{background-color:#fff;border-bottom:1px solid #ccc;}
+        .orders-jp td{padding:8px 10px;border-bottom:1px solid #ccc;background:#fff;vertical-align:middle;}
+        .orders-jp .view-arrow { position:relative;width:100%;height:20px;}
+        .orders-jp .view-arrow::after{position:absolute;right:0;top:16px;width:8px;height:8px;transform:rotate(-45deg);content:" ";border:1px solid #ccc;border-top:0;border-left:0;}
+
+        .orders-jp .td1 { width: 25px; }
+        .orders-jp tr .td1 div { width: 18px; height: 18px; border: 1px solid #cdcdcd; border-radius: 50%; }
+        .orders-jp tr.on .td1 div { border: 1px solid #0d7aff;background-color:#0d7aff;position:relative; }
+        .orders-jp tr.on .td1 div:after{position:absolute;left:3px;top:4px;content:" ";width:10px;height:4px;border:2px solid #fff;border-top:0;border-right:0;transform:rotate(-45deg);}
+
+    </style>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m"><div class="tit">选择乘机人</div></div>
+            <div class="d-r tc">
+                <input type="button" value="完成" />
+            </div>
+        </header>
+        <section class="orders-jp">
+
+            <div class="add clearfix lh3 pl10 pr10">
+                <a href="#" class="block">
+                    <span class="fl f15">选择乘机人
+                    </span>
+                    <span class="fr">
+                        <a href="#" class="block view-arrow"></a>
+                    </span>
+                </a>
+            </div>
+
+            <table class="g10">
+                <tr  class="on">
+                    <td class="td1">
+                        <div>
+
+                        </div>
+                    </td>
+                    <td class="td2">
+                        <span class="f15 f333">Like/Muzai</span>  
+                        <br />
+                        <span class="f13">
+                            护照  1234567890
+                        </span>
+                    </td>
+                    <td class="tr">
+                        <img src="/content/m/v1/images/jipiao/j3.png" width="20" alt="" />
+                    </td>
+                </tr>
+                
+                 <tr>
+                    <td class="td1">
+                        <div >
+
+                        </div>
+                    </td>
+                    <td class="td2">
+                        <span class="f15 f333">Like/Muzai</span>  
+                        <br />
+                        <span class="f13">
+                            护照  1234567890
+                        </span>
+                    </td>
+                    <td class="tr">
+                        <img src="/content/m/v1/images/jipiao/j3.png" width="20" alt="" />
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="td1">
+                        <div >
+
+                        </div>
+                    </td>
+                    <td class="td2">
+                        <span class="f15 f333">Like/Muzai</span>  
+                        <br />
+                        <span class="f13">
+                            护照  1234567890
+                        </span>
+                    </td>
+                    <td class="tr">
+                        <img src="/content/m/v1/images/jipiao/j3.png" width="20" alt="" />
+                    </td>
+                </tr>
+
+
+            </table>
+
+        </section>
+    </div>
+</body>
+</html>

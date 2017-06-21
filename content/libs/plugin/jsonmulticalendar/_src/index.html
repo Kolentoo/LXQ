@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jsonCalendar demo</title>
+	<script src="jsonCalendar.js"></script>
+	<script src="http://r01.uzaicdn.com/content/libs/jquery-2.1.1.min.js"></script>
+	<link rel="stylesheet" href="http://r01.uzaicdn.com/content/v1/styles/core.css">
+	<style>
+	.calendarBox table{width: 100%;}
+	.calendarBox table tr th{border:1px solid #ccc;padding: 5px;}
+	.calendarBox table tr td{border:1px solid #ccc;padding: 5px;}
+	.calendarBox table tr td.gray{background-color: #eee;}
+	.calendarBox table tr td.today{color: red;}
+
+	.calendarBar table{width: 100%;margin-top: 10px;}
+	.calendarBar table tr td{border:1px solid #ccc;padding: 5px;text-align: center;}
+	.calendarBar table tr td.prev,.calendarBar table tr td.next{cursor: pointer;}
+	</style>
+	<script>
+	$(function(){
+		jsonCalendar.draw();
+	});
+	</script>
+</head>
+<body>
+
+
+</body>
+</html>

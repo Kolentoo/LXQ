@@ -1,0 +1,175 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section { display: block; }
+
+ol, ul, menu { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* customize by jsonchou */
+
+/* grid */
+.g1 { width:10%;}
+.g2 { width:20%;}
+.g3 { width:30%;}
+.g4 { width:40%;}
+.g5 { width:50%;}
+.g6 { width:60%;}
+.g7 { width:70%;}
+.g8 { width:80%;}
+.g9 { width:90%;}
+.g10 { width:100%;}
+
+a { color: #333; text-decoration: none; }
+
+input[type=submit], button { cursor: pointer;}
+strong, b, .b { font-weight: bold; }
+em, i{ font-style:normal;}
+.u { text-decoration: underline; }
+
+.center { text-align: center; }
+.tr { text-align: right; }
+.tl { text-align: left; }
+.tc { text-align: center; }
+
+.fr { float: right; }
+.fl { float: left; }
+
+.f333 { color:#333;}
+.f666 { color:#666;}
+.f999 { color:#999;}
+
+.f10 { font-size: 10px; }
+.f11 { font-size: 11px; }
+.f12 { font-size: 12px; }
+.f13 { font-size: 13px; }
+.f14 { font-size: 14px; }
+.f15 { font-size: 15px; }
+.f16 { font-size: 16px; }
+.f18 { font-size: 18px; }
+.f20 { font-size: 20px; }
+.f24 { font-size: 24px; }
+
+.yahei { font-family: "Microsoft YaHei"; }
+.songti { font-family:SimSun;}
+.verdana { font-family:Verdana;}
+
+.vm { vertical-align:middle;}
+.vb{ vertical-align: bottom;}
+
+.mt5 { margin-top: 5px; }
+.mr5 { margin-right: 5px; }
+.mb5 { margin-bottom: 5px; }
+.ml5 { margin-left: 5px; }
+.mt10 { margin-top: 10px; }
+.mr10 { margin-right: 10px; }
+.mb10 { margin-bottom: 10px; }
+.ml10 { margin-left: 10px; }
+.mt15 { margin-top: 15px; }
+.mb15 { margin-bottom: 15px; }
+
+.p5 { padding:5px;}
+.p10 { padding:10px;}
+.pt5 { padding-top: 5px; }
+.pr5 { padding-right: 5px; }
+.pb5 { padding-bottom: 5px; }
+.pl5 { padding-left: 5px; }
+.pt10 { padding-top: 10px; }
+.pr10 { padding-right: 10px; }
+.pb10 { padding-bottom: 10px; }
+.pl10 { padding-left: 10px; }
+
+.lh1 { line-height:1;}
+.lh2 { line-height:2;}
+.lh3 { line-height:3;}
+
+.pointer { cursor:pointer;}
+.noborder { border:0 none;}
+
+html { background: #f8f8f8;  color: #333; font-size: 12px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix { display: inline-table; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; *zoom:1;}
+
+.show,.block { display: block; }
+.hide,.none { display: none; }
+
+.white { color:#fff;}
+.orange { color:#f60;}
+.blue { color:#36c;}
+.green { color:#49a100;}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+
+.w{ width:1190px; margin-left: auto; margin-right: auto;min-width:1000px;}
+.side{ width: 330px;}
+.main-box{ width: 840px;}
+
+body { line-height: 1.5; font-family: Arial,"Microsoft yahei",simsun; min-height: 460px; }
+
+table.jCalendar {  }
+table.jCalendar th { }
+
+table.jCalendar td {  padding: 3px 5px; text-align: center;font-family:Verdana,'Microsoft YaHei';font-size:11px;}
+table.jCalendar td.other-month {  color: #eee;font-size:10px; }
+table.jCalendar td.current-month {  color: #3265CE;font-weight:bold; }
+table.jCalendar td.current-month:hover{background:#f90;color:#fff;}
+
+table.jCalendar td.today { color: #f90;}
+table.jCalendar td.selected { background: #3265CE; color: #fff; }
+table.jCalendar td.selected.dp-hover { background: #3265CE; color: #fff; }
+table.jCalendar td.dp-hover,table.jCalendar tr.activeWeekHover td { }
+table.jCalendar tr.selectedWeek td { background: #f66; color: #fff; }
+table.jCalendar td.disabled, table.jCalendar td.disabled.dp-hover { background:none;color:#999;}
+table.jCalendar td.unselectable,table.jCalendar td.unselectable:hover,table.jCalendar td.unselectable.dp-hover { background: #bbb;  }
+
+/* For the popup */
+
+/* NOTE - you will probably want to style a.dp-choose-date - see how I did it in demo.css */
+
+div.dp-popup { position: relative;  }
+div#dp-popup { position: absolute; z-index: 199;height:176px; border:1px solid #ccc;background:#fff;  padding: 4px; }
+div.dp-popup h2 { text-align: center;background:#28D273;color:#fff; }
+a#dp-close { font-size: 11px; padding: 4px 0; text-align: center; display: block; }
+a#dp-close:hover { text-decoration: underline; }
+div.dp-popup a { color: #666; margin:0 5px 0 0;}
+div.dp-popup div.dp-nav-prev { position: absolute; top: 2px; left: 4px; width: 100px; }
+div.dp-popup div.dp-nav-prev a { float: left; }
+/* Opera needs the rules to be this specific otherwise it doesn't change the cursor back to pointer after you have disabled and re-enabled a link */
+div.dp-popup div.dp-nav-prev a, div.dp-popup div.dp-nav-next a { cursor: pointer;font-family:SimSun;font-weight:bold; }
+div.dp-popup div.dp-nav-prev a.disabled, div.dp-popup div.dp-nav-next a.disabled { cursor: default;display:none; }
+div.dp-popup div.dp-nav-next { position: absolute; top: 0; right: 0; width: 100px; }
+div.dp-popup div.dp-nav-next a { float: right; }
+
+div.dp-popup div.dp-nav-prev .dp-nav-prev-year { display:none; }
+div.dp-popup div.dp-nav-next .dp-nav-next-year { display:none; }
+
+
+div.dp-popup a.disabled { cursor: default; color: #aaa; }
+div.dp-popup td { cursor: pointer; }
+div.dp-popup td.disabled { cursor: default;color:#999;}
+
+/**extent datapicker css***/
+div#dp-popup .dp-applied{float:left;padding:0 2px;height:177px;}
+div#dp-popup .dp-applied:first-child{border-right:2px solid #ccc;padding-right:5px;margin-right:3px;}

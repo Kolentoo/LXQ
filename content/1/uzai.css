@@ -1,0 +1,11 @@
+@import url('css/style.css'); /* 字体样式、字号、颜色集合 */
+@import url('css/topfooter.css'); /* 网站首尾部 */
+
+/*天津站内页左侧搜索 2012.04.17 添加 ElongLau*/
+.p01l_main{background:url(/content/1/image/bg/ssleftbg.gif) repeat-x left top; border:1px solid #f3eac9; height:270px; overflow:hidden;}
+.part01ltitle{height:30px; line-height:30px; padding-left:10px; font-weight:bold; color:#a67e4a;}
+.mdd{background:url(/content/1/image/bg/inputstyle2.gif) no-repeat left top; width:148px; height:25px;}
+.sstable{padding:5px 8px; border-bottom:1px solid #f3eac9;}
+.sstable table td{padding:2px;}
+.ssbot{padding:5px 0 0px 10px;}
+.ssbot ul li{background:url(/content/1/image/icon/orgbg.gif) no-repeat left center; float:left; padding:0px 0 0px 13px; height:20px; line-height:20px; width:65px;}

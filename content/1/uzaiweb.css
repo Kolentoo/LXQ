@@ -1,0 +1,4 @@
+@import url('css/font.css'); /* 字体样式、字号、颜色集合 */
+@import url('css/global.css'); /* 全局默认样式集合 */
+@import url('css/component.css'); /* 页面部分样式集合 */
+@import url('css/topfooter.css'); /* 网站首尾部 */

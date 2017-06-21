@@ -1,0 +1,26 @@
+/* CSS Document */
+.uzdsj{text-align:left; width:990px; margin-bottom:17px;}
+.uzdsj_mleft{float:left; width:158px; border:1px solid #d9d9d9;}
+.uzdsj_mright{float:right; width:810px; border:1px solid #d9d9d9;}
+.dsj_mlcont{padding:3px;}
+.dsj_mlcont ul li{ padding-left:15px; height:35px; line-height:35px; border-bottom:1px solid #d9d9d9;}
+.dsj_mlcont ul li a{display:block;background:url(/content/1/image/bg/dsj_07.jpg) no-repeat left 10px; padding-left:28px; font-size:14px; color:#666666;}
+.dsj_mlcont ul li a:hover{color:#FF6600;}
+.dsj_mlcont ul li.nowlink{background:#66c301;}
+.dsj_mlcont ul li.nowlink a{color:#ffffff;}
+.dsj_mlcont ul li.nowlink a:hover{color:#FFFF33;}
+.dsj_mlcont ul li.noborder{border-bottom:none;}
+.dsj_mrtit{background:url(/content/1/image/bg/dsj_05.gif) repeat-x left top; height:38px; line-height:38px; padding-left:15px;}
+.dsj_mrtname{background:url(/content/1/image/bg/dsj_08.gif) no-repeat left center; padding-left:20px; font-size:14px; font-weight:bold; color:#666666;}
+.uzdsj_mrcont{padding:20px 30px 20px 25px;}
+.left_rili{float:left; width:60px;}
+.rilitop{background:url(/content/1/image/bg/dsj_14.gif) no-repeat left top; width:60px; height:27px; text-align:center; font-size:18px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#ffffff; padding-top:5px;}
+.rilibot{background:url(/content/1/image/bg/dsj_24.gif) no-repeat left top; width:60px; height:20px; text-align:center; font-size:18px; font-weight:bold; color:#666666; font-family:Arial, Helvetica, sans-serif; line-height:12px; padding-top:7px;}
+.right_text{float:right; width:680px; background:url(/content/1/image/bg/dsj_27.gif) repeat-y left top; padding-bottom:20px;}
+.right_round{float:left; width:25px; background:url(/content/1/image/bg/dsj_17.gif) no-repeat left center; height:12px; padding-top:25px; padding-left:5px;}
+.right_tcont{float:right; width:638px; border:1px solid #e0e0e0; position:relative;}
+.right_jtou{position:absolute; left:-9px; top:10px;}
+.rtcont_t{padding:15px 20px;}
+.rtcont_t p{font-size:14px; text-indent:24px; line-height:24px; color:#666666;}
+.rtcont_t span {font-size:14px; margin-left:0px; }
+.rtcont_t span a { text-decoration:underline; color:#ff9900;}

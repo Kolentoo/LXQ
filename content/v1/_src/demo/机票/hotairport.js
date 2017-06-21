@@ -1,0 +1,173 @@
+﻿//号百city data;
+var cityList = "Qianjiang|黔江|JIQ|QJ@Bayanzhuoer|巴彦淖尔|RLK|BYZE@Panzhihua|攀枝花|PZI|PZH@Wuhai|乌海|WUA|WH@Yuncheng|运城|YCU|YC@Dongying|东营|DOY|DY@zibo|淄博|ZIB|ZB@Jinggangshan|井冈山|JGS|JGS@Manzhouli|满洲里|NZH|MZL@Lingzhi|林芝|LZY|LZ@Anshun|安顺|AVA|AS@Alamutu|阿拉木图|ALA|ALMT@Liancheng|连城|LCX|LC@Nalati|那拉提|NLT|NLT@Tongren|铜仁|TEN|TR@Liping|黎平|HZH|LP@Handan|邯郸|HDG|HD@Guangyuan|广元|GYS|GY@Luoding|罗定|LDG|LD@Yongzhou|永州|LLF|YZ@Wenshan|文山|WNH|WS@Zhuhai|珠海|ZUH|ZH@Zhijiang|芷江|HJJ|ZJ@Xinyi|兴义|ACX|XY@Chengde|承德|CHD|CD@Beijing|北京|BJS|BJ@Beijingnanyuan|北京南苑|NAY|BJNY@Beijing|北京首都|PEK|BJ@Beidaihe|北戴河|BDH|BDH@Baoding|保定|BAD|BD@Hengshui|衡水|HSU|HS@Kabuer|喀布尔|KBL|KBE@Lincang|临沧|LNJ|LC@Panjin|盘锦|PAJ|PJ@Tieling|铁岭|TIL|TL@Yangzhou|扬州|YZO|YZ@Yixin|宜兴|YIX|YX@Zhangjiagang|张家港|ZHJ|ZJG@Jiangyin|江阴|JIY|JY@Taizhou|泰州|TZU|TZ@Changshu|常熟|CHS|CS@Jiangdu|江都|JDU|JD@Yizheng|仪征|YIZ|YZ@Tongli|同里|TOL|TL@Liyang|溧阳|LYN|LY@Huaian|淮安|HUA|HA@Qidong|启东|QID|QD@Zhouzhuang|周庄|ZHN|ZZ@Kunshan|昆山|KUS|KS@Taicang|太仓|TAC|TC@Pizhou|邳州|PIZ|PZ@Jinhua|金华|JHA|JS@Shanghai|上海|SSS|SH@Shanghaipudong|上海浦东|PVG|SH@Shanghaihongqiao|上海虹桥|SHA|SH@Shaoxin|绍兴|SHX|SX@Jiaxin|嘉兴|JIX|JX@Zhuji|诸暨|ZJI|ZJ@Taizhou|台州|TAZ|TZ@Linhai|临海|LHA|LH@Lishui|丽水|LIS|LS@Cixi|慈溪|CIX|CX@Qiandaohu|千岛湖|QIH|QDH@Puyang|濮阳|PUY|PY@Kanasi|喀纳斯|KJI|KNS@Huaihua|怀化|HHA|HH@Changde|常德|CGD|CD@Hefei|合肥|HFE|HF@Diqingxianggelila|香格里拉|DIG|DQXGLL@Taizhong|台中|TXG|TZ@Zunyi|遵义|ZYI|ZY@Nanchong|南充|NAO|NC@Kelamayi|克拉玛依|KRY|KLMY@Wuhan|武汉|WUH|WH@Changzhou|常州|CZX|CZ@Jiayuguan|嘉峪关|JGN|JYG@Hanzhong|汉中|HZG|HZ@Jining|济宁|JNG|JN@Datong|大同|DAT|DT@Yining|伊犁|YIN|YN@Fushan|富山|TOY|FS@Guiyang|贵阳|KWE|GY@Yuanmou|元谋|YUA|YM@Chifeng|赤峰|CIF|CF@Yinchuan|银川|INC|YC@Jingdezhen|景德镇|JDZ|JDZ@Huizhou|徽州|HUZ|HZ@Lincang|临沧|LNC|LC@Changhai|长海|CNI|CH@Qiqihaer|齐齐哈尔|NDG|QQHE@Zhanjiang|湛江|ZHA|ZJ@Yibin|宜宾|YBP|YB@Sanya|三亚|SYX|SY@Weihai|威海|WEH|WH@Shanshan|鄯善|SXJ|SS@Wanzhou|万州|WXN|WZ@Xiangfan|襄樊|XFN|XF@Meixian|梅县|MXZ|MX@Hetian|和田|HTN|HT@Jiuquan|酒泉|CHW|JQ@Guangyuan|广元|GNY|GY@Chaoyang|朝阳|CHG|ZY@Lushan|庐山|LUZ|LS@Tainan|台南|TNN|TN@Wuhu|芜湖|WHU|WH@Xilinhaote|锡林浩特|XIL|XLHT@Weifang|潍坊|WEF|WF@Xiamen|厦门|XMN|XM@Tianshui|天水|TNS|TS@Dongsheng|鄂尔多斯|DSN|EEDS@Jinghong|西双版纳|JHG|JH@Jinzhou|锦州|JNZ|JZ@Changchun|长春|CGQ|CC@Yanji|延吉|YNJ|YJ@Jiamusi|佳木斯|JMU|JMS@Xingcheng|兴城|XEN|XC@Baoshan|保山|BSD|BS@Hami|哈密|HMI|HM@Nanjing|南京|NKG|NJ@Yongzhou|永州|YON|YZ@Jiujiang|九江|JIU|JJ@Wulanhaote|乌兰浩特|HLH|WLHT@Enshi|恩施|ENH|ES@Shijiazhuang|石家庄|SJW|SJZ@Foshan|佛山|FUO|FS@Geermu|格尔木|GOQ|GEM@Zhoushan|舟山|HSN|ZS@Jieyang|揭阳|SWA|JY@Zhangjiajie|张家界|DYG|ZJJ@Tacheng|塔城|TCG|TC@Nanchang|南昌|KHN|NC@Jian|吉安|KNC|JA@Qiemo|且末|IQM|QM@Luoyang|洛阳|LYA|LY@Akesu|阿克苏|AKU|AKS@Qingyang|庆阳|IQN|QY@Huangshan|黄山|TXN|HS@Mudanjiang|牡丹江|MDG|MDJ@Kuche|库车|KCA|KC@Ankang|安康|AKA|AK@Hailaer|海拉尔|HLD|HLE@Xingning|兴宁|XIN|XN@Xichang|西昌|XIC|XC@Simao|思茅|SYM|SM@Guanghan|广汉|GHN|GH@Fuyun|富蕴|FYN|FY@Nanyang|南阳|NNY|NY@Anshan|鞍山|AOG|AS@Xining|西宁|XNN|XN@Tonghua|通化|TNH|TH@Luzhou|泸州|LZO|LZ@Yulin|榆林|UYN|YL@Zhongdian|中甸|ZHD|ZD@Lianyungang|连云港|LYG|LYG@Wuyishan|武夷山|WUS|WYS@Baotou|包头|BAV|BT@Yichang|宜昌|YIH|YC@Linxi|林西|LXI|LX@Linyi|临沂|LYI|LY@Bengbu|蚌埠|BFU|BB@Xingtai|邢台|XNT|XT@Yiwu|义乌|YIW|YW@Hangzhou|杭州|HGH|HZ@Jinan|济南|TNA|JN@Beihai|北海|BHY|BH@Tongren|铜仁|TON|TR@Yanan|延安|ENY|YA@Lishan|梨山|LHN|LS@Gaoxiong|高雄|KHH|GX@Daxian|达县|DAX|DX@Guilin|桂林|KWL|GL@Fuyang|阜阳|FOG|FY@Lijiang|丽江|LJG|LJ@Dazu|大足|DZU|DZ@Wuzhou|梧州|WUZ|WZ@Anqing|安庆|AQG|AQ@Dalian|大连|DLC|DL@Juzhaigou|九寨沟|JZH|JZG@Quzhou|衢州|JUZ|QZ@Hengyang|衡阳|HNY|HY@Lanzhou|兰州|LHW|LZ@Lasa|拉萨|LXA|LS@Jizhou|济州|CJU|JZ@Guangzhou|广州|CAN|GZ@Dali|大理|DLU|DL@Lanzhou|兰州东|LZD|LZD@Ningbo|宁波|NGB|NB@Suzhou|苏州|SZV|SZ@Taizhou|台州|HYN|TZ@Mianyang|绵阳|MIG|MY@Shashi|沙市|SHS|SS@Dandong|丹东|DDG|DD@Yilan|铱兰|YLN|YL@Shenyang|沈阳|SHE|SY@Yancheng|盐城|YNZ|YC@Zhengzhou|郑州|CGO|ZZ@Changdu（bangda）|昌都|BPX|CD@Chongqing|重庆|CKG|CQ@Changzhi|长治|CIH|CZ@Haikou|海口|HAK|HK@Yantai|烟台|YNT|YT@Aletai|阿勒泰|AAT|ALT@Haerbin|哈尔滨|HRB|HEB@Wulumuqi|乌鲁木齐|URC|WLMQ@Tongliao|通辽|TGO|TL@Xuzhou|徐州|XUZ|XZ@Kashi|喀什|KHG|KS@Heihe|黑河|HEK|HH@Nantong|南通|NTG|NT@Liuzhou|柳州|LZH|LZ@Xian|西安|XIY|XA@Dunhuang|敦煌|DNH|DH@Huhehaote|呼和浩特|HET|HHHT@Wuxi|无锡|WUX|WX@Taiyuan|太原|TYN|TY@Changan|长安|CAL|CA@Dehongmangshi|德宏芒市|LUM|DHMS@Shenzhen|深圳|SZX|SZ@Fuzhou|福州|FOC|FZ@Ganzhou|赣州|KOW|GZ@Anyang|安阳|AYN|AY@Nanning|南宁|NNG|NN@Liangping|梁平|LIA|LP@Chengdu|成都|CTU|CD@Zhaotong|昭通|ZAT|ZT@Qingdao|青岛|TAO|QD@Kunming|昆明|KMG|KM@Tianjing|天津|TSN|TJ@Kuerle|库尔勒|KRL|KEL@Taidong|台东|TTT|TD@Weizhou|温州|WNZ|WZ@Quanzhou|泉州晋江|JJN|QZJJ@Changsha|长沙|CSX|CS@Qinhuangdao|秦皇岛|SHP|QHD@Dongying|东营|DGY|DY@Dayoung|大庸|DYG|DY@Baise|百色|AEB|BS@Fuyang|阜阳|FUG|FY@Zunhua|遵化|ZHH|ZY@Jincheng|晋城|JIC|JC@Jinzhong|晋中|JZO|JZ@Fushun|抚顺|FUS|FS@Jilin|吉林|JIL|JL@Daqing|大庆|DAQ|DQ@Zhenjiang|镇江|ZJA|ZJ@Haining|海宁|HAI|HN@Shengzhou|嵊州|SZU|SZ@Ruian|瑞安|RUA|RA@Wenling|温岭|WEG|WL@Huzhou|湖州|HZO|HZ@Anji|安吉|ANJ|AJ@Dongyang|东阳|DYN|DY@Shangyu|上虞|SYU|SY@Yandangshan|雁荡山|YAD|YDS@Fenghua|奉化|FEH|FH@Pinghu|平湖|PIH|PH@Huainan|淮南|HUI|HN@Rizhao|日照|RIZ|RZ@Yushu|玉树|YUS|YS@Rikaze|日喀则|RKZ|RZ@Alikunsha|阿里昆莎|NGQ|AL@Changbaishan|长白山|NBS|CBS";
+
+var cityListArr = cityList.split('@');
+
+//热门城市
+var HotAirportArry = [];
+HotAirportArry.push({ 'name': 'Beijing', 'nameCN': '北京', 'code': 'BJS', 'nameAbb': 'BJ' });
+HotAirportArry.push({ 'name': 'Shanghai', 'nameCN': '上海', 'code': 'SSS', 'nameAbb': 'SH' });
+HotAirportArry.push({ 'name': 'Guangzhou', 'nameCN': '广州', 'code': 'CAN', 'nameAbb': 'GZ' });
+HotAirportArry.push({ 'name': 'Shenzhen', 'nameCN': '深圳', 'code': 'SZX', 'nameAbb': 'SZ' });
+HotAirportArry.push({ 'name': 'Chengdu', 'nameCN': '成都', 'code': 'CTU', 'nameAbb': 'CD' });
+HotAirportArry.push({ 'name': 'Kunming', 'nameCN': '昆明', 'code': 'KMG', 'nameAbb': 'KM' });
+HotAirportArry.push({ 'name': 'Hangzhou', 'nameCN': '杭州', 'code': 'HGH', 'nameAbb': 'HZ' });
+HotAirportArry.push({ 'name': 'Xian', 'nameCN': '西安', 'code': 'XIY', 'nameAbb': 'XA' });
+HotAirportArry.push({ 'name': 'Chongqing', 'nameCN': '重庆', 'code': 'CKG', 'nameAbb': 'CQ' });
+HotAirportArry.push({ 'name': 'Xiamen', 'nameCN': '厦门', 'code': 'XMN', 'nameAbb': 'XM' });
+HotAirportArry.push({ 'name': 'Qingdao', 'nameCN': '青岛', 'code': 'TAO', 'nameAbb': 'QD' });
+HotAirportArry.push({ 'name': 'Haikou', 'nameCN': '海口', 'code': 'HAK', 'nameAbb': 'HK' });
+HotAirportArry.push({ 'name': 'Changsha', 'nameCN': '长沙', 'code': 'CSX', 'nameAbb': 'CS' });
+HotAirportArry.push({ 'name': 'Dalian', 'nameCN': '大连', 'code': 'DLC', 'nameAbb': 'DL' });
+HotAirportArry.push({ 'name': 'Nanjing', 'nameCN': '南京', 'code': 'NKG', 'nameAbb': 'NJ' });
+HotAirportArry.push({ 'name': 'Wuhan', 'nameCN': '武汉', 'code': 'WUH', 'nameAbb': 'WH' });
+HotAirportArry.push({ 'name': 'Shenyang', 'nameCN': '沈阳', 'code': 'SHE', 'nameAbb': 'SY' });
+HotAirportArry.push({ 'name': 'Wulumuqi', 'nameCN': '乌鲁木齐', 'code': 'URC', 'nameAbb': 'WLMQ' });
+HotAirportArry.push({ 'name': 'Guilin', 'nameCN': '桂林', 'code': 'KWL', 'nameAbb': 'GL' });
+HotAirportArry.push({ 'name': 'Sanya', 'nameCN': '三亚', 'code': 'SYX', 'nameAbb': 'SY' });
+HotAirportArry.push({ 'name': 'Zhengzhou', 'nameCN': '郑州', 'code': 'CGO', 'nameAbb': 'ZZ' });
+HotAirportArry.push({ 'name': 'Fuzhou', 'nameCN': '福州', 'code': 'FOC', 'nameAbb': 'FZ' });
+HotAirportArry.push({ 'name': 'Guiyang', 'nameCN': '贵阳', 'code': 'KWE', 'nameAbb': 'GY' });
+HotAirportArry.push({ 'name': 'Jinan', 'nameCN': '济南', 'code': 'TNA', 'nameAbb': 'JN' });
+HotAirportArry.push({ 'name': 'Haerbin', 'nameCN': '哈尔滨', 'code': 'HRB', 'nameAbb': 'HEB' });
+
+function pushArr(alphaArr, tag) {
+    for (var i = 0; i < cityListArr.length; i++) {
+        var item = cityListArr[i];
+        var itemArr = item.split('|');
+        var tg = itemArr[0].charAt(0).toUpperCase();
+        if (tg === tag) {
+            alphaArr.push({ 'name': itemArr[0], 'nameCN': itemArr[1], 'code': itemArr[2], 'nameAbb': itemArr[3] });
+        }
+    }
+}
+
+//A城市
+var ACityArry =[];
+pushArr(ACityArry,'A');
+
+//B城市
+var BCityArry =[];
+pushArr(BCityArry, 'B');
+
+//C城市
+var CCityArry =[];
+pushArr(CCityArry, 'C');
+
+//D城市
+var DCityArry =[];
+pushArr(DCityArry, 'D');
+
+//E城市
+var ECityArry =[];
+pushArr(ECityArry, 'E');
+
+//F城市
+var FCityArry =[];
+pushArr(FCityArry, 'F');
+
+//G城市
+var GCityArry =[];
+pushArr(GCityArry, 'G');
+
+//H城市
+var HCityArry =[];
+pushArr(HCityArry, 'H');
+
+//J城市
+var JCityArry =[];
+pushArr(JCityArry, 'J');
+
+//K城市
+var KCityArry =[];
+pushArr(KCityArry, 'K');
+
+//L城市
+var LCityArry =[];
+pushArr(LCityArry, 'L');
+
+//M城市
+var MCityArry =[];
+pushArr(MCityArry, 'M');
+
+//N城市
+var NCityArry =[];
+pushArr(NCityArry, 'N');
+
+//P城市
+var PCityArry =[];
+pushArr(PCityArry, 'P');
+
+//Q城市
+var QCityArry =[];
+pushArr(QCityArry, 'Q');
+
+//R城市
+var RCityArry =[];
+pushArr(RCityArry, 'R');
+
+//S城市
+var SCityArry =[];
+pushArr(SCityArry, 'S');
+
+//T城市
+var TCityArry =[];
+pushArr(TCityArry, 'T');
+
+//W城市
+var WCityArry =[];
+pushArr(WCityArry, 'W');
+
+//X城市
+var XCityArry =[];
+pushArr(XCityArry, 'X');
+
+//Y城市
+var YCityArry =[];
+pushArr(YCityArry, 'Y');
+
+//Z城市
+var ZCityArry =[];
+pushArr(ZCityArry, 'Z');
+ 
+$(function () {
+    
+    //热门城市
+    forArry(HotAirportArry, 'hotcity');
+    forArry(ACityArry, 'cityA');
+    forArry(BCityArry, 'cityB');
+    forArry(CCityArry, 'cityC');
+    forArry(DCityArry, 'cityD');
+    forArry(ECityArry, 'cityE');
+    forArry(FCityArry, 'cityF');
+    forArry(GCityArry, 'cityG');
+    forArry(HCityArry, 'cityH');
+    forArry(JCityArry, 'cityJ');
+    forArry(KCityArry, 'cityK');
+    forArry(LCityArry, 'cityL');
+    forArry(NCityArry, 'cityN');
+    forArry(MCityArry, 'cityM');
+    forArry(PCityArry, 'cityP');
+    forArry(QCityArry, 'cityQ');
+    forArry(RCityArry, 'cityR');
+    forArry(SCityArry, 'cityS');
+    forArry(TCityArry, 'cityT');
+    forArry(WCityArry, 'cityW');
+    forArry(XCityArry, 'cityX');
+    forArry(YCityArry, 'cityY');
+    forArry(ZCityArry, 'cityZ');
+
+});
+
+//根据城市三字码，循环   数组，页面id
+function forArry(cityArry, mark) {
+    if (cityArry.length > 0) {
+        var hotstr = '';
+        for (var i = 0; i < cityArry.length; i++) {
+            var item = cityArry[i];
+            hotstr += "<a href='javascript:void(0);' data-name='" + cityArry[i].name + "'  data-code='" + cityArry[i].code + "'   data-nameAbb='" + cityArry[i].nameAbb + "'  >" + cityArry[i].nameCN + "</a>";
+        }
+        $("#" + mark + "").html(hotstr);
+    }
+
+}

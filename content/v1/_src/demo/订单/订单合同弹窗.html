@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>合同确认页</title>
+    <link rel="stylesheet" href="/content/v1/_src/styles/core.css">
+    <script src="/content/libs/util.js"></script>
+    <link rel="stylesheet" href="/content/v1/_src/styles/order/order.css" />
+    <style>
+        body{ background: none;}
+    </style>
+    <script>
+    $(function() {
+        _uzw.ui.tab('j_contractTab');
+    });
+    </script>
+</head>
+<body>
+    <div class="pop-contract bg-white f333">
+        <div class="close-bar mr10 clearfix"><span class="pop-close yahei pointer fr" onclick="parent._uzw.iframe.close();"><i class="close-icon lh1">&times;</i></span></div>
+        <div class="contract-box">
+            <div id="j_contractTab" class="contract-tab">
+                <ul class="hd clearfix">
+                    <li class="first on"><em>合同</em></li>
+                    <li class="last"><em>另行付费项目补充协议</em></li>
+                </ul>
+                <div class="bd">
+                    <div class="item"><iframe width="880" height="410" frameborder="0" scrolling="auto" src="http://pay.uzai.com/ContractFiles/Contract/589402_合同_20150310053259.htm"></iframe></div>
+                    <div class="item hide">另行付费项目补充协议</div>
+                </div>
+            </div>
+            <div class="contract-ft mt10">
+                <p>
+                    <input type="checkbox" checked="checked" id="cbBaoxian" class="mr5 vm">
+                    <a href="http://www.uzai.com/qa/helplist-4.html" target="_blank" class="c36b vm">已阅读并理解保险条款全部内容</a>
+                </p>
+                <p class="tc"><button type="button" id="btnTiJiao" class="btn-agree bg-f60 pointer f18 yahei">同意全部协议并付款</button></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+/*! uzai - v0.1.11 - 2017 */
+
+function sitemapFixedNav(){var a=$("#j_navList"),b=a.parent(".nav-wrap"),c=a.height(),d=$(".mod-hd");$(window).scroll(function(){e()});var e=function(){var c=$(window),d=c.scrollTop(),e=b.offset().top;d>=e?(_util.check.isIE6?a.css({top:d,position:"absolute"}):a.css({top:0,position:"fixed"}),f(d)):a.css({top:"auto",position:"static"})},f=function(b){d.each(function(d,e){var f=$(this),g=f.offset().top;return b>g-c-1?(a.find("li").removeClass("on"),a.find("li").eq(d).addClass("on"),!0):void 0})},g=function(){a.find("li").on("click",function(){var a=$(this),b=a.index(),e=(a.siblings("li"),d.eq(b)),f=e.offset().top;$("body,html").animate({scrollTop:f-c},800)})};g(),e()}$(function(){sitemapFixedNav()});
+//# sourceMappingURL=/sourcemaps/content/v1/scripts/sitemap/sitemap.js.map

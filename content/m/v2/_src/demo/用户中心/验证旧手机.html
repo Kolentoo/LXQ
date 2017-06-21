@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <title>悠哉旅行网触屏版</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/user/user.css" rel="stylesheet" />
+    <script src="/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/_src/core', '/content/m/v2/scripts/_src/user/user'], function (core, user) {
+            user.init();
+        });
+    </script>
+    <style>
+        html, body { background: #fff; }
+    </style>
+</head>
+<body>
+    <div class="w user">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m"><div class="tit">验证旧手机</div></div>
+            <div class="d-r"></div>
+        </header>
+        <section class="modify-mobile">
+            <form id="j_verifyOldMobile" class="user-form">
+                <p class="mobile-bar p10 f15">您当前的手机号为：<em>17100000000</em></p>
+                <ul class="forms-listing">
+                    <li class="list-item clearfix">
+                        <i class="icon-lock fl"></i>
+                        <label class="item-bd"><input type="tel" class="textbox f14 g10" id="captcha" name="captcha" placeholder="请输入动态密码" maxlength="4"></label>
+                        <input type="button" class="btn-gain item-side white f14 tc" id="j_sendCheckCode" data-type="updatestep1" value="获取动态密码">
+                    </li>
+                </ul>
+                <p class="f999 f15 p10">收不到短信？请联系<a href="tel:4009982060" class="blue">400-998-2060</a></p>
+                <p class="btn-bar mt40"><input type="submit" value="下一步" class="btn-red btn-item f16 tc"></p>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

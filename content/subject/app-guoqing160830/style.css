@@ -1,0 +1,56 @@
+/*
+* @Author: lxq
+* @Date:   2016-08-30 13:36:34
+* @Last Modified by:   lxq
+* @Last Modified time: 2016-08-31 10:50:46
+*/
+
+.content .hd-list {width: 37.5rem;text-align: center;position: relative;background: #00a6ef;}
+.content .hd-list .p1 {line-height: 6.4rem;font-size: 3.6rem;color:#fff;}
+.content .hd-list i{font-size: 2.6rem;position: absolute;left: 50%;bottom: -2.5rem;margin-left: -1rem;display: none;}
+.content .on i{display: block;}
+.content .on {background: #f53f05;}
+.content .hd-list i{color:#f53f05;}
+
+.cont1-box {background: url(/content/subject/app-guoqing160830/img/bj1.jpg) no-repeat center center;-webkit-background-size: 100%;background-size: 100%;
+height: 162.8rem;}
+.cont2-box {background: url(/content/subject/app-guoqing160830/img/bj2.jpg) no-repeat center center;-webkit-background-size: 100%;background-size: 100%;
+height: 83rem;}
+.cont3-box {background: url(/content/subject/app-guoqing160830/img/bj3.jpg) no-repeat center center;-webkit-background-size: 100%;background-size: 100%;
+height: 82.3rem;}
+.cont4-box {background: url(/content/subject/app-guoqing160830/img/bj4.jpg) no-repeat center center;-webkit-background-size: 100%;background-size: 100%;
+height: 74.8rem;}
+.cont5-box {background: url(/content/subject/app-guoqing160830/img/bj5.jpg) no-repeat center center;-webkit-background-size: 100%;background-size: 100%;
+height: 75.3rem;}
+.cont6-box {background: url(/content/subject/app-guoqing160830/img/bj6.jpg) no-repeat center center;-webkit-background-size: 100%;background-size: 100%;
+height:82.2rem;}
+
+.pro-box {width: 71rem;margin:0 auto;padding-top: 1rem;}
+.pro-box .pro-list {margin-top: 2rem;background: #fff;border-radius: 1.1rem;}
+.pro-box .pro-list img{max-height: 39.9rem;border-radius: 1rem 1rem 0 0;}
+.pro-box .pro-list .name {font-size: 2.4rem;color:#d70000;width: 51rem;margin:0 1rem;height: 7.2rem;overflow: hidden;margin-top: 1rem;}
+.pro-box .pro-list .price {color:#fff;font-size: 2.8rem;width: 18rem;background: #d70000;text-align: center;line-height: 8.4rem;border-radius: 0 0 1.1rem 0;}
+.pro-box .pro-list .price b{font-size: 4.2rem;font-family: Georgia;}
+.pro-box .more {text-align: center;background: #ffc658;border-radius: 0 0 1.2rem 1.2rem;margin-top: 1.8rem;}
+.pro-box .more a{font-size: 2.6rem;color:#fefefe;display: inline-block;width: 100%;line-height: 6rem;}
+
+.cont-box .topic {color:#fff58b;font-size: 2.6rem;}
+.cont-box .pb .pro-list {margin-top: 0;}
+.cont2-box .topic {padding-top: 19rem;}
+.cont3-box .topic {padding-top: 14rem;}
+.cont4-box .topic {padding-top: 11rem;}
+.cont5-box .topic {padding-top: 12rem;}
+.cont6-box .topic {padding-top: 15rem;}
+
+.navigation {position: fixed;bottom: 5%;right: 0.5rem;width: 11rem;text-align: center;color:#fff;}
+.navigation .nav-box {background: rgba(0,0,0,0.6);font-size: 2.8rem;border-radius: 1.2rem;}
+.navigation .arrow {background: url(/content/subject/app-guoqing160830/img/arrow.png) no-repeat;-webkit-background-size: 100%;background-size: 100%;
+	width: 2.2rem;height: 1.5rem;display: inline-block;position: relative;top: -0.2rem;transform: rotate(180deg);}
+.navigation .arrow-on {transform: rotate(0deg);} 
+.navigation .p1 {line-height: 6.4rem;}
+.navigation .nav {height: 32.8rem;overflow: hidden;transition: all ease 0.5s;}
+.navigation .nav-off {height: 0;}
+.navigation .nav li{border-bottom: 0.1rem solid #fff;margin:0 1.2rem;}
+.navigation .back {font-size: 2.5rem;background: rgba(0,0,0,0.6);border-radius: 1.2rem;margin-top: 1.5rem;}
+
+

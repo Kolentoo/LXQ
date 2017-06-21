@@ -1,0 +1,531 @@
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<link href='//r.uzaicdn.com/content/zhifuv2/css/bank_pay.css'  rel='stylesheet' />
+<title></title>
+</head>
+<body>
+    <!--  Head begin -->
+     
+   <div class="head">
+        <div class="content">
+            <img src="//r03.uzaicdn.com/content/zhifuv2/images/logo.jpg" width="210" height="94" alt="logo" />
+            <div class="call">
+                <i class="call-time">预订热线：9:00~21:00</i>
+                <em class="call-num">1010-9898</em>
+            </div>
+        </div>
+    </div>
+    <!-- head end -->
+    <!-- step begin -->
+    <div class="step">
+		<hr class="step-line" />
+		<hr class="step-line-finish step-line-finish-4">
+        <ul class="step-content">
+            <li class="step-box step-box-finish">
+                <span class="step-num">1</span>
+                <em class="step-word">填写订单</em>
+            </li>
+            <li class="step-box step-box-2 step-box-finish">
+                <span class="step-num">2</span>
+                <em class="step-word">填写游客信息</em>
+            </li>
+            <li class="step-box step-box-3 step-box-finish">
+                <span class="step-num">3</span>
+                <em class="step-word">核对订单</em>
+            </li>
+            <li class="step-box step-box-4 step-box-hover">
+                <span class="step-num">4</span>
+                <em class="step-word">支付</em>
+            </li>
+            <li class="step-box step-box-5">
+                <span class="step-num">5</span>
+                <em class="step-word">支付成功</em>
+            </li>
+        </ul>
+    </div>
+    <!-- step end -->
+    <div class="content">
+		<!-- main begin -->
+		<div class="main">
+		
+            <!--订单信息start-->
+             <div class='main_card_t'>
+                    <p class='title'>&lt;法意瑞8晚11日&gt;新天鹅堡+蒙帕纳斯大厦+莱茵河谷</p>
+                    <div class='subtitle'><span>【3-4星&middot;自选】法意瑞8晚11日</span><span class='c2fa6e5'>SHS152543</span></div>
+                    <div class='detail'>
+                        <span>订单号：<i>C693077786</i></span>
+                        <span>出发日期：<i>2017年04月22日</i></span>
+                        <span>出发城市：<i>上海</i></span>
+                        <span class='padding-r0'>出行人数：<i>1成人    0儿童</i></span>
+                    </div>
+                    <div class='shop_cart'>
+                        <span class='shopping_cart'>应付金额</span>
+                        <span class='num'>￥<span class='f24' id="OrderMoneyAll">8099.00</span></span>
+                        <input type="hidden" value="8099.0000" id="OrderPayMent"/>
+                    </div>
+                </div>
+            <!--订单信息end-->
+          <form id="formpay" method="post" action="/proc_fourPayNew/" target="_blank">
+		      <!--优惠信息Start-->
+                   
+<input type="hidden" value="0" id="isHaveBankPreferential" />
+<div class='main_card_m'>
+    <div class='main_card_m_top'>
+        <span >优惠方案</span>
+        <ul>
+            <li onclick="PreferentialProject.clearactivitySelect(1)" class="border-l0" style='display:none'>
+                银行优惠专区</li>
+            <li onclick="PreferentialProject.clearactivitySelect(2)" style='display:none'>
+                其他支付方式</li>
+        </ul>
+    </div>
+    <div class='bank_pay pay' style='display:none'>
+        <div class='bank_pay_card'>
+            
+            <div class='clear'>
+            </div>
+        </div>
+    </div>
+    <div class='other_pay pay' 
+        id="preferentialProject">
+        
+                <!-- 积分和优惠券开始 -->
+                
+                <hr class="solid-line" />
+                
+                <ul class="sale-content sale-newline">
+                    <li class="section-li section-li-width-1">使用积分</li>
+                    <li class="section-li-content">
+                        
+                        <span class="login-tips font-black">账户余额<em class="font-hover">0积分</em>，不足本次最低使用数量（<em
+                            class="font-hover">50积分</em>起可用）</span>
+                        
+                    </li>
+                </ul>
+                <!--未使用使用积分-->
+                <input type="hidden" value="0" id="HaveScore" />
+                
+                <!--优惠券-->
+                
+                <hr class="solid-line" />
+                <ul class="sale-content sale-newline overf-auto">
+                    <div class="section-li section-li-width-1">
+                        抵用券/红包</div>
+                    <div class="section-li-content text-align-right" id="couponsDisabled">
+                        
+                    </div>
+                    <div class='clear'>
+                    </div>
+                    <div class='sold_main' id="couponsContent">
+                        <div class='sold_main_li'>
+                            <span class='select'>已绑定</span> <span>输入劵号</span> <a href="javascript:void(0);" id="j_slide_coupon"
+                                class="font-click slide-btn right">展开全部</a>
+                        </div>
+                        <div class="section-li-all sold_main_li_m" id="j_slide_coupon_content">
+                            
+                            <div class="sale-coupon" onclick="Coupons.chooseCoupons(this,'GN6E520DBF')">
+                                <input class="mr5" type="radio" name="coupons-code" value="GN6E520DBF"
+                                    style="display: none" />
+                                <input type="hidden" class="couponInfo" value="1,300,GN6E520DBF,300,0" />
+                                <span class="sale-coupon-box">
+                                    
+                                    <em class="sale-coupon-num">¥300</em>
+                                    
+                                    <i class="sale-coupon-date">有效期至2017-03-31 23:59:59</i> </span><span class="sale-coupon-id font-gray">
+                                        券号GN6E520DBF<div class="bank_desc_m">
+                                            使用说明：限上海站始发的【欧洲季大放价】活动专题的指定欧洲旅游产品使用
+                                        </div>
+                                    </span>
+                            </div>
+                            
+                            <div class="sale-coupon" onclick="Coupons.chooseCoupons(this,'cb93c59c117f9cad')">
+                                <input class="mr5" type="radio" name="coupons-code" value="cb93c59c117f9cad"
+                                    style="display: none" />
+                                <input type="hidden" class="couponInfo" value="1,100,cb93c59c117f9cad,100,0" />
+                                <span class="sale-coupon-box">
+                                    
+                                    <em class="sale-coupon-num">¥100</em>
+                                    
+                                    <i class="sale-coupon-date">有效期至2017-07-19 23:59:59</i> </span><span class="sale-coupon-id font-gray">
+                                        券号cb93c59c117f9cad<div class="bank_desc_m">
+                                            满3000可用，限正价跟团、邮轮及自由行产品
+                                        </div>
+                                    </span>
+                            </div>
+                            
+                            <div class='clear'>
+                            </div>
+                        </div>
+                        <div class='sold_main_li_m' hidden>
+                            <li class="section-li section-li-width-1 w_80">输入券号</li>
+                            <li class="section-li-content"><span class="point">
+                                <input type="text" id="txtUseVoucher" class="main_card_input" placeholder="" />
+                                <a href="javascript:;" id="btnUseVoucher" class="point-confirm point-confirm-hover"
+                                    onclick="Coupons.useCoupons(this)">使用</a><div class='clear'>
+                                    </div>
+                                <i class="font-light-gray" id="couponsTip"></i></span></li>
+                        </div>
+                    </div>
+                </ul>
+                <!--未使用使用券-->
+                <input type="hidden" value="0" id="HaveQuan" />
+                
+                <!-- 积分和优惠券结束 -->
+                <!-- 隐藏域 -->
+                <input type="hidden" id="txtHiddenUseVoucher" name="txtHiddenUseVoucher" />
+                <input type="hidden" value="" id="PreferentialIDs" />
+                <input type="hidden" value="" id="IsUsePreferential" />
+                <input type="hidden" id="hidActivityData" value="{&quot;ProductId&quot;:&quot;152543&quot;,&quot;JourneyCode&quot;:null,&quot;TuanQi&quot;:&quot;2017-04-22&quot;,&quot;TuanNo&quot;:&quot;TS1700001137&quot;,&quot;Preferentials&quot;:[],&quot;MutexRelation&quot;:null,&quot;Strategies&quot;:null,&quot;StrategyRules&quot;:null}" />
+                
+                <script type='text/javascript' src='//r01.uzaicdn.com/content/zhifuv2/scripts/preferentialproject.js?v=20170113&v=67C6E1B32ACC173675EC01150E07103D'  ></script><script type='text/javascript' src='//r02.uzaicdn.com/content/zhifuv2/scripts/booklist.js?20161115&v=5113B2904B14ABA659160DA43D5D923F'  ></script>
+
+                     
+
+<div class="bank_card">
+    <div class="bank_card_top">
+        <ul>
+            <li class="hover" style="border-left: 0px;">平台支付</li>
+            <li>网银支付</li>
+            <li>快捷支付</li>
+            <li style="border-right: 0px;">绑定支付</li>
+        </ul>
+    </div>
+    <div class="bank_card_m">
+        <div class="bank_card_m1">
+            <div class="bank_card_m1_img">
+                <div class="bank_card_m1_title">支付平台 <span>支付宝支持信用卡和储蓄卡在线支付</span></div>
+                <li class='selected'><a href="javascript:void(0)"><img alt="银联支付" src="//r.uzaicdn.com/content/1/image/order/upoplogo.png"/></a><input checked="checked" paytype="PT" value="UNIONPAY"   name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="银联快捷支付" src="//r.uzaicdn.com/content/1/image/order/upoplogokj.png"/></a><input paytype="PT" value="UNIONPAYKJ"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="支付宝" src="//r.uzaicdn.com/content/1/image/order/qyfk43_03.jpg"/></a><input paytype="PT" value="alipay"  name="pay_bank"  type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="微信支付" src="//r.uzaicdn.com/content/1/image/order/wx.jpg"/></a><input paytype="PT" value="wx"  name="pay_bank" type='radio' /></li>
+                
+                <li><a href="javascript:void(0)"><img alt="手机支付" src="//r.uzaicdn.com/content/1/image/order/mobilepaylogo.jpg"/></a><input paytype="PT" value="MobilePay"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="易生支付" src="//r.uzaicdn.com/content/1/image/order/bhe.png"/></a><input paytype="PT" value="bhecard"  name="pay_bank" type='radio' /></li>
+                <li class="dl-coupon"><a href="javascript:void(0)"><img alt="" src="/content/v1/images/order/dlzf.png"/></a><input paytype="" value=""  name="" type='radio' /></li>
+                
+            </div>
+            <div class="bank_card_m1_img" hidden>
+             <div class="bank_card_m1_title">网银支付 <span>需要开通网银</span></div>
+                <li><a href="javascript:void(0)"><img alt="招商银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_31.jpg"/></a><input paytype="WY" value="CMB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="中国银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_40.jpg"/></a><input paytype="WY" value="BOC"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="中国工商银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_29.jpg"/></a><input paytype="WY" value="ICBC"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="中国建设银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_27.jpg"/></a><input paytype="WY" value="CCB"  name="pay_bank"  type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="宁波银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_63.jpg"/></a><input paytype="WY" value="NBCB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="广东发展银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_50.jpg"/></a><input paytype="WY" value="GDB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="上海银行" src="//r.uzaicdn.com/content/1/image/order/shyh.jpg"/></a><input paytype="WY"  value="SHYH" name="pay_bank"  type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="兴业银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_47.jpg"/></a><input  paytype="WY" value="CIB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="中国民生银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_49.jpg"/></a><input paytype="WY" value="CMBC"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="交通银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_80.jpg"/></a><input paytype="WY" value="BCOM"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="平安银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_57.jpg"/></a><input paytype="WY" value="PAB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="杭州银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_79.jpg"/></a><input paytype="WY" value="HZB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="浦发银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_41.jpg"/></a><input paytype="WY" value="SPDB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><img alt="浦发银行信用卡" src="//r.uzaicdn.com/content/1/image/order/spdx_logo.jpg"/></a><input paytype="WY" value="SPDBX"  name="pay_bank"  type='radio' /></li>
+            </div>
+            <div class="bank_card_m1_img" hidden>
+             <div class="bank_card_m1_title">信用卡快捷支付 <span>一步验证，无需网银</span></div>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">快</div><img alt="中国工商银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_29.jpg"/></div></a><input paytype="KJ" value="ICBC"  name="pay_bank"   type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">快</div><img alt="中国建设银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_27.jpg"/></div></a><input paytype="KJ" value="CCB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">快</div><img alt="中国银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_40.jpg"/></div></a><input paytype="KJ" value="BOC"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">快</div><img alt="中信银行" src="//r.uzaicdn.com/content/1/image/order/zx.jpg"/></div></a><input paytype="KJ" value="CITIC"  name="pay_bank"  type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">快</div><img alt="上海农村商业银行" src="//r.uzaicdn.com/content/1/image/order/shny.jpg"/></div></a><input paytype="KJ" value="SRCB"  name="pay_bank"  type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">快</div><img alt="江苏银行" src="//r.uzaicdn.com/content/1/image/order/js.jpg"/></div></a><input paytype="KJ" value="JSB"  name="pay_bank" type='radio' /></li>
+                 <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">快</div><img alt="交通银行" src="//r.uzaicdn.com/content/1/image/order/jtyh.jpg"/></div></a><input paytype="KJ" value="HSBC"  name="pay_bank" type='radio' /></li>
+
+            </div>
+            <div class="bank_card_m1_img" hidden>
+             <div class="bank_card_m1_title">银联绑定支付 <span>信用卡支付</span></div>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="中国工商银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_29.jpg"/></div></a><input paytype="BDCC"  value="ICBC"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="中国银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_40.jpg"/></div></a><input  paytype="BDCC" value="BOC"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="中国邮政储蓄银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_64.jpg"/></div></a><input paytype="BDCC" value="PSBC"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="中国建设银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_27.jpg"/></div></a><input paytype="BDCC" value="CCB"  name="pay_bank"  type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="中信银行" src="//r.uzaicdn.com/content/1/image/order/zx.jpg"/></div></a><input paytype="BDCC"  value="CNCB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="浦发银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_41.jpg"/></div></a><input  paytype="BDCC" value="SPDB"  name="pay_bank"  type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="兴业银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_47.jpg"/></div></a><input paytype="BDCC" value="CIB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="中国招商银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_31.jpg"/></div></a><input paytype="BDCC" value="CMB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="平安银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_57.jpg"/></div></a><input paytype="BDCC"  value="PAB"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="民生银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_49.jpg"/></div></a><input paytype="BDCC" value="CMBC"  name="pay_bank" type='radio' /></li>
+                <li><a href="javascript:void(0)"><div class="pro"><div class="min_right">信</div><img alt="广发银行" src="//r.uzaicdn.com/content/1/image/order/qyfk_50.jpg"/></div></a><input paytype="BDCC" value="GDB"  name="pay_bank" type='radio' /></li>
+            </div>
+            <div class="bank_card_m1_title marg-t25">
+                旅游卡支付</div>
+            <div class="bank_card_m1_img">
+                <li><a href="javascript:void(0)">
+                    <img width="100px" height="36px" src="//r.uzaicdn.com/content/1/image/order/daijinka.jpg"></a><input
+                        paytype="UZ" value="daijinka" name="pay_bank" type='radio' /></li>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div> 
+        <!--优惠信息end-->
+        <!--付款按钮start-->
+         
+        	<div class='main_card_fo'>
+        		<input type='button'  onclick="oncontract(693086,2,1,'1',1)" class='right_input' value='付款'/>
+        		<span>若超出支付限额，请致电<em class="call-num">1010-9898</em>由客服专员为您拆单，分批支付</span>
+        	</div>
+        
+        <!--付款按钮end-->  
+     <input type="hidden" value="PT_alipay" name="BankcodeAll" id="BankcodeAll" />
+     <input type="hidden" value="" name="BankImg" id="BankImg" />
+     <input type="hidden" value="1886224" id="userid" />
+     <input type="hidden" value="" id="hidSupplierNo"  />
+     <input type="hidden" value="008" id="hidSupplierFlag" name="hidSupplierFlag"/>
+     <input type="hidden" value="1" id="hidNum" />
+     <input type="hidden" value="152543" id="hidProductID" />
+     <input type="hidden" value="1088860" id="hidTuanID" />   
+     <input id="order_id" name="order_id" value="FBF1D6324E0353FCBA7B7996AD76F699" type="hidden" />
+     <input type="hidden" id="hdPayType" name="hdPayType" value="THREEPAY" />
+     <input type="hidden" id="hdPayMoney" name="hdPayMoney" value="8099.00" />
+     <input type="hidden" id="hdIsUzai" name="hdIsUzai" value="1" />
+     <input  type="hidden" value="1" id="isBank"/>
+     <input  type="hidden" value="FBF1D6324E0353FCBA7B7996AD76F699" id="OrderIdDES"/>
+     <input  type="hidden" value="C693077786" id="OrderCode"/>
+     <input  type="hidden" value="693086" id="OrderId"/>
+     <input type="hidden" value="0" id="IsUseBankPreferential" />
+     <input type="hidden" id="hidSelectedActivities" name="hidSelectedActivities" />
+     <input type="hidden" id="txtHiddenScoreRatio" name="txtHiddenScoreRatio" value="50" />
+     <input type="hidden" id="txtHiddenUzaiPrice" name="txtHiddenUzaiPrice" value="8099" />
+     <input type="hidden" id="txtHiddenChildPrice" name="txtHiddenChildPrice" value="8099" />
+     <input type="hidden" id="txtHiddenPersonNum" name="txtHiddenPersonNum" value="1" />
+     <input type="hidden" id="txtHiddenChildNum" name="txtHiddenChildNum" value="0" />
+     <input type="hidden" id="txtHiddenPId" name="txtHiddenPId" value="152543" />
+     <input type="hidden" id="txtHiddenCity" name="txtHiddenCity" value="2" />
+     <input type="hidden" id="txtHiddenMType" name="txtHiddenMType" value="1" />
+     <input type="hidden" id="txtHiddenUserId" name="txtHiddenUserId" value="1886224" />
+     
+     
+</form>
+ </div>
+        
+	<!-- finally begin -->
+    <div class="layout-right" id="bookList">
+    <div class="finally">
+        <h2 class="finally-title">预订清单</h2>
+        <h3 class="finally-box-title">旅游团费</h3>
+        <div class="finally-box">
+            <span class="finally-description">1成人 × ¥8099</span>
+            <span class="finally-price">¥8099</span>
+        </div>
+        <div class="finally-box">
+            <span class="finally-description">0儿童 × ¥8099</span>
+            <span class="finally-price">¥0</span>
+        </div>
+         
+    </div>
+    <div class="price">
+        <span class="price-word">总计：</span>
+        <span class="price-pay">¥8099.00</span>
+       
+    </div>
+</div>
+     <!-- finally end -->
+</div>
+        <!-- main end -->
+<input type="hidden" value="0"  id="ScoreCut"/>
+<!--默认附加产品div-->
+<div style="display:none">
+<div id="liproduct">
+  
+ </div>
+</div>
+  <input  type="hidden" id="isUseTisp" value="0"/>
+<!--提示信息Start-->
+ <div class='storage'><img src='//r03.uzaicdn.com/content/zhifuv2/images/wait.gif'/>正在确认库存，请稍后......</div>
+<!--提示信息end-->
+<!--付款信息Start-->
+<div class='body_shade'></div>
+<div class='body_shade_show' id="fukuan" style="display:none">
+	<h2>付款确认</h2>
+	<p>完成付款后，请根据您的情况点击下面的按钮</p>
+	<div class='shade_buttom'>
+		<button class='right' onclick="GetPayStatus('N','693086', '', '')">付款不成功，重新支付</button>
+		<button onclick="GetPayStatus('Y','693086', '', '')">已完成付款</button>
+        <button id="youhuiBUtton" onclick="GetPayStatus('YH','693086', '', '')">修改优惠方案及支付方式</button>
+	</div>
+	<a href="javascript:void(0)" class='close' onclick="close2()"></a>
+</div>
+<div class='body_shade_show' id="youhui" style="display:none">
+	<h2>请修改优惠方案</h2>
+	<p>您选择的优惠方案现已不可用，请联系客服重新选择优惠方案</p>
+	<div class='shade_buttom'>
+        <button onclick="close2()">确定</button>
+	</div>
+	<a href="javascript:void(0)" class='close' onclick="close2()"></a>
+</div>
+<!--付款信息end-->
+<input  type="hidden" value="0" id="ProdAndAddAllPrice"/>
+<input type="hidden" id="PageType"  value="2" />
+
+
+
+<script type='text/javascript' src='//r02.uzaicdn.com/content/zhifuv2/scripts/jquery-1.11.1.min.js?20161115&v=4DC834D16A0D219D5C2B8A5B814569E4'  ></script><script type='text/javascript' src='//r.uzaicdn.com/content/zhifuv2/scripts/bank_pay.js?20161115&v=C91B6D14D5B635B0A51B1D5DDB4EF60A'  ></script><script type='text/javascript' src='//r03.uzaicdn.com/content/zhifuv2/scripts/fournew_proc.js?20161115&v=9CB7D53A26E042C6D5D6DCFDD501A8C1'  ></script><script type='text/javascript' src='//r.uzaicdn.com/content/yudingv2/scripts/core_new.js?20161115'  ></script>
+</body>
+
+</html>
+  <script type="text/javascript">
+      function renderBooklist() {
+          // ------------------ 打造参数 begin ---------------------
+          // 订单参数
+          var adultCount = 1;
+          var childCount =0;
+          var adultAmount = 8099;
+          var childAmount = 8099;
+          var order = BookList.orderParam(adultCount, childCount, adultAmount, childAmount, 0);
+         
+           var activities = [];
+           // 选择的优惠活动.积分
+            var usedPoint = PreferentialProject.usedPoint;
+            if (usedPoint) {
+                var pointActivity = BookList.preferentialActivity("积分抵扣", usedPoint.price, 1);
+                activities.push(pointActivity);
+            }
+            // 选择的优惠活动.优惠券
+            var selectedCoupons = PreferentialProject.selectedCoupons;
+            if (selectedCoupons) {
+                var couponsActivtiy = BookList.preferentialActivity("优惠券抵扣", selectedCoupons.price, 2, selectedCoupons.ticketType);
+                activities.push(couponsActivtiy);
+            }
+              // 选择的优惠活动
+              var selectedActivities = PreferentialProject.selectedActivities;
+              if (selectedActivities) {
+                  for (var i = 0; i < selectedActivities.length; i++) {
+                      var preferential = selectedActivities[i];
+                      for (var j = 0; j < preferential.Activities.length; j++) {
+                          var activity = preferential.Activities[j];
+                          var supplier=activity.Source==0?0:3;
+                          var _activity = BookList.preferentialActivity(activity.PreferentialName, activity.MaxPreAmount, supplier);
+                          activities.push(_activity);
+                      }
+                  }
+              }
+          // ------------------ 打造参数 end---------------------
+          // 调用render方法获取预订清单html并替换
+           var attachments = $("#liproduct").html();
+           var html = BookList.render(order, attachments, activities);
+           $('#bookList').html(html);
+      }
+</script>
+
+    <!-- html templates -->
+<script type="text/html" id="bookListTemplate">
+    <div class="finally">
+        <h2 class="finally-title">预订清单</h2>
+        <h3 class="finally-box-title">旅游团费</h3>
+        <div class="finally-box">
+            <span class="finally-description">{adultCount}成人 × ¥{adultAmount}</span>
+            <span class="finally-price">¥{adultTotal}</span>
+        </div>
+        <div class="finally-box">
+            <span class="finally-description">{childCount}儿童 × ¥{childAmount}</span>
+            <span class="finally-price">¥{childTotal}</span>
+        </div>
+        {attachmentHtml}
+        <hr class="finally-line" />
+        <h3 class="finally-box-title">优惠信息</h3>
+        {activityHtml}
+    </div>
+    <div class="price">
+        <span class="price-word">总计：</span>
+        <span class="price-pay">¥{totalAmount}</span>
+    </div>
+</script>
+<script type="text/html" id="attachTemplate">
+    <div class="{finallyClass}">
+        <span class="finally-description finally-description-all">{attachmentName}</span>
+        <span class="finally-description">{attachmentCount}份 × ¥{attachmentAmount}</span>
+        <span class="finally-price finally-price-hover">¥{attachmentTotalAmount}</span>
+    </div>
+</script>
+<script type="text/html" id="activityTemplate">
+    <div class="finally-box">
+        <span class="finally-description">{activityName}</span>
+        <span class="finally-price finally-price-hover">￥{preTotalAmount}</span>
+    </div>
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        // 已选中的优惠活动
+        if ($("#HaveScore").val() == 1) {
+            var usePoint = new Object();
+            usePoint.point = $("#HaveScoreValue").val().split('|')[0];
+            usePoint.price = -parseFloat($("#HaveScoreValue").val().split('|')[0] / $("#HaveScoreValue").val().split('|')[1]);
+            PreferentialProject.usedPoint = usePoint;
+        }
+        if ($("#HaveQuan").val() == 1) {
+            // 维护以下优惠券对象只为互斥
+            var selectedCoupons = new Object();
+            var quanlist = $("#Quanlist").val().split(',');
+            var QuanPrice = 0;
+            var QuanCode = "";
+            for (var i = 0; i < quanlist.length; i++) {
+                QuanCode += quanlist[i].split('|')[0] + "^";
+                QuanPrice += parseFloat(quanlist[i].split('|')[1]);
+            }
+            selectedCoupons.code = QuanCode;
+            selectedCoupons.price = -parseFloat(QuanPrice);
+            PreferentialProject.selectedCoupons = selectedCoupons;
+        }
+        if ($("#HaveScore").val() == 1) {
+
+            // 积分属于标准优惠，标准优惠和银行互斥(银行和所有大类互斥)
+            // 所以，这里需要银行进行互斥
+            var lis = $("input[name='preferential_" + 1 + "']").parent();
+            lis.each(function () {
+                $(this).find("input[type='checkbox'],label").hide();
+                if ($(this).find("span")) {
+                    $(this).find("span").remove();
+                }
+                $(this).append("<span>不与" + "其他优惠" + "同享</span>");
+            });
+        }
+        if ($("#HaveQuan").val() == 1) {
+            // 优惠券属于立减优惠，立减优惠和银行互斥(银行和所有大类互斥)，立减优惠类内互斥
+            // 所以，这里需要银行进行互斥，并进行类内互斥操作
+            // 第1步，和银行的互斥
+            var lis = $("input[name='preferential_" + 1 + "']").parent();
+            lis.each(function () {
+                $(this).find("input[type='checkbox'],label").hide();
+                if ($(this).find("span")) {
+                    $(this).find("span").remove();
+                }
+                $(this).append("<span>不与" + "其他优惠" + "同享</span>");
+            });
+            // 第2步，立减类内互斥
+            var lis = $("input[name='preferential_" + 2 + "']").parent();
+            lis.each(function () {
+                $(this).find("input[type='checkbox'],label").hide();
+                if ($(this).find("span")) {
+                    $(this).find("span").remove();
+                }
+                $(this).append("<span>不与" + "其他优惠" + "同享</span>");
+            });
+        }
+        if ($("#isHaveBankPreferential").val() == 1) {
+            //$(".bank_pay_card").find("li:eq(0)").click();
+            var CheckBankPreferentialId = $("#CheckBankPreferentialId").val();
+            $("#li" + CheckBankPreferentialId).click();
+        } else {
+            PreferentialProject.setChecked(); //设置默认选中项被默认选中
+        }
+        if ($("#isCheck").val() == "False") {
+            $(".main_card_m_top li:eq(1)").click();
+        } else {
+            if ($("#isHaveBankPreferential").val() == 1) {
+                $(".main_card_m_top li:eq(0)").click();
+            }
+        }
+        renderBooklist();
+        // PreferentialProject.setChecked(); //设置默认选中项被默认选中
+    })
+</script>

@@ -1,0 +1,462 @@
+body, html { background: #00a5b3; height: 100%; }
+.w { min-width: 320px; min-height: auto; }
+.decimal { list-style: decimal inside; }
+.main-wrap { position: relative; }
+.fn-header { z-index: 1; display: none; background: #333; }
+.wrap { z-index: 2; }
+
+.main-hd { padding: 25px 0; }
+.info-listing { margin: 0 15px; }
+.info-listing li { padding: 5px 0; }
+.info-listing .info-hd { padding-top: 5px; }
+.info-listing .textbox, .info-listing .txta, .info-listing .select-box { background: #fff; border: 0 none; font-size: 14px; font-family: Microsoft YaHei; }
+.info-listing .textbox { height: 30px; width: 170px; padding: 0 5px; }
+.info-listing .txta { height: 90px; line-height: 1.5; width: 170px; }
+.info-listing .select-box { height: 30px; width: 180px; }
+.info-listing .tips-info { color: #fff000; }
+.info-listing .tips-info .tips-bd { margin-left: 60px; }
+.info-listing .btn-wish { background: #fff; border: 0 none; color: #00a5b4; height: 44px; line-height: 44px; width: 213px; }
+.wish-box { border-top: 1px solid #fff; margin-top: 15px; padding-top: 15px; }
+.btn-bar { padding: 25px 0; }
+.btn-submit { background: #bf0005; border: 0 none; color: #fff; height: 44px; line-height: 44px; width: 213px; }
+
+.section-item .text{font-size:18px;line-height:26px;}
+
+.s-logo { background: url(/content/m/subject/shengdan2014_12_12/images/logo.png) no-repeat right 0; background-size: 56px; width: 56px; height: 20px; -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); left: 18px; position: absolute; top: -20px; z-index:1;}
+.active-slide .s-logo { -moz-animation: aniSlogo 1.2s 0.2s 1 linear forwards; -o-animation: aniSlogo 1.2s 0.2s 1 linear forwards; -webkit-animation: aniSlogo 1.2s 0.2s 1 linear forwards; animation: aniSlogo 1.2s 0.2s 1 linear forwards; }
+
+@keyframes aniSlogo {
+    0% { -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); top: -20px; }
+    20% { -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); top: -10px; }
+    50% { -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); top: 0; }
+    75% { -moz-transform: rotate(-10deg); -ms-transform: rotate(-10deg); -o-transform: rotate(-10deg); -webkit-transform: rotate(-10deg); transform: rotate(-10deg); top: 10px; }
+    100% { -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); top: 20px; }
+}
+
+@-webkit-keyframes aniSlogo {
+    0% { -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); top: -20px; }
+    20% { -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); top: -10px; }
+    50% { -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); top: 0; }
+    75% { -moz-transform: rotate(-10deg); -ms-transform: rotate(-10deg); -o-transform: rotate(-10deg); -webkit-transform: rotate(-10deg); transform: rotate(-10deg); top: 10px; }
+    100% { -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); top: 20px; }
+}
+
+
+.snow { position: fixed; top: 0; z-index: 100; }
+.snow1 { background: url(/content/m/subject/shengdan2014_12_12/images/snow1.png) no-repeat right 0; background-size: 46px; width: 46px; height: 42px; left: 18px; margin-top: -84px; -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; -moz-transform: scale(0) rotate(0); -ms-transform: scale(0) rotate(0); -o-transform: scale(0) rotate(0); -webkit-transform: scale(0) rotate(0); transform: scale(0) rotate(0); }
+.snow2 { background: url(/content/m/subject/shengdan2014_12_12/images/snow2.png) no-repeat right 0; background-size: 44px; width: 44px; height: 40px; left: 113px; margin-top: -80px; -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; -moz-transform: scale(0.1) rotate(0); -ms-transform: scale(0.1) rotate(0); -o-transform: scale(0.1) rotate(0); -webkit-transform: scale(0.1) rotate(0); transform: scale(0.1) rotate(0); }
+.snow3 { background: url(/content/m/subject/shengdan2014_12_12/images/snow3.png) no-repeat right 0; background-size: 29px; width: 29px; height: 26px; left: 234px; margin-top: -66px; -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; -moz-transform: scale(0.1) rotate(0); -ms-transform: scale(0.1) rotate(0); -o-transform: scale(0.1) rotate(0); -webkit-transform: scale(0.1) rotate(0); transform: scale(0.1) rotate(0); }
+
+.snow1 { -moz-animation: aniSnow1 19s 0.2s 1 linear forwards; -o-animation: aniSnow1 19s 0.2s 1 linear forwards; -webkit-animation: aniSnow1 19s 0.2s 1 linear forwards; animation: aniSnow1 19s 0.2s 1 linear forwards; }
+.snow2 { -moz-animation: aniSnow2 15s 0.3s 1 linear forwards; -o-animation: aniSnow2 15s 0.3s 1 linear forwards; -webkit-animation: aniSnow2 15s 0.3s 1 linear forwards; animation: aniSnow2 15s 0.3s 1 linear forwards; }
+.snow3 { -moz-animation: aniSnow3 10s 0.4s 1 linear forwards; -o-animation: aniSnow3 10s 0.4s 1 linear forwards; -webkit-animation: aniSnow3 10s 0.4s 1 linear forwards; animation: aniSnow3 10s 0.4s 1 linear forwards; }
+
+@keyframes aniSnow1 {
+    0% { top: 0; -moz-transform: scale(0) rotate(0deg); -ms-transform: scale(0) rotate(0deg); -o-transform: scale(0) rotate(0deg); -webkit-transform: scale(0) rotate(0deg); transform: scale(0) rotate(0deg); }
+    50% { top: 100%; -moz-transform: scale(0.8) rotate(90deg); -ms-transform: scale(0.8) rotate(90deg); -o-transform: scale(0.8) rotate(90deg); -webkit-transform: scale(0.8) rotate(90deg); transform: scale(0.8) rotate(90deg); }
+    65% { top: 97%; -moz-transform: scale(0.9) rotate(180deg); -ms-transform: scale(0.9) rotate(180deg); -o-transform: scale(0.9) rotate(180deg); -webkit-transform: scale(0.9) rotate(180deg); transform: scale(0.9) rotate(180deg); }
+    85% { top: 100%; -moz-transform: scale(1) rotate(360deg); -ms-transform: scale(1) rotate(360deg); -o-transform: scale(1) rotate(360deg); -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); }
+    95% { top: 99%; -moz-transform: scale(1) rotate(360deg); -ms-transform: scale(1) rotate(360deg); -o-transform: scale(1) rotate(360deg); -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); }
+    100% { top: 100%; -moz-transform: scale(1) rotate(360deg); -ms-transform: scale(1) rotate(360deg); -o-transform: scale(1) rotate(360deg); -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); }
+}
+
+@keyframes aniSnow2 {
+    0% { top: 0; -moz-transform: scale(0) rotate(0deg); -ms-transform: scale(0) rotate(0deg); -o-transform: scale(0) rotate(0deg); -webkit-transform: scale(0) rotate(0deg); transform: scale(0) rotate(0deg); }
+    50% { top: 100%; -moz-transform: scale(0.8) rotate(90deg); -ms-transform: scale(0.8) rotate(90deg); -o-transform: scale(0.8) rotate(90deg); -webkit-transform: scale(0.8) rotate(90deg); transform: scale(0.8) rotate(90deg); }
+    65% { top: 97%; -moz-transform: scale(0.9) rotate(180deg); -ms-transform: scale(0.9) rotate(180deg); -o-transform: scale(0.9) rotate(180deg); -webkit-transform: scale(0.9) rotate(180deg); transform: scale(0.9) rotate(180deg); }
+    85% { top: 100%; -moz-transform: scale(1) rotate(360deg); -ms-transform: scale(1) rotate(360deg); -o-transform: scale(1) rotate(360deg); -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); }
+    95% { top: 99%; -moz-transform: scale(1) rotate(360deg); -ms-transform: scale(1) rotate(360deg); -o-transform: scale(1) rotate(360deg); -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); }
+    100% { top: 100%; -moz-transform: scale(1) rotate(360deg); -ms-transform: scale(1) rotate(360deg); -o-transform: scale(1) rotate(360deg); -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); }
+}
+
+@keyframes aniSnow3 {
+    0% { top: 0; -moz-transform: scale(0) rotate(0deg); -ms-transform: scale(0) rotate(0deg); -o-transform: scale(0) rotate(0deg); -webkit-transform: scale(0) rotate(0deg); transform: scale(0) rotate(0deg); }
+    50% { top: 100%; -moz-transform: scale(0.8) rotate(90deg); -ms-transform: scale(0.8) rotate(90deg); -o-transform: scale(0.8) rotate(90deg); -webkit-transform: scale(0.8) rotate(90deg); transform: scale(0.8) rotate(90deg); }
+    65% { top: 97%; -moz-transform: scale(0.9) rotate(180deg); -ms-transform: scale(0.9) rotate(180deg); -o-transform: scale(0.9) rotate(180deg); -webkit-transform: scale(0.9) rotate(180deg); transform: scale(0.9) rotate(180deg); }
+    85% { top: 100%; -moz-transform: scale(1) rotate(360deg); -ms-transform: scale(1) rotate(360deg); -o-transform: scale(1) rotate(360deg); -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); }
+    95% { top: 99%; -moz-transform: scale(1) rotate(360deg); -ms-transform: scale(1) rotate(360deg); -o-transform: scale(1) rotate(360deg); -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); }
+    100% { top: 100%; -moz-transform: scale(1) rotate(360deg); -ms-transform: scale(1) rotate(360deg); -o-transform: scale(1) rotate(360deg); -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); }
+}
+
+@-webkit-keyframes aniSnow1 {
+    0% { top: 0; -moz-transform: scale(0) rotate(0deg); -ms-transform: scale(0) rotate(0deg); -o-transform: scale(0) rotate(0deg); -webkit-transform: scale(0) rotate(0deg); transform: scale(0) rotate(0deg); }
+    50% { top: 100%; -moz-transform: scale(0.8) rotate(90deg); -ms-transform: scale(0.8) rotate(90deg); -o-transform: scale(0.8) rotate(90deg); -webkit-transform: scale(0.8) rotate(90deg); transform: scale(0.8) rotate(90deg); }
+    65% { top: 97%; -moz-transform: scale(0.9) rotate(180deg); -ms-transform: scale(0.9) rotate(180deg); -o-transform: scale(0.9) rotate(180deg); -webkit-transform: scale(0.9) rotate(180deg); transform: scale(0.9) rotate(180deg); }
+    85% { top: 100%; -moz-transform: scale(1) rotate(360deg); -ms-transform: scale(1) rotate(360deg); -o-transform: scale(1) rotate(360deg); -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); }
+    95% { top: 99%; -moz-transform: scale(1) rotate(360deg); -ms-transform: scale(1) rotate(360deg); -o-transform: scale(1) rotate(360deg); -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); }
+    100% { top: 100%; -moz-transform: scale(1) rotate(360deg); -ms-transform: scale(1) rotate(360deg); -o-transform: scale(1) rotate(360deg); -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); }
+}
+
+@-webkit-keyframes aniSnow2 {
+    0% { top: 0; -moz-transform: scale(0) rotate(0deg); -ms-transform: scale(0) rotate(0deg); -o-transform: scale(0) rotate(0deg); -webkit-transform: scale(0) rotate(0deg); transform: scale(0) rotate(0deg); }
+    50% { top: 100%; -moz-transform: scale(0.8) rotate(90deg); -ms-transform: scale(0.8) rotate(90deg); -o-transform: scale(0.8) rotate(90deg); -webkit-transform: scale(0.8) rotate(90deg); transform: scale(0.8) rotate(90deg); }
+    65% { top: 97%; -moz-transform: scale(0.9) rotate(180deg); -ms-transform: scale(0.9) rotate(180deg); -o-transform: scale(0.9) rotate(180deg); -webkit-transform: scale(0.9) rotate(180deg); transform: scale(0.9) rotate(180deg); }
+    85% { top: 100%; -moz-transform: scale(1) rotate(360deg); -ms-transform: scale(1) rotate(360deg); -o-transform: scale(1) rotate(360deg); -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); }
+    95% { top: 99%; -moz-transform: scale(1) rotate(360deg); -ms-transform: scale(1) rotate(360deg); -o-transform: scale(1) rotate(360deg); -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); }
+    100% { top: 100%; -moz-transform: scale(1) rotate(360deg); -ms-transform: scale(1) rotate(360deg); -o-transform: scale(1) rotate(360deg); -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); }
+}
+
+@-webkit-keyframes aniSnow3 {
+    0% { top: 0; -moz-transform: scale(0) rotate(0deg); -ms-transform: scale(0) rotate(0deg); -o-transform: scale(0) rotate(0deg); -webkit-transform: scale(0) rotate(0deg); transform: scale(0) rotate(0deg); }
+    50% { top: 100%; -moz-transform: scale(0.8) rotate(90deg); -ms-transform: scale(0.8) rotate(90deg); -o-transform: scale(0.8) rotate(90deg); -webkit-transform: scale(0.8) rotate(90deg); transform: scale(0.8) rotate(90deg); }
+    65% { top: 97%; -moz-transform: scale(0.9) rotate(180deg); -ms-transform: scale(0.9) rotate(180deg); -o-transform: scale(0.9) rotate(180deg); -webkit-transform: scale(0.9) rotate(180deg); transform: scale(0.9) rotate(180deg); }
+    85% { top: 100%; -moz-transform: scale(1) rotate(360deg); -ms-transform: scale(1) rotate(360deg); -o-transform: scale(1) rotate(360deg); -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); }
+    95% { top: 99%; -moz-transform: scale(1) rotate(360deg); -ms-transform: scale(1) rotate(360deg); -o-transform: scale(1) rotate(360deg); -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); }
+    100% { top: 100%; -moz-transform: scale(1) rotate(360deg); -ms-transform: scale(1) rotate(360deg); -o-transform: scale(1) rotate(360deg); -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); }
+}
+
+
+.section-item { width: 100%; height: 100%; overflow: hidden; position: relative;}
+.section-item-1 { background: url(/content/m/subject/shengdan2014_12_12/images/slide1.jpg) no-repeat center center; background-size: 100%; }
+.section-item-2 { background: url(/content/m/subject/shengdan2014_12_12/images/slide2.jpg) no-repeat center center; background-size: 100%; }
+.section-item-3 { background: url(/content/m/subject/shengdan2014_12_12/images/slide3.jpg) no-repeat center center; background-size: 100%; }
+.section-item-4 { background: url(/content/m/subject/shengdan2014_12_12/images/slide4.jpg) no-repeat center center; background-size: 100%; }
+.section-item-5 { color: #fff; }
+
+.section-item-1 .slogon { -moz-transition: all ease 0.9s; -o-transition: all ease 0.9s; -webkit-transition: all ease 0.9s; transition: all ease 0.9s; background: url(/content/m/subject/shengdan2014_12_12/images/slide1-1.png) no-repeat right 0; background-size: 280px; width: 280px; position: absolute; left: 50%;margin-left:-140px; z-index: 3; top: 0; height: 0;overflow:hidden; }
+.section-item-1 .children { -moz-transition: all ease 0.9s; -o-transition: all ease 0.9s; -webkit-transition: all ease 0.9s; transition: all ease 0.9s; background: url(/content/m/subject/shengdan2014_12_12/images/slide1-5.png) no-repeat right 0; background-size: 113px; width: 113px; height: 121px; position: absolute; top: 300px; z-index: 9; left: -100%; }
+.section-item-1 .papa { -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -webkit-transition: all ease 0.3s; transition: all ease 0.3s; background: url(/content/m/subject/shengdan2014_12_12/images/slide1-6.png) no-repeat right 0; background-size: 136px; width: 136px; height: 134px; position: absolute; top: 363px; z-index: 10; left: -100%; -moz-transform: scale(0); -ms-transform: scale(0); -o-transform: scale(0); -webkit-transform: scale(0); transform: scale(0); }
+.section-item-1 .tree { -moz-transition: all ease 0.9s; -o-transition: all ease 0.9s; -webkit-transition: all ease 0.9s; transition: all ease 0.9s; background: url(/content/m/subject/shengdan2014_12_12/images/slide1-2.png) no-repeat right 0; background-size: 143px; width: 143px; height: 179px; position: absolute; top: 215px; z-index: 1; right: -100%; }
+.section-item-1 .rainbow { -moz-transition: all ease 0.9s; -o-transition: all ease 0.9s; -webkit-transition: all ease 0.9s; transition: all ease 0.9s; background: url(/content/m/subject/shengdan2014_12_12/images/slide1-4.png) no-repeat right 0; background-size: 307px; width: 307px; height: 227px; position: absolute; top: 250px; z-index: 3; right: -100%; }
+.section-item-1 .house { -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -webkit-transition: all ease 0.3s; transition: all ease 0.3s; background: url(/content/m/subject/shengdan2014_12_12/images/slide1-3.png) no-repeat right 0; background-size: 216px; width: 216px; height: 0; z-index: 1; position: absolute; bottom: 0; left: 0; }
+
+.section-item-1 .house-inner { position: absolute; left: 0; top: 381px; }
+
+.section-item-1-on .slogon { -moz-animation: sectionitem1Slogon 1s 1 ease forwards; -o-animation: sectionitem1Slogon 1s 1 ease forwards; -webkit-animation: sectionitem1Slogon 1s 1 ease forwards; animation: sectionitem1Slogon 1s 1 ease forwards; }
+.section-item-1-on .children { -moz-animation: sectionitem1Children 1s 1.9s ease forwards; -o-animation: sectionitem1Children 1s 1.9s ease forwards; -webkit-animation: sectionitem1Children 1s 1.9s ease forwards; animation: sectionitem1Children 1s 1.9s ease forwards; }
+.section-item-1-on .papa { -moz-animation: sectionitem1Papa 2.5s 0.8s 1 ease forwards; -o-animation: sectionitem1Papa 2.5s 0.8s 1 ease forwards; -webkit-animation: sectionitem1Papa 2.5s 0.8s 1 ease forwards; animation: sectionitem1Papa 2.5s 0.8s 1 ease forwards; }
+.section-item-1-on .tree { -moz-animation: sectionitem1Tree 0.8s 0.3s 1 ease forwards; -o-animation: sectionitem1Tree 0.8s 0.3s 1 ease forwards; -webkit-animation: sectionitem1Tree 0.8s 0.3s 1 ease forwards; animation: sectionitem1Tree 0.8s 0.3s 1 ease forwards; }
+.section-item-1-on .rainbow { -moz-animation: sectionitem1Rainbow 0.5s 0.9s 1 ease forwards; -o-animation: sectionitem1Rainbow 0.5s 0.9s 1 ease forwards; -webkit-animation: sectionitem1Rainbow 0.5s 0.9s 1 ease forwards; animation: sectionitem1Rainbow 0.5s 0.9s 1 ease forwards; }
+.section-item-1-on .house { -moz-animation: sectionitem1House 0.4s 1s 1 ease forwards; -o-animation: sectionitem1House 0.4s 1s 1 ease forwards; -webkit-animation: sectionitem1House 0.4s 1s 1 ease forwards; animation: sectionitem1House 0.4s 1s 1 ease forwards; }
+
+@keyframes sectionitem1Slogon {
+    0% { height: 0; }
+    100% { height: 212px; }
+}
+
+@keyframes sectionitem1Children {
+    0% { left: -100%; }
+    100% { left: 30px; }
+}
+
+@keyframes sectionitem1Papa {
+    0% { left: -100%; top: 230px; -moz-transform: scale(0); -ms-transform: scale(0); -o-transform: scale(0); -webkit-transform: scale(0); transform: scale(0); }
+    100% { left: 160px; top: 313px; -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); }
+}
+
+@keyframes sectionitem1Tree {
+    0% { right: -100%; }
+    100% { right: 0; }
+}
+
+@keyframes sectionitem1Rainbow {
+    0% { right: -100%; opacity: 0; }
+    100% { right: 0; opacity: 0.5; }
+}
+
+@keyframes sectionitem1House {
+    0% { height: 0; }
+    100% { height: 57px; }
+}
+
+
+@-webkit-keyframes sectionitem1Slogon {
+    0% { height: 0; }
+    100% { height: 232px; }
+}
+
+@-webkit-keyframes sectionitem1Children {
+    0% { left: -100%; }
+    100% { left: 30px; }
+}
+
+@-webkit-keyframes sectionitem1Papa {
+    0% { left: -100%; top: 230px; -moz-transform: scale(0); -ms-transform: scale(0); -o-transform: scale(0); -webkit-transform: scale(0); transform: scale(0); }
+    100% { left: 160px; top: 313px; -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); }
+}
+
+@-webkit-keyframes sectionitem1Tree {
+    0% { right: -100%; }
+    100% { right: 0; }
+}
+
+@-webkit-keyframes sectionitem1Rainbow {
+    0% { right: -100%; }
+    100% { right: 0; }
+}
+
+@-webkit-keyframes sectionitem1House {
+    0% { height: 0; }
+    100% { height: 57px; }
+}
+
+
+
+.section-item-2 .inner { height: 300px; overflow: hidden; position: relative; }
+.section-item-2 .child { -moz-transition: all ease 0.9s; -o-transition: all ease 0.9s; -webkit-transition: all ease 0.9s; transition: all ease 0.9s; background: url(/content/m/subject/shengdan2014_12_12/images/slide2-1.png) no-repeat right 0; background-size: 59px; width: 59px; height: 133px; position: absolute; left: -100%; top: 160px; z-index: 3; }
+.section-item-2 .papa { -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -webkit-transition: all ease 0.3s; transition: all ease 0.3s; background: url(/content/m/subject/shengdan2014_12_12/images/slide2-2.png) no-repeat right 0; background-size: 128px; width: 128px; height: 193px; position: absolute; right: -100%; top: 100px; z-index: 2; }
+.section-item-2 .house { -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -webkit-transition: all ease 0.3s; transition: all ease 0.3s; background: url(/content/m/subject/shengdan2014_12_12/images/slide2-3.png) no-repeat right 0; background-size: 53px; width: 53px; position: absolute; bottom: 0; left: 20px; height: 0; z-index: 4; }
+.section-item-2 .tree { -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -webkit-transition: all ease 0.3s; transition: all ease 0.3s; background: url(/content/m/subject/shengdan2014_12_12/images/slide2-4.png) no-repeat right 0; background-size: 174px; width: 174px; position: absolute; top: -100%; right: 20px; height: 234px; z-index: 1; }
+
+.section-item-2 .text { -moz-transition: all ease-in-out 1s; -o-transition: all ease-in-out 1s; -webkit-transition: all ease-in-out 1s; transition: all ease-in-out 1s;  text-align: center; color: #fff; opacity: 0; margin-left: -100%; position: absolute; left: 0; width: 100%; top: 355px; }
+.section-item-2-on .child { -moz-animation: sectionitem2Child 1.5s 0.5s ease forwards; -o-animation: sectionitem2Child 1.5s 0.5s ease forwards; -webkit-animation: sectionitem2Child 1.5s 0.5s ease forwards; animation: sectionitem2Child 1.5s 0.5s ease forwards; }
+.section-item-2-on .papa { -moz-animation: sectionitem2Papa 2.5s 0.3s 1 ease forwards; -o-animation: sectionitem2Papa 2.5s 0.3s 1 ease forwards; -webkit-animation: sectionitem2Papa 2.5s 0.3s 1 ease forwards; animation: sectionitem2Papa 2.5s 0.3s 1 ease forwards; }
+.section-item-2-on .house { -moz-animation: sectionitem2House 0.5s 1 ease forwards; -o-animation: sectionitem2House 0.5s 1 ease forwards; -webkit-animation: sectionitem2House 0.5s 1 ease forwards; animation: sectionitem2House 0.5s 1 ease forwards; }
+.section-item-2-on .tree { -moz-animation: sectionitem2Tree 0.5s 1 ease forwards; -o-animation: sectionitem2Tree 0.5s 1 ease forwards; -webkit-animation: sectionitem2Tree 0.5s 1 ease forwards; animation: sectionitem2Tree 0.5s 1 ease forwards; }
+.section-item-2-on .text { opacity: 1; margin-left: 0; }
+
+@keyframes sectionitem2Child {
+    0% { left: 0; }
+    100% { left: 92px; }
+}
+
+@keyframes sectionitem2Papa {
+    0% { right: -100%; }
+    100% { right: 55px; }
+}
+
+@keyframes sectionitem2House {
+    0% { height: 0; }
+    100% { height: 68px; }
+}
+
+@keyframes sectionitem2Tree {
+    0% { top: -100%; }
+    100% { top: 30px; }
+}
+
+
+@-webkit-keyframes sectionitem2Child {
+    0% { left: 0; }
+    100% { left: 92px; }
+}
+
+@-webkit-keyframes sectionitem2Papa {
+    0% { right: -100%; }
+    100% { right: 55px; }
+}
+
+@-webkit-keyframes sectionitem2House {
+    0% { height: 0; }
+    100% { height: 68px; }
+}
+
+@-webkit-keyframes sectionitem2Tree {
+    0% { top: -100%; }
+    100% { top: 30px; }
+}
+
+
+
+.section-item-3 .inner { position: absolute; left: 69px; top: 151px; width: 77px; height: 107px; }
+.section-item-3 .inner2 { position: absolute; top: 120px; left: 30px; width: 108px; height: 113px; }
+.section-item-3 .fly { -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -webkit-transition: all ease 0.3s; transition: all ease 0.3s; background: url(/content/m/subject/shengdan2014_12_12/images/slide3-1.png) no-repeat right 0; background-size: 34px; width: 34px; height: 72px; position: absolute; left: 50%; top: 85px; margin-left: 0; margin-top: -100%; -moz-transform: scale(0.1); -ms-transform: scale(0.1); -o-transform: scale(0.1); -webkit-transform: scale(0.1); transform: scale(0.1); opacity: 0; }
+.section-item-3 .text { -moz-transition: all ease-in-out 1s; -o-transition: all ease-in-out 1s; -webkit-transition: all ease-in-out 1s; transition: all ease-in-out 1s;  text-align: center; color: #fff; opacity: 0; margin-left: -100%; position: absolute; left: 0; width: 100%; top: 355px; }
+.section-item-3 .boy { -moz-transition: all ease 1.3s; -o-transition: all ease 1.3s; -webkit-transition: all ease 1.3s; transition: all ease 1.3s; background: url(/content/m/subject/shengdan2014_12_12/images/slide3-4.png) no-repeat right 0; background-size: 77px; width: 77px; height: 0; position: absolute; z-index: 3; overflow: hidden; left: 0; bottom: 0; }
+.section-item-3 .girl { -moz-transition: all ease-in-out 1s; -o-transition: all ease-in-out 1s; -webkit-transition: all ease-in-out 1s; transition: all ease-in-out 1s; background: url(/content/m/subject/shengdan2014_12_12/images/slide3-5.png) no-repeat right 0; font-size: 15px; text-align: center; color: #fff; position: absolute; right: -100%; background-size: 127px; width: 127px; height: 167px; top: 157px; }
+.section-item-3 .box { -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -webkit-transition: all ease 0.3s; transition: all ease 0.3s; background: url(/content/m/subject/shengdan2014_12_12/images/slide3-3.png) no-repeat right 0; background-size: 202px; width: 202px; height: 102px; position: absolute; top: -100%; left: 34px; z-index: 2; }
+.section-item-3 .tree { -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -webkit-transition: all ease 0.3s; transition: all ease 0.3s; background: url(/content/m/subject/shengdan2014_12_12/images/slide3-2.png) no-repeat right 0; background-size: 108px; width: 108px; height: 0; position: absolute; bottom: 0; left: 0; z-index: 1; }
+
+.section-item-3-on .fly { -moz-animation: sectionitem3Fly 0.5s 2.5s 1 ease forwards; -o-animation: sectionitem3Fly 0.5s 2.5s 1 ease forwards; -webkit-animation: sectionitem3Fly 0.5s 2.5s 1 ease forwards; animation: sectionitem3Fly 0.5s 2.5s 1 ease forwards; -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); opacity: 1; }
+.section-item-3-on .boy { -moz-animation: sectionitem3Boy 1.5s 1.2s 1 ease forwards; -o-animation: sectionitem3Boy 1.5s 1.2s 1 ease forwards; -webkit-animation: sectionitem3Boy 1.5s 1.2s 1 ease forwards; animation: sectionitem3Boy 1.5s 1.2s 1 ease forwards; }
+.section-item-3-on .girl { -moz-animation: sectionitem3Girl 1.5s 2.5s 1 ease forwards; -o-animation: sectionitem3Girl 1.5s 2.5s 1 ease forwards; -webkit-animation: sectionitem3Girl 1.5s 2.5s 1 ease forwards; animation: sectionitem3Girl 1.5s 2.5s 1 ease forwards; }
+.section-item-3-on .box { -moz-animation: sectionitem3Box 0.5s 0.5s 1 ease forwards; -o-animation: sectionitem3Box 0.5s 0.5s 1 ease forwards; -webkit-animation: sectionitem3Box 0.5s 0.5s 1 ease forwards; animation: sectionitem3Box 0.5s 0.5s 1 ease forwards; }
+.section-item-3-on .tree { -moz-animation: sectionitem3Tree 0.5s 1 ease forwards; -o-animation: sectionitem3Tree 0.5s 1 ease forwards; -webkit-animation: sectionitem3Tree 0.5s 1 ease forwards; animation: sectionitem3Tree 0.5s 1 ease forwards; }
+.section-item-3-on .text { opacity: 1; margin-left: 0; }
+
+@keyframes sectionitem3Fly {
+    0% { margin-top: -100%; }
+    25% { margin-top: 25px; }
+    50% { margin-top: 0; }
+    75% { margin-top: 5px; }
+    100% { margin-top: 0%; }
+}
+
+@keyframes sectionitem3Boy {
+    0% { height: 0; }
+    100% { height: 117px; }
+}
+
+@keyframes sectionitem3Girl {
+    0% { right: -100%; }
+    25% { right: 40px; }
+    50% { right: 40px; top: 137px; }
+    65% { right: 40px; top: 157px; }
+    75% { right: 40px; top: 137px; }
+    100% { right: 40px; top: 157px; }
+}
+
+@keyframes sectionitem3Box {
+    0% { top: -100%; }
+    25% { top: 232px; }
+    50% { top: 215px; }
+    65% { top: 232px; }
+    100% { top: 232px; }
+}
+
+@keyframes sectionitem3Tree {
+    0% { height: 0; }
+    100% { height: 113px; }
+}
+
+
+@-webkit-keyframes sectionitem3Fly {
+    0% { margin-top: -100%; }
+    25% { margin-top: 25px; }
+    50% { margin-top: 0; }
+    75% { margin-top: 5px; }
+    100% { margin-top: 0%; }
+}
+
+@-webkit-keyframes sectionitem3Boy {
+    0% { height: 0; }
+    100% { height: 117px; }
+}
+
+@-webkit-keyframes sectionitem3Girl {
+    0% { right: -100%; }
+    25% { right: 40px; }
+    50% { right: 40px; top: 137px; }
+    65% { right: 40px; top: 157px; }
+    75% { right: 40px; top: 137px; }
+    100% { right: 40px; top: 157px; }
+}
+
+@-webkit-keyframes sectionitem3Box {
+    0% { top: -100%; }
+    25% { top: 232px; }
+    50% { top: 215px; }
+    65% { top: 232px; }
+    100% { top: 232px; }
+}
+
+@-webkit-keyframes sectionitem3Tree {
+    0% { height: 0; }
+    100% { height: 113px; }
+}
+
+.section-item-4 .inner { height: 298px; overflow: hidden; position: absolute; left: 0; width: 100%; top: 0; z-index: 1; }
+.section-item-4 .papa { -moz-transition: all ease 1.3s; -o-transition: all ease 1.3s; -webkit-transition: all ease 1.3s; transition: all ease 1.3s; background: url(/content/m/subject/shengdan2014_12_12/images/slide4-1.png) no-repeat right 0; background-size: 190px; width: 190px; height: 183px;
+                        position: absolute; right: -210px; top: 150px; z-index: 3; overflow: hidden; }
+.section-item-4 .text { -moz-transition: all ease-in-out 1s; -o-transition: all ease-in-out 1s; -webkit-transition: all ease-in-out 1s; transition: all ease-in-out 1s;  text-align: center; color: #fff; opacity: 0; margin-left: -100%; position: absolute; left: 0; width: 100%; top: 355px; }
+.section-item-4 .tree { -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -webkit-transition: all ease 0.3s; transition: all ease 0.3s; background: url(/content/m/subject/shengdan2014_12_12/images/slide4-3.png) no-repeat right 0; background-size: 170px; width: 170px; position: absolute; top: -100%; right: 5px; height: 224px; z-index: 2; }
+.section-item-4 .house { -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -webkit-transition: all ease 0.3s; transition: all ease 0.3s; background: url(/content/m/subject/shengdan2014_12_12/images/slide4-2.png) no-repeat right 0; background-size: 320px; width: 320px; position: absolute; bottom: 0; right: 0; height: 0; z-index: 1; }
+
+.section-item-4-on .papa { -moz-animation: sectionitem4Papa 2s 0.5s 1 ease forwards; -o-animation: sectionitem4Papa 2s 0.5s 1 ease forwards; -webkit-animation: sectionitem4Papa 2s 0.5s 1 ease forwards; animation: sectionitem4Papa 2s 0.5s 1 ease forwards; }
+.section-item-4-on .text { opacity: 1; margin-left: 0; }
+.section-item-4-on .tree { -moz-animation: sectionitem4Tree 0.5s 0.5s 1 ease forwards; -o-animation: sectionitem4Tree 0.5s 0.5s 1 ease forwards; -webkit-animation: sectionitem4Tree 0.5s 0.5s 1 ease forwards; animation: sectionitem4Tree 0.5s 0.5s 1 ease forwards; }
+.section-item-4-on .house { height: 59px; }
+
+@keyframes sectionitem4Papa {
+    0% { right: -100%; }
+    100% { right: 50px; }
+}
+
+@keyframes sectionitem4Tree {
+    0% { top: -100%; }
+    100% { top: 10px; }
+}
+
+@-webkit-keyframes sectionitem4Papa {
+    0% { right: -100%; }
+    100% { right: 50px; }
+}
+
+@-webkit-keyframes sectionitem4Tree {
+    0% { top: -100%; }
+    100% { top: 10px; }
+}
+
+#fsvs-pagination { position: fixed; top: 50%; right: 20px; z-index: 100; _position: absolute; }
+#fsvs-pagination li { background-color: rgba(0,0,0,.2); cursor: pointer; width: 8px; height: 8px; margin-bottom: 10px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+#fsvs-pagination .active { background-color: #fff; }
+
+.fsvs { height: 100%; width: 100%; position: fixed; top: 0; left: 0; overflow: hidden; }
+.wrap { -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; -webkit-perspective: 1000; -moz-perspective: 1000; -ms-perspective: 1000; perspective: 1000; position: relative; top: 0; left: 0; height: 100%; width: 100%; }
+.wrap .section-item { height: 100%; width: 100%; overflow: hidden; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; -webkit-perspective: 1000; -moz-perspective: 1000; -ms-perspective: 1000; perspective: 1000; }
+
+.cooperation-wrap { position: absolute; height: 130px; overflow: hidden;z-index:1;width:100%;left:0;top:0; }
+
+.section-item-5 .side-code { padding: 13px 15px 0 0; position: absolute; right: -100%; top: 0; -moz-transition: all ease 1s; -o-transition: all ease 1s; -webkit-transition: all ease 1s; transition: all ease 1s; width:100px;height:110px;}
+.section-item-5 .cooperation-box { position: absolute; left: -100%; top: 35px; -moz-transition: all ease-in-out 0.5s; -o-transition: all ease-in-out 0.5s; -webkit-transition: all ease-in-out 0.5s; transition: all ease-in-out 0.5s; padding-left: 15px;width:160px;height:80px; }
+
+.section-item-5 .cooperation-wrap .icon-code { background: url(/content/m/subject/shengdan2014_12_12/images/code.png) no-repeat 0 0; background-size: 85px; display: inline-block; height: 85px; width: 85px; }
+.section-item-5 .cooperation-box .icon-atzuche { background: url(/content/m/subject/shengdan2014_12_12/images/atzuche.png) no-repeat 0 0; background-size: 151px; display: inline-block; height: 44px; width: 151px; }
+.section-item-5 .atzuche-intro { padding-top: 5px; -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; position:absolute;left:0;top:-50px;width:100%;height:230px;overflow:hidden;z-index:2;opacity:1; }
+.section-item-5 .atzuche-intro p{padding:0 10px;}
+
+.section-item-5-on .atzuche-intro {  top:125px; opacity:1;}
+
+.section-item-5-on .side-code { right: 0; }
+.section-item-5-on .cooperation-box { left: 0; }
+
+.summary { color: #666; position: fixed; left: 0; bottom: 0; width: 100%; z-index: 99999;font-size: 16px;}
+.summary .bar-item { position: relative; }
+.summary .bar-item > a { background: #fafbfa; color: #666; border-top: 1px solid #ddd; display: block; height: 35px; line-height: 35px; width: 100%; font-size: 12px; overflow: hidden; }
+.summary .bar-item:first-child > a { border-right: 1px solid #ddd; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.summary .bar-item:last-child > a { border-left: 1px solid #ddd; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.summary .menu-wrap { display: none; width: 100%; position: absolute; left: 0; bottom: 50px; z-index: 10; }
+.summary .menu-wrap:after { background: #fff; margin-left: -9px; position: absolute; left: 50%; bottom: -9px; content: " "; width: 18px; height: 18px; -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+.summary .menu-list { margin: 0 10px; position: relative; z-index: 1; }
+.summary .menu-list li { border-top: 1px solid #ddd; }
+.summary .menu-list li:first-child { border-top: none; }
+.summary .menu-list li a{font-size:12px;}
+
+.summary .menu-list li:first-child a { -webkit-border-top-right-radius: 10px; border-top-right-radius: 10px; -webkit-border-top-left-radius: 10px; border-top-left-radius: 10px; }
+.summary .menu-list li:last-child a { -webkit-border-bottom-right-radius: 10px; border-bottom-right-radius: 10px; -webkit-border-bottom-left-radius: 10px; border-bottom-left-radius: 10px; }
+.summary .menu-list a { background: #fff; display: block; height: 35px; line-height: 35px; overflow: hidden; }
+
+.top-icon { background: rgba(0,128,129,0.3); -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; height: 24px; width: 24px; margin-left: -12px; position: fixed; left: 50%; bottom: 37px; z-index: 10000; }
+.top-icon:after { margin: -3px 0 0 -5px; position: absolute; left: 50%; top: 50%; content: " "; border-width: 2px 2px 0 0; border-style: solid; border-color: #fff; width: 8px; height: 8px; -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+.top-icon.on { background: rgba(255,255,255,0.5); }
+.top-icon.on:after { border-color: #008081; }
+
+.pop-mod { background: rgba(0,0,0,0.5); height: 100%; width: 100%; position: fixed; left: 0; top: 0; z-index: 100000; }
+.pop-mod .pop-close { background: #ff4040; height: 18px; width: 18px; position: absolute; right: -8px; top: -10px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+.pop-mod .pop-close:before { border-left: 2px solid #fff; content: " "; height: 14px; width: 14px; position: absolute; right: 6px; top: -3px; -moz-transform: rotate(-135deg); -ms-transform: rotate(-135deg); -o-transform: rotate(-135deg); -webkit-transform: rotate(-135deg); transform: rotate(-135deg); }
+.pop-mod .pop-close:after { border-left: 2px solid #fff; content: " "; height: 14px; width: 14px; position: absolute; left: 6px; top: -3px; -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+.pop-mod .pop-finish { background: #fff; height: 240px; width: 270px; margin: -120px 0 0 -135px; position: fixed; left: 50%; top: 50%; }
+.pop-finish .icon-box { margin-top: 15px; }
+.pop-finish .icon-santa { background: url(/content/m/subject/shengdan2014_12_12/images/icon-santa.png) no-repeat 0 0; background-size: 130px; display: inline-block; height: 110px; width: 130px; position: relative; left: -10px; }
+
+.pop-mod .pop-wish { background: #fff; width: 270px; margin-left: -135px; position: fixed; left: 50%; top: 10%; }
+.pop-mod .pop-wish .cont-box { padding: 0 15px; }
+.pop-mod .pop-wish .cont-hd { font-size: 16px; }
+.pop-mod .pop-wish .cont-bd { -ms-word-break: break-all; word-break: break-all; }
+
+
+
+/*Boilerplate*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 359px) {
+    .section-item .text { font-size: 12px; top: 335px;line-height:14px; }
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+
+
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+}
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+}
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+}

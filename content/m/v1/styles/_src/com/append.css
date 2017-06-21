@@ -1,0 +1,18 @@
+﻿.hot_click_box { width: 300px; border: 2px solid #529600; -moz-box-shadow: 0 0 5px #ccc; -webkit-box-shadow: 0 0 5px #ccc; box-shadow: 0 0 5px #ccc; z-index: 19000; position: fixed; background: #fff; left: 0; top: 0; padding: 0; }
+.hot_click_box .title { height: 36px; background: #efefef; position: relative; }
+.hot_click_box .title h3 { font-size: 14px; font-weight: normal; color: #333; text-indent: 1em; line-height: 36px; }
+.hot_click_box .title .hot_click_close { position: absolute; display: block; -moz-transition: all 0.3s ease 0s; -o-transition: all 0.3s ease 0s; -webkit-transition: all 0.3s ease 0s; transition: all 0.3s ease 0s; font-family: 'Microsoft Yahei'; right: 10px; top: 10px; font-size: 12px; color: #666; }
+.hot_click_box .title .hot_click_close:hover { -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+.hot_click_box .con { padding: 10px; }
+.hot_click_box .selform { padding: 5px 0; }
+.hot_click_box .selform label { width: 80px; line-height: 24px; text-align: right; display: inline-block; }
+.hot_click_box .selform .txt { width: 120px; height: 22px; line-height: 22px; border: 1px solid #ccc; }
+.hot_click_box .sendcode { display: inline-block; height: 22px; line-height: 22px; padding: 0 5px; margin: 0 0 0 10px; }
+.hot_click_box .tip { color: #666; }
+.hot_click_box .time { width: 80px; border: 1px solid #ccc; height: 18px; }
+.hot_click_box .huitubtn { font-size: 12px; padding: 3px 20px; background: #f93868;border:none; }
+a pre.hotclick_ud { position: absolute; z-index: 1; border: 1px solid #000; padding: 0; margin: 0; height: 10px; background: rgba(0,0,0,.6); text-align: center; left: -2px; top: -2px; font-size: 8px; line-height: 10px; color: #fff;font-family:Verdana;font-weight:normal; }
+.hot_click_ulpage { }
+.hot_click_bortop { line-height: 24px; margin-top: 10px; padding: 5px 0; border-top: 1px dashed #ccc; }
+.hot_click_ulpage li { float: left; text-align: left; line-height: 20px;margin-right:5px; }
+.hot_click_ulpage li a { color: #f93868; }

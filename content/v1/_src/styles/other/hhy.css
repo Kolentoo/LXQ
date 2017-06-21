@@ -1,0 +1,77 @@
+/* 
+* @Author: lxq
+* @Date:   2016-06-01 11:23:52
+* @Last Modified by:   lxq
+* @Last Modified time: 2016-06-01 17:45:47
+*/
+
+.hhy-body {background: #ececec;}
+.hhy-out-body {background: #fff;}
+.hhy .hhy-bg {background: #fff;padding-bottom: 30px;}
+.hhy .topic-txt {padding-top: 6%;}
+.hhy .hhy-u-icon {background: url(/content/v1/images/other/hhy3.png) no-repeat;width: 159px;height: 29px;display: block;margin:0 20px;}
+.hhy .topic-con {width: 463px;margin:0 auto;}
+.hhy .topic-con .p1 {color:#1bb8ce;font-size: 24px;line-height: 27px;margin-bottom: 16px;}
+.hhy .hhy-bj {background: url(/content/v1/images/other/hhy1.png) no-repeat center center;height: 290px;width: 778px;margin:50px auto 0;position: relative;overflow: hidden;}
+
+.hhy .hhy-decorate {position: absolute;}
+.hhy .hhy-sun {background: url(/content/v1/images/other/hhy2.png) no-repeat;width: 202px;height: 74px;top: 20px;right: 60px;}
+.hhy .hhy-bus {left: 20px;bottom: 20px;-moz-animation: bus 3s linear forwards; -o-animation: bus 3s linear forwards; -webkit-animation: bus 3s linear forwards; animation: bus 3s linear forwards;}
+.hhy .bus-body {background: url(/content/v1/images/other/hhy5.png) no-repeat;width: 184px;height: 57px;}
+.hhy .bus-wheel .bw {background: url(/content/v1/images/other/hhy6.png) no-repeat;width: 24px;height: 24px;bottom: -8px;-moz-animation: bw 3s linear; -o-animation: bw 3s linear; -webkit-animation: bw 3s linear; animation: bw 3s linear;}
+.hhy .bus-wheel .bw1 {left: 16px;}
+.hhy .bus-wheel .bw2 {left: 144px;}
+.hhy .load-con {margin-top: 30px;text-align: center;}
+.hhy .load-con em{font-size: 25px;color:#1bb8ce;font-weight: bold;font-style:normal;}
+.hhy .load-con .load-icon {background: url(/content/v1/images/other/hhy7.gif) no-repeat;width: 38px;height: 8px;display: inline-block;margin-left: 3px;*position: relative;*top: -5px;_top: 5px;}
+.hhy .hhy-bottom {background: #ececec;width: 100%;height: 25%;}
+.hhy .hhy-bottom dl{width: 500px;margin:0 auto;padding:30px 0 40px 0;}
+.hhy .hhy-bottom dt{color:#e5004f;font-size: 18px;margin-bottom: 8px;}
+.hhy .hhy-bottom dd{color:#333;font-size: 16px;margin-bottom: 3px;}
+
+
+.hhy-out {width: 778px;margin:0 auto;padding-top: 6%;}
+.hhy-out h1{font-size: 36px;color:#666;font-weight: bold;margin-bottom: 35px;_margin-top: 80px;}
+.hhy-out-bj {background: url(/content/v1/images/other/hhy4.png) no-repeat center center;height: 290px;width: 778px;}
+.hhy-out .h-btn {width: 270px;line-height: 66px;font-size: 36px;text-align: center;border-radius: 10px;margin:0 10px;_display:inline;}
+.hhy-out .hhy-btn {width: 588px;margin:50px auto 0;}
+.hhy-out .h-btn a{border-radius: 7px;display: inline-block;width: 100%;}
+.hhy-out .h-btn1 {border:2px solid #2fa6e5;}
+.hhy-out .h-btn1 a{color:#2fa6e5;} 
+.hhy-out .h-btn1 a:hover {background: #2fa6e5;color:#fff;}
+.hhy-out .h-btn2 {border:2px solid #e5004f;} 
+.hhy-out .h-btn2 a{color:#e5004f;}
+.hhy-out .h-btn2 a:hover {background: #e5004f;color:#fff;}
+
+
+/*wheel*/
+@-webkit-keyframes bw {
+    0% { -moz-transform: rotate(0deg);-ms-transform: rotate(0deg);-o-transform: rotate(0deg);-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    100% {-moz-transform: rotate(360deg);-ms-transform: rotate(360deg);-o-transform: rotate(360deg);-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+
+@-moz-keyframes bw {
+    0% { -moz-transform: rotate(0deg);-ms-transform: rotate(0deg);-o-transform: rotate(0deg);-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    100% {-moz-transform: rotate(360deg);-ms-transform: rotate(360deg);-o-transform: rotate(360deg);-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+
+@keyframes bw {
+    0% { -moz-transform: rotate(0deg);-ms-transform: rotate(0deg);-o-transform: rotate(0deg);-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    100% {-moz-transform: rotate(360deg);-ms-transform: rotate(360deg);-o-transform: rotate(360deg);-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+
+/*bus*/
+@-webkit-keyframes bus {
+    0% {margin-left: 0;}
+    100% {margin-left: 550px;}
+}
+
+@-moz-keyframes bus {
+    0% {margin-left: 0;}
+    100% {margin-left: 550px;}
+}
+
+@keyframes bus {
+    0% {margin-left: 0;}
+    100% {margin-left: 550px;}
+}

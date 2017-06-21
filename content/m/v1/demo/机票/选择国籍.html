@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" manifest="http://m.uzai.com/manifest/global.appcache">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>选择国籍</title>
+    <link href="http://r.uzaicdn.com/content/m/v1/styles/_src/core.css" rel="stylesheet" />
+    <link href="http://r.uzaicdn.com/content/m/v1/styles/tejia/jp.css" rel="stylesheet" />
+    <script src="http://r.uzaicdn.com/content/m/v1/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['http://r.uzaicdn.com/content/m/v1/scripts/core'], function (core) {
+            $('.orders-jp').find('dl').on('click', function () {
+                var o = $(this);
+                var os = o.siblings('dl');
+                os.removeClass('on');
+                if (o.hasClass('on')) {
+                    o.removeClass('on');
+                } else {
+                    o.addClass('on');
+                }
+            })
+        });
+    </script>
+    <style>
+        .orders-jp { padding-top: 40px; }
+        .orders-jp dl { border-bottom: 1px solid #ccc; line-height: 3; }
+        .orders-jp dt { background: #fff; padding-left: 10px;font-size:15px; }
+
+        .orders-jp dl dt .fr { position: relative; border: 1px solid #ccc; border-left: 0; border-top: 0; transform: rotate(45deg); width: 8px; height: 8px; margin-right: 10px; margin-top: 19px; }
+        .orders-jp dl dd { display: none; }
+        .orders-jp dl dd a { padding-left: 10px; border-bottom: 1px solid #ccc; background-color: #e5e5e5;font-size:15px;color:#333; }
+        .orders-jp dl dd a:last-child { border-bottom: 0; }
+        .orders-jp dl.on dd { display: block; }
+
+    </style>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m"><div class="tit">选择国籍</div></div>
+            <div class="d-r"></div>
+        </header>
+        <section class="orders-jp">
+
+            <div class="country">
+
+            <dl class="on">
+                <dt class="clearfix">
+                    <span class="fl">A</span>
+                    <span class="fr"></span>
+                </dt>
+                <dd>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                </dd>
+            </dl>
+
+             <dl>
+                <dt class="clearfix">
+                    <span class="fl">B</span>
+                    <span class="fr"></span>
+                </dt>
+                <dd>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                </dd>
+            </dl>
+
+             <dl>
+                <dt class="clearfix">
+                    <span class="fl">C</span>
+                    <span class="fr"></span>
+                </dt>
+                <dd>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                </dd>
+            </dl>
+
+
+             <dl>
+                <dt class="clearfix">
+                    <span class="fl">D</span>
+                    <span class="fr"></span>
+                </dt>
+                <dd>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                    <a href="#" class="block">阿尔及利亚</a>
+                </dd>
+            </dl>
+
+            </div>
+
+
+
+        </section>
+    </div>
+</body>
+</html>

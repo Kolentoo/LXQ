@@ -1,0 +1,32 @@
+﻿.my {margin-top:40px;}
+.my {padding-bottom:40px;}
+.my .main { background-image: url(/content/m/v1/images/my/m1.png); min-height: 175px; position: relative;text-align:center;margin-bottom:10px;border-bottom: 1px solid #c8c8c8; }
+
+.my .main-box{display:block;height:105px;position:relative;}
+.my .main-box::after{position:absolute;right:20px;top:50%;margin-top:-10px;height:20px;width:20px;border-width:0 1px 1px 0;border-style:solid;border-color:#999;transform:rotate(-45deg);content:' ';}
+.my .main-box .welcome{padding:10px 0 10px;}
+.my .main-box .offline{border-radius:20px;line-height:35px;padding:0 15px;background-color:rgba(255,255,255,.5);width:35%;margin:0 auto;box-shadow:0 2px 1px #58c31d;}
+
+.my .entry {  position: absolute; bottom: 0; min-height: 50px;width:100%; padding:10px 0;background-color:rgba(255,255,255,.5);}
+.my .entry li { -ms-flex: 1; flex: 1; min-width: 33.3333%; min-height: 50px;display:block; }
+.my .entry li a { display: block; height: 50px; text-align: center;color:#666; }
+.my .entry li a p{font-size:18px;padding-top:10px;position:relative;}
+.my .entry li a p span{display:block;width:15px;height:15px;line-height:15px;border-radius:50%;background:#f60;color:#fff;text-align:center;font-size:10px;position:absolute;left:50%;top:50%;margin-top:-10px;margin-left:4px;}
+.my .entry li:nth-child(2) a{ border-width: 0 1px 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border-color: #999; border-style: solid; }
+
+.my .detail ul{margin-bottom:10px;background:#fff;border-top:1px solid #c8c88c;}
+.my .detail li{border-bottom:1px solid #c8c8c8;}
+.my .detail li a{display:block;line-height:50px;padding:0 10px;}
+.my .detail li a span:nth-child(1){margin-right:10px;display:inline-block;width:15px;font-size:18px;vertical-align:middle;}
+.my .detail li a span:nth-child(2){position:relative;}
+.my .detail li a span:nth-child(2) i{position:absolute;left:50%;top:50%;border-radius:50%;background:#f60;width:10px;height:10px;margin-top:-10px;margin-left:30px;}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html ng-app="mhome">
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+
+    <meta name="keywords" content="私人定制旅游,定制旅游,高端旅游,定制旅行">
+    <meta name="description" content="悠哉旅游网提供高端私人定制旅游，专业定制旅游顾问按您的需求，为您1对1定制旅游方案，休闲游/度假游/购物游定制旅游高端旅行者的首要选择，享受专属你的私人旅行。
+">
+    <script src="http://r03.uzaicdn.com/content/hybrid/scripts/common/font.js"></script>
+    <link href="http://r03.uzaicdn.com/content/hybrid/styles/common/base.css" rel="stylesheet">
+    <link href="http://r03.uzaicdn.com/content/hybrid/styles/member/udingzhi.css" rel="stylesheet">
+    <title>U圈定制</title>
+</head>
+
+<body ng-controller="mhomeController">
+    <div class="content" load-more>
+        <!-- 头部 -->
+        <header class="bg-transparent white-topbar">
+            <a target="_self" href="index.html" class="fl top-back"><i class="left-ico black-ico"></i></a>
+            <a target="_self" class="fr"></a>
+            <div class="title_img">U圈定制</div>
+        </header>
+        <!-- 内容 -->
+        <div class="main" id="wrapper">
+            <div class="wrapper">
+                <h1 class="u-custom-header">U圈定制 结伴出游</h1>
+                <h2 class="u-custom-product-title"></h2>
+                <div class="main_list1" ng-repeat="g in grouplist" ng-click="uproduct(g.Productype,g.Fid)" on-finish-render>
+                    <a><img ng-src="{{g.FilePath}}" class="img"></a>
+                    <p class="title">{{g.Title}}</p>
+                    <div class="main_list1_f">
+                        <span class="right"><span class="dollar">¥</span> {{g.Price}} <span class="rise">起</span></span>
+                        <span class="add">{{g.City}}出发</span>
+                    </div>
+                </div>
+                <span class="listBottom"></span>
+            </div>
+        </div>
+        <footer class="white-footer bg-white">
+            <a class="link" ng-click="dingzhijump(1)">我要定制</a>
+        </footer>
+    </div>
+    <script src="http://r03.uzaicdn.com/content/libs/jquery-2.1.1.min.js"></script>
+    <script src="http://r03.uzaicdn.com/content/libs/plugin/iscroll/iscroll.js"></script>
+    <script src="http://r03.uzaicdn.com/content/hybrid/scripts/common/api.js"></script>
+    <script src="http://r03.uzaicdn.com/content/hybrid/scripts/common/app-bridge.js"></script>
+    <script src="http://r03.uzaicdn.com/content/libs/frame/angular/angular.min.js"></script>
+    <script src="http://r03.uzaicdn.com/content/hybrid/scripts/member/udingzhi.js"></script>
+</body>
+
+</html>

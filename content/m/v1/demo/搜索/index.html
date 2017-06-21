@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" manifest="http://m.uzai.com/manifest/global.appcache">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>悠哉旅行网触屏版</title>
+    <meta name="keywords" content="x" />
+    <meta name="description" content="x" />
+    <link href="/content/m/v1/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v1/styles/_src/search/search.css" rel="stylesheet" />
+    <script src="/content/m/v1/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script> 
+        seajs.use(['/content/m/v1/scripts/core', '/content/m/v1/scripts/search/search'], function (core, search) {
+            search.init();
+        });
+    </script>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">搜索</div>
+            </div>
+            <div class="d-r"></div>
+        </header>
+
+        <section class="search f14">
+            <div class="fn-searbar">
+                <form method="get" action="/list" id="j_searchForm">
+                    <input type="search" name="keyword" id="j_searchBox" autocomplete="off" class="ac_input" placeholder="我想去的目的地、景点"  >
+                    <span class="serach-btn" id="j_searchBoxBtn"><span class="serach-icon fn-bs"></span></span>
+                </form>
+            </div>
+
+            <div class="mod mb10">
+                <div class="hd"><h2 class="f18"><span class="pl10 tit">搜索历史</span><span class="fr f15 f666 clear" id="j_clearHistory">清除</span></h2></div>
+                <div class="bd">
+                    <ul class="fn-flex">
+                        <li><a href="#">三亚</a></li>
+                        <li><a href="#">九寨沟</a></li>
+                        <li><a href="#">马尔代夫</a></li>
+                    </ul>
+                     <ul class="fn-flex">
+                       <li><a href="#">三亚</a></li>
+                        <li><a href="#">九寨沟</a></li>
+                        <li><a href="#">马尔代夫</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+
+            <div class="mod mb10">
+                <div class="hd"><h2 class="f18"><span class="pl10 tit">热门搜索</span></h2></div>
+                <div class="bd">
+                    <ul class="fn-flex">
+                        <li><a href="#">三亚</a></li>
+                        <li><a href="#">九寨沟</a></li>
+                        <li><a href="#">马尔代夫</a></li>
+                    </ul>
+                     <ul class="fn-flex">
+                       <li><a href="#">三亚</a></li>
+                        <li><a href="#">九寨沟</a></li>
+                        <li><a href="#">马尔代夫</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+
+           
+
+
+    </div>
+
+
+
+</body>
+</html>

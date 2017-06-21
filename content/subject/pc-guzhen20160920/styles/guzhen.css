@@ -1,0 +1,157 @@
+/*
+* @Author: lichen
+* @Date:   2016-09-20 09:46:37
+* @Last Modified by:   lichen
+* @Last Modified time: 2016-09-29 10:14:44
+*/
+.subject-main{position: relative;}
+.banner{background: #fcf2e9 url('/content/subject/pc-guzhen20160920/images/gz01.png') no-repeat center center;height: 879px;width: 100%;}
+
+.con{background: #fcf2e9;width: 100%;overflow: hidden;}
+.con-main-a{background: url('/content/subject/pc-guzhen20160920/images/gz02.png') no-repeat center center;height: 565px;overflow: hidden;position: relative;}
+.con-main-b{margin-top: -37px;}
+.con-main-b{padding-bottom: 45px;}
+.dt-1{background:url('/content/subject/pc-guzhen20160920/images/gz18.png') no-repeat center center;height: 171px;width: 410px;margin: 0 auto;}
+.dd-1{background: url('/content/subject/pc-guzhen20160920/images/gz23.png') no-repeat center center ;height: 1853px;width: 1227px;margin: 0 auto;overflow: hidden;padding-left: 134px;box-sizing:border-box;*padding-left: 240px;}
+
+.model-a{margin-top: 170px;}
+.model-ax{margin-top: 308px;}
+.dd-3 .model-a,.dd-3 .model-d{margin-left: 140px;}
+.model-a-r{margin-left: 33px;}
+.model-a-r-t p{font-size: 16px;color: #4c0605;}
+.dd-1 .model-a-r .model-a-r-t .p1,.dd-1 .model-a-r .model-a-r-t .p3{font-weight: bolder;}
+.dd-1 .model-a-r .model-a-r-t .p2,.dd-1 .model-a-r .model-a-r-t .p4{margin-top: 20px;}
+.dd-1 .model-a-r .model-a-r-t .p3{margin-top: 55px;}
+.dd-1 .model-a-r .model-a-r-b{background: url('/content/subject/pc-guzhen20160920/images/gz09.png') no-repeat center center;height: 162px;width: 585px;margin-top: 19px;}
+.model-c{width: 932px;margin-top: 34px;}
+.model-c .model-c-l,.model-c .model-c-r{width: 4px;height: 38px;background: #4c0605;}
+.model-c .model-c-c{width: 920px;height: 38px;background: #4c0605;margin-left: 2px;margin-right: 2px;text-align: center;line-height: 38px;color: #fff;font-size: 16px;}
+.xianlu{background: url('/content/subject/pc-guzhen20160920/images/gz06.png') no-repeat left center;height: 193px;margin-top: 34px;}
+.model-d{width: 935px;margin-top: 14px;}
+.model-e{background: #d13669;width: 217px;padding:8px 8px 12px 8px;box-sizing:border-box;margin-left: 22px;*width: 200px;}
+.model-e1{margin-left: 0;}
+.model-e p{font-size: 18px;color: #fff;margin-top: 8px;width: 175px;}
+.model-e .i1{font-size: 14px;color: #fff;display: block;margin-top: 20px;}
+.model-e .i1 span{font-size: 28px;color: #fff;font-weight: bolder;}
+.model-e .i2{display: block;background: #feebc5;color: #d13669;font-size: 14px;width: 67px;height: 27px;line-height: 27px;text-align: center;border-radius: 5px;margin-top: 24px;}
+.model-e .i2:hover{background: #fff;}
+.dt-2{background:url('/content/subject/pc-guzhen20160920/images/gz12.png') no-repeat center center;height: 158px;width: 526px;margin: 0 auto;margin-top: 69px;}
+.dd-2{background: url('/content/subject/pc-guzhen20160920/images/gz15.png') no-repeat center center;height: 1853px;width: 1227px;margin: 0 auto;overflow: hidden;padding-left: 134px;box-sizing:  border-box;margin-top: -15px;*padding-left: 260px;}
+.dd-2 .model-aa{margin-top: 60px;}
+.dd-2 .model-a-r .model-a-r-t .p1,.dd-2 .model-a-r .model-a-r-t .p3{font-weight: bolder;}
+.dd-2 .model-a-r .model-a-r-t .p2,.dd-2 .model-a-r .model-a-r-t .p4{margin-top: 20px;}
+.dd-2 .model-a-r .model-a-r-t .p3{margin-top: 33px;}
+.dd-2 .model-a-r .model-a-r-b{background: url('/content/subject/pc-guzhen20160920/images/gz08.png') no-repeat center center;height: 162px;width: 585px;margin-top: 39px;}
+.model-c{width: 932px;margin-top: 34px;}
+.xianlu-2{width: 912px;height: 218px;border:2px solid #863b45;background: #edceaf;margin-top: 34px;margin-left: 8px;}
+.xianlu-2 ul{margin-left: 38px;margin-top: 22px;}
+.xianlu-2 li{margin-left: 2px;}
+.xianlu-2 .li1{margin-left: 0;}
+.dt-3{background:url('/content/subject/pc-guzhen20160920/images/gz14.png') no-repeat center center;height: 157px;width: 467px;margin: 0 auto;margin-top: 22px;}
+.dd-3{background: url('/content/subject/pc-guzhen20160920/images/gz16.png') no-repeat center center;height: 1673px;width: 1227px;margin: 0 auto;overflow: hidden;
+box-sizing:border-box;margin-top: -7px;}
+.dd-3 .model-a-r .model-a-r-t .p1,.dd-3 .model-a-r .model-a-r-t .p3,.dd-3 .model-a-r .model-a-r-t .p6{font-weight: bolder;}
+.dd-3 .model-a-r .model-a-r-t p{margin-top: 10px;}
+.dd-3 .model-a-r .model-a-r-t .p1{margin-top: 0;}
+.dd-3 .model-a-r .model-a-r-b{background: url('/content/subject/pc-guzhen20160920/images/gz10.png') no-repeat center center;height: 162px;width: 585px;margin-top: 39px;}
+.dd-3 .model-d{margin-top: 43px;}
+.con-main-c{background: url('/content/subject/pc-guzhen20160920/images/gz11.jpg') no-repeat center center;width: 100%;height: 937px;}
+.con-main-c .tit{background: url('/content/subject/pc-guzhen20160920/images/gz13.png') no-repeat center center;height: 59px;}
+.con-main-c .main ul{width: 1104px;margin: 0 auto;margin-top: 70px;}
+.con-main-c .main .li1{background: url('/content/subject/pc-guzhen20160920/images/gz12.jpg') no-repeat center center;height: 440px;width: 228px;box-shadow: 0 0 10px rgba(205, 198, 192, 1);
+-webkit-box-shadow: 0 0 10px rgba(205, 198, 192, 1);-moz-box-shadow:0 0 10px rgba(205, 198, 192, 1); }
+.con-main-c .main .li2{background: url('/content/subject/pc-guzhen20160920/images/gz13.jpg') no-repeat center center;height: 440px;width: 228px;margin-left: 63px;
+box-shadow: 0 0 10px rgba(205, 198, 192, 1);-webkit-box-shadow: 0 0 10px rgba(205, 198, 192, 1);-moz-box-shadow:0 0 10px rgba(205, 198, 192, 1);}
+.con-main-c .main .li3{background: url('/content/subject/pc-guzhen20160920/images/gz14.jpg') no-repeat center center;height: 440px;width: 228px;margin-left: 63px;
+box-shadow: 0 0 10px rgba(205, 198, 192, 1);-webkit-box-shadow: 0 0 10px rgba(205, 198, 192, 1);-moz-box-shadow:0 0 10px rgba(205, 198, 192, 1);}
+.con-main-c .main .li4{background: url('/content/subject/pc-guzhen20160920/images/gz15.jpg') no-repeat center center;height: 440px;width: 228px;margin-left: 63px;
+box-shadow: 0 0 10px rgba(205, 198, 192, 1);-webkit-box-shadow: 0 0 10px rgba(205, 198, 192, 1);-moz-box-shadow:0 0 10px rgba(205, 198, 192, 1);}
+.con-main-c .main .li-main1{margin-left: 52px;}
+.con-main-c .main .li-main2{margin-left: 20px;}
+.con-main-c .main .li-main3{margin-left: 20px;}
+.con-main-c .main .li-main4{margin-left: 52px;}
+.con-main-c .main .li-tit{color: #08070f;font-size: 24px;}
+.con-main-c .main .li-mains{color: #08070f;font-size: 16px;margin-right: 20px;}
+.con-main-c .main .li-mains i{margin-right: 8px;display: inline-block;}
+
+.j_nav{position: absolute;bottom:300px;left: 50%;margin-left: 538px;}
+.j_nav .j_nav-box{margin-left: -17px;}
+.j_nav ul{background: #893c3e;width: 134px;overflow: hidden;}
+.j_nav li{width: 110px;height: 57px;border-bottom: 1px #fff dashed;margin: 0 auto;cursor:pointer;}
+.j_nav li p{height: 40px;line-height: 40px;text-align: center;font-size: 20px;color: #fff;margin-top: 10px;}
+.j_nav .back{border-bottom: medium none;text-align: center;line-height: 56px;line-height: 56px;font-size: 20px;color: #fff;}
+.nav-on {position: fixed;bottom:300px;}
+.j_nav .on p{background: #f9efe5;color: #893c3e;}
+
+.wenzi-1{width: 170px;margin: 0 auto;margin-top: 120px;}
+.wenzi-1 p{font-size: 20px;color: #4c5a5c;-webkit-writing-mode: vertical-rl; -ms-writing-mode: vertical-rl; writing-mode: vertical-rl;-webkit-writing-mode: tb-rl; -ms-writing-mode: tb-rl; writing-mode: tb-rl;text-align: center;height: 232px;}
+.wenzi-1 i{border-left:1px dashed #a89f9d;display: inline-block;width: 48px;line-height: 48px;height: 222px;}
+.wenzi-2{margin-top: 125px;*position: relative;}
+.wenzi-2 dt{padding-left: 18px;*position: absolute;*left: -20px;*top:10px;}
+.wenzi-2 dd{-webkit-writing-mode: vertical-lr; -ms-writing-mode: vertical-lr; writing-mode: vertical-lr; -webkit-writing-mode: tb-lr; -ms-writing-mode: tb-lr; writing-mode: tb-lr;font-size: 16px;color: #4c0605;margin-top: 10px;height: 192px;}
+.wenzi-2 dd i{display: inline-block;margin-left: 20px;height: 222px;}
+.wenzi-3{width: 199px;height: 369px;background: url('/content/subject/pc-guzhen20160920/images/gz16.jpg') no-repeat center center;-webkit-writing-mode: vertical-rl;-ms-writing-mode: vertical-rl;writing-mode: vertical-rl;-webkit-writing-mode: tb-rl; -ms-writing-mode: tb-rl; writing-mode: tb-rl;color: #e34414;padding-top: 25px;box-sizing:border-box; padding-right: 15px;margin-left: 720px;margin-top: 106px;*margin-top: 92px;}
+.wenzi-3 dt{font-size: 24px;font-weight: bolder;}
+.wenzi-3 dd{font-size: 16px;margin-right: 12px;}
+.wenzi-3 dd i{display: inline-block;margin-right: 15px;}
+.wenzi-3 dd .i1{display: inline-block;margin-right: 0;}
+.wenzi-4{margin-top: 130px;}
+.wenzi-4 dt{text-align: center;}
+.wenzi-4 dd{width: 730px;border-top: 1px #c7c5c6 solid;text-align: center;color: #473e43;font-size: 16px;margin: 0 auto;margin-top: 12px;}
+
+
+/* #test i{opacity: 0;} */
+#test span { -webkit-animation: wenzi .02s backwards;-moz-animation: wenzi .02s backwards; -ms-animation: wenzi .02s backwards;-o-animation: wenzi .02s backwards; animation: wenzi .02s backwards;opacity: 0;}
+.wenzi-3 span{-webkit-animation: wenzi .02s backwards; -moz-animation: wenzi .02s backwards;-ms-animation: wenzi .02s backwards;-o-animation: wenzi .02s backwards; animation: wenzi .02s backwards;opacity: 0;}
+.wenzi-4 span{-webkit-animation: wenzi .02s backwards; -moz-animation: wenzi .02s backwards;-ms-animation: wenzi .02s backwards;-o-animation: wenzi .02s backwards; animation: wenzi .02s backwards;opacity: 0;}
+#test .on {opacity: 1;}
+.wenzi-3 .on{opacity: 1;}
+.wenzi-4 .on{opacity: 1;}
+
+/* 定义动画 */
+@keyframes wenzi{
+ from {     
+     opacity: 0;
+ }
+ to {
+    opacity: 1;
+ }
+}
+
+@-moz-keyframes wenzi{
+ from {
+    opacity: 0;
+ }
+ to {
+    opacity: 1;
+ }
+}
+
+@-webkit-keyframes wenzi{
+ from {
+    opacity: 0;
+ }
+ to {
+    opacity: 1;
+ }
+}
+
+@-ms-keyframes wenzi{
+ from {
+   opacity: 0;
+ }
+ to {
+   opacity: 1;
+ }
+}
+
+@-o-keyframes wenzi1{
+ from {
+   opacity: 0;
+ }
+ to {
+   opacity: 1;
+ }
+}
+
+

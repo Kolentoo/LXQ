@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>悠哉旅行网触屏版</title>
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/order/order.css" rel="stylesheet" />
+    <script src="/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/_src/core', '/content/m/v2/scripts/youlun/youlun.js'], function (core, youlun) {
+            youlun.init();
+        });
+    </script>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m">
+                <div class="tit">选择舱房</div>
+            </div>
+            <div class="d-r"></div>
+        </header>
+        <section class="yl-cabin" id="j_ylCabin">
+            <dl class="cabin-info p10">
+                <dt class="cabin-hd f17">特价内舱双人房Q</dt>
+                <dd class="cabin-bd f999">
+                    <p>16㎡,可住<span id="j_peopleMax">4</span>人，2、3、6、7、8层</p>
+                    <p>儿童标准   年龄2-12周岁（不含）</p>
+                </dd>
+            </dl>
+            <table class="info-form bg-white bdt tc g10" >
+                <tr>
+                    <td>
+                        <span class="f999">第1/2人价</span><br><span class="price orange item-adult">￥2299</span>
+                    </td>
+                    <td>
+                        <span class="f999">第3/4人成人价</span><br><span class="price orange item-adult-ext">￥2299</span>
+                    </td>
+                    <td>
+                        <span class="f999">第3/4人儿童价</span><br><span class="f999 item-child">--</span>
+                    </td>
+                </tr>
+            </table>
+            <menu class="info-listing cabin-info-listing bg-white bdt">
+                <li class="clearfix">
+                    <div class="item-side fr">
+                        <div class="fn-math">
+                            <span class="btn-minus"></span>
+                            <input type="text" class="num-box tc vm cont-bar f14 item-adult-num" value="0" maxlength="2" readonly>
+                            <span class="btn-plus"></span>
+                        </div>
+                    </div>
+                    <div class="item-main f14">成人数</div>
+                </li>
+                <li class="clearfix">
+                    <div class="item-side fr">
+                        <div class="fn-math">
+                            <span class="btn-minus"></span>
+                            <input type="text" class="num-box tc vm cont-bar f14 item-child-num" value="0" maxlength="2" readonly>
+                            <span class="btn-plus"></span>
+                        </div>
+                    </div>
+                    <div class="item-main f14">儿童数</div>
+                </li>
+                <li class="clearfix">
+                    <div class="item-side fr">
+                        <div class="fn-math">
+                            <span class="btn-minus"></span>
+                            <input type="text" class="num-box tc vm cont-bar f14 item-room-num" value="0" maxlength="2" readonly>
+                            <span class="btn-plus"></span>
+                        </div>
+                    </div>
+                    <div class="item-main f14">房间数</div>
+                </li>
+            </menu>
+            <div class="btn-bar tc"><input type="button" class="btn-confirm bg-f60 white f17 yahei g8" value="确定"></div>
+        </section>
+    </div>
+</body>
+</html>

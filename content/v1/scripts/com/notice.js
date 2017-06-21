@@ -1,0 +1,4 @@
+/*! uzai - v0.1.11 - 2017 */
+
+!function(){var a=function(){var a=((new Date).getFullYear(),(new Date).getMonth()+1,(new Date).getDate(),"uzwNotice0228");if(!_uzw.cookie.get(a)){var b="亲爱的用户，众信旅游悠哉网将在2017年2月28日1:00至凌晨5:30 ，进行系统升级。升级期间给您带来不便我们深表歉意！",c="<div id='g_toptip' class='g_toptip'><div class='tip-box w'><a class='close' href='javascript:void(0);'>&times;</a><p class='tip-main'>"+b+"</p></div></div>",d=$("#j_newHeader").eq(0);d.after(c),$("#g_toptip .close").bind("click",function(){$("#g_toptip").hide(),_uzw.cookie.set(a,"1",7)})}};a()}();
+//# sourceMappingURL=/sourcemaps/content/v1/scripts/com/notice.js.map

@@ -1,0 +1,114 @@
+/* CSS Document */
+div{ text-align:left;}
+.path_dh {  width:990px; height:34px; background:#fff url(/content/1/image/order/path_2_dh.gif); margin-bottom:10px;}
+.path_dh a { font-weight:bold; line-height:34px; color:#666;text-decoration:none;}
+.path_dh li { float:left;}
+.width_dh { width:171px; text-align:center; height:34px;}
+.now_dh { background:url(/content/1/image/order/path_5_dh.gif);}
+.now_dh a { font-size:14px; color:#1E6E93;}
+.colororg_sll{color:#FF3300;}
+.marginbottom10_sll{margin-bottom:10px;}
+.padleft5_sll{padding-left:17px;}
+.padbot15{padding-bottom:15px;}
+table{border-collapse:collapse;}
+.colorhui{color:#666666;}
+#wsyh_sll{border:3px solid #ddf2c3; width:944px; margin:0 auto; background:#ffffff; padding:20px; font-family:"宋体"; margin-bottom:17px;}
+#wsyh_sll a:hover{color:#FF6600;}
+.wxts_sll{background:#fefff0; border:1px solid #f8dad1; padding:20px; margin-bottom:15px;}
+.wxtsleft_sll{float:left; width:80px; background:url(/content/1/image/order/qyfk_03.jpg) no-repeat left center; height:22px; line-height:22px; font-size:14px; font-weight:bold; color:#ff3300; padding-left:30px;}
+.wxtsright_sll{float:left; width:700px; font-size:12px; color:#996633;}
+.wxtsright_sll ul li{line-height:22px;}
+.zffstitle_sll{background:url(/content/1/image/order/qyfk_07.jpg) no-repeat left center; padding-left:20px; font-size:14px; font-weight:bold; color:#333333;}
+.zffsmain_sll{border:1px solid #d0eeff; background:#d0eeff; padding-top:5px;}
+.zffsmaintitle_sll{background:#d0eeff;  height:29px;}
+.titleft_sll{float:left; width:600px; padding-left:5px; height:29px;}
+.titright_sll{float:right; width:120px; background:url(/content/1/image/order/qyfk_17.jpg) no-repeat right center; margin-right:40px; margin-top:2px;}
+.titright_sll a{color:#996633;}
+.zffsmaintitle_sll ul li{float:left; line-height:29px; }
+.zffsmaintitle_sll ul li a{ background:url(/content/1/image/order/qyfk_14.jpg) repeat-x left top;  color:#666666;height:29px; display:block; line-height:29px; float:left;padding-left:15px; padding-right:15px; font-weight:bold; margin-right:5px; font-family:"宋体";}
+.zffsmaintitle_sll ul li.nowa_sll a{background:url(/content/1/image/order/qyfk_11.jpg) repeat-x left top; height:29px; line-height:29px; padding-left:15px; padding-right:15px; color:#1e6e93; font-weight:bold; margin-right:5px;}
+.zfffcontent_sll{padding:10px 20px; background:#ffffff;}
+.colorhe_sll{font-size:14px; color:#996633; padding:5px 0 10px 0; border-bottom:3px dashed #e8f3f9; margin-bottom:10px;}
+.zftable_sll table td{color:#666666; padding-top:5px; padding-right:3px; text-align:center;}
+.zftable_sll table td img{border:1px solid #cdcdcd;}
+.zftable_sll{padding-bottom:20px; border-bottom:3px dashed #e8f3f9; margin-bottom:10px;}
+.zfbut_sll{padding:20px 30px; border-bottom:3px dashed #e8f3f9; margin-bottom:10px;}
+.colorbold_sll{font-size:14px; color:#666666; font-weight:bold; }
+.inputstyle_sll{height:30px; font-weight:bold; font-size:24px; color:#cc0000; font-family:Arial, Helvetica, sans-serif; border:1px solid #c3c2c2; width:140px;}
+.colorhe2_sll{font-size:12px; color:#996633;}
+.zfbut_sll table td{padding:5px;}
+.colorblue_sll{color:#22a2e7; text-decoration:underline;}
+.font14_sll{font-size:14px;}
+.zfxx_sll{padding:30px 0 10px 0;}
+.zfxxtitle_sll{background:url(/content/1/image/order/qyfk_07.jpg) no-repeat left center; padding-left:20px; font-weight:bold; color:#ff3300; font-size:14px; margin-bottom:15px;}
+.zfxx_sll ul li{background:url(/content/1/image/order/qyfk_92.jpg) no-repeat left center; line-height:25px; padding-left:20px; margin-left:20px; color:#666666; font-size:14px;}
+.zfxxbot_sll{padding-top:20px; text-align:right; padding-right:30px;}
+.kfphont_sll{background:url(/content/1/image/order/qyfk_96.jpg) no-repeat left center; padding-top:5px; padding-bottom:5px; padding-left:25px; font-size:14px; font-weight:bold; color:#666666;}
+.colororg2_sll{font-size:18px; font-weight:bold; font-family:Arial, Helvetica, sans-serif; color:#FF6600;}
+
+.inp1{background:#ffffff; border:1px solid #9d9d9d; height:20px; line-height:20px; padding-left:3px;}
+.selectstyle{border:1px solid #9d9d9d; width:85px; height:24px; line-height:22px; }
+.fpinput{padding-bottom:10px; font-size:12px; font-weight:lighter;}
+.fp{padding-bottom:15px;}
+.fpcont,.psfs{padding:10px 15px;}
+.borderbot{padding-bottom:10px; border-bottom:1px dashed #cccccc;}
+.fpcont table td,.psfs table td{padding:5px;}
+.borderbot2{padding-top:10px;}
+.texarea{border:1px solid #9d9d9d; background:#fff; padding:5px; width:500px; height:50px;}
+
+/*----------------------8.3增加代金卡页面---------------------*/
+.deal_title{color:#666666; font-size:14px; font-weight:bold; background:url(/content/1/image/order/blue.png) left no-repeat; padding-left:18px;}
+.paytable_1{width:904px; overflow:hidden; height:auto; border:1px solid #F8DAD1; margin:20px auto; padding-bottom:15px;}
+   .pay_title{width:894px; height:28px; background:url(/content/1/image/order/title_back.jpg) repeat-x; padding:12px 5px 0 5px;}
+      .sp1{color:#014A1C; font-size:14px; font-weight:bold; background:url(/content/1/image/order/title_01.jpg) left no-repeat; padding-left:24px;}
+	  .sp2{color:#C88802; cursor:pointer; font-size:14px; font-weight:bold; background:url(/content/1/image/order/increase.jpg) left no-repeat; padding-left:28px; padding-top:5px;  margin-right:20px; width:75px; height:21px; display:block; float:right; margin-top:0!important; margin-top:-15px;}
+	  .table1{border:1px #F7D8D3 solid; width:870px; margin:10px auto;}
+	  .table1 td{border:1px #F7D8D3 solid; text-align:center;}
+	  .cnumber{border:1px #666 solid; width:230px; height:19px;}
+	  .bigcode{font-weight:bold; color:#D3581D; margin-left:-60px;}
+	  .psd{width:30px;}
+	  .zfbutton{width:60px; height:19px; border:1px #666 solid;}
+	  .zfbutton0{width:63px; height:28px; border:0; background:url(/content/1/image/order/qr.png) no-repeat;}
+	  .zfbutton1{width:63px; height:28px; border:0; background:url(/content/1/image/order/pay.png) no-repeat;}
+	  .zfbutton2{width:63px; height:28px; border:0; background:url(/content/1/image/order/cancel.png) no-repeat;}
+	  .zfbutton3{width:68px; height:28px; border:0; background:url(/content/1/image/order/paynow.png) no-repeat;}
+	  .zfbutton4{width:38px; height:37px; border:0; background:url(/content/1/image/order/right.png) no-repeat;}
+  .yue{color:#000; font-size:14px; font-weight:bold; float:right; margin-right:20px; width:99%; text-align:right;}
+     .tmoney{color:#FF3507; font-size:18px; font-family:Arial, Helvetica, sans-serif;}
+  .confbutton{}
+     .confibutton{background:url(/content/1/image/order/payoff.png) no-repeat; border:0; width:138px; height:51px; cursor:hand; margin-left:400px;}
+	   .queto{font-size:12px; color:#BC0017; margin-left:10px;}
+.fp1{padding-bottom:15px; width:904px; padding-left:0;}
+
+
+.orderStep{width:990px;overflow:hidden;margin-bottom:15px;}
+.orderStep ul{background-image:url(/content/order/step1.gif);background-position:0 0;background-repeat:no-repeat;height:34px;width:1050px;overflow:hidden;}
+.orderStep .step1{background-image:url(/content/order/step1.gif);}
+.orderStep .step2{background-image:url(/content/order/step2.gif);}
+.orderStep .step3{background-image:url(/content/order/step3.gif);}
+.orderStep .step4{background-image:url(/content/order/step4.gif);}
+.orderStep .step5{background-image:url(/content/order/step5.gif);}
+.orderStep li{text-align:center;float:left;width:195px;line-height:38px;}
+.orderStep li{color:#999;font-weight:bold;}
+.orderStep li a{color:#999;font-weight:bold;}
+.orderStep li a:hover{text-decoration:underline;}
+.orderStep li.on{color:#31a200;font-size:14px;font-weight:bold;}
+.orderStep .li1{}
+.orderStep .li2{width:225px;}
+.orderStep .li3{width:182px;}
+.orderStep .li4{width:215px;}
+.orderStep .li5{width:188px;}
+
+/*zhe zhao ceng*/
+#grey_div
+{
+    position: absolute;
+    background: #cccccc;
+    left: 0px;
+    top: 0px;
+    filter: Alpha(Opacity=30); /* IE */
+    -moz-opacity: 0.4; /* Moz + FF */
+    opacity: 0.4;
+}
+.xs{background: #FFFFFF;position: absolute;border: 1px solid #ffffff;display: none;}
+.span_link{margin-left: 30px;font-weight: lighter;}

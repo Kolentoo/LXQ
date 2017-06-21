@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title> - 悠哉旅游网</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="/content/v1/_src/styles/base.css">
+    <script src="/content/v1/scripts/core.js"></script>
+    <!--[if lt IE 9]><script src="http://r.uzaicdn.com/content/libs/html5shiv.js"></script><![endif]-->
+    <!--[if IE 6]><script src="http://r.uzaicdn.com/content/libs/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script><script>DD_belatedPNG.fix('.png');</script><![endif]-->
+    <style>
+        body { font-family: "Microsoft yahei",Arial,simsun;}
+        .w{ width: 842px; margin-left: auto; margin-right: auto; min-width: 842px;}
+        .red{ color: #e5006e;}
+        .blue{ color: #2c90c5;}
+        .box-fix { display: inline-block; width: 100%; *width: auto; vertical-align: top; }
+
+        .print-topbar{ background: #fedfe9; padding: 25px 0;}
+        .print-topbar .topbar-item{ margin: 0 10px;}
+        .print-topbar .topbar-item:hover{ color: #e5006e;}
+
+        .send-email-bar{ border: 1px solid #ef849f; margin: 10px 10px 0; padding: 20px;}
+        .send-email-bar .textbox{ border: 1px solid #87d1f8; height: 27px; line-height: 27px; width: 280px; padding: 0 5px;}
+        .send-email-bar .btn-send{ background: #f94572; border: 0 none; border-radius: 5px; height: 35px; width: 104px;}
+        .send-email-bar .btn-send:hover{ background: #e0325d;}
+
+        .print-top .top-info a:hover{ color: #e5006e;}
+        .product-infos .product-hd a:hover{ color: #2c90c5;}
+
+        .fn-mask { background-color: #000; opacity: 0.5; filter: alpha(opacity=50); z-index: 998; position: fixed; _position: absolute; left: 0; top: 0; width: 100%; height: 100%; -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; }
+        .ui-pop{ background: #fff; border-radius: 2px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); padding: 0 15px; position: fixed; left: 50%; top: 50%; z-index: 1000; _position: absolute;}
+        .ui-pop .pop-close{ color: #666; font: bold 26px simsun; height: 20px; width: 20px; overflow: hidden; position: absolute; right: 10px; top: 10px;}
+        .ui-pop .pop-close:hover{ color: #f93868;}
+        .ui-pop .close-icon{ position: absolute; left: -3px; top: -4px;}
+        .ui-pop .pop-hd{ border-bottom: 1px solid #ddd; padding: 15px 10px;}
+        .pop-tips-box{ margin: -100px 0 0 -150px; width: 300px;}
+        .pop-tips-box .tips-cont{ padding: 50px 0;}
+    </style>
+    <script>
+        $(function() {
+            $('.send-email-bar').on('click', '.btn-send', function () {
+                uiPop('j_popTipsBox');
+                return false;
+            });
+        });
+        function uiPop(node, xAxis) {
+            var obj = $('#' + node);
+            xAxis = xAxis || 50;
+            obj = (obj.get(0) == null) ? $('.' + node) : obj;
+
+            _uzw.ui.mask.show();
+            obj.show();
+            obj.on('click', '.j_popClose', function () {
+                var oThis = $(this);
+                oThis.parents('.ui-pop').hide();
+                _uzw.ui.mask.hide();
+            });
+
+            //IE6下的定位
+            if (_util.check.isIE6) {
+                obj.css('top', $(document).scrollTop() + xAxis);
+                $(window).on('scroll', function () {
+                    obj.css('top', $(document).scrollTop() + xAxis);
+                });
+            }
+        }
+    </script>
+</head>
+<body style="font-size: 12px;">
+    <div class="print-topbar">
+        <div class="blue f16 tc w">
+            <span class="topbar-item pointer" onclick="javascript:window.print();return false;">
+                <img src="/content/v1/images/other/c3.png" alt="" class="mr5 vm png">
+                <em class="vm">【打印行程】</em>
+            </span>
+            <a href="#" class="topbar-item pointer blue">
+                <img src="/content/v1/images/other/c4.png" alt="" class="mr5 vm png">
+                <em class="vm">【另存为doc】</em>
+            </a>
+            <span class="topbar-item pointer" onclick="javascript:window.close();">
+                <img src="/content/v1/images/other/c5.png" alt="" class="mr5 vm png">
+                <em class="vm">【关闭窗口】</em>
+            </span>
+        </div>
+    </div>
+    <div class="w" style=" width: 842px; margin-left: auto; margin-right: auto;">
+        <div class="send-email-bar clearfix">
+            <span class="fl"><label class="red f14">请填写Email地址：</label><input type="text" class="textbox ml5" placeholder="hellouzai@uzai.com"></span>
+            <input type="submit" value="发送" class="btn-send white f18 yahei tc fr">
+        </div>
+        <div class="print-top clearfix" style=" padding: 10px 10px 5px;">
+            <table cellspacing="0" cellpadding="0" style="width: 100%; border: 0;">
+                <tr>
+                    <td style="width: 128px; vertical-align: top; border: 0 solid #fff;"><a href="#"><img src="/content/v1/images/other/c1.png" alt="" class="png"></a></td>
+                    <td style="vertical-align: top; border: 0 solid #fff;">
+                        <table style="border-left: 1px solid #ccc;margin-top:3px;" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td style="border: 0 solid #fff; padding-left: 15px; width: 15px; vertical-align: middle;">
+                                        <img src="/content/v1/images/other/c2.png" alt="" class="png">
+                                    </td>
+                                    <td style="border: 0 solid #fff; vertical-align: top;">
+                                        <i style="color: #666; font-size: 10px; font-style: italic;">预订热线：8:00~21:00</i><br>
+                                        <b style="color: #f93868; line-height: 1; font-size: 15px; font-weight: bold;">400-000-8888</b>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td style="text-align: right; border: 0 solid #fff;" rowspan="2">
+                        <div style="text-align: right;"><img src="http://r.uzaicdn.com/qrcode?param=http://www.uzai.com/15.html&w=90" alt="" width="80"></div>
+                        <p>扫一扫，收藏到微信</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="top-info" style="color: #666; padding: 15px 0 0 37px; border: 0 solid #fff;" colspan="2">
+                        <p>线路编号：SHS74205</p>
+                        <p>线路网址：<a href="http://sh.uzai.com/tour-74205.html#outbound_tejia_p" style="color: #666;">http://sh.uzai.com/tour-74205.html#outbound_tejia_p</a></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="product-infos">
+            <h1 class="product-hd" style=" background: #eff7fb; padding: 5px 0;font-size:24px;text-align: center;"><a href="#" style="color: #e5006e;">泰国6日游</a></h1>
+            <div class="journey-overview product-info-mod" style=" border-bottom: 1px dashed #c5c4c4; margin-left: 10px; margin-right: 10px;">
+                <h2 class="mod-hd" style=" padding: 5px 25px;"><img src="/content/v1/images/other/i22.png" alt="" style="margin-right: 5px;vertical-align: middle;"><em class="hd-cont" style="color: #e5006e;vertical-align: middle;font-size: 18px;">行程概览</em></h2>
+                <div class="mod-bd" style=" padding: 0 55px 10px;">
+                    <table cellpadding="0" cellspacing="0" class="journey-table" style="color: #2c90c5;text-align: center;width: 100%;">
+                        <tr>
+                            <th style=" background: #87d1f8; border-left: 1px solid #6ac0ed; color: #fff; font-size: 13px; padding: 5px 10px; vertical-align: middle;">第N天</th>
+                            <th style=" background: #87d1f8; border-left: 1px solid #6ac0ed; color: #fff; font-size: 13px; padding: 5px 10px; vertical-align: middle;">城市</th>
+                            <th style=" background: #87d1f8; border-left: 1px solid #6ac0ed; color: #fff; font-size: 13px; padding: 5px 10px; vertical-align: middle;">交通</th>
+                            <th style=" background: #87d1f8; border-left: 1px solid #6ac0ed; color: #fff; font-size: 13px; padding: 5px 10px; vertical-align: middle;width: 20%;">景点</th>
+                            <th style=" background: #87d1f8; border-left: 1px solid #6ac0ed; color: #fff; font-size: 13px; padding: 5px 10px; vertical-align: middle;width: 30%;">住宿</th>
+                            <th style=" background: #87d1f8; border-left: 1px solid #6ac0ed; color: #fff; font-size: 13px; padding: 5px 10px; vertical-align: middle;">餐饮</th>
+                        </tr>
+                        <tr>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">1</td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">上海<br>昆明</td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">上海<img src="/content/v1/images/other/i29.png" alt="" class="icon-item" style=" margin: 0 5px;vertical-align: middle;">昆明</td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">
+                                <ul style=" list-style: disc inside; text-align: left;">
+                                    <li>天目湖南山竹海</li>
+                                    <li>天目湖御水温泉</li>
+                                    <li>天目湖</li>
+                                </ul>
+                            </td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;"><p style="text-align: left;">昆明酒店（参考酒店：豪生大酒、昆明世纪金源大酒店、佳华广场酒店）</p></td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">早餐：自理<br>午餐：自理<br>晚餐：自理</td>
+                        </tr>
+                        <tr>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">2</td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">上海<br>昆明</td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">上海<img src="/content/v1/images/other/i30.png" alt="" class="icon-item" style=" margin: 0 5px;vertical-align: middle;">昆明</td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">
+                                <ul style=" list-style: disc inside; text-align: left;">
+                                    <li>天目湖南山竹海</li>
+                                    <li>天目湖御水温泉</li>
+                                    <li>天目湖</li>
+                                </ul>
+                            </td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;"><p style="text-align: left;">昆明酒店（参考酒店：豪生大酒、昆明世纪金源大酒店、佳华广场酒店）</p></td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">早餐：自理<br>午餐：自理<br>晚餐：自理</td>
+                        </tr>
+                        <tr>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">3</td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">上海<br>昆明</td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">上海<img src="/content/v1/images/other/i31.png" alt="" class="icon-item" style=" margin: 0 5px;vertical-align: middle;">昆明</td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">
+                                <ul style=" list-style: disc inside; text-align: left;">
+                                    <li>天目湖南山竹海</li>
+                                    <li>天目湖御水温泉</li>
+                                    <li>天目湖</li>
+                                </ul>
+                            </td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;"><p style="text-align: left;">昆明酒店（参考酒店：豪生大酒、昆明世纪金源大酒店、佳华广场酒店）</p></td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">早餐：自理<br>午餐：自理<br>晚餐：自理</td>
+                        </tr>
+                        <tr>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">4</td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">上海<br>昆明</td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">上海<img src="/content/v1/images/other/i32.png" alt="" class="icon-item" style=" margin: 0 5px;vertical-align: middle;">昆明</td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">
+                                <ul style=" list-style: disc inside; text-align: left;">
+                                    <li>天目湖南山竹海</li>
+                                    <li>天目湖御水温泉</li>
+                                    <li>天目湖</li>
+                                </ul>
+                            </td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;"><p style="text-align: left;">昆明酒店（参考酒店：豪生大酒、昆明世纪金源大酒店、佳华广场酒店）</p></td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">早餐：自理<br>午餐：自理<br>晚餐：自理</td>
+                        </tr>
+                        <tr>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">5</td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">上海<br>昆明</td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">上海<img src="/content/v1/images/other/i33.png" alt="" class="icon-item" style=" margin: 0 5px;vertical-align: middle;">昆明</td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">
+                                <ul style=" list-style: disc inside; text-align: left;">
+                                    <li>天目湖南山竹海</li>
+                                    <li>天目湖御水温泉</li>
+                                    <li>天目湖</li>
+                                </ul>
+                            </td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;"><p style="text-align: left;">昆明酒店（参考酒店：豪生大酒、昆明世纪金源大酒店、佳华广场酒店）</p></td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">早餐：自理<br>午餐：自理<br>晚餐：自理</td>
+                        </tr>
+                        <tr>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">6</td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">上海<br>昆明</td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">上海<img src="/content/v1/images/other/i34.png" alt="" class="icon-item" style=" margin: 0 5px;vertical-align: middle;">昆明</td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">
+                                <ul style=" list-style: disc inside; text-align: left;">
+                                    <li>天目湖南山竹海</li>
+                                    <li>天目湖御水温泉</li>
+                                    <li>天目湖</li>
+                                </ul>
+                            </td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;"><p style="text-align: left;">昆明酒店（参考酒店：豪生大酒、昆明世纪金源大酒店、佳华广场酒店）</p></td>
+                            <td style=" border: 1px solid #6ac0ed; padding: 5px 10px; vertical-align: middle;">早餐：自理<br>午餐：自理<br>晚餐：自理</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="journey-plan product-info-mod" style=" border-bottom: 1px dashed #c5c4c4; margin-left: 10px; margin-right: 10px;">
+                <h2 class="mod-hd" style=" padding: 5px 25px;"><img src="/content/v1/images/other/i23.png" alt="" style="margin-right: 5px;vertical-align: middle;"><em class="hd-cont" style="color: #e5006e;vertical-align: middle;font-size: 18px;">行程计划</em></h2>
+                <div class="mod-bd" style=" padding: 0 0 10px;">
+                    <div class="journey-listing">
+                        <div class="journey-item journey-first" style=" padding: 0 40px 10px;">
+                            <div class="journey-info-box" style=" padding: 0 20px;">
+                                <div class="jib-hd" style="color: #2c90c5;padding-bottom: 5px;font-size: 16px;">
+                                    <span class="day-item" style=" display: inline-block; width: 80px;padding-left: 10px;">第<b style="font-size: 24px;padding: 0 3px;font-weight: bold;">1</b>天</span>
+                                    <span style="margin-left: 10px;">上海——昆明</span>
+                                </div>
+                                <p class="info-hd">
+                                    <span class="hd-cont" style="background: #fda8bd; color: #e63c68; display: inline-block; width: 65px; padding: 0 10px 1px;font-size: 14px;">
+                                        <i class="icon-wrap" style=" display: inline-block; width: 20px;margin-right: 5px;">
+                                        <img src="/content/v1/images/other/i35.png" alt=""></i><em>交通</em>
+                                    </span>
+                                </p>
+                                <div class="info-bd" style=" padding: 5px 0 5px 65px;color: #666;">
+                                    <span>MU587</span>
+                                    <span style="margin-left: 10px;">上海 16:25<span class="icon-wrap" style=" border-bottom: 1px solid #989696; display: inline-block; margin: 0 5px; padding: 0 10px 5px;vertical-align: bottom;"><img src="/content/v1/images/other/i41.png" alt="" ></span>昆明19:25</span>
+                                </div>
+                                <p class="info-hd">
+                                    <span class="hd-cont" style="background: #fda8bd; color: #e63c68; display: inline-block; width: 65px; padding: 0 10px 1px;font-size: 14px;">
+                                        <i class="icon-wrap" style=" display: inline-block; width: 20px;margin-right: 5px;">
+                                        <img src="/content/v1/images/other/i36.png" alt=""></i><em>景点</em>
+                                    </span>
+                                </p>
+                                <div class="info-bd" style=" padding: 5px 0 5px 65px;color: #666;">天目湖南山竹海 -> 天目湖御水温泉 -> 天目湖</div>
+                                <p class="info-hd">
+                                    <span class="hd-cont" style="background: #fda8bd; color: #e63c68; display: inline-block; width: 65px; padding: 0 10px 1px;font-size: 14px;">
+                                        <i class="icon-wrap" style=" display: inline-block; width: 20px;margin-right: 5px;">
+                                        <img src="/content/v1/images/other/i37.png" alt=""></i><em>住宿</em>
+                                    </span>
+                                </p>
+                                <div class="info-bd" style=" padding: 5px 0 5px 65px;color: #666;">天目湖皇冠假日酒店或天目湖大酒店</div>
+                                <p class="info-hd">
+                                    <span class="hd-cont" style="background: #fda8bd; color: #e63c68; display: inline-block; width: 65px; padding: 0 10px 1px;font-size: 14px;">
+                                        <i class="icon-wrap" style=" display: inline-block; width: 20px;margin-right: 5px;">
+                                        <img src="/content/v1/images/other/i38.png" alt=""></i><em>餐饮</em>
+                                    </span>
+                                </p>
+                                <div class="info-bd" style=" padding: 5px 0 5px 65px;color: #666;">
+                                    <p>早餐：自理</p>
+                                    <p>午餐：自理</p>
+                                    <p>晚餐：自理</p>
+                                </div>
+                            </div>
+                            <div class="journey-detail-box">
+                                <p class="jdb-hd" style="color: #666;font-size: 16px;font-weight: bold; padding: 10px 0 10px 20px;">详细</p>
+                                <div class="detail-list" style="border-left: 1px dashed #d2d2d2; padding-left: 20px;color: #666;">
+                                    <div class="list-item" style=" padding-bottom: 30px; position: relative;">
+                                        <span class="location-wrap" style="background: #fff; display: inline-block; padding: 5px 0; position: absolute; left: -29px; top: -5px;"><img src="/content/v1/images/other/i39.png" alt=""></span>
+                                        <b class="time-item" style=" display: inline-block; width: 80px;color:#2c90c5;font-weight: bold;">08：00</b>上海人民广场博物馆门口举“悠哉旅游网”导游旗接集合后发车至天目湖（车程约3.5个小时）。
+                                    </div>
+                                    <div class="list-item" style=" padding-bottom: 30px; position: relative;">
+                                        <span class="donut-wrap" style="background: #fff; display: inline-block; padding: 5px 0; position: absolute; left: -26px; top: -5px;"><img src="/content/v1/images/other/i40.png" alt=""></span>
+                                        <b class="time-item" style=" display: inline-block; width: 80px;color:#2c90c5;font-weight: bold;">11：30左右</b>抵达天目湖，自行享用午餐（用餐时间约1小时）。
+                                    </div>
+                                    <div class="list-item" style=" padding-bottom: 30px; position: relative;">
+                                        <span class="donut-wrap" style="background: #fff; display: inline-block; padding: 5px 0; position: absolute; left: -26px; top: -5px;"><img src="/content/v1/images/other/i40.png" alt=""></span>
+                                        <b class="time-item" style=" display: inline-block; width: 80px;color:#2c90c5;font-weight: bold;">12：30左右</b>游览【南山竹海】景区（费用已含90元/人，游览时间约4小时）是一个集资源利用、生态保护和旅游观光于一体的世外桃源您尽可以选择二个畅游南山竹海的游览方案。
+                                    </div>
+                                    <div class="list-item" style=" padding-bottom: 30px; position: relative;">
+                                        <span class="donut-wrap" style="background: #fff; display: inline-block; padding: 5px 0; position: absolute; left: -26px; top: -5px;"><img src="/content/v1/images/other/i40.png" alt=""></span>
+                                        <b class="time-item" style=" display: inline-block; width: 80px;color:#2c90c5;font-weight: bold;">15：30左右</b>你一定不要忘了去熊猫馆，与我们的国宝大熊猫“奥运”“壮妹”打个招呼，说不定，它还会向你秀一下攀爬绝技。
+                                    </div>
+                                    <div class="list-item" style=" padding-bottom: 30px; position: relative;">
+                                        <span class="donut-wrap" style="background: #fff; display: inline-block; padding: 5px 0; position: absolute; left: -26px; top: -5px;"><img src="/content/v1/images/other/i40.png" alt=""></span>
+                                        <b class="time-item" style=" display: inline-block; width: 80px;color:#2c90c5;font-weight: bold;">17：00左右</b>结束欢快的南山之旅，自行享用晚餐。可品尝天目湖著名的鱼头汤、竹海腊肉、虫草花炖竹鸡、溧阳扎肝等。
+                                    </div>
+                                    <div class="list-item" style=" padding-bottom: 30px; position: relative;">
+                                        <span class="donut-wrap" style="background: #fff; display: inline-block; padding: 5px 0; position: absolute; left: -26px; top: -5px;"><img src="/content/v1/images/other/i40.png" alt=""></span>
+                                        <b class="time-item" style=" display: inline-block; width: 80px;color:#2c90c5;font-weight: bold;">18：00左右</b>开启夜享【天目湖御水温泉之旅】（费用已含挂牌价218元/人，泡汤时间约2.5小时）<br>这里绿色四季相伴，万亩翠竹萦绕，52池露天温泉似天庭调皮的仙女不小心打碎的宝镜，散落于此，幻化成52泓泉。遥望繁星点点，远处青黛山色，宝蓝色的夜幕铺成而开，眼前顿然一畅。御水温泉，凭借竹的郁郁葱葱，充分保障了游客泡汤的私密性，浸泡其间，全然放松，舒畅自如，毛孔一点点张开，让丰沛的营养成分一点点渗入皮肤深处，筑一场灵魂放逐的美梦。倘若是女子，那就选柠檬泡池或是薄荷泡池，泡七分养颜，三分沁爽；男子则可在天目湖啤酒泡池，边泡边饮，来场男人间的酣畅淋漓。
+                                    </div>
+                                    <div class="list-item" style=" padding-bottom: 30px; position: relative;">
+                                        <p><span class="donut-wrap" style="background: #fff; display: inline-block; padding: 5px 0; position: absolute; left: -26px; top: -5px;"><img src="/content/v1/images/other/i40.png" alt=""></span>
+                                        <b class="time-item" style=" display: inline-block; width: 80px;color:#2c90c5;font-weight: bold;">21：00左右</b>指定地点集合送至酒店休息。<br>【天目湖大酒店】非周末指定入住，2014年重新装修，坐落于风景秀丽的溧阳市天目湖风景区，太公山后50米。酒店环境优雅、交通便捷、生态环保，康体设施完善，是度假、休闲、养生的首选之地。</p>
+                                        <table cellpadding="0" cellspacing="0" class="info-table" style="color: #333;text-align: center;width: 100%;margin-top: 15px;">
+                                            <tr>
+                                                <th style="background: #f0faff;color: #666; padding: 5px 10px; vertical-align: middle;">购物信息</th>
+                                                <th style="background: #f0faff;color: #666; padding: 5px 10px; vertical-align: middle;">所在地</th>
+                                                <th style="background: #f0faff;color: #666; padding: 5px 10px; vertical-align: middle;">参观时间</th>
+                                                <th style="background: #f0faff;color: #666; width: 30%;padding: 5px 10px; vertical-align: middle;">购物内容</th>
+                                                <th style="background: #f0faff;color: #666; width: 30%;padding: 5px 10px; vertical-align: middle;">说明</th>
+                                            </tr>
+                                            <tr>
+                                                <td style="border-bottom: 1px dashed #e5e5e5; padding: 5px 10px;vertical-align: middle;">万佳生活超市</td>
+                                                <td style="border-bottom: 1px dashed #e5e5e5; padding: 5px 10px;vertical-align: middle;">张家界</td>
+                                                <td style="border-bottom: 1px dashed #e5e5e5; padding: 5px 10px;vertical-align: middle;">约60分钟</td>
+                                                <td style="border-bottom: 1px dashed #e5e5e5; padding: 5px 10px;vertical-align: middle;">生成用户、特产等</td>
+                                                <td style="border-bottom: 1px dashed #e5e5e5; padding: 5px 10px;vertical-align: middle;">购物为自愿，请保留消费凭证</td>
+                                            </tr>
+                                        </table>
+                                        <div class="tips-box" style="background: #f7f7f7 none repeat scroll 0 0;color: #666;line-height: 1.6;margin-top: 15px;padding: 10px 20px;">
+                                            <div class="tips-hd">温馨提示</div>
+                                            <div class="tips-bd" style="padding-top: 5px;">
+                                                <p>1. 此航班信息为参考航班，具体航班信息以出团通知书为准;</p>
+                                                <p>2. 请您保管好各自随身携带的行李，避免丢失。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <dl class="tips-box" style=" color: #e44041; padding-left: 20px;margin-top: 15px;">
+                                    <dt style="font-size: 14px;">*友情提示*</dt>
+                                    <dd style="margin-top: 5px;">如以上酒店接待能力有限，可能会安排景区同级高端酒店。<br>以上行程中车程、景点游览、自由活动时间仅作参考，各项不可抗力及意外原因均可使参考时间发生变动（如堵车、天气原因等）。在不减少行程中景点的前提下，导游或领队可视实际情况合理调整行程中景点游玩顺序，请以当日实际情况为准。泡温泉请自备泳衣！泡温泉人多时，可能出现拼柜现象，属于正常情况，尽请谅解！</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="journey-item" style=" border-top: 1px dashed #c5c4c4; padding: 0 40px 10px;">
+                            <div class="journey-info-box" style=" padding: 0 20px;">
+                                <div class="jib-hd" style="color: #2c90c5;padding-bottom: 5px;font-size: 16px;">
+                                    <span class="day-item" style=" display: inline-block; width: 80px;padding-left: 10px;">第<b style="font-size: 24px;padding: 0 3px;font-weight: bold;">2</b>天</span>
+                                    <span style="margin-left: 10px;">北京——云南</span>
+                                </div>
+                                <p class="info-hd">
+                                    <span class="hd-cont" style="background: #fda8bd; color: #e63c68; display: inline-block; width: 65px; padding: 0 10px 1px;font-size: 14px;">
+                                        <i class="icon-wrap" style=" display: inline-block; width: 20px;margin-right: 5px;">
+                                        <img src="/content/v1/images/other/i35.png" alt=""></i><em>交通</em>
+                                    </span>
+                                </p>
+                                <div class="info-bd" style=" padding: 5px 0 5px 65px;color: #666;">
+                                    <span>MU587</span>
+                                    <span style="margin-left: 10px;">北京 16:25<span class="icon-wrap" style=" border-bottom: 1px solid #989696; display: inline-block; margin: 0 5px; padding: 0 10px 5px;vertical-align: bottom;"><img src="/content/v1/images/other/i41.png" alt="" ></span>云南19:25</span>
+                                </div>
+                                <p class="info-hd">
+                                    <span class="hd-cont" style="background: #fda8bd; color: #e63c68; display: inline-block; width: 65px; padding: 0 10px 1px;font-size: 14px;">
+                                        <i class="icon-wrap" style=" display: inline-block; width: 20px;margin-right: 5px;">
+                                        <img src="/content/v1/images/other/i36.png" alt=""></i><em>景点</em>
+                                    </span>
+                                </p>
+                                <div class="info-bd" style=" padding: 5px 0 5px 65px;color: #666;">天目湖南山竹海 -> 天目湖御水温泉 -> 天目湖</div>
+                                <p class="info-hd">
+                                    <span class="hd-cont" style="background: #fda8bd; color: #e63c68; display: inline-block; width: 65px; padding: 0 10px 1px;font-size: 14px;">
+                                        <i class="icon-wrap" style=" display: inline-block; width: 20px;margin-right: 5px;">
+                                        <img src="/content/v1/images/other/i37.png" alt=""></i><em>住宿</em>
+                                    </span>
+                                </p>
+                                <div class="info-bd" style=" padding: 5px 0 5px 65px;color: #666;">天目湖皇冠假日酒店或天目湖大酒店</div>
+                                <p class="info-hd">
+                                    <span class="hd-cont" style="background: #fda8bd; color: #e63c68; display: inline-block; width: 65px; padding: 0 10px 1px;font-size: 14px;">
+                                        <i class="icon-wrap" style=" display: inline-block; width: 20px;margin-right: 5px;">
+                                        <img src="/content/v1/images/other/i38.png" alt=""></i><em>餐饮</em>
+                                    </span>
+                                </p>
+                                <div class="info-bd" style=" padding: 5px 0 5px 65px;color: #666;">
+                                    <p>早餐：自理</p>
+                                    <p>午餐：自理</p>
+                                    <p>晚餐：自理</p>
+                                </div>
+                            </div>
+                            <div class="journey-detail-box">
+                                <p class="jdb-hd" style="color: #666;font-size: 16px;font-weight: bold; padding: 10px 0 10px 20px;">详细</p>
+                                <div class="detail-list" style="border-left: 1px dashed #d2d2d2; padding-left: 20px;color: #666;">
+                                    <div class="list-item" style=" padding-bottom: 30px; position: relative;">
+                                        <span class="location-wrap" style="background: #fff; display: inline-block; padding: 5px 0; position: absolute; left: -29px; top: -5px;"><img src="/content/v1/images/other/i39.png" alt=""></span>
+                                        <b class="time-item" style=" display: inline-block; width: 80px;color:#2c90c5;font-weight: bold;">08：00</b>上海人民广场博物馆门口举“悠哉旅游网”导游旗接集合后发车至天目湖（车程约3.5个小时）。
+                                    </div>
+                                    <div class="list-item" style=" padding-bottom: 30px; position: relative;">
+                                        <span class="donut-wrap" style="background: #fff; display: inline-block; padding: 5px 0; position: absolute; left: -26px; top: -5px;"><img src="/content/v1/images/other/i40.png" alt=""></span>
+                                        <b class="time-item" style=" display: inline-block; width: 80px;color:#2c90c5;font-weight: bold;">11：30左右</b>抵达天目湖，自行享用午餐（用餐时间约1小时）。
+                                    </div>
+                                    <div class="list-item" style=" padding-bottom: 30px; position: relative;">
+                                        <span class="donut-wrap" style="background: #fff; display: inline-block; padding: 5px 0; position: absolute; left: -26px; top: -5px;"><img src="/content/v1/images/other/i40.png" alt=""></span>
+                                        <b class="time-item" style=" display: inline-block; width: 80px;color:#2c90c5;font-weight: bold;">12：30左右</b>游览【南山竹海】景区（费用已含90元/人，游览时间约4小时）是一个集资源利用、生态保护和旅游观光于一体的世外桃源您尽可以选择二个畅游南山竹海的游览方案。
+                                    </div>
+                                    <div class="list-item" style=" padding-bottom: 30px; position: relative;">
+                                        <span class="donut-wrap" style="background: #fff; display: inline-block; padding: 5px 0; position: absolute; left: -26px; top: -5px;"><img src="/content/v1/images/other/i40.png" alt=""></span>
+                                        <b class="time-item" style=" display: inline-block; width: 80px;color:#2c90c5;font-weight: bold;">15：30左右</b>你一定不要忘了去熊猫馆，与我们的国宝大熊猫“奥运”“壮妹”打个招呼，说不定，它还会向你秀一下攀爬绝技。
+                                    </div>
+                                    <div class="list-item" style=" padding-bottom: 30px; position: relative;">
+                                        <span class="donut-wrap" style="background: #fff; display: inline-block; padding: 5px 0; position: absolute; left: -26px; top: -5px;"><img src="/content/v1/images/other/i40.png" alt=""></span>
+                                        <b class="time-item" style=" display: inline-block; width: 80px;color:#2c90c5;font-weight: bold;">17：00左右</b>结束欢快的南山之旅，自行享用晚餐。可品尝天目湖著名的鱼头汤、竹海腊肉、虫草花炖竹鸡、溧阳扎肝等。
+                                    </div>
+                                    <div class="list-item" style=" padding-bottom: 30px; position: relative;">
+                                        <span class="donut-wrap" style="background: #fff; display: inline-block; padding: 5px 0; position: absolute; left: -26px; top: -5px;"><img src="/content/v1/images/other/i40.png" alt=""></span>
+                                        <b class="time-item" style=" display: inline-block; width: 80px;color:#2c90c5;font-weight: bold;">18：00左右</b>开启夜享【天目湖御水温泉之旅】（费用已含挂牌价218元/人，泡汤时间约2.5小时）<br>这里绿色四季相伴，万亩翠竹萦绕，52池露天温泉似天庭调皮的仙女不小心打碎的宝镜，散落于此，幻化成52泓泉。遥望繁星点点，远处青黛山色，宝蓝色的夜幕铺成而开，眼前顿然一畅。御水温泉，凭借竹的郁郁葱葱，充分保障了游客泡汤的私密性，浸泡其间，全然放松，舒畅自如，毛孔一点点张开，让丰沛的营养成分一点点渗入皮肤深处，筑一场灵魂放逐的美梦。倘若是女子，那就选柠檬泡池或是薄荷泡池，泡七分养颜，三分沁爽；男子则可在天目湖啤酒泡池，边泡边饮，来场男人间的酣畅淋漓。
+                                    </div>
+                                    <div class="list-item" style=" padding-bottom: 30px; position: relative;">
+                                        <p><span class="donut-wrap" style="background: #fff; display: inline-block; padding: 5px 0; position: absolute; left: -26px; top: -5px;"><img src="/content/v1/images/other/i40.png" alt=""></span>
+                                        <b class="time-item" style=" display: inline-block; width: 80px;color:#2c90c5;font-weight: bold;">21：00左右</b>指定地点集合送至酒店休息。<br>【天目湖大酒店】非周末指定入住，2014年重新装修，坐落于风景秀丽的溧阳市天目湖风景区，太公山后50米。酒店环境优雅、交通便捷、生态环保，康体设施完善，是度假、休闲、养生的首选之地。</p>
+                                        <table cellpadding="0" cellspacing="0" class="info-table" style="color: #333;text-align: center;width: 100%;margin-top: 15px;">
+                                            <tr>
+                                                <th style="background: #f0faff;color: #666; padding: 5px 10px; vertical-align: middle;">购物信息</th>
+                                                <th style="background: #f0faff;color: #666; padding: 5px 10px; vertical-align: middle;">所在地</th>
+                                                <th style="background: #f0faff;color: #666; padding: 5px 10px; vertical-align: middle;">参观时间</th>
+                                                <th style="background: #f0faff;color: #666; width: 30%;padding: 5px 10px; vertical-align: middle;">购物内容</th>
+                                                <th style="background: #f0faff;color: #666; width: 30%;padding: 5px 10px; vertical-align: middle;">说明</th>
+                                            </tr>
+                                            <tr>
+                                                <td style="border-bottom: 1px dashed #e5e5e5; padding: 5px 10px;vertical-align: middle;">万佳生活超市</td>
+                                                <td style="border-bottom: 1px dashed #e5e5e5; padding: 5px 10px;vertical-align: middle;">张家界</td>
+                                                <td style="border-bottom: 1px dashed #e5e5e5; padding: 5px 10px;vertical-align: middle;">约60分钟</td>
+                                                <td style="border-bottom: 1px dashed #e5e5e5; padding: 5px 10px;vertical-align: middle;">生成用户、特产等</td>
+                                                <td style="border-bottom: 1px dashed #e5e5e5; padding: 5px 10px;vertical-align: middle;">购物为自愿，请保留消费凭证</td>
+                                            </tr>
+                                        </table>
+                                        <div class="tips-box" style="background: #f7f7f7 none repeat scroll 0 0;color: #666;line-height: 1.6;margin-top: 15px;padding: 10px 20px;">
+                                            <div class="tips-hd">温馨提示</div>
+                                            <div class="tips-bd" style="padding-top: 5px;">
+                                                <p>1. 此航班信息为参考航班，具体航班信息以出团通知书为准;</p>
+                                                <p>2. 请您保管好各自随身携带的行李，避免丢失。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <dl class="tips-box" style=" color: #e44041; padding-left: 20px;margin-top: 15px;">
+                                    <dt style="font-size: 14px;">*友情提示*</dt>
+                                    <dd style="margin-top: 5px;">如以上酒店接待能力有限，可能会安排景区同级高端酒店。<br>以上行程中车程、景点游览、自由活动时间仅作参考，各项不可抗力及意外原因均可使参考时间发生变动（如堵车、天气原因等）。在不减少行程中景点的前提下，导游或领队可视实际情况合理调整行程中景点游玩顺序，请以当日实际情况为准。泡温泉请自备泳衣！泡温泉人多时，可能出现拼柜现象，属于正常情况，尽请谅解！</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="expense-include product-info-mod" style=" border-bottom: 1px dashed #c5c4c4; margin-left: 10px; margin-right: 10px;">
+                <h2 class="mod-hd" style=" padding: 5px 25px;"><img src="/content/v1/images/other/i24.png" alt="" style="margin-right: 5px;vertical-align: middle;"><em class="hd-cont" style="color: #e5006e;vertical-align: middle;font-size: 18px;">费用包含</em></h2>
+                <div class="mod-bd" style=" padding: 0 55px 10px;">
+                    <div style="color: #666;line-height: 2;">
+                        <p>1.交通：往返团队经济舱机票含税费（团队机票将统一出票，如遇政府或航空公司政策性调整燃油税费，在未出票的情况下将进行多退少补，敬请谅解。团队机票一经开出，不得更改、不得签转、不得退票），当地旅游巴士。</p>
+                        <p>2.住宿：美国14晚当地品牌酒店住宿，夏威夷2晚当地品牌酒店住宿（境外酒店均不挂星）。</p>
+                        <p>3.门票：行程中所列*景点门票。</p>
+                        <p>4.用餐：行程中所列团队标准用餐，（中式餐或自助餐或特色餐，含飞机上用餐，自由活动期间用餐请自理；如因自身原因放弃用餐，则餐费不退，具体请参考详细行程，自理除外）。</p>
+                        <p>5.导游：服务费。</p>
+                        <p>6.儿童价标准：年龄2--12周岁（不含）以下，不占床，不含早餐，其余标准同成人。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="expense-barring product-info-mod" style=" border-bottom: 1px dashed #c5c4c4; margin-left: 10px; margin-right: 10px;">
+                <h2 class="mod-hd" style=" padding: 5px 25px;"><img src="/content/v1/images/other/i25.png" alt="" style="margin-right: 5px;vertical-align: middle;"><em class="hd-cont" style="color: #e5006e;vertical-align: middle;font-size: 18px;">费用不含</em></h2>
+                <div class="mod-bd" style=" padding: 0 55px 10px;">
+                    <div style="color: #666;line-height: 2;">
+                        <p>1.单房差：全程单房差4600元/人起，请在预订下一步中确认。</p>
+                        <p>2.签证：团队美国旅游签证费1100元/人。如需代送或续签，则费用另计，均随团费一起支付。</p>
+                        <p>3.个人费用：出入境个人物品海关征税，超重行李的托运费、保管费，酒店内洗衣、理发、电话、传真、收费电视、饮品、烟酒等个人消费以及其他因私产生的费用。</p>
+                        <p>4.额外费用：司机导游及交通工具超时工作费用；因客观原因需要更换酒店所产生的房费差价；因交通延阻、罢工、天气、飞机机器故障、航班取消或更改时间等不可抗力原因所引致的额外费用。</p>
+                        <p>5.其他：起始地到出发机场往返交通费；个人护照费用。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="order-notes product-info-mod" style=" border-bottom: 1px dashed #c5c4c4; margin-left: 10px; margin-right: 10px;">
+                <h2 class="mod-hd" style=" padding: 5px 25px;"><img src="/content/v1/images/other/i26.png" alt="" style="margin-right: 5px;vertical-align: middle;"><em class="hd-cont" style="color: #e5006e;vertical-align: middle;font-size: 18px;">预订须知</em></h2>
+                <div class="mod-bd" style=" padding: 0 55px 10px;">
+                    <div style="color: #666;line-height: 2;">
+                        <p>注：鉴于此产品是包机或是办理签证原因等的特殊产品，在付款后如您因自身原因提出退团，则应按下述条款承担违约责任收取损失费用：</p>
+                        <p>1)行程开始前40日至31日，按旅游费用总额的5%；2)行程开始前30日至15日，按旅游费用总额的10%；3)行程开始前14至7日，按旅游费用总额的35%；4)行程开始前6日至4日，按旅游费用总额的85%；5)行程开始前3日至1日，按旅游费用总额的90%；6)行程开始当日，按旅游费用总额的100%。</p>
+                        <p>1、为了确保您能够按时出行，产品确认后请在24小时内支付全部团款，同时请按要求尽快提供出游所需的材料并签订出境旅游合同，如遇机位紧张等特殊情况以电话确认为准。订单付款后，视为双方默认本产品合同及相关条款实际履行，团队机票即为出票，不得更改、签转、退票；另飞行时间、车程时间、船程时间以当日实际所用时间为准 。</p>
+                        <p>2、本团队产品只接受持各地签发的中国大陆因私护照客人，如您持有其他国家或地区的护照，请电话现询价格，给您造成的不便，敬请谅解。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="visa-box product-info-mod" style=" border-bottom: 1px dashed #c5c4c4; margin-left: 10px; margin-right: 10px;">
+                <h2 class="mod-hd" style=" padding: 5px 25px;"><img src="/content/v1/images/other/i27.png" alt="" style="margin-right: 5px;vertical-align: middle;"><em class="hd-cont" style="color: #e5006e;vertical-align: middle;font-size: 18px;">签证</em></h2>
+                <div class="mod-bd" style=" padding: 0 55px 10px;">
+                    <div style="color: #666;line-height: 2;">
+                        <p>本产品线路需要办理美国个人旅游签证。</p>
+                        <p>美国个人旅游签证需安排预约面试，材料早到早约,截止日期后报名需来电确认。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="warm-tips product-info-mod" style=" border-bottom: 1px dashed #c5c4c4; margin-left: 10px; margin-right: 10px;">
+                <h2 class="mod-hd" style=" padding: 5px 25px;"><img src="/content/v1/images/other/i28.png" alt="" style="margin-right: 5px;vertical-align: middle;"><em class="hd-cont" style="color: #e5006e;vertical-align: middle;font-size: 18px;">温馨提示</em></h2>
+                <div class="mod-bd" style=" padding: 0 55px 10px;">
+                    <dl style="color: #666;line-height: 2;">
+                        <dt>一、出入境需知：</dt>
+                        <dd>
+                            <p>1.进入美国须持有护照有效期满半年以上，并持有有效期内的美国签证。</p>
+                            <p>2.护照、身份证、证件复印件及2寸照片2张（证件丢失时方便补办），不满16周岁无身份证的游客如在国内转机，需带户口本。</p>
+                            <p>3.海关规定每人*多可以携带人民币20000元或折合5000美金的等值外币，超出部分需要向海关书面申报，请尽量不要超过规定，超出部分可能会面临征税、罚款或没收。</p>
+                            <p>4.携带单价超过5000元的摄像机、相机、镜头等贵重物品需在托运行李前向海关申报。</p>
+                        </dd>
+                        <dt>二、旅客携带液态物品规定：</dt>
+                        <dd>
+                            <p>1.乘坐从中国境内机场始发的国际、地区航班的旅客，其随身携带的液态物品每件容积不得超过100毫升（ml）。盛放液态物品的容器，应置于*大容积不超过1升（L）的、可重新封口的透明塑料袋中。每名旅客每次仅允许携带一个透明塑料袋，超出部分应交运。婴儿随行的旅客携带液态乳制品，糖尿病或其他疾病*携带必需的液态药品（凭**或证明），经安全检查确认无疑后，可适量携带。</p>
+                            <p>2.若需要先在国内转机，需遵守国内航班对液体物品的规定。国内航班规定一律禁止随身携带液态物品，但可携带少量旅行自用的化妆品，每种化妆品限带一件，其容器容积不得超过100毫升（ml），并应置于独立袋内，接受开瓶检查。有婴儿随行的旅客，购票时可向航空公司申请，由航空公司在机上免费提供液态乳制品。糖尿病*或其他*携带必需的液态物品（凭**或证明），经安全检查确认无疑后，交由机组保管。</p>
+                        </dd>
+                    </dl>
+                    <dl class="tips-box" style="color: #e44041;margin-top: 10px;">
+                        <dt>备注：</dt>
+                        <dd style="margin-top: 5px;">(以上为参考行程。鉴于旅游存在一定不确定性，我司或航空公司有时无法提前提供合同中航班、酒店等某些细节和具体信息。我司的广告宣传及签订合同时所提供的行程仅供参考。如您按我司提供的参考行程签约。在不缩短旅游时间、减少旅游景点的情况下，我司有权调整行程的先后次序。若最终行程与参考行程不一致产生费用变化，则由您和我司双方约定，多退少补。)</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="shopping-explain product-info-mod" style=" border-bottom: 1px dashed #c5c4c4; margin-left: 10px; margin-right: 10px;">
+                <h2 class="mod-hd" style=" padding: 5px 25px;"><img src="/content/v1/images/other/i56.png" alt="" style="margin-right: 5px;vertical-align: middle;"><em class="hd-cont" style="color: #e5006e;vertical-align: middle;font-size: 18px;">购物说明</em></h2>
+                <div class="mod-bd" style=" padding: 0 55px 10px;">
+                </div>
+            </div>
+            <div class="service-standard product-info-mod" style=" border-bottom: 1px dashed #c5c4c4; margin-left: 10px; margin-right: 10px;">
+                <h2 class="mod-hd" style=" padding: 5px 25px;"><img src="/content/v1/images/other/i57.png" alt="" style="margin-right: 5px;vertical-align: middle;"><em class="hd-cont" style="color: #e5006e;vertical-align: middle;font-size: 18px;">服务标准</em></h2>
+                <div class="mod-bd" style=" padding: 0 55px 10px;">
+                </div>
+            </div>
+            <div class="additional-provisions product-info-mod" style=" border-bottom: 1px dashed #c5c4c4; margin-left: 10px; margin-right: 10px;">
+                <h2 class="mod-hd" style=" padding: 5px 25px;"><img src="/content/v1/images/other/i58.png" alt="" style="margin-right: 5px;vertical-align: middle;"><em class="hd-cont" style="color: #e5006e;vertical-align: middle;font-size: 18px;">附加条款</em></h2>
+                <div class="mod-bd" style=" padding: 0 55px 10px;">
+                </div>
+            </div>
+            <div class="expense-items-box product-info-mod" style=" border-bottom: 1px dashed #c5c4c4; margin-left: 10px; margin-right: 10px;">
+                <h2 class="mod-hd" style=" padding: 5px 25px;"><img src="/content/v1/images/other/i59.png" alt="" style="margin-right: 22px;vertical-align: middle;"><em class="hd-cont" style="color: #e5006e;vertical-align: middle;font-size: 18px;">自费项目</em></h2>
+                <div class="mod-bd" style=" padding: 0 55px 10px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="j_popTipsBox" class="ui-pop pop-tips-box hide">
+        <div class="pop-hd"><em class="hd-cont red f20">标题</em></div>
+        <div class="pop-bd">
+            <div class="tips-cont f16 tc">
+                <p>内容</p>
+            </div>
+        </div>
+        <span class="pop-close pointer lh1 j_popClose"><i class="close-icon">&times;</i></span>
+    </div>
+</body>

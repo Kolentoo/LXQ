@@ -1,0 +1,70 @@
+html{min-height:100%;overflow:hidden; width:100%;font-size: medium;}
+body{min-height:100%;background:#fff;  overflow-x: hidden;width:7.5rem;}
+.border-bot:after{border-top: 1px solid #e9e9e9;}
+.rel{position:relative;}
+.clear{clear:both;}
+.content{width:7.5rem;overflow-x: hidden;}
+.content .main{display:none;}
+.white-topbar{background:#fff;right:0px;  position: absolute;border-bottom:1px solid #e9e9e9;}
+.title_img{line-height:100%;}
+.title_img img{width:1.56rem;height:0.69rem;margin-top: 0.1rem;}
+.main_img{padding:0.2rem 0px;padding-left:0.2rem;height:1.4rem; width: 7.3rem;  overflow: hidden;border-bottom:1px solid #e9e9e9;}
+.main_img1{float:left;margin-right:0.2rem;width:2.15rem;height:1.4rem;position:relative;}
+.main_img1 img{height:1.4rem;width:2.15rem; border-radius:0.1rem;display:block;}
+.main_img1 .ceng{height:1.4rem;width:2.15rem; border-radius:0.1rem;display:block;position:absolute;left:0px;top:0px;background: rgba(0, 0, 0, 0.3)}
+.div_ceng .ceng{display:none;}
+.div_ceng{ transform: scale(1.1,1.1); -webkit-transform: scale(1.1,1.1); box-shadow: 2px 3.428px 2px 0px rgba(0, 0, 0, 0.3);  border-radius: .1rem;}
+.main_img1 .frame_img{width:1.75rem;height:0.8rem;background:url(http://r03.uzaicdn.com/content/hybrid/images/discover/frame_img.png) center no-repeat; background-size:1.52rem 0.53rem;position:absolute;left:50%;top:50%;margin-top:-0.4rem;margin-left:-0.87rem;}
+.frame_img span{color:#fff;display:block;text-align:center;}
+.frame_img span.f30{font-size:0.3rem;line-height:0.5rem;    text-shadow: 0px 0px 1px #999999;}
+.frame_img span.f22{font-size:0.22rem;    text-shadow: 0px 0px 1px #999999;}
+.swiper-wrapper{width:1000%;}
+
+
+.main_nav{border-bottom:1px solid #e9e9e9;}
+.main_nav ul{overflow:hidden;}
+.main_nav ul li{float:left;width:50%;text-align:center;}
+.main_nav ul li a{font-size:.3rem;color:#666666;    height: 0.83rem;   display: inline-block;  padding:0px 0.1rem;  line-height: 0.8rem;}
+.main_nav ul li.selected a{color:#e50051;border-bottom:0.05rem solid #e50051;}
+
+.main_list{border-top:0.24rem solid #f5f5f5;width:7.5rem;float:left;}
+.main_list_i{padding-bottom:0.24rem;background:url(http://r03.uzaicdn.com/content/hybrid/images/discover/b.jpg) repeat-x bottom #fff;background-size:.1rem 0.24rem;width:7.5rem;}
+.main_list_img{width:100%;height:4rem;position:relative;}
+.main_list_img img{width:100%;height:4rem;}
+.main_list_img span{position:absolute;right:0.25rem;top:0px;width:0.44rem;padding-top:0.05rem;height:.77rem;background:url(http://r03.uzaicdn.com/content/hybrid/images/discover/ti.png) no-repeat;background-size:.44rem 0.82rem;color:#fff;text-align:center;font-size:0.24rem;}
+.main_list_a{padding-bottom:0.4rem;}
+.main_list_a h2{padding:.3rem 0;text-align:center;font-size:0.34rem;color:#444444;padding-bottom:.1rem;}
+.main_list_a1{text-align:center;}
+.main_list_a1 a{color:#bbbbbb;font-size:.22rem;padding:0px .45rem;}
+.main_list_a1 a.collection{background:url(http://r03.uzaicdn.com/content/hybrid/images/discover/collection.png) no-repeat 0.2rem center;background-size:.18rem 0.18rem;}
+.main_list_a1 a.browse{background:url(http://r03.uzaicdn.com/content/hybrid/images/discover/browse.png) no-repeat 0.15rem center;background-size:.26rem 0.18rem;}
+.main_list_a2{margin-top:0.2rem;text-align:center;}
+.main_list_a2 a{padding:0.05rem 0.1rem;border:.5px solid #dbdbdb;color:#999999;font-size:.22rem;margin:0px .15rem;border-radius:0.1rem;}
+.main_list_a2 a span{font-size:.22rem;}
+
+.wrapper_main{width:100%;overflow:hidden;}
+.wrapper {
+	position:absolute;
+	z-index: 10;
+	top: 2.7rem;
+	bottom: 0rem;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	padding-top:0px !important;
+	background: #f5f5f5;
+}
+.wrapper1 {
+	position:absolute;
+	z-index: 10;
+	top: 0rem;
+	bottom: 0rem;
+	left: 7.5rem;
+	width: 7.5rem;
+	overflow: hidden;
+	padding-top:0px !important;
+	float:left;
+}
+.pab{position:absolute;width:7.5rem;background:#fff;left:50%;top:0.88rem;z-index:11;margin-left:-3.75rem;}
+.data_no{text-align:center;color: #ccc; padding-top: 200px;display: block; width: 7.5rem;}
+.paddt0{border-top:0px;}

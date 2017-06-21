@@ -1,0 +1,16 @@
+﻿.scenery {margin-top:40px;}
+.scenery { background: #fff; padding: 10px 10px 10px; font-size: 14px; }
+
+.mod-discription .txt { padding-left: 25px; }
+
+.mod-discription .txt img { margin-top: 10px;width: 100%; display: block; }
+.mod-discription .txt div { border-left: 1px solid #e5004f; padding-left: 40px; position: relative; padding-bottom: 10px; }
+.mod-discription .txt aside { position: absolute; top: 0; left: -25px; width: 50px; height: 50px; border: 1px solid #e5004f; background: #fff; text-align: center; line-height: 50px; border-radius: 50%; color: #e5004f; }
+.mod-discription .txt aside:last-child { border-radius: 50px 50px 0 0;height:25px;line-height:28px;}
+
+.mod-route {border-top:1px solid #e5004f;margin-top:16px;}
+.mod-route li { padding: 10px 0; border-bottom: 1px solid #c8c8c8; }
+.mod-route li .pic { width: 92px; }
+.mod-route li .pic img { width: 100%; display: block; margin-top: 3px; }
+.mod-route li .txt { padding-left: 100px; }
+.mod-route li .txt .p1 { line-height: 20px; }

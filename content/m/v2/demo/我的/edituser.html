@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>悠哉旅行网触屏版</title>
+    <meta name="keywords" content="x" />
+    <meta name="description" content="x" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/my/my.css" rel="stylesheet" />
+    <script src="/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/_src/core', '/content/m/v2/scripts/my/my'], function (core, my) {
+            my.init();
+        });
+    </script>
+    
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m"><div class="tit">我的悠哉</div></div>
+            <div class="d-r">
+                <span class="edit block">保存</span>
+            </div>
+        </header>
+
+        <section class="my f14">
+
+            <div class="edit">
+                <ul>
+                    <li class="avatar clearfix">
+                        <label class="g2 fl">头像</label>
+                        <div class="item fr tr">
+                            <img style="width:55px;" src="http://ask.seowhy.com/uploads/avatar/000/00/08/37_avatar_mid.jpg" />
+                            <input type="file" />
+                        </div>
+                    </li>
+                    <li class="name clearfix">
+                        <label class="g2 fl">姓名</label>
+                        <div class="item fr tr">
+                            <input type="text" value="caojialei" placeholder="请输入姓名" />
+                        </div>
+                    </li>
+                    <li class="sex clearfix">
+                        <label class="g2 fl">性别</label>
+                        <div class="item fr tr">
+                            <select>
+                                <option>男</option>
+                                <option>女</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="brithday clearfix">
+                        <label class="g2 fl">生日</label>
+                        <div class="item fr tr">
+                            <input type="date" placeholder="请输入生日" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+
+
+
+    </div>
+
+
+
+</body>
+</html>

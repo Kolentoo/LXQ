@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+table{border-collapse:collapse;}
+.protitle .title{font:600 24px "微软雅黑"; color:#71af17;}
+.lvyoucn_pro{padding-bottom:17px; text-align:left;}
+.topleft{float:left; width:600px; padding-top:7px;}
+.topright{float:right; width:160px;}
+.rightshare{background:url(../image/bg/producebg.gif) no-repeat 0px 44%; padding-top:3px; padding-bottom:3px; padding-left:20px;}
+.share{padding-right:10px; border-right:1px solid #333333; margin-right:5px; float:left; width:26px; padding-top:3px;}
+.sharelogo{float:left; width:90px;}
+.sharelogo a img{padding:0 3px;}
+.products{border:1px solid #cbdab4; background:url(../image/bg/producebg0.gif) repeat-x left top; position:relative; margin-bottom:20px;}
+.rightgt{position:absolute; right:-1px; top:-1px;}
+.protitle{ border-bottom:1px solid #cbdab4;  margin-bottom:20px; padding-left:15px; padding-top:13px; padding-bottom:5px; padding-bottom:10px;}
+.zyx-lefttop{overflow:hidden;zoom:1}
+.zyx-xx{ float:left; margin-left:15px;} 
+.free-ntit{line-height: 24px; margin-left:6px; padding-top:8px;}
+.free-ntit ul{ float:left; color: #8f8f8f;}
+.free-ntit ul strong{ color: #000; font-weight: bold; }
+.free-ntit ul li{ padding: 0 4px 0 0px; font-size: 12px;  text-align: center; line-height: 15px;  float:left;}
+.free-ntit ul li.free-a{ background: url(../image/icon/zyx-num.gif) no-repeat; width:15px; height:15px; font-weight: bolder; color:#FFFFFF; padding-top:1px;}
+.free-ntit ul li.free-al{ background: url(../image/icon/zyx-num1.gif) no-repeat; font-weight: bolder; width:15px; height:15px; color:#FFFFFF; padding-top:1px; }
+.padleft98{margin-left:90px;}
+
+
+#znextn-main{ width:990px; margin-top:10px; margin-bottom:20px;}
+.znextn-left{ width:988px; border: solid #c8dcb5 1px; padding-bottom:20px;}
+.znextn_pro{ background:url(../image/bg/znextx-p1_03.gif) repeat-x; height:22px;border-bottom:solid #c6dbb4 1px; padding-top:10px; padding-right:15px;}
+.znextn_title{ font-size:14px; color:#346101;padding-left:22px; font-weight:bold; float:left;}
+.znextn-djz{ color:#e06716}
+#zyxjp-main{ padding-left:15px; padding-right:15px; width:958px;}
+.zyxhotel-jip{ border-bottom:#cdcdcd solid 1px;padding:10px 0;overflow:hidden;zoom:1;}
+.zyxhotel-jip li {line-height:24px;padding:0 0 0 5px; width:900px; clear:both;margin:2px 0;float:left;display:inline}
+.zyxhotel-jip li strong { font-weight:bold;width:70px; float:left; }
+.zyxhotel-jip li a.bxxj{background:#d6ecc6;}
+.zyxhotel-jip li a {margin:0 5px 0 0; text-align:left; width:100px; height:24px; padding-left:10px; display:block; float:left;}
+.zyxhotel-jip a{font-size:12px; color:#346101; font-family:"宋体"; text-decoration:none;}
+.zyxhotel-jip a:hover{color:#ff9b00; text-decoration: none; background:#d6ecc6;}
+.znext-cor{ border:solid #cdcdcd 1px; width:165px; height:17px;}
+.znextn_btnsd{background-color:transparent;border:0px solid; margin-left:3px;}
+.zyxhotel-next{ padding-top:15px; padding-bottom:10px; height:22px; overflow:hidden;zoom:1}
+.zyxhotel-span{float:right;}
+.zyxhotle-bnp{ background-color:#f4f4f4; overflow:hidden; zoom:1;}
+.zyxhotle-bnp1{ background-color:#f4f4f4; margin-top:10px; overflow:hidden;zoom:1;}
+.znext-prleft{ float:left; width:120px; background-color:#e3e3e3; padding:5px;display:inline; margin-top:20px; margin-bottom:40px;}
+.znextn-jie{ width:80px; padding-top:5px; background-color:#FFFFFF; padding-left:20px; padding-right:20px;overflow:hidden;}
+.znext-jie1{ color:#e06716;}
+.znextn-jie2{ font-size:18px; font-weight:bold; font-family:Arial;}
+.znext-prright{ float:right; line-height:18px; padding-top:20px; width:810px;}
+.znext-pp{ font-size:14px; font-weight:bold; color:#346101; padding-bottom:5px;}
+.znext-prright table td{padding:5px;}
+.zyxhotel-link a{font-size:12px; color:#346101; font-family:"宋体"; text-decoration:none;}
+.zyxhotel-link a:hover{color:#ff9b00; text-decoration: none;}
+.znextn_pro a{font-size:14px; color:#346101; font-weight:bold; font-family:"宋体"; text-decoration:none;}
+.znextn_pro a:hover{color:#ff9b00; text-decoration: none;}
+.zyxjphotel{ height:0px; clear:both; overflow:hidden;}
+.zyxtab table td{border-bottom:1px solid #d7d7d7;}
+
+.znextn_btnsd{background-color:transparent;border:0px solid;}
+
+
+
+

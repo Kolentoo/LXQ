@@ -1,0 +1,9 @@
+.route-detail .route-con .shape {
+    margin-top: 3px;
+}
+
+.route-detail .route-con .name-inner h2 {
+    font-size: 14px;
+    color: #666666;
+    margin-top: 5px;
+}

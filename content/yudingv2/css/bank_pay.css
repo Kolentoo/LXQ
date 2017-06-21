@@ -1,0 +1,1290 @@
+﻿@charset "UTF-8";
+.dialog-login .dialog-login-confirm, .step .step-box, .input-checkbox, .dialog-login .other-login a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+body {
+  min-width: 1000px;
+  font-family: "Microsoft Yahei"; }
+
+*[hidden] {
+  display: none; }
+
+a,
+body,
+button,
+div,
+em,
+h1,
+h2,
+h3,
+hr,
+html,
+input,
+label,
+li,
+option,
+select,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: none; }
+
+button,
+li,
+ul {
+  list-style: none; }
+
+a {
+  color: #333;
+  text-decoration: none; }
+
+img {
+  vertical-align: middle;
+  border: 0px; }
+
+.right {
+  float: right; }
+
+em,
+h1,
+h2,
+h3,
+i,
+option,
+select {
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #333; }
+
+input[type=checkbox] {
+  filter: alpha(opacity=0);
+  opacity: 0; }
+
+[defaultChecked] + .input-checkbox,
+input[type=checkbox]:checked + .input-checkbox {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #4fc1e9;
+  border-color: #4fc1e9;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/checkbox-checked.png"); }
+
+.section-li .input-checkbox-box {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #4fc1e9;
+  border-color: #4fc1e9;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/checkbox-checked.png"); }
+
+.input-checkbox {
+  cursor: pointer; }
+
+.dialog-login .dialog-login-confirm {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 0 5px;
+  background-color: #ccc;
+  text-align: center;
+  color: #fff; }
+
+.dialog-login .dialog-login-confirm {
+  background-color: #e5004f; }
+
+.input-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.head {
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  height: 94px;
+  background-color: #fff; }
+  .head .content {
+    height: 94px; }
+
+.content {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+  .content:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+.call {
+  float: right;
+  background-position: left center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 178px;
+  height: 64px;
+  padding-top: 30px;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/call.jpg"); }
+
+.call .call-num,
+.call .call-time {
+  display: block;
+  font-size: 12px;
+  text-indent: 20px; }
+
+.call .call-time {
+  color: #757575;
+  font-style: italic; }
+
+.call .call-num {
+  font-size: 22px;
+  color: #e50057;
+  font-family: Arial,Helvetica,sans-serif; }
+
+.step {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 153px;
+  position: relative; }
+  .step .step-line,
+  .step .step-line-finish {
+    display: block;
+    position: absolute;
+    left: 132px;
+    top: 52px;
+    width: 738px;
+    height: 8px;
+    background-color: #e6e6e6;
+    z-index: 1; }
+  .step .step-line-finish {
+    width: 0;
+    background-color: #f93868;
+    transition: 0.3s width ease;
+    z-index: 2; }
+  .step .step-line-finish-2 {
+    width: 150px; }
+  .step .step-line-finish-3 {
+    width: 340px; }
+  .step .step-line-finish-4 {
+    width: 560px; }
+  .step .step-line-finish-5 {
+    width: 750px; }
+  .step .step-content {
+    position: relative;
+    top: 30px;
+    left: 52px;
+    height: 90px;
+    z-index: 5; }
+  .step .step-box {
+    width: 110px; }
+  .step .step-box-2 {
+    margin-left: 80px; }
+  .step .step-box-3 {
+    margin-left: 80px; }
+  .step .step-box-4 {
+    margin-left: 86px; }
+  .step .step-box-5 {
+    margin-left: 85px; }
+  .step .step-box-hover .step-num {
+    background-position: -50px 0; }
+  .step .step-box-hover .step-word {
+    color: #e60e58; }
+  .step .step-box-finish .step-num {
+    background-position: -100px 0;
+    text-indent: -999em; }
+  .step .step-num {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+    background-image: url("//r03.uzaicdn.com/content/yudingv2/images/step.png"); }
+  .step .step-word {
+    display: block;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+    color: #cccccc; }
+
+.main {
+  float: left;
+  width: 702px; }
+
+.layout-right {
+  float: right; }
+
+.finally {
+  width: 278px;
+  border: 1px solid #e0e0e0;
+  padding-bottom: 20px; }
+  .finally .finally-title {
+    line-height: 46px;
+    height: 46px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333; }
+  .finally .finally-box,
+  .finally .finally-box-title {
+    display: block;
+    width: 240px;
+    padding: 0 20px; }
+  .finally .finally-box-title {
+    line-height: 50px;
+    height: 50px;
+    font-size: 14px;
+    color: #999; }
+  .finally .finally-box-margin {
+    margin-top: 10px; }
+
+.finally-box {
+  font-size: 14px;
+  color: #333;
+  line-height: 22px;
+  overflow: hidden; }
+  .finally-box .finally-description {
+    float: left; }
+  .finally-box .finally-price {
+    float: right; }
+  .finally-box .finally-description-all {
+    width: 240px;
+    line-height: 24px; }
+  .finally-box .finally-price-hover {
+    color: #f93868; }
+
+.finally-line {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px dashed #e0e0e0;
+  display: block;
+  width: 240px;
+  margin-top: 20px;
+  height: 0px; }
+
+.price {
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 238px;
+  padding: 20px;
+  border: 1px solid #f2f2f2;
+  border-top: 0;
+  border-bottom: 0;
+  background-color: #fcf8f2;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/price-pay.jpg"); }
+  .price .price-word {
+    float: left;
+    font-size: 18px;
+    color: #333; }
+  .price .price-pay {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f93868; }
+  .price .price-tips {
+    float: left;
+    text-align: right;
+    width: 238px;
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 10px;
+    color: #999; }
+  .price:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+.input-checkbox {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  vertical-align: middle;
+  outline: none; }
+
+.input-checkbox.no_select {
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: #ccc !important;
+  background-color: #ccc !important;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/checkbox-checked.png") !important; }
+
+.main_card_input {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 10px;
+  border: 1px solid #e0e0e0;
+  color: #999;
+  outline: none; }
+
+input.error {
+  border: 1px solid #e72d6d !important; }
+
+input.error + .error_entry {
+  display: block; }
+
+input.blur {
+  -webkit-box-shadow: 0px 0px 2px #2fa6e5;
+  -moz-box-shadow: 0px 0px 2px #2fa6e5;
+  box-shadow: 0px 0px 2px #2fa6e5; }
+
+input.blur_ {
+  -webkit-box-shadow: 0px 0px 0px #2fa6e5 !important;
+  -moz-box-shadow: 0px 0px 0px #2fa6e5 !important;
+  box-shadow: 0px 0px 0px #2fa6e5 !important; }
+
+.dialog-login {
+  display: block;
+  width: 800px;
+  height: 430px;
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -400px;
+  margin-top: -215px;
+  z-index: 55; }
+  .dialog-login .member,
+  .dialog-login .quick {
+    float: left;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 260px;
+    padding: 0 70px;
+    height: 430px;
+    background-color: #fff; }
+  .dialog-login:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .dialog-login .dialog-login-title {
+    line-height: 83px;
+    height: 83px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold; }
+    .dialog-login .dialog-login-title a {
+      font-weight: normal;
+      color: #999; }
+    .dialog-login .dialog-login-title .m {
+      float: left; }
+    .dialog-login .dialog-login-title .p {
+      float: right; }
+    .dialog-login .dialog-login-title .font-black {
+      color: #333; }
+  .dialog-login .phone-box {
+    display: none;
+    height: 194px; }
+  .dialog-login .dialog-login-label {
+    line-height: 30px;
+    height: 30px;
+    display: block;
+    font-size: 14px;
+    color: #333; }
+  .dialog-login .main_card_input {
+    display: block;
+    width: 248px;
+    height: 20px;
+    padding-top: 9px;
+    padding-bottom: 8px; }
+  .dialog-login .captcha-inputb {
+    height: 26px;
+    padding-top: 7px;
+    padding-bottom: 7px; }
+  .dialog-login .dialog-login-tips {
+    line-height: 30px;
+    height: 30px;
+    display: block;
+    font-size: 14px;
+    color: #999; }
+  .dialog-login .captcha {
+    float: right;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #666;
+    background-color: #e0e0e0;
+    margin-right: 10px;
+    width: 70px;
+    height: 26px; }
+    .dialog-login .captcha:after {
+      background-color: #f93868;
+      color: #fff; }
+  .dialog-login .captcha-hover {
+    background-color: #f93868;
+    color: #fff; }
+  .dialog-login .captcha-input {
+    line-height: 26px;
+    height: 26px;
+    float: left;
+    width: 145px; }
+  .dialog-login .dialog-login-confirm {
+    width: 260px;
+    height: 40px;
+    margin: 30px 0 0;
+    font-size: 18px;
+    *margin-top: 15px; }
+  .dialog-login .dialog-login-line {
+    position: absolute;
+    left: 400px;
+    top: 70px;
+    width: 0;
+    height: 300px;
+    border-left: 1px dashed #e0e0e0; }
+  .dialog-login .icon-pd,
+  .dialog-login .icon-user {
+    float: left;
+    width: 44px;
+    height: 38px;
+    background-color: #f0f2f5;
+    background-image: url("//r03.uzaicdn.com/content/yudingv2/images/icon.png"); }
+  .dialog-login .icon-pd {
+    background-position: -44px 0; }
+  .dialog-login .icon-input {
+    float: left;
+    width: 184px;
+    padding: 10px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    height: 20px;
+    color: #999; }
+  .dialog-login .remember-box {
+    margin-top: 13px;
+    *margin-top: -5px; }
+    .dialog-login .remember-box a {
+      float: right; }
+  .dialog-login .member-box .main_card_input {
+    padding: 0;
+    height: 38px; }
+  .dialog-login .remember-tips {
+    float: left;
+    line-height: 17px;
+    height: 17px;
+    margin-left: 10px; }
+  .dialog-login .input-remember {
+    float: left;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #4fc1e9;
+    vertical-align: middle; }
+    .dialog-login .input-remember i {
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin: 2px auto 0; }
+  .dialog-login input[type=checkbox]:checked + .input-remember i, .dialog-login .input-checkbox-box1 i {
+    background-color: #4fc1e9; }
+  .dialog-login .input-checkbox-box1 i {
+    background-color: #4fc1e9; }
+  .dialog-login .other-login {
+    float: left;
+    margin-top: 20px;
+    color: #999;
+    font-size: 14px;
+    line-height: 27px; }
+    .dialog-login .other-login a {
+      width: 27px;
+      height: 27px;
+      vertical-align: middle; }
+  .dialog-login .other-login-icon-qq,
+  .dialog-login .other-login-icon-weibo {
+    background: url("//r03.uzaicdn.com/content/yudingv2/images/other-login.png"); }
+  .dialog-login .other-login-icon-weibo {
+    background-position: -27px 0; }
+  .dialog-login .close {
+    width: 24px;
+    height: 24px;
+    background: url("//r03.uzaicdn.com/content/yudingv2/images/close1.png") no-repeat;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px; }
+
+.dialog-full {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 50; }
+
+.error_entry {
+  position: absolute;
+  right: 0px;
+  top: 40px;
+  font-size: 14px;
+  color: #e60e58;
+  border: 1px solid #e0e0e0;
+  padding: 4px;
+  padding-right: 10px;
+  padding-left: 37px;
+  border-radius: 2px;
+  background: url("//r03.uzaicdn.com/content/yudingv2/images/close.png") no-repeat 10px center #fff;
+  display: none;
+  z-index: 3; }
+
+.order-state {
+  margin: auto;
+  font-size: 16px;
+  color: #e60e58;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  padding: 30px 0;
+  margin-bottom: 20px; }
+  .order-state a {
+    color: #2fa6e5;
+    text-decoration: underline;
+    margin-left: 30px; }
+
+.w_100 {
+  width: 100%; }
+
+.uzai_date {
+  position: absolute;
+  left: 18px;
+  top: 32px;
+  width: 435px;
+  height: 260px;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 8;
+  -webkit-box-shadow: 0px 0px 2px #f8f8f8;
+  -moz-box-shadow: 0px 0px 2px #f8f8f8;
+  box-shadow: 0px 0px 2px #f8f8f8;
+  display: none; }
+
+.uzai_date_left {
+  float: left;
+  width: 200px;
+  margin-left: 12px;
+  margin-top: 12px; }
+  .uzai_date_left table {
+    width: 100%;
+    line-height: 22px;
+    font-size: 12px;
+    color: #333333;
+    cursor: pointer; }
+  .uzai_date_left td {
+    text-align: center; }
+  .uzai_date_left td.cfa004b {
+    color: #fa004b; }
+  .uzai_date_left td.c999999 {
+    color: #999999; }
+  .uzai_date_left td.cfff {
+    color: #fff;
+    background: #2fa6e5;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; }
+  .uzai_date_left .uzai_date_bot {
+    border: 1px solid #d6d6d6;
+    text-align: center;
+    width: 90px;
+    line-height: 28px;
+    font-size: 12px;
+    color: #333333;
+    cursor: pointer;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-top: 10px; }
+    .uzai_date_left .uzai_date_bot:hover {
+      border: 1px solid #7dd1fe;
+      color: #2fa6e5; }
+
+.uzai_date_top {
+  font-size: 14px;
+  text-align: center; }
+
+.uzai_date_left_l {
+  float: left;
+  cursor: pointer;
+  color: #999999; }
+
+.uzai_date_left_r {
+  float: right;
+  cursor: pointer;
+  color: #999999; }
+
+/*弹出框*/
+.body_shade {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  z-index: 50;
+  display: none; }
+
+.body_shade_show {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -240px;
+  margin-top: -180px;
+  background: #fff;
+  z-index: 999;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  width: 360px;
+  padding: 30px 60px;
+  padding-bottom: 45px; }
+  .body_shade_show h2 {
+    text-align: center;
+    color: #333333;
+    font-size: 24px;
+    font-weight: normal; }
+  .body_shade_show p {
+    color: #333333;
+    font-size: 18px;
+    margin-top: 45px; }
+  .body_shade_show .shade_buttom {
+    text-align: center;
+    overflow: hidden;
+    margin-top: 15px; }
+    .body_shade_show .shade_buttom button {
+      background: #fff;
+      color: #e60e58;
+      border: 1px solid #e60e58;
+      cursor: pointer;
+      border-radius: 10px;
+      cursor: pointer;
+      outline: none;
+      font-size: 18px;
+      padding: 0px 10px;
+      line-height: 40px;
+      width: 100%;
+      margin-top: 20px; }
+      .body_shade_show .shade_buttom button:hover {
+        background: #e60e58;
+        color: #fff; }
+  .body_shade_show .close {
+    width: 24px;
+    height: 24px;
+    background: url("//r03.uzaicdn.com/content/yudingv2/images/close1.png") no-repeat;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 30px; }
+
+/*loading*/
+.storage {
+  display: none;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px 130px;
+  font-size: 14px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+  line-height: 30px;
+  margin-left: -230px; }
+  .storage img {
+    margin-right: 20px; }
+
+* {
+  margin: 0;
+  font-family: "Microsoft Yahei"; }
+
+img {
+  border: 0; }
+
+.clear {
+  clear: both; }
+
+.right {
+  float: right; }
+
+.posre {
+  position: relative; }
+
+input {
+  padding-bottom: 7px;
+  padding-top: 7px;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 10px;
+  border: 1px solid #e0e0e0;
+  color: #999999;
+  border-radius: 2px;
+  outline: none; }
+
+.main_card_t {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin: auto; }
+
+.main_card_t .title {
+  font-size: 18px;
+  line-height: 30px;
+  color: #333; }
+
+.subtitle {
+  margin-top: 10px; }
+  .subtitle span {
+    font-size: 14px;
+    color: #666666;
+    padding-right: 10px; }
+  .subtitle span.c2fa6e5 {
+    color: #2fa6e5; }
+
+.padding-r0 {
+  padding-right: 0 !important; }
+
+.border-l0 {
+  border-left: 0 !important; }
+
+.detail {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #e1e1e1; }
+  .detail span {
+    font-size: 14px;
+    color: #999999;
+    padding-right: 25px; }
+    .detail span i {
+      color: #333;
+      font-style: normal; }
+
+.shop_cart {
+  margin-top: 20px; }
+  .shop_cart .num {
+    padding-left: 15px;
+    font-size: 18px;
+    color: #e60e58;
+    line-height: 40px; }
+    .shop_cart .num .f24 {
+      font-size: 24px; }
+
+.shopping_cart {
+  float: left;
+  font-size: 14px;
+  color: #333;
+  padding-left: 40px;
+  background: url("//r03.uzaicdn.com/content/yudingv2/images/shopping-cart.png") no-repeat left center;
+  line-height: 40px; }
+
+.main_card_fo {
+  border: 1px solid #e0e0e0;
+  margin: 20px auto auto;
+  padding: 20px;
+  overflow: hidden;
+  margin-bottom: 20px; }
+  .main_card_fo .right_input {
+    float: right;
+    width: 110px;
+    color: #fff;
+    background: #e60e58;
+    height: 50px;
+    line-height: 50px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    padding: 0; }
+  .main_card_fo span {
+    font-size: 16px;
+    color: #999999;
+    line-height: 50px;
+    padding-left: 50px; }
+
+.main_card_m {
+  border: 1px solid #e0e0e0;
+  margin: 20px auto auto;
+  padding-bottom: 20px; }
+
+.main_card_m_top {
+  height: 61px;
+  background: #efefef;
+  line-height: 60px; }
+  .main_card_m_top ul {
+    overflow: hidden; }
+    .main_card_m_top ul li {
+      width: 349px;
+      float: left;
+      background: #efefef;
+      border-bottom: 1px solid #e0e0e0;
+      border-left: 1px solid #e0e0e0;
+      line-height: 60px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 16px; }
+    .main_card_m_top ul li.selected {
+      width: 350px;
+      background: #fff;
+      border-left: 1px solid #e0e0e0;
+      border-bottom: 0; }
+  .main_card_m_top span {
+    padding-left: 20px;
+    font-size: 16px; }
+
+.bank_pay {
+  margin: 20px 20px 0; }
+
+.bank_pay_card {
+  margin-left: -30px;
+  margin-bottom: -20px;
+  overflow: hidden;
+  *margin-bottom: 0px; }
+  .bank_pay_card li {
+    float: left;
+    width: 200px;
+    height: 90px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    margin-left: 28px;
+    margin-bottom: 20px; }
+    .bank_pay_card li p {
+      line-height: 34px;
+      font-size: 12px;
+      background: #f7f8fa;
+      color: #333333;
+      border-radius: 5px 5px 0 0;
+      padding-left: 10px; }
+    .bank_pay_card li .bankname {
+      height: 55px;
+      vertical-align: middle;
+      display: table-cell;
+      padding-left: 25px; }
+      .bank_pay_card li .bankname span {
+        padding-left: 20px; }
+    .bank_pay_card li input {
+      display: none; }
+  .bank_pay_card li.selected {
+    border: 1px solid #2fa6e5;
+    -webkit-box-shadow: 0px 0px 2px #abd9f3;
+    -moz-box-shadow: 0px 0px 2px #abd9f3;
+    box-shadow: 0px 0px 2px #abd9f3; }
+
+.bank_pay_cardt {
+  margin-top: 35px;
+  font-size: 14px;
+  color: #333333; }
+
+.bank_pay_cardt_input {
+  position: relative;
+  margin-top: 10px; }
+  .bank_pay_cardt_input .posre {
+    float: left; }
+    .bank_pay_cardt_input .posre input {
+      float: left; }
+  .bank_pay_cardt_input input {
+    width: 220px;
+    *margin-left: -20px; }
+  .bank_pay_cardt_input input.error {
+    border: 1px solid #e72d6d; }
+  .bank_pay_cardt_input input.blur {
+    -webkit-box-shadow: 0px 0px 2px #2fa6e5;
+    -moz-box-shadow: 0px 0px 2px #2fa6e5;
+    box-shadow: 0px 0px 2px #2fa6e5; }
+  .bank_pay_cardt_input span.c2fa6e5 {
+    color: #2fa6e5;
+    margin-left: 10px;
+    line-height: 30px; }
+
+.bank_pay_cardt_yzm {
+  margin-top: 30px; }
+  .bank_pay_cardt_yzm .yzm {
+    width: 85px; }
+  .bank_pay_cardt_yzm button {
+    padding: 5px 10px;
+    background: #e60e58;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer; }
+
+.activity_desc {
+  display: none;
+  position: absolute;
+  left: 234px;
+  top: 30px; }
+
+.activity_desc_m {
+  z-index: 9;
+  position: absolute;
+  left: 66px;
+  top: 0;
+  border: 1px solid #dbdbdb;
+  padding: 10px;
+  width: 276px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0px 0px 2px #b1b1b1;
+  -moz-box-shadow: 0px 0px 2px #b1b1b1;
+  box-shadow: 0px 0px 2px #b1b1b1;
+  line-height: 22px;
+  color: #999999;
+  font-size: 12px;
+  background: #fff; }
+  .activity_desc_m:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    left: -6px;
+    top: 10px;
+    position: absolute;
+    -webkit-box-shadow: -1px 1px 0px #b1b1b1;
+    -moz-box-shadow: -1px 1px 0px #b1b1b1;
+    box-shadow: -1px 1px 0px #b1b1b1;
+    transform: rotate(45deg);
+    background: #fff;
+    z-index: 3; }
+
+.other_pay {
+  margin-top: 10px; }
+  .other_pay .section-ul-title {
+    line-height: 49px;
+    height: 49px;
+    border-bottom: 1px solid #e0e0e0; }
+
+.section-li-width-1 {
+  width: 100px; }
+
+.section-li-width-2 {
+  width: 247px;
+  padding-left: 18px; }
+
+.section-li-width-3 {
+  width: 82px;
+  padding-left: 18px; }
+
+.section-li-width-4 {
+  width: 160px;
+  text-align: right; }
+
+.login-tips,
+.section-li {
+  float: left;
+  font-size: 14px;
+  color: #666;
+  min-height: 20px; }
+
+.sale-content,
+.section-ul-title,
+.user-info-content {
+  overflow: hidden;
+  display: block;
+  width: 660px;
+  padding-left: 30px; }
+
+.sale-content {
+  line-height: 22px;
+  margin-top: 10px;
+  padding-bottom: 10px; }
+  .sale-content .section-li {
+    color: #333; }
+  .sale-content .section-li-hover {
+    color: #f93868; }
+
+.marg-t5 {
+  margin-top: 5px; }
+
+.marg-t25 {
+  margin-top: 25px; }
+
+.font-click {
+  color: #4fc1e9; }
+
+.login-tips {
+  width: 465px;
+  line-height: 22px;
+  height: 22px; }
+
+.section-li-content {
+  width: 530px; }
+
+.display-inline-block, .section-li-content, .submits-btn, .sale-newline .point-confirm, .sale-newline .point, .sale-newline .section-li-content, .slide-btn, .sale-coupon-box {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+.submits-btn, .sale-newline .point-confirm {
+  margin: 0 5px;
+  background-color: #ccc;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px; }
+
+.submits-btn-hover, .sale-newline .point-confirm-hover,
+.sale-newline .point-confirm:hover {
+  background-color: #e5004f; }
+
+.sale-newline .point .main_card_input {
+  width: 178px;
+  float: left;
+  padding-bottom: 5px;
+  padding-top: 5px; }
+
+.sale-newline .point-confirm {
+  width: 48px;
+  line-height: 30px;
+  height: 30px; }
+
+.font-hover {
+  color: #f93868; }
+
+.sale-newline .section-li-content {
+  width: 530px;
+  padding: 2px 0; }
+
+.sale-newline .section-li {
+  line-height: 33px;
+  height: 33px; }
+
+.text-align-right {
+  text-align: right; }
+
+.slide-btn {
+  background-repeat: no-repeat;
+  background-position: 100% -700%;
+  min-width: 70px;
+  text-align: left;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/arrow.png");
+  margin-right: 20px; }
+
+.slide-btn-hover {
+  background-position: 100% 1000%; }
+
+.section-li-all {
+  width: 660px; }
+
+.sale-coupon {
+  float: left;
+  width: 200px;
+  color: #fff;
+  margin-top: 10px;
+  margin-right: 18px;
+  margin-bottom: 25px;
+  cursor: pointer; }
+
+.sale-coupon-hover .sale-coupon-box,
+.sale-coupon:hover .sale-coupon-box {
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/coupon-top-hover.png");
+  background-color: #6cadff; }
+
+.sale-coupon-box {
+  background-repeat: no-repeat;
+  background-image: url("//r03.uzaicdn.com/content/yudingv2/images/coupon-top.png");
+  background-color: #9fc9fe;
+  width: 175px;
+  padding-left: 25px;
+  padding-top: 15px; }
+  .sale-coupon-box .sale-coupon-date,
+  .sale-coupon-box .sale-coupon-num {
+    display: block;
+    line-height: 26px; }
+  .sale-coupon-box .sale-coupon-date {
+    font-size: 12px; }
+
+.sale-coupon-id {
+  line-height: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: 1px solid #e0e0e0;
+  border-top: 0;
+  background-color: #fff;
+  display: block;
+  font-size: 12px;
+  text-indent: 25px;
+  position: relative; }
+
+.font-gray {
+  color: #666; }
+
+.sale-coupon-num {
+  font-size: 22px; }
+
+.dashen-line {
+  border-top: 1px dashed #e0e0e0;
+  width: 640px;
+  height: 0px;
+  margin: auto; }
+
+.solid-line {
+  border-top: 1px solid #e0e0e0;
+  height: 0px; }
+
+.bank_card {
+  margin: 30px 20px 0;
+  border: 1px solid #e0e0e0; }
+
+.bank_card_top {
+  overflow: hidden; }
+  .bank_card_top li {
+    float: left;
+    width: 164px;
+    background: #fefcf9;
+    border-bottom: 1px solid #f0f0f0;
+    line-height: 57px;
+    text-align: center;
+    cursor: pointer; }
+  .bank_card_top li.hover {
+    background: #fff;
+    border-left: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+    border-bottom: 0; }
+
+.bank_card_m1 {
+  padding: 30px; }
+  .bank_card_m1 .bank_card_m1_title {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 20px; }
+    .bank_card_m1 .bank_card_m1_title span {
+      padding-left: 10px;
+      color: #999999; }
+  .bank_card_m1 .bank_card_m1_img {
+    margin-top: 15px;
+    overflow: hidden;
+    border: 1px solid #fff; }
+    .bank_card_m1 .bank_card_m1_img input {
+      display: none; }
+    .bank_card_m1 .bank_card_m1_img li {
+      float: left;
+      height: 50px; }
+    .bank_card_m1 .bank_card_m1_img img {
+      padding: 5px;
+      margin-right: 8px;
+      width: 120px;
+      height: 30px;
+      border: 1px solid #fff; }
+    .bank_card_m1 .bank_card_m1_img li.selected img {
+      border: 1px solid #2fa6e5;
+      -webkit-box-shadow: 0px 0px 10px #a9d8f3;
+      -moz-box-shadow: 0px 0px 10px #a9d8f3;
+      box-shadow: 0px 0px 10px #a9d8f3; }
+
+.overf-auto {
+  overflow: visible; }
+
+.fl_input {
+  float: left; }
+
+.sale-coupon:hover .bank_desc_m {
+  display: block; }
+
+.bank_desc_m {
+  display: none;
+  text-indent: 0;
+  z-index: 9;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  border: 1px solid #dbdbdb;
+  padding: 10px;
+  width: 176px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0px 0px 2px #b1b1b1;
+  -moz-box-shadow: 0px 0px 2px #b1b1b1;
+  box-shadow: 0px 0px 2px #b1b1b1;
+  line-height: 22px;
+  color: #999999;
+  font-size: 12px;
+  background: #fff; }
+  .bank_desc_m:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    left: 24px;
+    top: -6px;
+    position: absolute;
+    -webkit-box-shadow: -1px 1px 0px #b1b1b1;
+    -moz-box-shadow: -1px 1px 0px #b1b1b1;
+    box-shadow: -1px 1px 0px #b1b1b1;
+    transform: rotate(135deg);
+    background: #fff;
+    z-index: 3; }
+
+.sold_main_li {
+  margin-top: 10px; }
+  .sold_main_li span {
+    margin-right: 30px;
+    color: #2fa6e5; }
+  .sold_main_li span.select {
+    text-decoration: underline;
+    color: #e5004f;
+    cursor: pointer; }
+
+.sold_main_li_m {
+  margin-top: 10px; }
+
+.w_80 {
+  width: 80px; }
+
+.font-light-gray {
+  color: #999;
+  display: block;
+  margin-top: 4px; }

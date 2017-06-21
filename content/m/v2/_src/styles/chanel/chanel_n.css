@@ -1,0 +1,563 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@charset "UTF-8";
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    /*word-break:break-all;*/
+    word-wrap:break-word;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+ul,li,ol{
+    list-style: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+a{
+    text-decoration: none;
+    border: none;
+    outline: none;
+    tap-highlight-color: rgba(0,0,0,0);
+    focus-ring-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-focus-ring-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0,0,0,0);
+    -moz-focus-ring-color: rgba(0, 0, 0, 0);
+}
+a:visited{
+    color: inherit;
+}
+input,button{
+    outline: none;
+}
+
+html{
+    font-size: 50px;
+}
+html, body{
+    height: 100%;
+    background: #FFFFFF;
+}
+body {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    margin: 0 auto;
+    font-family: 'STHeiti','Microsoft YaHei',Helvetica,Arial,sans-serif;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.over-hide{
+    overflow: hidden;
+}
+.pos-fixed{
+    position: fixed;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.b-radius-2{
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+.txt-cut {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.layout-box{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.layout-box .son-box{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+    position: relative;
+}
+.gray{
+    color: #888;
+}
+.dark-gray{
+    color: #5e5e5e;
+}
+.blue, a.blue{
+    color: #0a6693;
+}
+.clr {
+    clear: both;
+    height: 0px;
+    font-size: 0px;
+}
+.d-block{
+    display: block;
+}
+.content {
+    min-height: 100%;
+}
+.white-topbar {
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    background: #f6f6f6;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    -wekbit-box-shadow: 0 1px 2px #bfbfbf;
+    box-shadow: 0 1px 1px #cfcfcf;
+    width: 100%;
+    color: #000;
+}
+.white-topbar .top-back {
+    padding-left: 0.30rem;
+    line-height: 0.88rem;
+    padding-right: 10px;
+    font-size: 0.30rem;
+    color: #000;
+    height: 0.88rem;
+}
+.white-topbar .left-ico {
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.88rem;
+    background: url("../../images/channel/back_ico.png") no-repeat left center;
+    background-size: 0.36rem auto;
+    vertical-align: middle;
+}
+.white-topbar .fr {
+    margin-right: 0.1rem;
+    position: relative;
+    height: 0.88rem;
+    width: 0.88rem;
+    margin-left: 28px;
+    background: url("../../images/channel/right_ico.png") no-repeat center;
+    background-size: 0.42rem auto;
+}
+.white-topbar>.title {
+    padding: 0 1.44rem;
+}
+.white-topbar>.title h1 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    font-size: .36rem;
+}
+.border-top,.border-bot,.border-left,.border-right{
+    position: relative;
+}
+.border-top:after,.border-bot:after{
+    left: 0;
+    right: 0;
+}
+.border-left:after,.border-right:after{
+    top: 0;
+    bottom: 0;
+}
+.border-left:after{
+    left: 0;
+}
+.border-right:after{
+    right: 0;
+}
+.border-top:after{
+    top: 0;
+}
+.border-bot:after{
+    bottom: 0;
+}
+.border-top:after,.border-bot:after{
+    -webkit-transform: scaleY(.5);
+    -moz-transform: scaleY(.5);
+    -ms-transform: scaleY(.5);
+    -o-transform: scaleY(.5);
+    transform: scaleY(.5);
+    -webkit-transform-origin: 100% 0;
+    -moz-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    -o-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    content: '';
+    position: absolute;
+    border-top: 1px solid #dddddd;
+    box-sizing: border-box;
+}
+.border-left:after,.border-right:after{
+    -webkit-transform: scaleX(.5);
+    -moz-transform: scaleX(.5);
+    -ms-transform: scaleX(.5);
+    -o-transform: scaleX(.5);
+    transform: scaleX(.5);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    content: '';
+    position: absolute;
+    border-right: 1px solid #dddddd;
+}
+.thinner-border {
+    position: relative;
+}
+.thinner-border:after{
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    border: 1px solid #dddddd;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -o-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    top: -1px;
+    left: 0;
+}
+.go-content .main{
+    margin: 10px;
+}
+.go-content nav{
+    text-align: center;
+    color: #a7a6a6;
+}
+.go-content nav p{
+    padding: 8px 0 10px;
+    font-size: 0.28rem;
+}
+.go-content nav .son-box{
+    height: 16px;
+}
+.go-content nav em{
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    width: 3px;
+    height: 3px;
+    background: #b2b1b1;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.go-content nav div:first-child em{
+    right: -7px;
+}
+.go-content nav .border-top{
+    top: 0.16rem;
+    height: 2px;
+}
+.go-content nav div:last-child em{
+    left: -7px;
+}
+.go-content nav .con{
+    font-size: 0.30rem;
+    display: inline-block;
+    padding: 0 0.2rem;
+}
+.go-content .go-ls img{
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    vertical-align: middle;
+}
+.go-content .go-ls .part{
+    position: relative;
+    height: 3.5rem;
+    color: #ffffff;
+    margin-bottom: 0.2rem;
+}
+.go-content .go-ls .part p{
+    position: absolute;
+    top: 26%;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 2px #999;
+}
+.go-content .go-ls .part span{
+    font-size: 0.42rem;
+    display: block;
+}
+.go-content .go-ls .part span:first-child{
+    font-size: 0.60rem;
+}
+.city-content .main{
+    padding-top: 0.88rem;
+}
+.right-btn{
+    width: 30px;
+    height: 40px;
+    display: block;
+    vertical-align: middle;
+    background: url("../../images/channel/right.png") no-repeat center right;
+    background-size: 16px auto;
+}
+.city-content nav{
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0 0.2rem;
+    font-size: 0.30rem;
+    color: #333333;
+}
+.city-content nav>.layout-box{
+    position: relative;
+}
+.city-content section .part{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+.city-content section{
+    margin: 0.2rem 0.2rem 0 0;
+}
+.city-content section p{
+    font-size: 0.3rem;
+    color: #666;
+    line-height: 0.66rem;
+}
+.city-content section .img{
+    height: 100%;
+    display: block;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    margin-left: 10px;
+}
+.city-content section img{
+    width: 2.24rem;
+    height: 1.66rem;
+    display: block;
+    border: 0;
+    outline: 0;
+    vertical-align: middle;
+}
+.city-content .season-recommend nav{
+    margin: 0;
+    background: #f0f0f0;
+}
+.city-content .season-recommend nav .son-box{
+    top: 0.4rem;
+}
+.city-content .season-recommend nav .con{
+    font-size: 0.36rem;
+    color: #999;
+    padding: 0 0.2rem;
+}
+.city-content .season-recommend nav .border-top:after{
+    border-bottom-color: #bfbfbf;
+}
+.city-content .season-recommend .sel-ls{
+    position: relative;
+    line-height: .8rem;
+    text-align: center;
+    margin: 0 10px;
+}
+.city-content .season-recommend .sel-ls a{
+    color: #333333;
+    font-size: 0.36rem;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.city-content .season-recommend .sel-ls .on a{
+    color: #f93868;
+    border-bottom: 2px solid #f93868;
+    position: relative;
+    z-index: 2;
+}
+.city-content .season-recommend section{
+    margin: 0 10px;
+    overflow: hidden;
+}
+.city-content .season-recommend section .img{
+    width: 1.76rem;
+    height: 1.36rem;
+    display: block;
+    margin-right: 10px;
+    position: relative;
+}
+.city-content .season-recommend section img{
+    width: 1.76rem;
+    height: 1.36rem;
+    vertical-align: middle;
+}
+.city-content .season-recommend section{
+    background: #f0f0f0;
+    margin: 0;
+}
+.city-content .season-recommend section .part{
+    width: 100%;
+    padding: 0.2rem 0;
+    background: #ffffff;
+    margin-bottom: 0.2rem;
+    text-align: left;
+    font-size: 0.24rem;
+}
+.city-content .season-recommend section .part .son-box{
+    padding-right: 0.2rem;
+}
+.city-content .season-recommend section .img em{
+    position: absolute;
+    top: 0.10rem;
+    left: 0;
+    border-radius: 0 0.14rem 0.14rem 0;
+    background: #faa744;
+    font-size: 0.24rem;
+    color: #ffffff;
+    min-width: 0.60rem;
+    text-align: center;
+    height: 0.28rem;
+    line-height: 0.28rem;
+}
+.city-content .season-recommend section p{
+    font-size: 0.30rem;
+    line-height: 0.4rem;
+    text-align: left;
+}
+.city-content .season-recommend section span{
+    color: #888888;
+}
+.city-content .season-recommend .bot{
+    font-size: 0.26rem;
+    color: #666;
+}
+.city-content .season-recommend .bot .fl{
+    text-align: left;
+    display: inline-block;
+    color: #999999;
+    position: relative;
+    top: 0.04rem;
+}
+.city-content .season-recommend .bot .fr{
+    text-align: right;
+    display: inline-block;
+    position: relative;
+    top: -0.10rem;
+}
+.city-content .season-recommend .low span{
+    border-width: 1px;
+    border-style: solid;
+    padding: 0.02rem .1rem 0.03rem;
+    line-height: 0.24rem;
+    margin-right: .12rem;
+    display: inline-block;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    font-size: 0.24rem;
+}
+.city-content .season-recommend .low span.red{
+    color: #f93868;
+    border-color: #f93868;
+}
+.city-content .season-recommend .low span.blue{
+    border-color: #6ecdff;
+    color: #6ecdff;
+}
+.city-content .season-recommend .bot .fr em{
+    text-decoration:none;
+    color: #f93868;
+    position: relative;
+    top: 0.04rem;
+    font-size: 0.36rem;
+    display: inline;
+    margin-right: 0.06rem;
+}
+.city-content .season-recommend .bot i{
+    font-size: 0.24rem;
+    position: relative;
+    top: -0.02rem;
+}
+.go-content .banner{
+    margin-top: 0.88rem;
+    background: #E5E5E5;
+}
+.go-content .banner .box{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    margin: 10px;
+}
+.go-content .banner .box p{
+    position: absolute;
+    bottom: 0;
+    height: 0.70rem;
+    line-height: 0.70rem;
+    font-size: 0.32rem;
+    color: #ffffff;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+}
+.go-content .banner .box b{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 0.20rem;
+}
+.go-content .banner .box p span{
+    height: 0.70rem;
+    color: #fff;
+    background: #f93868;
+    display: inline-block;
+    padding: 0 .10rem;
+}
+.go-content .banner .box em{
+    position: absolute;
+    right: 0;
+    top: 0.16rem;
+    font-size: 0.24rem;
+    padding: 2px 6px 3px;
+    line-height: 0.24rem;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+}
+.go-content .banner img{
+    width: 100%;
+    vertical-align: middle;
+}
+.content .main{
+    padding-top: 0;
+}
+.content.city-content .main{
+    padding-top: 0.88rem;
+}
+.error-none{
+    font-size: 0.32rem;
+    background: #FFFFFF;
+    color: #999;
+    text-align: center;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.layout-box .banner:first-child a{
+  width: 7.5rem;
+  height: 1.5rem;
+  position: absolute;
+}

@@ -1,0 +1,25 @@
+﻿.banner img { width: 100%; display: block; }
+.template-new { overflow: hidden; }
+.template-new .hd { border-bottom: 4px solid #cecece; }
+.template-new .hd li { width: 33.33333%; display: inline-block; vertical-align: middle; text-align: center; font-size: 16px; color: #f93868; -moz-user-select: none; -ms-user-select: none; -webkit-user-select: none; user-select: none; outline: none; }
+.template-new .hd .on { position: relative; }
+.template-new .hd .on:before { position: absolute; left: 0; bottom: -4px; width: 100%; border-bottom: 4px solid #f93868; content: ""; }
+.template-new .hd .on:after { position: absolute; content: ""; left: 50%; bottom: 0; width: 0; margin-left: -5px; border-color: transparent transparent #f93868 transparent; border-style: solid; border-width: 5px; }
+
+.template-new .bd { padding: 0 0 0; }
+.template-new .bd ul { margin-bottom: 10px; text-align: center; }
+.template-new .bd li { overflow: hidden; width: 45%; display: inline-block; vertical-align: top; margin: 0 5px; }
+.template-new .bd li:last-child { border-bottom: 0; }
+.template-new .bd li .p1 { color: #333; height: 73px; overflow: hidden; text-align: left; }
+.template-new .bd li .p2 { color: #999; padding-top: 7px; margin: 0 3px; border-top: 1px solid #ccc; }
+.template-new .bd li .p2 .fl { -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; color: #fff; padding: 1px 8px; background: #f93868; font-size: 10px; }
+.template-new .bd li .p2 .fr { color: #f93868; font-size: 16px; }
+.template-new .bd li a { display: block; padding: 10px 0; min-height: 100px; position: relative; }
+.template-new .bd li .icon { position: absolute; left: -30px; top: -20px; color: #fff; border-style: solid; border-width: 30px; width: 0; height: 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+.template-new .bd li .icon-tejia { border-color: transparent transparent #efd115 transparent; }
+.template-new .bd li .icon-zhuanxiang { border-color: transparent transparent #15b4ef transparent; }
+.template-new .bd li .icon-remai { border-color: transparent transparent #f93868 transparent; }
+
+.template-new .bd li .icon span { font-size: 12px; position: absolute; width: 30px; height: 20px; margin-left: -17px; top: 10px; }
+.template-new .bd img { width: 100%; display: block; }
+.template-new .bd .txt { font-size: 16px; border: 1px solid #ccc; -moz-box-shadow: 0 1px 2px rgba(0,0,0,.1); -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1); box-shadow: 0 1px 2px rgba(0,0,0,.1); height: 105px; border-top: 0; }

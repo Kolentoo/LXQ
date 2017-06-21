@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>旅游_旅游网_出境游_国内游_自由行_公司旅游 - 悠哉旅游网 a1212313123</title>
+    <meta name="keywords" content="旅游,旅游网,自由行,跟团游,公司旅游" />
+    <meta name="description" content="悠哉旅游网（Uzai.com）－中国最专业、全面的旅游线路和自助游预订网站，一站式个性化旅游服务提供商；跟团游+自助游+公司旅游专家；出境游、周边游、国内游、酒店、签证；出发地：上海、北京、杭州、深圳、成都、南京。" />
+
+    <link rel="stylesheet" href="/content/v1/styles/core.css">
+    <script src="/content/v1/scripts/core.js"></script>
+    <!--[if lt IE 9]><script src="//r.uzaicdn.com/content/libs/html5shiv.js"></script><![endif]-->
+    <!--[if IE 6]><script src="//r.uzaicdn.com/content/libs/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script><script>DD_belatedPNG.fix('.png');</script><![endif]-->
+    <link rel="stylesheet" href="/content/v1/styles/user/member.css" />
+    <link rel="stylesheet" href="/content/v1/styles/user/user11_11.css" />
+    <script src="//r.uzaicdn.com/content/libs/plugin/uzpager/uzpager.min.js"></script>
+    <script src="/content/v1/scripts/user/member.js"></script>
+    <script src="/content/v1/scripts/user/member_active.js"></script>
+</head>
+
+<body>
+    <!--header start-->
+    <!-- j_indexTopAds -->
+    <!--top bar start-->
+    <div class="head">
+        <div class="content">
+            <img src="/content/v1/_src/images/user/logo.jpg" width="210" height="94" alt="logo">
+            <div class="call">
+                <i class="call-time">预订热线：9:00~21:00</i>
+                <em class="call-num">1010-9898</em>
+            </div>
+        </div>
+    </div>
+    <!--global-nav end-->
+    <!--header end-->
+    <!--已报名人数-->
+    <input type="hidden" value="2" id="hidSignCount"/>
+    <!--活动人数上线-->
+    <input type="hidden" value="2" id="hidActivityNumberMax"/>
+    <div class="bgfff">
+        <section class="crumbs w w1000"><a href="http://www.uzai.com" class="pl10">首页</a><sub class="songti">-&gt;</sub><a href=''>会员俱乐部</a><sub class="songti">-&gt;</sub><strong class="f999">活动内容</strong></section>
+        <div class="fill w1000">
+            <div class="fill_left">
+                <form action="AddMemberReg" onsubmit="return validate()">
+                    <div class="fill_leftt j_master">
+                        <div class="fill_lefttop">
+                            <span class="name">报名人</span>
+                        </div>
+                        <div class="fill_left_m">
+                            <div class="fill_lefttopm">
+                                <span>姓名：</span>
+                                <input type="text" class="name" />
+                                <b>姓名不能为空</b>
+                            </div>
+                            <div class="fill_lefttopm">
+                                <span>手机：</span>
+                                <input type="text" class="mobile" />
+                                <b>手机号码输入有误</b>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="fill_lefttop j_partner">
+                            <span class="name">同行人</span><b data-value="4" id="peerNum">（本次活动最多可带<i>1</i>位同行） </b>
+                        </div>
+                        <div class="fill_left_m j_partner"></div>
+                        <div class="fill_left_f j_partner">
+                            <p>欢迎您带朋友一起来参加活动哦！</p>
+                            <div class="bot" id='add'>添加同行</div>
+                        </div>
+                    </div>
+                    <div class="fill_left_foot">
+                        <input type='submit' value='提交报名' class="right" />
+                        <div class="left">说明：参加本次活动非会员自动成为会员，并发送告知短信。</div>
+                    </div>
+                </form>
+            </div>
+            <div class="fill_right">
+                <div class="fill_right_t">
+                    <span class="name">报名活动</span><span>（活动费用由会员到活动现场支付）</span>
+                </div>
+                <div class="fill_right_m">
+                    <div class="li">
+                        <span class="left">活动名称：</span>
+                        <span class="right1">活动名称活动名称活动名称活动名称</span>
+                    </div>
+                    <div class="li">
+                        <span class="left">活动时间：</span>
+                        <span class="right1">2016-05-02  14:00  ～  2016-5-2  16:00</span>
+                    </div>
+                    <div class="li">
+                        <span class="left">活动地址：</span>
+                        <span class="right1">上海市黄浦区淮海中路456号上海众信淮海路旗舰店3楼</span>
+                    </div>
+                    <div class="li">
+                        <span class="left">活动费用：</span>
+                        <span class="right1 red">¥<i id='unit_price'>400</i>/人 ×<i id='number'>3</i></span>
+                    </div>
+                </div>
+                <div class="fill_right_f">
+                    <span class="right">¥<i id="total">99999</i></span>
+                    <span class="left">总计：</span>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+
+    <div id="j_popApplyCancel" class="pop-apply-cancel ui-pop hide">
+        <div class="pop-hd"><em class="hd-cont f24">取消报名</em></div>
+        <div class="pop-bd">
+            <div class="step-1">
+                <div class="pop-cont clearfix">
+                    <i class="icon-uz fl icons-member png"></i>
+                    <p class="cont-main f666 f14">你真的不来参加本次活动了吗？<br>我们的活动已经准备就绪了哦。</p>
+                </div>
+                <p class="btn-bar f16 tr">
+                    <span class="btn-yes pointer blue">残忍拒绝</span>
+                    <span class="btn-no btn-item pointer white j_popClose">仍然去</span>
+                </p>
+            </div>
+            <div class="step-2 hide">
+                <form action="">
+                    <div class="info-listing clearfix">
+                        <label class="info-hd f666 f14 fl">取消报名理由：</label>
+                        <p class="info-bd">
+                            <textarea name="" id="" cols="30" rows="10" class="txta f14 yahei" placeholder="请填写您取消报名的理由或说明，不超过200字"></textarea>
+                        </p>
+                    </div>
+                    <p class="btn-bar tr"><input type="submit" value="提交" class="btn-submit btn-item white f16 yahei"></p>
+                </form>
+            </div>
+        </div>
+        <span class="pop-close pointer j_popClose">&times;</span>
+    </div>
+    <div class="bg_000 login"></div>
+    <div class="mobile_login">
+        <div class="fill_lefttop">
+            <i class="close"></i>
+            <span class="name">手机验证</span>
+        </div>
+        <div class="mobile_login_m">
+            <span class="title">报名成功后，将会发送短信通知，请填写您的手机号码</span>
+            <div class="mobile_login_li">
+                <div class="mobile_login_li_left">手机号码</div>
+                <div class="mobile_login_li_rights">
+                    <input type="text" class="in mobile" placeholder="请填写11位手机号码" />
+                    <span class="error">手机号码格式错误</span>
+                </div>
+            </div>
+            <div class="mobile_login_li">
+                <div class="mobile_login_li_left">验证码</div>
+                <div class="mobile_login_li_rights">
+                    <input type="text" class="in" placeholder="请填写短信验证码" />
+                    <span class="error">验证码错误，请重新输入</span>
+                    <input type="button" value="免费获取验证码" id='yzm' class="bot" />
+                </div>
+            </div>
+            <div class="save">保存</div>
+        </div>
+    </div>
+    <div class="sp-footer">
+
+        <div class="foot-copyright w">
+            <span>Copyright 2005-2016 Uzai.com</span>
+            <span>许可证编号:L-SH-CJ00112</span>
+            <span class="foot-aboutlink"><a target="_blank" href="http://www.miibeian.gov.cn">沪ICP备06021606号</a></span>
+            <span>悠哉呼叫中心来电显示号码为：<em class="red">10109898</em></span>
+        </div>
+        <div class="foot-aboutlink w">
+            <span><a href="http://www.uzai.com" rel="nofollow">悠哉旅游网</a></span>
+            <span><a target="_blank" href="http://www.uzai.com/history/" rel="nofollow">悠哉历程</a></span>
+            <span><a target="_blank" href="http://www.uzai.com/about/privacy/" rel="nofollow">隐私保护</a></span>
+            <span><a target="_blank" class="red" href="http://www.uzai.com/about/RecruitUtour" rel="nofollow">诚聘英才</a></span>
+            <span><a target="_blank" href="http://www.uzai.com/utour-about/" rel="nofollow">关于我们</a></span>
+            <span><a target="_blank" class="red" href="http://www.uzai.com/about/utour-store#f" rel="nofollow">营业网点</a></span>
+            <span><a target="_blank" href="http://www.uzai.com/sitemap/">网站地图</a></span>
+            <span><a target="_blank" href="http://www.uzai.com/sitelinks/">友情链接</a></span>
+            <span><a target="_blank" href="http://www.uzai.com/qa/helplist-9.html" rel="nofollow">商务合作</a></span>
+
+            <span><a target="_blank" href="http://www.uzai.com/qa/helplist-15.html" rel="nofollow">网站诚信承诺书</a></span>
+
+            <span class="noborder"><a id="j_advise" href="javascript:void(0);" rel="nofollow">意见反馈</a></span>
+        </div>
+
+    </div>
+</body>
+
+</html>

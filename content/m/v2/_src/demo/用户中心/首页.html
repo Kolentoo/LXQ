@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-cn" manifest="http://m.uzai.com/manifest/global.appcache">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>悠哉旅行网触屏版</title>
+    <meta name="keywords" content="x" />
+    <meta name="description" content="x" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/user/user.css" rel="stylesheet" />
+    <script src="/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/_src/core'], function (core) {
+        });
+    </script>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"></div>
+            <div class="d-m">
+                <div class="tit">我的悠哉</div>
+            </div>
+            <div class="d-r">
+            </div>
+        </header>
+        <section class="my-uzai">
+            <div class="info-status-box fn-bs">
+                <div class="user-status tc">
+                    <div class="off" id='j_userUnlogin'>
+                        <p class="welcome f17">欢迎来到悠哉！</p>
+                        <p class="offline pt10"><a href="#" class="btn-login f19">登录/注册</a></p>
+                    </div>
+                    <a href="http://u.uzai.com/mobile/EditUser"  id='j_userLogin' class="user-info-box f14 on g8 p10 clearfix" style="display: none;">
+                        <div class="user-icon fl"><img class="g10 vm" src="http://r.uzaicdn.com/picPhone.aspx?file=UserHeadPreview_462461.jpg&t=1&rand=b2e6ad24-eb6a-4107-9bf1-c515ce6d650a" /></div>
+                        <div class="info-cont tl">
+                            <p class="p1">uzai462461 <img src="http://r.uzaicdn.com/Content/1/images/icon_vip30.gif" /></p>
+                            <p class="p2">悠币200个</p>
+                        </div>
+                    </a>
+                </div>
+                <ul class="message-bar f13 tc fn-flex">
+                    <li>
+                        <a href="#">
+                            <i class="icon-1"><em class="num-icon f14 tc">1</em></i><br>
+                            <span>待付款</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-2"><em class="num-icon f14 tc show">1</em></i><br>
+                            <span>待付款</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-3"><em class="num-icon f14 tc">1</em></i><br>
+                            <span>待付款</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="info-menu bg-white f16 mt10">
+                <li><a href="#"><i class="icon-1 mr10 vm"></i><em class="vm">全部订单</em></a></li>
+                <li><a href="#"><i class="icon-2 mr10 vm"></i><em class="vm">抵用券</em></a></li>
+            </ul>
+            <ul class="info-menu bg-white f16 mt10">
+                <li><a href="#"><i class="icon-3 mr10 vm"></i><em class="vm">我的会员卡</em></a></li>
+                <li><a href="#"><i class="icon-4 mr10 vm"></i><em class="vm">我的U币</em></a></li>
+                <li><a href="#"><i class="icon-5 mr10 vm"></i><em class="vm">我的储值卡</em></a></li>
+                <li><a href="#"><i class="icon-6 mr10 vm"></i><em class="vm">我的积分</em></a></li>
+            </ul>
+            <ul class="info-menu bg-white f16 mt10">
+                <li><a href="#"><i class="icon-7 mr10 vm"></i><em class="vm">我的关注</em></a></li>
+                <li><a href="#"><i class="icon-8 mr10 vm"></i><em class="vm">浏览历史</em></a></li>
+                <li><a href="#"><i class="icon-9 mr10 vm"></i><em class="vm">常用旅客</em></a></li>
+                <li><a href="#"><i class="icon-10 mr10 vm"></i><em class="vm">意见反馈</em></a></li>
+                <li><a href="#"><i class="icon-11 mr10 vm"></i><em class="vm">客服电话：<span class="f60">400-998-2060</span></em></a></li>
+            </ul>
+            <ul class="info-menu bg-white f16 mt10">
+                <li><a href="#"><i class="icon-12 mr10 vm"></i><em class="vm">系统消息</em></a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

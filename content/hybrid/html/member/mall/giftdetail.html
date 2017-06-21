@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html ng-app="giftDetailApp" style="font-size:48px;">
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+
+    <meta name="keywords" content="私人定制旅游,定制旅游,高端旅游,定制旅行">
+    <meta name="description" content="悠哉旅游网提供高端私人定制旅游，专业定制旅游顾问按您的需求，为您1对1定制旅游方案，休闲游/度假游/购物游定制旅游高端旅行者的首要选择，享受专属你的私人旅行。
+">
+	<script src="http://r03.uzaicdn.com/content/hybrid/scripts/common/font.js"></script>
+    <link href="http://r03.uzaicdn.com/content/hybrid/styles/common/base.css" rel="stylesheet">
+    <link href="http://r03.uzaicdn.com/content/hybrid/styles/common/library.css" rel="stylesheet">
+    <link href="http://r03.uzaicdn.com/content/hybrid/styles/member/gift-detail.css" rel="stylesheet">
+    <script type="text/javascript" src="http://r03.uzaicdn.com/content/libs/frame/angular/angular.min.js"></script>
+	<title>礼品详情</title>
+</head>
+<body ng-controller="giftDetailCtrl">
+	<a href='javascript:void(0)' ng-click="back()" class='black-ico_'></a>
+    <div>
+        <div class="content">
+            <div id="wrapper">
+                <div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" ng-repeat="item in ProductImgList">
+                                <img class="swiper-lazy" data-src="{{item}}" img-finish/>
+                                <div class="swiper-lazy-preloader"></div>
+                                <div class='img'></div>
+                            </div>
+
+                        </div>
+                        <!-- 如果需要分页器 -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="main_top">
+                        <p class="_title ng-cloak" >{{ProductInfo.MallProductName}}</p>
+                        <div class="ov">
+                            <span class="right ng-cloak">{{Address}}发货 &nbsp|&nbsp 库存{{ProductInfo.StockAll-ProductInfo.AllExchangeCount}}件</span>
+                            <span class="left ng-cloak"><span>{{ProductInfo.MallProductScore}}</span>积分</span>
+                        </div>
+                    </div>
+                    <div class="main_m">
+                        <p class="title">礼品介绍</p>
+
+                        <div class="main_detail">
+                            <!--<img src="http://r03.uzaicdn.com/content/hybrid/images/member/3.jpg" />-->
+                            <p ng-bind-html="ProdutDesc | trustHtml">
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_f"><a id="btnExchange">立即兑换</a></div><!-- class="ccc"-->
+        <div class="uzai_layer" style="display: none;"></div>
+        <div class="uzai_layer1" style="display: none;"></div>
+        <div class="buy">
+            <div class="buy_t">
+                <div class="buy_t_img"><img ng-src="{{FirstImg}}" /></div>
+                <div class="buy_t_p">
+                    <p class="ng-cloak">{{ProductInfo.MallProductName}}</p>
+                    <span>已选：<span id="specifi"></span></span><br>
+                    <span>库存：<span id="total" class=" ng-cloak">{{ProductInfo.StockAll-ProductInfo.AllExchangeCount}}</span>件</span>
+                </div>
+                <div class="clear"></div>
+                <a href="javascript:void(0)" class="close"></a>
+            </div>
+            <div class="buy_m">
+                <div class="product">
+                    <div class="specifi">
+                        <!--<span class="title">规格</span>-->
+                        <div class="clear"></div>
+                        <div class="ov" ng-repeat="attr in ProductAttributes" attr-index="{{$index}}">
+                            <span class="title ng-cloak">{{attr.Name}}:</span>
+                            <span class="a ng-cloak allowclick" ng-repeat="attr1 in attr.Items" find-dir>{{attr1}}</span>
+                            <!--<span class="a">规格B</span>-->
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="num">
+                        <div class="right">
+                            <div class="reduce" ng-click="reduce()">-</div>
+                            <!--<input type="munber" class="show" ng-model="number"/>-->
+                            <div class="show" id="buyNum">{{number}}</div>
+                            <div class="plus" ng-click="plus()">+</div>
+                        </div>
+                        <div class="left">购买数量</div>
+                    </div>
+                    <div class="need">
+                        <div class="right ng-cloak">可用积分：<span>{{MemberPoints}}</span></div>
+                        <div class="left ng-cloak">所需积分：<span>{{(number * price)}}</span></div>
+                    </div>
+                </div>
+                <div class="buy_f" id="buy_submit" ng-click="SubmitOrder()"><a >确定</a></div>
+            </div>
+        </div>
+    </div>
+    <span class="save-img">保存</span>
+    <div class="keep">
+        <div class="keep_img">保存图片</div>
+        <div class="cancel_img">取消</div>
+    </div>
+    <img id="layer_img" class="layer-img" src=""/>
+    <img class="layer-loading" src="http://r.uzaicdn.com/content/v1/images/common/preload.gif"/>
+    <script src="http://r03.uzaicdn.com/content/libs/jquery-2.1.1.min.js"></script>
+    <script src="http://r03.uzaicdn.com/content/libs/plugin/iscroll/iscroll.js"></script>
+    <script type="text/javascript" src="http://r03.uzaicdn.com/content/hybrid/scripts/common/api.js"></script>
+    <script type="text/javascript" src="http://r03.uzaicdn.com/content/libs/plugin/swiper/swiper-3.3.1.min.js"></script>
+    <script src="http://r03.uzaicdn.com/content/hybrid/scripts/common/library.js"></script>
+	<script src="http://r03.uzaicdn.com/content/hybrid/scripts/member/gift-detail.js"></script>
+    <script src="http://r03.uzaicdn.com/content/hybrid/scripts/common/app-bridge.js"></script>
+    <script src="http://r03.uzaicdn.com/content/hybrid/scripts/common/hammer.min.js"></script>
+
+</body>
+</html>

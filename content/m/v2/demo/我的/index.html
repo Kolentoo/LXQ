@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>悠哉旅行网触屏版</title>
+    <meta name="keywords" content="x" />
+    <meta name="description" content="x" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/my/my.css" rel="stylesheet" />
+    <script src="/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/_src/core', '/content/m/v2/scripts/my/my'], function (core, my) {
+            my.init();
+        });
+    </script>
+</head>
+<body>
+    <div class="w">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m"><div class="tit">我的悠哉</div></div>
+            <div class="d-r"></div>
+        </header>
+ 
+        <section class="my f14">
+             
+            <div class="main fn-bs" id='j_userStatus'>
+                <div class="off " id='j_userUnlogin'>
+                    <a href="http://u.uzai.com/mobile/Login" class="main-box">
+                        <div class="welcome f18">欢迎来到悠哉！</div>
+                        <div class="login-part orange f16 tc offline">登录/注册</div>
+                    </a>
+                </div>
+
+                <div class="on hide" id='j_userLogin'>
+                    <a href="#" class="change-box block">
+                        <img style="width:60px;" class="mr10 fl" src="http://r.uzaicdn.com/content/UserCenter/Images/UserIndex/33.jpg" />
+                        <div class="my-info">
+                            <p class="p1">大飞 <img src="http://r.uzaicdn.com/Content/1/images/icon_vip30.gif" /></p>
+                            <p class="p2">悠币400个</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="entry">
+                    <ul class="fn-flex">
+                        <li><a href="#"><p class="icon-wallet"></p>待付款</a></li>
+                        <li><a href="#"><p class="icon-chat"><span>1</span></p>待评价</a></li>
+                        <li><a href="#"><p class="icon-megaphone"></p>悠哉承诺</a></li>
+                    </ul>
+                </div>
+
+            </div>
+             
+          
+
+            <div class="detail">
+                <ul>
+                    <li><a href="#"><span class="in1"></span><span>全部订单</span></a></li>
+                    <li><a href="#"><span class="in3"></span><span>我的U币</span><label class="fr orange">10</label></a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#"><span class="in5"></span><span>浏览历史</span></a></li>
+                    <li><a href="#"><span class="in6"></span><span>常用旅客</span></a></li>
+                    <li><a href="#"><span class="in8"></span><span>客服电话：<span class="orange">400-998-2060</span></a></li>
+                </ul>
+                 
+            </div>
+
+        </section>
+
+        <section class="g-mod-menu">
+            <ul class="fn-flex">
+                <li class="on">
+                    <a href="/">
+                        <i class="f18"></i><p>首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <i class="f18"></i><p>目的地</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <i class="f18"></i><p>达人秀</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <i class="f18"></i><p>我的</p>
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+
+    </div>
+
+
+
+</body>
+</html>

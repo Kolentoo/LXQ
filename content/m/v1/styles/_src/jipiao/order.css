@@ -1,0 +1,269 @@
+html{ background-color: #fff;}
+
+
+/* order-step start */
+.order-step{ font-family: 'Microsoft YaHei';}
+.order-step li{ float: left;}
+.order-step li img{ vertical-align: middle;}
+.order-step li em{ color: #aaa; font-size: 14px; padding: 0 8px 0 5px; vertical-align: middle;}
+.order-step .on em{ color: #6ed19a;}
+/* order-step end */
+
+.w105{ width: 105px;}
+.w135{ width: 135px;}
+.w200{ width: 200px;}
+.ml30{ margin-left: 30px;}
+.side-order{ width: 31%;}
+.main-order{ width: 68%;}
+.green-box{ background: #f6fefa; border: 1px solid #6ed19a;}
+.green-box .green-box-hd{ background: #fff; font-family: 'Microsoft YaHei'; height: 50px; line-height: 50px; padding: 0 15px;}
+.green-box .green-box-hd em{ border-left: 2px solid #28d273; padding-left: 5px;}
+.green-box .green-box-bd{ padding: 15px;}
+.lightgray-box{ background: #f8f8f8; border: 1px solid #eee;}
+.gray-box{ background: #f7f7f7; border: 1px solid #bbb;}
+.orange-box{ background: #fff5e9; border: 1px solid #ffe2c2;}
+.decimal{ list-style: decimal inside;}
+.disc{ list-style: disc inside;}
+
+/* btn-bar start */
+.btn-bar{ margin: 40px 0 15px;}
+.btn-bar .btn-prev{ color: #3265ce; margin-right: 10px; vertical-align: bottom;}
+.btn-bar .btn-prev:hover{ color: #f93868;}
+.btn-bar .btn-next{ background: #f93868; border-radius: 5px; display: inline-block; vertical-align: bottom;}
+.btn-bar .btn-next:hover{ background: #e55c00;}
+/* btn-bar end */
+
+/* tip-box start */
+.tip-box{ display: inline-block; *display: inline; zoom: 1; position: relative;}
+.tip-box .hover-text{ border-bottom: 1px dotted #2577E3; color: #2577E3; cursor: help; line-height: 1.2;}
+.tip-box .hover-icon{ cursor: help;}
+.tip-box .tip-detail{ background: #fff; border: 1px solid #3265ce; color: #333; display: none; width: 200px; padding: 8px; position: absolute; top: 17px; z-index: 10;}
+.tip-box .tip-detail p{ line-height: 1.6; padding: 5px 0;}
+.tip-box .tip-table{ width: 400px; padding: 0;}
+.tip-box .tip-table th,
+.tip-box .tip-table td{ border-bottom: 1px solid #ccc; padding: 5px; vertical-align: middle;}
+.tip-box .tip-table th{ background: #f5f5f5; text-align: center; width: 50px;}
+/* tip-box end */
+
+
+
+/*---- write-info start ----*/
+
+/* main-order start */
+.write-info .main-order label{ padding-right: 5px; vertical-align: middle;}
+.write-info .main-order .option-box{ margin: 0 5px 0 10px; vertical-align: middle;}
+.write-info .main-order .label-name{ color: #666; display: inline-block; text-align: right; width: 100px; padding-right: 5px;}
+.write-info .main-order .textbox{ border: 1px solid #bbb; height: 24px; line-height: 24px; padding: 0 2px; vertical-align: middle;}
+.write-info .main-order .select-box{ border: 1px solid #bbb; height: 24px; padding: 2px 0; vertical-align: middle;}
+.write-info .main-order .textbox-error{ background: #FFFBFB; border-color: #f93868;}
+.write-info .froms-list li{ padding: 5px 0;}
+
+/*** passenger start ***/
+.write-info .passenger-info{ border-bottom: 1px dashed #ddd; padding-bottom: 10px;}
+.write-info .passenger-info .passenger-hd em{ color: #f93868;}
+.write-info .passenger-info .query-box .icon-query{ background: url(/content/v1/images/order/icon-query.png) no-repeat; display: inline-block; height: 17px; width: 17px;}
+.write-info .passenger-info .query-box .tip-detail{ border: 1px solid #6ed19a; width: 500px; padding: 15px; left: 0;}
+.write-info .passenger-info .query-box .tip-detail dt{ font-weight: bold;}
+.write-info .passenger-info .query-box .tip-detail dd{ line-height: 1.6; padding-top: 5px;}
+.write-info .passenger-info .query-box .tip-detail p{ padding: 5px 0;}
+.write-info .passenger-info .query-box .tip-detail .decimal li{ padding: 2px 0;}
+.write-info .passenger-info .query-box .tip-detail .decimal .disc{ padding-left: 20px;}
+.write-info .passenger-info .on .tip-detail,
+.write-info .passenger-info .tip-box:hover .tip-detail{ display: block;}
+
+.write-info .insurance .label-name{ line-height: 2.6;}
+.write-info .insurance-bd p{ line-height: 2;}
+.write-info .insurance-bd label a{ color: #2577e3;}
+.write-info .insurance-bd label a:hover{ color: #f93868;}
+.write-info .insurance-bd .tip-detail{ width: 500px; padding: 15px;}
+
+.write-info .passenger-btn-box .add-passenger{ background: #fff; border: 1px solid #bbb; border-radius: 5px; display: inline-block; height: 38px; line-height: 38px; width: 143px;}
+.write-info .passenger-btn-box .add-passenger:hover{ background: #f9f9f9;}
+.write-info .passenger-btn-box .add-passenger .icon-add{ background: url(/content/v1/images/order/icon-add.png) no-repeat; display: inline-block; height: 20px; width: 20px;}
+/*** passenger end ***/
+
+.write-info .contact-info li{ float: left;}
+
+.write-info .mail-info{ background: #fff; zoom: 1;}
+.write-info .mail-info .mail-info-hd{ background: #6ed19a; height: 28px; line-height: 28px; padding: 0 10px;}
+.write-info .mail-info .label-name{ width: 50px;}
+.write-info .mail-info .address p{ padding: 3px 0;}
+.write-info .mail-info .address .textbox{ width: 350px;}
+
+.write-info .clause-bar{ margin-left: 15px;}
+.write-info .clause-bar a{ color: #2577e3;}
+.write-info .clause-bar a:hover{ color: #f93868;}
+
+.write-info .btn-bar .btn-next{ height: 60px; line-height: 60px; width: 245px; margin-right: 60px;}
+/* main-order end */
+
+/* side-order start */
+.write-info .side-order{ color: #000;}
+.write-info .side-order a{ color: #2577e3;}
+.write-info .side-order a:hover{ color: #f93868;}
+
+/*** flight-info start ***/
+.write-info .flight-info dt{ line-height: 2.5; padding: 0 15px;}
+.write-info .flight-info dd{ padding: 0 15px 10px;}
+.write-info .flight-info dd .flight-info-hd .tip-box{ *z-index: 1;}
+.write-info .flight-info dd .flight-info-hd .on .tip-detail,
+.write-info .flight-info dd .flight-info-hd .tip-box:hover .tip-detail{ display: block; right: 0;}
+.write-info .flight-info dd .cont-box{ padding:15px 0 15px 20px;}
+.write-info .flight-info dd .cont-box .arrow-box{ padding: 12px 10px 0;}
+.write-info .flight-info dd .fare-bar .tip-box{ margin-left: 30px;}
+.write-info .flight-info dd .fare-bar .on .tip-detail,
+.write-info .flight-info dd .fare-bar .tip-box:hover .tip-detail{ display: block; right: 0;}
+/*** flight-info end ***/
+
+/*** amount-info start ***/
+.write-info .amount-info{ padding: 10px 15px;}
+.write-info .amount-info a:hover{ color: #2577E3; text-decoration: underline;}
+.write-info .amount-info .triangle-b{ border: 5px solid #FFF5E9; border-top-color: #2577E3; font-size: 0; height: 0;}
+.write-info .amount-info .triangle-t{ border: 5px solid #FFF5E9; border-bottom-color: #2577E3; font-size: 0; height: 0;}
+.write-info .amount-info ul{ padding: 5px 0;}
+.write-info .amount-info li{ background: url(/content/v1/images/order/dashed.jpg) repeat-x 0 center; line-height: 2;}
+.write-info .amount-info li span{ background: #fff5e9;}
+.write-info .amount-info li .fl{ padding-right: 5px;}
+.write-info .amount-info li .fr{ padding-left: 5px;}
+.write-info .amount-info-hd .label-name{ padding-top: 15px;}
+.write-info .amount-info-hd .price em{ font-size: 30px;}
+/*** amount-info end ***/
+
+/* side-order end */
+
+/*---- write-info end ----*/
+
+
+
+/*---- check-info start ----*/
+.check-info .order-info{ background: #f6fefa; border-left: 6px solid #6ed19a; height: 40px; line-height: 40px; padding-left: 15px;}
+.check-info .orange-box{ padding: 5px 0;}
+.check-info .white-box{ background: #fff;}
+
+/*** info-box start ***/
+.check-info .info-box td{ padding: 3px 0 3px 15px; vertical-align: middle;}
+.check-info .info-box .order-num{ color: #2577e3;}
+.check-info .info-box .now-pay{ background: #f93868; border-radius: 5px; height: 22px; line-height: 24px; width: 84px;}
+.check-info .info-box .now-pay:hover{ background: #e55c00;}
+.check-info .info-box .cancel-order{ color: #2577e3; padding-right: 15px;}
+.check-info .info-box .cancel-order:hover{ color: #f93868;}
+/*** info-box end ***/
+
+/*** info-cont start ***/
+.check-info .info-cont{ padding: 0 15px 10px;}
+.check-info .info-cont .g-25{ width: 25%;}
+.check-info .info-cont .g-50{ width: 50%;}
+.check-info .info-cont .white-box{ padding: 10px 0;}
+.check-info .info-cont .white-box table{ margin: 0 15px;}
+.check-info .info-cont .white-box th{ text-align: left; padding: 5px;}
+.check-info .info-cont .white-box td{ padding: 3px 0 3px 5px;}
+.check-info .info-cont .white-box td hr{ color: #ddd; height: 0;}
+.check-info .info-cont .white-box td em{ font-weight: bold;}
+.check-info .info-cont .white-box td .em{ color: #2577e3; font-weight: bold;}
+.check-info .info-cont .white-box td .swop{ background: #6ed19a; display: inline-block; height: 23px; line-height: 23px; width: 50px;}
+.check-info .info-cont .amount-box{ padding: 33px 0 0 20px;}
+.check-info .info-cont .amount-box dt{ border-bottom: 1px solid #bbb;}
+.check-info .info-cont .amount-box dd .on .tip-detail,
+.check-info .info-cont .amount-box dd .tip-box:hover .tip-detail{ display: block; right: 0;}
+.check-info .info-cont .amount-box dd,
+.check-info .info-cont .amount-box dd p{ padding: 3px 0;}
+/*** info-cont end ***/
+
+/*** passenger-info start ***/
+.check-info .passenger-info,
+.check-info .passenger-info .white-box{ padding: 10px 15px;}
+.check-info .passenger-info table{ border-bottom: 1px solid #eee;}
+.check-info .passenger-info th{ background: #6ed19a; color: #fff; font-weight: bold; height: 26px; line-height: 26px;}
+.check-info .passenger-info td{ text-align: center; padding: 5px 0;}
+.check-info .passenger-info .contacts-info{ border-bottom: 1px solid #eee; padding: 5px 20px;}
+/*** passenger-info end ***/
+
+.check-info .btn-bar{ height: 52px; position: relative;}
+.check-info .btn-bar p{ float: none; margin-left: -85px; position: absolute; left: 50%;}
+.check-info .btn-bar .btn-next{ height: 52px; line-height: 52px; width: 170px;}
+
+/*---- check-info end ----*/
+
+
+
+/*---- finish-info start ----*/
+.finish-info{ padding-bottom: 20px;}
+.finish-info .info-txt{ font-size: 36px; padding: 40px 0 20px;}
+.finish-info .order-info{ margin: 0 auto;}
+.finish-info .order-info a{ color: #3265ce;}
+.finish-info .order-info a:hover{ color: #f93868;}
+.finish-info .order-info-fd{ height: 35px;}
+.finish-info .order-info-fd .btn-order{ background: #f93868; border-radius: 5px; color: #fff; display: inline-block; margin-right: 5px; padding: 7px 14px;}
+.finish-info .order-info-fd .btn-order:hover{ background: #e55c00; color: #fff;}
+.finish-info .info-cont{ font-size: 14px;}
+.finish-info .info-cont th{ border: 1px solid #cff1de; background: #f6fefa; font-family: 'Microsoft YaHei'; padding: 5px 0;}
+.finish-info .info-cont td{ border: 1px solid #cff1de; background: #f8f8f8; text-align: center; padding: 5px 0;}
+.finish-info .info-cont td a{ color: #2577e3;}
+.finish-info .info-cont td a:hover{ color: #f93868;}
+
+/* local-mod public start */
+.local-mod-hd{ background: url(/content/v1/images/jipiao/icon-ddy.png) no-repeat 10px center #f6fefa; border-top: 2px solid #28d273; height: 38px; line-height: 38px; padding-left: 40px;}
+.local-mod-bd{ width: 100.6%; padding: 15px 0;}
+.local-mod-bd li{ float: left; width: 20%;}
+.local-mod-bd li a{ border-bottom: none; display: block; margin-right: 3%; *margin-right: 7px;}
+.local-mod-bd li a .item{ border: 1px solid #bbb; padding: 2%; *padding: 5px; position: relative;}
+.local-mod-bd li a:hover .item{ background: #fff5e9; border-color: #f93868;}
+.local-mod-bd li a .item img{ display: block; width: 100%;}
+.local-mod-bd li a .item .item-hd{ padding-top: 5px;}
+.local-mod-bd li a .item .price{ position: absolute; bottom: 2px; right: 5px;}
+/* local-mod public end */
+
+/*---- finish-info end ----*/
+
+
+
+/*---- order-detail start ----*/
+.order-detail .info-hd{ border-left: 4px solid #6ed19a; color: #6ed19a; font-family: 'Microsoft YaHei'; height: 25px; line-height: 25px;}
+.order-detail .btn-pay{ background: #f90; border-radius: 5px; color: #fff; padding: 5px 18px;}
+.order-detail .btn-pay:hover{ background: #f80;}
+.order-detail .btn-grey{ background: #adadad; border-radius: 5px; color: #fff; padding: 5px 18px;}
+.order-detail .btn-grey:hover{ background: #999;}
+.order-detail .info-box{ border: 1px solid #c0efd5;}
+.order-detail .info-box th{ background: #f5f5f5; height: 30px; vertical-align: middle;}
+.order-detail .info-box td{ text-align: center; padding: 10px 0; vertical-align: middle;}
+.order-detail .info-box td .on .tip-detail,
+.order-detail .info-box td .tip-box:hover .tip-detail{ display: block; right: 0;}
+.order-detail .info-box td .tip-box .tip-detail th{ height: auto;}
+.order-detail .info-box td .tip-box .tip-detail td{ text-align: left; padding: 5px;}
+.order-detail .btn-box{ width: 440px; margin: 0 auto;}
+.order-detail .btn-box .btn{ display: inline-block; margin-right: 5px; padding: 6px 24px;}
+.order-detail .btn-box .print{ color: #2577e3;}
+.order-detail .btn-box .print:hover{ color: #f93868;}
+/*---- order-detail end ----*/
+
+/* pop-tips-mod start */
+.pop-tips-mod{ background: #fff; height: 200px; width: 365px; margin: -110px 0 0 -192px; _margin-top: 0; padding: 10px; position: fixed; _position: absolute; top: 50%; left: 50%; z-index: 1000; }
+.pop-tips-mod .tips-mod-hd{ position: relative;}
+.pop-tips-mod .tips-mod-hd .pop-colse{ position: absolute; top: 0; right: 5px;}
+.pop-tips-mod .tips-mod-hd .pop-colse:hover{ color: #f93868;}
+.pop-tips-mod .tips-mod-bd{ padding: 20px 10px;}
+.pop-tips-mod .tips-mod-pic{ width: 129px;}
+.pop-tips-mod .tips-mod-cont{ width: 215px;}
+.pop-tips-mod .tips-mod-cont .em-txt{ font-size: 40px;}
+.pop-tips-mod .developing{ padding-top: 25px;}
+.pop-tips-mod .error{ padding-top: 15px;}
+.pop-tips-mod .error .btn-box{ padding-top: 10px;}
+.pop-tips-mod .error .btn-box a{ background: #f93868; color: #fff; display: inline-block; font-size: 25px; height: 34px; line-height: 32px; width: 180px;}
+.pop-tips-mod .error .btn-box a:hover{ background: #e55c00;}
+.pop-tips-mod .timeout{ padding-top: 30px;}
+.pop-tips-mod .timeout .btn-box{ padding-top: 10px;}
+.pop-tips-mod .timeout .icon-reload{ background: url(/content/v1/images/jipiao/icon-reload.png) no-repeat; display: inline-block; height: 20px; width: 24px;}
+.pop-tips-mod .timeout .btn-box a{ background: #f93868; color: #fff; display: inline-block; font-size: 25px; height: 34px; line-height: 32px; width: 180px;}
+.pop-tips-mod .timeout .btn-box a:hover{ background: #e55c00;}
+/* pop-tips-mod end */
+
+/* pop-refund start */
+.pop-refund{ background: #fff; height: 300px; width: 500px; margin: -150px 0 0 -250px; _margin-top: 0; position: fixed; _position: absolute; top: 50%; left: 50%; z-index: 1000; }
+.pop-refund .refund-hd{ background: #f90; color: #fff; font-size: 25px; height: 50px; line-height: 48px; padding: 0 15px;}
+.pop-refund .refund-cont{ font-size: 30px; padding: 70px 0;}
+.pop-refund .btn-box a{ display: inline-block; font-size: 25px; margin: 0 30px;}
+.pop-refund .btn-box a:hover{ background: #e55c00;}
+.pop-refund .btn-box .apply-refund{ background: #f93868; color: #fff; height: 40px; line-height: 38px; width: 135px;}
+.pop-refund .btn-box .btn-cancel{ border: 1px solid #f93868; color: #f93868; height: 38px; line-height: 36px; width: 133px;}
+.pop-refund .btn-box .btn-cancel:hover{ border-color: #e55c00; color: #fff;}
+/* pop-refund end */

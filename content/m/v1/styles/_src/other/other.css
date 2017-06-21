@@ -1,0 +1,8 @@
+body{ background: #e7ffea;}
+.other-tips {background:url(/content/v1/images/other/bg.jpg) no-repeat center 100px;}
+.other-tips .other-logo {padding-top:75px;}
+.other-tips .tips-cont {padding: 190px 0 270px;}
+.other-tips .icon-uz {background: url(/content/v1/images/other/icon-uz.png) no-repeat; display: inline-block; height: 169px;width: 119px;position:relative;color:#7aaa39;}
+.other-tips .kuang1 {background: url(/content/v1/images/other/kuang1.png) no-repeat ;width: 350px;height: 88px;position: absolute;left: -342px;top: -25px;line-height:74px;}
+.other-tips .kuang2 {background: url(/content/v1/images/other/kuang2.png) no-repeat ;width: 331px;height: 107px;position: absolute;right: -320px;top: 15px;padding: 17px 0 0 7px;}
+.other-tips .other-txt {color:#7aaa39; padding-bottom: 30px;}

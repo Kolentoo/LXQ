@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>手机悠哉网 -  找回密码 </title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="/content/m/v2/styles/_src/core.css" rel="stylesheet" />
+    <link href="/content/m/v2/styles/_src/user/user.css" rel="stylesheet" />
+    <script src="/content/m/v2/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+    <script>
+        seajs.use(['/content/m/v2/scripts/_src/core', '/content/m/v2/scripts/user/user'], function (core, user) {
+            user.init();
+        });
+    </script>
+
+</head>
+<body>
+
+    <div class="w user">
+        <header class="fn-header" id="j_fnHeader">
+            <div class="d-l"><div class="back">返回</div></div>
+            <div class="d-m"><div class="tit">找回密码</div></div>
+            <div class="d-r"></div>
+        </header>
+
+
+        <section class="forget" id="j_forget">
+            <div class="hd">
+                <ul class="clearfix tc f14 f666">
+                    <li class="fl g5 on">
+                        <span>手机号找回</span>
+                    </li>
+                    <li class="fl g5">
+                        <span>邮箱找回</span>
+                    </li>
+                </ul>
+            </div>
+
+           
+
+            <div class="bd">
+
+                <div class="item">
+
+                    <div class="tip f14 f666 mb10">请在下方输入您的手机号码，系统将通过短信验证码发送至您的手机。</div>
+
+                    <form>
+                        <ul>
+                            <li class="li-mobile">
+                                <i class="icon"></i><div><input type="tel" required placeholder="请填写注册时用的手机号码" /></div>
+</li>
+
+                            <li class="li-find tc">
+                                <input type="submit" class="btn btn-on g8" value="找回密码" />
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+
+                <div class="item hide">
+
+                    <div class="tip f14 f666 mb10">请在下方输入您的邮箱地址，系统将通过邮件发送安全连接至您的邮箱。（24小时有效）</div>
+
+                    <form>
+                        <ul>
+                            <li class="li-email">
+                                <i class="icon"></i><div><input type="email" required placeholder="请填写注册时用的邮箱" /></div>
+                            </li>
+
+                            <li class="li-find tc"><input type="submit" class="btn btn-on g8" value="找回密码" /></li>
+                        </ul>
+                    </form>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+
+
+
+    </div>
+
+</body>
+</html>

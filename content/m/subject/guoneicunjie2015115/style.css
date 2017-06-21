@@ -1,0 +1,13 @@
+body, html { background-color: #ce2913; }
+section .banna img { width: 100%; }
+
+.xl { color: #fff; padding: 10px; }
+.xl li { position: relative; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; margin-bottom: 10px; overflow: hidden; }
+.xl a { color: #fff; }
+.xl img { width: 100%; display: block; }
+.xl li .d2 { position: absolute; left: 0; bottom: 0; width: 100%; background-color: rgba(0,0,0,0.7); -moz-border-radius: 0 0 8px 8px; -webkit-border-radius: 0 0 8px 8px; border-radius: 0 0 8px 8px; padding: 0 0 3px; -moz-box-shadow: 0 1px 29px 24px rgba(0, 0, 0, 0.7); -webkit-box-shadow: 0 1px 29px 24px rgba(0, 0, 0, 0.7); box-shadow: 0 1px 29px 24px rgba(0, 0, 0, 0.7); }
+.xl .s1 { font-size: 30px; border-right: 1px solid #fff; padding: 2px 4px; margin-right: 4px; }
+.xl .s2 { font-size: 14px; width: 196px; margin-top: 6px; }
+.xl .s3 { border: 1px solid #fff; width: 15px; height: 15px; border-left: 0; border-bottom: 0; margin: 15px 15px 0 0; -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+
+.wj{display: block;margin: 0 auto 10px;width: 80%;border:1px solid #eba9a1;text-align: center;line-height: 45px;color: #fff;font-size: 16px;-moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px;}

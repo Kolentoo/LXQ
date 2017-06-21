@@ -1,0 +1,180 @@
+﻿html, body { height: 100%; background: #fff; }
+.snow { height: 100%; position: fixed; z-index: 2; top: -50px; width: 100%; background-position: 0 0; background-repeat: no-repeat; background-size: 50%; -moz-transition: all ease 0.5s; -o-transition: all ease 0.5s; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; }
+.snow1 { background-image: url(y1.png); width: 25px; height: 25px; left: 38px; }
+.snow2 { background-image: url(y2.png); width: 31px; height: 33px; left: 135px; }
+.snow3 { background-image: url(y3.png); width: 36px; height: 54px; left: 55px; }
+.snow4 { background-image: url(y4.png); width: 19px; height: 25px; left: 135px; }
+.snow5 { background-image: url(y5.png); width: 11px; height: 22px; left: 165px; }
+.snow6 { background-image: url(y6.png); width: 32px; height: 25px; left: 195px; }
+.snow7 { background-image: url(y7.png); width: 28px; height: 42px; left: 125px; }
+.snow8 { background-image: url(y8.png); width: 35px; height: 35px; left: 115px; }
+.snow9 { background-image: url(y9.png); width: 18px; height: 15px; left: 165px; }
+.snow10 { background-image: url(y10.png); width: 28px; height: 38px; left: 20px; }
+.snow11 { background-image: url(y11.png); width: 148px; height: 126px; left: 250px; }
+
+.snow1-copy { left: 200px; }
+.snow2-copy { left: 195px; }
+.snow3-copy { left: 85px; }
+.snow4-copy { left: 275px; }
+.snow5-copy { left: 65px; }
+.snow6-copy { left: 255px; }
+.snow7-copy { left: 25px; }
+.snow8-copy { left: 195px; }
+.snow9-copy { left: 105px; }
+.snow10-copy { left: 175px; }
+.snow11-copy { left: 15px; }
+
+.snow1-copy2 { left: 30px; }
+.snow2-copy2 { left: 145px; }
+.snow3-copy2 { left: 75px; }
+.snow4-copy2 { left: 55px; }
+.snow5-copy2 { left: 95px; }
+.snow6-copy2 { left: 55px; }
+.snow7-copy2 { left: 35px; }
+.snow8-copy2 { left: 225px; }
+.snow9-copy2 { left: 75px; }
+.snow10-copy2 { left: 95px; }
+.snow11-copy2 { left: 115px; }
+
+
+.section1 { background: url(y6.jpg) no-repeat center center; background-size: cover; z-index: 100; }
+.section1 .fp-tableCell { display: table-cell; }
+.section1 .d2 { color: #ee628d; font-size: 16px; margin: 5px 0; }
+.section1 .d2 span { background: rgba(228,89,102,.9); display: inline-block; vertical-align: middle; width: 25px; height: 25px; text-align: center;  -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; position: absolute;bottom:10px;left:50%;margin-left:-13px; }
+.section1 .d2 span:before { content: ' '; position: absolute; left: 7px; top: 4px; width: 10px; height: 10px; border: 1px solid #fff; border-left: 0; border-top: 0; -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+
+.section1 a { display: block; }
+
+.section2 { background: #ff94b5; }
+.section2 .more { border: 2px solid #fff; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; margin: 0 auto; font-size: 16px; line-height: 45px; color: #fff; }
+
+.route { text-align: center; font-size: 0; }
+.route li { width: 43%; display: inline-block; margin: 10px; }
+.route li img { width: 100%; display: block; }
+
+@-webkit-keyframes ani-snow1 {
+    0% { top: -100px; }
+    100% { top: 100%; }
+}
+
+@-webkit-keyframes ani-snow2 {
+    0% { top: -120px; }
+    100% { top: 100%; }
+}
+
+@-webkit-keyframes ani-snow3 {
+    0% { top: -170px; }
+    100% { top: 100%; }
+}
+
+@-moz-keyframes ani-snow1 {
+    0% { top: -100px; }
+    100% { top: 100%; }
+}
+
+@-moz-keyframes ani-snow2 {
+    0% { top: -120px; }
+    100% { top: 100%; }
+}
+
+@-moz-keyframes ani-snow3 {
+    0% { top: -170px; }
+    100% { top: 100%; }
+}
+
+
+/*standard*/
+@keyframes ani-snow1 {
+    0% { top: -100px; }
+    100% { top: 100%; }
+}
+
+@keyframes ani-snow2 {
+    0% { top: -120px; }
+    100% { top: 100%; }
+}
+
+@keyframes ani-snow3 {
+    0% { top: -170px; }
+    100% { top: 100%; }
+}
+
+.section1-on .snow1 { -moz-animation: ani-snow1 19.3s ease 0s infinite; -o-animation: ani-snow1 19.3s ease 0s infinite; -webkit-animation: ani-snow1 19.3s ease 0s infinite; animation: ani-snow1 19.3s ease 0s infinite; }
+.section1-on .snow2 { -moz-animation: ani-snow1 35.6s ease-in 0s infinite; -o-animation: ani-snow1 35.6s ease-in 0s infinite; -webkit-animation: ani-snow1 35.6s ease-in 0s infinite; animation: ani-snow1 35.6s ease-in 0s infinite; }
+.section1-on .snow3 { -moz-animation: ani-snow1 28.8s ease-out 0s infinite; -o-animation: ani-snow1 28.8s ease-out 0s infinite; -webkit-animation: ani-snow1 28.8s ease-out 0s infinite; animation: ani-snow1 28.8s ease-out 0s infinite; }
+.section1-on .snow4 { -moz-animation: ani-snow1 16.4s ease-in-out 0s infinite; -o-animation: ani-snow1 16.4s ease-in-out 0s infinite; -webkit-animation: ani-snow1 16.4s ease-in-out 0s infinite; animation: ani-snow1 16.4s ease-in-out 0s infinite; }
+.section1-on .snow5 { -moz-animation: ani-snow1 22s ease 0s infinite; -o-animation: ani-snow1 22s ease 0s infinite; -webkit-animation: ani-snow1 22s ease 0s infinite; animation: ani-snow1 22s ease 0s infinite; }
+.section1-on .snow6 { -moz-animation: ani-snow1 25.2s ease-in-out 0s infinite; -o-animation: ani-snow1 25.2s ease-in-out 0s infinite; -webkit-animation: ani-snow1 25.2s ease-in-out 0s infinite; animation: ani-snow1 25.2s ease-in-out 0s infinite; }
+.section1-on .snow7 { -moz-animation: ani-snow1 27.8s ease-in 0s infinite; -o-animation: ani-snow1 27.8s ease-in 0s infinite; -webkit-animation: ani-snow1 27.8s ease-in 0s infinite; animation: ani-snow1 27.8s ease-in 0s infinite; }
+.section1-on .snow8 { -moz-animation: ani-snow1 36.2s ease 0s infinite; -o-animation: ani-snow1 36.2s ease 0s infinite; -webkit-animation: ani-snow1 36.2s ease 0s infinite; animation: ani-snow1 36.2s ease 0s infinite; }
+.section1-on .snow9 { -moz-animation: ani-snow1 25.4s ease 0s infinite; -o-animation: ani-snow1 25.4s ease 0s infinite; -webkit-animation: ani-snow1 25.4s ease 0s infinite; animation: ani-snow1 25.4s ease 0s infinite; }
+.section1-on .snow10 { -moz-animation: ani-snow1 19.4s ease 0s infinite; -o-animation: ani-snow1 19.4s ease 0s infinite; -webkit-animation: ani-snow1 19.4s ease 0s infinite; animation: ani-snow1 19.4s ease 0s infinite; }
+.section1-on .snow11 { -moz-animation: ani-snow1 29s ease-out 0s infinite; -o-animation: ani-snow1 29s ease-out 0s infinite; -webkit-animation: ani-snow1 29s ease-out 0s infinite; animation: ani-snow1 29s ease-out 0s infinite; }
+
+.section1-on .snow1-copy { -moz-animation: ani-snow2 28s ease 0s infinite; -o-animation: ani-snow2 28s ease 0s infinite; -webkit-animation: ani-snow2 28s ease 0s infinite; animation: ani-snow2 28s ease 0s infinite; }
+.section1-on .snow2-copy { -moz-animation: ani-snow2 19.4s ease-in 0s infinite; -o-animation: ani-snow2 19.4s ease-in 0s infinite; -webkit-animation: ani-snow2 19.4s ease-in 0s infinite; animation: ani-snow2 19.4s ease-in 0s infinite; }
+.section1-on .snow3-copy { -moz-animation: ani-snow2 15.4s ease-out 0s infinite; -o-animation: ani-snow2 15.4s ease-out 0s infinite; -webkit-animation: ani-snow2 15.4s ease-out 0s infinite; animation: ani-snow2 15.4s ease-out 0s infinite; }
+.section1-on .snow4-copy { -moz-animation: ani-snow2 14.2s ease-in-out 0s infinite; -o-animation: ani-snow2 14.2s ease-in-out 0s infinite; -webkit-animation: ani-snow2 14.2s ease-in-out 0s infinite; animation: ani-snow2 14.2s ease-in-out 0s infinite; }
+.section1-on .snow5-copy { -moz-animation: ani-snow2 22.8s ease 0s infinite; -o-animation: ani-snow2 22.8s ease 0s infinite; -webkit-animation: ani-snow2 22.8s ease 0s infinite; animation: ani-snow2 22.8s ease 0s infinite; }
+.section1-on .snow6-copy { -moz-animation: ani-snow2 17.2s ease-in-out 0s infinite; -o-animation: ani-snow2 17.2s ease-in-out 0s infinite; -webkit-animation: ani-snow2 17.2s ease-in-out 0s infinite; animation: ani-snow2 17.2s ease-in-out 0s infinite; }
+.section1-on .snow7-copy { -moz-animation: ani-snow2 29.8s ease-in 0s infinite; -o-animation: ani-snow2 29.8s ease-in 0s infinite; -webkit-animation: ani-snow2 29.8s ease-in 0s infinite; animation: ani-snow2 29.8s ease-in 0s infinite; }
+.section1-on .snow8-copy { -moz-animation: ani-snow2 14.2s ease 0s infinite; -o-animation: ani-snow2 14.2s ease 0s infinite; -webkit-animation: ani-snow2 14.2s ease 0s infinite; animation: ani-snow2 14.2s ease 0s infinite; }
+.section1-on .snow9-copy { -moz-animation: ani-snow2 22.4s ease 0s infinite; -o-animation: ani-snow2 22.4s ease 0s infinite; -webkit-animation: ani-snow2 22.4s ease 0s infinite; animation: ani-snow2 22.4s ease 0s infinite; }
+.section1-on .snow10-copy { -moz-animation: ani-snow2 16.4s ease 0s infinite; -o-animation: ani-snow2 16.4s ease 0s infinite; -webkit-animation: ani-snow2 16.4s ease 0s infinite; animation: ani-snow2 16.4s ease 0s infinite; }
+.section1-on .snow11-copy { -moz-animation: ani-snow2 22.8s ease-out 0s infinite; -o-animation: ani-snow2 22.8s ease-out 0s infinite; -webkit-animation: ani-snow2 22.8s ease-out 0s infinite; animation: ani-snow2 22.8s ease-out 0s infinite; }
+
+.section1-on .snow1-copy2 { -moz-animation: ani-snow3 18s ease 0s infinite; -o-animation: ani-snow3 18s ease 0s infinite; -webkit-animation: ani-snow3 18s ease 0s infinite; animation: ani-snow3 18s ease 0s infinite; }
+.section1-on .snow2-copy2 { -moz-animation: ani-snow3 14.4s ease-in 0s infinite; -o-animation: ani-snow3 14.4s ease-in 0s infinite; -webkit-animation: ani-snow3 14.4s ease-in 0s infinite; animation: ani-snow3 14.4s ease-in 0s infinite; }
+.section1-on .snow3-copy2 { -moz-animation: ani-snow3 29.4s ease-out 0s infinite; -o-animation: ani-snow3 29.4s ease-out 0s infinite; -webkit-animation: ani-snow3 29.4s ease-out 0s infinite; animation: ani-snow3 29.4s ease-out 0s infinite; }
+.section1-on .snow4-copy2 { -moz-animation: ani-snow3 12.2s ease-in-out 0s infinite; -o-animation: ani-snow3 12.2s ease-in-out 0s infinite; -webkit-animation: ani-snow3 12.2s ease-in-out 0s infinite; animation: ani-snow3 12.2s ease-in-out 0s infinite; }
+.section1-on .snow5-copy2 { -moz-animation: ani-snow3 19.8s ease 0s infinite; -o-animation: ani-snow3 19.8s ease 0s infinite; -webkit-animation: ani-snow3 19.8s ease 0s infinite; animation: ani-snow3 19.8s ease 0s infinite; }
+.section1-on .snow6-copy2 { -moz-animation: ani-snow3 15.2s ease-in-out 0s infinite; -o-animation: ani-snow3 15.2s ease-in-out 0s infinite; -webkit-animation: ani-snow3 15.2s ease-in-out 0s infinite; animation: ani-snow3 15.2s ease-in-out 0s infinite; }
+.section1-on .snow7-copy2 { -moz-animation: ani-snow3 12.8s ease-in 0s infinite; -o-animation: ani-snow3 12.8s ease-in 0s infinite; -webkit-animation: ani-snow3 12.8s ease-in 0s infinite; animation: ani-snow3 12.8s ease-in 0s infinite; }
+.section1-on .snow8-copy2 { -moz-animation: ani-snow3 24.2s ease 0s infinite; -o-animation: ani-snow3 24.2s ease 0s infinite; -webkit-animation: ani-snow3 24.2s ease 0s infinite; animation: ani-snow3 24.2s ease 0s infinite; }
+.section1-on .snow9-copy2 { -moz-animation: ani-snow3 19.4s ease 0s infinite; -o-animation: ani-snow3 19.4s ease 0s infinite; -webkit-animation: ani-snow3 19.4s ease 0s infinite; animation: ani-snow3 19.4s ease 0s infinite; }
+.section1-on .snow10-copy2 { -moz-animation: ani-snow3 17.4s ease 0s infinite; -o-animation: ani-snow3 17.4s ease 0s infinite; -webkit-animation: ani-snow3 17.4s ease 0s infinite; animation: ani-snow3 17.4s ease 0s infinite; }
+.section1-on .snow11-copy2 { -moz-animation: ani-snow3 37.8s ease-out 0s infinite; -o-animation: ani-snow3 37.8s ease-out 0s infinite; -webkit-animation: ani-snow3 37.8s ease-out 0s infinite; animation: ani-snow3 37.8s ease-out 0s infinite; }
+
+
+/**
+ * fullPage 2.4.6
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+html, body { margin: 0; padding: 0; overflow: hidden; /*Avoid flicker on slides transitions for mobile phones #336 */ -webkit-tap-highlight-color: rgba(0,0,0,0); }
+#superContainer { height: 100%; position: relative; /* Touch detection for Windows 8 */ -ms-touch-action: none; /* IE 11 on Windows Phone 8.1*/ touch-action: none; }
+.fp-section { position: relative; -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */ -moz-box-sizing: border-box; /* <=28 */ box-sizing: border-box; }
+.fp-slide { float: left; }
+.fp-slide, .fp-slidesContainer { height: 100%; display: block; }
+.fp-slides { z-index: 1; height: 100%; overflow: hidden; position: relative; -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */ -moz-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
+.fp-section.fp-table, .fp-slide.fp-table { display: table; table-layout: fixed; width: 100%; }
+.fp-tableCell { vertical-align: middle; width: 100%; height: 100%; }
+.fp-slidesContainer { float: left; position: relative; }
+.fp-controlArrow { position: absolute; z-index: 4; top: 50%; cursor: pointer; width: 0; height: 0; border-style: solid; margin-top: -38px; }
+.fp-controlArrow.fp-prev { left: 15px; width: 0; border-width: 38.5px 34px 38.5px 0; border-color: transparent #fff transparent transparent; }
+.fp-controlArrow.fp-next { right: 15px; border-width: 38.5px 0 38.5px 34px; border-color: transparent transparent transparent #fff; }
+.fp-scrollable { overflow: scroll; }
+.fp-notransition { -webkit-transition: none !important; -moz-transition: none !important; -o-transition: none !important; transition: none !important; }
+#fp-nav { position: fixed; z-index: 100; margin-top: -32px; top: 50%; opacity: 1; }
+#fp-nav.right { right: 0; }
+#fp-nav.left { left: 17px; }
+.fp-slidesNav { position: absolute; z-index: 4; left: 50%; opacity: 1; }
+.fp-slidesNav.bottom { bottom: 17px; }
+.fp-slidesNav.top { top: 17px; }
+#fp-nav ul,
+.fp-slidesNav ul { margin: 0; padding: 0; }
+#fp-nav ul li,
+.fp-slidesNav ul li { display: block; width: 14px; height: 13px; margin: 7px; position: relative; }
+.fp-slidesNav ul li { display: inline-block; }
+#fp-nav ul li a,
+.fp-slidesNav ul li a { display: block; position: relative; z-index: 1; width: 100%; height: 100%; cursor: pointer; text-decoration: none; }
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span { background: #333; }
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span { top: 2px; left: 2px; width: 8px; height: 8px; border: 1px solid #000; background: rgba(0, 0, 0, 0); -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; position: absolute; z-index: 1; }
+#fp-nav ul li .fp-tooltip { position: absolute; top: -2px; color: #fff; font-size: 14px; font-family: arial, helvetica, sans-serif; white-space: nowrap; max-width: 220px; overflow: hidden; display: block; opacity: 0; width: 0; }
+#fp-nav ul li:hover .fp-tooltip { -webkit-transition: opacity 0.2s ease-in; -moz-transition: opacity 0.2s ease-in; -o-transition: opacity 0.2s ease-in; transition: opacity 0.2s ease-in; width: auto; opacity: 1; }
+#fp-nav ul li .fp-tooltip.right { right: 20px; }
+#fp-nav ul li .fp-tooltip.left { left: 20px; }
