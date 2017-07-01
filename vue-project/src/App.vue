@@ -3,9 +3,11 @@
     <!--<img src="./assets/logo.png">-->
     <h1>{{title}}</h1>
     <h2 v-text='title'></h2>
-    <p v-html='content'></p>
+    <!--<p v-html='content'></p>-->
+    <test study='lets start vuejs study' v-on:listen='lesson'></test>
+    <p>输出内容：{{ words }}</p>
     <ul>
-      <li v-for='item in items' v-bind:class='{finished:item.isFinished}' @click='toggleClick(item)'>
+      <li v-bind:class='{finished:item.isFinished}' @click='toggleClick(item)' v-for='item in items'>
         {{item.label}}
       </li>
     </ul>
@@ -15,24 +17,29 @@
 
 <script>
 // import Hello from './components/Hello'
+import Store from './components/store.js';
+import test from './components/test.vue';
+// console.log(Store);
 
 export default {
-  data() {
+  data:function() {
     return{
       title:'todo list',
-      content:'todo content<span>!</span>',
-      items:[
-        {
-          label:'coding',
-          isFinished:false
-        },
-        {
-          label:'walking',
-          isfinished:true
-        }
-      ],
+      // content:'todo content<span>!</span>',
+      items:Store.fetch(),
       // liClass:'lxq'
-      newItem:''
+      newItem:'',
+      words:''
+    }
+  },
+  props:['study'],
+  components:{ test },
+  watch:{
+    items:{
+      handler: function(items) {
+        Store.save(items);
+      },
+      deep: true
     }
   },
   methods:{
@@ -46,6 +53,9 @@ export default {
         isFinished:false
       });
       this.newItem='';
+    },
+    lesson:function(msg){
+      this.words = msg;
     }
   }
 }
